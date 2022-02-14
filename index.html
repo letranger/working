@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-12-09 Thu 20:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Index</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Yung-Chin Yen" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Index</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org6bb7bf1">1. 任務</a></li>
+<li><a href="#orga6d6763">2. 課綱要求</a>
+<ul>
+<li><a href="#org3377cc9">2.1. 系統平台(S)</a></li>
+<li><a href="#orgeecd9ca">2.2. 資料表示、處理及分析(D)</a></li>
+</ul>
+</li>
+<li><a href="#orgde6e6db">3. 系統平台</a>
+<ul>
+<li><a href="#orgb83a5dc">3.1. 系統平台的發展歷史</a>
+<ul>
+<li><a href="#org3eed0ec">3.1.1. 系統平台的濫觴</a></li>
+<li><a href="#orgb176a4f">3.1.2. 馮紐曼架構</a></li>
+<li><a href="#org529b22e">3.1.3. 從批次執行到分時系統</a></li>
+<li><a href="#orgc48b309">3.1.4. 系統平台的發展歷史</a></li>
+<li><a href="#org9ac236a">3.1.5. 系統平台的類型</a></li>
+</ul>
+</li>
+<li><a href="#orge304c05">3.2. 系統平台的運作原理</a></li>
+<li><a href="#org4dbafba">3.3. 系統平台的未來</a></li>
+</ul>
+</li>
+<li><a href="#orgd1470a1">4. 資料表示、處理及分析</a>
+<ul>
+<li><a href="#org0064483">4.1. 資料表示</a></li>
+<li><a href="#orgc8f11eb">4.2. 資料處理</a></li>
+<li><a href="#orgd16caef">4.3. 資料探勘</a></li>
+<li><a href="#orge1e4cb3">4.4. 機器學習</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6bb7bf1" class="outline-2">
+<h2 id="org6bb7bf1"><span class="section-number-2">1</span> 任務</h2>
+<div class="outline-text-2" id="text-1">
+
+<div id="orga3f231a" class="figure">
+<p><img src="images/chapters.jpg" alt="chapters.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>負責章節</p>
+</div>
+
+
+<div id="orgc85f63d" class="figure">
+<p><img src="images/contents.png" alt="contents.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>章節內容</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6d6763" class="outline-2">
+<h2 id="orga6d6763"><span class="section-number-2">2</span> 課綱要求</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org3377cc9" class="outline-3">
+<h3 id="org3377cc9"><span class="section-number-3">2.1</span> 系統平台(S)</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>資 S-V-1 系統平台之運作原理。</li>
+<li>資 S-V-2 系統平台之未來發展趨勢。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeecd9ca" class="outline-3">
+<h3 id="orgeecd9ca"><span class="section-number-3">2.2</span> 資料表示、處理及分析(D)</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>資 D-V-1 巨量資料的概念。</li>
+<li>資 D-V-2 資料探勘與機器學習的基本概念。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde6e6db" class="outline-2">
+<h2 id="orgde6e6db"><span class="section-number-2">3</span> 系統平台</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+在這個3C用品泛濫的世界，人手一部手機，坐下來就面對電腦，然而我們所極度依賴或沉迷的其實不是3C用品本身，而是其上的應用軟體（App）。而軟體之所以能在手機或電腦上運作，其實是系統平台提供了執行環境，此處的系統平台包括電腦硬體（hardware）、也包括管理這些硬體資源的作業系統（Operating System, OS）。
+</p>
+</div>
+
+<div id="outline-container-orgb83a5dc" class="outline-3">
+<h3 id="orgb83a5dc"><span class="section-number-3">3.1</span> 系統平台的發展歷史</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org3eed0ec" class="outline-4">
+<h4 id="org3eed0ec"><span class="section-number-4">3.1.1</span> 系統平台的濫觴</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+1945年，一位程式設計師捧著一叠打孔紙卡來到一部IBM讀卡機前，她（是的，當時所謂的程式設計師多是女生）的身後是一部重達30噸、佔地167平方公尺、運行耗電160千瓦、傳說中一旦開機會導致費城限電的龐大機器。為了這次的展示，一些工作人員已事先忙碌數天，拿著手冊調整上千個開關與線路，以便執行打孔紙卡裡的程式。
+</p>
+
+<p>
+在這次的展示中，這部耗資近五十萬美元（相當於2020年的720萬美元)花了20秒計算出一顆飛行時間30秒的砲彈彈道，而同樣的工作需要一位計算員（computer，是的，這就是這個單字最早的意思，而她們也幾乎清一色是女性）以桌上型計算器努力工作兩天。這台龐然大物就是號稱史上第一台通用型電腦的ENIAC（The Electronic Numerical Intergrator and Computer）。
+</p>
+
+
+<div id="org976413f" class="figure">
+<p><img src="images/2021-12-09_08-58-52.jpg" alt="2021-12-09_08-58-52.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 3: </span>正在調整ENIAC設定的幾位程式設計師</p>
+</div>
+
+<p>
+在上述石器時代的電腦史，我們看到了一套極無效率的系統平台，要運算的數據以打孔卡片的型式儲存，而所謂的程式即是工作人員在ENIAC實際運算前對其所進行的繁雜硬體開關與線路設定，這導致ENIAC每次只能執行一支程式，而且要執行不同程式就必須要再對機器重新做一次設定，至於執行結果也只能以燈號顯示<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup><sup>, </sup><sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>而非儲存在電腦中。對於一部造價如此高昂的機器，這無疑是一種令人心寒的浪費；而造成ENIAC如此困境的原因之一是它沒有儲存裝置、沒有記憶體、也沒有硬碟。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb176a4f" class="outline-4">
+<h4 id="orgb176a4f"><span class="section-number-4">3.1.2</span> 馮紐曼架構</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+在受邀參觀完ENIAC後，馮紐曼（John Von Neumann）一方面驚訝於其運算速度，也覺得這種程式設計方式太過複雜，1945年6月，這位八歲會算微積分、未滿30歲就與愛因斯坦等人並列普林斯頓高等研究院創院的四大老之一的天才在火車上草擬了《EDVAC 報告初稿》（First Draft of a Report on the EDVAC）<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>。他在這份文件中提出了兩項影響日後所有電腦發展的建議：
+</p>
+<ol class="org-ol">
+<li>以二進位取代十進位元來運算和儲存資料。</li>
+<li>將電腦的設計架構分為運算單元、控制單元、記憶單元，輸入裝置與輸出裝置五大單元，此架構也被後世稱為馮紐曼架構。</li>
+</ol>
+
+<div id="org500ade7" class="figure">
+<p><img src="images/von-arch.png" alt="von-arch.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 4: </span>馮紐曼提出的電腦架構。圖：WIKI</p>
+</div>
+
+
+<div id="org3a8d17a" class="figure">
+<p><img src="images/von-paper.jpg" alt="von-paper.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 5: </span>影響深遠的〈EDVAC 報告初稿〉封面。圖：WIKI</p>
+</div>
+
+<p>
+在馮紐曼架構的規範下，程式的執行不再像ENIAC那樣以硬體線路與開關進行設定，而是如同像ENIAC儲存運算數據般也存在打孔卡片上，程式要先由讀卡機讀入記憶體，要執行時再由控制單元到記憶體中讀出來執行，此即「內儲程式電腦」（Stored Program Computer）。1951 年，美國軍方根據這份報告、在馮紐曼的協助下，斥資五十萬美元打造了計算機「EDVAC」（Electronic Discrete Variable Automatic Computer）。此時的系統平台已然可輸入不同程式，進而執行產生不同的結果。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org529b22e" class="outline-4">
+<h4 id="org529b22e"><span class="section-number-4">3.1.3</span> 從批次執行到分時系統</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+如本章前言所述，系統平台包含電腦硬體與作業系統，提供應用程式執行所需的環境 。而作業系統存在的目的就在於協助應用程式在電腦上執行，為此，作業系統必須監控管理電腦的硬體資源，包括記體體、儲存裝置與輸入輸出裝置。第一個具備這些功能雛型的作業系統為IBM 704電腦的GM-NAA I/O（input/output system of General Motors and North American Aviation），GH-NAA IO開發於1956年，它可以批次對不同應用程式做載入、執行、輸出結果，由於每次只能執行一支程式，所以程式必須排隊等待執行中的程式結束，這便是所謂的批次處理系統（batch processing）。
+</p>
+
+<p>
+同年，UNIVAC的作業系統引入了中斷（interrupt）技術，成為日後分時共享（time-sharing）系統的先驅。此前，系統平台的記憶體只能載入一支程式，即使這支系統正在列印大量資料，也要等全部資料列印完畢才能載入下一支程式進來執行。而中斷技術則允許系統平台載入多個程式，當一支程式正在進行輸入/輸出動作時，該程式就會被中斷，此時第二支程式就可立刻被執行，從而大幅提高硬體的執行效能。
+</p>
+
+<p class="verse">
+註：這裡的中斷（interrupt）並不是停止的意思， 而是「程序的狀態進入中斷狀態，CPU 不會理會該程序」。<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgc48b309" class="outline-4">
+<h4 id="orgc48b309"><span class="section-number-4">3.1.4</span> 系統平台的發展歷史</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<ol class="org-ol">
+<li>專用電腦ENIAC</li>
+<li>通用電腦</li>
+</ol>
+<p>
+Video: <a href="https://www.youtube.com/watch?v=bGk9W65vXNA">1946 ENIAC Computer History Remastered FULL VERSION First Large Digital Electronic Computer</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org9ac236a" class="outline-4">
+<h4 id="org9ac236a"><span class="section-number-4">3.1.5</span> 系統平台的類型</h4>
+<div class="outline-text-4" id="text-3-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org95a26af"></a>實體<br /></li>
+<li><a id="org184d765"></a>虛擬<br />
+<div class="outline-text-5" id="text-3-1-5-2">
+<ul class="org-ul">
+<li>VMWware</li>
+<li>Docker</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge304c05" class="outline-3">
+<h3 id="orge304c05"><span class="section-number-3">3.2</span> 系統平台的運作原理</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>資源分配</li>
+<li>工作排程</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4dbafba" class="outline-3">
+<h3 id="org4dbafba"><span class="section-number-3">3.3</span> 系統平台的未來</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>雲端運算</li>
+<li>物聯網</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd1470a1" class="outline-2">
+<h2 id="orgd1470a1"><span class="section-number-2">4</span> 資料表示、處理及分析</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+電腦自發明以來，始終只有一個目的：處理資料。而所謂資料處理（Data Processing）涉及兩個最基本的問題：
+</p>
+<ul class="org-ul">
+<li>如何儲存資料？</li>
+<li>如何對資料進行運算？</li>
+</ul>
+</div>
+<div id="outline-container-org0064483" class="outline-3">
+<h3 id="org0064483"><span class="section-number-3">4.1</span> 資料表示</h3>
+</div>
+<div id="outline-container-orgc8f11eb" class="outline-3">
+<h3 id="orgc8f11eb"><span class="section-number-3">4.2</span> 資料處理</h3>
+</div>
+<div id="outline-container-orgd16caef" class="outline-3">
+<h3 id="orgd16caef"><span class="section-number-3">4.3</span> 資料探勘</h3>
+</div>
+<div id="outline-container-orge1e4cb3" class="outline-3">
+<h3 id="orge1e4cb3"><span class="section-number-3">4.4</span> 機器學習</h3>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://digital.hagley.org/1985261_001_001_023">ENIAC printer, the constant transmitter, and associated IBM equipment</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://books.google.com.tw/books?id=nDWPW9uwZPAC&amp;pg=PA159&amp;lpg=PA159&amp;dq=%22Constant+Transmitter%22+neon&amp;source=bl&amp;ots=Z2Ilfl9Xws&amp;sig=ACfU3U1P59JekYYr9i_YIpsAhnwQfiVWWA&amp;hl=zh-TW&amp;sa=X&amp;ved=2ahUKEwj3geaN3NX0AhV8xYsBHWaeDmEQ6AF6BAgCEAM#v=onepage&amp;q=%22Constant%20Transmitter%22%20neon&amp;f=false">The First Computers: History and Architectures</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://pansci.asia/archives/194219">現代電腦從此展開——馮紐曼與馮紐曼架構 │《電腦簡史》數位時代（十一）</a>
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2021-12-09 Thu 20:01</p>
+</div>
+</body>
+</html>

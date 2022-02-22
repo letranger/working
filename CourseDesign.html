@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-02-22 Tue 16:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>高雄輔導團領域素養研習</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Yung-Chin Yen" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">高雄輔導團領域素養研習</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4bca23a">1. 國中課綱</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org1335ad3">1.0.1. 演算法(A)</a></li>
+<li><a href="#orgd69f256">1.0.2. 程式設計(P)</a></li>
+<li><a href="#orgeb56788">1.0.3. 系統平台(S)</a></li>
+<li><a href="#org72f1d69">1.0.4. 資料表示、處理及分析(D)</a></li>
+<li><a href="#org29ed552">1.0.5. 資訊科技應用(T)</a></li>
+<li><a href="#org876675a">1.0.6. 資訊科技與人類社會(H)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org75ea120">2. 高中課綱</a>
+<ul>
+<li>
+<ul>
+<li><a href="#orga10677a">2.0.1. 演算法(A)</a></li>
+<li><a href="#orgb74fce3">2.0.2. 程式設計(P)</a></li>
+<li><a href="#orgb79bbec">2.0.3. 系統平台(S)</a></li>
+<li><a href="#orgda774e3">2.0.4. 資料表示、處理及分析(D)</a></li>
+<li><a href="#org9482461">2.0.5. 資訊科技應用(T)</a></li>
+<li><a href="#orga67d8b5">2.0.6. 資訊科技與人類社會(H)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7acd87d">3. 銜接</a></li>
+<li><a href="#org50e2550">4. 課表</a></li>
+<li><a href="#org5c1807b">5. web</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4bca23a" class="outline-2">
+<h2 id="org4bca23a"><span class="section-number-2">1</span> 國中課綱</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org1335ad3" class="outline-4">
+<h4 id="org1335ad3"><span class="section-number-4">1.0.1</span> 演算法(A)</h4>
+<div class="outline-text-4" id="text-1-0-1">
+<ul class="org-ul">
+<li>7:資 A-IV-1 演算法基本概念。</li>
+<li>8:資 A-IV-2 陣列資料結構的概念與應用。</li>
+<li>8:資 A-IV-3 基本演算法的介紹。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd69f256" class="outline-4">
+<h4 id="orgd69f256"><span class="section-number-4">1.0.2</span> 程式設計(P)</h4>
+<div class="outline-text-4" id="text-1-0-2">
+<ul class="org-ul">
+<li>7:資 P-IV-1 程式語言基本概念、功能及應用。</li>
+<li>7:資 P-IV-2 結構化程式設計。</li>
+<li>8:資 P-IV-3 陣列程式設計實作。</li>
+<li>8:資 P-IV-4 模組化程式設計的概念。</li>
+<li>8:資 P-IV-5 模組化程式設計與問題解決實作。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeb56788" class="outline-4">
+<h4 id="orgeb56788"><span class="section-number-4">1.0.3</span> 系統平台(S)</h4>
+<div class="outline-text-4" id="text-1-0-3">
+<ul class="org-ul">
+<li>9:資 S-IV-1 系統平台重要發展與演進。</li>
+<li>9:資 S-IV-2 系統平台之組成架構與基本運作原理。</li>
+<li>9:資 S-IV-3 網路技術的概念與介紹。</li>
+<li>9:資 S-IV-4 網路服務的概念與介紹。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org72f1d69" class="outline-4">
+<h4 id="org72f1d69"><span class="section-number-4">1.0.4</span> 資料表示、處理及分析(D)</h4>
+<div class="outline-text-4" id="text-1-0-4">
+<ul class="org-ul">
+<li>9:資 D-IV-1 資料數位化之原理與方法。</li>
+<li>9:資 D-IV-2 數位資料的表示方法。</li>
+<li>9:資 D-IV-3 資料處理概念與方法。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org29ed552" class="outline-4">
+<h4 id="org29ed552"><span class="section-number-4">1.0.5</span> 資訊科技應用(T)</h4>
+<div class="outline-text-4" id="text-1-0-5">
+<ul class="org-ul">
+<li>7:資 T-IV-1 資料處理應用專題。</li>
+<li>9:資 T-IV-2 資訊科技應用專題。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org876675a" class="outline-4">
+<h4 id="org876675a"><span class="section-number-4">1.0.6</span> 資訊科技與人類社會(H)</h4>
+<div class="outline-text-4" id="text-1-0-6">
+<ul class="org-ul">
+<li>7:資 H-IV-1 個人資料保護。</li>
+<li>7:資 H-IV-2 資訊科技合理使用原則。</li>
+<li>7:資 H-IV-3 資訊安全。</li>
+<li>8:資 H-IV-4 媒體與資訊科技相關社會議題。</li>
+<li>8:資 H-IV-5 資訊倫理與法律。</li>
+<li>9:資 H-IV-4 媒體與資訊科技相關社會議題。</li>
+<li>9:資 H-IV-5 資訊倫理與法律。</li>
+<li>9:資 H-IV-6 資訊科技對人類生活之影響。</li>
+<li>9:資 H-IV-7 常見資訊產業的特性與種類。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org75ea120" class="outline-2">
+<h2 id="org75ea120"><span class="section-number-2">2</span> 高中課綱</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga10677a" class="outline-4">
+<h4 id="orga10677a"><span class="section-number-4">2.0.1</span> 演算法(A)</h4>
+<div class="outline-text-4" id="text-2-0-1">
+<ul class="org-ul">
+<li>資 A-V-1 重要資料結構的概念與應用。</li>
+<li>資 A-V-2 重要演算法的概念與應用。</li>
+<li>資 A-V-3 演算法效能分析。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb74fce3" class="outline-4">
+<h4 id="orgb74fce3"><span class="section-number-4">2.0.2</span> 程式設計(P)</h4>
+<div class="outline-text-4" id="text-2-0-2">
+<ul class="org-ul">
+<li>資 P-V-1 文字式程式設計概念與實作。</li>
+<li>資 P-V-2 陣列資料結構的程式設計實作。</li>
+<li>資 P-V-3 重要演算法的程式設計實作。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb79bbec" class="outline-4">
+<h4 id="orgb79bbec"><span class="section-number-4">2.0.3</span> 系統平台(S)</h4>
+<div class="outline-text-4" id="text-2-0-3">
+<ul class="org-ul">
+<li>資 S-V-1 系統平台之運作原理。</li>
+<li>資 S-V-2 系統平台之未來發展趨勢。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgda774e3" class="outline-4">
+<h4 id="orgda774e3"><span class="section-number-4">2.0.4</span> 資料表示、處理及分析(D)</h4>
+<div class="outline-text-4" id="text-2-0-4">
+<ul class="org-ul">
+<li>資 D-V-1 巨量資料的概念。</li>
+<li>資 D-V-2 資料探勘與機器學習的基本概念。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9482461" class="outline-4">
+<h4 id="org9482461"><span class="section-number-4">2.0.5</span> 資訊科技應用(T)</h4>
+<div class="outline-text-4" id="text-2-0-5">
+<ul class="org-ul">
+<li>資 T-V-1 數位合作共創的概念與工具使用。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga67d8b5" class="outline-4">
+<h4 id="orga67d8b5"><span class="section-number-4">2.0.6</span> 資訊科技與人類社會(H)</h4>
+<div class="outline-text-4" id="text-2-0-6">
+<ul class="org-ul">
+<li>資 H-V-1 資訊科技的合理使用原則。</li>
+<li>資 H-V-2 個人資料的保護。</li>
+<li>資 H-V-3 資訊科技對人與社會的影響與衝擊。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7acd87d" class="outline-2">
+<h2 id="org7acd87d"><span class="section-number-2">3</span> 銜接</h2>
+<div class="outline-text-2" id="text-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">主題</th>
+<th scope="col" class="org-left">國中</th>
+<th scope="col" class="org-left">高中</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">演算法(A)</td>
+<td class="org-left">7:資 A-IV-1 演算法基本概念。</td>
+<td class="org-left">資 A-V-1 重要資料結構的概念與應用。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 A-IV-2 陣列資料結構的概念與應用。</td>
+<td class="org-left">資 A-V-2 重要演算法的概念與應用。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 A-IV-3 基本演算法的介紹。</td>
+<td class="org-left">資 A-V-3 演算法效能分析。</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">程式設計(P)</td>
+<td class="org-left">7:資 P-IV-1 程式語言基本概念、功能及應用。</td>
+<td class="org-left">資 P-V-1 文字式程式設計概念與實作。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">7:資 P-IV-2 結構化程式設計。</td>
+<td class="org-left">資 P-V-2 陣列資料結構的程式設計實作。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 P-IV-3 陣列程式設計實作。</td>
+<td class="org-left">資 P-V-3 重要演算法的程式設計實作。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 P-IV-4 模組化程式設計的概念。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 P-IV-5 模組化程式設計與問題解決實作。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">系統平台(S)</td>
+<td class="org-left">9:資 S-IV-1 系統平台重要發展與演進。</td>
+<td class="org-left">資 S-V-1 系統平台之運作原理。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 S-IV-2 系統平台之組成架構與基本運作原理。</td>
+<td class="org-left">資 S-V-2 系統平台之未來發展趨勢。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 S-IV-3 網路技術的概念與介紹。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 S-IV-4 網路服務的概念與介紹。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">資料表示、處理及分析(D)</td>
+<td class="org-left">9:資 D-IV-1 資料數位化之原理與方法。</td>
+<td class="org-left">資 D-V-1 巨量資料的概念。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 D-IV-2 數位資料的表示方法。</td>
+<td class="org-left">資 D-V-2 資料探勘與機器學習的基本概念。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 D-IV-3 資料處理概念與方法。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">資訊科技應用(T)</td>
+<td class="org-left">7:資 T-IV-1 資料處理應用專題。</td>
+<td class="org-left">資 T-V-1 數位合作共創的概念與工具使用。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 T-IV-2 資訊科技應用專題。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">資訊科技與人類社會(H)</td>
+<td class="org-left">7:資 H-IV-1 個人資料保護。</td>
+<td class="org-left">資 H-V-1 資訊科技的合理使用原則。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">7:資 H-IV-2 資訊科技合理使用原則。</td>
+<td class="org-left">資 H-V-2 個人資料的保護。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">7:資 H-IV-3 資訊安全。</td>
+<td class="org-left">資 H-V-3 資訊科技對人與社會的影響與衝擊。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 H-IV-4 媒體與資訊科技相關社會議題。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">8:資 H-IV-5 資訊倫理與法律。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 H-IV-4 媒體與資訊科技相關社會議題。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 H-IV-5 資訊倫理與法律。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 H-IV-6 資訊科技對人類生活之影響。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">9:資 H-IV-7 常見資訊產業的特性與種類。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org50e2550" class="outline-2">
+<h2 id="org50e2550"><span class="section-number-2">4</span> 課表</h2>
+<div class="outline-text-2" id="text-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">08:40-09:00</td>
+<td class="org-left">報到</td>
+</tr>
+
+<tr>
+<td class="org-right">09:00-10:30</td>
+<td class="org-left">資訊科技理念與素養導向課程設計</td>
+</tr>
+
+<tr>
+<td class="org-right">10:30-10:40</td>
+<td class="org-left">休息</td>
+</tr>
+
+<tr>
+<td class="org-right">10:40-11:30</td>
+<td class="org-left">資料處理專題課程分享與實作（一)</td>
+</tr>
+
+<tr>
+<td class="org-right">11:30-11:40</td>
+<td class="org-left">休息</td>
+</tr>
+
+<tr>
+<td class="org-right">11:40-12:30</td>
+<td class="org-left">資料處理專題課程分享與實作（二）</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">學習評量方式探討</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org5c1807b" class="outline-2">
+<h2 id="org5c1807b"><span class="section-number-2">5</span> web</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><a href="http://www.sggs.hc.edu.tw/sggsnew/premium/data/%E8%B7%A8%E9%A0%98%E5%9F%9F%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E8%A8%AD%E8%A8%88%E6%89%8B%E5%86%8A.pdf">跨領域素養導向課程設計</a></li>
+<li><a href="https://tech.nknu.edu.tw/UploadFile/OldData/news_file/mk_news_1071119%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%B7%A5%E4%BD%9C%E6%95%99%E5%AD%B8(%E9%9F%8B%E9%82%91%E8%80%81%E5%B8%AB%E4%BF%AE%E8%A8%82)_66730933.pdf">素養導向教學工作坊</a></li>
+<li><a href="http://ms2.ctjh.ntpc.edu.tw/~luti/110it_teaching_resource_20210803.html">108課綱科技領域資訊科技教材資源網2021第六版</a></li>
+<li><a href="http://ms2.ctjh.ntpc.edu.tw/~luti/110ai3.htm">108課綱科技領域資訊科技-程式設計應用專題(人工智慧素養)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2022-02-22 Tue 16:20</p>
+</div>
+</body>
+</html>

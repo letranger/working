@@ -16,7 +16,6 @@
 #+ATTR_ORG: :width 400
 #+ATTR_HTML: :width 500
 [[file:images/contents.png]]
-
 * 課綱要求
 ** 系統平台(S)
 - 資 S-V-1 系統平台之運作原理。
@@ -24,7 +23,6 @@
 ** 資料表示、處理及分析(D)
 - 資 D-V-1 巨量資料的概念。
 - 資 D-V-2 資料探勘與機器學習的基本概念。
-
 * 系統平台
 在這個3C用品泛濫的世界，人手一部手機，坐下來就面對電腦，然而我們所極度依賴或沉迷的其實不是3C用品本身，而是其上的應用軟體（App）。而軟體之所以能在手機或電腦上運作，其實是系統平台提供了執行環境，此處的系統平台包括電腦硬體（hardware）、也包括管理這些硬體資源的作業系統（Operating System, OS）。
 
@@ -219,7 +217,6 @@ Video: [[https://www.youtube.com/watch?v=bGk9W65vXNA][1946 ENIAC Computer Histor
 ** scheduling
 - [[https://ithelp.ithome.com.tw/articles/10202866][第三天 程序(process)概念--上 ]]
 - [[https://totoroliu.medium.com/program-process-thread-%E5%B7%AE%E7%95%B0-4a360c7345e5][Program/Process/Thread差異]]
-- [[經執行並且 load 到記憶體中的 Program ][OS - Ch3 行程 Process]]
 - [[https://chentsungyu.github.io/2020/03/21/OS/%5BOS%5D%20%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E7%AD%86%E8%A8%98-Process/][[OS] 作業系統筆記-Process]]
 - [[https://sls.weco.net/node/21323][03. 行程觀念 (Process Concept)]]
 - [[https://superuser.com/questions/1299746/whats-web-content-in-top-doing-taking-up-memory][What's "Web Content" in "top" doing taking up memory?]]
@@ -347,7 +344,7 @@ Video: [[https://www.youtube.com/watch?v=bGk9W65vXNA][1946 ENIAC Computer Histor
 - [[https://www.mirle.com.tw/solution/Detail/1557/%E7%B9%81%E9%AB%94/%E6%99%BA%E6%85%A7%E5%B7%A5%E5%BB%A0%E7%9A%84VR_AR_MR%E6%87%89%E7%94%A8][智慧工廠的VR_AR_MR應用]]
 - [[https://benevo.pixnet.net/blog/post/63012046-%E5%9B%9B%E7%A8%AE%E5%AF%A6%E5%A2%83---vr%E3%80%81ar%E3%80%81sr%E3%80%81mr][四種實境 - VR、AR、SR、MR @ ]]
 - [[https://unwire.pro/2021/12/19/metaverse/columnist/][從「元宇宙」興起看 XR 技術如何實現虛擬新世界]]
-- [[從「元宇宙」興起看 XR 技術如何實現虛擬新世界][xR、AR、VR 與 MR：在實境上的區別]]
+- [[https://www.edntaiwan.com/20210813nt71-xr-ar-vr-mr-difference/][xR、AR、VR 與 MR：在實境上的區別]]
 - [[https://udn.com/news/story/7240/5910163][元宇宙的基礎能源竟然是它？]]
 - [[https://news.cnyes.com/news/id/4723707][全面分析元宇宙特點、應用場景與價值潛力]]
 - [[https://tw.stock.yahoo.com/news/%E5%8D%80%E5%A1%8A%E9%8F%88%E3%80%81nft%E5%92%8C%E5%85%83%E5%AE%87%E5%AE%99%EF%BC%9A%E8%9E%8D%E5%90%88%E7%9A%84%E6%8A%80%E8%A1%93%E8%88%87%E8%99%9B%E7%84%A1%E7%B8%B9%E7%B7%B2%E7%9A%84%E6%9C%AA%E4%BE%86-030208751.html][區塊鏈、NFT和元宇宙：融合的技術與虛無縹緲的未來]]
@@ -356,8 +353,8 @@ Video: [[https://www.youtube.com/watch?v=bGk9W65vXNA][1946 ENIAC Computer Histor
 - [[https://blogs.nvidia.com.tw/2021/08/10/what-is-the-metaverse/][何謂元宇宙?]]
 - [[https://zh.wikipedia.org/wiki/%E5%85%83%E5%AE%87%E5%AE%99][元宇宙]]
 - [[https://www.bnext.com.tw/article/67217/hand-shaken-drink--year-end-bonus][大家一直在講「元宇宙」，那到底怎麼進去？門票哪裏買？]]
-
 * 資料表示、處理及分析
+** code for showing 不同編碼
 電腦的發明以來雖然解決了我們生活中大小事務，然而其本質工作始終只有一個：處理資料。而所謂資料處理（Data Processing）涉及兩個最基本的問題：
 - 如何儲存資料？
 - 如何對資料進行運算？
@@ -382,7 +379,6 @@ for x in cstring:
   : A 	big5: 000A	Unicode: 41   (00000000 01000001)
   : B 	big5: 000B	Unicode: 42   (00000000 01000010)
   : C 	big5: 000C	Unicode: 43   (00000000 01000011)
-
 ** 資料表示與資料處理
 - [[https://python.ez2learn.com/basic/unicode.html][瞭解Unicode¶]]
 ** 巨量資料
@@ -503,13 +499,180 @@ x- [[https://kknews.cc/zh-tw/tech/ekx9v54.html][解析｜大數據公司挖掘�
 - [[https://passintotheiris.blogspot.com/2019/12/ml-clustering_12.html][ML | 群集分析 Clustering 其二 ]]
 - [[https://www.geeksforgeeks.org/dbscan-clustering-in-ml-density-based-clustering/][DBSCAN Clustering in ML | Density based clustering]]
 - [[http://yltang.net/tutorial/dsml/14/][第 14 章    非監督式學習]]
+- [[https://www.ibm.com/tw-zh/cloud/learn/neural-networks][神經網路]]
+- [[https://www.stockfeel.com.tw/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E8%A1%B0%E9%A0%B9%E8%88%88%E7%9B%9B%EF%BC%9A%E5%BE%9E%E9%A1%9E%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF%E5%88%B0%E6%B7%BA%E5%B1%A4%E5%AD%B8%E7%BF%92/][機器學習的衰頹興盛：從類神經網路到淺層學習]]
+- [[https://www.inside.com.tw/feature/ai/9854-ai-history][人工智慧：如何以電腦解決問題]]
+- [[https://www.inside.com.tw/feature/ai/9854-ai-history][第一次人工智慧泡沫後，研究領域轉為「機器學習」]]: 非常清楚
+- [[https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/][機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理]]
+- [[https://group.dailyview.tw/article/detail/434][再過幾年就不需要人類了？AI人工智慧發展比你想像中還廣！]]
+- 
+- [[https://pearl.archives.gov.tw/UserFiles/Publish/FCKImages/File/study/05.qxd.pdf][資料探勘的技術與應用]]
 *** 監督式學習:最短距離法
+**** #0
 #+begin_src python -r -n :results output :exports both
 import numpy as np
 import matplotlib.pyplot as plt
 
-cats = np.array([[2, 6], [3, 4], [3, 8], [4, 7]])
-dogs = np.array([[6, 3], [6, 6], [9, 4], [8, 5]])
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
+cc = cats.mean(axis=0).transpose()
+dc = dogs.mean(axis=0).transpose()
+nn = np.array([[5],[6]])
+print(cc)
+print(dc)
+cats = cats.transpose()
+dogs = dogs.transpose()
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+
+size = 300
+plt.xlim(0, 10)
+plt.ylim(0, 10)
+plt.xticks(np.arange(0, 11, 1))
+plt.xlabel('特徵值1')
+plt.ylabel('特徵值2')
+plt.yticks(np.arange(0, 11, 1))
+
+#plt.scatter(cats[0], cats[1],
+#            color='green', marker='o', s=size, zorder=2)
+#plt.scatter(dogs[0], dogs[1],
+#            color='orange', marker='s', s=size, zorder=2)
+#plt.scatter(cc[0], cc[1],
+#            color='green', marker='*', s=size, zorder=2)
+#plt.scatter(dc[0], dc[1],
+#            color='orange', marker='*', s=size, zorder=2)
+#plt.scatter(nn[0], nn[1],
+#            color='red', marker='^', s=size, zorder=2)
+# 新圖與貓
+#lx1 = [cc[0], nn[0]]
+#ly1 = [cc[1], nn[1]]
+#plt.plot(lx1, ly1, '--', color='green')
+# 新圖與狗
+#lx1 = [dc[0], nn[0]]
+#ly1 = [dc[1], nn[1]]
+#plt.plot(lx1, ly1, '--', color='orange')
+#for x,y  in zip(cats[0], cats[1]):
+#    label = "貓({0},{1})".format(x,y)
+#    plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+#for x,y  in zip(dogs[0], dogs[1]):
+#    label = "狗({0},{1})".format(x,y)
+#    plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+##狗的中心點
+#x, y = dc[0], dc[1]
+#label = "中心點({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(30,10), ha='center')
+##貓的中心點
+#x, y = cc[0], cc[1]
+#label = "中心點({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
+##新圖點
+#x, y = nn[0][0], nn[1][0]
+#print(x, y)
+#label = "？({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+#print(np.sqrt(np.square(nn[0][0]-cc[0])+np.square(nn[1][0]-cc[1])))
+#print(np.sqrt(np.square(nn[0][0]-dc[0])+np.square(nn[1][0]-dc[1])))
+
+plt.grid()
+plt.savefig('images/empty.png', dpi=300)
+#+end_src
+#+RESULTS:
+: [2.5 7. ]
+: [7.5  5.25]
+#+CAPTION: Caption
+#+LABEL:fig:EmptyGrid
+#+name: fig:EmptyGrid
+#+ATTR_LATEX: :width 500
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 500
+[[file:images/empty.png]]
+**** #1
+#+begin_src python -r -n :results output :exports both
+import numpy as np
+import matplotlib.pyplot as plt
+
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
+cc = cats.mean(axis=0).transpose()
+dc = dogs.mean(axis=0).transpose()
+nn = np.array([[5],[6]])
+print(cc)
+print(dc)
+cats = cats.transpose()
+dogs = dogs.transpose()
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+
+size = 300
+plt.xlim(0, 10)
+plt.ylim(0, 10)
+plt.xticks(np.arange(0, 11, 1))
+plt.xlabel('特徵值1')
+plt.ylabel('特徵值2')
+plt.yticks(np.arange(0, 11, 1))
+
+plt.scatter(cats[0], cats[1],
+            color='green', marker='o', s=size, zorder=2)
+plt.scatter(dogs[0], dogs[1],
+            color='orange', marker='s', s=size, zorder=2)
+#plt.scatter(cc[0], cc[1],
+#            color='green', marker='*', s=size, zorder=2)
+#plt.scatter(dc[0], dc[1],
+#            color='orange', marker='*', s=size, zorder=2)
+#plt.scatter(nn[0], nn[1],
+#            color='red', marker='^', s=size, zorder=2)
+# 新圖與貓
+#lx1 = [cc[0], nn[0]]
+#ly1 = [cc[1], nn[1]]
+#plt.plot(lx1, ly1, '--', color='green')
+# 新圖與狗
+#lx1 = [dc[0], nn[0]]
+#ly1 = [dc[1], nn[1]]
+#plt.plot(lx1, ly1, '--', color='orange')
+for x,y  in zip(cats[0], cats[1]):
+    label = "貓({0},{1})".format(x,y)
+    plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+for x,y  in zip(dogs[0], dogs[1]):
+    label = "狗({0},{1})".format(x,y)
+    plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+##狗的中心點
+#x, y = dc[0], dc[1]
+#label = "中心點({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(30,10), ha='center')
+##貓的中心點
+#x, y = cc[0], cc[1]
+#label = "中心點({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
+##新圖點
+#x, y = nn[0][0], nn[1][0]
+#print(x, y)
+#label = "？({0},{1})".format(x, y)
+#plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
+print(np.sqrt(np.square(nn[0][0]-cc[0])+np.square(nn[1][0]-cc[1])))
+print(np.sqrt(np.square(nn[0][0]-dc[0])+np.square(nn[1][0]-dc[1])))
+
+plt.grid()
+plt.savefig('images/sd0.png', dpi=300)
+#+end_src
+#+RESULTS:
+: [2.5 7. ]
+: [7.5  5.25]
+: 2.692582403567252
+: 2.6100766272276377
+#+CAPTION: Caption
+#+LABEL:fig:InitialCondition
+#+name: fig:InitialCondition
+#+ATTR_LATEX: :width 500
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 500
+[[file:images/sd0.png]]
+**** #2
+#+begin_src python -r -n :results output :exports both
+import numpy as np
+import matplotlib.pyplot as plt
+
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
 cc = cats.mean(axis=0).transpose()
 dc = dogs.mean(axis=0).transpose()
 nn = np.array([[5],[6]])
@@ -555,32 +718,31 @@ for x,y  in zip(dogs[0], dogs[1]):
 #狗的中心點
 x, y = dc[0], dc[1]
 label = "中心點({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(30,10), ha='center')
 #貓的中心點
 x, y = cc[0], cc[1]
 label = "中心點({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
 #新圖點
 x, y = nn[0][0], nn[1][0]
 print(x, y)
 label = "？({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha='center')
 print(np.sqrt(np.square(nn[0][0]-cc[0])+np.square(nn[1][0]-cc[1])))
 print(np.sqrt(np.square(nn[0][0]-dc[0])+np.square(nn[1][0]-dc[1])))
 
 plt.grid()
 plt.savefig('images/sd.png', dpi=300)
 #+end_src
-
 #+RESULTS:
-: [3.   6.25]
-: [7.25 4.5 ]
+: [2.5 7. ]
+: [7.5  5.25]
 : 5 6
-: 2.0155644370746373
-: 2.704163456597992
+: 2.692582403567252
+: 2.6100766272276377
 #+CAPTION: Caption
-#+LABEL:fig:Labl
-#+name: fig:Name
+#+LABEL:fig:SecondStep
+#+name: fig:SecondStep
 #+ATTR_LATEX: :width 500
 #+ATTR_ORG: :width 500
 #+ATTR_HTML: :width 500
@@ -591,8 +753,8 @@ plt.savefig('images/sd.png', dpi=300)
 import numpy as np
 import matplotlib.pyplot as plt
 
-cats = np.array([[2, 6], [3, 4], [3, 8], [4, 7]])
-dogs = np.array([[6, 3], [6, 6], [9, 4], [8, 5]])
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
 cc = cats.mean(axis=0).transpose()
 dc = dogs.mean(axis=0).transpose()
 nn = np.array([[5],[6]])
@@ -656,8 +818,8 @@ plt.savefig('images/sd1.png', dpi=300)
 #+end_src
 
 #+RESULTS:
-: [3.   6.25]
-: [7.25 4.5 ]
+: [2.5 7. ]
+: [7.5  5.25]
 #+CAPTION: Caption
 #+LABEL:fig:Labl
 #+name: fig:Name
@@ -665,15 +827,15 @@ plt.savefig('images/sd1.png', dpi=300)
 #+ATTR_ORG: :width 500
 #+ATTR_HTML: :width 500
 [[file:images/sd1.png]]
-**** 2.
+**** 2. 先畫中心點
 #+begin_src python -r -n :results output :exports both
 import numpy as np
 import matplotlib.pyplot as plt
 
-cats = np.array([[2, 6], [3, 4], [3, 8], [4, 7]])
-dogs = np.array([[6, 3], [6, 6], [9, 4], [8, 5]])
-c1 = np.array([[3],[3]])
-c2 = np.array([[8],[8]])
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
+c1 = np.array([[5],[5]])
+c2 = np.array([[6],[9]])
 #nn = np.array([[5],[6]])
 print(c1)
 print(c2)
@@ -717,11 +879,11 @@ for x,y  in zip(dogs[0], dogs[1]):
 ##中心點1
 x, y = c1[0][0], c1[1][0]
 label = "中心點1({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
 ##中心點2
 x, y = c2[0][0], c2[1][0]
 label = "中心點2({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
 #新圖點
 #x, y = nn[0][0], nn[1][0]
 #print(x, y)
@@ -735,10 +897,10 @@ plt.savefig('images/sd2.png', dpi=300)
 #+end_src
 
 #+RESULTS:
-: [[3]
-:  [3]]
-: [[8]
-:  [8]]
+: [[5]
+:  [5]]
+: [[6]
+:  [9]]
 #+CAPTION: Caption
 #+LABEL:fig:Labl
 #+name: fig:Name
@@ -751,10 +913,11 @@ plt.savefig('images/sd2.png', dpi=300)
 import numpy as np
 import matplotlib.pyplot as plt
 
-cats = np.array([[2, 6], [3, 4], [3, 8], [4, 7]])
-dogs = np.array([[6, 3], [6, 6], [8, 5], [9, 4]])
-c1 = np.array([[3],[3]])
-c2 = np.array([[8],[8]])
+cats = np.array([[1, 9], [2, 6], [3, 5], [4, 8]])
+dogs = np.array([[6, 3], [7, 6], [8, 8], [9, 4]])
+c1 = np.array([[5],[6]])
+c2 = np.array([[6],[9]])
+
 #nn = np.array([[5],[6]])
 print(c1)
 print(c2)
@@ -787,13 +950,14 @@ c1xs, c1ys = np.repeat(c1[0],4), np.repeat(c1[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, cats[0], cats[1]):
     print(cx, cy, x, y)
     dist1.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#88cf9a')
+    plt.plot([cx, x], [cy, y], '--', color='#dd99ff')
 dist2 = []
 c1xs, c1ys = np.repeat(c1[0],4), np.repeat(c1[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, dogs[0], dogs[1]):
     print(cx, cy, x, y)
     dist2.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#88cf9a')
+    plt.plot([cx, x], [cy, y], '--', color='#dd99ff')
+print('計算各點與中心點1的歐幾里德')
 print('--dist1--')
 for item in dist1:
     print("{0:.2f}".format(item))
@@ -807,13 +971,14 @@ c1xs, c1ys = np.repeat(c2[0],4), np.repeat(c2[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, cats[0], cats[1]):
     print(cx, cy, x, y)
     dist3.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
+    plt.plot([cx, x], [cy, y], '--', color='#dd99ff')
 dist4 = []
 c1xs, c1ys = np.repeat(c2[0],4), np.repeat(c2[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, dogs[0], dogs[1]):
     print(cx, cy, x, y)
     dist4.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
+    plt.plot([cx, x], [cy, y], '--', color='#dd99ff')
+print('計算各點與中心點2的歐幾里德')
 print('--dist3--')
 for item in dist3:
     print("{0:.2f}".format(item))
@@ -848,7 +1013,7 @@ plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='cent
 ##中心點2
 x, y = c2[0][0], c2[1][0]
 label = "中心點2({0},{1})".format(x, y)
-plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,-20), ha='center')
+plt.annotate(label, (x,y), textcoords="offset points", xytext=(10,10), ha='center')
 #新圖點
 #x, y = nn[0][0], nn[1][0]
 #print(x, y)
@@ -862,46 +1027,48 @@ plt.savefig('images/sd3.png', dpi=300)
 
 #+RESULTS:
 #+begin_example
-[[3]
- [3]]
-[[8]
- [8]]
-3 3 2 6
-3 3 3 4
-3 3 3 8
-3 3 4 7
-3 3 6 3
-3 3 6 6
-3 3 8 5
-3 3 9 4
+[[5]
+ [6]]
+[[6]
+ [9]]
+5 6 1 9
+5 6 2 6
+5 6 3 5
+5 6 4 8
+5 6 6 3
+5 6 7 6
+5 6 8 8
+5 6 9 4
+計算各點與中心點1的歐幾里德
 --dist1--
-3.16
-1.00
 5.00
-4.12
+3.00
+2.24
+2.24
 --dist2-----
-3.00
-4.24
-5.39
-6.08
-8 8 2 6
-8 8 3 4
-8 8 3 8
-8 8 4 7
-8 8 6 3
-8 8 6 6
-8 8 8 5
-8 8 9 4
+3.16
+2.00
+3.61
+4.47
+6 9 1 9
+6 9 2 6
+6 9 3 5
+6 9 4 8
+6 9 6 3
+6 9 7 6
+6 9 8 8
+6 9 9 4
+計算各點與中心點2的歐幾里德
 --dist3--
-6.32
-6.40
 5.00
-4.12
+5.00
+5.00
+2.24
 --dist4-----
-5.39
-2.83
-3.00
-4.12
+6.00
+3.16
+2.24
+5.83
 #+end_example
 #+CAPTION: Caption
 #+LABEL:fig:Labl
@@ -915,8 +1082,8 @@ plt.savefig('images/sd3.png', dpi=300)
 import numpy as np
 import matplotlib.pyplot as plt
 
-cats = np.array([[2, 6], [3, 4], [3, 8], [6, 3]])
-dogs = np.array([[4, 7], [6, 6], [8, 5], [9, 4]])
+cats = np.array([[3, 5], [2, 6], [6, 3], [7, 6]])
+dogs = np.array([[1, 9], [4, 8], [8, 8], [9, 4]])
 c1 = cats.mean(axis=0).transpose()
 c2 = dogs.mean(axis=0).transpose()
 #nn = np.array([[5],[6]])
@@ -971,13 +1138,13 @@ c1xs, c1ys = np.repeat(c2[0],4), np.repeat(c2[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, cats[0], cats[1]):
     print(cx, cy, x, y)
     dist3.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
+#    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
 dist4 = []
 c1xs, c1ys = np.repeat(c2[0],4), np.repeat(c2[1],4)
 for cx, cy, x, y in zip(c1xs, c1ys, dogs[0], dogs[1]):
     print(cx, cy, x, y)
     dist4.append(np.sqrt(np.square(cx-x)+np.square(cy-y)))
-    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
+#    plt.plot([cx, x], [cy, y], '--', color='#e8c495')
 print('--dist3--')
 for item in dist3:
     print("{0:.2f}".format(item))
@@ -1029,45 +1196,45 @@ plt.savefig('images/sd4.png', dpi=300)
 
 #+RESULTS:
 #+begin_example
-3.5 5.25 2 6
-3.5 5.25 3 4
-3.5 5.25 3 8
-3.5 5.25 6 3
-3.5 5.25 4 7
-3.5 5.25 6 6
-3.5 5.25 8 5
-3.5 5.25 9 4
+4.5 5.0 3 5
+4.5 5.0 2 6
+4.5 5.0 6 3
+4.5 5.0 7 6
+4.5 5.0 1 9
+4.5 5.0 4 8
+4.5 5.0 8 8
+4.5 5.0 9 4
 --dist1--
-1.68
-1.35
-2.80
-3.36
+1.50
+2.69
+2.50
+2.69
 --dist2-----
-1.82
-2.61
-4.51
-5.64
-6.75 5.5 2 6
-6.75 5.5 3 4
-6.75 5.5 3 8
-6.75 5.5 6 3
-6.75 5.5 4 7
-6.75 5.5 6 6
-6.75 5.5 8 5
-6.75 5.5 9 4
+5.32
+3.04
+4.61
+4.61
+5.5 7.25 3 5
+5.5 7.25 2 6
+5.5 7.25 6 3
+5.5 7.25 7 6
+5.5 7.25 1 9
+5.5 7.25 4 8
+5.5 7.25 8 8
+5.5 7.25 9 4
 --dist3--
-4.78
-4.04
-4.51
-2.61
+3.36
+3.72
+4.28
+1.95
 --dist4-----
-3.13
-0.90
-1.35
-2.70
+4.83
+1.68
+2.61
+4.78
 test------
 (2,)
-[3.5  5.25]
+[4.5 5. ]
 #+end_example
 #+CAPTION: Caption
 #+LABEL:fig:Labl
@@ -1087,15 +1254,185 @@ test------
 - [[https://www.newton.com.tw/wiki/%E7%B5%B1%E8%A8%88%E5%AD%B8][統計學(一級學科)]]
 - [[https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98#%E6%AD%B7%E5%8F%B2][資料探勘]]
 - [[https://digitaltribune.com/checkers-at-the-orgins-of-ai-and-machine-learning/][Checkers at the origins of AI and Machine Learning]]
-- [[https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/][機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理]]
--
--
--
-- 
+- [[https://www.netadmin.com.tw/netadmin/zh-tw/technology/018708494BDF4224B26C1B1589AB7327][活用大數據資料探勘　挖掘潛藏關鍵情資]]
+- [[http://csyue.nccu.edu.tw/ch/Data%20Mining%28200910%29.pdf][資料探勘的發展與挑戰]]
+- [[https://blog.tibame.com/?p=17911][【AI60問】Q20資料探勘6大主要功能與應用？]]
+- [[https://huasadata.com/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%B3%87%E6%96%99%E6%8E%A2%E5%8B%98data-mining%EF%BC%9F/][什麼是資料探勘(Data Mining)？]]
+- [[https://www.itread01.com/content/1549712347.html][五款開源的資料探勘軟體]]
+- [[https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/564855/][資料探勘函式之迴歸（regression）]]
+- [[https://ithelp.ithome.com.tw/articles/10200561?sc=iThelpR][資料分析(Data Analysis) -2.分群(分類) ]]
+- [[https://ithelp.ithome.com.tw/articles/10200795][資料分析(Data Analysis) -3.迴歸 ]]
+- [[https://www.itread01.com/content/1541522170.html][資料探勘——時間序列分析]]
+- [[https://ithelp.ithome.com.tw/articles/10233366][時間序列簡介]]
+- [[https://ithelp.ithome.com.tw/articles/10187244][資料探勘演算法 - 關聯規則]]
+- [[https://www.bnext.com.tw/article/42423/a-beginners-learning-journey-to-data-science][一個門外漢的資料科學學習之旅]]
+- [[https://meet.bnext.com.tw/blog/view/23712?][大數據中異常值檢測的重要性 The Importance of Outlier Detection in Big Data]]
+- [[https://zh.wikipedia.org/wiki/%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B][異常檢測]]
+- [[https://www.itread01.com/content/1546156825.html][異常點檢測演算法分析與選擇]]
+- [[https://www.bnext.com.tw/article/67662/ai-emotion][一個門外漢的資料科學學習之]]
+- [[https://www.itread01.com/content/1546957458.html][推薦：六款強大的開源資料探勘工具]]
+- [[https://www.itread01.com/content/1545266191.html][資料探勘產品 IBM SPSS Modeler 新手使用入門]]
+- [[https://franky07724-57962.medium.com/orange-data-mining-%E8%BB%9F%E9%AB%94%E7%B3%BB%E7%B5%B1%E7%B0%A1%E4%BB%8B%E5%8F%8A%E7%94%9F%E9%86%AB%E6%87%89%E7%94%A8%E6%94%AF%E6%8F%B4-%E6%BC%94%E8%AC%9B%E8%B3%87%E6%96%99%E5%8F%8A%E5%BF%83%E5%BE%97%E5%B0%8F%E7%B5%90-3a2d3d5f21d3][Orange Data Mining 軟體系統簡介及生醫應用支援 (演講資料及心得小結)]]
+- [[https://blog.pulipuli.info/2019/10/weka-practice-data-mining-with-weka.html][Weka簡介與實作：資料探勘的分群、異常偵測、關聯規則探勘、分類 ]]
+- [[https://blog.pulipuli.info/2016/12/wekak-meanssimplekmeans-clustering-with.html][Weka的K Means分群演算法使用教學：SimpleKMeans / Clustering with Weka: SimpleKMeans ]]
+- [[https://ithelp.ithome.com.tw/articles/10187371][資料探勘演算法 - 分類法 ]]
+- [[https://itw01.com/GZP8EWB.html][分析大資料最需要的Top 10資料探勘工具]]
+- [[https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/463552/][幾款開源的資料探勘工具]]
+- [[https://www.itread01.com/content/1549712347.html][五款開源的資料探勘軟體]]
+- [[https://www.trendmicro.com/zh_tw/what-is/machine-learning/data-mining.html][何謂資料探勘]]
+- [[https://www.itread01.com/content/1546957458.html][推薦：六款強大的開源資料探勘工具]]
+- [[https://www.daytime.cool/tech/4278345.html][常見的21種資料探勘工具]]
+- [[https://www.gushiciku.cn/pl/27QL/zh-tw][19款超好用的免費資料探勘工具大彙總！ ]]
+- [[https://itw01.com/YCHB2EM.html][你，值得擁有的那些資料探勘工具]]
+- [[https://kknews.cc/zh-tw/tech/en6n8vn.html][分析大數據最需要的Top 10數據挖掘工具]]
+- [[https://www.ecloudture.com/amazon-personalize/][Amazon Personalize 利用機器學習建立個人化推薦系統]]
+- [[https://awoo.ai/zh-hant/blog/recommender/][揭開『猜你喜歡』的秘密，推薦系統如何向客戶建議商品？]]
+- [[https://transbiz.com.tw/amazon-big-data/][在你下單前就出貨！Amazon用大數據鞏固電商龍頭]]
+- [[http://archive.ics.uci.edu/ml/datasets.php][UCI Machine Learning Repository]]
+* 4/28 領域素養研習
+** 國中課綱
+*** 演算法(A)
+- 7:資 A-IV-1 演算法基本概念。
+- 8:資 A-IV-2 陣列資料結構的概念與應用。
+- 8:資 A-IV-3 基本演算法的介紹。
+*** 程式設計(P)
+- 7:資 P-IV-1 程式語言基本概念、功能及應用。
+- 7:資 P-IV-2 結構化程式設計。
+- 8:資 P-IV-3 陣列程式設計實作。
+- 8:資 P-IV-4 模組化程式設計的概念。
+- 8:資 P-IV-5 模組化程式設計與問題解決實作。
+*** 系統平台(S)
+- 9:資 S-IV-1 系統平台重要發展與演進。
+- 9:資 S-IV-2 系統平台之組成架構與基本運作原理。
+- 9:資 S-IV-3 網路技術的概念與介紹。
+- 9:資 S-IV-4 網路服務的概念與介紹。
+*** 資料表示、處理及分析(D)
+- 9:資 D-IV-1 資料數位化之原理與方法。
+- 9:資 D-IV-2 數位資料的表示方法。
+- 9:資 D-IV-3 資料處理概念與方法。
+*** 資訊科技應用(T)
+- 7:資 T-IV-1 資料處理應用專題。
+- 9:資 T-IV-2 資訊科技應用專題。
+*** 資訊科技與人類社會(H)
+- 7:資 H-IV-1 個人資料保護。
+- 7:資 H-IV-2 資訊科技合理使用原則。
+- 7:資 H-IV-3 資訊安全。
+- 8:資 H-IV-4 媒體與資訊科技相關社會議題。
+- 8:資 H-IV-5 資訊倫理與法律。
+- 9:資 H-IV-4 媒體與資訊科技相關社會議題。
+- 9:資 H-IV-5 資訊倫理與法律。
+- 9:資 H-IV-6 資訊科技對人類生活之影響。
+- 9:資 H-IV-7 常見資訊產業的特性與種類。
+** 高中課綱
+*** 演算法(A)
+- 資 A-V-1 重要資料結構的概念與應用。
+- 資 A-V-2 重要演算法的概念與應用。
+- 資 A-V-3 演算法效能分析。
+*** 程式設計(P)
+- 資 P-V-1 文字式程式設計概念與實作。
+- 資 P-V-2 陣列資料結構的程式設計實作。
+- 資 P-V-3 重要演算法的程式設計實作。
+*** 系統平台(S)
+- 資 S-V-1 系統平台之運作原理。
+- 資 S-V-2 系統平台之未來發展趨勢。
+*** 資料表示、處理及分析(D)
+- 資 D-V-1 巨量資料的概念。
+- 資 D-V-2 資料探勘與機器學習的基本概念。
+*** 資訊科技應用(T)
+- 資 T-V-1 數位合作共創的概念與工具使用。
+*** 資訊科技與人類社會(H)
+- 資 H-V-1 資訊科技的合理使用原則。
+- 資 H-V-2 個人資料的保護。
+- 資 H-V-3 資訊科技對人與社會的影響與衝擊。
+** 銜接
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 主題                    | 國中                                           | 高中                                      |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 演算法(A)               | 7:資 A-IV-1 演算法基本概念。                   | 資 A-V-1 重要資料結構的概念與應用。       |
+|                         | 8:資 A-IV-2 陣列資料結構的概念與應用。         | 資 A-V-2 重要演算法的概念與應用。         |
+|                         | 8:資 A-IV-3 基本演算法的介紹。                 | 資 A-V-3 演算法效能分析。                 |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 程式設計(P)             | 7:資 P-IV-1 程式語言基本概念、功能及應用。     | 資 P-V-1 文字式程式設計概念與實作。       |
+|                         | 7:資 P-IV-2 結構化程式設計。                   | 資 P-V-2 陣列資料結構的程式設計實作。     |
+|                         | 8:資 P-IV-3 陣列程式設計實作。                 | 資 P-V-3 重要演算法的程式設計實作。       |
+|                         | 8:資 P-IV-4 模組化程式設計的概念。             |                                           |
+|                         | 8:資 P-IV-5 模組化程式設計與問題解決實作。     |                                           |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 系統平台(S)             | 9:資 S-IV-1 系統平台重要發展與演進。           | 資 S-V-1 系統平台之運作原理。             |
+|                         | 9:資 S-IV-2 系統平台之組成架構與基本運作原理。 | 資 S-V-2 系統平台之未來發展趨勢。         |
+|                         | 9:資 S-IV-3 網路技術的概念與介紹。             |                                           |
+|                         | 9:資 S-IV-4 網路服務的概念與介紹。             |                                           |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 資料表示、處理及分析(D) | 9:資 D-IV-1 資料數位化之原理與方法。           | 資 D-V-1 巨量資料的概念。                 |
+|                         | 9:資 D-IV-2 數位資料的表示方法。               | 資 D-V-2 資料探勘與機器學習的基本概念。   |
+|                         | 9:資 D-IV-3 資料處理概念與方法。               |                                           |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 資訊科技應用(T)         | 7:資 T-IV-1 資料處理應用專題。                 | 資 T-V-1 數位合作共創的概念與工具使用。   |
+|                         | 9:資 T-IV-2 資訊科技應用專題。                 |                                           |
+|-------------------------+------------------------------------------------+-------------------------------------------|
+| 資訊科技與人類社會(H)   | 7:資 H-IV-1 個人資料保護。                     | 資 H-V-1 資訊科技的合理使用原則。         |
+|                         | 7:資 H-IV-2 資訊科技合理使用原則。             | 資 H-V-2 個人資料的保護。                 |
+|                         | 7:資 H-IV-3 資訊安全。                         | 資 H-V-3 資訊科技對人與社會的影響與衝擊。 |
+|                         | 8:資 H-IV-4 媒體與資訊科技相關社會議題。       |                                           |
+|                         | 8:資 H-IV-5 資訊倫理與法律。                   |                                           |
+|                         | 9:資 H-IV-4 媒體與資訊科技相關社會議題。       |                                           |
+|                         | 9:資 H-IV-5 資訊倫理與法律。                   |                                           |
+|                         | 9:資 H-IV-6 資訊科技對人類生活之影響。         |                                           |
+|                         | 9:資 H-IV-7 常見資訊產業的特性與種類。         |                                           |
+|-------------------------+------------------------------------------------+-------------------------------------------|
 
+
+** 課表
+|-------------+----------------------------------|
+| 08:40-09:00 | 報到                             |
+| 09:00-10:30 | 資訊科技理念與素養導向課程設計   |
+| 10:30-10:40 | 休息                             |
+| 10:40-11:30 | 資料處理專題課程分享與實作（一)  |
+| 11:30-11:40 | 休息                             |
+| 11:40-12:30 | 資料處理專題課程分享與實作（二） |
+|             | 學習評量方式探討                 |
+|-------------+----------------------------------|
+** web
+- [[http://www.sggs.hc.edu.tw/sggsnew/premium/data/%E8%B7%A8%E9%A0%98%E5%9F%9F%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E8%A8%AD%E8%A8%88%E6%89%8B%E5%86%8A.pdf][跨領域素養導向課程設計]]
+- [[https://tech.nknu.edu.tw/UploadFile/OldData/news_file/mk_news_1071119%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%B7%A5%E4%BD%9C%E6%95%99%E5%AD%B8(%E9%9F%8B%E9%82%91%E8%80%81%E5%B8%AB%E4%BF%AE%E8%A8%82)_66730933.pdf][素養導向教學工作坊]]
+- [[http://ms2.ctjh.ntpc.edu.tw/~luti/110it_teaching_resource_20210803.html][108課綱科技領域資訊科技教材資源網2021第六版]]
+- [[http://ms2.ctjh.ntpc.edu.tw/~luti/110ai3.htm][108課綱科技領域資訊科技-程式設計應用專題(人工智慧素養)]]
+** Hadoop
+- [[https://medium.com/@sleo1104/hadoop-3-2-0-%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8%E8%88%87%E4%BB%8B%E7%B4%B9-22aa183be33a][Hadoop 3.2.0 安裝教學與介紹]]
+* 高雄雙語跨域
+** 課表
+|-------------+------------------------------------|
+| 08:40-09:00 | 報到                               |
+| 09:00-10:00 | 資訊科技、雙語教學、跨域教學面面觀 |
+| 10:00-10:10 | 休息                               |
+| 10:10-11:10 | 資訊科技融入雙語/跨域教學課程設計  |
+| 11:10-11:20 | 休息                               |
+| 11:20-12:30 | 資訊科技輔助雙語/跨域教學評量      |
+|-------------+------------------------------------|
+- 切換網站、軟體、手機系統的語系來做為學習手段
+- 學習成績計算，理解各種專業英文的使用: sum, mean, ....
+- 評量: 以英文介面的軟體完成特定工作
+** web
+- [[https://www.pagamo.org/#courses][pagamo]]
+- [[https://adl.edu.tw/HomePage/webinfo/?id=4][因材網]]
+- [[https://www.junyiacademy.org/computing/computer-science][均一網]]
+- [[https://digi.ey.gov.tw/Page/1538F8CF7474AB4E/e0fc128b-b033-4251-ba73-8f246d9af856][提升學子雙語學習能力 微軟與高雄共推AI雙語種子]]
+- [[https://bilingual.tyc.edu.tw/web/school.aspx][平鎮區義興國小]]
+- [[https://wpb.cycu.edu.tw/edu/wp-content/uploads/2020%E9%9B%99%E8%AA%9E%E8%88%87%E8%B3%87%E8%A8%8A%E8%9E%8D%E5%85%A5%E6%9C%83%E8%AD%B0%E6%89%8B%E5%86%8A.pdf][中原大學「2020 雙語與資訊融入教學研討會」議程]]
+- [[https://www.sges.tn.edu.tw/modules/tadnews/index.php?nsn=1616][音樂雙語教學的跨域協作 ]]
+- [[https://clseap.ccu.edu.tw/documents/2_%E6%8E%A8%E5%8B%95%E9%9B%99%E8%AA%9E%E6%95%99%E8%82%B2%E5%AD%B8%E6%A0%A1%E8%A1%8C%E6%94%BF%E7%AD%96%E7%95%A5_%E5%BE%90%E9%9B%85%E9%90%98.pdf][推動雙語教育學校行政策略]]
+
+** 四個小時:
+- 科技力支持雙語教學與跨域教學應用=>111學年度的計畫，輔導團給的keywords是雙語和跨域，所以看看有什麼簡便好用的工具支援科技領域做雙語教學和跨域教學的應用....
+- 下學年111精進計畫主題:科技力支持雙語教學與跨域教學應用， 拜託你幫我想課表
+- 學習某app，切換英文介面/中文介面
+** keyword:
+- 資料處理專題:
+  統計
+  雙語
+  跨域
 * 測驗
 - [[https://ctld.nuk.edu.tw/p/405-1007-4836,c847.php?Lang=zh-tw][資訊能力檢定題庫]]
-  
 * Footnotes
 
 [fn:3][[https://pansci.asia/archives/194219][現代電腦從此展開——馮紐曼與馮紐曼架構 │《電腦簡史》數位時代（十一）]]

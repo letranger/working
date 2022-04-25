@@ -1,0 +1,27 @@
+#+TITLE:高雄輔導團領域素養研習
+
+#+TAGS: 研習, 高雄， 素養導向
+#+startup: shrink;
+#+INCLUDE: ../themes/simple_white/simple_white.theme
+#+OPTIONS: num:3
+#+OPTIONS: ^:nil
+#+OPTIONS: toc:nil
+#+LATEX:\newpage
+
+* 課前問卷
+- [[https://tiny.one/sayhi-1][請問您為何來參加今天的研習?]]
+- [[https://tiny.one/sayhi-2][請問您對於108課綱相關概念的理解程度為何]]
+
+* 相關文件
+- [[https://tiny.one/12main][十二年國民基本教育課程綱要(總綱)]]
+- [[https://tiny.one/techinfo][十二年國民基本教育課程綱要[科技領域](領綱)]]
+- [[https://tiny.one/108ask][十二年國教課綱國民中學標準本位評量示例-科技領域-資訊科技]]
+- [[https://tiny.one/12cmp][十二年國民基本教育領域課程綱要核心素養發展手冊]]
+- [[https://tiny.one/108ask][素養導向「紙筆測驗」要素與範例試題]]
+
+* 相關網站
+- [[https://classic.csunplugged.org/documents/books/chinese/CSUnplugged-2016-03-08.pdf][不插電的資訊科學]]
+- [[https://www.facebook.com/ComputerScienceTT/][偷插電的資訊科學]]
+- [[https://ct.fg.tp.edu.tw/][Computational Thinking – in Computer Science Course Design]]
+- [[https://sbasa.rcpet.edu.tw/SBASA/HomePage/index.aspx][SBASA十二年國教課綱國民中小學素養導向標準本位評量計畫]]
+- [[http://tech-course.ceag.kh.edu.tw/index.html#next][科技課程網站]]

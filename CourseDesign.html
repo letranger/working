@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-22 Tue 16:20 -->
+<!-- 2022-04-04 Mon 16:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>高雄輔導團領域素養研習</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Yung-Chin Yen" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,82 +192,336 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.cacheClassElem = elem.className;
-         elem.cacheClassTarget = target.className;
-         target.className = "code-highlighted";
-         elem.className   = "code-highlighted";
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(elem.cacheClassElem)
-         elem.className = elem.cacheClassElem;
-       if(elem.cacheClassTarget)
-         target.className = elem.cacheClassTarget;
-     }
-    /*]]>*///-->
-// @license-end
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">高雄輔導團領域素養研習</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4bca23a">1. 國中課綱</a>
+<li><a href="#orgaa05f2c">1. 研習內容</a>
 <ul>
-<li>
+<li><a href="#org56718a9">1.1. 上課日期:2020/04/28</a></li>
+<li><a href="#org3a70e60">1.2. 上課地點</a></li>
+<li><a href="#orga2f0598">1.3. 課表</a></li>
+</ul>
+</li>
+<li><a href="#org8912754">2. 國中課綱</a>
 <ul>
-<li><a href="#org1335ad3">1.0.1. 演算法(A)</a></li>
-<li><a href="#orgd69f256">1.0.2. 程式設計(P)</a></li>
-<li><a href="#orgeb56788">1.0.3. 系統平台(S)</a></li>
-<li><a href="#org72f1d69">1.0.4. 資料表示、處理及分析(D)</a></li>
-<li><a href="#org29ed552">1.0.5. 資訊科技應用(T)</a></li>
-<li><a href="#org876675a">1.0.6. 資訊科技與人類社會(H)</a></li>
+<li><a href="#org51daa2f">2.1. 演算法(A)</a></li>
+<li><a href="#org1a9381d">2.2. 程式設計(P)</a></li>
+<li><a href="#org20cb986">2.3. 系統平台(S)</a></li>
+<li><a href="#org68720b3">2.4. 資料表示、處理及分析(D)</a></li>
+<li><a href="#org3780d6d">2.5. 資訊科技應用(T)</a></li>
+<li><a href="#org7da3680">2.6. 資訊科技與人類社會(H)</a></li>
+</ul>
+</li>
+<li><a href="#org7957679">3. 高中課綱</a>
+<ul>
+<li><a href="#org45d209a">3.1. 演算法(A)</a></li>
+<li><a href="#orgd8e9c31">3.2. 程式設計(P)</a></li>
+<li><a href="#org4664828">3.3. 系統平台(S)</a></li>
+<li><a href="#org27f299b">3.4. 資料表示、處理及分析(D)</a></li>
+<li><a href="#orgde08db3">3.5. 資訊科技應用(T)</a></li>
+<li><a href="#org43be7bc">3.6. 資訊科技與人類社會(H)</a></li>
+</ul>
+</li>
+<li><a href="#org574e81f">4. 銜接</a></li>
+<li><a href="#org09c4738">5. 資訊科技理念與素養導向課程設計</a>
+<ul>
+<li><a href="#org1a25183">5.1. 架構: What / How / Why</a></li>
+<li><a href="#org47def40">5.2. WHY</a>
+<ul>
+<li><a href="#orga3733b8">5.2.1. 反思(台北教育大學謝佳叡教授)</a></li>
+</ul>
+</li>
+<li><a href="#orgff6e0a9">5.3. 夢N</a></li>
+<li><a href="#org5a615b9">5.4. Contextualize</a>
+<ul>
+<li><a href="#org6de5874">5.4.1. 素養導向課程設計要素(五大要素)</a></li>
+</ul>
+</li>
+<li><a href="#orgaf26f80">5.5. 從九年一貫到十二年國教</a>
+<ul>
+<li><a href="#org48c2530">5.5.1. 九年一貫</a></li>
+<li><a href="#orga016be4">5.5.2. 十二年國教</a></li>
+<li><a href="#org2210aab">5.5.3. 九年一貫有什麼問題?</a></li>
+<li><a href="#orgfecb3fc">5.5.4. 九年一貫有什麼問題?</a></li>
+</ul>
+</li>
+<li><a href="#org53cb6be">5.6. 關鍵: 搞清素養和能力的差異?</a></li>
+<li><a href="#orgc08feed">5.7. 素養: literacy? competence?</a>
+<ul>
+<li><a href="#org545dac5">5.7.1. 素養: Literacy or Competence</a></li>
+<li><a href="#orgb0273b9">5.7.2. 所以&#x2026;.?</a></li>
+</ul>
+</li>
+<li><a href="#org8087426">5.8. 核心素養與基本能力有什麼不同?</a></li>
+<li><a href="#org094d409">5.9. OECD DeSeCo project (2003)</a></li>
+<li><a href="#org65588df">5.10. 歐盟八大核心素養(Key competences)</a></li>
+<li><a href="#org45b3d20">5.11. 芬蘭七大跨域素養(2016新課綱)</a></li>
+<li><a href="#org4718267">5.12. 芬蘭新課綱實施情形</a></li>
+<li><a href="#org46eb010">5.13. 芬蘭新課綱實施情形</a>
+<ul>
+<li><a href="#org9c9bf00">5.13.1. 小學</a></li>
+<li><a href="#org024bf26">5.13.2. 國中</a></li>
+<li><a href="#org2a2efba">5.13.3. 高中</a></li>
+</ul>
+</li>
+<li><a href="#orgca0bc07">5.14. 核心素養</a>
+<ul>
+<li><a href="#org76de283">5.14.1. 核心</a></li>
+<li><a href="#org91a4024">5.14.2. 素養</a></li>
+<li><a href="#orgf1dbe57">5.14.3. 核心素養</a></li>
+<li><a href="#orgbcd5ce3">5.14.4. 核心素養的三面九項</a></li>
+</ul>
+</li>
+<li><a href="#org66a99cb">5.15. 從基本能力到核心素養</a>
+<ul>
+<li><a href="#orge26113e">5.15.1. 素養與能力</a></li>
+<li><a href="#org0e811b1">5.15.2. 三面九項核心素養與十大基本能力</a></li>
+<li><a href="#org59591c2">5.15.3. 能力本位(國家教育研究院辭書)</a></li>
+<li><a href="#org4767484">5.15.4. 從能力本位到素養導向</a></li>
+</ul>
+</li>
+<li><a href="#org4e031a0">5.16. 素養導向</a>
+<ul>
+<li><a href="#orge407b2b">5.16.1. 定義</a></li>
+</ul>
+</li>
+<li><a href="#orgd838744">5.17. 素養導向學習</a>
+<ul>
+<li><a href="#orgff715eb">5.17.1. 反例：</a></li>
+<li><a href="#orga89c293">5.17.2. 什麼是素養導向學習</a></li>
+<li><a href="#orga1ec98c">5.17.3. 學習重點</a></li>
+</ul>
+</li>
+<li><a href="#orga7d6f65">5.18. 實作</a>
+<ul>
+<li><a href="#orgf999575">5.18.1. 挑選你最看重的核心素養</a></li>
+<li><a href="#orge6317b6">5.18.2. 摘錄你最有感的基本理念</a></li>
+<li><a href="#orgee27783">5.18.3. 你在哪一課程體現你所看重的核心素養</a></li>
+</ul>
+</li>
+<li><a href="#org6475712">5.19. 教學</a></li>
+<li><a href="#org8da8604">5.20. 教科書</a>
+<ul>
+<li><a href="#orga0c319d">5.20.1. 教育改革的四個面向：</a></li>
+<li><a href="#org7a6a3fc">5.20.2. 教材的定位(國教院陳世文)</a></li>
+<li><a href="#org117aeff">5.20.3. 素養導向的教材發展特色</a></li>
+</ul>
+</li>
+<li><a href="#org8a57696">5.21. 素養導向課程設計</a>
+<ul>
+<li><a href="#orga0a54f9">5.21.1. 課程設計的邏輯</a></li>
+<li><a href="#org591c99e">5.21.2. 重理解的課程設計(Understanding by Design，UbD) / 逆向課程設計(Backward Design)</a></li>
+<li><a href="#org60d8592">5.21.3. 素養導向教學範例#1</a></li>
+<li><a href="#org42e7ad8">5.21.4. 課程架構發展重點</a></li>
+<li><a href="#org6aba5fe">5.21.5. 素養導向教學的四大原則</a></li>
+<li><a href="#org0ee9925">5.21.6. 素養導向範例</a></li>
+<li><a href="#org1b97c17">5.21.7. 從作品到課程的反向工程:夢N</a></li>
+</ul>
+</li>
+<li><a href="#orgb471b64">5.22. 核心素養</a></li>
+<li><a href="#orgd69a5bf">5.23. 課程設計</a></li>
+<li><a href="#org5954638">5.24. 素養導向學習內容規劃</a></li>
+<li><a href="#org8e6f1e6">5.25. 素養導向課程設計實作</a>
+<ul>
+<li><a href="#org4681797">5.25.1. 了解課程檢核表[活動]</a></li>
+<li><a href="#orgae91009">5.25.2. 促進學習的提問</a></li>
+<li><a href="#org50764ef">5.25.3. 促進學習的提問原則</a></li>
+<li><a href="#orge41037b">5.25.4. 問個好問題</a></li>
+</ul>
+</li>
+<li><a href="#org980aa85">5.26. 素養導向教學</a>
+<ul>
+<li><a href="#org2b581c9">5.26.1. 「素養導向」教學的展現，主要能回答下列四個問題：(教育部定義)</a></li>
+<li><a href="#orge0668af">5.26.2. 待查</a></li>
+<li><a href="#org1ab745d">5.26.3. 老師要怎麼教素養？</a></li>
+</ul>
+</li>
+<li><a href="#org7bfabc1">5.27. Focus在國中資訊科</a></li>
+<li><a href="#orga353d89">5.28. 標準本位課程發展</a></li>
+<li><a href="#org55c9c4d">5.29. 參考網站</a></li>
+</ul>
+</li>
+<li><a href="#org20f1869">6. 素養導向課程示例 (搜尋演算法/對數)</a>
+<ul>
+<li><a href="#org231d1ec">6.1. 探索－摺紙活動</a></li>
+<li><a href="#org66a3b30">6.2. 運算思維</a></li>
+<li><a href="#org412812c">6.3. 程式設計</a></li>
+<li><a href="#org2a8ee8e">6.4. 能否應用於其他生活領域?</a></li>
+<li><a href="#orgec69c86">6.5. 表現任務－解決應用題型</a></li>
+<li><a href="#org46d2f02">6.6. 單元內容、對應素養及目標</a></li>
+</ul>
+</li>
+<li><a href="#orgc9add1a">7. 資料處理專題課程分享與實作</a>
+<ul>
+<li><a href="#org1b5a2db">7.1. 拿多元選修的Pyton/AI課程當範例</a></li>
+<li><a href="#org2342770">7.2. 使用網站:</a></li>
+<li><a href="#org0e3fda5">7.3. TEXT</a></li>
+<li><a href="#org78a5cf2">7.4. 文字的儲存：英文</a>
+<ul>
+<li><a href="#org12a7b93">7.4.1. 實作後回答問題</a></li>
+<li><a href="#orgc9d348b">7.4.2. 問題</a></li>
+</ul>
+</li>
+<li><a href="#org4da0e80">7.5. 影像的儲存: BMP</a></li>
+</ul>
+</li>
+<li><a href="#orgd9969b3">8. 資料處理專題課程分享與實作（二）學習評量方式探討</a>
+<ul>
+<li><a href="#orgb06c77c">8.1. Video:</a></li>
+<li><a href="#orgf926eef">8.2. 評量的三種層次</a></li>
+<li><a href="#orge43aac8">8.3. 素養導向試題是什麼?</a></li>
+<li><a href="#orgdfb32c7">8.4. 素養導向試題不是什麼?</a></li>
+<li><a href="#orgc4bce22">8.5. 109年素養導向數位評量計畫</a></li>
+<li><a href="#org23a4420">8.6. 標準本位評量</a>
+<ul>
+<li><a href="#orge7f1191">8.6.1. 為什麼叫標準本位</a></li>
+<li><a href="#org985c645">8.6.2. 標準本位評量的精神</a></li>
+<li><a href="#orgc3666dc">8.6.3. 標準本位評量架構</a></li>
+<li><a href="#org47026e0">8.6.4. 這裡帶入範例</a></li>
+<li><a href="#org5a271dc">8.6.5. 標準參照測驗 v.s.  常模參照測驗</a></li>
+<li><a href="#org71406e5">8.6.6. Test / Measurement / Assessment / Evaouation</a></li>
+</ul>
+</li>
+<li><a href="#orgf0196be">8.7. SBSA介紹</a></li>
+<li><a href="#org202af2c">8.8. 深度學習教學法的評量重點(NPDL)</a></li>
+<li><a href="#org888cf57">8.9. 科技領域評量現況</a></li>
+<li><a href="#org77a1aa0">8.10. 資訊領域素養評量試題研發:</a>
+<ul>
+<li><a href="#orgba09304">8.10.1. 策略一: 從學習內容出發</a></li>
+<li><a href="#org99a301d">8.10.2. 從生活情境出發</a></li>
+<li><a href="#org64b0b7e">8.10.3. 從科技專家建立科技知識的角度出發</a></li>
+</ul>
+</li>
+<li><a href="#orgac2d213">8.11. 大考中心素養導向命題三大重點方向</a></li>
+<li><a href="#org5240ec1">8.12. 素養導向評量案例(網站資源)</a></li>
+<li><a href="#org1fc381a">8.13. 資訊領域評量</a></li>
+<li><a href="#orgc7c66e5">8.14. 素養導向評量</a>
+<ul>
+<li><a href="#org9cf6d30">8.14.1. 素養評量的可行做法</a></li>
+<li><a href="#org88fd13d">8.14.2. 評量策略</a></li>
+<li><a href="#org5c38436">8.14.3. 評量方式</a></li>
+</ul>
+</li>
+<li><a href="#org9413ce2">8.15. 核心素養導向試題有下列幾項特色</a></li>
+<li><a href="#org34aefb6">8.16. 試題設計步驟</a></li>
+<li><a href="#org771abdc">8.17. 標準本位評量</a></li>
+<li><a href="#orgbfa9f61">8.18. 素養導向評量示例</a>
+<ul>
+<li><a href="#org21caecc">8.18.1. 統計圖表</a></li>
+<li><a href="#org7cf40c2">8.18.2. 美術科</a></li>
+<li><a href="#org3acd41a">8.18.3. 素養導向「紙筆測驗」要素與範例試題</a></li>
+<li><a href="#org2be8ade">8.18.4. 其他各科的示例</a></li>
+</ul>
+</li>
+<li><a href="#org62f89e6">8.19. 好的素養導向試題評量說明</a></li>
+<li><a href="#org9ffe56b">8.20. 評量先行之設計</a>
+<ul>
+<li><a href="#org5b29c67">8.20.1. 過去</a></li>
+<li><a href="#orgc87cc44">8.20.2. 現在</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org75ea120">2. 高中課綱</a>
-<ul>
-<li>
-<ul>
-<li><a href="#orga10677a">2.0.1. 演算法(A)</a></li>
-<li><a href="#orgb74fce3">2.0.2. 程式設計(P)</a></li>
-<li><a href="#orgb79bbec">2.0.3. 系統平台(S)</a></li>
-<li><a href="#orgda774e3">2.0.4. 資料表示、處理及分析(D)</a></li>
-<li><a href="#org9482461">2.0.5. 資訊科技應用(T)</a></li>
-<li><a href="#orga67d8b5">2.0.6. 資訊科技與人類社會(H)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org7acd87d">3. 銜接</a></li>
-<li><a href="#org50e2550">4. 課表</a></li>
-<li><a href="#org5c1807b">5. web</a></li>
+<li><a href="#org6d91e36">9. 工具網站</a></li>
+<li><a href="#orgeb6695a">10. web</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org4bca23a" class="outline-2">
-<h2 id="org4bca23a"><span class="section-number-2">1</span> 國中課綱</h2>
+<div id="outline-container-orgaa05f2c" class="outline-2">
+<h2 id="orgaa05f2c"><span class="section-number-2">1.</span> 研習內容</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org1335ad3" class="outline-4">
-<h4 id="org1335ad3"><span class="section-number-4">1.0.1</span> 演算法(A)</h4>
-<div class="outline-text-4" id="text-1-0-1">
+<div id="outline-container-org56718a9" class="outline-3">
+<h3 id="org56718a9"><span class="section-number-3">1.1.</span> 上課日期:2020/04/28</h3>
+</div>
+<div id="outline-container-org3a70e60" class="outline-3">
+<h3 id="org3a70e60"><span class="section-number-3">1.2.</span> 上課地點</h3>
+</div>
+<div id="outline-container-orga2f0598" class="outline-3">
+<h3 id="orga2f0598"><span class="section-number-3">1.3.</span> 課表</h3>
+<div class="outline-text-3" id="text-1-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">08:40-09:00</td>
+<td class="org-left">報到</td>
+</tr>
+
+<tr>
+<td class="org-right">09:00-10:30</td>
+<td class="org-left">資訊科技理念與素養導向課程設計</td>
+</tr>
+
+<tr>
+<td class="org-right">10:30-10:40</td>
+<td class="org-left">休息</td>
+</tr>
+
+<tr>
+<td class="org-right">10:40-11:30</td>
+<td class="org-left">資料處理專題課程分享與實作（一)</td>
+</tr>
+
+<tr>
+<td class="org-right">11:30-11:40</td>
+<td class="org-left">休息</td>
+</tr>
+
+<tr>
+<td class="org-right">11:40-12:30</td>
+<td class="org-left">資料處理專題課程分享與實作（二）</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">學習評量方式探討</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org8912754" class="outline-2">
+<h2 id="org8912754"><span class="section-number-2">2.</span> 國中課綱</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org51daa2f" class="outline-3">
+<h3 id="org51daa2f"><span class="section-number-3">2.1.</span> 演算法(A)</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>7:資 A-IV-1 演算法基本概念。</li>
 <li>8:資 A-IV-2 陣列資料結構的概念與應用。</li>
@@ -274,9 +529,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd69f256" class="outline-4">
-<h4 id="orgd69f256"><span class="section-number-4">1.0.2</span> 程式設計(P)</h4>
-<div class="outline-text-4" id="text-1-0-2">
+<div id="outline-container-org1a9381d" class="outline-3">
+<h3 id="org1a9381d"><span class="section-number-3">2.2.</span> 程式設計(P)</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>7:資 P-IV-1 程式語言基本概念、功能及應用。</li>
 <li>7:資 P-IV-2 結構化程式設計。</li>
@@ -286,9 +541,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgeb56788" class="outline-4">
-<h4 id="orgeb56788"><span class="section-number-4">1.0.3</span> 系統平台(S)</h4>
-<div class="outline-text-4" id="text-1-0-3">
+<div id="outline-container-org20cb986" class="outline-3">
+<h3 id="org20cb986"><span class="section-number-3">2.3.</span> 系統平台(S)</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>9:資 S-IV-1 系統平台重要發展與演進。</li>
 <li>9:資 S-IV-2 系統平台之組成架構與基本運作原理。</li>
@@ -297,9 +552,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org72f1d69" class="outline-4">
-<h4 id="org72f1d69"><span class="section-number-4">1.0.4</span> 資料表示、處理及分析(D)</h4>
-<div class="outline-text-4" id="text-1-0-4">
+<div id="outline-container-org68720b3" class="outline-3">
+<h3 id="org68720b3"><span class="section-number-3">2.4.</span> 資料表示、處理及分析(D)</h3>
+<div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>9:資 D-IV-1 資料數位化之原理與方法。</li>
 <li>9:資 D-IV-2 數位資料的表示方法。</li>
@@ -307,18 +562,18 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org29ed552" class="outline-4">
-<h4 id="org29ed552"><span class="section-number-4">1.0.5</span> 資訊科技應用(T)</h4>
-<div class="outline-text-4" id="text-1-0-5">
+<div id="outline-container-org3780d6d" class="outline-3">
+<h3 id="org3780d6d"><span class="section-number-3">2.5.</span> 資訊科技應用(T)</h3>
+<div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>7:資 T-IV-1 資料處理應用專題。</li>
 <li>9:資 T-IV-2 資訊科技應用專題。</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org876675a" class="outline-4">
-<h4 id="org876675a"><span class="section-number-4">1.0.6</span> 資訊科技與人類社會(H)</h4>
-<div class="outline-text-4" id="text-1-0-6">
+<div id="outline-container-org7da3680" class="outline-3">
+<h3 id="org7da3680"><span class="section-number-3">2.6.</span> 資訊科技與人類社會(H)</h3>
+<div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li>7:資 H-IV-1 個人資料保護。</li>
 <li>7:資 H-IV-2 資訊科技合理使用原則。</li>
@@ -333,13 +588,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org75ea120" class="outline-2">
-<h2 id="org75ea120"><span class="section-number-2">2</span> 高中課綱</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org7957679" class="outline-2">
+<h2 id="org7957679"><span class="section-number-2">3.</span> 高中課綱</h2>
+<div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orga10677a" class="outline-4">
-<h4 id="orga10677a"><span class="section-number-4">2.0.1</span> 演算法(A)</h4>
-<div class="outline-text-4" id="text-2-0-1">
+<div id="outline-container-org45d209a" class="outline-3">
+<h3 id="org45d209a"><span class="section-number-3">3.1.</span> 演算法(A)</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>資 A-V-1 重要資料結構的概念與應用。</li>
 <li>資 A-V-2 重要演算法的概念與應用。</li>
@@ -347,9 +602,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb74fce3" class="outline-4">
-<h4 id="orgb74fce3"><span class="section-number-4">2.0.2</span> 程式設計(P)</h4>
-<div class="outline-text-4" id="text-2-0-2">
+<div id="outline-container-orgd8e9c31" class="outline-3">
+<h3 id="orgd8e9c31"><span class="section-number-3">3.2.</span> 程式設計(P)</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>資 P-V-1 文字式程式設計概念與實作。</li>
 <li>資 P-V-2 陣列資料結構的程式設計實作。</li>
@@ -357,35 +612,35 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb79bbec" class="outline-4">
-<h4 id="orgb79bbec"><span class="section-number-4">2.0.3</span> 系統平台(S)</h4>
-<div class="outline-text-4" id="text-2-0-3">
+<div id="outline-container-org4664828" class="outline-3">
+<h3 id="org4664828"><span class="section-number-3">3.3.</span> 系統平台(S)</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>資 S-V-1 系統平台之運作原理。</li>
 <li>資 S-V-2 系統平台之未來發展趨勢。</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgda774e3" class="outline-4">
-<h4 id="orgda774e3"><span class="section-number-4">2.0.4</span> 資料表示、處理及分析(D)</h4>
-<div class="outline-text-4" id="text-2-0-4">
+<div id="outline-container-org27f299b" class="outline-3">
+<h3 id="org27f299b"><span class="section-number-3">3.4.</span> 資料表示、處理及分析(D)</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>資 D-V-1 巨量資料的概念。</li>
 <li>資 D-V-2 資料探勘與機器學習的基本概念。</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9482461" class="outline-4">
-<h4 id="org9482461"><span class="section-number-4">2.0.5</span> 資訊科技應用(T)</h4>
-<div class="outline-text-4" id="text-2-0-5">
+<div id="outline-container-orgde08db3" class="outline-3">
+<h3 id="orgde08db3"><span class="section-number-3">3.5.</span> 資訊科技應用(T)</h3>
+<div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li>資 T-V-1 數位合作共創的概念與工具使用。</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga67d8b5" class="outline-4">
-<h4 id="orga67d8b5"><span class="section-number-4">2.0.6</span> 資訊科技與人類社會(H)</h4>
-<div class="outline-text-4" id="text-2-0-6">
+<div id="outline-container-org43be7bc" class="outline-3">
+<h3 id="org43be7bc"><span class="section-number-3">3.6.</span> 資訊科技與人類社會(H)</h3>
+<div class="outline-text-3" id="text-3-6">
 <ul class="org-ul">
 <li>資 H-V-1 資訊科技的合理使用原則。</li>
 <li>資 H-V-2 個人資料的保護。</li>
@@ -394,9 +649,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org7acd87d" class="outline-2">
-<h2 id="org7acd87d"><span class="section-number-2">3</span> 銜接</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org574e81f" class="outline-2">
+<h2 id="org574e81f"><span class="section-number-2">4.</span> 銜接</h2>
+<div class="outline-text-2" id="text-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -491,6 +746,13 @@
 </tbody>
 <tbody>
 <tr>
+<td class="org-left">主題</td>
+<td class="org-left">國中</td>
+<td class="org-left">高中</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
 <td class="org-left">資料表示、處理及分析(D)</td>
 <td class="org-left">9:資 D-IV-1 資料數位化之原理與方法。</td>
 <td class="org-left">資 D-V-1 巨量資料的概念。</td>
@@ -579,71 +841,2858 @@
 </table>
 </div>
 </div>
-<div id="outline-container-org50e2550" class="outline-2">
-<h2 id="org50e2550"><span class="section-number-2">4</span> 課表</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org09c4738" class="outline-2">
+<h2 id="org09c4738"><span class="section-number-2">5.</span> 資訊科技理念與素養導向課程設計</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+依據: <a href="https://ws.moe.edu.tw/001/Upload/23/relfile/8006/51358/9df0910c-56e0-433a-8f80-05a50efeca72.pdf">十二年國民基本教育領域課程綱要核心素養發展手冊</a>
+時間: 90分
+</p>
+</div>
+<div id="outline-container-org1a25183" class="outline-3">
+<h3 id="org1a25183"><span class="section-number-3">5.1.</span> 架構: What / How / Why</h3>
+</div>
+<div id="outline-container-org47def40" class="outline-3">
+<h3 id="org47def40"><span class="section-number-3">5.2.</span> WHY</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+以前
+</p>
+<ol class="org-ol">
+<li>知識導向: [SLOGAN]給孩子足夠的知識</li>
+<li>能力導向: [SLOGAN][九年一貫]給孩子帶著走的能力</li>
+<li>素養導向: [SLOGAN]</li>
+</ol>
+<p>
+為什麼要改？改變總有個原因或依據，是因為九貫的能力指標或範圍不夠廣？還是內容有問題？
+   -<a href="https://opinion.udn.com/opinion/story/8159/957733">【數學力】站在「數學無趣論」的另一側</a>
+</p>
+<ul class="org-ul">
+<li>國際數學與科學教育成就趨勢調查（Trends in International Mathematics and Science Study：TIMSS）於2011年針對八年級數學能力的調查結果如下圖：</li>
+</ul>
+
+
+<div id="org884ca04" class="figure">
+<p><img src="images/164325089760150_P886619.jpg" alt="164325089760150_P886619.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Caption</p>
+</div>
+<ul class="org-ul">
+<li>這張圖裡，y軸是學生認為數學的實用性，x軸是數學能力。可以看見，許多亞洲國家佔據著右下角，象徵著許多亞洲學生雖然數學程度好，但卻不認為這是門有用的學問，而台灣緊緊霸住了最右下角的位置，驗證了上篇文章的「數學無用論」。</li>
+
+<li>除了無用論外，另一個擁有廣大信徒的理論是「數學無趣論」。 一樣是TIMSS的調查結果，可以看見，台灣學生對數學的興趣在世界各國中相對低落。不過，許多數學程度好的國家，學生對數學的興趣也不高。這是可以理解的。畢竟要提升能力就得靠大量訓練，許多職業運動球星，總是第一個到球場，最後一個離開的。唯有透過規律、帶點無趣的訓練，才能在專業上勝過別人。運動是這樣，數學也是這樣。</li>
+</ul>
+
+<div id="org9ff63a0" class="figure">
+<p><img src="images/164635856049262_P886591.jpg" alt="164635856049262_P886591.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Caption</p>
+</div>
+
+<ul class="org-ul">
+<li>因此我想或許下一次在關心小朋友學習時，除了問他們「這次考試的東西都會了嗎？」不妨再加上一個更重要的問題「這次考試的東西，你有興趣嗎？」</li>
+</ul>
+</div>
+<div id="outline-container-orga3733b8" class="outline-4">
+<h4 id="orga3733b8"><span class="section-number-4">5.2.1.</span> 反思(台北教育大學謝佳叡教授)</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+上圖的新加坡與台灣為反例，新加坡與歐美國家在課堂與考試可以用計算機。學生不能用計算機是否為導致學生認為數學不實用的原因，這個不清楚，但是可以確定的是：不能用計算機會導致數學的出題與考試不符合實際生活情境，例如，例子只能用siin 45、sin 60&#x2026;。由此來看，資訊領域是真正在考方法的，
+我們的題目常常為了考知識而設計一些違反生活與人性的試題
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgff6e0a9" class="outline-3">
+<h3 id="orgff6e0a9"><span class="section-number-3">5.3.</span> 夢N</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li><a href="https://weteach.edu.tw/course/view.php?id=3294">課程：夢N科技領域線上共備資源網</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a615b9" class="outline-3">
+<h3 id="org5a615b9"><span class="section-number-3">5.4.</span> Contextualize</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-org6de5874" class="outline-4">
+<h4 id="org6de5874"><span class="section-number-4">5.4.1.</span> 素養導向課程設計要素(五大要素)</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<ul class="org-ul">
+<li><a id="org003556b"></a>脈絡化的情境學習<br />
+<div class="outline-text-5" id="text-org003556b">
+<ul class="org-ul">
+<li>回歸學生的生活情境與現代社會、文化環境，從學生的生活經驗和脈絡中取材</li>
+<li>大部份作法：偏於「情境連結」(context-related)</li>
+<li>素養導向：更從「脈絡化」（contextualize）的角度再予深化，學習的課題來自真實情境，從引發學生情境中的「問題意識」入手，引導學生敏於現象的覺察和思考，觸發學生的探究，尋求對問題的理解或解決。</li>
+<li>Contextulaize: to consider something in its context</li>
+<li>將&#x2026;置於其背景下考慮</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc58003e"></a>引發學生思考或討論<br />
+<div class="outline-text-5" id="text-orgc58003e">
+<p>
+如要促進學生深度討論、批判思考，教師應提出觸發學生討論與回應的問日人月一金，並在學生的回應上持續討論，以建立高層次的思考。
+幾種討論技巧
+</p>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
 
 <col  class="org-left" />
 </colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Summaring(總結)</th>
+<th scope="col" class="org-left">Modeling(示範)</th>
+<th scope="col" class="org-left">Prompting(促進發言)</th>
+<th scope="col" class="org-left">Marking(標記)</th>
+<th scope="col" class="org-left">Challenging(挑戰)</th>
+<th scope="col" class="org-left">Participating(參與)</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="org-right">08:40-09:00</td>
-<td class="org-left">報到</td>
+<td class="org-left">綜合整理哪些觀點已經被提出來</td>
+<td class="org-left">討論前明確指出將要做的、或願意思考，及學生對話的態度</td>
+<td class="org-left">讚美某個特別的討論觀點，鼓勵發言</td>
+<td class="org-left">鼓勵學生針對某個回應去思考</td>
+<td class="org-left">要求某一個學生或小組從另一個觀點思考</td>
+<td class="org-left">教師成為討論中的一員，分享自己對文本的觀點</td>
+</tr>
+</tbody>
+</table>
+<p width="500">
+<img src="images/2022-03-20_21-18-26.jpg" alt="2022-03-20_21-18-26.jpg" width="500" />
+(資料來源:胡衍南、王世豪主編(2020)。深度討論教學法理論與實踐)
+</p>
+</div>
+</li>
+<li><a id="org4b79a35"></a>教師交付或學生自訂工作任務<br />
+<div class="outline-text-5" id="text-org4b79a35">
+<ul class="org-ul">
+<li>透過問題設計引導學習，將主動探究、對話、實作、提問、論證等納為歷程中的經常性活動，逐步展現學生的理解。</li>
+<li>從中引導學生因時、因地、因情境、因目標、因問題需求而調整思考的策略，逐漸成為自我調整學習者(self-regulated learners)</li>
+</ul>
+</div>
+</li>
+<li><a id="orga3f32cc"></a>學生使用方法或策略<br />
+<div class="outline-text-5" id="text-orga3f32cc">
+<p>
+學生能在資訊領域內或跨領域的學習探究歷程中自然地、習慣地運用方法和策略面對挑戰和解決問題。具體的素養表現包括：認知與後設認知策略、動機管理策略、資源管理策略的使用與因應調整
+</p>
+</div>
+</li>
+<li><a id="orgb95d1b6"></a>學生採取行動並進行反思調整<br />
+<div class="outline-text-5" id="text-orgb95d1b6">
+<ul class="org-ul">
+<li>素養展現於面對問題時因情境制宜的判斷(judgements-in-context)以解決問題</li>
+<li>教師須適時運用搭架和拆架，將學習責任逐漸轉移給學生</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaf26f80" class="outline-3">
+<h3 id="orgaf26f80"><span class="section-number-3">5.5.</span> 從九年一貫到十二年國教</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-org48c2530" class="outline-4">
+<h4 id="org48c2530"><span class="section-number-4">5.5.1.</span> 九年一貫</h4>
+<div class="outline-text-4" id="text-5-5-1">
+</div>
+<ul class="org-ul">
+<li><a id="org4f0d1ac"></a>以學習領域取代傳統分科課程，強調學校本位課程發展<br />
+<div class="outline-text-5" id="text-org4f0d1ac">
+<ol class="org-ol">
+<li>語文：包含本國語文、英語等，注重對語文的聽說讀寫、基本溝通能力、文化與習俗等方面的學習。</li>
+<li>健康與體育：包含身心發展與保健、運動技能、健康環境、運動與健康的生活習慣等方面的學習。</li>
+<li>社會：包含歷史文化、地理環境、社會制度、道德規範、政治發展、經濟活動、人際互動、公民責任、本土教育、生活應用、愛護環境與實踐等方面的學習。</li>
+<li>藝術與人文：包含音樂、視覺藝術、表演藝術等方面的學習，陶冶學生藝文之興趣與嗜好，俾能積極參與藝文活動，以提升其感受力、想像力、創造力等藝術能力與素養。</li>
+<li>自然與生活科技：包含物質與能、生命世界、地球環境、生態保育、資訊科技等的學習、注重科學及科學研究知能，培養尊重生命、愛護環境的情操及善用科技與運用資訊等能力，並能實踐於日常生活中。</li>
+<li>數學：包含數、形、量基本概念之認知、具運算能力、組織能力，並能應用於日常生活中，瞭解推理、解題思考過程，以及與他人溝通數學內涵的能力，並能做與其他學習領域適當題材相關之連結。</li>
+<li>綜合活動：指凡能夠引導學習者進行實踐、體驗與省思、並能驗證與應用所知的活動。包含原童軍活動、輔導活動、家政活動、團體活動、及運用校內外資源獨立設計之學習活動。</li>
+</ol>
+</div>
+</li>
+<li><a id="org51886ed"></a>強調基本能力<br />
+<div class="outline-text-5" id="text-org51886ed">
+<ol class="org-ol">
+<li>瞭解自我與發展潛能</li>
+<li>欣賞、表現與創新</li>
+<li>生涯規劃與終身學習</li>
+<li>表達、溝通與分享</li>
+<li>尊重、關懷與團隊合作</li>
+<li>文化學習與國際瞭解</li>
+<li>規劃、組織與實踐</li>
+<li>運用科技與資訊</li>
+<li>主動探索與研究</li>
+<li>獨立思考與解決問題</li>
+</ol>
+</div>
+</li>
+<li><a id="org26401e6"></a><a href="https://cirn.moe.edu.tw/WebContent/index.aspx?sid=9&amp;mid=159">資訊教育能力指標</a><br />
+<div class="outline-text-5" id="text-org26401e6">
+<p>
+資訊教育能力指標編碼原則，第一碼代表課程核心能力序號，資訊核心能力包括：
+</p>
+<ol class="org-ol">
+<li>資訊科技概念的認知</li>
+<li>資訊科技的使用</li>
+<li>資料的處理與分析</li>
+<li>網際網路的認識與應用</li>
+<li>資訊科技與人類社會</li>
+</ol>
+<p>
+第二碼代表階段序號(第一階段為國小一至二年級，第二階段為國小三至四年級，第三階段為國小五至六年級，第四階段為國中一至三年級)。第三碼代表能力指標之流水號。
+</p>
+<ul class="org-ul">
+<li><p>
+核心能力範例: 資料的處理與分析
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">學習內涵</th>
+<th scope="col" class="org-left">能力指標</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">文書處理</td>
+<td class="org-left">3-2-1 能使用編輯器進行文稿之編修。</td>
 </tr>
 
 <tr>
-<td class="org-right">09:00-10:30</td>
-<td class="org-left">資訊科技理念與素養導向課程設計</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-2-2 能操作印表機輸出資料。</td>
 </tr>
 
 <tr>
-<td class="org-right">10:30-10:40</td>
-<td class="org-left">休息</td>
+<td class="org-left">電腦繪圖</td>
+<td class="org-left">3-2-3 能操作常用之繪圖軟體。</td>
 </tr>
 
 <tr>
-<td class="org-right">10:40-11:30</td>
-<td class="org-left">資料處理專題課程分享與實作（一)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-3-1 能操作掃瞄器及數位相機等工具。</td>
 </tr>
 
 <tr>
-<td class="org-right">11:30-11:40</td>
-<td class="org-left">休息</td>
+<td class="org-left">簡報製作</td>
+<td class="org-left">3-3-2 能利用簡報軟體編輯並播放簡報。</td>
 </tr>
 
 <tr>
-<td class="org-right">11:40-12:30</td>
-<td class="org-left">資料處理專題課程分享與實作（二）</td>
+<td class="org-left">多媒體製作</td>
+<td class="org-left">3-3-3 能使用多媒體編輯軟體進行影音資料的製作。</td>
 </tr>
 
 <tr>
-<td class="org-right">&#xa0;</td>
-<td class="org-left">學習評量方式探討</td>
+<td class="org-left">圖表製作</td>
+<td class="org-left">3-4-1 能利用軟體工具分析簡單的數據資料。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-2 能利用軟體工具製作圖與表。</td>
+</tr>
+
+<tr>
+<td class="org-left">資料庫管理</td>
+<td class="org-left">3-4-3 能認識資料庫的基本概念。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-4 能建立及管理簡易資料庫。</td>
+</tr>
+
+<tr>
+<td class="org-left">問題解決與規劃</td>
+<td class="org-left">3-4-5 能針對問題提出可行的解決方法。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-6 能規劃出問題解決的程序。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-7 能評估問題解決方案的適切性。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-8 能瞭解電腦解決問題的範圍與限制。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">3-4-9 能判斷資訊的適用性及精確度。</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</li>
+<li><a id="orga454b52"></a>口號:「不要背不動的書包，要培養帶著走的能力(Literacy)」。<br /></li>
+</ul>
+</div>
+<div id="outline-container-orga016be4" class="outline-4">
+<h4 id="orga016be4"><span class="section-number-4">5.5.2.</span> 十二年國教</h4>
+<div class="outline-text-4" id="text-5-5-2">
+</div>
+<ul class="org-ul">
+<li><a id="org51253fc"></a>能力指標 -&gt; 核心素養<br /></li>
+<li><a id="org30ca21c"></a>口號: 「利用素養培養帶著走得能力(Comptence)」<br />
+<div class="outline-text-5" id="text-org30ca21c">
+<ul class="org-ul">
+<li>手段不同 &#x2026; 那九年一貫的能力是怎麼培養的?</li>
+<li>「核心素養」為十二年國民基本教育課程發展的主軸，承續九年一貫課程綱要的「基本能力」、「核心能力」與「學科知識」，但涵蓋更寬廣和豐富的教育內涵（教育部，2014）。</li>
+</ul>
+</div>
+</li>
+<li><a id="org91e1b2c"></a>Video: <a href="https://youtu.be/DGL1rkWQndE">新課綱─讓孩子成為更好的自己</a><br /></li>
+</ul>
+</div>
+<div id="outline-container-org2210aab" class="outline-4">
+<h4 id="org2210aab"><span class="section-number-4">5.5.3.</span> 九年一貫有什麼問題?</h4>
+<div class="outline-text-4" id="text-5-5-3">
+<ul class="org-ul">
+<li>蔡清田教授以及12年國教團隊的教授們強調台灣的12年國教裡面的素養，同時涵蓋competence及literacy的概念。</li>
+<li>十二年國教總綱種子講師宣講問題第一輯中更明顯表述「核心素養」與「基本能力」的差異，其謂：核心素養承續十大基本能力，但可彌補十大基本能力的涵蓋範疇不全、區隔不清以及缺漏重要生活議題；核心素養的理論依據較十大基本能力之理論依據來的精確且周延，不易形成混淆。</li>
+<li>現在的教授重新訂一個分類標準，將十大基本能力各自歸位，然後說：十大基本能力不精確、不周延，易形成混淆。好像以前擬定九年一貫課程的那一群教授們個個都是笨蛋似的。</li>
+<li>一變再變的名詞，有沒有可能只是為了呈現現在有權力潤飾的教授長官們的存在感啊？</li>
+</ul>
+<p>
+資料來源: <a href="http://science-education-fish.blogspot.com/2018/03/12competenceliteracyability.html">余俊樑老師的BLOG</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgfecb3fc" class="outline-4">
+<h4 id="orgfecb3fc"><span class="section-number-4">5.5.4.</span> 九年一貫有什麼問題?</h4>
+<div class="outline-text-4" id="text-5-5-4">
+<ul class="org-ul">
+<li>重點: 乃為兄弟我獨創</li>
+<li>文無第一、武無第二</li>
+<li>結果: 五權 -&gt; 三權</li>
+<li>分權思想可溯源到 古希臘 的 亞里斯多德 ，他提出國家有議事權、行政權、司法權、並認為國之治亂以三權是否調和為轉移 [2] :52 。近代明確闡述分權學説的是17世紀英國的 洛克 （ 哲學家 ，最重要的政治論文是1689年到1690年寫成的兩篇《政府論》）；1748年 法國 孟德斯鳩 在《 論法的精神 》一書中發展洛克之學説，系統地提出三權分立之原則 [2] :52-53 。權力分離的形式包括行政、司法、立法，解決一些在政治制度可能出現的問題。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org53cb6be" class="outline-3">
+<h3 id="org53cb6be"><span class="section-number-3">5.6.</span> 關鍵: 搞清素養和能力的差異?</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+核心素養的關鍵：終身學習者
+資訊老師都是優秀的終身學習者，我們的主修
+芬蘭的七素養是培養公民: 能過日子
+台灣的三面九項是要培養聖人
+</p>
+</div>
+</div>
+<div id="outline-container-orgc08feed" class="outline-3">
+<h3 id="orgc08feed"><span class="section-number-3">5.7.</span> 素養: literacy? competence?</h3>
+<div class="outline-text-3" id="text-5-7">
+</div>
+<div id="outline-container-org545dac5" class="outline-4">
+<h4 id="org545dac5"><span class="section-number-4">5.7.1.</span> 素養: Literacy or Competence</h4>
+<div class="outline-text-4" id="text-5-7-1">
+</div>
+<ul class="org-ul">
+<li><a id="org00fb14d"></a>Google: 素養的英文<br />
+<div class="outline-text-5" id="text-org00fb14d">
+
+<div id="orgd0b9ffe" class="figure">
+<p><img src="images/literacy.jpeg" alt="literacy.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Literacy</p>
+</div>
+</div>
+</li>
+<li><a id="org328176d"></a>So, what does lieteracy means?<br />
+<ul class="org-ul">
+<li><a id="org7bbebeb"></a>圖書館學與資訊科學大辭典<br />
+<div class="outline-text-6" id="text-org7bbebeb">
+<p>
+素養（literacy）在傳統的定義係指一個人的「讀和寫的能力」。由於現代人與知識互動的方式日趨多元，一個人的讀寫能力無法完全代表其受教狀況與具備的技能，現代對「literacy」的定義已超越個人的讀寫能力，而是著重個人對知識的認知與學習能力。
+</p>
+</div>
+</li>
+<li><a id="orgc9d7a38"></a>Combridge Dictionary<br />
+<div class="outline-text-6" id="text-orgc9d7a38">
+
+<div id="org1f9adfa" class="figure">
+<p><img src="images/2022-02-26_11-45-58.jpeg" alt="2022-02-26_11-45-58.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 4: </span>literacy from combridge</p>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6676826"></a>Competence v.s. Literacy<br />
+<ul class="org-ul">
+<li><a id="org1864d04"></a>Cambridge Dictionary<br />
+<div class="outline-text-6" id="text-org1864d04">
+<ul class="org-ul">
+<li>litearcy: the ability to read and write
+例: The country has a literacy rate of almost 98%.</li>
+<li>competence: the ability to do something well
+例: Her competence as a teacher is unquestionable.</li>
+</ul>
+
+<div id="orgb8663d1" class="figure">
+<p><img src="images/2022-02-28_14-17-06.jpeg" alt="2022-02-28_14-17-06.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 5: </span>competence</p>
+</div>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="orgff7ebaf"></a>2001年國際工程教育會議(挪威)<br />
+<div class="outline-text-5" id="text-orgff7ebaf">
+<p>
+\(Competence=(Knowledge+Skill)^{Attitude}\)
+</p>
+<ul class="org-ul">
+<li>知識是素養的基礎</li>
+<li>能力是知識應用在問題解決的過程</li>
+<li>情意態度及價值判斷是行動的先決條件: 有能力做不一定有意願做、有意願做不一定有好態度去做</li>
+</ul>
+
+<div id="org51ee2da" class="figure">
+<p><img src="images/2022-02-26_22-52-37.jpeg" alt="2022-02-26_22-52-37.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 6: </span>素養、知識、能力、態度</p>
+</div>
+</div>
+</li>
+<li><a id="org5d2b533"></a>始作俑者: UNESCO<br />
+<div class="outline-text-5" id="text-org5d2b533">
+<p>
+聯合國教科文組織（United Nations Educational, Scientific and Cultural Organization，簡稱UNESCO）
+</p>
+<ul class="org-ul">
+<li>Literacy is the ability to identify, understand, interpret,create, communicate and compute, using printed andwritten materials associated with varying contexts.</li>
+<li>Literacy involves a continuum of learning in enablingindividuals to achieve their goals, to develop their knowledgeand potential, and to participate fully in their community andwider society (UNESCO, 2004; 2017).</li>
+<li>literacy指「識別、理解、解釋、創造、運算及使用不同環境下印刷與書面資料的能力。為涉及個人能夠實現目標、發展知識和潛能，並充分參與社區及廣大社會的連續學習」</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgb0273b9" class="outline-4">
+<h4 id="orgb0273b9"><span class="section-number-4">5.7.2.</span> 所以&#x2026;.?</h4>
+<div class="outline-text-4" id="text-5-7-2">
+<ul class="org-ul">
+<li>基本能力: literacy</li>
+<li>素養: competence</li>
+<li>所以&#x2026;.?</li>
+<li>結論: 台灣的中文已和英文字義脫勾</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8087426" class="outline-3">
+<h3 id="org8087426"><span class="section-number-3">5.8.</span> 核心素養與基本能力有什麼不同?</h3>
+<div class="outline-text-3" id="text-5-8">
+<ul class="org-ul">
+<li>總綱中提出「核心素養」，這和原有九年一貫課程強調培養孩子帶著走的「基本能力」有什麼不同？</li>
+<li>核心素養是指一個人適應現在生活及未來挑戰，所應具備的知識、能力與態度。「素養」要比「能力」更適用於當今臺灣社會，「核心素養」承續過去課程綱要的「基本能力」，但涵蓋更寬廣和豐富的教育內涵。</li>
+<li>核心素養強調多面向的學習，為了培養學生的核心素養，學校教育不再只以學科知識作為學習的唯一範疇，而是彰顯學習者的主體性，重視學習者能夠運用所學於生活情境中。</li>
+</ul>
+
+<div id="org3aab234" class="figure">
+<p><img src="images/CompetenctLiteracy.jpg" alt="CompetenctLiteracy.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 7: </span>Competence v.s. Literacy</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org094d409" class="outline-3">
+<h3 id="org094d409"><span class="section-number-3">5.9.</span> OECD DeSeCo project (2003)</h3>
+<div class="outline-text-3" id="text-5-9">
+<p>
+Video: <a href="https://youtu.be/NoiZsLeKtTA">2-2-1. OECD ‘DeSeCo’ Project, OECD ‘Education 2030’ Project</a>
+</p>
+<ul class="org-ul">
+<li>經濟合作暨發展組織於1961年成立，總部在巴黎，目前計有38個會員國。OECD素有WTO智庫之稱，主要工作為研究分析，並強調尊重市場機制、減少政府干預，以及透過政策對話方式達到跨國政府間的經濟合作與發展。</li>
+<li>OECD現有38個成員；除了1961年的創始成員國外，其他成員國名後均列出了其入會年份。列表中打*號者是 世界銀行 「 高收入經濟體 」 [2] 。台灣目前為委員會觀察員。</li>
+<li>俄羅斯：2007年5月，經合組織決定開放與俄羅斯的入會談判。同年11月確定了談判路線圖。2014年3月，經合組織暫停俄羅斯的入會談判。2022年2月25日，因應2022年俄羅斯入侵烏克蘭，經合組織宣布正式終結俄羅斯的入會進程。</li>
+<li><p>
+1997年起，OECD啟動了著名的DeSeCo專案(Rychen &amp; Salganik, 2001)， 亦即「核心素養的界定與選擇:理論與概念基礎」(The project of definition and selection of competencies: Theoretical and conceptual foundation)，並導向2005年 出版的《核心素養的界定與選擇:行政摘要》(The Definition and Selection of Key Competencies: Executive Summary)(OECD, 2005)。其中，對於知能(literacy) 與素養(competency)有簡要而清楚的界定:
+</p>
+<ol class="org-ol">
+<li>「知能」乃指學生能夠有效 地分析、推理、溝通，以便能在各種不同的學科/情境中，提出、解決與解釋問 題(OECD, 2005, p. 3)</li>
+<li>「素養」不只是知識與技能，亦包含了能參照與 運用心理能力或態度，以回應外在更複雜的要求。</li>
+</ol>
+<p>
+例如，有效溝通的素養乃指個 人掌握了語言的知識(knowledge of languages)、使用IT工具的能力(practical IT skills)，以及對溝通對象的態度(attitude)(OECD, 2005, p. 4)。前者即是PISA 對於閱讀、數學、科學素養的界定基礎，並自2000年起啟動跨國的評量測驗與比較 分析;後者進一步導出DeSeCo專案所界定的素養(competencies)，包括「能互動地使用工具」、「能在異質社群中進行互動」及「能自律自主地行動」三個面向共九項(OECD, 2005; Rychen &amp; Salganik, 2003)。<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org65588df" class="outline-3">
+<h3 id="org65588df"><span class="section-number-3">5.10.</span> 歐盟八大核心素養(Key competences)</h3>
+<div class="outline-text-3" id="text-5-10">
+<ol class="org-ol">
+<li>母語溝通（Communication in the mother tongue）</li>
+<li>外語溝通（Communication in foreign languages）</li>
+<li>資訊與溝通科技（ICT）</li>
+<li>算數及數學、科學、科技（Numeracy and competencies in math, science and technology）</li>
+<li>企業精神（Entrepreneurship）</li>
+<li>人際與公民能力（Interpersonal and civic competencies）</li>
+<li>學會學習（Learning to learn）</li>
+<li>一般文化（General culture）</li>
+</ol>
+
+<div id="orgf788023" class="figure">
+<p><img src="images/EUKeyCom2018.png" alt="EUKeyCom2018.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 8: </span>歐盟八大核心素養(Key competences)</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org45b3d20" class="outline-3">
+<h3 id="org45b3d20"><span class="section-number-3">5.11.</span> 芬蘭七大跨域素養(2016新課綱)</h3>
+<div class="outline-text-3" id="text-5-11">
+<p>
+芬蘭新課綱有三大特色：
+</p>
+<ol class="org-ol">
+<li>新課綱的核心：跨領域統整與學習；</li>
+<li>新課程由學校自主發展；</li>
+<li>讓學生主動參與課程設計。</li>
+</ol>
+
+<div id="org05e8203" class="figure">
+<p><img src="images/ckeditor-5dc009cb87529.jpg" alt="ckeditor-5dc009cb87529.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 9: </span>芬蘭七大跨域素養</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4718267" class="outline-3">
+<h3 id="org4718267"><span class="section-number-3">5.12.</span> 芬蘭新課綱實施情形</h3>
+<div class="outline-text-3" id="text-5-12">
+<ul class="org-ul">
+<li>跨學科學學習
+<ul class="org-ul">
+<li>專題式學習（project-based learning）</li>
+<li>現象為本的學習（phenomenon-based learning）</li>
+</ul></li>
+<li>重視合作學習</li>
+<li>強調評量即學習(assessment as learning)</li>
+<li>芬蘭新課綱主要為培養有足夠能力面對未來生活世界挑戰的新世代，站在傳統學科的基礎上，強調跨領域以及「現象為本的學習」(phenomenon-based project)。</li>
+<li>所謂現象為本學習乃在於學習課題來自真實世界現象，如城市規劃、恐攻、歐盟、水資源、能量等等，以現象為課題的學習必須深入情境脈絡，需要整合許多領域／科目才足以能夠整體理解甚至解決問題。</li>
+<li>在課程設計上，現象為本的學習的成功在於讓不同領域／科目教師共同備課與協同教學，並且採取探究學習、問題導向、方案與檔案等學習方法，以真實與E化的學習情境引導學生學習。</li>
+<li>學習過程中，學生必須參與其中，鼓勵能夠和專家社群一同工作，同時能夠分辨、分析與善用訊息、資料與知識，在實作體驗中深度學習。隨著跨領域、以現象為本的學習，傳統紙筆測驗也需要同步轉型，畢竟填空問答或是非選擇題－無法讓學生完整學習如何規劃宜居城市吧？！</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org46eb010" class="outline-3">
+<h3 id="org46eb010"><span class="section-number-3">5.13.</span> 芬蘭新課綱實施情形</h3>
+<div class="outline-text-3" id="text-5-13">
+</div>
+<div id="outline-container-org9c9bf00" class="outline-4">
+<h4 id="org9c9bf00"><span class="section-number-4">5.13.1.</span> 小學</h4>
+<div class="outline-text-4" id="text-5-13-1">
+<p>
+在芬蘭，跨領域課程目前在國小實行最順利，因為國小的班級導師經常是一人身兼數個學科的老師，所以很容易進行跨學科整合專案，且班導會跟同一批學生在一起六年，直到他畢業為止，所以很容易掌握每個學生的學習情況（林竹芸，2017）。
+</p>
+</div>
+</div>
+<div id="outline-container-org024bf26" class="outline-4">
+<h4 id="org024bf26"><span class="section-number-4">5.13.2.</span> 國中</h4>
+<div class="outline-text-4" id="text-5-13-2">
+<p>
+在國中七到九年級的實施，大致順利，但多些阻力，因為每個國中老師都有自己的學科專業，能跨科教學的老師較少，要靠老師之間進行更多溝通，但目前芬蘭沒有強制安排老師的溝通會議，是讓各校老師自行規劃，所以內部協調不順暢的學校，最容易出狀況，常出現的狀況是沒有安排好相關學科在同一週上課，像是在專案研究週，剛好排到數學課、性教育知識課，兩個老師都發現很難結合，學生也不知道怎麼設定主題（林竹芸，2017）。
+</p>
+</div>
+</div>
+<div id="outline-container-org2a2efba" class="outline-4">
+<h4 id="org2a2efba"><span class="section-number-4">5.13.3.</span> 高中</h4>
+<div class="outline-text-4" id="text-5-13-3">
+<p>
+在高中十到十二年級的實施困難最大。目前仍有許多學校不想推行「現象跨域學習」，一學期中只願意花一個月做「現象跨域學習」的專案。原先的計劃是希望每個學生在每個月都做一個新的專案，但是高中生有升大學的學科考試壓力，全世界都一樣，如果大學升學考試制度不變，老師的教學就會受限。但如果大學考試只強調測驗知識，就會把國小、國中培養起來的整合思考能力毀掉，所以芬蘭政府已經著手改變大學的升學考試內容（董恆秀，2015）。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgca0bc07" class="outline-3">
+<h3 id="orgca0bc07"><span class="section-number-3">5.14.</span> 核心素養</h3>
+<div class="outline-text-3" id="text-5-14">
+</div>
+<div id="outline-container-org76de283" class="outline-4">
+<h4 id="org76de283"><span class="section-number-4">5.14.1.</span> 核心</h4>
+<div class="outline-text-4" id="text-5-14-1">
+<p>
+「核心」係為基本且共同
+</p>
+</div>
+</div>
+<div id="outline-container-org91a4024" class="outline-4">
+<h4 id="org91a4024"><span class="section-number-4">5.14.2.</span> 素養</h4>
+<div class="outline-text-4" id="text-5-14-2">
+<p>
+所謂「素養」係指個體為了健全發展，必須因應生活情境需求所不可或缺的知識、能力、態度。素養強調教育的價值與功能，是學習而獲得的知識、能力和態度，合乎認知、技能、情意的教育目標，重視教育的過程與結果。
+</p>
+</div>
+</div>
+<div id="outline-container-orgf1dbe57" class="outline-4">
+<h4 id="orgf1dbe57"><span class="section-number-4">5.14.3.</span> 核心素養</h4>
+<div class="outline-text-4" id="text-5-14-3">
+<p>
+「核心素養」的涵義是指一個人為適應現在生活及面對未來挑戰，所應具備的知識、能力(包含技能)與態度。核心素養強調學習不宜以學科知識及技能為限，而應關注學習與生活的結合，透過實踐力行而彰顯學習者的全人發展。
+</p>
+
+<div id="org4e79f2c" class="figure">
+<p><img src="images/2022-02-26_19-36-29.jpeg" alt="2022-02-26_19-36-29.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 10: </span>核心素養的養成</p>
+</div>
+<p>
+:CoreLiteracy
+</p>
+
+<div id="org405b08c" class="figure">
+<p><img src="images/CoreLiteracy.jpg" alt="CoreLiteracy.jpg" width="500" />
+</p>
+</div>
+</div>
+<ul class="org-ul">
+<li><a id="orga5c19a7"></a>例子:<br />
+<div class="outline-text-5" id="text-orga5c19a7">
+<p>
+學生探究與嘗試解決空汙問題時，其學習會整合如「系統思考與解決問題」、「道德實踐與公民意識」、及「人際關係與團隊合作」等核心素養。當然，外圍的「生活情境」乃強調「素養」透過生活情境加以涵育，並能整合活用於生活情
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgbcd5ce3" class="outline-4">
+<h4 id="orgbcd5ce3"><span class="section-number-4">5.14.4.</span> 核心素養的三面九項</h4>
+<div class="outline-text-4" id="text-5-14-4">
+
+<div id="org1a51709" class="figure">
+<p><img src="images/2022-02-26_16-01-13.jpg" alt="2022-02-26_16-01-13.jpg" width="500" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org66a99cb" class="outline-3">
+<h3 id="org66a99cb"><span class="section-number-3">5.15.</span> 從基本能力到核心素養</h3>
+<div class="outline-text-3" id="text-5-15">
+<p>
+回顧台灣近年來兩波課程改革，分別訴諸「基本能力」與「核心素養」兩種觀點，各自的意涵背後涉及了不同的知識觀和意識型態。
+</p>
+<ul class="org-ul">
+<li>1998年提出《教育改革行動方案》，台灣教育部根據其中「革新九年一貫課程」項目，陸續頒布及推動《90 年國民中小學九年一貫課程暫時綱要》、《92 年國民中小學九年一貫課程綱要》，稍後亦修訂《97 年國民中小學九年一貫課程綱要》。這波改革立基開放、一貫、統整的理念，訴求以「基本能力」取代過往國家全面控制的「課程標準」，強調課程鬆綁、校本課程、學習領域統整、協同教學等方面的革新。</li>
+<li>2013 年國家教育研究院提出《十二年國民基本教育課程發展指引》，擬定以「核心素養」為主軸的方針。</li>
+<li>檢視九年一貫課程改革在實務場域的推動，仍多偏重於以知識為中心，是技術觀導向</li>
+<li>十二年國民基本教育的課程改革以「核心素養」為課程發展的主軸，關注課程銜接、課程統整，以及課程轉化於各學習領域和議題的原則，強調超越學科知識及技能的局限，結合生活與學習，培養學生能夠適應現在生活及面對未來挑戰所應具備的知識、能力和態度（國家教育研究院，2014a，2014b；教育部，2014）。</li>
+</ul>
+</div>
+<div id="outline-container-orge26113e" class="outline-4">
+<h4 id="orge26113e"><span class="section-number-4">5.15.1.</span> 素養與能力</h4>
+<div class="outline-text-4" id="text-5-15-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">素養</th>
+<th scope="col" class="org-left">能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">界定</td>
+<td class="org-left">素養的界定較為精確而周延，素養不只重視知識，也</td>
+<td class="org-left">能力的界定比較含糊不清而較不精確，容易引起混淆。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">重視能力，更強調態度的重要性。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">意義</td>
+<td class="org-left">素養是個體為了發展成為一個健全個體，必頇因應未</td>
+<td class="org-left">能力是指個人具有能夠勝任某項任務的才能之實際能力與</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">來混沌複雜之生活情境需求，所不可欠缺的知識、能</td>
+<td class="org-left">潛在能力，往往未涉及態度情意價值。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">力與態度。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">先/後天</td>
+<td class="org-left">素養強調教育價值功能，素養是學習的結果，並非先</td>
+<td class="org-left">能力的形成是經由先天遺傳與後天努力習得的。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">天遺傳，是後天努力學習而獲得的，合乎認知、技能</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">、情意的教育目標。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">適用的</td>
+<td class="org-left">素養適用於複雜多變的「新經濟時代」與「資訊社會」</td>
+<td class="org-left">能力是偏向於過去「傳統社會」與「工業社會」所強調的</td>
+</tr>
+
+<tr>
+<td class="org-left">社會</td>
+<td class="org-left">之科技網路世代各種生活場域的活動，以成功地回應特</td>
+<td class="org-left">技術能力、技能、職能等用語。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">定生活情境下的複雜需求，特別是因應當前後現代社會</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">的複雜生活所需要所需的知識、能力與態度。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">理據</td>
+<td class="org-left">可促進個人發展與社會發展，已超越行為主義的能力，</td>
+<td class="org-left">偏個人工作謀生偏向「個人主義」「功利導向」，易有流</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">具有哲學、人類學、心理學、經濟學、以及社會學等不</td>
+<td class="org-left">於能力本位行為主義之爭議。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">同學門領域的理論根據。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">實例</td>
+<td class="org-left">語文素養</td>
+<td class="org-left">聽、說、讀、寫以及操作簡易的機器設備，如使用打字機</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">科學素養</td>
+<td class="org-left">、傳真機、收音機、隨身聽、電視、洗衣機等。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">民主素養</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">資訊素養</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">媒體素養</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">多元文化素養</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">自主行動</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">社會參與溝通互動</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div id="outline-container-org5c1807b" class="outline-2">
-<h2 id="org5c1807b"><span class="section-number-2">5</span> web</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org0e811b1" class="outline-4">
+<h4 id="org0e811b1"><span class="section-number-4">5.15.2.</span> 三面九項核心素養與十大基本能力</h4>
+</div>
+
+<div id="outline-container-org59591c2" class="outline-4">
+<h4 id="org59591c2"><span class="section-number-4">5.15.3.</span> 能力本位(國家教育研究院辭書)</h4>
+<div class="outline-text-4" id="text-5-15-3">
+<p>
+「能力本位教學」是能力本位教育(competency-based education, CBE)的一環；後者源起於1970年代美國的教育改革，政府主管教育部門要求大學及學院設計能力本位課程，以提高教育的成本效益與效能。此新課程的設計注重如何評估教育的特殊學習成果，以及設計達到學習成果前的教學技術，由是，能力本位教學成為達成能力本位教育的重要途徑。如何界定能力(competency)、教導能力和評量能力等，是能力本位教學的重要成分。
+</p>
+
+<p>
+能力是對人類活動的描述，代表人類的任何認知活動或具體行為。在能力本位教學目標的擬定上，以清晰的描述學生在完成學習後應達到什麼表現標準為特色，通常稱為表現目標(performance obiectives)或學習目標(learning objectives)。表現目標乃是很清楚的指出學生將在什麼狀況之下做出什麼樣的動作或行為以代表學習成果，而學習目標則較注重學生學習過程的能力評估，不特別強調外在的行為評估。
+</p>
+
+<p>
+實施能力本位教學有兩個優點：一是評量學生的表現成果，而不是他是否遵循某一特殊的教學途徑，因此學習機會(learning opportunities)的彈性大為增加，如學生可經由傳統教室教學、個別化教學單元、開放性學習環境、電腦輔助教學等不同途徑完成目標學習。另一能力本位教學的優點是學習的內容或分量的彈性，由於學習的內容被分析成層次分明的目標敘述，不同能力的學生可被指定不同分量的學習目標或學習單元(learning units)，是傳統的綜合性教學計畫所無法做到的。
+能力本位教學的基本工作是擬定表現標準以評估學生在學習後是否完滿達成目標所指定的。例如歷史科單元的表現標準之一為「學生能夠描述中國參與世界大戰的原因」，由此能力所發展的表現目標則為「給予一篇文章，學生能夠分別指出中國參與兩次世界大戰的原因。學生能夠分析原因的相似性和相異性，並以紙筆列出至少一點。」
+</p>
+
+<p>
+1970年代後有關能力本位教育的推動遭到一些阻礙，教師懷疑擬定具體表現目標的必要性，而且具體目標過於繁瑣，並可能妨礙高層次目標，如創造性思考能力的培養。
+</p>
+</div>
+</div>
+<div id="outline-container-org4767484" class="outline-4">
+<h4 id="org4767484"><span class="section-number-4">5.15.4.</span> 從能力本位到素養導向</h4>
+<div class="outline-text-4" id="text-5-15-4">
+<p>
+在英語世界，雖然有人認為 competence 較常指行為表現所對應的內在能力，而 competency 較常指內在素質或特質，但並未形成共識。無論是哪一個英文詞，臺灣早期大多翻譯成「能力」，晚近大多翻譯成「素養」，連帶 competency-based education，CBE 一詞，也從「能力本位教育」改譯成「素養導向教育」，這都是反映歐美世界對於這些概念的看法產生了變遷。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4e031a0" class="outline-3">
+<h3 id="org4e031a0"><span class="section-number-3">5.16.</span> 素養導向</h3>
+<div class="outline-text-3" id="text-5-16">
+</div>
+<div id="outline-container-orge407b2b" class="outline-4">
+<h4 id="orge407b2b"><span class="section-number-4">5.16.1.</span> 定義</h4>
+<div class="outline-text-4" id="text-5-16-1">
+<p>
+係指以學生為學習主體，在一個情境當中，學生能活用所學的知識、技能與態度並實踐於行動中的一種課程與教學取向。這種取向，有別於以教師教學為主的「傳統導向」以及以學科知識學習為主的「內容導向」。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd838744" class="outline-3">
+<h3 id="orgd838744"><span class="section-number-3">5.17.</span> 素養導向學習</h3>
+<div class="outline-text-3" id="text-5-17">
+</div>
+<div id="outline-container-orgff715eb" class="outline-4">
+<h4 id="orgff715eb"><span class="section-number-4">5.17.1.</span> 反例：</h4>
+<div class="outline-text-4" id="text-5-17-1">
+<p>
+我們最常聽到的抱怨是：學LOG號做什麼？生活中又用不到。這就是當初沒有情境設定：
+</p>
 <ul class="org-ul">
+<li>以binary search為例-算比較次數</li>
+<li>以三角函數為例：童軍課計由建築物的高度..</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga89c293" class="outline-4">
+<h4 id="orga89c293"><span class="section-number-4">5.17.2.</span> 什麼是素養導向學習</h4>
+<div class="outline-text-4" id="text-5-17-2">
+<ul class="org-ul">
+<li>整合知識、能力、態度</li>
+<li>情境化、脈絡化的學習: 這樣學生才能有深刻的體認「學習是有用的」</li>
+<li>強調學習歷程、策略</li>
+<li>在生活中實踐應用</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga1ec98c" class="outline-4">
+<h4 id="orga1ec98c"><span class="section-number-4">5.17.3.</span> 學習重點</h4>
+<div class="outline-text-4" id="text-5-17-3">
+<p>
+9項核心素養 -&gt; 學習表現+學習內容
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga7d6f65" class="outline-3">
+<h3 id="orga7d6f65"><span class="section-number-3">5.18.</span> 實作</h3>
+<div class="outline-text-3" id="text-5-18">
+</div>
+<div id="outline-container-orgf999575" class="outline-4">
+<h4 id="orgf999575"><span class="section-number-4">5.18.1.</span> 挑選你最看重的核心素養</h4>
+</div>
+<div id="outline-container-orge6317b6" class="outline-4">
+<h4 id="orge6317b6"><span class="section-number-4">5.18.2.</span> 摘錄你最有感的基本理念</h4>
+</div>
+<div id="outline-container-orgee27783" class="outline-4">
+<h4 id="orgee27783"><span class="section-number-4">5.18.3.</span> 你在哪一課程體現你所看重的核心素養</h4>
+</div>
+</div>
+<div id="outline-container-org6475712" class="outline-3">
+<h3 id="org6475712"><span class="section-number-3">5.19.</span> 教學</h3>
+<div class="outline-text-3" id="text-5-19">
+<ul class="org-ul">
+<li>教師的研習由以往的講述-&gt;產出式的研習</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8da8604" class="outline-3">
+<h3 id="org8da8604"><span class="section-number-3">5.20.</span> 教科書</h3>
+<div class="outline-text-3" id="text-5-20">
+</div>
+<div id="outline-container-orga0c319d" class="outline-4">
+<h4 id="orga0c319d"><span class="section-number-4">5.20.1.</span> 教育改革的四個面向：</h4>
+<div class="outline-text-4" id="text-5-20-1">
+<ul class="org-ul">
+<li>課程</li>
+<li>教學</li>
+<li>評量</li>
+<li>教材
+<ul class="org-ul">
+<li>教材看起來有不一樣嗎? 素養導向要融入到教科書的什麼部份</li>
+<li>教材不限制課本(部定課程、校定課程、因材網、軟體)，我們可能讀不同學校、不同老師，但多數人讀同一套教科書長大</li>
+</ul></li>
+<li>我們現在對教材已經脫離了傳統對教科書的定義，</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a6a3fc" class="outline-4">
+<h4 id="org7a6a3fc"><span class="section-number-4">5.20.2.</span> 教材的定位(國教院陳世文)</h4>
+<div class="outline-text-4" id="text-5-20-2">
+<p>
+學生每天會碰到的問題：
+</p>
+<ul class="org-ul">
+<li>Text: 文本，學生在課本裡讀了什麼</li>
+<li>Teacher: 教師，老師在學校教了什麼</li>
+<li>Test: 測驗，考試要考什麼</li>
+<li>教法、教具、教學: 生生有平板(200億)，那平板裡面要要放什麼?</li>
+<li>教材、媒介、評量：教材透過不同媒介的形式進行評量，教科書裡有例題、有習作</li>
+<li>目標、任務、評估：老師有教學目標、根據目標來設計任務、最後評估學生的學習</li>
+<li>最外圈為課程綱要，不管是課本、教學、評量都要遵循課程綱要的要求與精神</li>
+<li>教材在課程改革的過程中有十分鮮明的角色，制定課綱後接下來就是教材的編、審，教材在課改過程中有一種承上（體現課綱的理念與精神）啟下（啟動現場教師與評量端）的作用</li>
+<li>課綱是設計圖、教師是工程師、教材是建材</li>
+</ul>
+
+<div id="org208868a" class="figure">
+<p><img src="images/2022-03-17_09-18-27.jpg" alt="2022-03-17_09-18-27.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 11: </span>教材在教育系統中的角色</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org117aeff" class="outline-4">
+<h4 id="org117aeff"><span class="section-number-4">5.20.3.</span> 素養導向的教材發展特色</h4>
+<div class="outline-text-4" id="text-5-20-3">
+<p width="500">
+<img src="images/2022-03-17_09-36-35.jpg" alt="2022-03-17_09-36-35.jpg" width="500" />
+舉幾本課本的例子、跨領域、貼近生活(各舉一個例子)
+教材越精簡，教師的發揮空間就越大、事前的備課也就越辛苦
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8a57696" class="outline-3">
+<h3 id="org8a57696"><span class="section-number-3">5.21.</span> 素養導向課程設計</h3>
+<div class="outline-text-3" id="text-5-21">
+<p>
+考科: 考試領導教學
+高中: APCS / task / online judge
+資訊科: 作業領導教學
+學習內容 / 學習表現:誰表現?學生，課程設計/上課時要想：要讓學生能表現什麼?/做出什麼?
+</p>
+</div>
+<div id="outline-container-orga0a54f9" class="outline-4">
+<h4 id="orga0a54f9"><span class="section-number-4">5.21.1.</span> 課程設計的邏輯</h4>
+<div class="outline-text-4" id="text-5-21-1">
+</div>
+<ul class="org-ul">
+<li><a id="orgcff22a9"></a>Top-Down<br />
+<div class="outline-text-5" id="text-orgcff22a9">
+<p>
+從課程設計的邏輯而言，UbD(understanding by design)與 CBCI 皆採 Top-down 思維，先思考單元主題的「大概念」（上位概念），以「核心問題」（essential questions）或「概念透鏡」（conceptual lens）作為聚焦學習內容的濾鏡，再連結相的概念，最後連結相關的知識或技能，向下建構課程。
+</p>
+</div>
+</li>
+<li><a id="org0d6a78e"></a>Buttom-Up<br />
+<div class="outline-text-5" id="text-org0d6a78e">
+<p>
+然而，就教學實務而言，若要漸進翻轉傳統的課程設計，以Bottom-up 思維來架構單一學科的概念本位課程，似乎較為簡便可行。具體地說，
+</p>
+<ol class="org-ol">
+<li>首先，教師從自己熟悉的學科內容知識(CK)出發，思考單元主題的知識 與技能目標;</li>
+<li>其次，升維思考，將目標抽象化為幾個「概念」;</li>
+<li>接著，從中選擇一個最重要的概念，作為聚焦學習內容的「概念透鏡」;</li>
+<li>然後，用一個直述句來描述概念透鏡和其他概念，組織成以概念透鏡為主詞的「大概念/通則」。</li>
+<li>最後，進一步把直述句轉為疑問句，把大概念轉化為一體兩面的「核心問題」，以激發學生高 層次的思考，產生持續的探究、爭論與理解。</li>
+</ol>
+</div>
+</li>
+<li><a id="org967232b"></a>「概念」是通往「素養」的路標<br />
+<div class="outline-text-5" id="text-org967232b">
+<p>
+可以「概念」為思考的起點，設計課程、教學與評量。 不過，要到達「素養」終點，還得在課程中設計引導學生探究概念的實作任務，以及能促進概念遷移的真實情 境
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org591c99e" class="outline-4">
+<h4 id="org591c99e"><span class="section-number-4">5.21.2.</span> 重理解的課程設計(Understanding by Design，UbD) / 逆向課程設計(Backward Design)</h4>
+<div class="outline-text-4" id="text-5-21-2">
+
+<div id="org84c910c" class="figure">
+<p><img src="images/2022-02-26_17-03-03.jpeg" alt="2022-02-26_17-03-03.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 12: </span>UbD</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org60d8592" class="outline-4">
+<h4 id="org60d8592"><span class="section-number-4">5.21.3.</span> 素養導向教學範例#1</h4>
+<div class="outline-text-4" id="text-5-21-3">
+<p width="500">
+<img src="images/2022-02-26_16-11-02.jpeg" alt="2022-02-26_16-11-02.jpeg" width="500" />
+[資料來源: 吳璧純、詹志禹(2018)]
+</p>
+</div>
+</div>
+<div id="outline-container-org42e7ad8" class="outline-4">
+<h4 id="org42e7ad8"><span class="section-number-4">5.21.4.</span> 課程架構發展重點</h4>
+<div class="outline-text-4" id="text-5-21-4">
+</div>
+<ul class="org-ul">
+<li><a id="orgc9f6211"></a>關鍵1: 學習目標的擬定<br />
+<div class="outline-text-5" id="text-orgc9f6211">
+<ul class="org-ul">
+<li>學科本質+核心素養: 擷取後的核心素養與學科本質(含學習重點)融合的結果</li>
+<li>單元:</li>
+<li>學習目標: 透過動詞使用，清楚表達學生獲得或建構知識的方式。</li>
+</ul>
+
+<div id="orgef7aaca" class="figure">
+<p><img src="images/3dBloom.jpg" alt="3dBloom.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 13: </span>核心素養的滾動圓輪意象</p>
+</div>
+</div>
+</li>
+<li><a id="org31e8dad"></a>關鍵2:情境使用<br />
+<div class="outline-text-5" id="text-org31e8dad">
+<ol class="org-ol">
+<li>情境用來創造學習經驗─特別是複雜抽象的單元。</li>
+<li>情境創造經驗(具體)，透過思考智能，建立原理原則。</li>
+<li>情境不需要多，但一個情境要運用徹底，創造深度學習。</li>
+</ol>
+</div>
+</li>
+<li><a id="org4d75079"></a>關鍵3:學習評量與學習表現的關係<br />
+<div class="outline-text-5" id="text-org4d75079">
+<ol class="org-ol">
+<li>學習表現決定發展的深淺(可由動詞看出)</li>
+<li>評量收集的證據要明確</li>
+<li>評量要辨識出學習表現的程度(標準或規準)</li>
+</ol>
+</div>
+</li>
+<li><a id="orgc997af6"></a>流程<br />
+<div class="outline-text-5" id="text-orgc997af6">
+
+<div id="org94917cc" class="figure">
+<p><img src="images/2022-02-24_15-23-39.jpg" alt="2022-02-24_15-23-39.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 14: </span>從素養到目標到評量</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org6aba5fe" class="outline-4">
+<h4 id="org6aba5fe"><span class="section-number-4">5.21.5.</span> 素養導向教學的四大原則</h4>
+<div class="outline-text-4" id="text-5-21-5">
+<p>
+由各領域/科目之核心素養、學習重點轉化為
+</p>
+<ol class="org-ol">
+<li>(學習目標)整合知識、技能、態度: 包含學習表現和校訂學習內容</li>
+<li>(學習經驗)情境脈絡化的學習</li>
+<li>(學習表現)學習方法及策略: 學習表現就要參考總綱素養中三面九項內的動詞</li>
+<li>(學習評量)活用實踐的表現</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0ee9925" class="outline-4">
+<h4 id="org0ee9925"><span class="section-number-4">5.21.6.</span> 素養導向範例</h4>
+<div class="outline-text-4" id="text-5-21-6">
+<p>
+Intel AI 韓國泡菜
+</p>
+</div>
+</div>
+<div id="outline-container-org1b97c17" class="outline-4">
+<h4 id="org1b97c17"><span class="section-number-4">5.21.7.</span> 從作品到課程的反向工程:夢N</h4>
+<div class="outline-text-4" id="text-5-21-7">
+<ul class="org-ul">
+<li>影片示例:<a href="https://www.youtube.com/watch?v=LBK6La3hxzw&amp;t=90s">https://www.youtube.com/watch?v=LBK6La3hxzw&amp;t=90s</a></li>
+<li>完整課程: <a href="https://weteach.edu.tw/course/view.php?id=3070">九年級生、資科整合專題-居家氛圍一燈搞定</a></li>
+<li><a href="https://www.youtube.com/watch?v=_MhkJ3T-hw8">https://www.youtube.com/watch?v=_MhkJ3T-hw8</a></li>
+<li><a href="https://www.youtube.com/watch?v=toJlfy8_-7E">https://www.youtube.com/watch?v=toJlfy8_-7E</a></li>
+<li><a href="https://weteach.edu.tw/course/view.php?id=3294">https://weteach.edu.tw/course/view.php?id=3294</a></li>
+<li><a href="https://weteach.edu.tw/pluginfile.php/286833/mod_resource/content/0/%E5%9C%8B%E5%B0%8F%E7%A7%91%E6%8A%80%E6%95%99%E8%82%B2%E5%8F%8A%E8%B3%87%E8%A8%8A%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%99%BC%E5%B1%95%E3%80%90%E5%BE%9E%E8%83%BD%E5%8A%9B%E5%B0%8E%E5%90%91%E5%BE%80%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E3%80%91.pdf">https://weteach.edu.tw/pluginfile.php/286833/mod_resource/content/0/%E5%9C%8B%E5%B0%8F%E7%A7%91%E6%8A%80%E6%95%99%E8%82%B2%E5%8F%8A%E8%B3%87%E8%A8%8A%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%99%BC%E5%B1%95%E3%80%90%E5%BE%9E%E8%83%BD%E5%8A%9B%E5%B0%8E%E5%90%91%E5%BE%80%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E3%80%91.pdf</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb471b64" class="outline-3">
+<h3 id="orgb471b64"><span class="section-number-3">5.22.</span> 核心素養</h3>
+<div class="outline-text-3" id="text-5-22">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">關鍵</th>
+<th scope="col" class="org-left">核心</th>
+<th scope="col" class="org-left">核心素養項目</th>
+<th scope="col" class="org-left">項目說明</th>
+<th scope="col" class="org-left">國中</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">要素</th>
+<th scope="col" class="org-left">素養</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">核心素養具體內涵</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">面向</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">終身</td>
+<td class="org-left">A.自主</td>
+<td class="org-left">A1.</td>
+<td class="org-left">具備身心健全發展的素質，</td>
+<td class="org-left">J-A1 具備良好的身心發展知能</td>
+</tr>
+
+<tr>
+<td class="org-left">學習</td>
+<td class="org-left">行動</td>
+<td class="org-left">身心素質</td>
+<td class="org-left">擁有合宜的人性觀與自我觀,</td>
+<td class="org-left">與態度，並展現自我潛能、探索</td>
+</tr>
+
+<tr>
+<td class="org-left">者</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">與</td>
+<td class="org-left">同時透過選擇、探索人性、</td>
+<td class="org-left">人性、自我價值與生命意義、積</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">自我精進</td>
+<td class="org-left">自我價值與生命意義、積極實踐。</td>
+<td class="org-left">極實踐。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">------------</td>
+<td class="org-left">--------------------------------</td>
+<td class="org-left">------------------------------</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">A2.</td>
+<td class="org-left">具備問題理解、思辨分析、</td>
+<td class="org-left">J-A2 具備理解情境全貌，</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">系統思考</td>
+<td class="org-left">推理批判的系統思考與</td>
+<td class="org-left">並做獨立思考與分析的知能，</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">與</td>
+<td class="org-left">後設思考素養，並能行動與反思，</td>
+<td class="org-left">運用適當的策略處理解決生活</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">解決問題</td>
+<td class="org-left">以有效處理及解決生活、生命問題。</td>
+<td class="org-left">及生命議題。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">------------</td>
+<td class="org-left">--------------------------------</td>
+<td class="org-left">------------------------------</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">A3.</td>
+<td class="org-left">具備規劃及執行計畫的能力，並試探</td>
+<td class="org-left">J-A3 具備善用資源以擬定計畫，</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">規劃執行</td>
+<td class="org-left">與發展多元專業知能、充實生活經驗</td>
+<td class="org-left">有效執行,並發揮主動學習與</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">與</td>
+<td class="org-left">，發揮創新精神，以因應社會變遷、</td>
+<td class="org-left">創新求變的素養。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">創新應變</td>
+<td class="org-left">增進個人的彈性適應力。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+<div id="outline-container-orgd69a5bf" class="outline-3">
+<h3 id="orgd69a5bf"><span class="section-number-3">5.23.</span> 課程設計</h3>
+<div class="outline-text-3" id="text-5-23">
+<ol class="org-ol">
+<li>選擇一個學習單元。
+<ul class="org-ul">
+<li>選擇一個學習單元做為設計標的(3 節以 上)。</li>
+<li>註明單元名稱、領域、年級。</li>
+</ul></li>
+<li>單元價值定位。
+<ul class="org-ul">
+<li>參考領綱理念與目標，轉化聚焦於本單元 (非單元主題的重複)</li>
+<li>可結合「設計理念」發想(Why )。</li>
+<li>思考:對於學生學習，這個單元促成那些跨單元理解?促發怎樣的學習遷移?</li>
+</ul></li>
+<li>呼應的領綱核心素養。
+<ul class="org-ul">
+<li>根據學生特性挑選呼應的領域核心素養。</li>
+<li>建議以1-2則為原則，避免失焦。</li>
+<li>將領域核心素養編碼及內容完整複製，但可以雙刪除線表示刪節部分內容。</li>
+<li>若領域核心素養內容較多，亦可採擷取方式敘寫(註明「已擷取」)</li>
+</ul></li>
+<li>撰寫單元目標。
+<ul class="org-ul">
+<li>將選取後的「領域核心素養」與「價值定位」結合，敘寫單元目標。</li>
+<li>目標基本形式:(副詞+)動詞+名詞。</li>
+<li>運用各領域核心素養內動作性質的字詞做為參考「動詞」，結合單元內容(名詞)， 以完整句子串連敘寫。</li>
+</ul></li>
+<li>設計總結性表現任務。
+<ul class="org-ul">
+<li>扣緊單元目標，怎樣讓學生表現出對所 學內容的理解和應用(總結性作品或行 動)?例如，報告、發表、導覽介紹、 寫作、評論、報導、圖表或模型製作、 媒體製作、概念圖、方案設計、實驗操 作、展演、活動策辦、參與活動、各式 創作等。</li>
+<li>此總結性作品或行動，評量基準或學習挑 戰為何?怎樣引導學生為自己的學習負 責?</li>
+</ul></li>
+<li>設想連結的情境脈絡。
+<ul class="org-ul">
+<li>透過「打開經驗世界」和「發展抽象能力」，讓學生和世界真實的連結。</li>
+<li>情境脈絡即在釐清單元中學習的「結」， 並將它們有機的「連」起來。</li>
+<li>這些「連」「結」，可包括知識與知識、 知識與生活情境、知識與能力、知能與 行動等之間的點線面串連。</li>
+</ul></li>
+<li>列出節次安排。
+<ul class="org-ul">
+<li>串聯學習脈絡，用文、圖或表呈現單元架構。</li>
+<li>決定所要設計的節次(不限於1節)。</li>
+<li>將選定節次加外框(可塗淺底色)表示之</li>
+</ul></li>
+<li>擇定設計節次， 選出學習重點， 轉化為學習目標。
+<ul class="org-ul">
+<li>找出此教學結合的學習表現及學習內容， 但須聚焦，是教學上會花時間處理的才 納入。</li>
+<li>將學習表現及學習內容的編碼及內容完整 複製，但可將未用部分雙刪除，以再次 聚焦。</li>
+<li>轉化為學習目標，目標基本形式為，動詞 +名詞(學習重點的交織轉化)。「動詞」 可從學習表現提取並視學生特性調整之， 「名詞」可從學習內容轉化為本節次設 計的具體內容;二者適切結合，即為課 程目標。</li>
+</ul></li>
+<li>設計學習活動及形成性學習評量。
+<ul class="org-ul">
+<li>將學習目標及情境脈絡緊密連結，設計活動及流程。</li>
+<li>學習活動著重從學生學習視角敘寫，概略 描述相關方法策略、學習內容、學習材 料、學習鷹架、表單工具等。</li>
+<li>評量點設定在何處?用何證據檢視學習目標的達成狀況(評量內容與方式)?</li>
+</ul></li>
+<li>本設計與素養導向教學四大 原則的呼應或開展。
+<ul class="org-ul">
+<li>設計完後，整體檢視:此課程及教學設計怎樣呼應或開展素養導向教學?</li>
+<li>請討論後寫出2-3則理由。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5954638" class="outline-3">
+<h3 id="org5954638"><span class="section-number-3">5.24.</span> 素養導向學習內容規劃</h3>
+<div class="outline-text-3" id="text-5-24">
+<ol class="org-ol">
+<li>選擇課程主題（單元）
+<ul class="org-ul">
+<li>目的：擇定課程主題</li>
+<li>資源：
+<ul class="org-ul">
+<li>總綱、群科課程綱要</li>
+<li>技高群科課程手冊</li>
+<li>學校課程計畫書</li>
+<li>教科書</li>
+</ul></li>
+</ul></li>
+<li><p>
+檢視主題（單元）與整體課程的關連
+</p>
+<ul class="org-ul">
+<li>目的：了解主題（單元）與科教育目標、職場人力需求、學生圖像之關連</li>
+<li>資源：課程計畫書（科課程地圖、學生圖像、學校願景&#x2026;）</li>
+</ul>
+<p>
+教師在設計課程內容時，除了需考量學生起點行為之外，也需提高視野，檢視本課程單元在科整體課程架構中的位置，思考本單元與科目、群科課程的關連，及所欲培養的核心素養與群科對應產業人力需求、學生圖像、學校願景之連結
+</p></li>
+<li><p>
+選擇適合的核心素養
+</p>
+<ul class="org-ul">
+<li>目的：決定適合本單元培養之核心素養(<a href="#org0714ea4">1</a>)</li>
+<li>資源：總綱、技高一般科目課綱、專業群科課綱</li>
+</ul>
+<p>
+教師挑選本單元課程所欲培養學生帶得走的能力，需和學習目標、學習表現、學習內容環環相扣。
+同一單元挑選不同的核心素養，教學設計方向就會有所不同
+</p>
+
+<div id="org4478415" class="figure">
+<p><img src="images/2022-02-26_18-17-06.jpeg" alt="2022-02-26_18-17-06.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 15: </span>核心素養的轉換</p>
+</div>
+<ul class="org-ul">
+<li>留意: 素養在各教育階段、領域／科目／群科間的轉換</li>
+<li>找出:
+<ul class="org-ul">
+<li>總綱三面九項核心素養</li>
+<li>技高教育階段（V-U）核心素養</li>
+<li>各領域／科目／群科核心素養的對應關係</li>
+</ul></li>
+</ul></li>
+<li><p>
+擇定學習重點、檢核與核心素養的呼應
+</p>
+<ul class="org-ul">
+<li>目的：透過學習重點，使課程設計與核心素養相呼應</li>
+<li>資料：群科課程綱要、技高群科課程手冊、學校課程計畫書</li>
+</ul>
+<p>
+教師可透過雙向細目表，呈現學習內容、學習表現的對應關係，再與學習目標或核心素養進行來回檢視
+</p>
+<ul class="org-ul">
+<li>學習重點由「學習表現」及「學習內容」二個向度組成
+<ul class="org-ul">
+<li>學習表現：認知歷程、情意、態度之學習展現</li>
+<li>學習內容：該領域/科目之重要事實、概念、原理原則、技能、態度與後設認知等知識</li>
+</ul></li>
+<li>學習內容與學習表現的範例
+<ul class="org-ul">
+<li><p>
+學習主題: 降龍十八掌
+</p>
+
+<div id="orgaa96538" class="figure">
+<p><img src="images/2022-02-26_18-20-39.jpeg" alt="2022-02-26_18-20-39.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 16: </span>Caption</p>
+</div></li>
+<li><p>
+學習內容與學習表現
+</p>
+<p width="500">
+<img src="images/2022-02-26_18-21-37.jpeg" alt="2022-02-26_18-21-37.jpeg" width="500" />
+[資料來源: 林永豐(2019)]
+</p></li>
+</ul></li>
+</ul></li>
+<li>設定學習目標
+<ul class="org-ul">
+<li>目的的：結合挑選的核心素養與學習重點，具體化學生認知、情意與技能的學習目標</li>
+<li>產出：列出3-5個學習目標（含認知、情意、技能）</li>
+<li>資源：核心素養發展手冊</li>
+<li><p>
+範例
+</p>
+<p width="500">
+<img src="images/2022-02-26_18-24-26.jpeg" alt="2022-02-26_18-24-26.jpeg" width="500" />
+[資料來源: 林永豐(2019)]
+</p></li>
+<li><p>
+學習目標用詞(認知)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">目標層次</th>
+<th scope="col" class="org-left">行為動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">記憶</td>
+<td class="org-left">認識、回憶、定義、描述、識別、標明、列舉、配合、指定、概述、複製、陳述</td>
+</tr>
+
+<tr>
+<td class="org-left">理解</td>
+<td class="org-left">說明、舉例、分類、概述、推斷、比較、解釋、轉換、辯護、辨別、評價、引申、歸納、釋義、預測、改寫</td>
+</tr>
+
+<tr>
+<td class="org-left">應用</td>
+<td class="org-left">執行、實施、改變(轉換)、計算、證明(說明或展示)、發現(探索)、操 作、修改、預估(測)、準備、連結、示範、解決、使用(運用)</td>
+</tr>
+
+<tr>
+<td class="org-left">分析</td>
+<td class="org-left">差別、組織、歸因、拆解、圖示、區別、辨別、識別、 (舉例)說明、推論、概述、指出、連結、選擇、區分、細分</td>
+</tr>
+
+<tr>
+<td class="org-left">評鑑</td>
+<td class="org-left">檢核、評述、評價、比較、評斷(總結)、對照、描述、鑑別(區別)、解釋、證明、詮釋、連結(關聯)、總結、支持(證實)</td>
+</tr>
+
+<tr>
+<td class="org-left">創造</td>
+<td class="org-left">創造、計劃、製作</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>
+學習目標用詞(態度價值)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">目標層次</th>
+<th scope="col" class="org-left">行為動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">接受</td>
+<td class="org-left">詢問、選擇、描述、(領會、採用或仿效)、給予、(維持、包含)、識別、 (定位)、指定、指明、回應、選擇、使用</td>
+</tr>
+
+<tr>
+<td class="org-left">反應(回應)</td>
+<td class="org-left">反應(回應)、幫助、順從、遵守、討論、(接受或做出反應)、幫助、標明、執行(表現)、實行、呈現、覺察、背誦、報告、選擇、識別、編寫</td>
+</tr>
+
+<tr>
+<td class="org-left">評價</td>
+<td class="org-left">完成、描述、區分、解釋、(領會、採用或仿效)、形成、創始(著手)、(邀約或引致)、參與、證明、提議、解讀、報告、選擇、分享、研究、操作或運作</td>
+</tr>
+
+<tr>
+<td class="org-left">重組或組織</td>
+<td class="org-left">堅持(遵守)、改變、安排、結合、對比、完成、辯護、解釋、歸納、識別、結合、修改、 (整理或安排)、組織、準備、連結、綜合</td>
+</tr>
+
+<tr>
+<td class="org-left">價值觀的型塑品格的養成</td>
+<td class="org-left">扮演、區別、表現(展現、顯示)、影響、傾聽、修改、執行或表現、實行、提議、具備、詢問、修訂、服務或供應、解決、使用、證實</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>
+學習目標用詞(認知)
+</p>
+
+<div id="org9be2cc1" class="figure">
+<p><img src="images/2022-02-26_18-28-30.jpeg" alt="2022-02-26_18-28-30.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 17: </span>v1</p>
+</div>
+
+<div id="org6caeae4" class="figure">
+<p><img src="images/2022-02-26_18-29-36.jpeg" alt="2022-02-26_18-29-36.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 18: </span>v2</p>
+</div>
+
+<div id="org75ff248" class="figure">
+<p><img src="images/2022-02-26_18-28-30.jpeg" alt="2022-02-26_18-28-30.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 19: </span>v3</p>
+</div></li>
+</ul></li>
+<li><p>
+融入重大議題(19項): PASS
+</p>
+<ul class="org-ul">
+<li>目的：思考可融入主題（單元）的議題項目及實質內涵</li>
+<li>資源：議題融入說明手冊</li>
+</ul>
+<p>
+議題是涉及人類發展與價值的社會課題。總綱明訂19項議題
+</p>
+<ul class="org-ul">
+<li>部分已納入核心素養（如：品德、科技、資訊、多元文化、國際教育&#x2026;）</li>
+<li>部分單獨設立科目（如：生命、科技、生涯規劃&#x2026;）</li>
+<li>部分納入領綱學習重點 （如：人權、環境、海洋&#x2026;）</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8e6f1e6" class="outline-3">
+<h3 id="org8e6f1e6"><span class="section-number-3">5.25.</span> 素養導向課程設計實作</h3>
+<div class="outline-text-3" id="text-5-25">
+</div>
+<div id="outline-container-org4681797" class="outline-4">
+<h4 id="org4681797"><span class="section-number-4">5.25.1.</span> 了解課程檢核表[活動]</h4>
+<div class="outline-text-4" id="text-5-25-1">
+</div>
+<ul class="org-ul">
+<li><a id="org5581c75"></a>第一階段:課程架構發展<br />
+<div class="outline-text-5" id="text-org5581c75">
+<ul class="org-ul">
+<li>有明確且可執行的學習目標</li>
+<li>學習目標與核心素養確實有對應</li>
+<li>學習目標包含知識、技能和情意層面</li>
+<li>學習目標兼顧上述各層面而未偏重特定層面</li>
+<li>學習目標與學習內容、學習表現確實有對應</li>
+<li>學習表現之設定符合學生發展，且未限定於某些項目</li>
+<li>課程設定最終的表現任務(總結性評量)</li>
+<li>最終的表現任務與學習目標是相對應的</li>
+<li>課程設定階段性的檢核方式</li>
+<li>表現任務(總結性評量)或階段檢核，有明確的評量規準或標準。</li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org2392715"></a>任務1:自評課程與調 (10分鐘)<br />
+<div class="outline-text-6" id="text-org2392715">
+<ul class="org-ul">
+<li>根據檢核表，檢視課填寫檢核表，並討論課程架構。</li>
+<li>填寫檢核表，並討論調整方向。</li>
+</ul>
+</div>
+</li>
+<li><a id="org8955802"></a>任務2:互評課程與調整 (20分鐘)<br />
+<div class="outline-text-6" id="text-org8955802">
+<ul class="org-ul">
+<li>兩個課程為一組，輪流說課。</li>
+<li>每個課程說課8分鐘，提問討論5分鐘。</li>
+<li>填寫互評表</li>
+</ul>
+</div>
+</li>
+<li><a id="org5de71ea"></a>任務3:關鍵練習 (15分鐘)<br />
+<div class="outline-text-6" id="text-org5de71ea">
+<ul class="org-ul">
+<li>選擇單元</li>
+<li>寫出學科本質(可包含學習重點)</li>
+<li>選擇適合發展的核心素養(總綱或領綱)</li>
+<li>撰寫課程學習目標</li>
+<li>寫出對應的學習重點</li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org30d4dbf"></a>參考總綱核心素養與領領綱學習重點完成下表<br />
+<div class="outline-text-7" id="text-org30d4dbf">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">單元名稱</th>
+<th scope="col" class="org-left">學科本質討論</th>
+<th scope="col" class="org-left">核心素養選擇</th>
+<th scope="col" class="org-left">學習目標撰寫</th>
+<th scope="col" class="org-left">學習重點敘寫</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb2eb4d4"></a>任務4:第一階段設計工作<br />
+<div class="outline-text-6" id="text-orgb2eb4d4">
+<p>
+坊討論 (20分鐘)
+課程設計分享
+</p>
+</div>
+</li>
+<li><a id="org4e2b96d"></a>任務5：學習歷程設計<br />
+<div class="outline-text-6" id="text-org4e2b96d">
+<p>
+(100分鐘)
+</p>
+<ul class="org-ul">
+<li>使用時間的邏輯不同，追求更高的CP值。</li>
+<li>學習的路徑常常是相反的</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgae91009" class="outline-4">
+<h4 id="orgae91009"><span class="section-number-4">5.25.2.</span> 促進學習的提問</h4>
+<div class="outline-text-4" id="text-5-25-2">
+<ul class="org-ul">
+<li>概念建構的提問
+<ul class="org-ul">
+<li>概念形成：發散到聚斂(通則產生)</li>
+<li>概念衝突：引起反思或概念改變</li>
+</ul></li>
+<li>概念應用的提問
+<ul class="org-ul">
+<li>概念理解：解題中檢核理解</li>
+<li>概念遷移：不同情境中使用，產生新概念或新能力</li>
+<li>概念跳躍：概念間產生連結，整併，讓概念記憶更精簡</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org50764ef" class="outline-4">
+<h4 id="org50764ef"><span class="section-number-4">5.25.3.</span> 促進學習的提問原則</h4>
+<div class="outline-text-4" id="text-5-25-3">
+<ol class="org-ol">
+<li>緊扣大概念，從核心出發。</li>
+<li>巨觀到微觀，現象到建模。</li>
+<li>友善的問題，挑戰的問題。</li>
+<li>Think Big, Start Small
+<ul class="org-ul">
+<li>關鍵問題&#x2014;核心概念
+<ul class="org-ul">
+<li>哪個問題會是第一個問題？</li>
+<li>下一個問題是甚麼&#x2026;</li>
+</ul></li>
+<li>素樸問題&#x2014;邀請學生
+<ul class="org-ul">
+<li>用生活相關的例子或樣態</li>
+<li>最素樸的方式呈現</li>
+<li>所有孩子都能說出自己的看法(無關對錯)</li>
+</ul></li>
+<li>最重要的就是核心(學科本質)與邏輯(概念發展次序</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge41037b" class="outline-4">
+<h4 id="orge41037b"><span class="section-number-4">5.25.4.</span> 問個好問題</h4>
+<div class="outline-text-4" id="text-5-25-4">
+<ol class="org-ol">
+<li>第一步：期望得到的答案(看到的學習表現)</li>
+<li>第二步：問題想檢核的概念(預期的學習目標)</li>
+<li>第三步：解決問題所需能力(素養)將決定問題類型 (學習表現決定類型)</li>
+<li>第四步：問題適合的類型與提問用語(在情境中，依序提問)</li>
+<li>第五步：預測所有可能的答案與困難(連結學生分析)</li>
+<li>第六步：如何收斂或發展</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org980aa85" class="outline-3">
+<h3 id="org980aa85"><span class="section-number-3">5.26.</span> 素養導向教學</h3>
+<div class="outline-text-3" id="text-5-26">
+<ul class="org-ul">
+<li>以生成素養為目的</li>
+</ul>
+</div>
+<div id="outline-container-org2b581c9" class="outline-4">
+<h4 id="org2b581c9"><span class="section-number-4">5.26.1.</span> 「素養導向」教學的展現，主要能回答下列四個問題：(教育部定義)</h4>
+<div class="outline-text-4" id="text-5-26-1">
+<ol class="org-ol">
+<li>是否融合知識、情意與技能？
+例如：學生能於國語文課中進行新詩仿作；學生能於自然科學課中設計環境汙染調查表等表現。</li>
+<li>是否展現教與學的策略與方法？
+例如：教師能進行概念圖教學、有層次的提問，學生的學習能繪製心智圖、進行小組合作學習或能運用作筆記的策略，掌握文章的重點等。</li>
+<li>是否營造適當的學習情境？
+例如：教師為增進學生們的互動，能營造一個正向的競合情境；為增進學生實際的體驗，能運用科技營造一個虛擬真實的情境等。</li>
+<li>學生是否有整合活用或實際行動？
+例如：學生在閱讀「我為人人黃金葛」的科普文章後，能親手栽種黃金葛；或是學生於體育課中學會跳土風舞後能於社區老人活動中心進行分享</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge0668af" class="outline-4">
+<h4 id="orge0668af"><span class="section-number-4">5.26.2.</span> 待查</h4>
+<div class="outline-text-4" id="text-5-26-2">
+<p>
+核心素養要培養學生成為終身學習者，在總綱中的定義，包括自主行動、溝通互動和社會參與三大面向和九大項目，並不是台灣的課綱制定者獨創，是參考歐盟、經濟合作暨發展組織、聯合國教科文組織等三大國際教育組織和國內學者相關研究。
+核心素養是什麼？
+</p>
+<ol class="org-ol">
+<li>從教師為主體到以學生為主體
+以前知識的唯一來源是「教材」（課本），老師是宣達教材者，但是現在的知識來源太多元，變動又太快。老師不可能教所有的知識，而是要教學生學習的方法，才能成為終身學習者。</li>
+<li>從科目學習到跨科目、跨領域學習
+在真實的生活中，不可能只用數學或是英文來解決問題，必須融合所有的學科知識，加上溝通團隊互動，堅持克服學習中的困難，以及毅力才能進步。這也是為什麼新的素養導向考題，數學或是科學的科目會有很長的題目文本，需要國文科培養的閱讀力；國文科的考題又有很複雜的表格，需要耐心閱讀和分析。這些都是真實生活中會遇到的狀況。</li>
+<li>從只教知識，到必須同時重視技能和情意
+台東大學教育學院院長曾世杰曾任國教院副院長，他的專欄文章曾記錄國教院當年召開會議，討論新課綱裡的「素養」是不是就是經濟合作暨發展組織所關心的學生能力（competence）？在該次會議中，學者專家認為，教育不能只為經濟發展服務，只談能力會把人「工具化」，教育應該要有更高的使命。結論是，108課綱所稱的素養，內涵更大於能力。</li>
+<li>不僅重視結果，也要重視學習的歷程和方法
+在過去，學習的結果就是考試分數，考試是學習終點，分數是學習的結果。但是這樣的取向，讓學生習慣考完試就不想繼續學習，無法培養終身學習者。在108課綱中有一個重要改變就是高中階段的學習，從高一開始就必須累積自己的學習歷程檔案，希望引導學生、老師和家長不要把眼光只放在考試分數。</li>
+<li>不僅在學校中學習，更要落實在社會行動，用知識解決真實問題
+國民教育要培養的就是未來人才，除了企業需要能力，更必須是有社會參與感的公民，這些素質都必須從小學起。在學習的過程中，要透過引導，多和世界正在發生的議題連結，從中引發動機、觸動學習和解決問題。</li>
+<li>把知識、能力和態度整合運用在情境化、脈絡化的學習過程中，注重學習歷程、方法與策略，透過實踐力行的表現評量學習的成效。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1ab745d" class="outline-4">
+<h4 id="org1ab745d"><span class="section-number-4">5.26.3.</span> 老師要怎麼教素養？</h4>
+<div class="outline-text-4" id="text-5-26-3">
+<p>
+根據國際備受肯定的素養課程經驗，教學上有個20／80原則，老師的講述只占20％、80％時間用來設計學生參與的教學活動；十分重視探究、實作、實驗、討論、小組合作、反思、表達等活動。學生學習上高度參與，效果較佳、容易激發興趣，加上有反思的歷程，對事情形成觀點和態度，能夠跳脫過去純背誦死知識的單薄。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7bfabc1" class="outline-3">
+<h3 id="org7bfabc1"><span class="section-number-3">5.27.</span> Focus在國中資訊科</h3>
+</div>
+<div id="outline-container-orga353d89" class="outline-3">
+<h3 id="orga353d89"><span class="section-number-3">5.28.</span> 標準本位課程發展</h3>
+<div class="outline-text-3" id="text-5-28">
+<p>
+開發課程前的三個指引性的問題
+</p>
+<ol class="org-ol">
+<li>學生該學習什麼知識與技能？</li>
+<li>該蒐集何種證據以確保學生的學習？</li>
+<li>該運用什麼經驗以確保學生的學習？</li>
+<li>如何改善課程</li>
+<li>如何使課程便於他人使用</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org55c9c4d" class="outline-3">
+<h3 id="org55c9c4d"><span class="section-number-3">5.29.</span> 參考網站</h3>
+<div class="outline-text-3" id="text-5-29">
+<ul class="org-ul">
+<li><a href="https://flipedu.parenting.com.tw/article/004112">莊福泰：什麼是素養導向教學？</a></li>
+<li><a href="https://ws.moe.edu.tw/001/Upload/23/relfile/8059/56214/bb0fc79d-a7c7-4d7e-b03a-9d14bdb59011.pdf">素養導向教學與評量的界定、轉化與實踐之說明</a></li>
+<li><a href="https://cirn.moe.edu.tw/Upload//WebFile/74168/636975791834632324.pdf">核心素養</a></li>
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org20f1869" class="outline-2">
+<h2 id="org20f1869"><span class="section-number-2">6.</span> 素養導向課程示例 (搜尋演算法/對數)</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org231d1ec" class="outline-3">
+<h3 id="org231d1ec"><span class="section-number-3">6.1.</span> 探索－摺紙活動</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>上課材料：A4紙若干張</li>
+<li>分組方式：2~3人一組</li>
+<li>活動流程：
+<ol class="org-ol">
+<li>每組發放一張A4紙。</li>
+<li>各組開始將紙張對摺，看哪一組能夠對摺最多次。</li>
+<li>各組分享對摺的方法。</li>
+<li>提問：</li>
+</ol></li>
+<li>若一張紙的厚度為0.01公分，台北101的高度是508公尺。若紙張夠大，要對摺幾次才可以超過台北101的高度？</li>
+<li>只要23次</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66a3b30" class="outline-3">
+<h3 id="org66a3b30"><span class="section-number-3">6.2.</span> 運算思維</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>先備知識：指數、對數基本性質</li>
+<li>解題流程：
+<ol class="org-ol">
+<li>觀察</li>
+<li>對摺1次，厚度變為2倍。</li>
+<li>對摺2次，厚度變為 \(2^2\) 倍。</li>
+<li>以此類推</li>
+<li>對摺n次，厚度變為 \(2^n\) 倍。</li>
+</ol></li>
+<li>推測
+<ul class="org-ul">
+<li>\(\frac{50800}{0.01} = 5080000\)</li>
+<li>由上式,由上式，台北101高度為一張紙的5080000倍</li>
+<li>故，\(2^n > 5080000\)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org412812c" class="outline-3">
+<h3 id="org412812c"><span class="section-number-3">6.3.</span> 程式設計</h3>
+</div>
+<div id="outline-container-org2a8ee8e" class="outline-3">
+<h3 id="org2a8ee8e"><span class="section-number-3">6.4.</span> 能否應用於其他生活領域?</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+存、放款利息、細菌培養、人口計算化學領域(pH值、半衰期)、天文領域(發光強度)地震規模、噪音&#x2026;等等。
+</p>
+</div>
+</div>
+<div id="outline-container-orgec69c86" class="outline-3">
+<h3 id="orgec69c86"><span class="section-number-3">6.5.</span> 表現任務－解決應用題型</h3>
+<div class="outline-text-3" id="text-6-5">
+<ol class="org-ol">
+<li>小明到銀行存入100萬元定存，已知銀行優惠定存年利率為10%，並以複利計算，試問至少要存多少年，小明才可獲得50萬的利息？</li>
+<li>科學家研究出一種可改善人體體質的菌體，並進行培養，已知目前有1千株菌體，且每過一天菌體就能成長為原來的1.5倍數量。若需培養1億株菌體，至少需要幾天的時間？</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org46d2f02" class="outline-3">
+<h3 id="org46d2f02"><span class="section-number-3">6.6.</span> 單元內容、對應素養及目標</h3>
+<div class="outline-text-3" id="text-6-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">單元內容</th>
+<th scope="col" class="org-left">常用對數及其應用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">學科本質</td>
+<td class="org-left">應用數學方法到日常生活情境</td>
+</tr>
+
+<tr>
+<td class="org-left">總綱核心素養項目</td>
+<td class="org-left">A自主行動-A2系統思考與解決問題</td>
+</tr>
+
+<tr>
+<td class="org-left">數學領域核心素養具體內涵</td>
+<td class="org-left">V-U-A2藉由單元之間數學觀念的統整，強化生活情境與問題理解，學習由不同面向分析問題與解決問題，並將生活問題經由觀察，找出相關性，做成數學推測，找到解決方法。</td>
+</tr>
+
+<tr>
+<td class="org-left">單元目標</td>
+<td class="org-left">學生能透過摺紙的活動，理解指數函數變化情形，並能正確使用對數性質與其他情境進行連結解決生活的問題。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9add1a" class="outline-2">
+<h2 id="orgc9add1a"><span class="section-number-2">7.</span> 資料處理專題課程分享與實作</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li></li>
+</ul>
+<p>
+時間: 50分
+<a href="https://www.youtube.com/watch?v=v_raWlX7tZY">https://www.youtube.com/watch?v=v_raWlX7tZY</a>
+</p>
+</div>
+<div id="outline-container-org1b5a2db" class="outline-3">
+<h3 id="org1b5a2db"><span class="section-number-3">7.1.</span> 拿多元選修的Pyton/AI課程當範例</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>為什麼要開這門課</li>
+<li>如何教</li>
+<li>用到什麼素養</li>
+<li>如何與國中連結</li>
+<li>反思: 這算素養導向嗎: 知道如何做? 會做? 願意去做?</li>
+<li>語言的學習: 以往我都要把用到的東西都寫進講義中，但有一次太懶，要求他們去查，後來發現這是一種方式，例如: python scatter，matplotlib不教全部，讓學生自己去查，另一個例子是C++的三角形面積問題</li>
+<li>另一個例子: 讓學生出題&#x2026;..</li>
+<li>秀skyoj的考試網內題目&#x2026;.，先挑幾題還不錯的。&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2342770" class="outline-3">
+<h3 id="org2342770"><span class="section-number-3">7.2.</span> 使用網站:</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li><a href="https://www.futurelearn.com/info/courses/representing-data-with-images-and-sound/0/steps/53142">File size calculation </a></li>
+<li><a href="https://www.101computing.net/file-size-calculations/">文件大小計算 </a></li>
+<li><a href="https://openhome.cc/Gossip/Encoding/TextFile.html">哪來的純文字檔？</a></li>
+<li><a href="https://www.online-toolz.com/tools/text-hex-convertor.php"> Text to Hex Converter </a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0e3fda5" class="outline-3">
+<h3 id="org0e3fda5"><span class="section-number-3">7.3.</span> TEXT</h3>
+</div>
+<div id="outline-container-org78a5cf2" class="outline-3">
+<h3 id="org78a5cf2"><span class="section-number-3">7.4.</span> 文字的儲存：英文</h3>
+<div class="outline-text-3" id="text-7-4">
+</div>
+<div id="outline-container-org12a7b93" class="outline-4">
+<h4 id="org12a7b93"><span class="section-number-4">7.4.1.</span> 實作後回答問題</h4>
+<div class="outline-text-4" id="text-7-4-1">
+<ol class="org-ol">
+<li><p>
+儲存文字檔
+</p>
+<div class="org-src-container">
+<pre class="src src-conf">       A
+</pre>
+</div></li>
+<li>查看該檔案的實際內容: 16進位
+<ul class="org-ul">
+<li>線上工具</li>
+<li>應用程式</li>
+</ul></li>
+<li>查看檔案大小</li>
+<li><p>
+儲存文字檔
+</p>
+<div class="org-src-container">
+<pre class="src src-conf">       ABC
+</pre>
+</div></li>
+<li>查看該檔案的實際內容: 16進位</li>
+<li>查看檔案大小</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc9d348b" class="outline-4">
+<h4 id="orgc9d348b"><span class="section-number-4">7.4.2.</span> 問題</h4>
+<div class="outline-text-4" id="text-7-4-2">
+<ol class="org-ol">
+<li>一個英文字儲多少空間</li>
+<li>A的實際儲存內容為何?</li>
+<li>那是什麼意思?</li>
+<li>第二個檔案的實際大小是多少?</li>
+<li>為什麼?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org4da0e80" class="outline-3">
+<h3 id="org4da0e80"><span class="section-number-3">7.5.</span> 影像的儲存: BMP</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+準備兩個BMP: check.bmp, plus.bmp
+</p>
+<ol class="org-ol">
+<li>查看這兩個BMP的檔案大小
+<ul class="org-ul">
+<li><p>
+plus
+</p>
+<p width="32">
+<a href="images/plus.bmp" width="32">images/plus.bmp</a>
+</p></li>
+<li><p>
+check
+</p>
+<p width="32">
+<a href="images/check.bmp" width="32">images/check.bmp</a>
+</p></li>
+</ul></li>
+<li>為什麼內容不一樣，檔案大小卻一樣</li>
+<li>比較那兩個圖檔的HEX內容，為什麼不同圖檔的前面檔頭都很類似1</li>
+<li>建立一個8*8的RGB圖檔
+<ul class="org-ul">
+<li>GIMP</li>
+<li>線上工具</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd9969b3" class="outline-2">
+<h2 id="orgd9969b3"><span class="section-number-2">8.</span> 資料處理專題課程分享與實作（二）學習評量方式探討</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-orgb06c77c" class="outline-3">
+<h3 id="orgb06c77c"><span class="section-number-3">8.1.</span> Video:</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=TsKNAzP6MRc">108新課綱與素養導向命題精進方向</a></li>
+<li><a href="https://www.youtube.com/watch?v=oCM9T_v5pJ4">大考中心主任劉孟奇新課綱命題演講</a></li>
+<li>因應目前素養課程的教學，評量也朝「素養」轉向，大部分的人都認為素養式的評量題目就是要文字很多，&gt;其實不然，素養導向的命題方式是著重在真實的情境與真實的問題，主要是想測驗考生能不能把生活上的一些問題，跟他學到的知識做連結，未來在現實生活當中若遇到相同的情境也能夠做出恰當的應用，甚至是創造出更新的方式來取代。其實以前我們就有所謂的『應用題』，但現在的考題則是會用更靈活更生活的方式去呈現。所以當我們在布題的時候，會加上情境的說明，不免讓外界的人誤認素養式的評量題目就是文字很多。</li>
+<li>素養評量又該如何命題呢？首先布題要強調真實的情境以及生活當中真的會遇到的真實問題，讓學生從考題中察覺到所學的知識在生活中如何被運用，進而體會這些知識在生活中的重要性並引發其學習動機。以數學科為例，以往的考題，可能會直接詢問第 16 人到第 93 人，總共有幾個人？距離是多少公尺？而素養考題出題方式則會加入真實情境，在生活中是可以經驗到的問題，如下：『一下火車，流鶴就看到叮叮藥局前出現大排長龍的買口罩人潮，但花蓮市民相當遵守防疫社交距離，記者看到最後一個人手上的號碼牌是 93 號，現在已發放到 16 號，請問目前總共有幾個人在排隊？最後一個人距離販售口多少公尺？(社交距離：室內 1.5 公尺，室外 1 公尺以上)』買口罩排隊的問題是防疫期間在生活中常常見到的，藉由生活中實際的例子讓孩子自我察覺學習的重要性與實用性，引發其學習興趣與引導正確學習態度。</li>
+<li><a href="https://www.youtube.com/watch?v=AacI7b0itLo">【20211208-子題4：素養教學評量與學生學習風貌的改變】2021新課綱實施與教育協作論壇</a></li>
+<li><a href="https://www.youtube.com/watch?v=Nt6vQoMf4Qw">#7 科技領域素養導向評量分享</a></li>
+</ul>
+<p>
+<a href="https://cbtl.rcpet.edu.tw/">素養導向標準本位數位評量網站</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf926eef" class="outline-3">
+<h3 id="orgf926eef"><span class="section-number-3">8.2.</span> 評量的三種層次</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>Assessment of Learning
+學習是為了評量，月考、成就測驗: 總結性評量</li>
+<li>Assessment as Learning
+<ul class="org-ul">
+<li>評量即學習：形成性評量、歷程檔案</li>
+<li>鼓勵學生培養和應用自省及反思的能力，隨時主動思考自己的學習狀況，並做調整</li>
+</ul></li>
+<li>Assessment for Learning: 促進學習的評量
+<ul class="org-ul">
+<li>評量促進學習，形成性評量，應用所學知識進行高階思考，KWL chart</li>
+<li>使用多元評量策略和回饋，以了解學生的學習成長、進步與需求。</li>
+<li>評量結果可幫助教師、學生本身，同儕來思考教學及學習的下一步</li>
+</ul></li>
+<li>Moodle VPL: 形成性評量(不斷的透過程式的測資/答案來修改題目)</li>
+<li>skyoj: 總結性評量</li>
+</ul>
+<p>
+KWL
+K: What I Know
+W: What I want to know
+L: What I learned.
+</p>
+</div>
+</div>
+<div id="outline-container-orge43aac8" class="outline-3">
+<h3 id="orge43aac8"><span class="section-number-3">8.3.</span> 素養導向試題是什麼?</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>生活情境</li>
+<li>題目落落長</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdfb32c7" class="outline-3">
+<h3 id="orgdfb32c7"><span class="section-number-3">8.4.</span> 素養導向試題不是什麼?</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li><p>
+關鍵不在長文、情境，而是 <b>學習表現</b>
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">九貫</th>
+<th scope="col" class="org-left">十二年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">基本能力</td>
+<td class="org-left">核心素養</td>
+</tr>
+
+<tr>
+<td class="org-left">能力指標</td>
+<td class="org-left">學習重點</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- 學習表現</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- 學習內容</td>
+</tr>
+</tbody>
+</table></li>
+<li>一道題是否為素養為連續值，非 <b>有/無</b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc4bce22" class="outline-3">
+<h3 id="orgc4bce22"><span class="section-number-3">8.5.</span> 109年素養導向數位評量計畫</h3>
+<div class="outline-text-3" id="text-8-5">
+<ul class="org-ul">
+<li>落實108課綱核心素養的理念與目標，以多元的方式來評量學生的學習表現
+<ul class="org-ul">
+<li>紙筆測驗無法滿足所有評量需求，應加入適合於課綱目標的數位評量工具</li>
+<li>108課綱強調具備善用 *科技資訊的相關能力*，以及使用科技資訊來進行分析、思辨與批判等各項解決問題的能力</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org23a4420" class="outline-3">
+<h3 id="org23a4420"><span class="section-number-3">8.6.</span> 標準本位評量</h3>
+<div class="outline-text-3" id="text-8-6">
+<p>
+參考:<a href="https://www.youtube.com/watch?v=kMx6RjRGz9Q">https://www.youtube.com/watch?v=kMx6RjRGz9Q</a> 新北中和高中陳玉芳
+</p>
+</div>
+<div id="outline-container-orge7f1191" class="outline-4">
+<h4 id="orge7f1191"><span class="section-number-4">8.6.1.</span> 為什麼叫標準本位</h4>
+<div class="outline-text-4" id="text-8-6-1">
+<ul class="org-ul">
+<li>不懂？先看英文: standard-based assessment</li>
+<li>希望所有的學生在各領域的學習都能在這些目標上表現到最基本的程度，</li>
+<li>目前積極推動標準本位評量的國家: 美國、英國、紐西蘭、澳洲、加拿大</li>
+<li>標準本位評量的優勢: 只要信任評量者，不同的學習者能力就能相互比較</li>
+<li>常模問題：每校第一名的差異就很大</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org985c645" class="outline-4">
+<h4 id="org985c645"><span class="section-number-4">8.6.2.</span> 標準本位評量的精神</h4>
+<div class="outline-text-4" id="text-8-6-2">
+<ol class="org-ol">
+<li>只看自己是否達到所設定的標準，不跟他人比高低。</li>
+<li>若達到所設定的標準，表示已通過該等級。</li>
+<li>若未達到所設定的標準，即使在群體中名列前芧，未必具備相關能力。例，整個群體都未達到要求標準(大家都在D,E)，即使某生拿到C，也未具備能力。故，可以反應教師的教學成效。</li>
+<li>多元且所評能力具層次，包含開放題型、情境式題組與實作評量，才能有效評量不同層次能力。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc3666dc" class="outline-4">
+<h4 id="orgc3666dc"><span class="section-number-4">8.6.3.</span> 標準本位評量架構</h4>
+<div class="outline-text-4" id="text-8-6-3">
+</div>
+<ul class="org-ul">
+<li><a id="org890fdf5"></a>評量標準<br />
+<div class="outline-text-5" id="text-org890fdf5">
+<ul class="org-ul">
+<li>期望學生學到 <b>哪些內容</b> 及做到 <b>什麼程度</b></li>
+<li>哪些內容: 學習重點</li>
+<li>什麼程度:
+<ul class="org-ul">
+<li>A(優秀)</li>
+<li>B(良好)</li>
+<li>C(基礎)</li>
+<li>D(不足)</li>
+<li>E(落後)</li>
+</ul></li>
+<li>各等級有表現描述Performance Level Descriptors(PID)</li>
+<li>表現描述: 反映學生表現樣態，並以形容詞(副詞)  、動詞與名詞(受詞)之交互運用加以劃分。名詞指出欲評量的概念、知識、技能等元素，為該次主題之廣度；形容詞(副詞)與動詞則呈現出在不同等級中學生表現的程度差異（深度）.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf68c26a"></a>評量工具<br />
+<div class="outline-text-5" id="text-orgf68c26a">
+<p>
+學習單、觀察記錄、檢核表、評定量表
+</p>
+</div>
+</li>
+<li><a id="org14ebf00"></a>表現等級之制定<br />
+<div class="outline-text-5" id="text-org14ebf00">
+<p>
+「等級」係指各種表現的程度差別。美國教育進展國家評量系統採用三個成就水準(achievement levels):
+</p>
+<ul class="org-ul">
+<li>基本(Basic)</li>
+<li>精熟(Proficient)</li>
+<li>精進(Advanced)</li>
+</ul>
+<p>
+台灣常用五個等級，作為評定學生展現學習表現時的準差:
+</p>
+<ul class="org-ul">
+<li>通過: A, B, C</li>
+<li>未通過: D, E</li>
+</ul>
+<p>
+有很熟悉嗎: 三權分立/五權憲法，原因:
+</p>
+<ol class="org-ol">
+<li>假𠢕ké-gâu、</li>
+<li>反應家長的要求: 我的孩子這麼優秀，怎麼會跟其他人一樣通過&#x2026;</li>
+</ol>
+<p>
+關於美國的評分標準talk show: <a href="https://youtu.be/RfZX9_bz6kQ">https://youtu.be/RfZX9_bz6kQ</a>
+</p>
+</div>
+</li>
+<li><a id="orgd59decd"></a>表現描述(PID)<br />
+<div class="outline-text-5" id="text-orgd59decd">
+<ul class="org-ul">
+<li>以文字描述「等級」之質性說明</li>
+<li>「等級」為門檻原則：判定學生是否可得該等級的原則是採門檻制度，亦即學生在各式評量中所展現的，須完全符合該等級之表現描述方可獲得評等。例如某位學生的表現僅符合部份A，但完全符合B，則該生為B。</li>
+<li>A～D等級表現標準以「質性」描述為主，輔以動詞、副詞、頻率副詞區別各等級</li>
+<li>說明中以正向表列方式為主</li>
+<li><p>
+情意領域參考動詞
+</p></li>
+</ul>
+
+<div id="orgf1fd3b8" class="figure">
+<p><img src="images/2022-03-20_22-48-11.jpg" alt="2022-03-20_22-48-11.jpg" width="500" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="orged65a1e"></a>表現評量的特徵<br />
+<div class="outline-text-5" id="text-orged65a1e">
+<p>
+(Herman, Aschbacher, &amp; Winters, 1990)
+</p>
+<ol class="org-ol">
+<li>要求學生執行或製作一些需要高層思考或問題解決技能的事或物</li>
+<li>評量的作業(tasks)是具有意義性、挑戰性且與學習活動相結合</li>
+<li>評量的作業能與真實生活產生關聯；歷程和作品通常是評量的重點</li>
+<li>事先確定表現的基準(criteria)和規準</li>
+</ol>
+</div>
+</li>
+<li><a id="orgfe12995"></a>評分指引<br />
+<div class="outline-text-5" id="text-orgfe12995">
+<p>
+實際評分時更需明確的指引，因此根據評量目標和評量工具、內容、表現等之描述，撰寫專屬於該份評量工具的評分指引。
+</p>
+<ol class="org-ol">
+<li>可依據量、如，答對幾格、錯誤幾處</li>
+<li>可使用描述，如，表達豐富完整/適切/偶有錯誤/不夠清楚/難以辨識(描配樣卷)</li>
+<li>也可混搭，都要符合各等級表現描述的規範。</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org47026e0" class="outline-4">
+<h4 id="org47026e0"><span class="section-number-4">8.6.4.</span> 這裡帶入範例</h4>
+</div>
+<div id="outline-container-org5a271dc" class="outline-4">
+<h4 id="org5a271dc"><span class="section-number-4">8.6.5.</span> 標準參照測驗 v.s.  常模參照測驗</h4>
+<div class="outline-text-4" id="text-8-6-5">
+<ul class="org-ul">
+<li>常模參照測驗(norm-referenced test)：
+指測驗結果，根據分數在團體中位置而加以解釋，採用相對性標準比較，一般以平均水準為參照點。如大學聯考、國家高普考試、月考、期末考等教師自編測驗、標準化成就測驗、智力測驗、性向測驗。</li>
+<li>標準參照測驗(效標參照測驗)(criterion-referenced test)：
+根據教學前事先所訂定的絕對性標準加以解釋測驗。一般均以學生所學習知識或技能，判定其「及格或不及格」、「精熟或不精熟」、「通過或不通過」，不須參考他人表現來比較。如國小教師自編測驗（專為平時考、小考、隨堂測驗）、國家技師執照考試、Bloom提倡「精熟學習」、中醫師檢定考試、汽車駕照考試等。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org71406e5" class="outline-4">
+<h4 id="org71406e5"><span class="section-number-4">8.6.6.</span> Test / Measurement / Assessment / Evaouation</h4>
+<div class="outline-text-4" id="text-8-6-6">
+</div>
+<ul class="org-ul">
+<li><a id="org87b1706"></a>Test<br />
+<div class="outline-text-5" id="text-org87b1706">
+<ul class="org-ul">
+<li>may be called as tool, a question, set of question, an examination which is used to measure a particular characeristic of an or a group of individuals</li>
+<li>Test is the form of questioning or measuring toool used to access the status of one&rsquo;s skill, attitude and fitness.</li>
+<li>An instrument or activity used to accumulate data on a person&rsquo;s ability to performed a specified task.</li>
+<li>It is an assessment intended to measure a test-taker&rsquo;s knowledge, skill, aptitude, perfomance, or classification in many other topics.</li>
+<li>Kines of test
+<ul class="org-ul">
+<li>Objective, Subjective test</li>
+<li>Individual, Group test</li>
+<li>Unstandardized, Standardized test</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org81e0717"></a>Measurement<br />
+<div class="outline-text-5" id="text-org81e0717">
+<ul class="org-ul">
+<li>process of collecting data on attribute of interest.</li>
+<li>Measurement is an act or process that involves the assignment of numerical values to whatever is being tested. So it involves the quantity of something.</li>
+<li>Measurement is the term used to describe the assignment of a number to a give assessment. The number can be a raw score or a score based on a normal distribution curve. The process of quantifying this number is separate from using this information to evaluate sutdent outcomes and achievement.</li>
+</ul>
+</div>
+</li>
+<li><a id="org47804d3"></a>Assessment<br />
+<div class="outline-text-5" id="text-org47804d3">
+<ul class="org-ul">
+<li>Assessment is the processing of documenting, usually in measurable terms, know ledge, skills, attitudes and beliefs.</li>
+<li>Assessment in education is the process of gathering, interpreting, recording &amp; using information about pupils&rsquo; responses to an eductional task.</li>
+<li>Assessment can focus on the individual learners, the learning community, the institution, or the educational system.</li>
+<li>The process of gathering quantitative and qualitative data of what a sutdent can do, and how much a student possesses.</li>
+<li>Types of assessment
+<ul class="org-ul">
+<li>Formal Assessment</li>
+<li>Informal Assessment</li>
+<li>Formative Assessment</li>
+<li>Summative Assessment</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org425956e"></a>Evaluation<br />
+<div class="outline-text-5" id="text-org425956e">
+<ul class="org-ul">
+<li>Evaluation is concerned with a whole range of issues in and beyond education; lessons, programs, and skills can be evaluated. It produce a global view of achievements usually based on many different types of information such as observation of lesson, test scores, assessment reports, course documents or interviews with students and teachers.</li>
+<li>The process of making overall judgement about one&rsquo;s work or a whole school work.</li>
+<li>Evaluation is a process of determining to what extend the educational objectives are being relized.</li>
+<li>Types of evaluation
+<ul class="org-ul">
+<li>process evaluation</li>
+<li>product evaluation</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0196be" class="outline-3">
+<h3 id="orgf0196be"><span class="section-number-3">8.7.</span> SBSA介紹</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+國小、國中評量標準
+</p>
+</div>
+</div>
+<div id="outline-container-org202af2c" class="outline-3">
+<h3 id="org202af2c"><span class="section-number-3">8.8.</span> 深度學習教學法的評量重點(NPDL)</h3>
+<div class="outline-text-3" id="text-8-8">
+<p>
+強調6Cs
+以協作(Collaboration)為例
+</p>
+<p width="500">
+<img src="images/2022-03-20_23-11-07.jpg" alt="2022-03-20_23-11-07.jpg" width="500" />
+標準本位評量示例: 哈里斯
+</p>
+</div>
+</div>
+<div id="outline-container-org888cf57" class="outline-3">
+<h3 id="org888cf57"><span class="section-number-3">8.9.</span> 科技領域評量現況</h3>
+<div class="outline-text-3" id="text-8-9">
+<ul class="org-ul">
+<li>缺少評量就無法精進和改善</li>
+<li>資訊領域:有新的東西就教新的內容，資料探勘、大數據、人工智慧、物聯網、元宇宙、&#x2026;，但是透過教授這些新的東西是否真能達到新課綱所要求的、學生應具備的素養？不然要如何？</li>
+<li>我覺得應該要教的是：學生如何去學習一樣新的知識、如何去面對、探索、學習、發現一個新領域的知識與內涵，這個部份資訊領域的老師一直在做，但是往往止於將自己的探索所得整理後教給學生，這就好像發現海洋裡出現了新的魚種，有很豐富的營養，於是教師就去學習捕捉這新魚種的技巧，做成美味的食物給學生吃，但是更重要的是教學生學習面對新魚種的態度與技能&#x2026;</li>
+<li>缺乏好的評量工具，就不知道學生的能力與學習成果&#x2026;</li>
+<li>如何發現各年級學生的學習缺口</li>
+<li>如何公正客觀評量作品或專題？教師可能會面臨的問題是：不同時間看同一個作品可能給出不同分數，學生也可能只知道說作品得到幾分，但不知道問題點哪。解決方案：&#x2013;rubric?歷程檔案？檢核表？</li>
+<li>憑感覺給分的問題是每次看到太多東西，林坤誼教授舉的一個例子（不同顏色的保溫杯多重？）</li>
+<li>如何找出學生在實作學習過程中的可能問題？</li>
+<li>科技素養的來源來自哪裡？營隊？課外書？</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org77a1aa0" class="outline-3">
+<h3 id="org77a1aa0"><span class="section-number-3">8.10.</span> 資訊領域素養評量試題研發:</h3>
+<div class="outline-text-3" id="text-8-10">
+<p>
+從不同學科領域借鏡(林坤誼/師大工教系)
+</p>
+</div>
+<div id="outline-container-orgba09304" class="outline-4">
+<h4 id="orgba09304"><span class="section-number-4">8.10.1.</span> 策略一: 從學習內容出發</h4>
+<div class="outline-text-4" id="text-8-10-1">
+<ol class="org-ol">
+<li>選定學習內容</li>
+<li>結合情境、提升問題的真實性</li>
+<li>結合學習表現、領域核心素養，增加問題的實用性與需求性</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org99a301d" class="outline-4">
+<h4 id="org99a301d"><span class="section-number-4">8.10.2.</span> 從生活情境出發</h4>
+<div class="outline-text-4" id="text-8-10-2">
+<ol class="org-ol">
+<li>選取與科技相關的生活情境</li>
+<li>避免不合理或不適切的情境</li>
+<li>結合學習青現、域核心素的提問，避免不合理的問題</li>
+<li>根據評量對象，簡化超範圍的試題</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org64b0b7e" class="outline-4">
+<h4 id="org64b0b7e"><span class="section-number-4">8.10.3.</span> 從科技專家建立科技知識的角度出發</h4>
+<div class="outline-text-4" id="text-8-10-3">
+<ol class="org-ol">
+<li>選取科技知識</li>
+<li>建立仿探索科技知識的情境或問題</li>
+<li>提出引導建立科技知識的能力</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgac2d213" class="outline-3">
+<h3 id="orgac2d213"><span class="section-number-3">8.11.</span> 大考中心素養導向命題三大重點方向</h3>
+<div class="outline-text-3" id="text-8-11">
+<ol class="org-ol">
+<li>情境化：試題素材引用生活情境或學術探究情境</li>
+<li>整合運用能力：考察學生是否能整合運用知識與技能以處理真實世界或學術探究的問題，包括閱讀理解、羅輯推論、圖表判讀、批判思考、歷史解釋辨析、資料證據應用等。</li>
+<li>跨領域或跨學科：考察學生是否能夠融會貫通，善用不同領域或學科所學來處理一主題中的目關問題。因為一項情境所面對的問題，通常不是單一領域或學科知識就能解決，而一個有超、有意義的問題，也往往是跨學科的。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5240ec1" class="outline-3">
+<h3 id="org5240ec1"><span class="section-number-3">8.12.</span> 素養導向評量案例(網站資源)</h3>
+<div class="outline-text-3" id="text-8-12">
+<ul class="org-ul">
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/HomePage/index.aspx">SBASA 十二年國教課網國民小學素養導向標準本位評量計畫</a></li>
+<li><a href="https://tasal.naer.edu.tw/">臺灣學生成就長期追蹤評量計畫</a></li>
+<li><a href="http://cwise.gise.ntnu.edu.tw/">線上科學探究平台</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1fc381a" class="outline-3">
+<h3 id="org1fc381a"><span class="section-number-3">8.13.</span> 資訊領域評量</h3>
+<div class="outline-text-3" id="text-8-13">
+<p>
+五、學習評量
+（一）科技領域的學習評量涵蓋科技知識、科技態度、操作技能與統合能力等類別，故學習評量應涵蓋此四大類別與結合「做、用、想」的課程理念與學習重點，並兼重形成性和總結性的評量，且必須兼顧學生之個別差異。
+（二）科技知識方面的評量宜涵蓋不同認知層次，且評量之設計應以靈活、富創意、情境化與多樣化為目標，並儘量以開放式問題訓練學生之思辨能力。
+（三）科技態度方面的評量宜涵蓋興趣、態度等不同面向，並透過教師晤談、學生自我評量與同儕互評等方式為之。
+（四）操作技能方面之評量宜涵蓋不同技能層次，並透過實作或檔案評量方式為之，且應考查學生日常表現與行為習慣之改進。
+（五）統合能力方面的評量宜涵蓋設計、創新、解決問題、團隊合作、批判思考等面向，並透過實作、晤談、自我評量、同儕互評、檔案評量等方式為之。
+（六）科技領域的評量除了應涵蓋前述類別之外，也應具有引導學生自我反思與改善學習，以培養其後設認知能力。
+（七）科技領域教師對教材編選、教學策略、班級管理等工作，應參考前述學生的評量結果進行調整。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7c66e5" class="outline-3">
+<h3 id="orgc7c66e5"><span class="section-number-3">8.14.</span> 素養導向評量</h3>
+<div class="outline-text-3" id="text-8-14">
+<p>
+<a href="https://www.youtube.com/watch?v=kOIennbNtzs">國教院針對素養導向說明</a>
+</p>
+
+<p>
+把所學到的東西在某一特定情境下用出來
+</p>
+
+<p>
+評量：學習表現/學習內容
+</p>
+
+<p>
+評量的類型:
+每一類型如何評量素養:
+</p>
+
+<p>
+素養評量的意涵
+</p>
+
+<p>
+機率+random
+實作: 統計/random/
+</p>
+
+<p>
+素養不是單指成就，也不是性向，而是一個人在面對各種複雜多變的情境及實際問題時，能夠靈活運用學校所學，抱持主動積極的態度及多元開放的精神，整合活用各種相關資訊，發揮思辨、統整、溝通能力與創意，以理解現象或解決問題。
+</p>
+
+<p>
+素養導向的評量重視現實情境下的應用表現，著重於評量學生在多樣複雜的情境中如何把所學的知識、能力、態度發揮出來，以評估學生的學習情形，並預測學習發展的潛力。
+</p>
+
+<p>
+素養評量的注重面向
+</p>
+
+<p>
+素養評量應依據或參照總綱、各領域/科目課程綱要，並考量學生生活背景、經驗現象或任務、問題，兼重思考與行動、理解與應用，以引導並促進學生更具主體性的學習。
+</p>
+
+<p>
+核心素養在彰顯學習者的主體性，評量須關照知識、技能與態度的整全學習及全人發展。
+</p>
+
+<p>
+素養評量應引導學生能對週遭環境保持好奇心，並能進行主動地探索、體驗、試驗、尋求答案與合作學習；積極正向的參與家庭、學校、社會生活，並能主動地與週遭人、事、物及環境的互動中觀察現象，尋求關係，解決問題，並關注在如何將所學內容轉化為實踐性的知識，並落實於生活中，以開放的心胸來適應及參與社會生活。
+</p>
+</div>
+
+<div id="outline-container-org9cf6d30" class="outline-4">
+<h4 id="org9cf6d30"><span class="section-number-4">8.14.1.</span> 素養評量的可行做法</h4>
+<div class="outline-text-4" id="text-8-14-1">
+<p>
+素養評量注重歷程、多元及真實，是以專題、體驗、探究、實作、表現、活用為核心。學生透過整合所學，不只能把所學遷移到其他例子進行應用，或是實際活用在生活裡，更可對其所知、所行進行覺察思考，而有再持續精進的可能。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org88fd13d" class="outline-4">
+<h4 id="org88fd13d"><span class="section-number-4">8.14.2.</span> 評量策略</h4>
+<div class="outline-text-4" id="text-8-14-2">
+<p>
+可彈性運用實作任務、開放性問答、隨堂和正式測驗、觀察、檢視作品、放聲思考、面談、專題報告等多元策略 ，兼顧整體性和連續性，尤應重視核心素養的知識、能力與態度在實際生活應用之檢核，以反映學生學習情形或應用成效，並進行有效評估與回饋。
+</p>
+</div>
+</div>
+<div id="outline-container-org5c38436" class="outline-4">
+<h4 id="org5c38436"><span class="section-number-4">8.14.3.</span> 評量方式</h4>
+<div class="outline-text-4" id="text-8-14-3">
+<p>
+可參考下列方式：
+</p>
+<ul class="org-ul">
+<li>表現本位評量(performance-based assessment)：從真實情境或任務賦予，評量學生分析、團隊工作、訪談、角色扮演、實驗、解決問題、展示等能力。</li>
+<li>卷宗評量(portfolio assessment)：卷宗可以評估學生將知識、技能與態度運用於適當情境脈絡中的歷程，以及學生在某種學習項目上進步或改變的情形。</li>
+<li>學生自我評量(self- assessment)：由學生自己檢核自己的學習結果，透過管理與監控自己的學習歷程，提升後設認知的能力。</li>
+</ul>
+<p>
+學習評量方法及工具有其限制，它可引導教學設計並趨近性的了解及改善學生學習，但難以完全涵蓋所有學習的層面及成果，宜依學校課程及教學性質，妥善調整運用，以掌握學生素養表現的程度，並做為課程規劃及教學設計改進的依據。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9413ce2" class="outline-3">
+<h3 id="org9413ce2"><span class="section-number-3">8.15.</span> 核心素養導向試題有下列幾項特色</h3>
+<div class="outline-text-3" id="text-8-15">
+<ol class="org-ol">
+<li>題目情境主要以解決真實生活問題為主。</li>
+<li>題目閱讀量高，也常配合圖表或數據資料來描述問題情境。</li>
+<li>題目不只是單題，也常以題組，甚至非選擇題形式出現</li>
+</ol>
+<p>
+未來的考試，讓學生不再是背就有分，要會思考事件因果與影響，平時應增進圖表判讀轉譯能力、隨時關心時事、觀察生活周遭、思考與應用習得的知識。但也必須注意素養試題≠閱讀素養，題幹冗長並不等於素養試題。讓學生學習處理複雜訊息、判斷重要資訊、篩選正確訊息以解決問題，才是素養試題的目標之一。
+</p>
+</div>
+</div>
+<div id="outline-container-org34aefb6" class="outline-3">
+<h3 id="org34aefb6"><span class="section-number-3">8.16.</span> 試題設計步驟</h3>
+<div class="outline-text-3" id="text-8-16">
+<ol class="org-ol">
+<li>設定評量目標(選擇核心素養、學習表現與學習內容)
+測驗學生對於「性別平等與公平正義」知識理解與應用分析的能力。選定：
+<ol class="org-ol">
+<li>核心素養：社 -J-A2 覺察人類生活相關議題，進而分析判斷及反思，並嘗試改善或解決問題。</li>
+<li>學習表現：社 1a-IV-1 發覺生活經驗或社會現象與社會領域內容知識的關係。
+社 1b-IV-1 應用社會領域內容知識解析生活經驗或社會現象。</li>
+<li>學習內容：公 Ba-IV-5 國家如何介入以協助建立平權的家庭和發揮家庭職能？
+公 Cd-IV-2 家務勞動的分擔如何影響成員的個人發展與社會參與？
+公 Da-IV-1 日常生活中所說的「公不公平」有哪些例子？</li>
+</ol></li>
+<li>籨生活情境出發、尋找相關素材並進行統整
+找到「家庭勞務分工、育嬰假」等談論家務分工與不公平處境的相關文章，並重新整合撰寫，千萬不要全篇貼上，擷取希望讓學生閱讀並判斷的資訊，以免原始文章資訊過於繁多，反而讓學生無法聚焦判斷。並設計與學生生活經驗相關的情境，例如：「小丸子為完成暑假的專題作業，針對日本的家務分工現象做了一份報告，根據內容回答下列問題。」
+<ul class="org-ul">
+<li>試題設計步驟及範例How</li>
+</ul></li>
+<li>根據目標設計問題
+<ul class="org-ul">
+<li>問題一
+根據文章內容，日本在解決家庭育兒責任分擔的作法，與下列何者相同？
+(A)私立幼兒園增加托育人數
+(B)企業鼓勵員工留職停薪育嬰
+(C)立法院三讀修正《性別工作平等法》
+(D)廠商推出「父親育兒幫手」等商品</li>
+<li>參考答案: C</li>
+<li>核心素養: 社 -J-A2 覺察人類生活相關議題，進而分析判斷及反思，並嘗試改善或解決問題。</li>
+<li>學習表現: 社 1a-IV-1 發覺生活經驗或社會現象與社會領域內容知識的關係。</li>
+<li>學習內容: 公 Ba-IV-5 國家如何介入以協助建立平權的家庭和發揮家庭職能？</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org771abdc" class="outline-3">
+<h3 id="org771abdc"><span class="section-number-3">8.17.</span> 標準本位評量</h3>
+<div class="outline-text-3" id="text-8-17">
+<ul class="org-ul">
+<li></li>
+
+<li>「不同的評量方式會造就不同的學習態度。」以歷程檔案為例，其採用的是建構主義的觀點，除授與學生</li>
+</ul>
+<p>
+學習的權力外，更激發出了學生自我反思、組織學習歷程的能力。
+</p>
+<ul class="org-ul">
+<li>評量分為常模參照和標準參照方式。常模參照是指和參與測驗群體中個人進行比較，進而排出優先順序。 以學校整潔比賽為例，即使每個班級都打掃很乾淨，每位孩子也很投入在工作，但還是要排出優先順序，也 就是第一名只有一個班級，那是因為相互比較的結果。標準參照是指在未測驗前，就先建立評量標準，評量 後依據表現的程度排入所建立的規準。以量血壓為例，身體健康的狀況，不是和別人比較，我的血壓比你低 所以我比較健康。而是有一個前置規準，血壓高於或低於時來表示身體的健康狀況。回到班級時，若所有評 量都採用常模參照，對於個別學生學習狀況是難以關照的。</li>
+<li>評量的參照點就是評量的基準，學生表現的程度就是規準，也就是評量標準。因此，在設計標準本位評 量時，我們要先找評量基準，而基準就是學習目標包含學習表現和學習內容。</li>
+<li>因應目前素養課程的教學，評量也朝「素養」轉向，大部分的人都認為素養式的評量題目就是要文字很多， 其實不然，素養導向的命題方式是著重在真實的情境與真實的問題，主要是想測驗考生能不能把生活上的一些 問題，跟他學到的知識做連結，未來在現實生活當中若遇到相同的情境也能夠做出恰當的應用，甚至是創造出 更新的方式來取代。其實以前我們就有所謂的『應用題』，但現在的考題則是會用更靈活更生活的方式去呈現。 所以當我們在布題的時候，會加上情境的說明，不免讓外界的人誤認素養式的評量題目就是文字很多。</li>
+<li>素養評量又該如何命題呢?首先布題要強調真實的情境以及生活當中真的會遇到的真實問題，讓學生從考 題中察覺到所學的知識在生活中如何被運用，進而體會這些知識在生活中的重要性並引發其學習動機。以數學 科為例，以往的考題，可能會直接詢問第 16 人到第 93 人，總共有幾個人?距離是多少公尺?而素養考題出題 方式則會加入真實情境，在生活中是可以經驗到的問題，如下:『一下火車，流鶴就看到叮叮藥局前出現大排 長龍的買口罩人潮，但花蓮市民相當遵守防疫社交距離，記者看到最後一個人手上的號碼牌是 93 號，現在已 發放到 16 號，請問目前總共有幾個人在排隊?最後一個人距離販售口多少公尺?(社交距離:室內 1.5 公尺， 室外 1 公尺以上)』買口罩排隊的問題是防疫期間在生活中常常見到的，藉由生活中實際的例子讓孩子自我察 覺學習的重要性與實用性，引發其學習興趣與引導正確學習態度。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbfa9f61" class="outline-3">
+<h3 id="orgbfa9f61"><span class="section-number-3">8.18.</span> 素養導向評量示例</h3>
+<div class="outline-text-3" id="text-8-18">
+</div>
+<div id="outline-container-org21caecc" class="outline-4">
+<h4 id="org21caecc"><span class="section-number-4">8.18.1.</span> 統計圖表</h4>
+</div>
+<div id="outline-container-org7cf40c2" class="outline-4">
+<h4 id="org7cf40c2"><span class="section-number-4">8.18.2.</span> 美術科</h4>
+</div>
+<div id="outline-container-org3acd41a" class="outline-4">
+<h4 id="org3acd41a"><span class="section-number-4">8.18.3.</span> <a href="https://ws.moe.edu.tw/001/Upload/23/relfile/8006/56181/50da6237-355a-4421-84bd-6fb8ab49f324.pdf">素養導向「紙筆測驗」要素與範例試題</a></h4>
+</div>
+<div id="outline-container-org2be8ade" class="outline-4">
+<h4 id="org2be8ade"><span class="section-number-4">8.18.4.</span> 其他各科的示例</h4>
+</div>
+</div>
+<div id="outline-container-org62f89e6" class="outline-3">
+<h3 id="org62f89e6"><span class="section-number-3">8.19.</span> 好的素養導向試題評量說明</h3>
+<div class="outline-text-3" id="text-8-19">
+<p>
+<a href="https://www.youtube.com/watch?v=08H31tNwFIs">素養評量微課堂：第1課 素養導向評量 許育健教授</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org9ffe56b" class="outline-3">
+<h3 id="org9ffe56b"><span class="section-number-3">8.20.</span> 評量先行之設計</h3>
+<div class="outline-text-3" id="text-8-20">
+</div>
+<div id="outline-container-org5b29c67" class="outline-4">
+<h4 id="org5b29c67"><span class="section-number-4">8.20.1.</span> 過去</h4>
+<div class="outline-text-4" id="text-8-20-1">
+<p>
+教科書(知識架構)-&gt;教學設計(講解灌輸)-&gt;評量(紙筆測驗)
+</p>
+</div>
+</div>
+<div id="outline-container-orgc87cc44" class="outline-4">
+<h4 id="orgc87cc44"><span class="section-number-4">8.20.2.</span> 現在</h4>
+<div class="outline-text-4" id="text-8-20-2">
+<p>
+課綱(學習目標)-&gt;評量(學習證據)-&gt;課程設計(可評量的任務)
+**
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6d91e36" class="outline-2">
+<h2 id="org6d91e36"><span class="section-number-2">9.</span> 工具網站</h2>
+<div class="outline-text-2" id="text-9">
+<ol class="org-ol">
+<li>共享note: <a href="https://note.ly/">https://note.ly/</a></li>
+<li>線上問題: <a href="https://www.mentimeter.com">https://www.mentimeter.com</a></li>
+<li>線上測驗: <a href="https://quizizz.com">https://quizizz.com</a></li>
+<li>LOOPY: <a href="https://ncase.me">https://ncase.me</a></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgeb6695a" class="outline-2">
+<h2 id="orgeb6695a"><span class="section-number-2">10.</span> web</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>資訊科技評量示例: <a href="https://sbasa.rcpet.edu.tw/SBASA/Subject/SubjectTechInfo_3.aspx">https://sbasa.rcpet.edu.tw/SBASA/Subject/SubjectTechInfo_3.aspx</a></li>
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/documents/Tech_Info.pdf?20200825">資訊科技評量示例</a></li>
+<li><a href="https://tepd.tc.edu.tw/tepd/download.php?aa=JmOwAAEKIhqwD5LEoHKQ5guxLPOlvze%2B6imfubTIry%2FRLqb9UOALm%2FzvkWWKysAmyCSgJt%2Fo8p0Fp%2F8CQaXbVMXorpm5vgVWnj7Iwew%2FeWFxmDxRRD0KCixzSQk1BTnBh%2FqWk%2Bd5wgybTGVBQ66JGjPRq2dTqSF0AtinneDFAFf%2B%2F2I%2Fwzna7eOrKAnK%2Bf3TTKZKRo57ZDEp9VkayWXy0dZlQhzrFYbAyFJ8ykXirys3NyY39mYRboRe9gXEdJSTBQr2946orA1nY%2B6%2B3KsQWQ%3D%3D">素養導向課程設計、教學與評量</a></li>
+<li><a href="https://www.ksvcs.kh.edu.tw/ksvcs/resource/_academic/%25E4%25B8%25BB%25E4%25BB%25BB/%25E7%25B4%25A0%25E9%25A4%258A%25E5%25B0%258E%25E5%2590%2591/%25E5%25BE%259E%25E7%25B4%25A0%25E9%25A4%258A%25E5%2588%25B0%25E8%25A9%2595%25E9%2587%258F.pdf">從素養到評量教學改變的第一哩路</a></li>
+<li><a href="http://ms2.ctjh.ntpc.edu.tw/~luti/">新北市立江翠國中資訊中心呂天齡老師</a></li>
 <li><a href="http://www.sggs.hc.edu.tw/sggsnew/premium/data/%E8%B7%A8%E9%A0%98%E5%9F%9F%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E8%A8%AD%E8%A8%88%E6%89%8B%E5%86%8A.pdf">跨領域素養導向課程設計</a></li>
 <li><a href="https://tech.nknu.edu.tw/UploadFile/OldData/news_file/mk_news_1071119%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%B7%A5%E4%BD%9C%E6%95%99%E5%AD%B8(%E9%9F%8B%E9%82%91%E8%80%81%E5%B8%AB%E4%BF%AE%E8%A8%82)_66730933.pdf">素養導向教學工作坊</a></li>
 <li><a href="http://ms2.ctjh.ntpc.edu.tw/~luti/110it_teaching_resource_20210803.html">108課綱科技領域資訊科技教材資源網2021第六版</a></li>
 <li><a href="http://ms2.ctjh.ntpc.edu.tw/~luti/110ai3.htm">108課綱科技領域資訊科技-程式設計應用專題(人工智慧素養)</a></li>
 </ul>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #51afef;">import</span> requests
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span><span style="color: #dcaeea;">token</span> = <span style="color: #98be65;">'2o2FhNoEyaecySH1e13RMPDtItbCb3FIiqo4VYWo1cT'</span>
+<span class="linenr"> 4: </span><span style="color: #51afef;">def</span> <span style="color: #c678dd;">lineNotifyMessage</span>(token, msg):
+<span class="linenr"> 5: </span>    <span style="color: #dcaeea;">headers</span> = {
+<span class="linenr"> 6: </span>        <span style="color: #98be65;">"Authorization"</span>: <span style="color: #98be65;">"Bearer "</span> + token,
+<span class="linenr"> 7: </span>        <span style="color: #98be65;">"Content-Type"</span> : <span style="color: #98be65;">"application/x-www-form-urlencoded"</span>
+<span class="linenr"> 8: </span>    }
+<span class="linenr"> 9: </span>
+<span class="linenr">10: </span>    <span style="color: #dcaeea;">payload</span> = {<span style="color: #98be65;">'message'</span>: msg}
+<span class="linenr">11: </span>    <span style="color: #dcaeea;">r</span> = requests.post(<span style="color: #98be65;">"https://notify-api.line.me/api/notify"</span>, headers = headers, params = payload)
+<span class="linenr">12: </span>    <span style="color: #51afef;">return</span> r.status_code
+<span class="linenr">13: </span>
+<span class="linenr">14: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20462;&#25913;&#28858;&#20320;&#35201;&#20659;&#36865;&#30340;&#35338;&#24687;&#20839;&#23481;</span>
+<span class="linenr">15: </span><span style="color: #dcaeea;">message</span> = <span style="color: #98be65;">'Notify from LINE, HELLO WORLD'</span>
+<span class="linenr">16: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20462;&#25913;&#28858;&#20320;&#30340;&#27402;&#26454;&#20839;&#23481;</span>
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>lineNotifyMessage(token, message)
+<span class="linenr">19: </span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #51afef;">import</span> urllib.request <span style="color: #51afef;">as</span> req
+<span class="linenr"> 2: </span><span style="color: #dcaeea;">url</span> = <span style="color: #98be65;">"https://huodalife.pixnet.net/blog/"</span>
+<span class="linenr"> 3: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24171;request&#21152;&#19978;&#19968;&#20491;header</span>
+<span class="linenr"> 4: </span><span style="color: #dcaeea;">request</span> = req.Request(url, headers = {
+<span class="linenr"> 5: </span>    <span style="color: #98be65;">"User-Agent"</span>:<span style="color: #98be65;">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:72.0) Gecko/20100101 Firefox/72.0"</span>
+<span class="linenr"> 6: </span>})
+<span class="linenr"> 7: </span>
+<span class="linenr"> 8: </span><span style="color: #51afef;">with</span> req.urlopen(request) <span style="color: #51afef;">as</span> response:
+<span class="linenr"> 9: </span>    <span style="color: #dcaeea;">data</span> = response.read().decode(<span style="color: #98be65;">"utf-8"</span>)
+<span class="linenr">10: </span>
+<span class="linenr">11: </span><span style="color: #51afef;">import</span> bs4
+<span class="linenr">12: </span><span style="color: #dcaeea;">root</span> = bs4.BeautifulSoup(data,<span style="color: #98be65;">"html.parser"</span>)
+<span class="linenr">13: </span>
+<span class="linenr">14: </span><span style="color: #dcaeea;">titles</span> = root.find_all(<span style="color: #98be65;">"li"</span>, class_=<span style="color: #98be65;">"title"</span>)
+<span class="linenr">15: </span><span style="color: #dcaeea;">pubs</span> = root.find_all(<span style="color: #98be65;">"li"</span>, class_=<span style="color: #98be65;">"publish"</span>)
+<span class="linenr">16: </span><span style="color: #51afef;">for</span> pub, title <span style="color: #51afef;">in</span> <span style="color: #c678dd;">zip</span>(pubs, titles):
+<span class="linenr">17: </span>    <span style="color: #51afef;">print</span>(pub.span.string,title.a.string)
+<span class="linenr">18: </span>
+</pre>
+</div>
+
+<pre class="example" id="org1d97a6e">
+Dec  豁達人生選股機－免費開放使用中！
+Apr  個股回顧_創惟(6104)
+Apr  個股回顧_智原(3035)
+Apr  個股回顧_陽明(2609)
+Apr  個股回顧_長榮(2603)
+Apr  個股回顧_怡利電(2497)
+Apr  公告－操作內容
+Mar  月報（2021.3Q&amp;2022/01）－大盤策略轉折點
+Feb  月報（2021.3Q&amp;2022/01）－成本平均的缺點
+Feb  豁達人生2021年回顧－牧股少年奇幻之旅、操作回顧、絕世高手、教學相長
+Feb  《牧羊少年奇幻之旅》－摘錄與心得
+Jan  創惟(6104)_穩定型成長股_2021.3Q&amp;2021/12
+Jan  智原(3035)_穩定型成長股_2021.3Q&amp;2021/12
+Jan  月報（2021.3Q&amp;2021/12）－逆風開局、船艦解體、穩定型回歸
+Jan  個股回顧_萬海(2615)
+</pre>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="http://www.edubook.com.tw/OAtw/File/PDf/414053.pdf">延續或斷裂?從能力到素養的課程改革意涵</a>
+</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung-Chin Yen</p>
-<p class="date">Created: 2022-02-22 Tue 16:20</p>
+<p class="date">Created: 2022-04-04 Mon 16:08</p>
 </div>
 </body>
 </html>

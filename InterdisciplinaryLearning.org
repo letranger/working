@@ -12,6 +12,16 @@
 - 切換網站、軟體、手機系統的語系來做為學習手段
 - 學習成績計算，理解各種專業英文的使用: sum, mean, ....
 - 評量: 以英文介面的軟體完成特定工作
+* 先看這個:
+- [[https://cirn.moe.edu.tw/TAPE/TapeInfo.aspx?cid=241&tapeid=2726&fit=0&fid=all&Vmode=DivWP&ppage=2&wpage=1&mode=&ssh=&Sfid=0][主題-4-1 跨領域課程設計與協同教學（1）]]
+- [[https://cirn.moe.edu.tw/TAPE/TapeInfo.aspx?cid=241&tapeid=2727&fit=0&fid=all&Vmode=DivWP&ppage=2&wpage=1&mode=&ssh=&Sfid=0][主題-4-2 跨領域課程設計與協同教學（2）]]
+-
+- [[https://sites.google.com/gapps.ntnu.edu.tw/teachtaiwan/%E9%A6%96%E9%A0%81?authuser=0][愛思客跨校]]
+- [[http://www.cte.fju.edu.tw/files/file_pool/2/0J226426794540659657/%E8%B7%A8%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E7%99%BC%E5%B1%95%E5%8F%8A%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%A8%AD%E8%A8%88.pdf][跨領域課程發展及素養導向設計]]
+- [[http://topmeeting.boe.ttct.edu.tw:5080/fserver/uploads/courseware/20205/8/1588903238238.pdf][跨領域課程設計]]
+- [[https://school.hakka.gov.tw/Reg/Upload/news/%E5%B0%8F%E7%B3%BB%E7%B5%B1%E8%B7%A8%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%A8%AD%E8%A8%88%E6%9D%8E%E9%9B%AF%E7%90%AA%E6%A0%A1%E9%95%B7(%E5%AE%A2%E8%AA%9E)%E4%B8%8B.pdf][價值定位：促成跨領域理解及學習遷移]]
+- [[http://www.sggs.hc.edu.tw/sggsnew/premium/data/%E8%B7%A8%E9%A0%98%E5%9F%9F%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E8%A8%AD%E8%A8%88%E6%89%8B%E5%86%8A.pdf][跨領域素養導向課程設計初階工作坊實踐手冊]]
+- [[https://www.youtube.com/watch?v=708x3Aa54mY][【核心問題】跨領域議題核心問題範例]]
 * web
 - [[https://www.pagamo.org/#courses][pagamo]]
 - [[https://adl.edu.tw/HomePage/webinfo/?id=4][因材網]]

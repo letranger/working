@@ -1262,7 +1262,7 @@ test------
 - [[https://www.itread01.com/content/1549712347.html][五款開源的資料探勘軟體]]
 - [[https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/564855/][資料探勘函式之迴歸（regression）]]
 - [[https://ithelp.ithome.com.tw/articles/10200561?sc=iThelpR][資料分析(Data Analysis) -2.分群(分類) ]]
-- [[https://ithelp.ithome.com.tw/articles/10200795][資料分析(Data Analysis) -3.迴歸 ]]
+- [[https://ithelp.ithome.com.tw/articlpes/10200795][lt.資料分析(Data Analysis) -3.迴歸 ]]
 - [[https://www.itread01.com/content/1541522170.html][資料探勘——時間序列分析]]
 - [[https://ithelp.ithome.com.tw/articles/10233366][時間序列簡介]]
 - [[https://ithelp.ithome.com.tw/articles/10187244][資料探勘演算法 - 關聯規則]]

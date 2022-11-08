@@ -1,6 +1,7 @@
 #+TITLE: 工作中專案
 
 - [[file:textbook.org][台科大教科書]]
+- [[file:教科書審查修訂.html][教科書審查修訂]]
 - [[file:CourseDesign.org][高雄輔導團領域素養研習]]
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
 - [[file:InterdisciplinaryLearning.org][高雄輔導團跨域研習]]

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-09-13 Tue 08:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>科技力支持自主學習PPT</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">科技力支持自主學習PPT</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga099195">1. 自主學習 - What is it and Why do We Need It</a>
+<ul>
+<li><a href="#org792a169">1.1. 想到自主學習，你想到誰?</a>
+<ul>
+<li><a href="#org3ab35ab">1.1.1. 唐宗漢</a></li>
+<li><a href="#org004b06c">1.1.2. 何達睿</a></li>
+<li><a href="#org9db0b1a">1.1.3. 以上純粹是一場美麗的誤會</a></li>
+</ul>
+</li>
+<li><a href="#orga73a3f3">1.2. 必也正名呼 - 那，目前喊的震天響的自主學習指的是什麼</a>
+<ul>
+<li><a href="#org59faf1e">1.2.1. 自主學習的類型</a></li>
+<li><a href="#orga238f7b">1.2.2. 現階段我們面對的自主學習</a></li>
+</ul>
+</li>
+<li><a href="#org9606bbf">1.3. 為何需要自主學習</a></li>
+</ul>
+</li>
+<li><a href="#org551352c">2. How</a>
+<ul>
+<li><a href="#org58c369a">2.1. 自主學習的實施模式</a></li>
+</ul>
+</li>
+<li><a href="#org17d12e9">3. 科技能提供什麼輔助</a>
+<ul>
+<li><a href="#org71ef816">3.1. 科技領域教師的優勢</a></li>
+<li><a href="#orged46f11">3.2. 工具</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga099195" class="outline-2">
+<h2 id="orga099195"><span class="section-number-2">1.</span> 自主學習 - What is it and Why do We Need It</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org792a169" class="outline-3">
+<h3 id="org792a169"><span class="section-number-3">1.1.</span> 想到自主學習，你想到誰?</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org3ab35ab" class="outline-4">
+<h4 id="org3ab35ab"><span class="section-number-4">1.1.1.</span> 唐宗漢</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>#+CAPTION: 唐宗漢</li>
+</ul>
+
+<div id="org064a469" class="figure">
+<p><img src="images/20200310-010756_U8719_M597615_0bfd.JPG" alt="20200310-010756_U8719_M597615_0bfd.JPG" width="500" />
+</p>
+</div>
+<ul class="org-ul">
+<li>在幼稚園時，曾因為在廁所被同學毆打，而想帶刀上學</li>
+<li>小學因為不願作弊讓同學看考卷，在班上被同學踢昏。</li>
+<li>母親李雅卿為孩子教育，挺身實踐教改之路，因而成為台北縣種籽親子實驗小學（種籽學苑）創辦人及首任校長、台北市自主學習實驗計畫主持人</li>
+<li>台北市自主學習實驗計畫曾被聯合國教科文組織譽為「亞洲最好的另類教育之一」。</li>
+<li>最高學歷只有國中肄業，但16歲就與人合夥創設電腦公司，當過商業雜誌的封面人物</li>
+<li>33歲就退休投入網路公益事業</li>
+<li>35歲被延攬入閣，成為最年輕政務委員</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org004b06c" class="outline-4">
+<h4 id="org004b06c"><span class="section-number-4">1.1.2.</span> 何達睿</h4>
+<div class="outline-text-4" id="text-1-1-2">
+
+<div id="org7e0e90d" class="figure">
+<p><img src="images/23150-1522400042.jpg" alt="23150-1522400042.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Caption</p>
+</div>
+<ul class="org-ul">
+<li>國小四年級第一次接觸Scratch</li>
+<li>國中準備了3個半月，拿下網際網路程式全國設計大賽（NPSC）第一名</li>
+<li>進入高中，信心滿滿參加資奧國手選拔，失敗</li>
+<li>利用一個暑假，全力衝刺免修門檻，開學後每週請 2 天事假，然後訂下 100 天為 1 期的計畫表，規畫 500 天內各階段的目標</li>
+<li>每天，他花 5 小時練習，為增強體力，他跑操場，研究巧克力補充血糖的效率。</li>
+<li>「我每一分鐘寫程式的時間都不敢犧牲……，只要螢幕離開寫程式的介面 5 分鐘，愧疚感和恐懼感就會油然而生。」</li>
+<li>2016年國際資訊奧林匹亞競賽金牌（全球排名第八）</li>
+<li>目前就讀於MIT美國麻省理工學院。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9db0b1a" class="outline-4">
+<h4 id="org9db0b1a"><span class="section-number-4">1.1.3.</span> 以上純粹是一場美麗的誤會</h4>
+</div>
+</div>
+<div id="outline-container-orga73a3f3" class="outline-3">
+<h3 id="orga73a3f3"><span class="section-number-3">1.2.</span> 必也正名呼 - 那，目前喊的震天響的自主學習指的是什麼</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org59faf1e" class="outline-4">
+<h4 id="org59faf1e"><span class="section-number-4">1.2.1.</span> 自主學習的類型</h4>
+</div>
+<div id="outline-container-orga238f7b" class="outline-4">
+<h4 id="orga238f7b"><span class="section-number-4">1.2.2.</span> 現階段我們面對的自主學習</h4>
+</div>
+</div>
+<div id="outline-container-org9606bbf" class="outline-3">
+<h3 id="org9606bbf"><span class="section-number-3">1.3.</span> 為何需要自主學習</h3>
+</div>
+</div>
+
+<div id="outline-container-org551352c" class="outline-2">
+<h2 id="org551352c"><span class="section-number-2">2.</span> How</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org58c369a" class="outline-3">
+<h3 id="org58c369a"><span class="section-number-3">2.1.</span> 自主學習的實施模式</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+理解實際場域的自主學習內涵才能了解需要哪一類輔助工具
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org17d12e9" class="outline-2">
+<h2 id="org17d12e9"><span class="section-number-2">3.</span> 科技能提供什麼輔助</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org71ef816" class="outline-3">
+<h3 id="org71ef816"><span class="section-number-3">3.1.</span> 科技領域教師的優勢</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>先別誤會，我們只是領域中 <b>被迫</b> 用到科技</li>
+<li>我們未必有利用到科技來輔助學生學習</li>
+<li>BUT</li>
+<li>所有的資訊領域教師幾乎都是自主學習實踐者</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orged46f11" class="outline-3">
+<h3 id="orged46f11"><span class="section-number-3">3.2.</span> 工具</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2022-09-13 Tue 08:19</p>
+</div>
+</body>
+</html>

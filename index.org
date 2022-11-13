@@ -1,7 +1,16 @@
 #+TITLE: 工作中專案
 
+# -*- org-export-babel-evaluate: nil -*-
+#+TAGS: AI
+#+INCLUDE: ../pdf.org
+#+OPTIONS: toc:0     ^:nil num:5
+#+PROPERTY: header-args :eval never-export
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
+#+EXCLUDE_TAGS: noexport
+#+latex:\newpage
+
 - [[file:textbook.org][台科大教科書]]
 - [[file:教科書審查修訂.html][教科書審查修訂]]
-- [[file:CourseDesign.org][高雄輔導團領域素養研習]]
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
+- K8S
 - [[file:InterdisciplinaryLearning.org][高雄輔導團跨域研習]]

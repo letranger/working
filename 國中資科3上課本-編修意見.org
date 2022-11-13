@@ -1,0 +1,97 @@
+#+title: 國中資科3上課本 編修意見
+# -*- org-export-babel-evaluate: nil -*-
+#+OPTIONS: toc:2 ^:nil num:3
+# -*- org-export-babel-evaluate: nil -*-
+#+TAGS: Python, Basic
+#+PROPERTY: header-args :eval never-export
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
+#+include: ../pdf.org
+
+* 指令 v.s. 函式(function)
+input(), print()均為函式而非指令，雖然python 2.x版中的input為指令：
+#+begin_src python -r -n :async :results output :exports both
+print "輸出內容"
+#+end_src
+但在3.x版中，Python不再使用print指令，取而代之的是print()內建函式[fn:1]，其用法為:
+#+begin_src python -r -n :async :results output :exports both
+print("輸出內容")
+#+end_src
+因此不建議再使用print指令或input指令說法(本章第193頁)，建議改為print()函式，並簡述函式(function)的一般格式與用法。
+* P199
+- python已支援中文變數，建議199頁中python程式的變數名稱命名可以和198頁的scratch一致，以免學生誤會python只能以英文命名
+- 建議同時提供命名規則與限制
+- 本頁提及保留字，並說明"不可使用保留字做為變數名稱"，是否應告知學生保留字有哪些？或是建議學生自行上網搜尋。
+* P201, 202, 203
+下列程式為遷就排版空間
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 500
+[[file:images/2022-09-26_21-31-16.png]]
+有沒有可能讓學生誤以為 if(c>d): 底下應該空一列，更重要的是，這段程式若原文照抄進編輯器會導致錯誤，無法執行。也許可以將註解改為多行註解模式：
+#+begin_src python -r -n :async :results output :exports both
+c=int(input('輸入變數 c 的值'))
+d=int(input('輸入變數 d 的值'))
+'''
+結果 1: 100>90，結果成立
+結果 2: 80>95，結果不成立。
+'''
+if (c>d):
+    print('變數 c 比較大')
+
+#+end_src
+* P204, 205
+- 如果是為了養成學生以英文命名變數的習慣，是否就直接在scratch程式中以英文命名變數，否則徒增學生對照中英變數名稱困擾
+- 在204頁的scratch程式中只是"說出和"，為何在205頁的python程式中要輸出'1+2+...+'?做為等價對照的兩支程式，輸出是否應該一致?
+* P215
+- 由前述簡單的單層for迴圈，到這裡突然給了個複雜的巢狀迴圈，不知道學生的接受程度如何？
+- 如果重複次數不太多，也許可以先改寫成連續的單層for迴圈，然後再導入雙層迴圈的便利性...
+* 附錄P001
+建議scratch版與python版的變數命名保持一致，，否則徒增學生對照中英變數名稱困擾
+* 附錄P002
+下列程式無法執行
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 600
+
+[[file:images/2022-09-26_22-22-16.png]]
+紅色框線內為註解，前方每一列都應加上#號，若有多行註解，建議改為'''的多行註解模式
+* 附錄P003
+下列程式無法執行，原因同上
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 600
+
+[[file:images/2022-09-26_22-27-22.png]]
+* 附錄P005
+建議scratch版與python版的變數命名保持一致，，否則徒增學生對照中英變數名稱困擾
+* 附錄P006
+下列程式縮排有誤
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 600
+
+[[file:images/2022-09-26_22-29-52.png]]
+除第2列外，所有程式前均多了一個空白，此程式無法執行
+* 附錄P009
+建議scratch版與python版的變數命名保持一致，，否則徒增學生對照中英變數名稱困擾
+* 附錄P010
+下列程式無法執行
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 600
+
+[[file:images/2022-09-26_22-32-56.png]]
+紅色框線內為註解，前方每一列都應加上#號，若有多行註解，建議改為'''註解'''的多行註解模式
+* Footnotes
+
+[fn:1] [[https://docs.python.org/3/library/2to3.html?highlight=print#to3fixer-print][2to3 — Automated Python 2 to 3 code translation]]

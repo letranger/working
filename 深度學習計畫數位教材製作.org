@@ -1,0 +1,140 @@
+#+title: 深度學習計畫數位教材製作
+#+HTML_HEAD:  <style> td img {width: 250px;} </style>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+
+* 教材架構
+#+CAPTION: 高中深度學習數位教材
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 500
+[[file:images/2022-09-25_16-01-11.png]]
+* 工作分配
+** 涂益郎、宋承彥
+深度學習簡介、類神經網路、卷積類神經網路、卷積層、卷積核、缺值處理
+** 顏永進、許柏浤
+激活函數、池化層、全連接層、實作1、實作2
+** 腳本成果範例
+*** 分鏡處理
+#+CAPTION: 最短距離分類器運作
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 300
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 500
+[[file:images/2022-09-25_16-04-33.png]]
+*** 預期影片
+[[https://video.cloud.edu.tw/video/co_video_content.php?p=395721][最短距離分類器運作:教育雲影音資料庫]]
+** 問題
+- 每支影片4個問題，這些問題是要嵌入影片中問還是看完一次問，是要像WSQ學習單那一類的問題？還是要用來評估學生能力的？
+- 腳本的來源是否要based on"和AI做朋友"？或是自行編製？
+- 最後是交word/pdf還是ppt?
+* 激活函數腳本
+** 前言
+** 什麼是函數
+** 為什麼需要激活函數
+** 什麼是激活函數
+** Article to read
+- [[https://stackoverflow.com/questions/17187507/why-use-softmax-as-opposed-to-standard-normalization][Why use softmax as opposed to standard normalization?]]
+- [[https://twgreatdaily.com/RAOWWmwBUcHTFCnfo88i.html][激活函數解析：Sigmoid, tanh, Softmax, ReLU, Leaky ReLU]]
+- [[https://blog.csdn.net/lz_peter/article/details/84574716][一分钟理解softmax函数（超简单）]]
+- [[https://aitechtogether.com/article/8300.html][深度学习常用的激活函数以及python实现(Sigmoid、Tanh、ReLU、Softmax、Leaky ReLU、ELU、PReLU、Swish)]]
+- [[https://kknews.cc/zh-tw/code/meg5qoz.html][深度學習基礎篇：如何選擇正確的激活函數？]]
+-
+*** why
+#+begin_quote
+There is one nice attribute of Softmax as compared with standard normalisation.
+
+It react to low stimulation (think blurry image) of your neural net with rather uniform distribution and to high stimulation (ie. large numbers, think crisp image) with probabilities close to 0 and 1.
+
+While standard normalisation does not care as long as the proportion are the same.
+
+Have a look what happens when soft max has 10 times larger input, ie your neural net got a crisp image and a lot of neurones got activated
+
+>>> softmax([1,2])              # blurry image of a ferret
+[0.26894142,      0.73105858])  #     it is a cat perhaps !?
+>>> softmax([10,20])            # crisp image of a cat
+[0.0000453978687, 0.999954602]) #     it is definitely a CAT !
+
+And then compare it with standard normalisation
+
+>>> std_norm([1,2])                      # blurry image of a ferret
+[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?
+>>> std_norm([10,20])                    # crisp image of a cat
+[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?
+#+end_quote
+* 池化層
+** Gray mage to unsigned int matrix
+#+begin_src python -r -n :results output :exports both
+from PIL import Image
+import numpy as np
+import skimage.measure
+
+im = np.array(Image.open('images/32eye.png').convert('L'))
+#print(im[0])
+
+poim = skimage.measure.block_reduce(im, (2, 2), np.max)
+img = Image.fromarray(poim, 'L')
+img.show()
+#+end_src
+
+#+RESULTS:
+: >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>>
+** table
+| 169 | 177 | 185 | 188 | 189 | 177 | 159 | 140 | 125 | 117 |  93 |  82 |  85 | 79 | 71 |  68 |
+| 212 | 217 | 216 | 207 | 195 | 183 | 168 | 152 | 141 | 127 | 112 |  99 |  87 | 77 | 74 |  72 |
+| 225 | 227 | 221 | 212 | 205 | 187 | 172 | 157 | 141 | 125 | 110 |  98 |  84 | 73 | 73 |  71 |
+| 232 | 232 | 226 | 220 | 209 | 192 | 175 | 154 | 137 | 115 | 101 |  88 |  75 | 67 | 64 |  62 |
+| 234 | 233 | 216 | 203 | 192 | 161 | 129 |  99 |  79 |  59 |  48 |  45 |  49 | 56 | 60 |  60 |
+| 222 | 210 | 199 | 158 | 152 | 116 |  81 |  59 |  46 |  38 |  38 |  24 |  11 | 17 | 37 |  62 |
+| 190 | 161 | 126 |  76 |  47 |  35 |  34 |  29 |  27 |  30 |  37 |  34 |  33 | 23 | 13 |  29 |
+| 193 |  94 |  70 | 161 | 114 |  65 |  88 |  51 |  29 |  51 |  79 |  53 |  36 | 44 | 37 |  20 |
+|  85 | 101 | 200 | 250 | 123 | 173 | 199 |  33 |   0 |  47 |  91 |  69 |  39 | 36 | 59 |  53 |
+| 151 | 171 | 187 | 245 | 169 |  99 | 161 | 104 |  63 |  90 | 123 |  68 |  40 | 28 | 38 |  83 |
+| 211 | 193 | 176 | 202 | 231 | 101 |  86 | 136 | 116 | 126 |  97 |  43 |  31 | 16 | 34 |  86 |
+| 225 | 218 | 209 | 190 | 191 | 171 |  85 |  64 |  63 |  71 |  70 |  69 |  50 | 41 | 48 |  65 |
+| 232 | 231 | 226 | 209 | 187 | 166 | 147 | 128 | 110 | 103 |  93 |  85 |  77 | 83 | 87 |  85 |
+| 236 | 233 | 227 | 227 | 209 | 203 | 190 | 167 | 146 | 127 | 102 |  94 |  91 | 95 | 95 |  97 |
+| 237 | 235 | 232 | 225 | 228 | 226 | 210 | 188 | 166 | 143 | 116 | 107 | 101 | 96 | 93 |  95 |
+| 238 | 236 | 233 | 230 | 223 | 216 | 201 | 186 | 168 | 154 | 138 | 126 | 109 | 99 | 95 | 104 |
+** 參考影片
+- [[https://www.youtube.com/channel/UCmWCMqDKCR56pqd10qNkv3Q/videos][容噗玩Data]]
+- [[https://youtu.be/4-IR8kOrtoY][python-深度學習5.1-CNN神經網路-簡介(含圖片資料說明)]]
+- [[https://youtu.be/iYv_ZwdqGMo][python-深度學習5.3-CNN神經網路-建模]]
+* 全連接層
+** 參考影片
+- [[https://blog.csdn.net/qq_39521554/article/details/81385159][對全連接層（fully connected layer）的通俗理解]]
+- [[https://ml4a.github.io/demos/][ml4a]]
+- [[https://hackmd.io/@allen108108/rkn-oVGA4][卷積神經網路 (Convolutional Neural , CNN)]]
+- [[https://www.quora.com/How-big-is-AlphaGo-neural-netwoks-How-many-layers-each-of-its-two-neural-networks-have][AlphaGo的架構說明]]
+- [[https://www.youtube.com/watch?v=pnkCEzwiSog][ 学习分享一年，对神经网络的理解全都在这40分钟里了 ]]
+** 全連接層
+全連接層（fully connected layers，FC）在整個卷積神經網絡中起到「分類器」的作用。如果說卷積層、池化層和激活函數層等操作是將原始數據映射到隱層特徵空間的話，全連接層則起到將學到的「分佈式特徵表示」映射到樣本標記空間的作用。在實際使用中，全連接層可由卷積操作實現：
+
+對前層是全連接的全連接層可以轉化為卷積核為1x1的卷積；而前層是卷積層的全連接層可以轉化為卷積核為hxw的全局卷積，h和w分別為前層卷積結果的高和寬。
+
+全連接的核心操作就是矩陣向量乘積 y = Wx
+
+本質就是由一個特徵空間線性變換到另一個特徵空間。目標空間的任一維——也就是隱層的一個 cell——都認為會受到源空間的每一維的影響。不考慮嚴謹，可以說，目標向量是源向量的加權和。
+
+在 CNN 中，全連接常出現在最後幾層，用於對前面設計的特徵做加權和。比如 mnist，前面的卷積和池化相當於做特徵工程，後面的全連接相當於做特徵加權。（卷積相當於全連接的有意弱化，按照局部視野的啟發，把局部之外的弱影響直接抹為零影響；還做了一點強制，不同的局部所使用的參數居然一致。弱化使參數變少，節省計算量，又專攻局部不貪多求全；強制進一步減少參數。少即是多） 在 RNN 中，全連接用來把 embedding 空間拉到隱層空間，把隱層空間轉回 label 空間等。
+
+CNN與全連接
+
+在CNN結構中，經多個卷積層和池化層後，連接著1個或1個以上的全連接層．與MLP類似，全連接層中的每個神經元與其前一層的所有神經元進行全連接．全連接層可以整合卷積層或者池化層中具有類別區分性的局部信息．為了提升 CNN網絡性能，全連接層每個神經元的激勵函數一般採用ReLU函數。
+
+最後一層全連接層的輸出值被傳遞給一個輸出，可以採用softmax邏輯回歸（softmax regression）進行 分 類，該層也可 稱為 softmax層（softmax layer）．對於一個具體的分類任務，選擇一個合適的損失函數是十分重要的，CNN幾種常用的損失函數並分析了它們各自的特點．通 常，CNN的全連接層與MLP 結構一樣，CNN的訓練算法也多採用BP算法
+
+舉個例子：
+
+最後的兩列小圓球就是兩個全連接層，在最後一層卷積結束後，進行了最後一次池化，輸出了20個12*12的圖像，然後通過了一個全連接層變成了1*100的向量。
+
+這是怎麼做到的呢，其實就是有20*100個12*12的卷積核卷積出來的，對於輸入的每一張圖，用了一個和圖像一樣大小的核卷積，這樣整幅圖就變成了一個數了，如果厚度是20就是那20個核卷積完了之後相加求和。這樣就能把一張圖高度濃縮成一個數了。全連接的目的是什麼呢？
+
+因為傳統的網絡我們的輸出都是分類，也就是幾個類別的概率甚至就是一個數--類別號，那麼全連接層就是高度提純的特徵了，方便交給最後的分類器或者回歸。但是全連接的參數實在是太多了，你想這張圖裡就有20*12*12*100個參數，前面隨便一層卷積，假設卷積核是7*7的，厚度是64，那也才7*7*64，所以現在的趨勢是儘量避免全連接，目前主流的一個方法是全局平均值。
+
+也就是最後那一層的feature map（最後一層卷積的輸出結果），直接求平均值。有多少種分類就訓練多少層，這十個數字就是對應的概率或者叫置信度。
+* 實作1
+What is the difference between these two modes?
+* 實作2

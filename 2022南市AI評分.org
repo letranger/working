@@ -1,0 +1,60 @@
+#+title: 2022南市ai評分
+
+* 迷宮組
+** yv520173
+*** source code:
+#+transclude: [[yv520173.py]]  :src python
+*** judge: OK
+** yv520142
+*** source code
+#+transclude: [[yv520142.py]]  :src python
+*** judge: OK
+** yv520059
+*** source code
+#+transclude: [[./yv520059.py]]  :src python
+*** judge: OK
+** yv520011
+*** source code
+#+transclude: [[./yv520011.py]]  :src python
+*** judeg: 這個有用到AI嗎
+
+* 磚塊組
+** pfqc0022
+*** source code
+#+transclude: [[./pfqc0022.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0039
+*** source code
+#+transclude: [[./pfqc0039.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0046
+*** source code
+#+transclude: [[./pfqc0046.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0053
+*** source code
+#+transclude: [[./pfqc0053.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0060
+*** source code
+#+transclude: [[./pfqc0060.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0077
+*** source code
+#+transclude: [[./pfqc0077.py]] :src python
+*** judge:
+如果其中夾了一些針對scene_info的值所做的move是否合法
+** pfqc0084
+*** source code
+#+transclude: [[./pfqc0084.py]] :src python
+*** judge: 沒有pickle
+
+** pfqc0091
+*** source code
+#+transclude: [[./pfqc0091.py]] :src python
+*** judge:

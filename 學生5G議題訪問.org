@@ -1,0 +1,36 @@
+#+title: 學生5G議題訪問
+# -*- org-export-babel-evaluate: nil -*-
+#+OPTIONS: toc:2 ^:nil num:3
+# -*- org-export-babel-evaluate: nil -*-
+#+TAGS: Python, Basic
+#+PROPERTY: header-args :eval never-export
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
+#+include: ../pdf.org
+
+* 請問你的年齡、學歷、教學資歷與在資訊科的專長領域是什麼？
+
+* 在5G剛推出時對5G未來的發展有什麼期待?
+
+* 是否特別關注哪項5G技術的發展目標或方針(例如eMBB/URLLC/mMTC)?
+
+* 是否特別喜歡5G的哪項新技術?
+
+* 現在5G技術的的發展是否達到您當初對他的期待?
+
+* 5G真的有比4G好嗎?5G是否改善了4G的缺點?
+
+* 希望未來5G技術能改善的地方?
+
+* 認為5G技術發展的前景好不好?當初推出時國際設定的目標是可能達成的嗎?
+
+* 從專業的角度來看5G技術發展可能會受到什麼屏障?
+
+* 覺得5G的發展有沒有什麼安全疑慮(資安方面或對於人體的傷害等等)?
+
+* 認為臺灣在發展5G方面有什麼潛力?
+
+* 覺得臺灣的資訊環境對於5G發展好不好/友不友善/適不適合?
+
+* 在生活中除了通訊軟體的網路外有沒有接觸過其他5G技術的應用?
+
+* 通訊技術持續的更新與發展對你的生活有什麼影響?

@@ -1,0 +1,194 @@
+#+title: Ai試題
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+TAGS: AI
+#+INCLUDE: ../pdf.org
+#+OPTIONS: toc:0     ^:nil num:5
+#+PROPERTY: header-args :eval never-export
+#+EXCLUDE_TAGS: noexport
+#+latex:\newpage
+
+* TODO 題目 [6/15]
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395602][人工智慧的歷史]] / A-3-1-S03
+   1) 在人工智慧發展的第一階段(1974-1978)，科學家已能利用感知器完成英文字母的辨識，然而人工智慧的發展卻到此停頓，直到1993年CNN之父LeCun提出LeNet模型後，人工智慧才被廣泛應用到支票判讀上。以下何者非造成這種停頓的原因：
+      A. 經費短缺
+      B. 社會大眾對人工智慧缺乏信心
+      C. 當時電腦效能有限
+      D. 不具實際應用價值
+   2) 1980年崛起的專家系統曾在人工智慧發展上被寄予厚望，事實上，如今在許多醫用的輔助醫療系統上仍能看到專家系統的影子，然而後來卻未見其更廣泛的發展與應用。造成專家系統發展停滯的原因為：
+      A. 開發與維護成本過高
+      B. 只適用於特定範圍的知識領域
+      C. 商業價值過低
+      D. 以上皆是
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395606][人工智慧的類型]] / A-3-1-S04
+   1) 這學期的 AI 選修專題，小帆想開發一個能和電腦玩「剪刀、石頭、布」 的遊戲，她拍了很多不同手勢的照片，並為每張照片加上「剪刀、石頭、 布」的標籤，將這些照片和標籤丟進模型去訓練。請問小帆開發的這套軟體屬於哪一種類型的機器學習?
+      A. 監督式學習
+      B. 非監督式學習
+      C. 半監督式學習
+      D. 強化學習
+   2) 小哲初到任職銀行報到，手上的第一個任務是將貸款客戶分為VIP、優良、危險三個等級，銀行資料庫中可用的客戶資料包括客戶貸款金額、每月還款狀況、工作性質、每月薪資....等等。小哲先建立了一個AI模型，將客戶以這些資料為基礎分為三群，然後再觀察這三群裡的客戶資料狀況，最後將其命名為VIP、優良、危險，完成任務。請問小哲所開發的這個AI模型最有可能屬於以下哪一種機器學習類型?
+      A. 監督式學習
+      B. 非監督式學習
+      C. 半監督式學習
+      D. 強化學習。
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395598][資料整理與儲存]] / A-3-2-S02
+   1. 人工智慧的重要基礎之一在於龐大的分析資料，然而這些資料往往都先經過重新整理之後才能被有效的分析，主要原因不包括：
+      A. 資料可能有所缺漏
+      B. 資料數值可能出現異常
+      C. 資料數量過於龐大
+      D. 資料所使用的單位不同
+   2. 下表為2022年11月16日台中地區的空氣品質即時監測結果，因不明原因，某些時段的監測結果未能被記錄下來，若依據插值法進行資料整理，請問表中的A、B、C三格中應補入何值？
+      PM2.5(小時濃度值)
+      |--------------+-----+-----+-----+------+------+------+------+------|
+      | 監測時間時間 | 5時 | 7時 | 9時 | 11時 | 13時 | 15時 | 17時 | 19時 |
+      |--------------+-----+-----+-----+------+------+------+------+------|
+      | 臺中文山     |  19 |   X1 |  17 |   21 |   20 |   14 |   15 |   17 |
+      | 臺中后里     |  17 |  14 |  12 |   13 |   10 |   26 |   20 |   31 |
+      | 臺中大甲     |   9 |  15 |   9 |   12 |    X2 |   14 |   12 |   12 |
+      | 臺中鳥日     |  17 |  16 |  22 |   32 |   30 |   26 |   21 |   18 |
+      |--------------+-----+-----+-----+------+------+------+------+------|
+      A. X1: 19, X2: 12
+      B. X1: 17, X2: 14
+      C. X1: 15, X2: 20
+      D. X1: 18, X2: 13
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395671][最短距離分類器原理]] / A-3-4-S03
+   1. 最短距離分類器是屬於以下哪一種類型的人工智慧？
+      A. 監督式學習
+      B. 非監督式學習
+      C. 強化學習
+      D. 深度學習
+   2. 影片中，小明與小美因AI機器人的調解而合好，然而同樣的爭執因為「功夫戀人2」再度上演，此時AI機器人又故技重施計算最短距離，經過計算，AI機器人悲劇的發現：這部電影到「愛情片」與「動作片」中心點的歐幾里德距離都是13.87。請問此時冷汗直流的AI機器人應如何處置?
+      #+ATTR_LATEX: :width 300
+      #+ATTR_ORG: :width 300
+      #+ATTR_HTML: :width 600
+      [[file:images/2022-11-21_12-31-35.png]]
+      A. 判定此電影為動作片
+      B. 判定此電影為愛情片
+      C. 丟硬幣決定此電影的類型
+      D. 假裝當機
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395721][最短距離分類器運作]] / A-3-4-S04
+   1. 影片中的咖啡王子順利升職為專業經理人後，轉換到銀行信用卡部門。這次他負責核發客戶的信用卡額度，銀行擁有的客戶資料包括：
+      - 生日
+      - 職業類別
+      - 薪資
+      - 性別
+      咖啡王子想起進行最短距離分類前要先對資料進行標準化，請問以下哪一項客戶資料應該進行標準化：
+      A. 生日
+      B. 職業類別
+      C. 薪資
+      D. 性別
+   2. 由於在信用卡部門表現優異，咖啡王子又高升到貨款部門，這次他想先對客戶申請的貨款金額進行Min-Max標準化。目前手上客戶資料如下：
+      |------+----------+---------------|
+      | 姓名 | 貸款金額 | Min-Max標準化 |
+      |------+----------+---------------|
+      | 張三 |   900000 |         2.000 |
+      | 李四 |   300000 |         0.100 |
+      | 王五 |   400000 |         0.250 |
+      | 趙六 |   500000 |         0.333 |
+      |------+----------+---------------|
+      請問上表中哪一個人的標準化分數是正確的?
+      A. 張三
+      B. 李四
+      C. 王五
+      D. 趙六
+** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395677][KNN分類器原理]] / A-3-4-S05
+   1. KNN分類器的概念為「找出最接近自己的K個隣居，然後西瓜偎大邊，走到人最多的那一群裡」，下圖中，當K分別為1, 4, 9時，新的資料點分別會被歸為哪一類？
+      #+ATTR_HTML: :width 600
+      [[file:images/2022-11-21_15-16-46.png]]
+      A. A、B、A
+      B. A、A、B
+      C. B、B、A
+      D. B、A、A
+   2. 由上題中可以發現K的值會決定新進資料的分類結果，然而有可能會遇到「最接近的K個隣居裡，不同類別個數一樣」的問題，請問該如何處理較為合理？
+      A. 換一個K值
+      B. 由程式隨機指定新進資料的分類
+      C. 隨機刪除某一個隣居
+      D. 以上皆非
+** [ ] KNN分類器原理運作 / A-3-4-S06
+   1. ...
+   2. ...
+** [ ] 樹狀結構 / A-3-4-S07
+   1. 圖示之樹狀結構有 　　 個節點（Node）和 　　 個分支（Branch）。
+   2. ...
+** [ ] 決策樹的運作機制 / A-3-4-S08
+   1. ...
+   2. ...
+** [ ] 熵的意義與運作機制2 / A-3-4-S10
+   1. ...
+   2. ...
+** [ ] 決策樹的建構1 / A-3-4-S12
+   1. ...
+   2.
+** [ ] 決策樹的建構3 / A-3-4-S14
+    1. ...
+    2. ...
+** [ ] 單一連結2 / A-3-5-S09
+    1. ...
+    2. ...
+** [ ] 完整連結2 / A-3-5-S11
+    1. 消費單價中等與消費次數最高是屬哪種族群？
+    2. ...
+** [ ] 群數選擇 / A-3-5-S15
+    1. 關於群數選擇的指標，下列何者正確？
+    2. ...
+* 影片資料庫
+|    1-1 | 人工智慧的起源                   | 0:09:50 | https://video.cloud.edu.tw/video/co_video_content.php?p=395548  |
+|    1-2 | 人工智慧的應用現況               | 0:09:19 | https://video.cloud.edu.tw/video/co_video_content.php?p=395558  |
+|    1-3 | 人工智慧的歷史                   | 0:06:29 | https://video.cloud.edu.tw/video/co_video_content.php?p=395602  |
+|    1-4 | 人工智慧的類型                   | 0:08:34 | https://video.cloud.edu.tw/video/co_video_content.php?p=395606  |
+|    1-5 | 人工智慧的未來發展               | 0:11:18 | https://video.cloud.edu.tw/video/co_video_content.php?p=395641  |
+|    2-1 | 資料收集類型                     | 0:07:46 | https://video.cloud.edu.tw/video/co_video_content.php?p=395571  |
+|    2-2 | 資料整理與儲存                   | 0:09:13 | https://video.cloud.edu.tw/video/co_video_content.php?p=395598  |
+|  2-3-1 | 特徵選擇（含相關係數之概念）1    | 0:05:49 | https://video.cloud.edu.tw/video/co_video_content.php?p=395564  |
+|  2-3-2 | 特徵選擇（含相關係數之概念）2    | 0:10:15 | https://video.cloud.edu.tw/video/co_video_content.php?p=395612  |
+|    2-4 | 特徵距離：曼哈頓距離             | 0:04:41 | https://video.cloud.edu.tw/video/co_video_content.php?p=395715  |
+|    2-5 | 特徵距離：歐幾里得距離           | 0:02:55 | https://video.cloud.edu.tw/video/co_video_content.php?p=395713  |
+|    2-6 | 資料的標準化                     | 0:15:26 | https://video.cloud.edu.tw/video/co_video_content.php?p=395590  |
+|    2-7 | 資料集分割                       | 0:10:55 | https://video.cloud.edu.tw/video/co_video_content.php?p=395569  |
+|  3-1-1 | 資料探勘簡介1                    | 0:07:44 | https://video.cloud.edu.tw/video/co_video_content.php?p=395574  |
+|  3-1-2 | 資料探勘簡介2                    | 0:09:49 | https://video.cloud.edu.tw/video/co_video_content.php?p=395592  |
+|  3-2-1 | 關nnb聯式探勘1                   | 0:07:29 | https://video.cloud.edu.tw/video/co_video_content.php?p=395578  |
+|  3-2-2 | 關聯式探勘2                      | 0:09:45 | https://video.cloud.edu.tw/video/co_video_content.php?p=395608  |
+|  3-2-3 | 關聯式探勘3                      | 0:09:27 | https://video.cloud.edu.tw/video/co_video_content.php?p=395618  |
+|  3-3-1 | 序列式探勘1                      | 0:09:07 | https://video.cloud.edu.tw/video/co_video_content.php?p=395580  |
+|  3-3-2 | 序列式探勘2                      | 0:09:01 | https://video.cloud.edu.tw/video/co_video_content.php?p=395588  |
+|  3-3-3 | 序列式探勘3                      | 0:10:39 | https://video.cloud.edu.tw/video/co_video_content.php?p=395604  |
+|  4-1-1 | 監督式學習簡介1                  | 0:04:59 | https://video.cloud.edu.tw/video/co_video_content.php?p=395566  |
+|  4-1-2 | 監督式學習簡介2                  | 0:07:09 | https://video.cloud.edu.tw/video/co_video_content.php?p=395596  |
+|    4-2 | 最短距離分類器原理               | 0:09:54 | https://video.cloud.edu.tw/video/co_video_content.php?p=395671  |
+|    4-3 | 最短距離分類器運作               | 0:11:23 | https://video.cloud.edu.tw/video/co_video_content.php?p=395721  |
+|    4-4 | KNN分類器原理                    | 0:10:22 | https://video.cloud.edu.tw/video/co_video_content.php?p=395677  |
+|    4-5 | KNN分類器原理運作                | 0:12:12 | https://video.cloud.edu.tw/video/co_video_content.php?p=395626  |
+|    4-6 | 樹狀結構                         | 0:04:43 | https://video.cloud.edu.tw/video/co_video_content.php?p=395576  |
+|    4-7 | 決策樹的運作機制                 | 0:05:08 | https://video.cloud.edu.tw/video/co_video_content.php?p=395685  |
+|  4-8-1 | 熵的意義與運作機制1              | 0:04:11 | https://video.cloud.edu.tw/video/co_video_content.php?p=395550  |
+|  4-8-2 | 熵的意義與運作機制2              | 0:04:42 | https://video.cloud.edu.tw/video/co_video_content.php?p=395556  |
+|    4-9 | 資訊獲利                         | 0:04:53 | https://video.cloud.edu.tw/video/co_video_content.php?p=395620  |
+| 4-10-1 | 決策樹的建構1                    | 0:11:12 | https://video.cloud.edu.tw/video/co_video_content.php?p=395679  |
+| 4-10-2 | 決策樹的建構2                    | 0:12:13 | https://video.cloud.edu.tw/video/co_video_content.php?p=395681  |
+| 4-10-3 | 決策樹的建構3                    | 0:06:32 | https://video.cloud.edu.tw/video/co_video_content.php?p=395636  |
+|    5-1 | 非監督式學習簡介                 | 0:09:19 | https://video.cloud.edu.tw/video/co_video_content.php?p=395628  |
+|  5-2-1 | K-means演算法介紹1               | 0:08:08 | https://video.cloud.edu.tw/video/co_video_content.php?p=395632  |
+|  5-2-2 | K-means演算法介紹2               | 0:11:05 | https://video.cloud.edu.tw/video/co_video_content.php?p=395600  |
+|  5-3-1 | K-means運作機制1                 | 0:10:07 | https://video.cloud.edu.tw/video/co_video_content.php?p=395675  |
+|  5-3-2 | K-means運作機制2                 | 0:07:28 | https://video.cloud.edu.tw/video/co_video_content.php?p=395610  |
+|  5-3-3 | K-means運作機制3                 | 0:07:26 | https://video.cloud.edu.tw/video/co_video_content.php?p=395614  |
+|    5-4 | 階層式分群法介紹                 | 0:05:00 | https://video.cloud.edu.tw/video/co_video_content.php?p=3956344 |
+|  5-5-1 | 單一連結1                        | 0:05:13 | https://video.cloud.edu.tw/video/co_video_content.php?p=395562  |
+|  5-5-2 | 單一連結2                        | 0:03:38 | https://video.cloud.edu.tw/video/co_video_content.php?p=395554  |
+|  5-6-1 | 完整連結1                        | 0:05:17 | https://video.cloud.edu.tw/video/co_video_content.php?p=395594  |
+|  5-6-2 | 完整連結2                        | 0:05:23 | https://video.cloud.edu.tw/video/co_video_content.php?p=395723  |
+|  5-7-1 | 平均連結1                        | 0:05:15 | https://video.cloud.edu.tw/video/co_video_content.php?p=395552  |
+|  5-7-2 | 平均連結2                        | 0:05:39 | https://video.cloud.edu.tw/video/co_video_content.php?p=395560  |
+|    5-8 | 三種連結比較                     | 0:12:16 | https://video.cloud.edu.tw/video/co_video_content.php?p=395669  |
+|    5-9 | 群數選擇                         | 0:08:41 | https://video.cloud.edu.tw/video/co_video_content.php?p=395584  |
+|    6-1 | 增強式學習簡介                   | 0:09:55 | https://video.cloud.edu.tw/video/co_video_content.php?p=395638  |
+|    6-2 | 代理人(Agent)與獎勵值(Value)概念 | 0:10:03 | https://video.cloud.edu.tw/video/co_video_content.php?p=395643  |
+|    6-3 | 貝爾曼方程概念                   | 0:08:26 | https://video.cloud.edu.tw/video/co_video_content.php?p=395616  |
+|    6-4 | 貝爾曼方程運作                   | 0:07:33 | https://video.cloud.edu.tw/video/co_video_content.php?p=395630  |
+|    6-5 | 馬可夫決策                       | 0:06:38 | https://video.cloud.edu.tw/video/co_video_content.php?p=395673  |
+|  6-6-1 | Q學習概念1                       | 0:07:11 | https://video.cloud.edu.tw/video/co_video_content.php?p=395582  |
+|  6-6-2 | Q學習概念2                       | 0:07:38 | https://video.cloud.edu.tw/video/co_video_content.php?p=395586  |
+|  6-7-1 | 時值差異TD1                      | 0:06:26 | https://video.cloud.edu.tw/video/co_video_content.php?p=395624  |
+|  6-7-2 | 時值差異TD2                      | 0:07:19 | https://video.cloud.edu.tw/video/co_video_content.php?p=395622  |
+|  6-8-1 | Q學習運作(更新Q表之Q值)1         | 0:05:48 | https://video.cloud.edu.tw/video/co_video_content.php?p=395717  |
+|  6-8-2 | Q學習運作(更新Q表之Q值)2         | 0:07:48 | https://video.cloud.edu.tw/video/co_video_content.php?p=395719  |

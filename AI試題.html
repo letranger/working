@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-21 Mon 15:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ai試題</title>
+<meta name="author" content="Yung Chin, Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ai試題</h1>
+
+<div id="outline-container-orgdf60d66" class="outline-2">
+<h2 id="orgdf60d66"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> 題目 <code>[6/15]</code></h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org7f5b794" class="outline-3">
+<h3 id="org7f5b794"><span class="section-number-3">1.1.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395602">人工智慧的歷史</a> / A-3-1-S03</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>在人工智慧發展的第一階段(1974-1978)，科學家已能利用感知器完成英文字母的辨識，然而人工智慧的發展卻到此停頓，直到1993年CNN之父LeCun提出LeNet模型後，人工智慧才被廣泛應用到支票判讀上。以下何者非造成這種停頓的原因：<br />
+<ol class="org-ol">
+<li>經費短缺<br /></li>
+<li>社會大眾對人工智慧缺乏信心<br /></li>
+<li>當時電腦效能有限<br /></li>
+<li>不具實際應用價值<br /></li>
+</ol></li>
+<li>1980年崛起的專家系統曾在人工智慧發展上被寄予厚望，事實上，如今在許多醫用的輔助醫療系統上仍能看到專家系統的影子，然而後來卻未見其更廣泛的發展與應用。造成專家系統發展停滯的原因為：<br />
+<ol class="org-ol">
+<li>開發與維護成本過高<br /></li>
+<li>只適用於特定範圍的知識領域<br /></li>
+<li>商業價值過低<br /></li>
+<li>以上皆是<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2f46d8d" class="outline-3">
+<h3 id="org2f46d8d"><span class="section-number-3">1.2.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395606">人工智慧的類型</a> / A-3-1-S04</h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li>這學期的 AI 選修專題，小帆想開發一個能和電腦玩「剪刀、石頭、布」 的遊戲，她拍了很多不同手勢的照片，並為每張照片加上「剪刀、石頭、 布」的標籤，將這些照片和標籤丟進模型去訓練。請問小帆開發的這套軟體屬於哪一種類型的機器學習?<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>半監督式學習<br /></li>
+<li>強化學習<br /></li>
+</ol></li>
+<li>小哲初到任職銀行報到，手上的第一個任務是將貸款客戶分為VIP、優良、危險三個等級，銀行資料庫中可用的客戶資料包括客戶貸款金額、每月還款狀況、工作性質、每月薪資&#x2026;.等等。小哲先建立了一個AI模型，將客戶以這些資料為基礎分為三群，然後再觀察這三群裡的客戶資料狀況，最後將其命名為VIP、優良、危險，完成任務。請問小哲所開發的這個AI模型最有可能屬於以下哪一種機器學習類型?<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>半監督式學習<br /></li>
+<li>強化學習。<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc3e8b82" class="outline-3">
+<h3 id="orgc3e8b82"><span class="section-number-3">1.3.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395598">資料整理與儲存</a> / A-3-2-S02</h3>
+<div class="outline-text-3" id="text-1-3">
+<ol class="org-ol">
+<li>人工智慧的重要基礎之一在於龐大的分析資料，然而這些資料往往都先經過重新整理之後才能被有效的分析，主要原因不包括：<br />
+<ol class="org-ol">
+<li>資料可能有所缺漏<br /></li>
+<li>資料數值可能出現異常<br /></li>
+<li>資料數量過於龐大<br /></li>
+<li>資料所使用的單位不同<br /></li>
+</ol></li>
+<li><p>
+下表為2022年11月16日台中地區的空氣品質即時監測結果，因不明原因，某些時段的監測結果未能被記錄下來，若依據插值法進行資料整理，請問表中的A、B、C三格中應補入何值？<br />
+PM2.5(小時濃度值)<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">監測時間時間</th>
+<th scope="col" class="org-right">5時</th>
+<th scope="col" class="org-right">7時</th>
+<th scope="col" class="org-right">9時</th>
+<th scope="col" class="org-right">11時</th>
+<th scope="col" class="org-right">13時</th>
+<th scope="col" class="org-right">15時</th>
+<th scope="col" class="org-right">17時</th>
+<th scope="col" class="org-right">19時</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">臺中文山</td>
+<td class="org-right">19</td>
+<td class="org-right">X1</td>
+<td class="org-right">17</td>
+<td class="org-right">21</td>
+<td class="org-right">20</td>
+<td class="org-right">14</td>
+<td class="org-right">15</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中后里</td>
+<td class="org-right">17</td>
+<td class="org-right">14</td>
+<td class="org-right">12</td>
+<td class="org-right">13</td>
+<td class="org-right">10</td>
+<td class="org-right">26</td>
+<td class="org-right">20</td>
+<td class="org-right">31</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中大甲</td>
+<td class="org-right">9</td>
+<td class="org-right">15</td>
+<td class="org-right">9</td>
+<td class="org-right">12</td>
+<td class="org-right">X2</td>
+<td class="org-right">14</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中鳥日</td>
+<td class="org-right">17</td>
+<td class="org-right">16</td>
+<td class="org-right">22</td>
+<td class="org-right">32</td>
+<td class="org-right">30</td>
+<td class="org-right">26</td>
+<td class="org-right">21</td>
+<td class="org-right">18</td>
+</tr>
+</tbody>
+</table>
+<ol class="org-ol">
+<li>X1: 19, X2: 12<br /></li>
+<li>X1: 17, X2: 14<br /></li>
+<li>X1: 15, X2: 20<br /></li>
+<li>X1: 18, X2: 13<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4917b9c" class="outline-3">
+<h3 id="org4917b9c"><span class="section-number-3">1.4.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395671">最短距離分類器原理</a> / A-3-4-S03</h3>
+<div class="outline-text-3" id="text-1-4">
+<ol class="org-ol">
+<li>最短距離分類器是屬於以下哪一種類型的人工智慧？<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>強化學習<br /></li>
+<li>深度學習<br /></li>
+</ol></li>
+<li><p>
+影片中，小明與小美因AI機器人的調解而合好，然而同樣的爭執因為「功夫戀人2」再度上演，此時AI機器人又故技重施計算最短距離，經過計算，AI機器人悲劇的發現：這部電影到「愛情片」與「動作片」中心點的歐幾里德距離都是13.87。請問此時冷汗直流的AI機器人應如何處置?<br />
+</p>
+
+<div id="orge62cff0" class="figure">
+<p><img src="images/2022-11-21_12-31-35.png" alt="2022-11-21_12-31-35.png" width="600" /><br />
+</p>
+</div>
+<ol class="org-ol">
+<li>判定此電影為動作片<br /></li>
+<li>判定此電影為愛情片<br /></li>
+<li>丟硬幣決定此電影的類型<br /></li>
+<li>假裝當機<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org74f4cb4" class="outline-3">
+<h3 id="org74f4cb4"><span class="section-number-3">1.5.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395721">最短距離分類器運作</a> / A-3-4-S04</h3>
+<div class="outline-text-3" id="text-1-5">
+<ol class="org-ol">
+<li><p>
+影片中的咖啡王子順利升職為專業經理人後，轉換到銀行信用卡部門。這次他負責核發客戶的信用卡額度，銀行擁有的客戶資料包括：<br />
+</p>
+<ul class="org-ul">
+<li>生日<br /></li>
+<li>職業類別<br /></li>
+<li>薪資<br /></li>
+<li>性別<br /></li>
+</ul>
+<p>
+咖啡王子想起進行最短距離分類前要先對資料進行標準化，請問以下哪一項客戶資料應該進行標準化：<br />
+</p>
+<ol class="org-ol">
+<li>生日<br /></li>
+<li>職業類別<br /></li>
+<li>薪資<br /></li>
+<li>性別<br /></li>
+</ol></li>
+<li><p>
+由於在信用卡部門表現優異，咖啡王子又高升到貨款部門，這次他想先對客戶申請的貨款金額進行Min-Max標準化。目前手上客戶資料如下：<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">姓名</th>
+<th scope="col" class="org-right">貸款金額</th>
+<th scope="col" class="org-right">Min-Max標準化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">張三</td>
+<td class="org-right">900000</td>
+<td class="org-right">2.000</td>
+</tr>
+
+<tr>
+<td class="org-left">李四</td>
+<td class="org-right">300000</td>
+<td class="org-right">0.100</td>
+</tr>
+
+<tr>
+<td class="org-left">王五</td>
+<td class="org-right">400000</td>
+<td class="org-right">0.250</td>
+</tr>
+
+<tr>
+<td class="org-left">趙六</td>
+<td class="org-right">500000</td>
+<td class="org-right">0.333</td>
+</tr>
+</tbody>
+</table>
+<p>
+請問上表中哪一個人的標準化分數是正確的?<br />
+</p>
+<ol class="org-ol">
+<li>張三<br /></li>
+<li>李四<br /></li>
+<li>王五<br /></li>
+<li>趙六<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5d93fe6" class="outline-3">
+<h3 id="org5d93fe6"><span class="section-number-3">1.6.</span> <span class="done _X_">[X]</span> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395677">KNN分類器原理</a> / A-3-4-S05</h3>
+<div class="outline-text-3" id="text-1-6">
+<ol class="org-ol">
+<li><p>
+KNN分類器的概念為「找出最接近自己的K個隣居，然後西瓜偎大邊，走到人最多的那一群裡」，下圖中，當K分別為1, 4, 9時，新的資料點分別會被歸為哪一類？<br />
+</p>
+
+<div id="orgcc28261" class="figure">
+<p><img src="images/2022-11-21_15-16-46.png" alt="2022-11-21_15-16-46.png" width="600" /><br />
+</p>
+</div>
+<ol class="org-ol">
+<li>A、B、A<br /></li>
+<li>A、A、B<br /></li>
+<li>B、B、A<br /></li>
+<li>B、A、A<br /></li>
+</ol></li>
+<li>由上題中可以發現K的值會決定新進資料的分類結果，然而有可能會遇到「最接近的K個隣居裡，不同類別個數一樣」的問題，請問該如何處理較為合理？<br />
+<ol class="org-ol">
+<li>換一個K值<br /></li>
+<li>由程式隨機指定新進資料的分類<br /></li>
+<li>隨機刪除某一個隣居<br /></li>
+<li>以上皆非<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org46218ac" class="outline-3">
+<h3 id="org46218ac"><span class="section-number-3">1.7.</span> <span class="todo ___">[ ]</span> KNN分類器原理運作 / A-3-4-S06</h3>
+<div class="outline-text-3" id="text-1-7">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org489ca2a" class="outline-3">
+<h3 id="org489ca2a"><span class="section-number-3">1.8.</span> <span class="todo ___">[ ]</span> 樹狀結構 / A-3-4-S07</h3>
+<div class="outline-text-3" id="text-1-8">
+<ol class="org-ol">
+<li>圖示之樹狀結構有 　　 個節點（Node）和 　　 個分支（Branch）。<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8a02fc7" class="outline-3">
+<h3 id="org8a02fc7"><span class="section-number-3">1.9.</span> <span class="todo ___">[ ]</span> 決策樹的運作機制 / A-3-4-S08</h3>
+<div class="outline-text-3" id="text-1-9">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0b5c68a" class="outline-3">
+<h3 id="org0b5c68a"><span class="section-number-3">1.10.</span> <span class="todo ___">[ ]</span> 熵的意義與運作機制2 / A-3-4-S10</h3>
+<div class="outline-text-3" id="text-1-10">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org74218dd" class="outline-3">
+<h3 id="org74218dd"><span class="section-number-3">1.11.</span> <span class="todo ___">[ ]</span> 決策樹的建構1 / A-3-4-S12</h3>
+<div class="outline-text-3" id="text-1-11">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5f9c647" class="outline-3">
+<h3 id="org5f9c647"><span class="section-number-3">1.12.</span> <span class="todo ___">[ ]</span> 決策樹的建構3 / A-3-4-S14</h3>
+<div class="outline-text-3" id="text-1-12">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc9a2bf1" class="outline-3">
+<h3 id="orgc9a2bf1"><span class="section-number-3">1.13.</span> <span class="todo ___">[ ]</span> 單一連結2 / A-3-5-S09</h3>
+<div class="outline-text-3" id="text-1-13">
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org798c684" class="outline-3">
+<h3 id="org798c684"><span class="section-number-3">1.14.</span> <span class="todo ___">[ ]</span> 完整連結2 / A-3-5-S11</h3>
+<div class="outline-text-3" id="text-1-14">
+<ol class="org-ol">
+<li>消費單價中等與消費次數最高是屬哪種族群？<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0b19040" class="outline-3">
+<h3 id="org0b19040"><span class="section-number-3">1.15.</span> <span class="todo ___">[ ]</span> 群數選擇 / A-3-5-S15</h3>
+<div class="outline-text-3" id="text-1-15">
+<ol class="org-ol">
+<li>關於群數選擇的指標，下列何者正確？<br /></li>
+<li>&#x2026;<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org6dee4d4" class="outline-2">
+<h2 id="org6dee4d4"><span class="section-number-2">2.</span> 影片資料庫</h2>
+<div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">1-1</td>
+<td class="org-left">人工智慧的起源</td>
+<td class="org-right">0:09:50</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395548">https://video.cloud.edu.tw/video/co_video_content.php?p=395548</a></td>
+</tr>
+
+<tr>
+<td class="org-right">1-2</td>
+<td class="org-left">人工智慧的應用現況</td>
+<td class="org-right">0:09:19</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395558">https://video.cloud.edu.tw/video/co_video_content.php?p=395558</a></td>
+</tr>
+
+<tr>
+<td class="org-right">1-3</td>
+<td class="org-left">人工智慧的歷史</td>
+<td class="org-right">0:06:29</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395602">https://video.cloud.edu.tw/video/co_video_content.php?p=395602</a></td>
+</tr>
+
+<tr>
+<td class="org-right">1-4</td>
+<td class="org-left">人工智慧的類型</td>
+<td class="org-right">0:08:34</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395606">https://video.cloud.edu.tw/video/co_video_content.php?p=395606</a></td>
+</tr>
+
+<tr>
+<td class="org-right">1-5</td>
+<td class="org-left">人工智慧的未來發展</td>
+<td class="org-right">0:11:18</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395641">https://video.cloud.edu.tw/video/co_video_content.php?p=395641</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-1</td>
+<td class="org-left">資料收集類型</td>
+<td class="org-right">0:07:46</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395571">https://video.cloud.edu.tw/video/co_video_content.php?p=395571</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-2</td>
+<td class="org-left">資料整理與儲存</td>
+<td class="org-right">0:09:13</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395598">https://video.cloud.edu.tw/video/co_video_content.php?p=395598</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-3-1</td>
+<td class="org-left">特徵選擇（含相關係數之概念）1</td>
+<td class="org-right">0:05:49</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395564">https://video.cloud.edu.tw/video/co_video_content.php?p=395564</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-3-2</td>
+<td class="org-left">特徵選擇（含相關係數之概念）2</td>
+<td class="org-right">0:10:15</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395612">https://video.cloud.edu.tw/video/co_video_content.php?p=395612</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-4</td>
+<td class="org-left">特徵距離：曼哈頓距離</td>
+<td class="org-right">0:04:41</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395715">https://video.cloud.edu.tw/video/co_video_content.php?p=395715</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-5</td>
+<td class="org-left">特徵距離：歐幾里得距離</td>
+<td class="org-right">0:02:55</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395713">https://video.cloud.edu.tw/video/co_video_content.php?p=395713</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-6</td>
+<td class="org-left">資料的標準化</td>
+<td class="org-right">0:15:26</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395590">https://video.cloud.edu.tw/video/co_video_content.php?p=395590</a></td>
+</tr>
+
+<tr>
+<td class="org-right">2-7</td>
+<td class="org-left">資料集分割</td>
+<td class="org-right">0:10:55</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395569">https://video.cloud.edu.tw/video/co_video_content.php?p=395569</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-1-1</td>
+<td class="org-left">資料探勘簡介1</td>
+<td class="org-right">0:07:44</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395574">https://video.cloud.edu.tw/video/co_video_content.php?p=395574</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-1-2</td>
+<td class="org-left">資料探勘簡介2</td>
+<td class="org-right">0:09:49</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395592">https://video.cloud.edu.tw/video/co_video_content.php?p=395592</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-2-1</td>
+<td class="org-left">關nnb聯式探勘1</td>
+<td class="org-right">0:07:29</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395578">https://video.cloud.edu.tw/video/co_video_content.php?p=395578</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-2-2</td>
+<td class="org-left">關聯式探勘2</td>
+<td class="org-right">0:09:45</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395608">https://video.cloud.edu.tw/video/co_video_content.php?p=395608</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-2-3</td>
+<td class="org-left">關聯式探勘3</td>
+<td class="org-right">0:09:27</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395618">https://video.cloud.edu.tw/video/co_video_content.php?p=395618</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-3-1</td>
+<td class="org-left">序列式探勘1</td>
+<td class="org-right">0:09:07</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395580">https://video.cloud.edu.tw/video/co_video_content.php?p=395580</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-3-2</td>
+<td class="org-left">序列式探勘2</td>
+<td class="org-right">0:09:01</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395588">https://video.cloud.edu.tw/video/co_video_content.php?p=395588</a></td>
+</tr>
+
+<tr>
+<td class="org-right">3-3-3</td>
+<td class="org-left">序列式探勘3</td>
+<td class="org-right">0:10:39</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395604">https://video.cloud.edu.tw/video/co_video_content.php?p=395604</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-1-1</td>
+<td class="org-left">監督式學習簡介1</td>
+<td class="org-right">0:04:59</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395566">https://video.cloud.edu.tw/video/co_video_content.php?p=395566</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-1-2</td>
+<td class="org-left">監督式學習簡介2</td>
+<td class="org-right">0:07:09</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395596">https://video.cloud.edu.tw/video/co_video_content.php?p=395596</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-2</td>
+<td class="org-left">最短距離分類器原理</td>
+<td class="org-right">0:09:54</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395671">https://video.cloud.edu.tw/video/co_video_content.php?p=395671</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-3</td>
+<td class="org-left">最短距離分類器運作</td>
+<td class="org-right">0:11:23</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395721">https://video.cloud.edu.tw/video/co_video_content.php?p=395721</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-4</td>
+<td class="org-left">KNN分類器原理</td>
+<td class="org-right">0:10:22</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395677">https://video.cloud.edu.tw/video/co_video_content.php?p=395677</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-5</td>
+<td class="org-left">KNN分類器原理運作</td>
+<td class="org-right">0:12:12</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395626">https://video.cloud.edu.tw/video/co_video_content.php?p=395626</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-6</td>
+<td class="org-left">樹狀結構</td>
+<td class="org-right">0:04:43</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395576">https://video.cloud.edu.tw/video/co_video_content.php?p=395576</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-7</td>
+<td class="org-left">決策樹的運作機制</td>
+<td class="org-right">0:05:08</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395685">https://video.cloud.edu.tw/video/co_video_content.php?p=395685</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-8-1</td>
+<td class="org-left">熵的意義與運作機制1</td>
+<td class="org-right">0:04:11</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395550">https://video.cloud.edu.tw/video/co_video_content.php?p=395550</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-8-2</td>
+<td class="org-left">熵的意義與運作機制2</td>
+<td class="org-right">0:04:42</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395556">https://video.cloud.edu.tw/video/co_video_content.php?p=395556</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-9</td>
+<td class="org-left">資訊獲利</td>
+<td class="org-right">0:04:53</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395620">https://video.cloud.edu.tw/video/co_video_content.php?p=395620</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-10-1</td>
+<td class="org-left">決策樹的建構1</td>
+<td class="org-right">0:11:12</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395679">https://video.cloud.edu.tw/video/co_video_content.php?p=395679</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-10-2</td>
+<td class="org-left">決策樹的建構2</td>
+<td class="org-right">0:12:13</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395681">https://video.cloud.edu.tw/video/co_video_content.php?p=395681</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4-10-3</td>
+<td class="org-left">決策樹的建構3</td>
+<td class="org-right">0:06:32</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395636">https://video.cloud.edu.tw/video/co_video_content.php?p=395636</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-1</td>
+<td class="org-left">非監督式學習簡介</td>
+<td class="org-right">0:09:19</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395628">https://video.cloud.edu.tw/video/co_video_content.php?p=395628</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-2-1</td>
+<td class="org-left">K-means演算法介紹1</td>
+<td class="org-right">0:08:08</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395632">https://video.cloud.edu.tw/video/co_video_content.php?p=395632</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-2-2</td>
+<td class="org-left">K-means演算法介紹2</td>
+<td class="org-right">0:11:05</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395600">https://video.cloud.edu.tw/video/co_video_content.php?p=395600</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-3-1</td>
+<td class="org-left">K-means運作機制1</td>
+<td class="org-right">0:10:07</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395675">https://video.cloud.edu.tw/video/co_video_content.php?p=395675</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-3-2</td>
+<td class="org-left">K-means運作機制2</td>
+<td class="org-right">0:07:28</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395610">https://video.cloud.edu.tw/video/co_video_content.php?p=395610</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-3-3</td>
+<td class="org-left">K-means運作機制3</td>
+<td class="org-right">0:07:26</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395614">https://video.cloud.edu.tw/video/co_video_content.php?p=395614</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-4</td>
+<td class="org-left">階層式分群法介紹</td>
+<td class="org-right">0:05:00</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=3956344">https://video.cloud.edu.tw/video/co_video_content.php?p=3956344</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-5-1</td>
+<td class="org-left">單一連結1</td>
+<td class="org-right">0:05:13</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395562">https://video.cloud.edu.tw/video/co_video_content.php?p=395562</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-5-2</td>
+<td class="org-left">單一連結2</td>
+<td class="org-right">0:03:38</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395554">https://video.cloud.edu.tw/video/co_video_content.php?p=395554</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-6-1</td>
+<td class="org-left">完整連結1</td>
+<td class="org-right">0:05:17</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395594">https://video.cloud.edu.tw/video/co_video_content.php?p=395594</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-6-2</td>
+<td class="org-left">完整連結2</td>
+<td class="org-right">0:05:23</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395723">https://video.cloud.edu.tw/video/co_video_content.php?p=395723</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-7-1</td>
+<td class="org-left">平均連結1</td>
+<td class="org-right">0:05:15</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395552">https://video.cloud.edu.tw/video/co_video_content.php?p=395552</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-7-2</td>
+<td class="org-left">平均連結2</td>
+<td class="org-right">0:05:39</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395560">https://video.cloud.edu.tw/video/co_video_content.php?p=395560</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-8</td>
+<td class="org-left">三種連結比較</td>
+<td class="org-right">0:12:16</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395669">https://video.cloud.edu.tw/video/co_video_content.php?p=395669</a></td>
+</tr>
+
+<tr>
+<td class="org-right">5-9</td>
+<td class="org-left">群數選擇</td>
+<td class="org-right">0:08:41</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395584">https://video.cloud.edu.tw/video/co_video_content.php?p=395584</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-1</td>
+<td class="org-left">增強式學習簡介</td>
+<td class="org-right">0:09:55</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395638">https://video.cloud.edu.tw/video/co_video_content.php?p=395638</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-2</td>
+<td class="org-left">代理人(Agent)與獎勵值(Value)概念</td>
+<td class="org-right">0:10:03</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395643">https://video.cloud.edu.tw/video/co_video_content.php?p=395643</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-3</td>
+<td class="org-left">貝爾曼方程概念</td>
+<td class="org-right">0:08:26</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395616">https://video.cloud.edu.tw/video/co_video_content.php?p=395616</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-4</td>
+<td class="org-left">貝爾曼方程運作</td>
+<td class="org-right">0:07:33</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395630">https://video.cloud.edu.tw/video/co_video_content.php?p=395630</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-5</td>
+<td class="org-left">馬可夫決策</td>
+<td class="org-right">0:06:38</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395673">https://video.cloud.edu.tw/video/co_video_content.php?p=395673</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-6-1</td>
+<td class="org-left">Q學習概念1</td>
+<td class="org-right">0:07:11</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395582">https://video.cloud.edu.tw/video/co_video_content.php?p=395582</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-6-2</td>
+<td class="org-left">Q學習概念2</td>
+<td class="org-right">0:07:38</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395586">https://video.cloud.edu.tw/video/co_video_content.php?p=395586</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-7-1</td>
+<td class="org-left">時值差異TD1</td>
+<td class="org-right">0:06:26</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395624">https://video.cloud.edu.tw/video/co_video_content.php?p=395624</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-7-2</td>
+<td class="org-left">時值差異TD2</td>
+<td class="org-right">0:07:19</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395622">https://video.cloud.edu.tw/video/co_video_content.php?p=395622</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-8-1</td>
+<td class="org-left">Q學習運作(更新Q表之Q值)1</td>
+<td class="org-right">0:05:48</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395717">https://video.cloud.edu.tw/video/co_video_content.php?p=395717</a></td>
+</tr>
+
+<tr>
+<td class="org-right">6-8-2</td>
+<td class="org-left">Q學習運作(更新Q表之Q值)2</td>
+<td class="org-right">0:07:48</td>
+<td class="org-left"><a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395719">https://video.cloud.edu.tw/video/co_video_content.php?p=395719</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung Chin, Yen</p>
+<p class="date">Created: 2022-11-21 Mon 15:54</p>
+</div>
+</body>
+</html>

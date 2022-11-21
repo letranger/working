@@ -1,4 +1,4 @@
-#+title: Ai試題
+#+title: AI試題
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
 #+TAGS: AI
 #+INCLUDE: ../pdf.org

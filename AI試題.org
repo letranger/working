@@ -162,7 +162,6 @@
       B. 4
       C. 6
       D. 7
-      :DRAWER:
       #+BEGIN_SRC dot :file ./images/tree-1.png :cmdline -Kdot -Tpng :noexport:
       digraph perceptron {
         rankdir=TB
@@ -173,11 +172,6 @@
 
       }
       #+END_SRC
-
-      #+RESULTS:
-      [[file:./images/tree-1.png]]
-
-      :END:
    2. [1] 承上題，畫出第一棵決策樹後，小哲絕望的發現：根據手上的資料，他可以畫出好幾種不同版本的決策樹，光是樹的根節點(root)就有三個不同選擇。請問，小哲應該如何決定這三個特徵值在決策樹中的階層(也就是實際的判斷依據)？
       A. 選擇分能力最強的特徵值
       B. 由電腦隨機決定各特徵值的階層順序

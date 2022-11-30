@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-11-08 Tue 12:20 -->
+<!-- 2022-11-24 Thu 21:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>深度學習計畫數位教材製作</title>
@@ -193,233 +193,197 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<style> td img {width: 250px;} </style>
 <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">深度學習計畫數位教材製作</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#orgba80c4e">1. 教材架構</a></li>
-<li><a href="#org451b6db">2. 工作分配</a>
-<ul>
-<li><a href="#orgc52295d">2.1. 涂益郎、宋承彥</a></li>
-<li><a href="#orgfa19df2">2.2. 顏永進、許柏浤</a></li>
-<li><a href="#org7ac5c53">2.3. 腳本成果範例</a>
-<ul>
-<li><a href="#orgd169ff0">2.3.1. 分鏡處理</a></li>
-<li><a href="#org849b7a3">2.3.2. 預期影片</a></li>
-</ul>
-</li>
-<li><a href="#org8547b11">2.4. 問題</a></li>
-</ul>
-</li>
-<li><a href="#org52344fc">3. 激活函數腳本</a>
-<ul>
-<li><a href="#org7b920b7">3.1. 前言</a></li>
-<li><a href="#org4f85924">3.2. 什麼是函數</a></li>
-<li><a href="#orgdffb49b">3.3. 為什麼需要激活函數</a></li>
-<li><a href="#org7912080">3.4. 什麼是激活函數</a></li>
-<li><a href="#orgbd7de4f">3.5. Article to read</a>
-<ul>
-<li><a href="#org7004d53">3.5.1. why</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org89037e5">4. 池化層</a>
-<ul>
-<li><a href="#org0c1a6c0">4.1. Gray mage to unsigned int matrix</a></li>
-<li><a href="#org1c0e696">4.2. table</a></li>
-<li><a href="#org67b2953">4.3. 參考影片</a></li>
-</ul>
-</li>
-<li><a href="#org3fc477f">5. 全連接層</a></li>
-<li><a href="#orgc5c1e14">6. 實作1</a></li>
-<li><a href="#org9086259">7. 實作2</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgba80c4e" class="outline-2">
-<h2 id="orgba80c4e"><span class="section-number-2">1.</span> 教材架構</h2>
+<div id="outline-container-orgbea6390" class="outline-2">
+<h2 id="orgbea6390"><span class="section-number-2">1.</span> 教材架構</h2>
 <div class="outline-text-2" id="text-1">
 
-<div id="org4291a77" class="figure">
-<p><img src="images/2022-09-25_16-01-11.png" alt="2022-09-25_16-01-11.png" width="500" />
+<div id="org1c79a0c" class="figure">
+<p><img src="images/2022-09-25_16-01-11.png" alt="2022-09-25_16-01-11.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 1: </span>高中深度學習數位教材</p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org451b6db" class="outline-2">
-<h2 id="org451b6db"><span class="section-number-2">2.</span> 工作分配</h2>
+<div id="outline-container-orga446d94" class="outline-2">
+<h2 id="orga446d94"><span class="section-number-2">2.</span> 工作分配</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc52295d" class="outline-3">
-<h3 id="orgc52295d"><span class="section-number-3">2.1.</span> 涂益郎、宋承彥</h3>
+<div id="outline-container-org0c05bdb" class="outline-3">
+<h3 id="org0c05bdb"><span class="section-number-3">2.1.</span> 涂益郎、宋承彥</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-深度學習簡介、類神經網路、卷積類神經網路、卷積層、卷積核、缺值處理
+深度學習簡介、類神經網路、卷積類神經網路、卷積層、卷積核、缺值處理<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgfa19df2" class="outline-3">
-<h3 id="orgfa19df2"><span class="section-number-3">2.2.</span> 顏永進、許柏浤</h3>
+<div id="outline-container-org72815b8" class="outline-3">
+<h3 id="org72815b8"><span class="section-number-3">2.2.</span> 顏永進、許柏浤</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-激活函數、池化層、全連接層、實作1、實作2
+激活函數、池化層、全連接層、實作1、實作2<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org7ac5c53" class="outline-3">
-<h3 id="org7ac5c53"><span class="section-number-3">2.3.</span> 腳本成果範例</h3>
+<div id="outline-container-orge5df7e2" class="outline-3">
+<h3 id="orge5df7e2"><span class="section-number-3">2.3.</span> 腳本成果範例</h3>
 <div class="outline-text-3" id="text-2-3">
 </div>
-<div id="outline-container-orgd169ff0" class="outline-4">
-<h4 id="orgd169ff0"><span class="section-number-4">2.3.1.</span> 分鏡處理</h4>
+<ol class="org-ol">
+<li><a id="orgf8d960e"></a>分鏡處理<br />
 <div class="outline-text-4" id="text-2-3-1">
 
-<div id="org746c4e4" class="figure">
-<p><img src="images/2022-09-25_16-04-33.png" alt="2022-09-25_16-04-33.png" width="500" />
+<div id="orga27ff5c" class="figure">
+<p><img src="images/2022-09-25_16-04-33.png" alt="2022-09-25_16-04-33.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 2: </span>最短距離分類器運作</p>
 </div>
 </div>
-</div>
-<div id="outline-container-org849b7a3" class="outline-4">
-<h4 id="org849b7a3"><span class="section-number-4">2.3.2.</span> 預期影片</h4>
+</li>
+<li><a id="orgd5bd0de"></a>預期影片<br />
 <div class="outline-text-4" id="text-2-3-2">
 <p>
-<a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395721">最短距離分類器運作:教育雲影音資料庫</a>
+<a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395721">最短距離分類器運作:教育雲影音資料庫</a><br />
 </p>
 </div>
+</li>
+</ol>
 </div>
-</div>
-<div id="outline-container-org8547b11" class="outline-3">
-<h3 id="org8547b11"><span class="section-number-3">2.4.</span> 問題</h3>
+<div id="outline-container-org8c92305" class="outline-3">
+<h3 id="org8c92305"><span class="section-number-3">2.4.</span> 問題</h3>
 <div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
-<li>每支影片4個問題，這些問題是要嵌入影片中問還是看完一次問，是要像WSQ學習單那一類的問題？還是要用來評估學生能力的？</li>
-<li>腳本的來源是否要based on&ldquo;和AI做朋友&rdquo;？或是自行編製？</li>
-<li>最後是交word/pdf還是ppt?</li>
+<li>每支影片4個問題，這些問題是要嵌入影片中問還是看完一次問，是要像WSQ學習單那一類的問題？還是要用來評估學生能力的？<br /></li>
+<li>腳本的來源是否要based on&ldquo;和AI做朋友&rdquo;？或是自行編製？<br /></li>
+<li>最後是交word/pdf還是ppt?<br /></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org52344fc" class="outline-2">
-<h2 id="org52344fc"><span class="section-number-2">3.</span> 激活函數腳本</h2>
+<div id="outline-container-org77cce4b" class="outline-2">
+<h2 id="org77cce4b"><span class="section-number-2">3.</span> 激活函數腳本</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org7b920b7" class="outline-3">
-<h3 id="org7b920b7"><span class="section-number-3">3.1.</span> 前言</h3>
+<div id="outline-container-org0e82a19" class="outline-3">
+<h3 id="org0e82a19"><span class="section-number-3">3.1.</span> 前言</h3>
 </div>
-<div id="outline-container-org4f85924" class="outline-3">
-<h3 id="org4f85924"><span class="section-number-3">3.2.</span> 什麼是函數</h3>
+<div id="outline-container-org5c111c2" class="outline-3">
+<h3 id="org5c111c2"><span class="section-number-3">3.2.</span> 什麼是函數</h3>
 </div>
-<div id="outline-container-orgdffb49b" class="outline-3">
-<h3 id="orgdffb49b"><span class="section-number-3">3.3.</span> 為什麼需要激活函數</h3>
+<div id="outline-container-org31b8e3a" class="outline-3">
+<h3 id="org31b8e3a"><span class="section-number-3">3.3.</span> 為什麼需要激活函數</h3>
 </div>
-<div id="outline-container-org7912080" class="outline-3">
-<h3 id="org7912080"><span class="section-number-3">3.4.</span> 什麼是激活函數</h3>
+<div id="outline-container-orgf8f8b8e" class="outline-3">
+<h3 id="orgf8f8b8e"><span class="section-number-3">3.4.</span> 什麼是激活函數</h3>
 </div>
-<div id="outline-container-orgbd7de4f" class="outline-3">
-<h3 id="orgbd7de4f"><span class="section-number-3">3.5.</span> Article to read</h3>
+<div id="outline-container-org824e2b3" class="outline-3">
+<h3 id="org824e2b3"><span class="section-number-3">3.5.</span> Article to read</h3>
 <div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
-<li><a href="https://stackoverflow.com/questions/17187507/why-use-softmax-as-opposed-to-standard-normalization">Why use softmax as opposed to standard normalization?</a></li>
-<li><a href="https://twgreatdaily.com/RAOWWmwBUcHTFCnfo88i.html">激活函數解析：Sigmoid, tanh, Softmax, ReLU, Leaky ReLU</a></li>
-<li><a href="https://blog.csdn.net/lz_peter/article/details/84574716">一分钟理解softmax函数（超简单）</a></li>
-<li><a href="https://aitechtogether.com/article/8300.html">深度学习常用的激活函数以及python实现(Sigmoid、Tanh、ReLU、Softmax、Leaky ReLU、ELU、PReLU、Swish)</a></li>
-<li><a href="https://kknews.cc/zh-tw/code/meg5qoz.html">深度學習基礎篇：如何選擇正確的激活函數？</a></li>
+<li><a href="https://stackoverflow.com/questions/17187507/why-use-softmax-as-opposed-to-standard-normalization">Why use softmax as opposed to standard normalization?</a><br /></li>
+<li><a href="https://twgreatdaily.com/RAOWWmwBUcHTFCnfo88i.html">激活函數解析：Sigmoid, tanh, Softmax, ReLU, Leaky ReLU</a><br /></li>
+<li><a href="https://blog.csdn.net/lz_peter/article/details/84574716">一分钟理解softmax函数（超简单）</a><br /></li>
+<li><a href="https://aitechtogether.com/article/8300.html">深度学习常用的激活函数以及python实现(Sigmoid、Tanh、ReLU、Softmax、Leaky ReLU、ELU、PReLU、Swish)</a><br /></li>
+<li><a href="https://kknews.cc/zh-tw/code/meg5qoz.html">深度學習基礎篇：如何選擇正確的激活函數？</a><br /></li>
 <li></li>
 </ul>
 </div>
-<div id="outline-container-org7004d53" class="outline-4">
-<h4 id="org7004d53"><span class="section-number-4">3.5.1.</span> why</h4>
+<ol class="org-ol">
+<li><a id="org5f95822"></a>why<br />
 <div class="outline-text-4" id="text-3-5-1">
 <blockquote>
 <p>
-There is one nice attribute of Softmax as compared with standard normalisation.
+There is one nice attribute of Softmax as compared with standard normalisation.<br />
 </p>
 
 <p>
-It react to low stimulation (think blurry image) of your neural net with rather uniform distribution and to high stimulation (ie. large numbers, think crisp image) with probabilities close to 0 and 1.
+It react to low stimulation (think blurry image) of your neural net with rather uniform distribution and to high stimulation (ie. large numbers, think crisp image) with probabilities close to 0 and 1.<br />
 </p>
 
 <p>
-While standard normalisation does not care as long as the proportion are the same.
+While standard normalisation does not care as long as the proportion are the same.<br />
 </p>
 
 <p>
-Have a look what happens when soft max has 10 times larger input, ie your neural net got a crisp image and a lot of neurones got activated
+Have a look what happens when soft max has 10 times larger input, ie your neural net got a crisp image and a lot of neurones got activated<br />
 </p>
 
 <p>
-&gt;&gt;&gt; softmax([1,2])              # blurry image of a ferret
-[0.26894142,      0.73105858])  #     it is a cat perhaps !?
-&gt;&gt;&gt; softmax([10,20])            # crisp image of a cat
-[0.0000453978687, 0.999954602]) #     it is definitely a CAT !
+&gt;&gt;&gt; softmax([1,2])              # blurry image of a ferret<br />
+[0.26894142,      0.73105858])  #     it is a cat perhaps !?<br />
+&gt;&gt;&gt; softmax([10,20])            # crisp image of a cat<br />
+[0.0000453978687, 0.999954602]) #     it is definitely a CAT !<br />
 </p>
 
 <p>
-And then compare it with standard normalisation
+And then compare it with standard normalisation<br />
 </p>
 
 <p>
-&gt;&gt;&gt; std<sub>norm</sub>([1,2])                      # blurry image of a ferret
-[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?
-&gt;&gt;&gt; std<sub>norm</sub>([10,20])                    # crisp image of a cat
-[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?
+&gt;&gt;&gt; std_norm([1,2])                      # blurry image of a ferret<br />
+[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?<br />
+&gt;&gt;&gt; std_norm([10,20])                    # crisp image of a cat<br />
+[0.3333333333333333, 0.6666666666666666] #     it is a cat perhaps !?<br />
 </p>
 </blockquote>
 </div>
+</li>
+</ol>
 </div>
 </div>
-</div>
-<div id="outline-container-org89037e5" class="outline-2">
-<h2 id="org89037e5"><span class="section-number-2">4.</span> 池化層</h2>
+<div id="outline-container-orgc51bdc6" class="outline-2">
+<h2 id="orgc51bdc6"><span class="section-number-2">4.</span> 池化層</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org0c1a6c0" class="outline-3">
-<h3 id="org0c1a6c0"><span class="section-number-3">4.1.</span> Gray mage to unsigned int matrix</h3>
+<div id="outline-container-org8a02f02" class="outline-3">
+<h3 id="org8a02f02"><span class="section-number-3">4.1.</span> Gray mage to unsigned int matrix</h3>
 <div class="outline-text-3" id="text-4-1">
 <div class="org-src-container">
-<pre class="src src-python"><span class="linenr">1: </span><span style="color: #ff79c6;">from</span> PIL <span style="color: #ff79c6;">import</span> Image
-<span class="linenr">2: </span><span style="color: #ff79c6;">import</span> numpy <span style="color: #ff79c6;">as</span> np
-<span class="linenr">3: </span>
-<span class="linenr">4: </span><span style="color: #ffc9e8;">im</span> = np.array(Image.<span style="color: #ffb86c;">open</span>(<span style="color: #f1fa8c;">'images/32eye.png'</span>).convert(<span style="color: #f1fa8c;">'L'</span>))
-<span class="linenr">5: </span><span style="color: #ffb86c;">print</span>(im)
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #51afef;">from</span> PIL <span style="color: #51afef;">import</span> Image
+<span class="linenr"> 2: </span><span style="color: #51afef;">import</span> numpy <span style="color: #51afef;">as</span> np
+<span class="linenr"> 3: </span><span style="color: #51afef;">import</span> skimage.measure
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span><span style="color: #dcaeea;">im</span> = np.array(Image.<span style="color: #c678dd;">open</span>(<span style="color: #98be65;">'images/32eye.png'</span>).convert(<span style="color: #98be65;">'L'</span>))
+<span class="linenr"> 6: </span><span style="color: #5B6268;">#</span><span style="color: #5B6268;">print(im[0])</span>
+<span class="linenr"> 7: </span>
+<span class="linenr"> 8: </span><span style="color: #dcaeea;">poim</span> = skimage.measure.block_reduce(im, (<span style="color: #da8548; font-weight: bold;">2</span>, <span style="color: #da8548; font-weight: bold;">2</span>), np.<span style="color: #c678dd;">max</span>)
+<span class="linenr"> 9: </span><span style="color: #dcaeea;">img</span> = Image.fromarray(poim, <span style="color: #98be65;">'L'</span>)
+<span class="linenr">10: </span>img.show()
 </pre>
 </div>
 
-<pre class="example" id="org227f7a3">
-&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; [[169 177 185 188 189 177 159 140 125 117  93  82  85  79  71  68]
- [212 217 216 207 195 183 168 152 141 127 112  99  87  77  74  72]
- [225 227 221 212 205 187 172 157 141 125 110  98  84  73  73  71]
- [232 232 226 220 209 192 175 154 137 115 101  88  75  67  64  62]
- [234 233 216 203 192 161 129  99  79  59  48  45  49  56  60  60]
- [222 210 199 158 152 116  81  59  46  38  38  24  11  17  37  62]
- [190 161 126  76  47  35  34  29  27  30  37  34  33  23  13  29]
- [193  94  70 161 114  65  88  51  29  51  79  53  36  44  37  20]
- [ 85 101 200 250 123 173 199  33   0  47  91  69  39  36  59  53]
- [151 171 187 245 169  99 161 104  63  90 123  68  40  28  38  83]
- [211 193 176 202 231 101  86 136 116 126  97  43  31  16  34  86]
- [225 218 209 190 191 171  85  64  63  71  70  69  50  41  48  65]
- [232 231 226 209 187 166 147 128 110 103  93  85  77  83  87  85]
- [236 233 227 227 209 203 190 167 146 127 102  94  91  95  95  97]
- [237 235 232 225 228 226 210 188 166 143 116 107 101  96  93  95]
- [238 236 233 230 223 216 201 186 168 154 138 126 109  99  95 104]]
-&gt;&gt;&gt; 
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt;
 </pre>
 </div>
 </div>
-<div id="outline-container-org1c0e696" class="outline-3">
-<h3 id="org1c0e696"><span class="section-number-3">4.2.</span> table</h3>
+<div id="outline-container-org924b560" class="outline-3">
+<h3 id="org924b560"><span class="section-number-3">4.2.</span> table</h3>
 <div class="outline-text-3" id="text-4-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -765,37 +729,781 @@ And then compare it with standard normalisation
 </table>
 </div>
 </div>
-
-
-<div id="outline-container-org67b2953" class="outline-3">
-<h3 id="org67b2953"><span class="section-number-3">4.3.</span> 參考影片</h3>
+<div id="outline-container-orgd126bd6" class="outline-3">
+<h3 id="orgd126bd6"><span class="section-number-3">4.3.</span> 參考影片</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
-<li><a href="https://www.youtube.com/channel/UCmWCMqDKCR56pqd10qNkv3Q/videos">容噗玩Data</a></li>
-<li><a href="https://youtu.be/4-IR8kOrtoY">python-深度學習5.1-CNN神經網路-簡介(含圖片資料說明)</a></li>
-<li><a href="https://youtu.be/iYv_ZwdqGMo">python-深度學習5.3-CNN神經網路-建模</a></li>
+<li><a href="https://www.youtube.com/channel/UCmWCMqDKCR56pqd10qNkv3Q/videos">容噗玩Data</a><br /></li>
+<li><a href="https://youtu.be/4-IR8kOrtoY">python-深度學習5.1-CNN神經網路-簡介(含圖片資料說明)</a><br /></li>
+<li><a href="https://youtu.be/iYv_ZwdqGMo">python-深度學習5.3-CNN神經網路-建模</a><br /></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org3fc477f" class="outline-2">
-<h2 id="org3fc477f"><span class="section-number-2">5.</span> 全連接層</h2>
+
+<div id="outline-container-orgffe638c" class="outline-2">
+<h2 id="orgffe638c"><span class="section-number-2">5.</span> 全連接層</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgc5c1e14" class="outline-2">
-<h2 id="orgc5c1e14"><span class="section-number-2">6.</span> 實作1</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org33dd528" class="outline-3">
+<h3 id="org33dd528"><span class="section-number-3">5.1.</span> 參考影片</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="https://blog.csdn.net/qq_39521554/article/details/81385159">對全連接層（fully connected layer）的通俗理解</a><br /></li>
+<li><a href="https://ml4a.github.io/demos/">ml4a</a><br /></li>
+<li><a href="https://hackmd.io/@allen108108/rkn-oVGA4">卷積神經網路 (Convolutional Neural , CNN)</a><br /></li>
+<li><a href="https://www.quora.com/How-big-is-AlphaGo-neural-netwoks-How-many-layers-each-of-its-two-neural-networks-have">AlphaGo的架構說明</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=pnkCEzwiSog"> 学习分享一年，对神经网络的理解全都在这40分钟里了 </a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=oq00D3esi8A"> 反向傳播&#x2013;神經網路的精華 | Backpropagation - 裡面有全連接層</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org201c84d" class="outline-3">
+<h3 id="org201c84d"><span class="section-number-3">5.2.</span> 參考網頁</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li><a href="https://vocus.cc/article/629dbb96fd89780001d560ec">各種模型架構</a><br /></li>
+<li><a href="https://hackmd.io/@overkill8927/SyyCBk3Mr?type=view">李宏毅</a><br /></li>
+<li><a href="https://zhuanlan.zhihu.com/p/103678161">170題吳恩達《深度學習》大禮包 </a><br /></li>
+<li><a href="https://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html">ConvNetJS</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org44f9ee0" class="outline-3">
+<h3 id="org44f9ee0"><span class="section-number-3">5.3.</span> 全連接層</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<ol class="org-ol">
+<li><a id="org7a29e17"></a>說法0<br />
+<div class="outline-text-4" id="text-5-3-1">
 <p>
-What is the difference between these two modes?
+在實際使用中，全連接層可由卷積操作實現：對前層是全連接的全連接層可以轉換為卷積核為1*1的卷積；而前層是卷積層的全連接層可以轉換為卷積核為前層卷積輸出結果的高和寬一樣大小的全局卷積。<br />
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org8b6e566"></a>全連接層實現原理<br />
+<div class="outline-text-5" id="text-5-3-1-1">
+<p>
+在卷積神經網絡的最後，往往會出現一兩層全連接層，全連接一般會把卷積輸出的二維特征圖轉化成一維的一個向量，這是怎麽來的呢？目的何在呢？<br />
+</p>
+
+<div id="org7687e33" class="figure">
+<p><img src="images/20190209125144422877.jpg" alt="20190209125144422877.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 3: </span>Caption</p>
+</div>
+
+<p>
+最後的兩列小圓球就是兩個全連接層，在最後一層卷積結束後，進行了最後一次池化，輸出了20個12*12的圖像，然後通過了一個全連接層變成了1*100的向量。<br />
+</p>
+
+<p>
+這是怎麽做到的呢，其實就是有20*100個12*12的卷積核卷積出來的，對於輸入的每一張圖，用了一個和圖像一樣大小的核卷積，這樣整幅圖就變成了一個數了，如果厚度是20就是那20個核卷積完了之後相加求和。這樣就能把一張圖高度濃縮成一個數了。<br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org37a3bb5"></a>說法1<br />
+<div class="outline-text-4" id="text-5-3-2">
+<p>
+<a href="https://blog.csdn.net/qq_39521554/article/details/81385159">https://blog.csdn.net/qq_39521554/article/details/81385159</a><br />
+</p>
+<ul class="org-ul">
+<li><p>
+全連接層（fully connected layers，FC）在整個卷積神經網絡中起到「分類器」的作用。如果說卷積層、池化層和激活函數層等操作是將原始數據映射到隱層特徵空間的話，全連接層則起到將學到的「分佈式特徵表示」映射到樣本標記空間的作用。在實際使用中，全連接層可由卷積操作實現：<br />
+</p>
+
+<p>
+對前層是全連接的全連接層可以轉化為卷積核為1x1的卷積；而前層是卷積層的全連接層可以轉化為卷積核為hxw的全局卷積，h和w分別為前層卷積結果的高和寬。<br />
+</p></li>
+
+<li>全連接的核心操作就是矩陣向量乘積 y = Wx。本質就是由一個特徵空間線性變換到另一個特徵空間。目標空間的任一維——也就是隱層的一個 cell——都認為會受到源空間的每一維的影響。不考慮嚴謹，可以說，目標向量是源向量的加權和。<br /></li>
+<li>在 CNN 中，全連接常出現在最後幾層，用於對前面設計的特徵做加權和。比如 mnist，前面的卷積和池化相當於做特徵工程，後面的全連接相當於做特徵加權。（卷積相當於全連接的有意弱化，按照局部視野的啟發，把局部之外的弱影響直接抹為零影響；還做了一點強制，不同的局部所使用的參數居然一致。弱化使參數變少，節省計算量，又專攻局部不貪多求全；強制進一步減少參數。少即是多） 在 RNN 中，全連接用來把 embedding 空間拉到隱層空間，把隱層空間轉回 label 空間等。<br /></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org66b0721"></a>CNN與全連接<br />
+<div class="outline-text-5" id="text-5-3-2-1">
+<p>
+在CNN結構中，經多個卷積層和池化層後，連接著1個或1個以上的全連接層．與MLP類似，全連接層中的每個神經元與其前一層的所有神經元進行全連接．全連接層可以整合卷積層或者池化層中具有類別區分性的局部信息．為了提升 CNN網絡性能，全連接層每個神經元的激勵函數一般採用ReLU函數。<br />
+</p>
+
+<p>
+最後一層全連接層的輸出值被傳遞給一個輸出，可以採用softmax邏輯回歸（softmax regression）進行 分 類，該層也可 稱為 softmax層（softmax layer）．對於一個具體的分類任務，選擇一個合適的損失函數是十分重要的，CNN幾種常用的損失函數並分析了它們各自的特點．通 常，CNN的全連接層與MLP 結構一樣，CNN的訓練算法也多採用BP算法<br />
+</p>
+
+<p>
+舉個例子：<br />
+</p>
+
+<p>
+最後的兩列小圓球就是兩個全連接層，在最後一層卷積結束後，進行了最後一次池化，輸出了20個12*12的圖像，然後通過了一個全連接層變成了1*100的向量。<br />
+</p>
+
+<p>
+這是怎麼做到的呢，其實就是有20*100個12*12的卷積核卷積出來的，對於輸入的每一張圖，用了一個和圖像一樣大小的核卷積，這樣整幅圖就變成了一個數了，如果厚度是20就是那20個核卷積完了之後相加求和。這樣就能把一張圖高度濃縮成一個數了。全連接的目的是什麼呢？<br />
+</p>
+
+<p>
+因為傳統的網絡我們的輸出都是分類，也就是幾個類別的概率甚至就是一個數&#x2013;類別號，那麼全連接層就是高度提純的特徵了，方便交給最後的分類器或者回歸。但是全連接的參數實在是太多了，你想這張圖裡就有20*12*12*100個參數，前面隨便一層卷積，假設卷積核是7*7的，厚度是64，那也才7*7*64，所以現在的趨勢是儘量避免全連接，目前主流的一個方法是全局平均值。<br />
+</p>
+
+<p>
+也就是最後那一層的feature map（最後一層卷積的輸出結果），直接求平均值。有多少種分類就訓練多少層，這十個數字就是對應的概率或者叫置信度。<br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org892ad2f"></a>說法2<br />
+<div class="outline-text-4" id="text-5-3-3">
+<p>
+<a href="https://www.zhihu.com/question/41037974/answer/150552142">https://www.zhihu.com/question/41037974/answer/150552142</a><br />
+全連接層到底什麼用？我來談三點。<br />
+</p>
+
+<ul class="org-ul">
+<li>全連接層（fully connected layers，FC）在整個卷積神經網絡中起到「分類器」的作用。如果說卷積層、池化層和激活函數層等操作是將原始數據映射到隱層特徵空間的話，全連接層則起到將學到的「分佈式特徵表示」映射到樣本標記空間的作用。在實際使用中，全連接層可由卷積操作實現：對前層是全連接的全連接層可以轉化為卷積核為1x1的卷積；而前層是卷積層的全連接層可以轉化為卷積核為hxw的全局卷積，h和w分別為前層卷積結果的高和寬（注1）。<br /></li>
+<li>目前由於全連接層參數冗餘（僅全連接層參數就可佔整個網絡參數80%左右），近期一些性能優異的網絡模型如ResNet和GoogLeNet等均用全局平均池化（global average pooling，GAP）取代FC來融合學到的深度特徵，最後仍用softmax等損失函數作為網絡目標函數來指導學習過程。需要指出的是，用GAP替代FC的網絡通常有較好的預測性能。具體案例可參見我們在ECCV&rsquo;16（視頻）表象性格分析競賽中獲得冠軍的做法：「冠軍之道」Apparent Personality Analysis競賽經驗分享 - 知乎專欄 ，project：Deep Bimodal Regression for Apparent Personality Analysis<br /></li>
+<li><p>
+在FC越來越不被看好的當下，我們近期的研究（In Defense of Fully Connected Layers in Visual Representation Transfer）發現，FC可在模型表示能力遷移過程中充當「防火牆」的作用。具體來講，假設在ImageNet上預訓練得到的模型為 ，則ImageNet可視為源域（遷移學習中的source domain）。微調（fine tuning）是深度學習領域最常用的遷移學習技術。針對微調，若目標域（target domain）中的圖像與源域中圖像差異巨大（如相比ImageNet，目標域圖像不是物體為中心的圖像，而是風景照，見下圖），不含FC的網絡微調後的結果要差於含FC的網絡。因此FC可視作模型表示能力的「防火牆」，特別是在源域與目標域差異較大的情況下，FC可保持較大的模型capacity從而保證模型表示能力的遷移。（冗餘的參數並不一無是處。）<br />
+</p>
+
+<div id="org78d166b" class="figure">
+<p><img src="images/2022-11-24_20-36-27.png" alt="2022-11-24_20-36-27.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 4: </span>Caption</p>
+</div></li>
+
+<li>注1: 有關卷積操作「實現」全連接層，有必要多囉嗦幾句。以VGG-16為例，對224x224x3的輸入，最後一層卷積可得輸出為7x7x512，如後層是一層含4096個神經元的FC，則可用卷積核為7x7x512x4096的全局卷積來實現這一全連接運算過程，其中該卷積核參數如下：<br /></li>
+</ul>
+
+<p>
+「filter size = 7, padding = 0, stride = 1, D_in = 512, D_out = 4096」<br />
+</p>
+
+<p>
+經過此卷積操作後可得輸出為1x1x4096。<br />
+</p>
+
+<p>
+如需再次疊加一個2048的FC，則可設定參數為「filter size = 1, padding = 0, stride = 1, D_in = 4096, D_out = 2048」的卷積層操作。<br />
+</p>
+</div>
+</li>
+
+<li><a id="org2f287b8"></a>說法3<br />
+<div class="outline-text-4" id="text-5-3-4">
+<p>
+<a href="https://www.zhihu.com/question/41037974/answer/150552142">https://www.zhihu.com/question/41037974/answer/150552142</a><br />
+</p>
+
+<p>
+大致看了一眼問題下的回答，排名靠前的大佬們大多都是從具體的網絡結構出發（比如說各種CNN或者RNN）去定性地回答全連接層的作用。<br />
+</p>
+
+<p>
+那我就在這裡稍稍補充一下個人的一些觀點，在拋開各種網絡結構，從純數學的角度來討論全連接層的作用是什麼，以及如何理解全連接層。<br />
+</p>
+
+<p>
+首先，不管是什麼造型的神經網絡，只要它最後一層是全連接層，那這個全連接層必然只會承擔以下兩個任務當中的一個：<br />
+</p>
+
+<ul class="org-ul">
+<li>分類問題(Classification)<br /></li>
+<li>回歸問題(Regression)<br /></li>
+</ul>
+
+<p>
+So，咱們就從這兩個角度出發，從數學的角度去看全連接層的作用!<br />
+</p>
+
+<p>
+其次，為了方便起見，咱們只考慮不包含隱藏層的全連接層，這種情況下的全連接層實際上是一個凸函數，有且僅有一個全局最優解。<br />
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org6adbaf9"></a>全連接層的幾何意義<br />
+<div class="outline-text-5" id="text-5-3-4-1">
+<p>
+為了方便後面的討論，咱們先來看一下全連接層的幾何意義。<br />
+</p>
+
+<p>
+我們現在假設全連接層得到輸入是一個3維的向量，任務是一個二分類的任務（也就是說輸出有兩個節點），那麼這個全連接層的數學表達式就像下面這個樣子：<br />
+\[y=f(Wx+b)\]<br />
+</p>
+
+<p>
+其中：$y$是全連接層輸出，是一個長度為2的向量，我們記 \(y=[y_1,y_2]^T\) ；<br />
+\(f\) 是激活函數，例如ReLU，Sigmoid以及Softmax等;<br />
+</p>
+
+<p>
+是全連接層的權重矩陣，我們記 w=\[\begin{bmatrix}
+w_{11} & w_{12} & w_{13} \\
+w_{21} & w_{22} & w_{23}
+\end{bmatrix}
+\]<br />
+</p>
+
+<p>
+\(x\) 是全連接層輸入，我們記 \(y=|x_1, x_2, x_3|^T\)<br />
+\(b\) 是bias，為了方便討論我們暫時另其等於0。<br />
+</p>
+
+<p>
+為了方便理解，咱們先回顧一下在線性代數當中矩陣和向量相乘的幾何意義。<br />
+</p>
+
+<p>
+我們知道，矩陣與向量相乘所得到的結果，必然位於矩陣的列空間(column space)當中。<br />
+</p>
+
+<p>
+那什麼是列空間？<br />
+</p>
+
+<p>
+就是由矩陣的列向量所組成的一個包含坐標原點的空間，在我們的這個例子裡邊兒，權重矩陣的列空間如下圖所示：<br />
+</p>
+
+<div id="orge49dcee" class="figure">
+<p><img src="images/2022-11-24_21-13-08.png" alt="2022-11-24_21-13-08.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 5: </span>權重矩陣的column space</p>
+</div>
+
+<p>
+而 \(w_x\) 會產生的所有結果必然位於矩陣 \(W\) 的列向量的所有線性組合所組成的subspace內，也就是：<br />
+</p>
+
+<p>
+\[W_x= x_1\begin{bmatrix}
+w_{11} \\w_{21} \end{bmatrix} + x_2 \begin{bmatrix} w_{12} \\ w_{22}
+\end{bmatrix} + x_3 \begin{bmatrix} w_{13} \\w_{23}
+\end{bmatrix}
+\]<br />
+</p>
+
+<p>
+這裡需要提一句，由於我們這裡是拿一個二分類問題來舉例，因此 \(y\in{R^2}\)（二維平面）。<br />
+</p>
+
+<p>
+圖<a href="#orge49dcee">5</a>中所給出的例子實際上是默認權重矩陣 \(W\) 的秩為2（也就是說三個列向量不共線，線性無關），對於二分類問題來說，其目標域（也就是ground truth所在的域）必然包含於 \(R^2\) 空間當中。<br />
+</p>
+
+<p>
+也就是說這個全連接層理論上來講擬合目標域的分佈是足夠的。<br />
+</p>
+
+<p>
+但是如果權重矩陣的秩為1，也就是說三個列向量在一條直線上的話（線性相關），那列向量的所有線性組合也必然位於這條直線上。<br />
+</p>
+
+<p>
+這種情況下這個全連接層大概率會出現欠擬合的情況，因為權重矩陣的column space不足以描述目標域當中的所有值。<br />
+</p>
+
+<p>
+而當我們對 \(W_X\) 的輸出套上一個激活函數之後，由於激活函數值域的影響，神經網絡的輸出被映射到了一個新的空間當中。<br />
+</p>
+
+<p>
+這個新的空間通常是神經網絡的column space的子集，如下圖所示：<br />
+</p>
+
+<div id="org528a7f9" class="figure">
+<p><img src="images/2022-11-24_21-16-25.png" alt="2022-11-24_21-16-25.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 6: </span>從左往右依次為ReLU、Sigmoid以及Softmax時全連接層的輸出</p>
+</div>
+
+<p>
+上圖裡面，當全連接層選用ReLU函數時，全連接層的值域為整個權重矩陣Column Space的第一象限。<br />
+</p>
+
+<p>
+而選用Sigmoid函數時，全連接層的值域位於這個1x1的正方形內。<br />
+</p>
+
+<p>
+當使用Softmax時，全連接層的值域位於連接[0, 1]以及[1, 0]兩點的線段上，這三個區域都明顯包含於權重矩陣的Column Space當中。<br />
+</p>
+</div>
+</li>
+
+<li><a id="org44dd943"></a>全連接層在分類時的作用<br />
+<div class="outline-text-5" id="text-5-3-4-2">
+<p>
+對於分類問題，全連接層的輸出通常選用Softmax函數作為輸出，也就是圖<a href="#org528a7f9">6</a>的最右側的這張圖。<br />
+</p>
+
+<p>
+而在分類任務時，我們通常是設定一個閾值（threshold），只要全連接層的某個輸出節點的輸出值大於該閾值，我們則認為目前的樣本屬於該輸出節點對應的類。<br />
+</p>
+
+<p>
+而這個取閾值的操作對應到圖中的話則如下圖所示，這裡我們設閾值 \(T=0.5\) ：<br />
+</p>
+
+<div id="org2ddb83d" class="figure">
+<p><img src="images/2022-11-24_21-22-41.png" alt="2022-11-24_21-22-41.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 7: </span>thresholding操作</p>
+</div>
+
+<p>
+也就是說，只要全連接層的輸出位於紅色虛線的右側，我們則認為當前數據屬於 \(y_1\) 所對應的類；若輸出處於綠色虛線的上方，我們則認為當前數據屬於 \(y_2\) 所對應的類。<br />
+</p>
+</div>
+</li>
+<li><a id="org27df6d6"></a>全連接層在回歸當中的作用<br />
+<div class="outline-text-5" id="text-5-3-4-3">
+<p>
+我們以Sigmoid函數為例，此時回歸問題的目標域必然位於圖2當中那個1x1的正方形區域內，則全連接層的輸出如下所示：<br />
+</p>
+
+<div id="org4e62bb2" class="figure">
+<p><img src="images/2022-11-24_21-24-01.png" alt="2022-11-24_21-24-01.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 8: </span>Regression問題</p>
+</div>
+
+<p>
+其中綠色的點代表一個ground truth label，而紅色的點代表全連接層的輸出，若全連接層的輸出與ground truth足夠接近，則認為該網絡有充分的擬合。<br />
+</p>
+</div>
+</li>
+<li><a id="org2b61b0b"></a>總結<br />
+<div class="outline-text-5" id="text-5-3-4-4">
+<p>
+上面的幾個點就是關於「全連接層的作用」這個問題在數學層面的討論，其實總結起來也就一句話：<br />
+</p>
+
+<p>
+全連接層說白了就是在數據的目標域的空間當中挑選出的幾個向量作為列向量，然後由這幾個列向量組成了全連接層的權重矩陣。<br />
+</p>
+
+<p>
+這個矩陣的作用就是把輸入的數據從它原來所處的空間投影到權重矩陣的列空間（column space）當中。<br />
+</p>
+
+<p>
+而這個列空間剛好就是數據目標域所處的空間；之後再通過激活函數使得全連接層的值域與目標域有一個更好的擬合。<br />
+</p>
+
+<p>
+而全連接層的訓練過程其實就是對權重矩陣的列空間的搜索過程，只有當列空間儘可能多地涵蓋數據的目標域所處的空間，全連接層的訓練過程理論上來說才能收斂。<br />
+</p>
+
+<p>
+其實從這個角度來看的話，和神經網絡相關的很多問題就比較好理解了，比如說神經網絡訓練的過程當中欠擬合的原因？（Column Space的維度丟失肯定是原因之一）<br />
+</p>
+
+<p>
+為什麼低維度數據難做高維度預測？（這種情況下權重矩陣的Column Space實際上只是目標域的一個Subspace，很難將目標域覆蓋完全，這個其實從信息論的角度也可以做出解釋，但是從線性代數上來看的話這種解釋也沒毛病）。<br />
+</p>
+</div>
+</li>
+
+<li><a id="orge556453"></a>參考：<br />
+<div class="outline-text-5" id="text-5-3-4-5">
+<ul class="org-ul">
+<li>「Introduction to Linear Algebra Fifth Edition &#x2013; Gilbert Strange」<br /></li>
+<li>「Deep Learning &#x2013; Ian Goodfellow」<br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc014146" class="outline-2">
+<h2 id="orgc014146"><span class="section-number-2">6.</span> 實作1</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org8a45748" class="outline-3">
+<h3 id="org8a45748"><span class="section-number-3">6.1.</span> 參考影片</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=oq00D3esi8A"> 反向傳播&#x2013;神經網路的精華 | Backpropagation - 裡面有全連接層</a>: 實作參考<br /></li>
+<li><a href="https://www.cnblogs.com/charlotte77/p/5629865.html">反向傳播說明</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=s7BxboxEfnU"> 如何通俗地解释梯度下降法 </a><br /></li>
+</ul>
+
+<p>
+What is the difference between these two modes?<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org9086259" class="outline-2">
-<h2 id="org9086259"><span class="section-number-2">7.</span> 實作2</h2>
+</div>
+
+<div id="outline-container-orgb9c85dc" class="outline-2">
+<h2 id="orgb9c85dc"><span class="section-number-2">7.</span> 實作2</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</div>
+
+<div id="outline-container-org860520c" class="outline-2">
+<h2 id="org860520c"><span class="section-number-2">8.</span> <span class="todo TODO">TODO</span> 題目 <code>[5/15]</code></h2>
+<div class="outline-text-2" id="text-8">
+<ol class="org-ol">
+<li class="on"><code>[X]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395602">人工智慧的歷史</a> / A-3-1-S03<br />
+<ol class="org-ol">
+<li>圖靈測試的目的為:<br />
+<ol class="org-ol">
+<li></li>
+</ol></li>
+<li>在人工智慧發展的第一階段(1974-1978)，科學家已能利用感知器完成英文字母的辨識，然而人工智慧的發展卻到此停頓，直到1993年CNN之父LeCun提出LeNet模型後，人工智慧才被廣泛應用到支票判讀上。以下何者非造成這種停頓的原因：<br />
+<ol class="org-ol">
+<li>經費短缺<br /></li>
+<li>社會大眾對人工智慧缺乏信心<br /></li>
+<li>當時電腦效能有限<br /></li>
+<li>不具實際應用價值<br /></li>
+</ol></li>
+<li>1980年崛起的專家系統曾在人工智慧發展上被寄予厚望，事實上，如今在許多醫用的輔助醫療系統上仍能看到專家系統的影子，然而後來卻未見其更廣泛的發展與應用。造成專家系統發展停滯的原因為：<br />
+<ol class="org-ol">
+<li>開發與維護成本過高<br /></li>
+<li>只適用於特定範圍的知識領域<br /></li>
+<li>商業價值過低<br /></li>
+<li>以上皆是<br /></li>
+</ol></li>
+<li>專家系統主要精神是&#x2026;.以下哪一領域不適合開發專家系統?<br />
+<ol class="org-ol">
+<li>醫<br /></li>
+<li>化學<br /></li>
+<li>商業<br /></li>
+<li></li>
+</ol></li>
+</ol></li>
+<li class="on"><code>[X]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395606">人工智慧的類型</a> / A-3-1-S04<br />
+<ol class="org-ol">
+<li>這學期的 AI 選修專題，小帆想開發一個能和電腦玩「剪刀、石頭、布」 的遊戲，她拍了很多不同手勢的照片，並為每張照片加上「剪刀、石頭、 布」的標籤，將這些照片和標籤丟進模型去訓練。請問小帆開發的這套軟體屬於哪一種類型的機器學習?<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>半監督式學習<br /></li>
+<li>強化學習<br /></li>
+</ol></li>
+<li>小哲初到任職銀行報到，手上的第一個任務是將貸款客戶分為VIP、優良、危險三個等級，銀行資料庫中可用的客戶資料包括客戶貸款金額、每月還款狀況、工作性質、每月薪資&#x2026;.等等。小哲先建立了一個AI模型，將客戶以這些資料為基礎分為三群，然後再觀察這三群裡的客戶資料狀況，最後將其命名為VIP、優良、危險，完成任務。請問小哲所開發的這個AI模型最有可能屬於以下哪一種機器學習類型?<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>半監督式學習<br /></li>
+<li>強化學習。<br /></li>
+</ol></li>
+<li>咖啡測試 - 強人工智慧  / AI發展的目標<br /></li>
+<li>圖靈測試<br /></li>
+<li>強人工智慧、弱人工智慧、通用型人工智慧<br /></li>
+</ol></li>
+<li class="on"><code>[X]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395598">資料整理與儲存</a> / A-3-2-S02<br />
+<ol class="org-ol">
+<li>人工智慧的重要基礎之一在於龐大的分析資料，然而這些資料往往都先經過重新整理之後才能被有效的分析，主要原因不包括：<br />
+<ol class="org-ol">
+<li>資料可能有所缺漏<br /></li>
+<li>資料數值可能出現異常<br /></li>
+<li>資料數量過於龐大<br /></li>
+<li>資料所使用的單位不同<br /></li>
+</ol></li>
+<li><p>
+下表為2022年11月16日台中地區的空氣品質即時監測結果，因不明原因，某些時段的監測結果未能被記錄下來，若依據插值法進行資料整理，請問表中的A、B、C三格中應補入何值？<br />
+PM2.5(小時濃度值)<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">監測時間時間</th>
+<th scope="col" class="org-right">5時</th>
+<th scope="col" class="org-right">7時</th>
+<th scope="col" class="org-right">9時</th>
+<th scope="col" class="org-right">11時</th>
+<th scope="col" class="org-right">13時</th>
+<th scope="col" class="org-right">15時</th>
+<th scope="col" class="org-right">17時</th>
+<th scope="col" class="org-right">19時</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">臺中文山</td>
+<td class="org-right">19</td>
+<td class="org-right">X1</td>
+<td class="org-right">17</td>
+<td class="org-right">21</td>
+<td class="org-right">20</td>
+<td class="org-right">14</td>
+<td class="org-right">15</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中后里</td>
+<td class="org-right">17</td>
+<td class="org-right">14</td>
+<td class="org-right">12</td>
+<td class="org-right">13</td>
+<td class="org-right">10</td>
+<td class="org-right">26</td>
+<td class="org-right">20</td>
+<td class="org-right">31</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中大甲</td>
+<td class="org-right">9</td>
+<td class="org-right">15</td>
+<td class="org-right">9</td>
+<td class="org-right">12</td>
+<td class="org-right">X2</td>
+<td class="org-right">14</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">臺中鳥日</td>
+<td class="org-right">17</td>
+<td class="org-right">16</td>
+<td class="org-right">22</td>
+<td class="org-right">32</td>
+<td class="org-right">30</td>
+<td class="org-right">26</td>
+<td class="org-right">21</td>
+<td class="org-right">18</td>
+</tr>
+</tbody>
+</table>
+<ol class="org-ol">
+<li>X1: 19, X2: 12<br /></li>
+<li>X1: 17, X2: 14<br /></li>
+<li>X1: 15, X2: 20<br /></li>
+<li>X1: 18, X2: 13<br /></li>
+</ol></li>
+<li>儲存<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="on"><code>[X]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395671">最短距離分類器原理</a> / A-3-4-S03<br />
+<ol class="org-ol">
+<li>最短距離分類器是屬於以下哪一種類型的人工智慧？<br />
+<ol class="org-ol">
+<li>監督式學習<br /></li>
+<li>非監督式學習<br /></li>
+<li>強化學習<br /></li>
+<li>深度學習<br /></li>
+</ol></li>
+<li>影片中，小明與小美因AI機器人的調解而合好，然而同樣的爭執因為「功夫戀人2」再度上演，此時AI機器人又故技重施計算最短距離，經過計算，AI機器人悲劇的發現：這部電影到「愛情片」與「動作片」中心點的歐幾里德距離都是13.87。請問此時冷汗直流的AI機器人應如何處置?<br />
+<img src=" images/2022-11-21_12-31-35.png" alt="2022-11-21_12-31-35.png" /><br />
+<ol class="org-ol">
+<li>判定此電影為動作片<br /></li>
+<li>判定此電影為愛情片<br /></li>
+<li>丟硬幣決定此電影的類型<br /></li>
+<li>假裝當機<br /></li>
+</ol></li>
+</ol></li>
+<li class="on"><code>[X]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395721">最短距離分類器運作</a> / A-3-4-S04<br />
+<ol class="org-ol">
+<li><p>
+影片中的咖啡王子順利升職為專業經理人後，轉換到銀行信用卡部門。這次他負責核發客戶的信用卡額度，銀行擁有的客戶資料包括：<br />
+</p>
+<ol class="org-ol">
+<li>生日<br /></li>
+<li>職業類別<br /></li>
+<li>薪資<br /></li>
+<li>性別<br /></li>
+</ol>
+<p>
+咖啡王子想起進行最短距離分類前要先對資料進行標準化，請問以下哪一項客戶資料應該進行標準化：<br />
+</p>
+<ol class="org-ol">
+<li>生日<br /></li>
+<li>職業類別<br /></li>
+<li>薪資<br /></li>
+<li>性別<br /></li>
+</ol></li>
+<li><p>
+由於在信用卡部門表現優異，咖啡王子又高升到貨款部門，這次他想先對客戶申請的貨款金額進行Min-Max標準化。目前手上客戶資料如下：<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">姓名</th>
+<th scope="col" class="org-right">貸款金額</th>
+<th scope="col" class="org-right">Min-Max標準化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">張三</td>
+<td class="org-right">900000</td>
+<td class="org-right">2.000</td>
+</tr>
+
+<tr>
+<td class="org-left">李四</td>
+<td class="org-right">300000</td>
+<td class="org-right">0.100</td>
+</tr>
+
+<tr>
+<td class="org-left">王五</td>
+<td class="org-right">400000</td>
+<td class="org-right">0.250</td>
+</tr>
+
+<tr>
+<td class="org-left">趙六</td>
+<td class="org-right">500000</td>
+<td class="org-right">0.333</td>
+</tr>
+</tbody>
+</table>
+<p>
+請問上表中哪一個人的標準化分數是正確的?<br />
+</p>
+<ol class="org-ol">
+<li>張三<br /></li>
+<li>李四<br /></li>
+<li>王五<br /></li>
+<li>趙六<br /></li>
+</ol></li>
+</ol></li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">l</span> = [<span style="color: #da8548; font-weight: bold;">900000</span>, <span style="color: #da8548; font-weight: bold;">300000</span>, <span style="color: #da8548; font-weight: bold;">400000</span>, <span style="color: #da8548; font-weight: bold;">500000</span>, ]
+<span class="linenr">2: </span><span style="color: #51afef;">for</span> d <span style="color: #51afef;">in</span> l:
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>( (d - <span style="color: #c678dd;">min</span>(l) ) / (<span style="color: #c678dd;">max</span>(l)-<span style="color: #c678dd;">min</span>(l)))
+</pre>
+</div>
+
+<pre class="example">
+1.0
+0.0
+0.16666666666666666
+0.3333333333333333
+</pre>
+
+<ol class="org-ol">
+<li class="off"><code>[&#xa0;]</code> <a href="https://video.cloud.edu.tw/video/co_video_content.php?p=395677">KNN分類器原理</a> / A-3-4-S05<br />
+<ol class="org-ol">
+<li>KNN分類器的概念為「找出最接近自己的K個隣居，然後西瓜偎大邊，走到人最多的那一群裡」，下圖中，當K分別為1, 4, 9時，新的資料點分別會被歸為哪一類？<br />
+<ol class="org-ol">
+<li>A、B、A<br /></li>
+<li>A、A、B<br /></li>
+<li>B、B、A<br /></li>
+<li>B、A、A<br /></li>
+</ol></li>
+<li>由上題中可以發現K的值會決定新進資料的分類結果，然而有可能會遇到「最接近的K個隣居裡，不同類別個數一樣」的問題，請問該如何處理較為合理？<br />
+<ol class="org-ol">
+<li>換一個K值<br /></li>
+<li>由程式隨機指定新進資料的分類<br /></li>
+<li>隨機刪除某一個隣居<br /></li>
+<li>以上皆非<br /></li>
+</ol></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> KNN分類器原理運作 / A-3-4-S06<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 樹狀結構 / A-3-4-S07<br />
+<ol class="org-ol">
+<li>圖示之樹狀結構有 　　 個節點（Node）和 　　 個分支（Branch）。<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 決策樹的運作機制 / A-3-4-S08<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 熵的意義與運作機制2 / A-3-4-S10<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 決策樹的建構1 / A-3-4-S12<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 決策樹的建構3 / A-3-4-S14<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 單一連結2 / A-3-5-S09<br />
+<ol class="org-ol">
+<li>&#x2026;<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 完整連結2 / A-3-5-S11<br />
+<ol class="org-ol">
+<li>消費單價中等與消費次數最高是屬哪種族群？<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+<li class="off"><code>[&#xa0;]</code> 群數選擇 / A-3-5-S15<br />
+<ol class="org-ol">
+<li>關於群數選擇的指標，下列何者正確？<br /></li>
+<li>&#x2026;<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8e892d8" class="outline-2">
+<h2 id="org8e892d8"><span class="section-number-2">9.</span> 線上會議討論</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org1dac70f" class="outline-3">
+<h3 id="org1dac70f"><span class="section-number-3">9.1.</span> 12/09</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+影片的目的為何?<br />
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung Chin, Yen</p>
-<p class="date">Created: 2022-11-08 Tue 12:20</p>
+<p class="date">Created: 2022-11-24 Thu 21:33</p>
 </div>
 </body>
 </html>

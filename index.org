@@ -13,4 +13,15 @@
 - [[file:教科書審查修訂.html][教科書審查修訂]]
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
 - K8S
-- [[file:InterdisciplinaryLearning.org][高雄輔導團跨域研習]]
+- [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]
+- [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
+- [[file:科技力支持自主學習.html][科技力支持自主學習]]
+- [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
+- [[file:AI試題.html][AI試題]]
+
+#+begin_export html
+<footer class="footer">
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
+</footer>
+#+end_export

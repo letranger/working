@@ -1,38 +1,142 @@
 #+title: 科技力支持雙語教學與跨域教學應用
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+TAGS: AI
+#+INCLUDE: ../pdf.org
+#+OPTIONS: toc:0     ^:nil num:5
+#+PROPERTY: header-args :eval never-export
+#+EXCLUDE_TAGS: noexport
+#+latex:\newpage
 
 * 研習內容
 - 研習對象及人數:本市公私立國中教師，預估30人
 - 研習時間:111年12月29日（星期四）9:00-12:40
 - 研習地點:輔導團305電腦教室
-  |-------------+--------------------+----------------+--------+---------|
-  |    時　　間 | 活動內容           | 主持人／主講人 | 助教   | 備註    |
-  |-------------+--------------------+----------------+--------+---------|
-  |   9:00-9:10 | 報到、長官致詞     | 輔導團隊       |        |         |
-  |-------------+--------------------+----------------+--------+---------|
-  |  9:10-10:40 | 科技力支持雙語教學 | 顏永進         |        | 外聘2節 |
-  |  （90mins） | -以AI教學應用為例  |                |        |         |
-  |-------------+--------------------+----------------+--------+---------|
-  | 10:40-11:00 | 休息               | 輔導團隊       |        |         |
-  |-------------+--------------------+----------------+--------+---------|
-  | 11:00-12:30 | 科技力支持跨域教學 | 顏永進         | 陳麗如 | 外聘2節 |
-  |  （90mins） | -以AI教學應用為例  |                |        |         |
-  |-------------+--------------------+----------------+--------+---------|
-  | 12:30-12:40 | 綜合座談           | 輔導團隊       |        |         |
-  |-------------+--------------------+----------------+--------+---------|
-#+CAPTION: Caption
-#+LABEL:fig:Labl
-#+name: fig:Name
-#+ATTR_LATEX: :width 300
-#+ATTR_ORG: :width 300
-#+ATTR_HTML: :width 500
-[[file:images/2022-09-08_08-50-52.png]]
+  #+ATTR_LATEX: :width 500
+  #+ATTR_ORG: :width 500
+  #+ATTR_HTML: :width 600
+  [[file:images/2022-09-08_08-50-52.png]]
 
+* DEMO
+- [[https://github.com/leemengtaiwan/deep-learning-resources][deep-learning-resources ]]
+- [[https://cs.stanford.edu/people/karpathy/convnetjs/][ConvNetJS]]
+- [[https://teachablemachine.withgoogle.com/][Teachable Machine]]
+-
 
 * resources
 - [[https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb][Disco Diffusion v5.61 [Now with portrait_generator_v001]]]
 - [[https://www.youtube.com/watch?v=SjDIhn_Gmc0][打幾個關鍵字 AI 人工智慧就能幫你畫好，而且還是大師級的作品？ | Disco Diffusion 快速上手]]
 - [[https://openai.com/dall-e-2/][Dall-e 2]]
-
+- [[https://www.youtube.com/watch?v=TndaazYVM0Q][MIRO]]
+- [[https://www.youtube.com/watch?v=v1ypivdNwJg][MIRO PAPAYA]]
 * 英文網站使用
 練習使用英文、了解AI能做什麼
 - http://gaugan.org/gaugan2
+
+* 跨域X雙語 powered by 科技力
+** 跨域-Why
+*** 背景
+- 社會變動複雜，解決一問題需要不同領域的知識
+- 跨領域人才
+*** 如何跨才有用
+- 跨學科 / 跨職業
+- 職業跨領域：手機: 硬體/軟體
+- 學術研究的跨領域
+- 工程師、學者這種類似專業
+- 典型的跨領域：教師(專業/教育理論專業)
+- PM: 專案經理(管理/不同產業)
+每個工作都需要跨領域，如何培養
+** 跨域-How
+- 芬蘭：以主題為主、培養跨領域，跳脫形式，認識解決問題
+- 大學：輔系、雙主修、科技法律
+- 成大：[[https://collegex.ncku.edu.tw/site/about_why][College X]]: 跨系、跨院、跨齡，跨領域X實踐X社會影響力
+** 雙語-Why
+*** 跨域
+*** 雙語
+** 雙語-How
+強迫學生看、用
+*** How to pronouce: 術語發音的正確性
+- Google
+- pronounce
+- Youtube Real Life Example: https://www.youtube.com/watch?v=fnk3uusnEiA
+*** Learning english by using tools
+- 印度老師的故事: 強迫學生使用英文界面的網頁/軟體
+- 科技輔助雙語: Youtube 語速調整/字幕
+*** 簡短互動英文溝通
+- Email / Feedback / Comments
+*** 命題
+- [[https://moodle.tnfsh.tn.edu.tw/mod/vpl/view.php?id=3535][VPL-4C: Number modifier]]
+- [[https://moodle.tnfsh.tn.edu.tw/mod/vpl/view.php?id=3539][VPL-5C: XY coordinate system]]
+*** 環境
+我是為了這個研習把界面改掉的，強迫學生用英文界面，他們應該會很恨我學姐
+- http://moodle.tnfsh.tn.edu.tw
+* Get Hands Dirty
+** 投資從現在開始
+*** 教學目標
+學完這門課，你
+1. 不會變成有錢人
+2. 不會馬上
+*** reference
+- [[https://www.youtube.com/watch?v=Epzr8azlxp8][What is Investing? Investing 101: Easy Peasy Finance for Kids and Beginners ]]
+- [[https://www.youtube.com/watch?v=xHu0rJiftxw][ Inflation Definition for Kids ]]
+- [[https://www.youtube.com/watch?v=I7N3zEuyp0I][通貨膨脹:為什麼需要投資]]
+- [[https://www.cw.com.tw/article/5096292][巴菲特如何教小孩理財？]]
+** 讓我們變的更貪婪一點
+*** AI簡介
+**** CNN
+**** CNN可以拿來預測股價嗎
+李宏毅預測Youtube點擊率影片
+*** 可不可以拿AI來預測股價
+**** First Try
+- [[https://www.youtube.com/watch?v=cCDu5i6UQEM][股價預測AI實作，Python程式碼逐行解說，實測結果大公開 ]]
+**** 胡亂操弄一翻
+** 讓我們面對現實
+*** 不要那麼貪心好不好
+- [[https://www.youtube.com/watch?v=2wB5YX7-wFA][ 【AI發大財】利用AI預測股票升跌｜Stock Prediction with AI techniques ]]
+- [[https://www.youtube.com/watch?v=A3EPfaQPPmY&t=1s][ 【Python 機器學習】學用python投資 | 如何預測股票方向？下一個交易日將會升或跌？ ]]
+*** 時間序列
+- [[https://www.youtube.com/watch?v=RAkNhip5MT8][ 长短期记忆神经网络（LSTM）预测股票价格02 - 数据预处理 ]]
+*** 其他ideas
+- 模型不準確的原因
+  1. 時間拉長、影響因素太多：戰爭、疫情
+  2.
+- solution:
+  1. 間距由時改分
+  2. 給予更多特徵值
+* 跨域: 資訊與財務規劃
+** 參考
+- [[https://www.youtube.com/watch?v=Z6FohRsiJOo][ 109 年度「臺大Super 教案獎」教師組得獎作品發表 | 109年教育理論與實務對話研討會 ]]
+- [[https://rich01.com/news-invest-tools-and-methods/][新手該如何投資？10個常見投資工具方法分析]]
+** 家政：C. 生活管理: a. 生活資源管理與消費
+** 學習表現
+- 家3a-V-2 涵養財金素養，整合消費能力，妥善規劃個人財務生活
+** 報告(slide)架構
+*** 前言
+*** 教學方案與設計理念
+*** 教學實施
+*** 學生學習成效
+*** 教學反思與應用建議
+** 6-8節
+- 完整性: 目標具體、明確
+- 課程內容、教學方式、評量需呼應課程目標
+- 課程間的連結環環相扣
+- 評量規準：應超越紙筆測驗
+- 課程適切性
+- 創意性
+** 評量
+
+* 工具
+- [[https://medium.com/as-a-product-designer/%E5%9B%9B%E6%95%A3%E5%90%84%E5%9C%B0%E6%80%8E%E9%BA%BC%E8%BE%A6-%E8%AE%93%E9%81%A0%E7%AB%AF%E8%A8%AD%E8%A8%88%E5%B7%A5%E5%85%B7%E6%88%90%E7%82%BA%E4%BD%A0%E5%80%91%E7%9A%84%E5%82%B3%E8%81%B2%E7%AD%92%E5%90%A7-f6d71de20ccd][文件檔案四散各地怎麼辦？讓遠端設計工具成為你們的傳聲筒吧！]]
+- [[https://designtongue.me/%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%BF%85%E6%87%82-wireframe-prototype-%E7%9A%84%E4%B8%8D%E5%90%8C/][設計師必懂 (一) – Wireframe 與 Prototype 的不同]]
+** InVision Freehand:
+-[[https://www.youtube.com/watch?v=d3XmAtYdoe4&t=86s][ InVision Freehand Shortcuts ]]
+** Figma
+- [[https://www.youtube.com/watch?v=Hb_VEOOj3HU][ [ Figma ] WIREFRAME線框圖練習 ]]
+- [[https://www.youtube.com/watch?v=P96TQwsY_VY&t=751s][ 就是它以黑馬之姿擄獲了全球設計師的心！超人氣 UI 設計工具 Figma 快速上手！ ]]
+
+
+#+begin_export html
+<footer class="footer">
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
+</footer>
+#+end_export

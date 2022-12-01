@@ -699,3 +699,12 @@ H | 4.00 | 5.39 | 3.61 | 1.41 | 0.00 |
 | 6--7-2 | 時值差異TD2                      | 0:07:19 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395622][links]] |
 | 6--8-1 | Q學習運作(更新Q表之Q值)1         | 0:05:48 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395717][links]] |
 | 6--8-2 | Q學習運作(更新Q表之Q值)2         | 0:07:48 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395719][links]] |
+
+
+#+begin_export html
+
+<h1>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
+
+#+end_export

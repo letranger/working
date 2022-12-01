@@ -260,7 +260,7 @@ print(entropy(0.5))
       B. 年齡
       C. 信用等級
       D. 房產
-   2. [2]有關「資訊獲利」的說明
+   2. [2]有關「資訊獲利」的說明，下列何者有誤？
       A. 熵值越小、資訊獲利越大
       B. 特徵值的類別越少、分類能力越高
       C. 其計算方式為分類前的熵值減去分類後的熵值
@@ -702,9 +702,7 @@ H | 4.00 | 5.39 | 3.61 | 1.41 | 0.00 |
 
 
 #+begin_export html
-
 <h1>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
-
 #+end_export

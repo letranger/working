@@ -534,3 +534,10 @@ for d in l:
 ** 12/09
 - 影片的目的為何?要教到多細？例如池化層，是講概念即可？還是連stride也要講?
 - 好像不是所有的影片都適合出選擇題？例如決策樹的建構I、II、III都在講熵的計算
+
+#+begin_export html
+<footer class="footer">
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
+</footer>
+#+end_export

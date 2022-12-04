@@ -1,24 +1,26 @@
 #+TITLE: 工作中專案
 
 # -*- org-export-babel-evaluate: nil -*-
-#+TAGS: AI
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+OPTIONS: num:3 toc:nil
+#+TAGS: working
 #+INCLUDE: ../pdf.org
-#+OPTIONS: toc:0     ^:nil num:5
-#+PROPERTY: header-args :eval never-export
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
 
-- [[file:textbook.org][台科大教科書]]
-- [[file:教科書審查修訂.html][教科書審查修訂]]
-- [[file:HadoopCreating.org][HDFS檔案架構建置]]
-- K8S
+* Working
 - [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]
 - [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
 - [[file:科技力支持自主學習.html][科技力支持自主學習]]
 - [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
-- [[file:AI試題.html][AI試題]]
+- [[file:AI試題.org][AI試題]]
 
+* Pending
+- [[file:textbook.org][台科大教科書]]
+- [[file:教科書審查修訂.html][教科書審查修訂]]
+- [[file:HadoopCreating.org][HDFS檔案架構建置]]
+- K8S
 #+begin_export html
 <footer class="footer">
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>

@@ -20,7 +20,6 @@
 - [[https://github.com/leemengtaiwan/deep-learning-resources][deep-learning-resources ]]
 - [[https://cs.stanford.edu/people/karpathy/convnetjs/][ConvNetJS]]
 - [[https://teachablemachine.withgoogle.com/][Teachable Machine]]
--
 
 * resources
 - [[https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb][Disco Diffusion v5.61 [Now with portrait_generator_v001]]]
@@ -31,7 +30,6 @@
 * 英文網站使用
 練習使用英文、了解AI能做什麼
 - http://gaugan.org/gaugan2
-
 * 跨域X雙語 powered by 科技力
 ** 跨域-Why
 *** 背景
@@ -53,6 +51,9 @@
 *** 跨域
 *** 雙語
 ** 雙語-How
+*** 從自己做起
+自己先習慣，教起來才有底氣、才會順暢
+*** 強迫學生使用
 強迫學生看、用
 *** How to pronouce: 術語發音的正確性
 - Google
@@ -69,6 +70,31 @@
 *** 環境
 我是為了這個研習把界面改掉的，強迫學生用英文界面，他們應該會很恨我學姐
 - http://moodle.tnfsh.tn.edu.tw
+*** 資源:
+- Google Read&Write for Chrome:
+  - https://chrome.google.com/webstore/detail/readwrite-for-google-chro/inoeonmfapjbbkmdafoankkfajkcphgd
+  - http://ruthedtech.blogspot.com/2019/04/g-suite-in-2-minute-read-20190404.html
+- Read Aloud for firefox / C
+*** 工具(Browser plugins)
+**** 一般性
+- Google dictionary
+- Google translate: [[https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb/RK%3D2/RS%3DBBFW_pnWkPY0xPMYsAZI5xOgQEE-][Chrome]]
+- Power thesaurus: [[https://chrome.google.com/webstore/detail/power-thesaurus/hhnjkanigjoiglnlopahbbjdbfhkndjk][Chrome]]
+**** 單字專業
+- TJDict: [[https://chrome.google.com/webstore/detail/tjdict-%E7%B7%9A%E4%B8%8A%E5%AD%97%E5%85%B8/caafmojgjlbflohillejdmnghkpcjjpp?hl=zh-TW][Chrome]]
+- WordHippo: [[https://chrome.google.com/webstore/detail/extension-for-wordhippo-t/aodmmgciojljmgnocelfennldiemmgpj][Chrome]]
+-
+**** 聲音
+- Read Aloud: [[https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp][Chrome]]
+**** 抓網頁音檔
+- Audio Capture: [[https://chrome.google.com/webstore/detail/chrome-audio-capture/kfokdmfpdnokpmpbjhjbcabgligoelgp][Chrome]]
+**** 硬截文字
+- Enable Copy: [[https://chrome.google.com/webstore/detail/enable-copy/lmnganadkecefnhncokdlaohlkneihio/related][Chrome]]
+**** 短網址
+- Bitly: [[https://chrome.google.com/webstore/detail/bitly-short-links-and-qr/iabeihobmhlgpkcgjiloemdbofjbdcic][Chrome]]
+- TinyURL: [[https://chrome.google.com/webstore/detail/tinyurl/lbadmllalinlpflkajgkkmjohckpnahm][Chrome]]
+**** 專注閱讀
+- Fready: [[https://chrome.google.com/webstore/detail/fready/fbfecjjfhcgpocehenopdofhkdjfpcgl][Chrome]]
 * Get Hands Dirty
 ** 投資從現在開始
 *** 教學目標
@@ -80,6 +106,7 @@
 - [[https://www.youtube.com/watch?v=xHu0rJiftxw][ Inflation Definition for Kids ]]
 - [[https://www.youtube.com/watch?v=I7N3zEuyp0I][通貨膨脹:為什麼需要投資]]
 - [[https://www.cw.com.tw/article/5096292][巴菲特如何教小孩理財？]]
+- [[https://rich01.com/news-invest-tools-and-methods/][新手該如何投資？10個常見投資工具方法分析]]
 ** 讓我們變的更貪婪一點
 *** AI簡介
 **** CNN
@@ -95,6 +122,7 @@
 - [[https://www.youtube.com/watch?v=A3EPfaQPPmY&t=1s][ 【Python 機器學習】學用python投資 | 如何預測股票方向？下一個交易日將會升或跌？ ]]
 *** 時間序列
 - [[https://www.youtube.com/watch?v=RAkNhip5MT8][ 长短期记忆神经网络（LSTM）预测股票价格02 - 数据预处理 ]]
+- [[https://www.youtube.com/watch?v=cUQlpt-p7jg][ 用LSTM預測下個月乘客數 ]]
 *** 其他ideas
 - 模型不準確的原因
   1. 時間拉長、影響因素太多：戰爭、疫情
@@ -131,12 +159,55 @@
 -[[https://www.youtube.com/watch?v=d3XmAtYdoe4&t=86s][ InVision Freehand Shortcuts ]]
 ** Figma
 - [[https://www.youtube.com/watch?v=Hb_VEOOj3HU][ [ Figma ] WIREFRAME線框圖練習 ]]
-- [[https://www.youtube.com/watch?v=P96TQwsY_VY&t=751s][ 就是它以黑馬之姿擄獲了全球設計師的心！超人氣 UI 設計工具 Figma 快速上手！ ]]
+- [[https://www.youtube.com/watch?v=P96TQwsY_VY&t=751s][就是它以黑馬之姿擄獲了全球設計師的心！超人氣 UI 設計工具 Figma 快速上手!]]
+** Kami
+- https://www.kamiapp.com/
+- [[https://www.youtube.com/watch?v=IvaAFFL4Gvc][網路資源分享--教學神器Kami: 蕭仕原Ben]]
+- [[https://www.youtube.com/watch?v=zeF4bY6qAFc][Chrome擴充程式分享--人生開外掛]]
+** Google
+- [[https://www.youtube.com/watch?v=7sDpYNV7Htw][網路資源分享--Google應用於各種學科]]
+- Google Keep
+- applications / extensions / add-ons
+- 音樂: Song maker music lab
+- 地理: Google Earth, timepapse, ocean
+- 天文: Google Sky
+- 人文歷史： Google Arts & Culture
+- 英文: Ngram(解決用詞爭議)
+- 本土: Experiment with Google (Hpooer)
+- 社會: Google Trends, Fack Check Tools
+- 一般性: random, cha cha slide
+* 名言
+#+begin_quote
+科技始終來自人  性
+動機始終來自利益
+(Yen, 2022)
+#+end_quote
 
+* Page infos
+#+INCLUDE: "../css/footer.html" export html
 
-#+begin_export html
-<footer class="footer">
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
-</footer>
-#+end_export
+* Testing
+#+begin_src cpp -r -n :results output :exports both
+#include <iostream>;
+#include <time.h>;
+using namespace std;
+int main() {
+    printf("RAND_MAX = %d\n", RAND_MAX);
+    srand(time(NULL));
+    cout << rand() % 4 + 1;
+    cout << rand() % 4 + 1;
+    cout << rand() % 4 + 1;
+    cout << rand() % 4 + 1;
+    cout << rand() % 4 + 1;
+}
+#+end_src
+
+#+RESULTS:
+: RAND_MAX = 2147483647
+: 11423
+
+#+begin_src python -r -n :results output :exports both
+print(TEST)
+#+end_src
+
+#+RESULTS:

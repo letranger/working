@@ -114,17 +114,17 @@
       B. Harrison: -1, Jane: 0, Niko: 1
       C. Harrison: 1, Jane: 0, Niko: -1
       D. Harrison: 0.5, Jane: 0, Niko: -0.5
-      #+begin_src python -r -n :results output :exports both
-      s = [80, 90, 100]
-      avg = sum(s)/3
-      for i in s:
-          print((i-avg)/(max(s)-min(s)))
-      #+end_src
+#+begin_src python -r -n :results output :exports none
+s = [80, 90, 100]
+avg = sum(s)/3
+for i in s:
+    print((i-avg)/(max(s)-min(s)))
+#+end_src
 
-            #+RESULTS:
-            : -0.5
-            : 0.0
-            : 0.5
+      #+RESULTS:
+      : -0.5
+      : 0.0
+      : 0.5
    2. [D]小美為病人開發了一套「心臟病預測系統」，為了評估這套系統的準確率(accuracy)，小美先從醫院資料庫中找了165筆記錄來測試（其中110人有心臟病，55人沒有）進行測試、並將測試結果製成如下的混淆矩陣(confusion matrix)。請問：根據這個混淆矩陣，小美這套系統準確率是多少？
       |---------------------+-------------------+---------------------|
       |                     | 預測結果:有心臟病 | 預測結果:沒有心臟病 |
@@ -198,7 +198,7 @@
       C. A < B < C
       D. C = 1
 :DRAWER:
-#+begin_src python -r -n :results output :exports both
+#+begin_src python -r -n :results output :exports none
 import numpy as np
 # 3 decimal points
 round = 3

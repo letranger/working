@@ -159,3 +159,6 @@
 
 * Resource
 - [[https://www.eventx.io/zh/blog/metaverse][元宇宙是什麼？一篇文帶你看懂它可能帶來的商機、應用，以及面臨的爭議與挑戰]]
+
+* Page infos
+#+INCLUDE: "../css/footer.html" export html

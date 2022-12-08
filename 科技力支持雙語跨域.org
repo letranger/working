@@ -6,6 +6,10 @@
 #+PROPERTY: header-args :eval never-export
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html.svg?style=plastic"/></a>
+#+end_export
+
 
 * 研習內容
 - 研習對象及人數:本市公私立國中教師，預估30人
@@ -691,9 +695,6 @@ source(蕭仕原/Ben): https://www.youtube.com/watch?v=zeF4bY6qAFc
 動機始終來自利益
 (Yen, 2022)
 #+end_quote
-
-* Page Infos
-#+INCLUDE: "../css/footer.html" export html
 
 * Testing :noexport:
 ** Latex

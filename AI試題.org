@@ -6,7 +6,9 @@
 #+PROPERTY: header-args :eval never-export
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
-
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/AI%E8%A9%A6%E9%A1%8C.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/AI%E8%A9%A6%E9%A1%8C.html.svg?style=plastic"/></a>
+#+end_export
 * DONE 題目 [15/15]
 ** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395602][人工智慧的歷史]] / A-3-1-S03
    1) [3] 在人工智慧發展的第一階段(1974-1978)，科學家已能利用感知器完成英文字母的辨識，然而人工智慧的發展卻到此停頓，直到1993年CNN之父LeCun提出LeNet模型後，人工智慧才被廣泛應用到支票判讀上。以下何者非造成這種停頓的主因：
@@ -105,11 +107,11 @@
       D. 以上皆非
 ** [X] [[https://video.cloud.edu.tw/video/co_video_content.php?p=395626][KNN分類器運作]]/ A-3-4-S06
    1. [A]下表為三位學生的資訊科期末考成績，請問經由Min-Max標準化轉換後，三人的分數分別為何?
-      |----------+------+------|
-      | Harrison | Jane | Niko |
-      |----------+------+------|
-      |       80 |   90 |  100 |
-      |----------+------+------|
+      |------+----------+------+------|
+      | 姓名 | Harrison | Jane | Niko |
+      |------+----------+------+------|
+      | 成績 |       80 |   90 |  100 |
+      |------+----------+------+------|
       A. Harrison: -0.5, Jane: 0, Niko: 0.5
       B. Harrison: -1, Jane: 0, Niko: 1
       C. Harrison: 1, Jane: 0, Niko: -1
@@ -699,10 +701,3 @@ H | 4.00 | 5.39 | 3.61 | 1.41 | 0.00 |
 | 6--7-2 | 時值差異TD2                      | 0:07:19 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395622][links]] |
 | 6--8-1 | Q學習運作(更新Q表之Q值)1         | 0:05:48 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395717][links]] |
 | 6--8-2 | Q學習運作(更新Q表之Q值)2         | 0:07:48 | [[https://video.cloud.edu.tw/video/co_video_content.php?p=395719][links]] |
-
-
-#+begin_export html
-<h1>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
-#+end_export

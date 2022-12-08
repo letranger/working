@@ -8,6 +8,11 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/%E6%95%99%E7%A7%91%E6%9B%B8%E5%AF%A9%E6%9F%A5%E4%BF%AE%E8%A8%82.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/%E6%95%99%E7%A7%91%E6%9B%B8%E5%AF%A9%E6%9F%A5%E4%BF%AE%E8%A8%82.html.svg?style=plastic"/></a>
+#+end_export
+
+
 * 參考資料
 - [[https://www.youtube.com/watch?v=7J7X7aZvMXQ][How do Computers Work? Exploring Computer Main Memory]]
 - [[https://www.youtube.com/watch?v=piF6D6CQxUw][How are memories stored in neural networks? | The Hopfield Network #SoME2 ]]
@@ -160,5 +165,3 @@
 * Resource
 - [[https://www.eventx.io/zh/blog/metaverse][元宇宙是什麼？一篇文帶你看懂它可能帶來的商機、應用，以及面臨的爭議與挑戰]]
 
-* Page infos
-#+INCLUDE: "../css/footer.html" export html

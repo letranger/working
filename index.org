@@ -8,6 +8,9 @@
 #+INCLUDE: ../pdf.org
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/index.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/index.html.svg?style=plastic"/></a>
+#+end_export
 
 * Working
 - [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]

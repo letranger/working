@@ -680,23 +680,8 @@ plt.savefig('images/merge-return.png', dpi=300)
 - DEMO
 - 各組成果: Padlet
 *** CNN
-[[id:31d6a744-f7f7-47e4-ae33-3f9fa91c33bb][CNN實作]]
-**** 實作1
-***** 下載資料集/分割資料集
-***** 觀察資料集內容
-***** 將資料標準化
-***** 建立模型
-***** 模型編譯
-***** 模型訓練
-***** 測試性能
-**** 實作2
-***** 轉換label資料格式
-***** 進一步查看效能
-***** 增加卷積層、池化層、全連接層
-***** 加入Dropout層
-***** 加入驗證集
-***** 測試性能
-***** 再查看效能
+- [[https://letranger.github.io/AI/20221211165455-cnn%E5%AF%A6%E4%BD%9C.html#orgf55f089][CNN實作1]]
+- [[https://letranger.github.io/AI/20221211165455-cnn%E5%AF%A6%E4%BD%9C.html#orga917476][CNN實作2]]
 *** 其他資源 :noexpor:
 for DALL E 2: There is a cabin by the lake, the sky is full of stars.
 - http://gaugan.org/gaugan2
@@ -712,33 +697,36 @@ for DALL E 2: There is a cabin by the lake, the sky is full of stars.
 - [[https://www.youtube.com/watch?v=ONWbL9rr9Sc][台大資訊 深度學習之應用 | ADL 1.1: What is ML? 甚麼是機器學習?]]
 ** 拿AI來預測股價
 *** First Try
-
-李宏毅預測Youtube點擊率影片
+- [[https://letranger.github.io/AI/20221216211703-%E7%95%B6ai%E9%81%87%E4%B8%8A%E8%82%A1%E7%A5%A8.html#orge4b3bd3][CNN-1: 以AI預測股價-隔日漲跌]]
+- [[https://letranger.github.io/AI/20221216211703-%E7%95%B6ai%E9%81%87%E4%B8%8A%E8%82%A1%E7%A5%A8.html#org384b627][CNN-2: 以AI預測股價-隔日漲跌]]
+- [[https://letranger.github.io/AI/20221216211703-%E7%95%B6ai%E9%81%87%E4%B8%8A%E8%82%A1%E7%A5%A8.html#org3373f1a][LSTM: 以AI預測股價-隔日漲跌]]
+*** 相關資源 :noexport:
+- 李宏毅預測Youtube點擊率影片
 - [[https://www.youtube.com/watch?v=cCDu5i6UQEM][股價預測AI實作，Python程式碼逐行解說，實測結果大公開]]
 - [[https://www.youtube.com/watch?v=9wPUcn5RZv8][Python股票自动交易从零开始~第八集~深度学习预测股价]]
 - [[https://www.finlab.tw/%E8%B6%85%E7%B0%A1%E5%96%AE-machine-learning-%E9%A0%90%E6%B8%AC%E8%82%A1%E5%83%B9/][超簡單用Python預測股價]]
 - [[https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/][Stock Price Prediction Project]]
 - [[https://weikaiwei.com/finance/stocker/][Python 股票分析：Stocker 強大的股價預測分析工具 (附完整程式碼)]]
-*** 胡亂操弄一翻
 ** Let's Be More Realistic
 *** 不要那麼貪心好不好
+**** 模型不準確的原因
+  1. 時間拉長、影響因素太多：戰爭、疫情
+  2. 人為拉抬放空
+**** solution:
+  1. 間距由時改分
+  2. 不直接測股價、只測漲跌機率
+*** 相關資源 :noexport:
+**** 時間序列
 - [[https://www.youtube.com/watch?v=2wB5YX7-wFA][AI發大財】利用AI預測股票升跌｜Stock Prediction with AI techniques ]]
 - [[https://www.youtube.com/watch?v=A3EPfaQPPmY&t=1s][Python 機器學習】學用python投資 | 如何預測股票方向？下一個交易日將會升或跌？ ]]
 - [[https://youtu.be/imyTXXmQabI][投資工具】貝式定理預測股票漲跌 | 投資都犯的錯誤 | 避免這個陷阱成為投資神手｜ FinLab 財經實驗室]]
 - [[https://www.youtube.com/watch?v=9wPUcn5RZv8][Python股票自动交易从零开始~第八集~深度学习预测股价 ]]
-*** 時間序列
 - [[https://www.youtube.com/watch?v=RAkNhip5MT8][长短期记忆神经网络（LSTM）预测股票价格02 - 数据预处理 ]]
 - [[https://www.youtube.com/watch?v=cUQlpt-p7jg][用LSTM預測下個月乘客數 ]]
 - [[https://www.youtube.com/watch?v=v1YQXWPVOX0][Python零基础学习64课 使用Stacked LSTM预测Apple股票价格T+N ]]
 - [[https://www.finlab.tw/python-%E6%99%82%E9%96%93%E5%BA%8F%E5%88%97%E5%AF%A6%E4%BD%9C%EF%BC%81/][Python 時間序列實做！]]
-*** 其他ideas
-- 模型不準確的原因
-  1. 時間拉長、影響因素太多：戰爭、疫情
-  2. 人為拉抬放空
-- solution:
-  1. 間距由時改分
-  2. 給予更多特徵值
-** 可能會用到的技術資源
+
+** 可能會用到的技術資源 :noexport:
 - [[https://letranger.github.io/PythonCourse/PythonBasic.html][Basic Materials of Python]]
 - [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Materials of Python]]
 - [[https://letranger.github.io/AI-course/][AI for TNFSH: 從入門到入土]]

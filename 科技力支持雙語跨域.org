@@ -1,15 +1,14 @@
-#+title: 科技力支持雙語教學與跨域教學應用
+#+title: 科技力Ⅹ雙語Ⅹ跨域教學示例
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
 #+TAGS: AI
 #+INCLUDE: ../pdf.org
-#+OPTIONS: toc:0     ^:nil num:5
+#+OPTIONS: toc:2     ^:nil num:5
 #+PROPERTY: header-args :eval never-export
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
 #+begin_export html
 <a href="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html.svg?style=plastic"/></a>
 #+end_export
-
 
 * 研習內容
 - 研習對象及人數:本市公私立國中教師，預估30人
@@ -39,6 +38,8 @@
 - 芬蘭：以主題為主、培養跨領域，跳脫形式，認識解決問題
 - 大學：輔系、雙主修、科技法律
 - 成大：[[https://collegex.ncku.edu.tw/site/about_why][College X]]: 跨系、跨院、跨齡，跨領域X實踐X社會影響力
+*** 其他資源 :noexport:
+- [[https://www.youtube.com/watch?v=wna3Z_ztn44][「跨領域」真的很有優勢嗎？要怎麼「跨」才有用呢？《 生難字彙大辭海 》EP 035｜志祺七七]]
 ** 雙語-Why
 - 學習資源豐富
 - 未來工作需求
@@ -113,10 +114,10 @@
 《六韜》是中國古代的一部著名兵書，又稱《姜太公六韜》或《太公兵法》。舊題周朝的姜尚著，普遍認為是後人依託，作者已不可考，現一般認為此書成於戰國時代。全書以問答形式呈現，以周武王設問、姜太公答之，來探討各種古代軍政議題。 司馬遷《史記·齊太公世家》稱：「後世之言兵及周之陰權。皆宗太公為本謀。」
 ** 跨域學習內容
 *** 資訊科技
-- 資 T-IV-2: 資訊科技應用專題
+- 資T-IV-2: 資訊科技應用專題
 - 運c-V-3: 能整合適當的資訊科技與他人合作完成專題製作。
-- 運 p-IV-1: 能選用適當的資訊科技組織思維，並進行有效的表達。
-- ※運 r-V-1: 能將問題以運算形式呈現。
+- 運p-IV-1: 能選用適當的資訊科技組織思維，並進行有效的表達。
+- ※運r-V-1: 能將問題以運算形式呈現。
 *** 綜合活動領域家政科
 - 家Ca-IV-1: 個人與家庭生活的金錢及時間管理。
 - 家3a-V-2: 涵養財金素養，整合消費能力，妥善規劃個人財務生活
@@ -235,6 +236,9 @@
 ****** 年滿7歲、未滿20歲的未成年人開戶，下列方式擇一辦理：
 - 父母雙方陪同未成年人到行：攜帶3人的身分證正本、未成年人的第二證件及印鑑到場辦理。
 - 父母其中一方無法到行：由另一人陪同未成年人到行，並攜帶無法到場者的法定代理人同意書、3人的身分證正本、未成年人的第二證件及印鑑到場辦理。
+**** 查詢
+- [[https://goodinfo.tw/tw/StockDividendScheduleList.asp?MARKET_CAT=%E5%85%A8%E9%83%A8&INDUSTRY_CAT=%E9%9B%BB%E8%85%A6%E5%8F%8A%E9%80%B1%E9%82%8A%E8%A8%AD%E5%82%99%E6%A5%AD&YEAR=2015][年度除權息]]
+- [[https://invest.cnyes.com/twstock/TWS/9937/history#fixed][鉅享網個股歷史股價/股利]]
 *** 美股
 - [[https://kidfqcoach.com/kid-how-to-learn-us-stock/][親子理財：如何教小孩投資股票？三個小撇步讓小孩愛上美股，學投資觀念。]]
 **** 股票分割
@@ -280,6 +284,9 @@
    舉例來說，交易100股，TAF費用為0.00013× 100股 = 0.013美元。
 4. 現金股利稅：
    美股或ETF如果有配現金股利需扣30%的稅金，這個是跑不掉的
+**** 查詢
+- [[https://finance.yahoo.com/quote/AAPL/history?p=AAPL][Apple Inc Historical Data]]
+- [[https://hk.finance.yahoo.com/quote/NVDA/history/][美股個股歷史股價/股息]]
 *** 基金(Fund)
 **** 什麼是基金
 「基金」又稱「共同基金」、「主動式基金」，由基金公司（投信）向大眾投資人募集資金，交給專業經理團隊經手操盤，再將這筆資金，投入到符合規範且有成長潛力的各種標的。
@@ -323,16 +330,17 @@
 - 貨幣型基金，以到期日在1年以內的貨幣市場金融工具為主要標的，像是國庫券、商業票據、銀行存款等，流動性極佳且風險低的商品，通常為短期資金停泊的避風港。
 - 組合型基金，有點像基金懶人包，投資於其他的共同基金，可稱為基金中的基金。
 **** 查詢
+- [[https://tw.stock.yahoo.com/fund/domestic/][國內基金]]
+- [[https://tw.stock.yahoo.com/fund/offshore/][境外基金]]
 - [[https://www.fundclear.com.tw/][基金資訊觀測站(境外)]]
+- [[https://fund.cnyes.com/][基金 Anue鉅亨]]
 - [[https://www.tpex.org.tw/web/fund/single_historical/history.php?l=zh-tw][櫃買中心 開放式基金 各基金歷史行情]]
 - [[https://www.capitalfund.com.tw/fund/interest][基金配息查詢]]
-- [[https://www.capitalfund.com.tw/etf/product/interest/list][ETF配息查詢]]
-*** ETF: 指數股票型基金(Exchange Trade Funds)
-- [[https://www.twse.com.tw/zh/page/ETF/daily.html][111年12月05日 ETF日成交資訊]]
-- [[https://orange.udn.com/orange/story/121198/6310867][5檔熱門ETF配息出爐 「這檔」現金股利創新高]]
-- [[https://www.jihsun.com.tw/md/event/jsun_school/ETFis.html][什麼是ETF?]]
 - [[https://www.moneydj.com/funddj/yp/funddividend.djhtm?a=ACKG47][基金配息查詢]]
-- [[https://tw.stock.yahoo.com/fund/performance/F0HKG05WVJ:FO][基金歷史淨值]]
+- [[https://www.cnyes.com/Money/InvestCalculation.aspx?t=1][基金試算]]
+*** ETF: 指數股票型基金(Exchange Trade Funds)
+**** 什麼是ETF
+[[https://www.jihsun.com.tw/md/event/jsun_school/ETFis.html][什麼是ETF?]]
 ETF原文為Exchange Traded Funds ，是一種交易模式與股票完全相同，但交易稅僅為股票三分之一的基金。以目前最熱門的ETF「元大寶來台灣卓越50基金」，簡稱「元大台灣50」為例。
 
 如果你買入一張元大台灣50，基金公司會拿這些錢去買台灣前50大公司的股票。而究竟是哪50檔股票，詳細組成和比例可參考證交所網頁。並且因前50大公司占台灣上市公司總和6成以上，所以基本上元大台灣50的漲跌幅與大盤有很高的相關性。
@@ -343,6 +351,12 @@ ETF的交易方式跟股票相同，唯一的差別就是交易稅的不同，�
 - ETF與一般股票交易相同，但交易稅較低: ETF的交易方式跟股票相同，唯一的差別就是交易稅的不同，股票的交易稅是千分之三，而ETF的交易稅為千分之一。也就是說ETF的交易稅是股票的1/3！ETF的交易成本低，若是要經常進出股市的話每年都可以省下可觀的交易稅。
 - ETF-與基金相比經理費用低: ETF的經理費約在0.3%~0.5%之間，而基金的經理費則介於1.5%~2.5%之間。若與基金相比，ETF所付出的經理費用要低的多。
 - ETF-與期貨相比不會有結算日的問題: 投資ETF可以長期持有，但是投資期貨會有結算日的問題。假如預期股市未來會大漲，投資ETF可以慢慢等待股市成長，但投資期貨會遇到結算日，可能在股市尚未開始大漲之前，就被迫要進行結算。
+**** 查詢
+- [[https://www.moneydj.com/ETF/X/Basic/basic0003.xdjhtm?etfid=00639.TW][首頁 / ETF介紹 / 淨值表格]]
+- [[https://www.capitalfund.com.tw/etf/product/interest/list][ETF配息查詢]]
+- [[https://www.twse.com.tw/zh/page/ETF/daily.html][111年12月05日 ETF日成交資訊]]
+- [[https://orange.udn.com/orange/story/121198/6310867][5檔熱門ETF配息出爐 「這檔」現金股利創新高]]
+- [[https://tw.stock.yahoo.com/fund/performance/F0HKG05WVJ:FO][基金歷史淨值]]
 *** 債券(Bond)
 **** 何謂債券
 債券（ Bond ）是為籌集資金而發行的金融商品，發行者會在約定時間支付一定比例的利息，並在到期時償還本金的一種。講白一點，債券其實就是借據的一種。以目前的情況來看，市場上主要會有三個想跟你借錢的單位，政府、一般企業、金融機構。當他們有重大投資案，或需要很多錢的時候，就會和民眾借錢，然後開一張借據給你。
@@ -352,6 +366,8 @@ ETF的交易方式跟股票相同，唯一的差別就是交易稅的不同，�
 - 『匯率』就是A國貨幣兌換成B國貨幣的比率，像是1美元兌換27元台幣即，USD/NTD滙率為27。
 - 貨幣是一種商品，而匯率就是商品的價格，當你在外匯市場上買一種貨幣，就好比你同時賣出另一種貨幣，所以當美元兌台幣升值時，你就賺了匯差。
 - 假設我在「USD/NTD匯率為27」時買進10萬美金（花了270萬台幣），一個月後「USD/NTD匯率來到30」，此時我的10萬美金就可換回300萬台幣。
+- [[https://www.cmoney.tw/notes/note-detail.aspx?nid=7649][什麼是外匯?
+]]- [[https://libertex.org/cn-tr/blog/what-forex-and-how-trade-it][外匯是什麼，如何交易外匯？]]
 *** 期貨(Futures)
 **** 例子
 你和畫廊老闆約定一個月後以20萬買一幅畫，雙方簽約，保證金一萬；若一個月後該幅畫升值到22萬，則你以本金1萬賺了2萬。
@@ -395,13 +411,16 @@ ETF的交易方式跟股票相同，唯一的差別就是交易稅的不同，�
 **** 期貨
 需年滿20歲
 *** 黃金投資(Gold investment)
-- 盛世古董 亂世黃金
-- [[https://data.gov.tw/dataset/26404][臺灣銀行新台幣黃金存摺牌價]]
-- [[https://www.gck99.com.tw/gold1.php?yy=2016&mm=12][台灣地區即時金價查詢]]
+**** 投資注意事項
 - 黃金投資特性: 首先有一件非常重要的事情，在投資黃金前絕對不能不知道，那就是不管你是用哪種管道來投資黃金，它都不會生利息！
 - 但是黃金本身不是公司，沒辦法產生利潤，因此不會有「股息」；也沒人想借黃金去用，大家都是買黃金來存著或買低賣高。而既然沒人會借黃金，當然也就不會有利息了。
 - 所以，不管你用哪種方式投資黃金，黃金唯一的獲利方式就是「買低賣高賺價差」，這點得先留意。
-*** 定存(fixed deposit / time deposit)
+**** 查詢
+- [[https://www.cotabank.com.tw/web/riches_gold/gold_rate/][黃金牌價查詢]]
+- [[https://data.gov.tw/dataset/26404][臺灣銀行新台幣黃金存摺牌價]]
+- [[https://www.gck99.com.tw/gold1.php?yy=2016&mm=12][台灣地區即時金價查詢]]
+*** 儲蓄
+**** 何謂定存
 - 銀行帳戶有分兩種，一個是定存帳戶，另一個是活存帳戶
 - 「定存帳戶」是fixed deposit或是time deposit，fixed在這邊意思是「固定的」，而deposit就是「存錢」的意思；那麼「活存帳戶」則稱為current deposit或是 demand deposit。
 - 如果今天你要去銀行存錢，可以用make a deposit of + 金額 + into one’s account這個說法，舉例如下：
@@ -432,6 +451,14 @@ My brother lives from paycheck to paycheck. I worry about what he will do if he 
 #+ATTR_ORG: :width 300
 #+ATTR_HTML: :width 500
 [[file:images/2022-12-07_16-09-25.png]]
+**** 查詢
+- [[https://ipost.post.gov.tw/pst/index.html][郵局存款利率]]
+- [[https://ebank.taipeifubon.com.tw/B2C/cfhqu/cfhqu017/CFHQU017_Home.faces][定存零存整付試算]]
+- [[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1rLycnu77AhXHxYsBHfdGAFUQFnoECBEQAQ&url=https%3A%2F%2Fwww.cbc.gov.tw%2Ftw%2Fpublic%2Fdata%2Fa13rate.xls&usg=AOvVaw3zNcyXJCs3nfVqSVHKgd0C][各銀行存放款利率歷史資料查詢]]
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/2022-12-10_13-12-54.png]]
 ** 神級投資者的神諭
 *** Benjamin Graham 班傑明·葛拉漢
 #+ATTR_LATEX: :width 300
@@ -489,20 +516,20 @@ My brother lives from paycheck to paycheck. I worry about what he will do if he 
 - 示範如何以試算表計算六年投報率
 - 示範如何將資料視覺化
 **** 目標
-- 低標: 打敗定儲
-- 高標: 打敗大盤
+最低標準: 打敗[[https://ebank.taipeifubon.com.tw/B2C/cfhqu/cfhqu017/CFHQU017_Home.faces][定儲]](零存整付定儲六年結果如下)
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/2022-12-10_14-43-29.png]]
 *** Competition Rules
 在這裡我們要先違反Buffett的一項原則：集中而非分散，原因是學生無暇時常觀注股票或隨時進出
 1. 投資期限：<2016-01-01 Fri> to <2021-12-31 Fri>
-2. 每月3000，每月月初第一個交易日全數投入
-3. 分三種投資項目
-4. 自訂比例，項目數不得低於三類，每類比例不得低於20%
-5. 每年年底(12月)多一筆入帳：10000
-6. 股票可併年度配股配息，只要基於真實數據均可列入獲利
-7. 定存、定儲需依實際年度利息進行計算
-8. 其他期貨、選擇權、政府公債等請自行解決
-9. 六年中只能每月定期買進（不可短進短出）
-10. 不考慮手續費、證交稅、等因素
+2. 分三種投資項目，每個項目每月投入1000元
+3. 股票配股配息併入下月購買資金，只要基於真實數據均可列入計算
+4. 假設所有股票均提供零股買賣，且零股可以小數點買進
+5. 其他期貨、選擇權、政府公債等請自行解決
+6. 六年中只能每月定期買進（不可短進短出）
+7. 不考慮手續費、證交稅、等因素
 *** Group Tasks
 1. 小組討論投資項目
 2. 收集六年中每月資訊
@@ -514,31 +541,165 @@ My brother lives from paycheck to paycheck. I worry about what he will do if he 
 *** 奬品
 1. 年報率最高的一組
 ** Get Hands Dirty: DEMO
-- 黃金
-- 股票
-- 合併
-- 畫圖
+*** 黃金
+**** 歷年黃金牌價
+- [[https://www.cotabank.com.tw/web/riches_gold/gold_rate/][黃金牌價查詢]]
+**** 逐月投報計算
+- [[file:Gold.csv]]
+- file:Gold.xlsx
+**** 成果
+#+begin_src python -r -n :results output :exports both
+import pandas as pd
+import matplotlib.pyplot as plt
+gold = pd.read_csv('/Users/letranger/Downloads/gold.csv',  encoding='utf8')
+print(gold[:-5])
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+plt.plot(gold['月份'], gold['累計財富'])
+plt.savefig('images/gold-return.png', dpi=300)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+    月份          日期       時間     買入  ...     累計單位        累計財富   累計投入      月報酬率
+0    1  0105-01-04  9:03:23  1,121  ...   0.8921   1010.7047   1000  1.010705
+1    2  0105-02-01  9:02:23  1,198  ...   1.7268   2094.5904   2000  1.047295
+2    3  0105-03-01  9:01:45  1,316  ...   2.4867   3307.2626   3000  1.102421
+3    4  0105-04-01  9:02:03  1,272  ...   3.2728   4208.8557   4000  1.052214
+4    5  0105-05-03  9:01:44  1,330  ...   4.0247   5409.2060   5000  1.081841
+..  ..         ...      ...    ...  ...      ...         ...    ...       ...
+62  63  0110-03-03  9:03:40  1,544  ...  47.0579  73316.2139  63000  1.163749
+63  64  0110-04-01  9:03:23  1,556  ...  47.7006  74842.2056  64000  1.169409
+64  65  0110-05-03  9:03:25  1,585  ...  48.3315  77330.3872  65000  1.189698
+65  66  0110-06-01  9:03:24  1,684  ...  48.9253  83075.1870  66000  1.258715
+66  67  0110-07-01  9:03:20  1,577  ...  49.5594  78799.4963  67000  1.176112
+
+[67 rows x 11 columns]
+#+end_example
+#+CAPTION: Caption
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/gold-return.png]]
+*** 股票
+**** 歷年台積電股價查詢
+- [[https://hk.finance.yahoo.com/quote/2330.TW/history?period1=1451606400&period2=1640908800&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true][歷年2330.TW股價查詢]]
+**** 逐月投報計算
+- file:TSMC.csv
+- file:TSMC.xls
+**** 成果
+#+begin_src python -r -n :results output :exports both
+import pandas as pd
+import matplotlib.pyplot as plt
+gold = pd.read_csv('/Users/letranger/Downloads/TSMC.csv',  encoding='utf8')
+print(gold[:-5])
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+plt.plot(gold['月份'], gold['累計財富'])
+plt.savefig('images/TSMC-return.png', dpi=300)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+    月份          日期     開市     最高  ...      購入股數        累計股數   累計投入           累計財富
+0    1  2016-01-01  143.0  143.5  ...  6.993007    6.993007   1000    1000.000000
+1    2  2016-02-01  144.0  152.5  ...  6.711409   13.704416   2000    2041.958042
+2    3  2016-03-01  148.5  163.0  ...  6.172840   19.877256   3000    3220.115455
+3    4  2016-04-01  161.0  162.5  ...  6.666667   26.543923   4000    3981.588384
+4    5  2016-05-01  150.0  158.0  ...  6.389776   32.933699   5000    5154.123881
+..  ..         ...    ...    ...  ...       ...         ...    ...            ...
+63  64  2021-04-01  598.0  619.0  ...  2.880052  294.092531  64000  176455.518600
+64  65  2021-05-01  595.0  600.0  ...  1.675042  295.767573  65000  176573.241000
+65  66  2021-06-01  598.0  609.0  ...  1.680672  297.448245  66000  176981.705900
+66  67  2021-07-01  596.0  615.0  ...  3.006242  300.454488  67000  174263.602800
+67  68  2021-08-01  583.0  614.0  ...  1.628664  302.083152  68000  185479.055400
+
+[68 rows x 14 columns]
+#+end_example
+
+#+CAPTION: Caption
+#+LABEL:fig:Labl
+#+name: fig:Name
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/TSMC-return.png]]
+*** 上傳csv至Google Drive
+- [[https://drive.google.com/drive][Google My Drive]]
+*** 從Colab讀csv檔
+1. [[https://colab.research.google.com/][Google Colab]]
+2. [[https://colab.research.google.com/drive/1jqmCUNyzmcE0Z_8ufW24_Ot_I3oSNqLE?usp=sharing][下載講師ipynb檔]]
+3. Click Copy to Drive: 儲存到自己的Google Drive
+*** 畫圖
+#+begin_src python -r -n :results output :exports both
+import pandas as pd
+import matplotlib.pyplot as plt
+gold = pd.read_csv('/Users/letranger/Downloads/gold.csv',  encoding='utf8')
+tsmc = pd.read_csv('/Users/letranger/Downloads/TSMC.csv',  encoding='utf8')
+
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+plt.clf()
+
+plt.plot(tsmc['月份'], tsmc['累計財富'], c='orange')
+plt.plot(gold['月份'], gold['累計財富'], c='green')
+#plt.plot(gold['月份'], tsmc['累計財富'], gold['累計財富'])
+plt.legend(["TSMC", "GOLD"], loc="upper left")
+plt.savefig('images/merge-return.png', dpi=300)
+#+end_src
+#+RESULTS:
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/merge-return.png]]
+*** 上傳報告
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 500
+[[file:images/2022-12-09_22-11-16.png]]
 ** Get Your Hands Dirty
 - 研究投資標的: Padlet mind map + Google
 - 搜尋資料: Google
-- 計算投報率：Google Sheet
+- 計算投報率：Excel
 - 資料視覺化: Google Colab + Python
+- 上傳報告：[[https://padlet.com/letranger1/68fsh8vhsleysp53][Padlet]]
 ** 成果報告
 - 分析各組投資成效
 - 評估不同投資商品優缺點
+- 頒奬
 
-* Part II: How AI Could Make Everyone Rich
+* Part II: Can AI Make Everyone Rich
 ** Let's Get Greedy
 在這裡我們要先違反Buffett的一項原則：不預測市場走勢，原因是我得跨域
 *** AI簡介
 **** What Can AI Do?
+- [[https://chat.openai.com/chat][chat.openai]]
+- [[https://openai.com/dall-e-2/?fbclid=IwAR2F7N_EY1yvN0klmp60K-jiq1gfPx2lFFhd10d-W8LzLVSF42sJB_ve1RQ][DALL.E 2]]
+- DEMO
+- 各組成果: Padlet
+*** CNN
+[[id:31d6a744-f7f7-47e4-ae33-3f9fa91c33bb][CNN實作]]
+**** 實作1
+***** 下載資料集/分割資料集
+***** 觀察資料集內容
+***** 將資料標準化
+***** 建立模型
+***** 模型編譯
+***** 模型訓練
+***** 測試性能
+**** 實作2
+***** 轉換label資料格式
+***** 進一步查看效能
+***** 增加卷積層、池化層、全連接層
+***** 加入Dropout層
+***** 加入驗證集
+***** 測試性能
+***** 再查看效能
+*** 其他資源 :noexpor:
+for DALL E 2: There is a cabin by the lake, the sky is full of stars.
 - http://gaugan.org/gaugan2
-- DEMO
-- 各組成果
-**** CNN
-- 拿AI來算三角形面積
-- DEMO
-**** 其他資源 :noexpor:
 - [[https://github.com/leemengtaiwan/deep-learning-resources][deep-learning-resources ]]
 - [[https://cs.stanford.edu/people/karpathy/convnetjs/][ConvNetJS]]
 - [[https://teachablemachine.withgoogle.com/][Teachable Machine]]
@@ -547,15 +708,18 @@ My brother lives from paycheck to paycheck. I worry about what he will do if he 
 - [[https://openai.com/dall-e-2/][Dall-e 2]]
 - [[https://www.youtube.com/watch?v=TndaazYVM0Q][MIRO]]
 - [[https://www.youtube.com/watch?v=v1ypivdNwJg][MIRO PAPAYA]]
-*** 可不可以拿AI來預測股價
-**** First Try
+- [[https://www.youtube.com/channel/UCmWCMqDKCR56pqd10qNkv3Q/videos][容噗玩Data]]
+- [[https://www.youtube.com/watch?v=ONWbL9rr9Sc][台大資訊 深度學習之應用 | ADL 1.1: What is ML? 甚麼是機器學習?]]
+** 拿AI來預測股價
+*** First Try
+
 李宏毅預測Youtube點擊率影片
 - [[https://www.youtube.com/watch?v=cCDu5i6UQEM][股價預測AI實作，Python程式碼逐行解說，實測結果大公開]]
 - [[https://www.youtube.com/watch?v=9wPUcn5RZv8][Python股票自动交易从零开始~第八集~深度学习预测股价]]
 - [[https://www.finlab.tw/%E8%B6%85%E7%B0%A1%E5%96%AE-machine-learning-%E9%A0%90%E6%B8%AC%E8%82%A1%E5%83%B9/][超簡單用Python預測股價]]
 - [[https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/][Stock Price Prediction Project]]
 - [[https://weikaiwei.com/finance/stocker/][Python 股票分析：Stocker 強大的股價預測分析工具 (附完整程式碼)]]
-**** 胡亂操弄一翻
+*** 胡亂操弄一翻
 ** Let's Be More Realistic
 *** 不要那麼貪心好不好
 - [[https://www.youtube.com/watch?v=2wB5YX7-wFA][AI發大財】利用AI預測股票升跌｜Stock Prediction with AI techniques ]]
@@ -566,6 +730,7 @@ My brother lives from paycheck to paycheck. I worry about what he will do if he 
 - [[https://www.youtube.com/watch?v=RAkNhip5MT8][长短期记忆神经网络（LSTM）预测股票价格02 - 数据预处理 ]]
 - [[https://www.youtube.com/watch?v=cUQlpt-p7jg][用LSTM預測下個月乘客數 ]]
 - [[https://www.youtube.com/watch?v=v1YQXWPVOX0][Python零基础学习64课 使用Stacked LSTM预测Apple股票价格T+N ]]
+- [[https://www.finlab.tw/python-%E6%99%82%E9%96%93%E5%BA%8F%E5%88%97%E5%AF%A6%E4%BD%9C%EF%BC%81/][Python 時間序列實做！]]
 *** 其他ideas
 - 模型不準確的原因
   1. 時間拉長、影響因素太多：戰爭、疫情
@@ -730,6 +895,76 @@ print(TEST)
 #+end_src
 
 #+RESULTS:
+** 貝氏機率
+[[https://leemeng.tw/intuitive-understandind-of-bayes-rules-and-learn-from-experience.html][從經驗中學習 - 直觀理解貝氏定理及其應用]]
+#+begin_src python -r -n :results output :exports both
+import random
+itemList = ['可樂', '啤酒', '牛肉', '牙線', '口香糖', '電池']
+
+for i in range(20):
+    itemNum = int(random.random() * len(itemList))
+    print(i+1, '購買:', set(random.choices(itemList, k=itemNum+1)))
+
+#+end_src
+
+#+RESULTS:
+#+begin_example
+1 購買: {'電池', '可樂', '牙線'}
+2 購買: {'電池', '可樂', '啤酒'}
+3 購買: {'牛肉', '電池', '牙線', '口香糖'}
+4 購買: {'牛肉', '電池', '牙線', '可樂', '啤酒'}
+5 購買: {'啤酒', '口香糖'}
+6 購買: {'牛肉', '啤酒'}
+7 購買: {'啤酒'}
+8 購買: {'牛肉', '牙線', '啤酒'}
+9 購買: {'牛肉', '牙線', '口香糖', '可樂', '啤酒'}
+10 購買: {'可樂', '牙線', '口香糖'}
+11 購買: {'牙線', '口香糖'}
+12 購買: {'電池', '牙線', '口香糖'}
+13 購買: {'電池'}
+14 購買: {'牛肉', '電池', '口香糖', '可樂', '啤酒'}
+15 購買: {'電池', '牙線', '口香糖'}
+16 購買: {'牛肉', '牙線', '啤酒'}
+17 購買: {'電池', '牙線', '口香糖'}
+18 購買: {'牛肉', '電池', '牙線', '口香糖', '可樂', '啤酒'}
+19 購買: {'牛肉', '電池', '口香糖', '可樂', '啤酒'}
+20 購買: {'可樂', '牙線'}
+#+end_example
+#+begin_src python -r -n :results output :exports both
+import numpy as np
+buying = {
+    'cus1' : {'電池', '可樂', '牙線'},
+    'cus2' : {'電池', '可樂', '啤酒'},
+    'cus3' : {'牛肉', '電池', '牙線', '口香糖'},
+    'cus4' : {'牛肉', '電池', '牙線', '可樂', '啤酒'},
+    'cus5' : {'啤酒', '口香糖'},
+    'cus6' : {'牛肉', '啤酒'},
+    'cus7' : {'啤酒'},
+    'cus8' : {'牛肉', '牙線', '啤酒'},
+    'cus9' : {'牛肉', '牙線', '口香糖', '可樂', '啤酒'},
+    'cus10' : {'可樂', '牙線', '口香糖'},
+    'cus11' : {'牙線', '口香糖'},
+    'cus12' : {'電池', '牙線', '口香糖'},
+    'cus13' : {'電池'},
+    'cus14' : {'牛肉', '電池', '口香糖', '可樂', '啤酒'},
+    'cus15' : {'電池', '牙線', '口香糖'},
+    'cus16' : {'牛肉', '牙線', '啤酒'},
+    'cus17' : {'電池', '牙線', '口香糖'},
+    'cus18' : {'牛肉', '電池', '牙線', '口香糖', '可樂', '啤酒'},
+    'cus19' : {'牛肉', '電池', '口香糖', '可樂', '啤酒'},
+    'cus20' : {'可樂', '牙線'}
+}
+beefbuyer = ['牛肉' in buy for buy in buying.values()].count(True)
+beefBeerbuyer = [{'牛肉','啤酒'} <= buy for buy in buying.values()].count(True)
+print(beefbuyer)
+print(beefBeerbuyer)
+print(f'P(買牛肉又買啤酒 | 有買牛肉): {beefBeerbuyer*100/beefbuyer:.2f}%')
+#+end_src
+
+#+RESULTS:
+: 9
+: 8
+: P(買牛肉又買啤酒 | 有買牛肉): 88.89%
 
 * Footnotes
 

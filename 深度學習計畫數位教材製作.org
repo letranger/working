@@ -384,7 +384,7 @@ What is the difference between these two modes?
 ** 參考影片
 #+transclude: [[id:2acaf761-2b84-4418-8781-5e101539552c]]
 
-* TODO 線上會議討論
+* DONE 線上會議討論
 ** 12/09
 - 影片的目的為何?要教到多細？例如池化層，是講概念即可？還是連stride也要講?
 - 好像不是所有的影片都適合出選擇題？例如決策樹的建構I、II、III都在講熵的計算

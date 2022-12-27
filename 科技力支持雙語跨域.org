@@ -19,35 +19,103 @@
   #+ATTR_HTML: :width 600
   [[file:images/2022-09-08_08-50-52.png]]
 
-* 跨域X雙語 powered by 科技力 :noexport:
+* 跨域X雙語 powered by 科技力
 ** Say Hi
-- Where are you from
+- [[https://padlet.com/][註冊padlet]]
+- [[https://padlet.com/letranger1/68fsh8vhsleysp53][美食分享]]
 ** 跨域-Why
 *** 背景
 - 社會變動複雜，解決一問題需要不同領域的知識
 - 跨領域人才
-*** 如何跨才有用
-- 跨學科 / 跨職業
-- 職業跨領域：手機: 硬體/軟體
-- 學術研究的跨領域
-- 工程師、學者這種類似專業
-- 典型的跨領域：教師(專業/教育理論專業)
-- PM: 專案經理(管理/不同產業)
-每個工作都需要跨領域，如何培養
-** 跨域-How
-- 芬蘭：以主題為主、培養跨領域，跳脫形式，認識解決問題
-- 大學：輔系、雙主修、科技法律
-- 成大：[[https://collegex.ncku.edu.tw/site/about_why][College X]]: 跨系、跨院、跨齡，跨領域X實踐X社會影響力
-*** 其他資源 :noexport:
-- [[https://www.youtube.com/watch?v=wna3Z_ztn44][「跨領域」真的很有優勢嗎？要怎麼「跨」才有用呢？《 生難字彙大辭海 》EP 035｜志祺七七]]
+*** 跨域典型案例
+- 專業教育理論/學科專業: 教師
+- 法律X科技: [[https://www.davinci.idv.tw/service][達文西個資暨高科技法律事務所]]
+- 人力管理/產業技術: 專案經理(PM)
+- 資訊軟體、硬體: 手機研發
+- 物理、化學、數學跨領域: 半導體產業
+- 醫學、電機、資工: [[https://ioh.tw/articles/ioharticles-電資工程-醫學-智慧醫療][病毒基因序列比對、傳播鏈解析、抗體檢測機台]]
+** 跨域能力的培育-How
+- 輔系、雙主修
+- 素養導向學習
+- 現象為本學習(phenomenon-based project)：芬蘭
+- 跨系、跨院、跨齡: 成大[[https://collegex.ncku.edu.tw/site/about_why][College X]]、[[https://hidschool.nccu.edu.tw/][政大人文創新學程]]
 ** 雙語-Why
 - 學習資源豐富
 - 未來工作需求
 ** 雙語-How
-*** 方式
-- 語言是一種工具，與學科內容整合，即，CLIL, Content and Language Integrated Learning，讓學生在學習學科內容的同時也習得語言這個工具
-- 從100%英文->20%英文，取決於師生契約與英文能力、因地制約
-- 敞校今年運動會例子：「各就位、預備」改為「On your marks]，「Get set」
+*** 雙語教學v.s.英語教學
+語言是一種工具，與學科內容整合( Content and Language Integrated Learning, CLIL)
+|----------------------------------+----------+----------|
+| 目標                             | 英語教學 | 雙語教學 |
+|----------------------------------+----------+----------|
+| intelligilble(清楚易懂)          |          | ✔️       |
+| standardize(標準)                | ✔️       |          |
+| near native like(與母語人士相似) | ✔️       |          |
+|----------------------------------+----------+----------|
+#+begin_verse
+創造一個學生不得不用的環境 - Learning English by using English
+#+end_verse
+*** 典型的雙語環境案例
+- 英文影片、網站
+- 英文界面軟體: Xcode, PyCharm, MacOS
+- 課程內容部份使用英文
+- Email / Feedback / Comments
+- VPL-4C: Number modifier
+- VPL-5C: XY coordinate system
+- https://moodle.tnfsh.tn.edu.tw
+*** 雙語環境: The Hole in the Wall[fn:1]
+- 英國紐卡斯爾大學教育教授: 蘇伽特·米特拉
+- 過了三個月再回來，他驚奇地發現，從沒接觸過電腦、也不會說英語的孩子們竟然無師自通地學會了瀏覽網頁、下載，甚至還掌握了一些生物、遺傳學的知識。
+- ...八歲的拉金德指點小夥伴們：「看，『針』刺到哪兒，哪兒就有反應。」他還把電腦上的沙漏計時器說成是個「鼓」，因為沙漏的形狀很像他們常見的一種鼓樂器。他指導夥伴們一定要有耐心：「等一下，鼓裡碎沙都掉下來之後，你要看的圖畫才能出現。」
+*** 雙語環境下學生的求生工具
+**** 聽／說
+- Youtube/語速調整
+- 發音: Google/pronounce、Youtube Real Life Example
+- 發音(plugins): Read Aloud、Google Read&Write
+**** 讀/寫
+- 字典(plugins): TJDict、
+- 同義字、反義字(plugins): WordHippo、Power Thesaurus、Google翻譯
+- 英文潤稿: Wordtune、Grammarly
+*** 雙語環境下教師的好用工具
+**** 錄音(plugins):
+- Mote: 官網註冊，可用於回復學生、Google表單、英文聽寫
+- Talk and Comment: 隨時可錄，MIC圖像就在側邊
+**** 錄影(plugins):
+- Screencastify
+- Loom
+*** 雙語教學的能力養成
+**** 跨領域教師共備(content+language)
+- 英文教師：了解學科領域內容
+- 領域教師: 如何以學生能理解的英文(單字、句型)表達領域知識
+**** 雙語知能課程培訓
+- 6學分：CLIL Teaching in Action
+**** [[https://www.ietw2.edu.tw/toolkit/index/type/0802][雙語課程工具包]]
+** 相關資源 :noexport:
+*** TODO 科技輔助工具
+**** Web
+- How to pronouce: 術語發音的正確性
+- Youtube Real Life Example: https://www.youtube.com/watch?v=fnk3uusnEiA
+- 科技輔助雙語: Youtube 語速調整/字幕
+**** Plugins / Extensions for Browser[fn:2]
+***** 英文專業
+- TJDict: [[https://chrome.google.com/webstore/detail/tjdict-%E7%B7%9A%E4%B8%8A%E5%AD%97%E5%85%B8/caafmojgjlbflohillejdmnghkpcjjpp?hl=zh-TW][Chrome]]
+- WordHippo: [[https://chrome.google.com/webstore/detail/extension-for-wordhippo-t/aodmmgciojljmgnocelfennldiemmgpj][Chrome]]
+- Wordtune: 協助英文潤稿/有年齡限制
+***** 聲音
+- Read Aloud:
+- Google Read&Write: [[https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp][Chrome]], [[http://ruthedtech.blogspot.com/2019/04/g-suite-in-2-minute-read-20190404.html][教學]]
+***** 錄音
+- Mote: [[https://www.mote.com/signup][官網註冊]]，可用於回復學生、Google表單、[[https://tech2021.mystrikingly.com/blog/mote][英文聽寫]]
+- Talk and Comment: 隨時可錄，MIC圖像就在側邊
+***** 截圖
+- Nimbus
+- Awesome Screenshot
+***** 錄影
+學生如果要交錄影作業，最好是錄完直接上傳Youtube再傳連結，否則學校的免費空間會大量消耗。另，Google格式的文件(如Google doc、Google slide)不列入空間計算
+- Screencastify
+- Loom
+*** 其他資源
+- [[https://www.youtube.com/watch?v=wna3Z_ztn44][「跨領域」真的很有優勢嗎？要怎麼「跨」才有用呢？《 生難字彙大辭海 》EP 035｜志祺七七]]
 *** 目的是什麼?
 雙語的目標是學科內容:
 英語學科的目標是英語教學
@@ -114,29 +182,6 @@ https://www.ietw2.edu.tw/toolkit/index/type/0802
 - http://moodle.tnfsh.tn.edu.tw
 - MacOS界面-全英文
 - 我是為了這個研習把界面改掉的，強迫學生用英文界面，他們應該會很恨我學姐
-*** 科技輔助工具
-**** Web
-- How to pronouce: 術語發音的正確性
-- Youtube Real Life Example: https://www.youtube.com/watch?v=fnk3uusnEiA
-- 科技輔助雙語: Youtube 語速調整/字幕
-**** Plugins / Extensions for Browser[fn:2]
-***** 英文專業
-- TJDict: [[https://chrome.google.com/webstore/detail/tjdict-%E7%B7%9A%E4%B8%8A%E5%AD%97%E5%85%B8/caafmojgjlbflohillejdmnghkpcjjpp?hl=zh-TW][Chrome]]
-- WordHippo: [[https://chrome.google.com/webstore/detail/extension-for-wordhippo-t/aodmmgciojljmgnocelfennldiemmgpj][Chrome]]
-- Wordtune: 協助英文潤稿/有年齡限制
-***** 聲音
-- Read Aloud:
-- Google Read&Write: [[https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp][Chrome]], [[http://ruthedtech.blogspot.com/2019/04/g-suite-in-2-minute-read-20190404.html][教學]]
-***** 錄音
-- Mote: [[https://www.mote.com/signup][官網註冊]]，可用於回復學生、Google表單、[[https://tech2021.mystrikingly.com/blog/mote][英文聽寫]]
-- Talk and Comment: 隨時可錄，MIC圖像就在側邊
-***** 截圖
-- Nimbus
-- Awesome Screenshot
-***** 錄影
-學生如果要交錄影作業，最好是錄完直接上傳Youtube再傳連結，否則學校的免費空間會大量消耗。另，Google格式的文件(如Google doc、Google slide)不列入空間計算
-- Screencastify
-- Loom
 
 * 教學計劃：Let's Make Big Money
 ** 設計理念
@@ -814,7 +859,9 @@ for DALL E 2: There is a cabin by the lake, the sky is full of stars.
 - [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Materials of Python]]
 - [[https://letranger.github.io/AI-course/][AI for TNFSH: 從入門到入土]]
 
-* Use Python to read Google form :noexport:
+* Use Python to read Google Sheet :noexport:
+** 偵測Google Sheet是否被改過
+** 用pandas讀Google Sheet
 #+begin_src shell -r -n :results output :exports both
 export PYTHONIOENCODING=utf-8
 #+end_src
@@ -844,15 +891,18 @@ url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sh
 df = pd.read_csv(url, encoding='utf-8')
 
 print(df.head())
+
+import matplotlib.pyplot as plt
+
 #+end_src
 
 #+RESULTS:
 :     組別  理財達人團體賽累計金額  CNN實作accuracy  股票預測模型loss
-: 0  第1組          NaN            NaN         NaN
-: 1  第2組          NaN            NaN         NaN
-: 2  第3組          NaN            NaN         NaN
-: 3  第4組          NaN            NaN         NaN
-: 4  第5組          NaN            NaN         NaN
+: 0  第1組            0              0           0
+: 1  第2組            0              0           0
+: 2  第3組            0              0           0
+: 3  第4組            0              0           0
+: 4  第5組            0              0           0
 
 * 跨域: 資訊與財務規劃 :noexport:
 ** 參考
@@ -872,6 +922,10 @@ print(df.head())
 - 課程適切性
 - 創意性
 ** 評量
+
+* 後續研究
+- 我退休後需要準備多少退休金?
+- 我如何存夠這筆退休金?
 
 * 工具 :noexport:
 - [[https://medium.com/as-a-product-designer/%E5%9B%9B%E6%95%A3%E5%90%84%E5%9C%B0%E6%80%8E%E9%BA%BC%E8%BE%A6-%E8%AE%93%E9%81%A0%E7%AB%AF%E8%A8%AD%E8%A8%88%E5%B7%A5%E5%85%B7%E6%88%90%E7%82%BA%E4%BD%A0%E5%80%91%E7%9A%84%E5%82%B3%E8%81%B2%E7%AD%92%E5%90%A7-f6d71de20ccd][文件檔案四散各地怎麼辦？讓遠端設計工具成為你們的傳聲筒吧！]]

@@ -803,8 +803,8 @@ plt.show()
 ** Introduction to AI
 教師課堂介紹/Slide
 ** CNN實作
-- [[https://letranger.github.io/AI/20221211165455-cnn%E5%AF%A6%E4%BD%9C.html#orgf55f089][CNN實作1]]
-- [[https://letranger.github.io/AI/20221211165455-cnn%E5%AF%A6%E4%BD%9C.html#orga917476][CNN實作2]]
+- CNN實作1: 教師課堂介紹/Slide/DEMO
+- CNN實作2: 教師課堂介紹/Slide/DEMO
 - 小組競賽:
   - 各組自行修改模型架構及訓練參數，於時限內取得最高精確率(accuracy)
   - [[https://docs.google.com/spreadsheets/d/1eg7kCruRQ1j-EktLYjbUgdkXBg7V8JL3F-U3HwlbDLQ/edit?usp=sharing][各組成績登錄]]
@@ -1068,6 +1068,7 @@ source(蕭仕原/Ben): https://www.youtube.com/watch?v=zeF4bY6qAFc
 - whiteboard.fi
 
 * 名言 :noexport:
+https://medium.com/雞雞與多兔的工程世界
 #+begin_quote
 不用很厲害才開始
 要開始才會很厲害

@@ -773,6 +773,14 @@ plt.show()
 - 分析各組投資成效
 - 評估不同投資商品優缺點
 - 頒奬: 累計投資 *收益最高* 的一組、累計投資 *損失最多* 的一組
+*** 比賽結果
+#+CAPTION: 理財達人團體賽成績表
+#+LABEL:fig:game-1
+#+name: fig:game-1
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 600
+[[https://moodle.tnfsh.tn.edu.tw/images/game-1.png]]
 
 * Part II: Can AI Make Everyone Rich
 ** What can AI do?
@@ -800,6 +808,14 @@ plt.show()
 - 小組競賽:
   - 各組自行修改模型架構及訓練參數，於時限內取得最高精確率(accuracy)
   - [[https://docs.google.com/spreadsheets/d/1eg7kCruRQ1j-EktLYjbUgdkXBg7V8JL3F-U3HwlbDLQ/edit?usp=sharing][各組成績登錄]]
+*** 比賽結果
+#+CAPTION: CNN實作團體賽成績表
+#+LABEL:fig:game-2
+#+name: fig:game-2
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 600
+[[https://moodle.tnfsh.tn.edu.tw/images/game-2.png]]
 ** Let's Get Greedy
 在這裡我們要先違反Buffett的一項原則：不預測市場走勢
 *** Get a taste of AI
@@ -809,6 +825,14 @@ plt.show()
 - 小組競賽：
   - 自行挑選個股、下載股價、建立股價預測模型，以各組模型之loss值為比較依據。
   - [[https://docs.google.com/spreadsheets/d/1eg7kCruRQ1j-EktLYjbUgdkXBg7V8JL3F-U3HwlbDLQ/edit?usp=sharing][各組成績登錄]]
+*** 比賽結果
+#+CAPTION: 股價預測實作競賽成績表
+#+LABEL:fig:game-3
+#+name: fig:game-3
+#+ATTR_LATEX: :width 400
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 600
+[[https://moodle.tnfsh.tn.edu.tw/images/game-3.png]]
 *** Model revision
 - 多讀些原始資料
 - 用更多特徵值來預測
@@ -903,7 +927,41 @@ import matplotlib.pyplot as plt
 : 2  第3組            0              0           0
 : 3  第4組            0              0           0
 : 4  第5組            0              0           0
+** 用python上傳檔案至github
+#+begin_src python -r -n :results output :exports both
+# 傳至Github.io
 
+# Import the requests module for send a PUT request
+import requests
+# Import the base64 module for encoding a file to base64
+import base64
+
+githubAPIURL = "https://api.github.com/repos/letranger/working/contents/game-1.png"
+# Replace "bracketcounters" with your username,
+# replace "test-repo" with your repository name and
+#replace "new-image.png" with the filename you want to upload from local to GitHub.
+
+# Paste your API token here
+githubToken = "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"
+
+
+with open("game-1.png", "rb") as f:
+    # Encoding "my-local-image.jpg" to base64 format
+    encodedData = base64.b64encode(f.read())
+
+    headers = {
+        "Authorization": f'''Bearer {githubToken}''',
+        "Content-type": "application/vnd.github+json"
+    }
+    data = {
+        "message": "My commit message", # Put your commit message here.
+        "content": encodedData.decode("utf-8")
+    }
+
+    r = requests.put(githubAPIURL, headers=headers, json=data)
+    print(r.text) # Printing the response
+
+#+end_src
 * 跨域: 資訊與財務規劃 :noexport:
 ** 參考
 - [[https://www.youtube.com/watch?v=Z6FohRsiJOo][ 109 年度「臺大Super 教案獎」教師組得獎作品發表 | 109年教育理論與實務對話研討會 ]]
@@ -923,7 +981,7 @@ import matplotlib.pyplot as plt
 - 創意性
 ** 評量
 
-* 後續研究
+* 後續研究 :noexport:
 - 我退休後需要準備多少退休金?
 - 我如何存夠這筆退休金?
 

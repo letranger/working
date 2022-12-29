@@ -1,0 +1,22 @@
+#+title: AI教學實務分享
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+TAGS: AI
+#+INCLUDE: ../pdf.org
+#+OPTIONS: toc:2     ^:nil num:5
+#+PROPERTY: header-args :eval never-export
+#+EXCLUDE_TAGS: noexport
+#+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html.svg?style=plastic"/></a>
+#+end_export
+
+* 研習內容:AI教育工作坊
+- 研習對象:高中教師
+- 研習時間:112年2月9日(四)9:00-12:40
+- 研習地點:台東大學附設實驗國小
+
+* content
+- 如何規劃課程
+- 實際上課狀況
+- 學生比較有感的教學活動
+- 具體的主題

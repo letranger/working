@@ -7,7 +7,8 @@
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
 #+begin_export html
-<a href="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/%E7%A7%91%E6%8A%80%E5%8A%9B%E6%94%AF%E6%8C%81%E9%9B%99%E8%AA%9E%E8%B7%A8%E5%9F%9F.html.svg?style=plastic"/></a>
+
+<a href="https://hits.sh/letranger.github.io/working/AI%E6%95%99%E5%AD%B8%E5%AF%A6%E5%8B%99%E5%88%86%E4%BA%AB.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/AI%E6%95%99%E5%AD%B8%E5%AF%A6%E5%8B%99%E5%88%86%E4%BA%AB.html.svg"/></a>
 #+end_export
 
 * 研習內容:AI教育工作坊

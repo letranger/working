@@ -962,6 +962,7 @@ with open("game-1.png", "rb") as f:
     print(r.text) # Printing the response
 
 #+end_src
+
 * 跨域: 資訊與財務規劃 :noexport:
 ** 參考
 - [[https://www.youtube.com/watch?v=Z6FohRsiJOo][ 109 年度「臺大Super 教案獎」教師組得獎作品發表 | 109年教育理論與實務對話研討會 ]]

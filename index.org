@@ -27,7 +27,7 @@
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
 - K8S
 
-* HIDE :noexpor:
+* HIDE :noexport:
 - [[file:AI教學實務分享.org][20230209-台東-AI教學實務分享]]
 - [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
 #+begin_export html

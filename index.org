@@ -13,17 +13,23 @@
 #+end_export
 
 * Working
-- [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]
-- [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
-- [[file:科技力支持自主學習.html][科技力支持自主學習]]
+- [[file:20230209AI教學實務分享.pdf][20230209AI教學實務分享]]
+- [[file:20221229科技力Ⅹ雙語Ⅹ跨域教學示例.pdf][20221229科技力Ⅹ雙語Ⅹ跨域教學示例]]
+- [[file:20220924自主學習與科技輔助示例.pdf][20220924自主學習與科技輔助示例]]
+- [[file:20220428資訊科技理念與素養導向課程設計.pdf][20220428資訊科技理念與素養導向課程設計]]
+
+* Pending :noexport:
 - [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
 - [[file:AI試題.org][AI試題]]
-
-* Pending
+- [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]
 - [[file:textbook.org][台科大教科書]]
 - [[file:教科書審查修訂.html][教科書審查修訂]]
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
 - K8S
+
+* HIDE :noexpor:
+- [[file:AI教學實務分享.org][20230209-台東-AI教學實務分享]]
+- [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
 #+begin_export html
 <footer class="footer">
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>

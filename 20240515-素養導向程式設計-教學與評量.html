@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-03-13 Wed 08:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>202405素養導向程式設計教學與評量-Python為例</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">202405素養導向程式設計教學與評量-Python為例</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9f91da1">1. 研習內容</a></li>
+<li><a href="#orgf3cec83">2. Resource</a></li>
+<li><a href="#org4a2d98d">3. 安裝 Windows Docker Desktop</a>
+<ul>
+<li><a href="#org783a843">3.1. resource</a></li>
+<li><a href="#orgeb1ace3">3.2. step</a></li>
+</ul>
+</li>
+<li><a href="#org9e25b49">4. Ideas about 實作</a>
+<ul>
+<li><a href="#orgbeb39b8">4.1. 成績處理</a></li>
+<li><a href="#orgc299c83">4.2. 團購處理統計</a></li>
+<li><a href="#org145076c">4.3. LINE bot</a></li>
+</ul>
+</li>
+<li><a href="#org410518f">5. Python 編寫環境與基礎語法</a>
+<ul>
+<li><a href="#org6198f4b">5.1. 1. Colab 編寫環境</a></li>
+<li><a href="#org40f14db">5.2. 2. 變數、輪入、輸出、運算</a></li>
+<li><a href="#org21f240a">5.3. 3. 條件</a></li>
+<li><a href="#org32f53fc">5.4. 4. 自訂函數</a></li>
+<li><a href="#org0b03960">5.5. 5. 假裝很專業的 UI 設計</a></li>
+<li><a href="#orgca2b183">5.6. 番外篇: 什麼是 ipynb?</a></li>
+<li><a href="#org5e14490">5.7. 6. 複雜的資料</a></li>
+<li><a href="#org66e1ec7">5.8. 7. 第三方套件: Pandas</a></li>
+<li><a href="#orgbe2ed6a">5.9. 8. 第三方套件: MatPlotLib</a></li>
+<li><a href="#org0fcf122">5.10. 9. 第三方套件: LINE Notification</a></li>
+</ul>
+</li>
+<li><a href="#org0649793">6. 休息</a></li>
+<li><a href="#org44be952">7. Python 基礎語法實作</a>
+<ul>
+<li><a href="#orge09efd9">7.1. 進階語法</a></li>
+<li><a href="#orgafe938c">7.2. 套件</a></li>
+</ul>
+</li>
+<li><a href="#org6c6e119">8. 午膳休息</a></li>
+<li><a href="#org9629a7e">9. 資料分析實作 1</a></li>
+<li><a href="#org25df6d0">10. 休息</a></li>
+<li><a href="#org9b9b184">11. 資料分析應用 2</a>
+<ul>
+<li><a href="#org04f199d">11.1. 小組實作</a></li>
+</ul>
+</li>
+<li><a href="#org04bad2c">12. 休息</a></li>
+<li><a href="#org30e6aec">13. 綜合座談</a></li>
+</ul>
+</div>
+</div>
+<a href="https://letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html.svg?style=plastic"/></a>
+<div id="outline-container-org9f91da1" class="outline-2">
+<h2 id="org9f91da1"><span class="section-number-2">1.</span> 研習內容</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>國中科技領域召集人課程領導增能研習<br /></li>
+<li>研習對象及人數:本市公私立國中教師，預估 25 人<br /></li>
+<li>研習時間:114 年 05 月 14 日（星期四）9:00-12:30<br /></li>
+<li>研習地點:輔導團 305 會議室<br /></li>
+</ul>
+
+<div id="org1ed6a55" class="figure">
+<p><img src="images/研習內容/2024-02-22_14-43-53_1708580777543.jpg" alt="2024-02-22_14-43-53_1708580777543.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>202405 素養導向程式設計教學與評量-Python 為例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf3cec83" class="outline-2">
+<h2 id="orgf3cec83"><span class="section-number-2">2.</span> Resource</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://theriseofdavid.github.io/2021/03/29/linux/linux-build-online-judge/">快速建立屬於你的 online judge</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=f63h-se6JOU">Windows 安裝 WSL + Docker Desktop 完整教學</a><br /></li>
+<li><a href="https://blog.techbridge.cc/2020/03/20/build-your-own-online-judge/">自己架一個 Online Judge 系統</a><br /></li>
+<li><a href="https://github.com/QingdaoU/OnlineJudgeDeploy/tree/2.0">QingdaoU/OnlineJudgeDeploy</a><br /></li>
+<li><a href="https://opensource.qduoj.com/#/onlinejudge/guide/deploy">QingdaoU OnlineJudge用戶指南</a><br /></li>
+<li><a href="https://github.com/yenlung/Python-Book">Python-Book</a><br /></li>
+<li><a href="https://ctld.video.nccu.edu.tw/media/3931#note-tabs-note">成為python數據分析達人的第一門課</a><br /></li>
+<li><a href="https://yenlungblog.wordpress.com/2013/11/21/python-ipython-%E7%9A%84-notebook-%E7%95%8C%E9%9D%A2/">[Python] IPython 的 Notebook 界面</a><br /></li>
+<li><a href="https://colab.research.google.com/drive/1IowJ_8ZYdGLCdxCJarYbhR_haic66v30#scrollTo=JoOBjnTlrH4o">20231111專題式程式教學-Python.ipynb</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=cCDu5i6UQEM">股價預測AI實作</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4a2d98d" class="outline-2">
+<h2 id="org4a2d98d"><span class="section-number-2">3.</span> 安裝 Windows Docker Desktop</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org783a843" class="outline-3">
+<h3 id="org783a843"><span class="section-number-3">3.1.</span> resource</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><a href="https://learn.microsoft.com/zh-tw/windows/wsl/install">如何使用 WSL 在 Windows 上安裝 Linux</a><br /></li>
+<li><a href="https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers">在 WSL 2 上開始使用 Docker 遠端容器</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeb1ace3" class="outline-3">
+<h3 id="orgeb1ace3"><span class="section-number-3">3.2.</span> step</h3>
+<div class="outline-text-3" id="text-3-2">
+<ol class="org-ol">
+<li>下載: <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a><br /></li>
+<li>check: Use WSL 2 instead of Hyper-V<br /></li>
+<li>check: Add shourtcut to desktop<br /></li>
+<li>點選桌面icon，選擇Accept，有額外詢問一律skip<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org9e25b49" class="outline-2">
+<h2 id="org9e25b49"><span class="section-number-2">4.</span> Ideas about 實作</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgbeb39b8" class="outline-3">
+<h3 id="orgbeb39b8"><span class="section-number-3">4.1.</span> 成績處理</h3>
+</div>
+<div id="outline-container-orgc299c83" class="outline-3">
+<h3 id="orgc299c83"><span class="section-number-3">4.2.</span> 團購處理統計</h3>
+</div>
+<div id="outline-container-org145076c" class="outline-3">
+<h3 id="org145076c"><span class="section-number-3">4.3.</span> LINE bot</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+團購處理統計後以 LINE 通知<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://steam.oxxostudio.tw/category/python/spider/line-notify.html">發送 LINE Notify 通知</a><br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org410518f" class="outline-2">
+<h2 id="org410518f"><span class="section-number-2">5.</span> Python 編寫環境與基礎語法</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+9:10-10:00 / 50 mins<br />
+</p>
+</div>
+<div id="outline-container-org6198f4b" class="outline-3">
+<h3 id="org6198f4b"><span class="section-number-3">5.1.</span> 1. Colab 編寫環境</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="https://colab.research.google.com/drive/1IowJ_8ZYdGLCdxCJarYbhR_haic66v30?usp=sharing">20231111專題式程式教學1-Colab環境.ipynb</a><br /></li>
+<li>儲存格的類型<br /></li>
+<li>Text Cell<br /></li>
+<li>Code Cell: 輸出<br /></li>
+<li>Code Cell: 輸入<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org40f14db" class="outline-3">
+<h3 id="org40f14db"><span class="section-number-3">5.2.</span> 2. 變數、輪入、輸出、運算</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li><a href="https://colab.research.google.com/drive/1JSLCt_AJDSEPtr1J9LHXqZzGgAsWGPCZ?usp=sharing">20231111專題式程式教學2-Python的變數.ipynb</a><br /></li>
+<li>變數<br /></li>
+<li>輸入變數<br /></li>
+<li>進階的輸入<br /></li>
+<li>運算式與內建函數<br /></li>
+<li>外部函數<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21f240a" class="outline-3">
+<h3 id="org21f240a"><span class="section-number-3">5.3.</span> 3. 條件</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li><a href="https://colab.research.google.com/drive/1MG_7dAAH4W0LiHLOUXDtMvLQAc_JDOdU?usp=sharing">20231111專題式程式教學3-Python的條件判斷.ipynb</a><br /></li>
+<li>if<br /></li>
+<li>縮排的重要性<br /></li>
+<li>if .. else<br /></li>
+<li>if &#x2026; elif .. else<br /></li>
+<li>巢狀條件<br /></li>
+<li>複雜的關係運算式<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org32f53fc" class="outline-3">
+<h3 id="org32f53fc"><span class="section-number-3">5.4.</span> 4. 自訂函數</h3>
+</div>
+<div id="outline-container-org0b03960" class="outline-3">
+<h3 id="org0b03960"><span class="section-number-3">5.5.</span> 5. 假裝很專業的 UI 設計</h3>
+</div>
+<div id="outline-container-orgca2b183" class="outline-3">
+<h3 id="orgca2b183"><span class="section-number-3">5.6.</span> 番外篇: 什麼是 ipynb?</h3>
+</div>
+<div id="outline-container-org5e14490" class="outline-3">
+<h3 id="org5e14490"><span class="section-number-3">5.7.</span> 6. 複雜的資料</h3>
+</div>
+<div id="outline-container-org66e1ec7" class="outline-3">
+<h3 id="org66e1ec7"><span class="section-number-3">5.8.</span> 7. 第三方套件: Pandas</h3>
+</div>
+<div id="outline-container-orgbe2ed6a" class="outline-3">
+<h3 id="orgbe2ed6a"><span class="section-number-3">5.9.</span> 8. 第三方套件: MatPlotLib</h3>
+</div>
+<div id="outline-container-org0fcf122" class="outline-3">
+<h3 id="org0fcf122"><span class="section-number-3">5.10.</span> 9. 第三方套件: LINE Notification</h3>
+</div>
+</div>
+<div id="outline-container-org0649793" class="outline-2">
+<h2 id="org0649793"><span class="section-number-2">6.</span> 休息</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+10:00-10:10 / 10 mins<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org44be952" class="outline-2">
+<h2 id="org44be952"><span class="section-number-2">7.</span> Python 基礎語法實作</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+10:10-11:40 / 90 mins<br />
+</p>
+</div>
+<div id="outline-container-orge09efd9" class="outline-3">
+<h3 id="orge09efd9"><span class="section-number-3">7.1.</span> 進階語法</h3>
+</div>
+<div id="outline-container-orgafe938c" class="outline-3">
+<h3 id="orgafe938c"><span class="section-number-3">7.2.</span> 套件</h3>
+<div class="outline-text-3" id="text-7-2">
+</div>
+<ol class="org-ol">
+<li><a id="org17c5a0f"></a>MatPlotLib<br /></li>
+<li><a id="org6439ea2"></a>JSON<br /></li>
+<li><a id="org45ff836"></a>Numpy<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6c6e119" class="outline-2">
+<h2 id="org6c6e119"><span class="section-number-2">8.</span> 午膳休息</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+11:40-13:00 / 80 mins<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9629a7e" class="outline-2">
+<h2 id="org9629a7e"><span class="section-number-2">9.</span> 資料分析實作 1</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+13:00-14:30 / 90 mins<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org25df6d0" class="outline-2">
+<h2 id="org25df6d0"><span class="section-number-2">10.</span> 休息</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+14:30-14:40 / 10 mins<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9b9b184" class="outline-2">
+<h2 id="org9b9b184"><span class="section-number-2">11.</span> 資料分析應用 2</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+14:40-15:30 / 50 mins<br />
+</p>
+</div>
+<div id="outline-container-org04f199d" class="outline-3">
+<h3 id="org04f199d"><span class="section-number-3">11.1.</span> 小組實作</h3>
+<div class="outline-text-3" id="text-11-1">
+<ul class="org-ul">
+<li>團購輸入<br /></li>
+<li>統計<br /></li>
+<li>圖表<br /></li>
+<li>LINE 通知<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org04bad2c" class="outline-2">
+<h2 id="org04bad2c"><span class="section-number-2">12.</span> 休息</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+15:30-15:40 / 10 mins<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org30e6aec" class="outline-2">
+<h2 id="org30e6aec"><span class="section-number-2">13.</span> 綜合座談</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+15:40-16:00 / 20 mins<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2024-03-13 Wed 08:19</p>
+</div>
+</body>
+</html>

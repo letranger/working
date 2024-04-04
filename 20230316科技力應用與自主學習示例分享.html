@@ -1,0 +1,2267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-03-03 Fri 12:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>科技力應用與自主學習示例分享</title>
+<meta name="author" content="Yung Chin, Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">科技力應用與自主學習示例分享</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgbe08ea7">1. 研習內容</a></li>
+<li><a href="#org7d3fd78">2. collaborative code editing</a></li>
+<li><a href="#orge0eb99b">3. programming</a></li>
+<li><a href="#orgbcf1cb3">4. 大綱</a>
+<ul>
+<li><a href="#org9c5aae4">4.1. 各種工具的icon</a></li>
+</ul>
+</li>
+<li><a href="#orgf1a0abb">5. Host Platform</a>
+<ul>
+<li><a href="#org375443c">5.1. Google Class</a></li>
+<li><a href="#org030b248">5.2. Moodle</a></li>
+</ul>
+</li>
+<li><a href="#orgbd7dfe3">6. 高中的自主學習現況</a>
+<ul>
+<li><a href="#org7c49a61">6.1. 超過60%學生不喜歡自主學習</a></li>
+<li><a href="#org0744f8e">6.2. 74%的學生提出自主學習計畫，選擇方向與未來申請大學科系相關</a></li>
+<li><a href="#orgad16352">6.3. 76%期待老師給予資源，但只有10%學生自主學習時間會找指導老師</a></li>
+<li><a href="#orgedbe465">6.4. 75%的學生認為自主學習時間不夠充裕</a></li>
+</ul>
+</li>
+<li><a href="#org5462037">7. Google Classroom: Python Introduction</a>
+<ul>
+<li><a href="#orgbbb9bc2">7.1. 課前自學</a></li>
+<li><a href="#orgc547529">7.2. 小組討論</a></li>
+<li><a href="#orgd8ac0df">7.3. 小組報告</a></li>
+<li><a href="#orge99d16c">7.4. 教師導學</a></li>
+<li><a href="#org2f395af">7.5. Google Classroom測驗</a></li>
+<li><a href="#orgb42adbe">7.6. Edpuzzle[影片]</a></li>
+<li><a href="#org7ba4623">7.7. Nearpod</a></li>
+<li><a href="#org2999613">7.8. Jamboard</a></li>
+<li><a href="#orgc17cbe2">7.9. Padlet</a></li>
+<li><a href="#org136f195">7.10. KAMI</a></li>
+<li><a href="#org4e2b883">7.11. Quizlet</a></li>
+<li><a href="#orgfedb839">7.12. Quizizz</a></li>
+<li><a href="#org6206af0">7.13. Socrative</a></li>
+<li><a href="#orgaa13d94">7.14. SeeSaw</a></li>
+<li><a href="#org4489f2f">7.15. Classkick</a></li>
+<li><a href="#org5415f16">7.16. KAHOOT</a></li>
+<li><a href="#org1bb8419">7.17. PADLET</a></li>
+<li><a href="#org5133962">7.18. 示範</a></li>
+<li><a href="#org514ec8b">7.19. 自學</a></li>
+<li><a href="#orgf0aa11d">7.20. 程式</a></li>
+<li><a href="#orgf25beff">7.21. 共學</a></li>
+<li><a href="#orgafc12d9">7.22. 總結</a></li>
+</ul>
+</li>
+<li><a href="#orgd53a770">8. Ideas</a></li>
+<li><a href="#orga11667e">9. 留白</a>
+<ul>
+<li><a href="#orga3ea97b">9.1. 如何訓練: 從小單元的輔助自主學習做起</a></li>
+<li><a href="#org6cc4607">9.2. 反省: 為什麼學生不會自學?</a></li>
+<li><a href="#org354b088">9.3. 引導學生進行自主學習的要點</a></li>
+</ul>
+</li>
+<li><a href="#org872c77c">10. 教學決定</a>
+<ul>
+<li><a href="#org7903295">10.1. 先反思我們是如何自主學習新知識的</a></li>
+</ul>
+</li>
+<li><a href="#org7b1faf9">11. 混合式教學</a>
+<ul>
+<li><a href="#org75037ea">11.1. 定義</a></li>
+</ul>
+</li>
+<li><a href="#orgaa78e3f">12. 輔助科技類型</a>
+<ul>
+<li><a href="#org6bbb6a6">12.1. 整合式數位學習平台(LMS)</a></li>
+<li><a href="#org552ad97">12.2. 討論互動</a></li>
+<li><a href="#org90ce1c3">12.3. 小組合作</a></li>
+<li><a href="#orgdb38280">12.4. 作品展示</a></li>
+<li><a href="#org189e6d4">12.5. 測驗評量</a></li>
+</ul>
+</li>
+<li><a href="#orged31042">13. 工具</a>
+<ul>
+<li><a href="#org27ef5a8">13.1. App</a></li>
+<li><a href="#org01aa39d">13.2. 自學</a></li>
+<li><a href="#orgae23b5b">13.3. 學習平台</a></li>
+<li><a href="#orge8f21d0">13.4. 評量</a></li>
+<li><a href="#org5dca3a9">13.5. 互動</a></li>
+<li><a href="#orgf2e44d1">13.6. 合作</a></li>
+<li><a href="#org8ce7701">13.7. 影片錄製</a></li>
+<li><a href="#org7b149ea">13.8. 社群:</a></li>
+<li><a href="#org3343190">13.9. AR/VR</a></li>
+<li><a href="#org893f971">13.10. AI</a></li>
+</ul>
+</li>
+<li><a href="#org5b7aff4">14. 逐步責任轉移的歷程(台東大學特教系曾世杰教授：閱讀)</a></li>
+<li><a href="#orgf7b8b61">15. 挑選工具的原則</a></li>
+<li><a href="#orga2b86e8">16. 自主學習沒告訴你的事</a>
+<ul>
+<li><a href="#org2a329a8">16.1. 可以節省時間</a></li>
+<li><a href="#orgd50baef">16.2. 學生可能同時學到自主學習與學習內容，也可能同時都沒學到</a></li>
+<li><a href="#org42d5f82">16.3. 解決: 學生的分享以錄影方式製作/播放</a></li>
+</ul>
+</li>
+<li><a href="#org4ac1597">17. 現階段面臨的問題</a>
+<ul>
+<li><a href="#org9f33cb9">17.1. 工具無優劣，適用才重要</a></li>
+<li><a href="#orga31f8e1">17.2. 作業繳交</a></li>
+</ul>
+</li>
+<li><a href="#org69e1ef2">18. 學生的五種學習模式(花蓮林國源校長)</a></li>
+<li><a href="#org5a617f5">19. 大綱</a>
+<ul>
+<li><a href="#org4d540f5">19.1. 自主學習需要什麼輔助</a></li>
+<li><a href="#org7977314">19.2. 目前教學的問題：問題不是工具不夠、是工具太多</a></li>
+<li><a href="#orgf70820b">19.3. 如何挑選合適的工具</a></li>
+<li><a href="#org0cbb02e">19.4. 挑選的原則</a></li>
+</ul>
+</li>
+<li><a href="#orgfdb546a">20. 示例</a>
+<ul>
+<li><a href="#orgec8f61c">20.1. 國文</a></li>
+</ul>
+</li>
+<li><a href="#orge1e4fc5">21. chatGPT</a></li>
+<li><a href="#org0ab2d9a">22. 國中 v.s. 高中的自主學習</a>
+<ul>
+<li><a href="#org48ba31b">22.1. 國中</a></li>
+<li><a href="#orgc9bf7ca">22.2. 高中</a></li>
+</ul>
+</li>
+<li><a href="#org541cf7d">23. 我們需要什麼輔助?</a></li>
+<li><a href="#org48b1edb">24. 小組出題/解題</a>
+<ul>
+<li><a href="#org8d1e6e4">24.1. 主講人：國立政治大學 江玥慧助理教授</a></li>
+<li><a href="#orgcb59dce">24.2. 以學習者為主體的程式設計教學實踐  / 推動大學程式設計教學計畫</a></li>
+</ul>
+</li>
+<li><a href="#orgd044ab6">25. 資源</a></li>
+</ul>
+</div>
+</div>
+<p>
+#+begin_export html<br />
+</p>
+
+<div id="outline-container-orgbe08ea7" class="outline-2">
+<h2 id="orgbe08ea7"><span class="section-number-2">1.</span> 研習內容</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>國中科技領域召集人課程領導增能研習<br /></li>
+<li>研習對象及人數:本市公私立國中教師，預估100人<br /></li>
+<li>研習時間:112年3月16日（星期四）8:40-9:30<br /></li>
+<li>研習地點:輔導團302會議室<br /></li>
+</ul>
+
+<div id="orga458f2c" class="figure">
+<p><img src="images/研習內容/2023-02-15_22-26-24_2023-02-15_22-26-21.png" alt="2023-02-15_22-26-24_2023-02-15_22-26-21.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7d3fd78" class="outline-2">
+<h2 id="org7d3fd78"><span class="section-number-2">2.</span> collaborative code editing</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://codeshare.io/">https://codeshare.io/</a><br /></li>
+<li><a href="https://codecollab.io/">https://codecollab.io/</a><br /></li>
+<li><a href="https://app.coderpad.io/">https://app.coderpad.io/</a> : 可以執行、interview<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge0eb99b" class="outline-2">
+<h2 id="orge0eb99b"><span class="section-number-2">3.</span> programming</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="https://hueyanchen.github.io/">https://hueyanchen.github.io/</a><br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbcf1cb3" class="outline-2">
+<h2 id="orgbcf1cb3"><span class="section-number-2">4.</span> 大綱</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>目前&ldquo;科技輔助自主學習&rdquo;的困擾不是沒有工具，而是工具太多，整合困難<br /></li>
+<li>學生: 每個工具都要一個帳號、開一個網頁或APP<br /></li>
+<li>教師: 學生作業分散在不同平台、評分麻煩<br /></li>
+<li>怎麼辦：確定一個HOME平台、找一兩個用的最順手的工具<br /></li>
+<li>因材網: 目前不是資訊科最適用的平台<br /></li>
+<li>母平台: MOODLE/Google Classroom<br /></li>
+</ul>
+</div>
+<div id="outline-container-org9c5aae4" class="outline-3">
+<h3 id="org9c5aae4"><span class="section-number-3">4.1.</span> 各種工具的icon</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<div id="orga5e5f8b" class="figure">
+<p><img src="images/大綱/2023-02-22_09-02-49_2023-02-22_09-02-45.png" alt="2023-02-22_09-02-49_2023-02-22_09-02-45.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 2: </span>標題</p>
+</div>
+
+
+
+<div id="orgd1e9525" class="figure">
+<p><img src="images/大綱/2023-02-22_09-04-51_2023-02-22_09-04-37.png" alt="2023-02-22_09-04-51_2023-02-22_09-04-37.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 3: </span>標題</p>
+</div>
+
+
+
+<div id="orga9cdde2" class="figure">
+<p><img src="images/大綱/2023-02-22_09-38-31_2023-02-22_09-38-21.png" alt="2023-02-22_09-38-31_2023-02-22_09-38-21.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 4: </span>標題</p>
+</div>
+
+
+
+
+<div id="org68df260" class="figure">
+<p><img src="images/大綱/2023-02-22_09-10-34_2023-02-22_09-10-27.png" alt="2023-02-22_09-10-34_2023-02-22_09-10-27.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 5: </span>標題</p>
+</div>
+
+
+
+
+<div id="org488c428" class="figure">
+<p><img src="images/大綱/2023-02-22_09-11-20_2023-02-22_09-11-11.png" alt="2023-02-22_09-11-20_2023-02-22_09-11-11.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 6: </span>標題</p>
+</div>
+
+
+
+<div id="org10540c5" class="figure">
+<p><img src="images/大綱/2023-02-22_09-09-00_2023-02-22_09-08-51.png" alt="2023-02-22_09-09-00_2023-02-22_09-08-51.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 7: </span>標題</p>
+</div>
+
+
+
+<div id="orgb593f0d" class="figure">
+<p><img src="images/大綱/2023-02-22_09-09-40_2023-02-22_09-09-34.png" alt="2023-02-22_09-09-40_2023-02-22_09-09-34.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 8: </span>標題</p>
+</div>
+
+
+
+<div id="orgb6c10b5" class="figure">
+<p><img src="images/大綱/2023-02-22_09-12-24_2023-02-22_09-12-15.png" alt="2023-02-22_09-12-24_2023-02-22_09-12-15.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 9: </span>標題</p>
+</div>
+
+
+
+<div id="org0a27cfb" class="figure">
+<p><img src="images/大綱/2023-02-22_09-12-45_2023-02-22_09-12-42.png" alt="2023-02-22_09-12-45_2023-02-22_09-12-42.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 10: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgf3b20fd" class="figure">
+<p><img src="images/大綱/2023-02-22_08-59-16_Screen-Shot-2015-07-01-at-4.04.42-PM.png" alt="2023-02-22_08-59-16_Screen-Shot-2015-07-01-at-4.04.42-PM.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 11: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgd5a3913" class="figure">
+<p><img src="images/大綱/2023-02-22_09-28-55_2023-02-22_09-28-36.png" alt="2023-02-22_09-28-55_2023-02-22_09-28-36.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 12: </span>標題</p>
+</div>
+
+
+
+
+<div id="org81726c0" class="figure">
+<p><img src="images/大綱/2023-02-22_09-29-43_2023-02-22_09-29-37.png" alt="2023-02-22_09-29-43_2023-02-22_09-29-37.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 13: </span>標題</p>
+</div>
+
+
+
+
+<div id="org9cb1fd4" class="figure">
+<p><img src="images/大綱/2023-02-22_09-14-12_2023-02-22_09-14-00.png" alt="2023-02-22_09-14-12_2023-02-22_09-14-00.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 14: </span>標題</p>
+</div>
+
+
+<div id="orgf763581" class="figure">
+<p><img src="images/大綱/2023-02-22_09-14-47_2023-02-22_09-14-39.png" alt="2023-02-22_09-14-47_2023-02-22_09-14-39.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 15: </span>標題</p>
+</div>
+
+
+
+<div id="org7c83633" class="figure">
+<p><img src="images/大綱/2023-02-22_09-15-31_2023-02-22_09-15-26.png" alt="2023-02-22_09-15-31_2023-02-22_09-15-26.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 16: </span>標題</p>
+</div>
+
+
+
+<div id="orgd152a33" class="figure">
+<p><img src="images/大綱/2023-02-22_09-16-36_2023-02-22_09-16-30.png" alt="2023-02-22_09-16-36_2023-02-22_09-16-30.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 17: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgaa2a80a" class="figure">
+<p><img src="images/大綱/2023-02-22_09-17-58_2023-02-22_09-17-52.png" alt="2023-02-22_09-17-58_2023-02-22_09-17-52.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 18: </span>標題</p>
+</div>
+
+
+
+<div id="org9a0c787" class="figure">
+<p><img src="images/大綱/2023-02-22_09-19-03_2023-02-22_09-19-00.png" alt="2023-02-22_09-19-03_2023-02-22_09-19-00.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 19: </span>標題</p>
+</div>
+
+
+<div id="org6a6183e" class="figure">
+<p><img src="images/大綱/2023-02-22_09-19-23_2023-02-22_09-19-18.png" alt="2023-02-22_09-19-23_2023-02-22_09-19-18.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 20: </span>標題</p>
+</div>
+
+
+
+<div id="org6f63567" class="figure">
+<p><img src="images/大綱/2023-02-22_09-20-12_2023-02-22_09-20-02.png" alt="2023-02-22_09-20-12_2023-02-22_09-20-02.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 21: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgdac4e35" class="figure">
+<p><img src="images/大綱/2023-02-22_09-22-55_2023-02-22_09-22-29.png" alt="2023-02-22_09-22-55_2023-02-22_09-22-29.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 22: </span>標題</p>
+</div>
+
+
+
+<div id="orga44aae5" class="figure">
+<p><img src="images/大綱/2023-02-22_09-23-40_2023-02-22_09-23-31.png" alt="2023-02-22_09-23-40_2023-02-22_09-23-31.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 23: </span>標題</p>
+</div>
+
+
+
+<div id="org1de7a10" class="figure">
+<p><img src="images/大綱/2023-02-22_09-24-55_2023-02-22_09-24-40.png" alt="2023-02-22_09-24-55_2023-02-22_09-24-40.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 24: </span>標題</p>
+</div>
+
+
+
+<div id="org14389c4" class="figure">
+<p><img src="images/大綱/2023-02-22_09-26-50_2023-02-22_09-26-36.png" alt="2023-02-22_09-26-50_2023-02-22_09-26-36.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 25: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgfbed480" class="figure">
+<p><img src="images/大綱/2023-02-22_09-27-36_2023-02-22_09-27-24.png" alt="2023-02-22_09-27-36_2023-02-22_09-27-24.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 26: </span>標題</p>
+</div>
+
+
+
+<div id="org360307b" class="figure">
+<p><img src="images/大綱/2023-02-22_09-31-41_2023-02-22_09-31-26.png" alt="2023-02-22_09-31-41_2023-02-22_09-31-26.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 27: </span>標題</p>
+</div>
+
+
+
+
+<div id="org5968ed9" class="figure">
+<p><img src="images/大綱/2023-02-22_09-32-17_2023-02-22_09-32-03.png" alt="2023-02-22_09-32-17_2023-02-22_09-32-03.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 28: </span>標題</p>
+</div>
+
+
+
+
+<div id="org4914379" class="figure">
+<p><img src="images/大綱/2023-02-22_09-32-59_2023-02-22_09-32-55.png" alt="2023-02-22_09-32-59_2023-02-22_09-32-55.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 29: </span>標題</p>
+</div>
+
+
+
+
+<div id="org8bb4552" class="figure">
+<p><img src="images/大綱/2023-02-22_09-35-39_2023-02-22_09-35-33.png" alt="2023-02-22_09-35-39_2023-02-22_09-35-33.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 30: </span>標題</p>
+</div>
+
+
+
+<div id="org5ccebbe" class="figure">
+<p><img src="images/大綱/2023-02-22_09-36-06_2023-02-22_09-36-00.png" alt="2023-02-22_09-36-06_2023-02-22_09-36-00.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 31: </span>標題</p>
+</div>
+</div>
+
+
+<ol class="org-ol">
+<li><a id="orgc0d914e"></a>播放<br /></li>
+
+<li><a id="org7ff2156"></a>測驗<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf1a0abb" class="outline-2">
+<h2 id="orgf1a0abb"><span class="section-number-2">5.</span> Host Platform</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org375443c" class="outline-3">
+<h3 id="org375443c"><span class="section-number-3">5.1.</span> Google Class</h3>
+</div>
+<div id="outline-container-org030b248" class="outline-3">
+<h3 id="org030b248"><span class="section-number-3">5.2.</span> Moodle</h3>
+</div>
+</div>
+
+<div id="outline-container-orgbd7dfe3" class="outline-2">
+<h2 id="orgbd7dfe3"><span class="section-number-2">6.</span> 高中的自主學習現況<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>10%的學生在做與自主學習計畫相關的工作，<br /></li>
+<li>70%的學生在準備下一堂的考科，<br /></li>
+<li>20%學生在發呆、睡覺、聊天，或是從事其他活動<br /></li>
+</ul>
+</div>
+<div id="outline-container-org7c49a61" class="outline-3">
+<h3 id="org7c49a61"><span class="section-number-3">6.1.</span> 超過60%學生不喜歡自主學習</h3>
+<div class="outline-text-3" id="text-6-1">
+
+<div id="orgd07dba1" class="figure">
+<p><img src="images/高中的自主學習現況/2023-03-01_20-49-38_477ba7cab17394dd1bc51ff946840afe-124419.jpg" alt="2023-03-01_20-49-38_477ba7cab17394dd1bc51ff946840afe-124419.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 32: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0744f8e" class="outline-3">
+<h3 id="org0744f8e"><span class="section-number-3">6.2.</span> 74%的學生提出自主學習計畫，選擇方向與未來申請大學科系相關</h3>
+<div class="outline-text-3" id="text-6-2">
+
+<div id="orgc0c2a43" class="figure">
+<p><img src="images/高中的自主學習現況/2023-03-01_20-50-01_393a64c63ae890b96a05ee72cc67692e-137224.jpg" alt="2023-03-01_20-50-01_393a64c63ae890b96a05ee72cc67692e-137224.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 33: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgad16352" class="outline-3">
+<h3 id="orgad16352"><span class="section-number-3">6.3.</span> 76%期待老師給予資源，但只有10%學生自主學習時間會找指導老師</h3>
+<div class="outline-text-3" id="text-6-3">
+
+<div id="org3260df3" class="figure">
+<p><img src="images/高中的自主學習現況/2023-03-01_20-51-28_0e9e30cc40308732d129bd200cb609d4-108898.jpg" alt="2023-03-01_20-51-28_0e9e30cc40308732d129bd200cb609d4-108898.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 34: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgedbe465" class="outline-3">
+<h3 id="orgedbe465"><span class="section-number-3">6.4.</span> 75%的學生認為自主學習時間不夠充裕</h3>
+<div class="outline-text-3" id="text-6-4">
+
+<div id="org2324d83" class="figure">
+<p><img src="images/高中的自主學習現況/2023-03-01_20-52-06_152168ff5f7eb97f9a61f684e29cb2b1-152597.jpg" alt="2023-03-01_20-52-06_152168ff5f7eb97f9a61f684e29cb2b1-152597.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 35: </span>標題</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org5462037" class="outline-2">
+<h2 id="org5462037"><span class="section-number-2">7.</span> Google Classroom: Python Introduction</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgbbb9bc2" class="outline-3">
+<h3 id="orgbbb9bc2"><span class="section-number-3">7.1.</span> 課前自學</h3>
+</div>
+
+<div id="outline-container-orgc547529" class="outline-3">
+<h3 id="orgc547529"><span class="section-number-3">7.2.</span> 小組討論</h3>
+</div>
+<div id="outline-container-orgd8ac0df" class="outline-3">
+<h3 id="orgd8ac0df"><span class="section-number-3">7.3.</span> 小組報告</h3>
+</div>
+<div id="outline-container-orge99d16c" class="outline-3">
+<h3 id="orge99d16c"><span class="section-number-3">7.4.</span> 教師導學</h3>
+</div>
+<div id="outline-container-org2f395af" class="outline-3">
+<h3 id="org2f395af"><span class="section-number-3">7.5.</span> Google Classroom測驗</h3>
+<div class="outline-text-3" id="text-7-5">
+<ul class="org-ul">
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScZ98XvrcuPRttee643QG9LtPYiyK_qUD02w1Lfjxm2P_BYqQ/viewform">從0開始學AI-皮爾森相關係數練習</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb42adbe" class="outline-3">
+<h3 id="orgb42adbe"><span class="section-number-3">7.6.</span> Edpuzzle[影片]</h3>
+<div class="outline-text-3" id="text-7-6">
+</div>
+<ol class="org-ol">
+<li><a id="org6f99694"></a>影片的重點<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup><br />
+<div class="outline-text-4" id="text-7-6-1">
+<p>
+影片是翻轉學習的重要面向，可以適時發揮單向教學的價值，但不是最重要的。影片應該用來當做翻轉學習的入口，而更深、更廣的學習可以從這裡開始。翻轉會失敗，有幾個最常見原因：<br />
+</p>
+<ol class="org-ol">
+<li>影片太長：影片長度的黃金比例是「年級×一～一．五分」。也就是錄給四年級生的影片，不宜超過四～六分鐘；錄給十年級生的影片應控制在十～十五分鐘，超過半小時以上，學生會覺得有負擔。<br /></li>
+<li>沒有教學生如何看影片：老師需要事先教學生「如何看影片」，這不是被動的過程，有老師甚至會設計摘要格式或工具，幫助學生明白看影片自己需完成的任務，如：觀賞－摘要－提問。<br /></li>
+<li>未讓學生承擔不預習的後果：學生沒有看影片就來到教室，老師幫忙挽救，讓學生覺得在家不預習也無妨，也很難翻轉。<br /></li>
+</ol>
+<p>
+根據我八年的觀察與經驗，老師必須持續翻轉至少三年，才會看到成果。理由很簡單，翻轉就像是建立文化，不會一、兩天就看到結果。第一年最累、最難，因為老師和學生都在調適；第二年老師會花很多力氣在調整教學布局與細節上；第三年，當基礎建設都穩固，很多事得以順利運作，有意義的學習情境發生頻率變高，學生和老師才會感受到翻轉學習對彼此的好處，適應主動學習的文化。<br />
+</p>
+
+<p>
+校長必須支持老師，給予時間和空間，因為翻轉需要很多投入。給老師一個月或一學期的期限，然後用標準評量成績衡量翻轉是否奏效，是不公平也不切實際的。<br />
+</p>
+</div>
+</li>
+<li><a id="org8ac93ee"></a>影片中的問題<br />
+<div class="outline-text-4" id="text-7-6-2">
+<ul class="org-ul">
+<li><a href="https://www.google.com/search?client=firefox-b-d&amp;q=edupzzle+%22google+classroom%22#fpstate=ive&amp;vld=cid:61e1f8c6,vid:A9EGVWNhz8o">https://www.google.com/search?client=firefox-b-d&amp;q=edupzzle+%22google+classroom%22#fpstate=ive&amp;vld=cid:61e1f8c6,vid:A9EGVWNhz8o</a><br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7ba4623" class="outline-3">
+<h3 id="org7ba4623"><span class="section-number-3">7.7.</span> Nearpod</h3>
+<div class="outline-text-3" id="text-7-7">
+<p>
+40個學生/100MB<br />
+</p>
+<ul class="org-ul">
+<li>All the basic features you need to get started with Nearpod.<br /></li>
+<li>100 MB Storage<br /></li>
+<li>40 student joins per lesson<br /></li>
+</ul>
+
+
+<div id="org069c40c" class="figure">
+<p><img src="images/Google_Classroom/2023-02-25_10-25-25_2023-02-25_10-25-10.png" alt="2023-02-25_10-25-25_2023-02-25_10-25-10.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 36: </span>標題</p>
+</div>
+
+
+<p width="500">
+<img src="images/Google_Classroom/2023-02-27_10-25-12_2023-02-27_10-24-47.png" alt="2023-02-27_10-25-12_2023-02-27_10-24-47.png" width="500" /><br />
+Nearpod fill in the blank<br />
+程式填空<br />
+<a href="https://www.youtube.com/watch?v=hVOfbXl2f2c">https://www.youtube.com/watch?v=hVOfbXl2f2c</a><br />
+</p>
+
+<p>
+Nearpod standard features and functionality question blue<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=_t6cwsCS8EI">https://www.youtube.com/watch?v=_t6cwsCS8EI</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=3SrDF_6BGUw">https://www.youtube.com/watch?v=3SrDF_6BGUw</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=Iu-RCCjGwPo">https://www.youtube.com/watch?v=Iu-RCCjGwPo</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=QXPEOKN2Z3I">https://www.youtube.com/watch?v=QXPEOKN2Z3I</a><br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2999613" class="outline-3">
+<h3 id="org2999613"><span class="section-number-3">7.8.</span> Jamboard</h3>
+<div class="outline-text-3" id="text-7-8">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=twZooIP9DzQ">https://www.youtube.com/watch?v=twZooIP9DzQ</a><br />
+如何在Jamboard提供寫字練習<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc17cbe2" class="outline-3">
+<h3 id="orgc17cbe2"><span class="section-number-3">7.9.</span> Padlet</h3>
+<div class="outline-text-3" id="text-7-9">
+<ul class="org-ul">
+<li>Share on Google Classroom<br /></li>
+<li>學生學習歷程檔案<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org136f195" class="outline-3">
+<h3 id="org136f195"><span class="section-number-3">7.10.</span> KAMI</h3>
+<div class="outline-text-3" id="text-7-10">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=IvaAFFL4Gvc"> 網路資源分享&#x2013;教學神器Kami(台中家商蕭仕原)</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4e2b883" class="outline-3">
+<h3 id="org4e2b883"><span class="section-number-3">7.11.</span> Quizlet</h3>
+<div class="outline-text-3" id="text-7-11">
+<p>
+適合英文科教學、單字卡<br />
+<a href="https://www.youtube.com/watch?v=8SR-zHsktS8">https://www.youtube.com/watch?v=8SR-zHsktS8</a><br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfedb839" class="outline-3">
+<h3 id="orgfedb839"><span class="section-number-3">7.12.</span> Quizizz</h3>
+<div class="outline-text-3" id="text-7-12">
+<p>
+可以自動滙入成績到Google classroom<br />
+<a href="https://www.youtube.com/watch?v=pEgesYvXUzI">https://www.youtube.com/watch?v=pEgesYvXUzI</a><br />
+<a href="https://www.youtube.com/watch?v=Inrpzf9mPKE">https://www.youtube.com/watch?v=Inrpzf9mPKE</a><br />
+</p>
+<ul class="org-ul">
+<li>Assign activities to Google Classroom<br /></li>
+</ul>
+<p>
+<a href="https://www.youtube.com/watch?v=zlsZ2yMnDN0">https://www.youtube.com/watch?v=zlsZ2yMnDN0</a><br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6206af0" class="outline-3">
+<h3 id="org6206af0"><span class="section-number-3">7.13.</span> Socrative</h3>
+<div class="outline-text-3" id="text-7-13">
+<p>
+專業測驗、可自動分組、有測驗進度控制<br />
+<a href="https://www.youtube.com/watch?v=wT2pMr_7eKg">https://www.youtube.com/watch?v=wT2pMr_7eKg</a><br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa13d94" class="outline-3">
+<h3 id="orgaa13d94"><span class="section-number-3">7.14.</span> SeeSaw</h3>
+<div class="outline-text-3" id="text-7-14">
+<p>
+唯一優點：作業繳交一目瞭然<br />
+不能給分、只有comment, like<br />
+<a href="https://www.youtube.com/watch?v=sWkShUj7dUw">https://www.youtube.com/watch?v=sWkShUj7dUw</a><br />
+<a href="https://www.youtube.com/watch?v=Zl6ewhiVLro">https://www.youtube.com/watch?v=Zl6ewhiVLro</a><br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4489f2f" class="outline-3">
+<h3 id="org4489f2f"><span class="section-number-3">7.15.</span> Classkick</h3>
+<div class="outline-text-3" id="text-7-15">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=TEaA7fWZ7Dw">聽說讀寫畫打字的作業測驗都能通，順便直接用筆改的classkick</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=lQLLLlUf8iM">聽說讀寫打作業轉製神器：Classkick</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5415f16" class="outline-3">
+<h3 id="org5415f16"><span class="section-number-3">7.16.</span> KAHOOT</h3>
+<div class="outline-text-3" id="text-7-16">
+
+<div id="org0463537" class="figure">
+<p><img src="images/Google_Classroom/2023-02-22_08-50-17_assign-a-kahoot-challenge-with-google-classroom-1-630x1024.png" alt="2023-02-22_08-50-17_assign-a-kahoot-challenge-with-google-classroom-1-630x1024.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 37: </span>標題</p>
+</div>
+<ol class="org-ol">
+<li>選擇 Kahoot！ 遊戲。 點擊“播放”。<br /></li>
+<li>選擇“分配”作為播放方式。<br /></li>
+<li>自定義定時器，個性化學習，隨機化，友好暱稱等。<br /></li>
+<li>分配Kahoot！ 遊戲到谷歌課堂（作業給出成績。）<br /></li>
+<li>在報告中監控學生的進步。<br /></li>
+</ol>
+<p>
+<a href="https://www.youtube.com/watch?v=337rOieZAes">How to Use Kahoot Games in Google Classroom</a><br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1bb8419" class="outline-3">
+<h3 id="org1bb8419"><span class="section-number-3">7.17.</span> PADLET</h3>
+<div class="outline-text-3" id="text-7-17">
+<ul class="org-ul">
+<li>timeline: 發展史、硬體、軟體、作業系統、小組合作<br /></li>
+<li>學生課堂筆記: Timeline/Shelf/Canvas<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5133962" class="outline-3">
+<h3 id="org5133962"><span class="section-number-3">7.18.</span> 示範</h3>
+</div>
+<div id="outline-container-org514ec8b" class="outline-3">
+<h3 id="org514ec8b"><span class="section-number-3">7.19.</span> 自學</h3>
+</div>
+<div id="outline-container-orgf0aa11d" class="outline-3">
+<h3 id="orgf0aa11d"><span class="section-number-3">7.20.</span> 程式</h3>
+<div class="outline-text-3" id="text-7-20">
+</div>
+<ol class="org-ol">
+<li><a id="orgb7776a5"></a>Blockly for Python<br />
+<div class="outline-text-4" id="text-7-20-1">
+<ul class="org-ul">
+<li><a href="https://blockly-demo.appspot.com/static/demos/code/index.html?lang=zh-hant">https://blockly-demo.appspot.com/static/demos/code/index.html?lang=zh-hant</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org49e7aaf"></a>Blockly for c<br />
+<div class="outline-text-4" id="text-7-20-2">
+<p>
+<a href="https://hueyanchen.github.io/">Cake Blockly for C</a><br />
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf25beff" class="outline-3">
+<h3 id="orgf25beff"><span class="section-number-3">7.21.</span> 共學</h3>
+<div class="outline-text-3" id="text-7-21">
+<ul class="org-ul">
+<li>線上coding share<br />
+<a href="https://www.online-python.com/">https://www.online-python.com/</a><br /></li>
+<li>合作coding<br />
+<ul class="org-ul">
+<li><a href="https://app.coderpad.io/4N3QJMGK">https://app.coderpad.io/4N3QJMGK</a><br /></li>
+<li><a href="https://codeshare.io/register?saveCodeshare=vwOLyy">https://codeshare.io/register?saveCodeshare=vwOLyy</a><br /></li>
+<li><a href="https://codecollab.io/@ycyen/%E4%BD%9C%E6%A5%AD3-1">https://codecollab.io/@ycyen/%E4%BD%9C%E6%A5%AD3-1</a><br /></li>
+<li><a href="https://replit.com/@LetrangerYen/ImmaterialTrickyDecimals">https://replit.com/@LetrangerYen/ImmaterialTrickyDecimals</a><br /></li>
+</ul></li>
+<li>小組報告: padlet<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgafc12d9" class="outline-3">
+<h3 id="orgafc12d9"><span class="section-number-3">7.22.</span> 總結</h3>
+</div>
+</div>
+
+<div id="outline-container-orgd53a770" class="outline-2">
+<h2 id="orgd53a770"><span class="section-number-2">8.</span> Ideas</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li><a href="https://www.drsotayo.com/9-free-platforms-for-improving-student-and-participant-engagement-online/">https://www.drsotayo.com/9-free-platforms-for-improving-student-and-participant-engagement-online/</a><br /></li>
+<li>在教學過程中示例如何Google語法、示範如何進行從不會到會的參考過程，例如我在教Python的一次研習中示範python的google查詢，結果有人回覆不熟就不要教&#x2026;.QQ<br /></li>
+<li>我們還是太習慣老師什麼都要會，老師在教學過程中會把一切都安排好，但是實際上不是這樣，我們在自主學習的過程中一定是邊查邊學<br /></li>
+<li>Intel Colab例子<br /></li>
+<li>Python作業例子<br /></li>
+<li>工具<br /></li>
+<li>錄影: 教師錄影、學生錄影<br /></li>
+<li>題目解說: 學生用padlet的螢幕錄影來錄製解題過程(5分鐘)<br /></li>
+<li>教師將PDF傳到google classroom，以kami來解說、錄製課程<br /></li>
+<li>原本解說教材以網頁呈現<br /></li>
+<li>網頁輸出為PDF，以KAMI解說<br /></li>
+<li>padlet: 適合公開資料<br /></li>
+<li>seesaw: 適合交作業<br /></li>
+<li>概念留白，概念留白,上課講一半，考試會考<br /></li>
+<li>output留白: 給學生看code，讓學生回答code的輸出，<br /></li>
+<li>code留白: 讓學生上來手寫code，這個可以督促學生排版<br /></li>
+<li>範例: <a href="https://colab.research.google.com/drive/1e1Jo0jseE01auttXobc0h57Jn5X1M4wP#scrollTo=0VHPX8EZL16-">Data Visualization with Python</a><br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga11667e" class="outline-2">
+<h2 id="orga11667e"><span class="section-number-2">9.</span> 留白</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>早期的做法是：講義上沒有的不當作業、不列入考試<br /></li>
+<li>後來不小心作業出現講義上沒有的東西（開根號），學生抗議，本著死不認錯的精神，我的回覆是：為什麼不可以，然後就開始一系列的 <b>課外</b> 題<br /></li>
+</ul>
+</div>
+<div id="outline-container-orga3ea97b" class="outline-3">
+<h3 id="orga3ea97b"><span class="section-number-3">9.1.</span> 如何訓練: 從小單元的輔助自主學習做起</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>以Python教學中，讓學生自己去學習某一指令如何操作為例<br /></li>
+<li>以Python教學中，讓學生自己去解決某一問題為例(如，在colab或jupyter中處理matplotlib的中文問題)<br /></li>
+<li>以Intel的AI教材為例:<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6cc4607" class="outline-3">
+<h3 id="org6cc4607"><span class="section-number-3">9.2.</span> 反省: 為什麼學生不會自學?</h3>
+<div class="outline-text-3" id="text-9-2">
+<ul class="org-ul">
+<li>我們以前幫學生安排的太好了，一切循序漸進，學完這個、做完這些作業、再學下一個概念（指令、語法）、再做這些練習<br /></li>
+<li>相信學生自己能學是好事，相信就會看見<br /></li>
+<li>但是，可以稍作輔導、從小的概念自學開始<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org354b088" class="outline-3">
+<h3 id="org354b088"><span class="section-number-3">9.3.</span> 引導學生進行自主學習的要點</h3>
+<div class="outline-text-3" id="text-9-3">
+
+<div id="orgcbe9b39" class="figure">
+<p><img src="images/2022-08-24_12-46-31.png" alt="2022-08-24_12-46-31.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 38: </span>Caption</p>
+</div>
+<ul class="org-ul">
+<li>引導學生規劃可行的目標及學習方法<br /></li>
+<li>幫助學生自我覺察<br /></li>
+<li>引導學生自我評量與反思<br /></li>
+<li>提供學生有效的學習策略: 光聽課不一定有效<br /></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbb6122d"></a>老師在課堂如果不教知識，那能教什麼<br />
+<div class="outline-text-4" id="text-9-3-1">
+<ol class="org-ol">
+<li>老師要知道學生看完影片了，還有哪些知道的，哪些不知道的，即，再建議<br /></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org872c77c" class="outline-2">
+<h2 id="org872c77c"><span class="section-number-2">10.</span> 教學決定</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+如果你每天的授課都是講述，那就只會培養出聆聽者、等待者，被動是我們教學的副產品，我們一面在抱怨學生不夠主動，一面在強迫學生當被動的學習者<br />
+</p>
+</div>
+
+<div id="outline-container-org7903295" class="outline-3">
+<h3 id="org7903295"><span class="section-number-3">10.1.</span> 先反思我們是如何自主學習新知識的</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+資訊教師面對新語言(Python, Swift)、新硬體(Arduino, 樹莓派)、新知識(資料探勘、人工智慧、XX鏈)是如何入門、探究，最後得以開設課程？<br />
+</p>
+<ol class="org-ol">
+<li>首先，有需求，對教師而言是生存的需求。<br /></li>
+<li>找出時間：下班時間、空堂課<br /></li>
+<li>空間：教室、家、咖啡館<br /></li>
+<li>工具：電腦、圖書館、網路<br /></li>
+<li>目標：能學會基本語法？APCS能寫出四題？能用arduino搞個XX產品出來？能寫個判斷XX的人工智慧<br /></li>
+<li>方法：找資源，應用以前的學習方法，研究方法<br /></li>
+<li>夥伴：有沒有可以一起討論的人(參加研習)、學習社群<br /></li>
+<li>成果；自己的教材、作業、考試模式<br /></li>
+</ol>
+<p>
+以上是我們已經知道自己要學什麼主題，但是學生面臨的是不知道自己想學什麼？自己對什麼有興趣<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7b1faf9" class="outline-2">
+<h2 id="org7b1faf9"><span class="section-number-2">11.</span> 混合式教學</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org75037ea" class="outline-3">
+<h3 id="org75037ea"><span class="section-number-3">11.1.</span> 定義</h3>
+<div class="outline-text-3" id="text-11-1">
+<ul class="org-ul">
+<li>早期: 由同步面對面發展到同步線上，即，疫情剛開始時，將傳統的上課方式整套搬到線上<br /></li>
+<li>目前: 由同步面對面發展到非同步線上，即，學生的自主性提高(看教材、做習題)，教師的主控性降低<br /></li>
+</ul>
+<p>
+混合學習(Blended learning)：結合線上學習與面授<br />
+不要花太多時間在操作工具/平台之上<br />
+同步教學幾項功能:<br />
+</p>
+<ul class="org-ul">
+<li>推送: 推頁面、檔案、差異化推送<br /></li>
+<li>互動: 單選、複選、是非、填充、搶答(引起動機、)，互動是為了展開教學，了解學生程度、決定下一步教學<br /></li>
+<li>任務: 收圖片、文字、聲音、檔案<br /></li>
+<li>測驗: 客觀、主觀、媒體題型，目的在於了解階段性的學習結果，算小考/形成性評量<br /></li>
+</ul>
+
+<div id="orgb283b85" class="figure">
+<p><img src="images/2022-09-11_14-56-25.png" alt="2022-09-11_14-56-25.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 39: </span>Caption</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaa78e3f" class="outline-2">
+<h2 id="orgaa78e3f"><span class="section-number-2">12.</span> 輔助科技類型</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-org6bbb6a6" class="outline-3">
+<h3 id="org6bbb6a6"><span class="section-number-3">12.1.</span> 整合式數位學習平台(LMS)</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+均一教育平台<br />
+學習吧<br />
+因材網<br />
+PaGamO<br />
+醍摩豆 TEAM Model<br />
+Moodle<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org552ad97" class="outline-3">
+<h3 id="org552ad97"><span class="section-number-3">12.2.</span> 討論互動</h3>
+</div>
+<div id="outline-container-org90ce1c3" class="outline-3">
+<h3 id="org90ce1c3"><span class="section-number-3">12.3.</span> 小組合作</h3>
+<div class="outline-text-3" id="text-12-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgfc3754c"></a>Google Jamboard<br /></li>
+<li><a id="org73c4397"></a>Microsoft 365(共筆)<br /></li>
+<li><a id="org55d331e"></a>Google文件(共編)<br /></li>
+<li><a id="orgc445b5d"></a>Wik共筆系統(MOODLE)<br /></li>
+<li><a id="org39804f6"></a>Collaborative coding:<br /></li>
+<li><a id="orge8d54ff"></a>Google Colab<br /></li>
+<li><a id="org57f2096"></a><a href="https://codecollab.io/">https://codecollab.io/</a><br /></li>
+</ol>
+</div>
+<div id="outline-container-orgdb38280" class="outline-3">
+<h3 id="orgdb38280"><span class="section-number-3">12.4.</span> 作品展示</h3>
+<div class="outline-text-3" id="text-12-4">
+</div>
+<ol class="org-ol">
+<li><a id="org9dd7bcd"></a>SLIDO<br /></li>
+<li><a id="org4278f38"></a>NearPOD<br /></li>
+<li><a id="org5586323"></a>Mentimeter<br /></li>
+<li><a id="org1537970"></a>Seesaw<br /></li>
+<li><a id="orga54d89c"></a>Plickers<br /></li>
+<li><a id="orgc27654d"></a>padlet<br /></li>
+<li><a id="org7084f7c"></a>classroomscreen<br /></li>
+</ol>
+</div>
+<div id="outline-container-org189e6d4" class="outline-3">
+<h3 id="org189e6d4"><span class="section-number-3">12.5.</span> 測驗評量</h3>
+<div class="outline-text-3" id="text-12-5">
+</div>
+<ol class="org-ol">
+<li><a id="org6c41e05"></a>Kahoot!<br /></li>
+<li><a id="org348dd2d"></a>VPL(Moodle plugin)<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orged31042" class="outline-2">
+<h2 id="orged31042"><span class="section-number-2">13.</span> 工具</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+自主學習要重新賦予學習者以下的權利：<br />
+</p>
+<ul class="org-ul">
+<li>學什麼<br /></li>
+<li>如何學<br /></li>
+<li>評估學的成效<br /></li>
+<li>修正學習策略<br /></li>
+</ul>
+</div>
+<div id="outline-container-org27ef5a8" class="outline-3">
+<h3 id="org27ef5a8"><span class="section-number-3">13.1.</span> App</h3>
+<div class="outline-text-3" id="text-13-1">
+<p>
+tracker audacitty<br />
+math<br />
+trainable machine<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org01aa39d" class="outline-3">
+<h3 id="org01aa39d"><span class="section-number-3">13.2.</span> 自學</h3>
+<div class="outline-text-3" id="text-13-2">
+<p>
+列表: <a href="https://www.sso.edu.tw/homeb">https://www.sso.edu.tw/homeb</a><br />
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org34f7a79"></a>Youtube<br />
+<ol class="org-ol">
+<li><a id="org46e8d0a"></a>數學<br />
+<div class="outline-text-5" id="text-13-2-1-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=byNaO_zn2fI">How to self study pure math - a step-by-step guide</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org663aa76"></a>XMind<br />
+<div class="outline-text-5" id="text-13-2-1-2">
+<ul class="org-ul">
+<li><a href="https://youtu.be/V0Tl7UPMSl8">心智圖(Xmind)&amp;電腦流程圖(Draw.io)</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb90bbf2"></a>Google協作平台使用<br />
+<div class="outline-text-5" id="text-13-2-1-3">
+<ul class="org-ul">
+<li><a href="https://sites.google.com/mljh.ylc.edu.tw/harrison01/%E6%95%B8%E4%BD%8D%E6%87%89%E7%94%A8/%E5%8D%94%E4%BD%9C%E5%B9%B3%E5%8F%B0%E5%AF%A6%E4%BD%9C?authuser=0">協作平台使用教學系列影片</a><br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4c813d9"></a>大學開放課程<br /></li>
+<li><a id="org854a805"></a>模擬系統<br />
+<div class="outline-text-4" id="text-13-2-3">
+<ul class="org-ul">
+<li>股票<br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgae23b5b" class="outline-3">
+<h3 id="orgae23b5b"><span class="section-number-3">13.3.</span> 學習平台</h3>
+<div class="outline-text-3" id="text-13-3">
+<p>
+近年來因為科技的進步，「翻轉教室」一詞漸漸成為討論話題也成為現在教學的新趨勢。上課的方式不僅僅是侷限在教室內的臺上授課臺下聽講，行動裝置的普及促使更多新的學習平台興起，助使學生可以在家自學、預習、複習之外，教學現場的輔助教學工具也可讓教學更有效率。<br />
+</p>
+
+<p>
+線上平台種類多樣，不論是在民間、官方都有建置不同的教學平台，在此舉例四種市面較為普遍的行動學習平台：LearnMode學習吧、均一教育平台、PaGamO、因材網。本文分析整理其不同特色，讓老師們可以更容易選擇適合自己的教學工具。以下也將由其不同的上課使用特性分別作介紹。<br />
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgcd483bd"></a>比較: 因材網、均一教育平台、學習吧<br />
+<div class="outline-text-4" id="text-13-3-1">
+<p>
+五大學習平台介紹與分析<br />
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org5077e02"></a>涵蓋最廣的學習平台-均一教育平台<br />
+<div class="outline-text-5" id="text-13-3-1-1">
+<p>
+均一教育平台在台灣發展時間最久，2012至今已有五年時間，在數學科方面建置十分完整，從一開始翻譯可汗學院(Khan Academy)教材，至今有許多志工老師投入拍攝教學影片，讓數學科知識節點詳細清楚(詳細說明於家長學生篇)。均一平台提供主題式評量，讓老師可以使用測驗一目瞭然學生目前學習狀況，了解學生的問題點落在哪一個單元、章節，進而給予適當的補救教學。因其數學科教學影片十分完整，老師除了可以利用均一平台發布任務讓學生在家自學以外，也可以將其融入課堂當中。<br />
+</p>
+
+<p>
+新北市新泰國中劉繼文老師使用均一影片搭配「學思達」(ShareStart)教學法(一種訓練學生自「學」、閱讀，「思」考、討論、分析、歸納，表「達」、寫作等能力的教學法)，在課堂一開始時，學生有十分鐘自學時間練習講義題目，在講義題目旁搭配有行動條碼，學生有疑問時可以利用手邊的行動裝置掃描連結至均一影片觀看學習，而後有五分鐘異質性分組(程度高低參差的學生混合編組)的討論時間，再將講義上的題目透過抽籤指定小組預備上台教學，利用白板讓學生可以先在小組內討論如何講解，五分鐘後輪流上台講解，老師則在其中提出問題讓全班參與討論。<br />
+均一教育平台除了包含國小至高中，甚至大學先修的教育課程，科目包含國語文、英文、數學、自然、社會、電腦科學、素養，也有評量可以做練習。<br />
+提供線上教材、題目演練；互動式遊戲教學：完成一定數量的關卡，蒐集足夠多的燈泡，可以抵達不同的星球和抽取相關的獎勵。<br />
+</p>
+</div>
+</li>
+<li><a id="org63997fc"></a>最適合段落追蹤-LearnMode學習吧<br />
+<div class="outline-text-5" id="text-13-3-1-2">
+<p>
+LearnMode學習吧 刺激上課互動的好工具<br />
+</p>
+
+<p>
+LearnMode學習吧發展從2015年至今已經兩年，教師使用的數量也到兩千三百人以上，搭配學生手中的平板、手機，以及電子白板等設備，加上IRS線上即時反饋系統，將課堂互動性提高，增加學生在課堂中的專注度。<br />
+</p>
+
+<p>
+LearnMode學習吧平台在「課間活動」(平台所設計之課程互動式活動)的部分有提供單選題、多選題、塗鴉題以及是非題等選項讓老師選擇，除了可以自行設計題目外，也可以在課堂中穿插使用不同類型的活動。老師要如何得知學生的學習狀況呢？在教室中搭配電子白板就能即時檢視學生的學習概況，授課教師可以在課堂當中即時對學習較落後的同學進行補強，並且透過課間活動了解學生的吸收程度，以配合調整課程進度。<br />
+</p>
+
+<p>
+為要有效控管學生上課使用行動裝置會不專心的疑慮，LearnMode系統設定當老師開始進行課間活動時，學生手中的行動裝置會與老師的畫面同步且無法切換視窗，方便授課教師班級管理。<br />
+</p>
+
+<p>
+LearnMode學習吧的科目種類多元，老師不僅可以下載使用其他老師已經設計好的開放課程，或是修改成適合班級使用的教材，更可以自行設計屬於自己的課程上傳上架，也因此平台的課程種類較多元也較開放，讓老師們在備課上可以更有效的互相交流資訊及共享資源，利用共同備課達到高效率。<br />
+LearnMode學習吧個人覺得最有趣的地方，這個平台有完整教學PPT、心智圖以及單元卷，很適合做段落追蹤。<br />
+同時應該也很適合老師做導讀的工作，如果有比較複雜的單元，希望學生或小孩提前預習。<br />
+比方說小學五年級的因數與倍數等，可以讓父母先了解架構，也比較了解該如何引導小孩了解。<br />
+</p>
+</div>
+</li>
+<li><a id="orgda88a81"></a>範例題及定點檢視學習效果-因才網<br />
+<div class="outline-text-5" id="text-13-3-1-3">
+<p>
+教育部也建置因才網系統，學生在家即可進行線上測驗，並搭配AI運算分析，從學生寫過的題目中分析出精熟程度，學生即可一覽各科強項與弱項單元，對症下藥加強。並也透過AI分析推播學生適合的題目、需要加強的單元等。<br />
+</p>
+
+<p>
+官方教育部建置的因才網題目涵蓋1-11年級，除了讓學生線上測驗答題外，也有導讀題目及發音，可以讓學生更清楚了解。範例題的進度條一定得看，顏色要變為深藍並跳出確認視窗後，才算觀看完成！所以想要按掉是不可能的~<br />
+</p>
+</div>
+</li>
+<li><a id="org8716862"></a>最人性化直覺反應介面-明日數學島<br />
+<div class="outline-text-5" id="text-13-3-1-4">
+<p>
+最平易近人的介面，首推明日數學島，學生可以透過挑戰數學任務闖關，規劃與經營自己的學習。<br />
+學生可以完成數學任務蓋房子豐富島嶼地景，簡單來說，你可以決定你的房子是普通小平房或是豪華大別墅，這點還蠻吸引人的。<br />
+由於其題目的設計與分類，我覺得這是遊戲平台中最人性化的介面，連幼稚園大班的學生也可以試試小學一年級的數學題目，例如數一數 或是 如何湊出20元等題目(我打算暑假讓即將升上大班的光光姐姐試試看！)<br />
+</p>
+</div>
+</li>
+<li><a id="orgd9b4643"></a>最遊戲化學習平台-PaGamO<br />
+<div class="outline-text-5" id="text-13-3-1-5">
+<p>
+PaGamO系統結合遊戲趣味性和素養題型，透過領土攻佔、擴張等遊戲機置激發學生解題興趣。學生答對的題數也可轉換成攻擊力並挑戰魔王關卡，魔王則以過去出錯的迎戰挑戰學生，激勵學生補強弱勢。網站亦提供各學科任務題組，並會不定期更新理財、藝術、時事等新知任務。<br />
+</p>
+
+<p>
+好玩加上酷炫 讓課程變得活潑有溫度<br />
+</p>
+
+<p>
+除了影片的學習外，學生同時也需要適當的練習。傳統的紙本作業常令學生感到煩躁、降低學習意願。搭配遊戲式操作從攻佔領土過程中答題的平台「Pa心日木中水GamO」成為教師們的新選擇。「PaGamo」為台大教授葉丙成帶領台大學生組成「幫你優」團隊所合作建置，102年至今已發展四年，目前在全台已有四十六萬三千人註冊使用。台中市至善國中老師群在學校開始推動寒暑假作業以線上出題，配合「PaGamO」系統設定關閉時間，讓學生在寒暑假可以用攻佔領土、同學一同競賽等遊戲式練習，完成寒暑假作業，從中獲得成就感、提升練習意願。教師批改負擔減輕、也可以避免學生開學前熬夜趕作業及抄寫作業等問題。這種結合遊戲與學習的答題平台，讓讀書變得刺激有趣，也因此讓許多弱勢、有學習障礙的學生願意重新回到課堂當中。<br />
+</p>
+
+<p>
+現代社會已非一人獨自奮戰，團體合作無可避免地成為主流，教師在為學生預備團體合作溝通技能也是必行之事，分組作業時學生總會發生爭執。由教育部與台中教育大學合作推動的「因材網」為此特別搭配AI人工智慧，發展出合作解決問題的類別練習。學生在此類別練習時會有一位虛擬夥伴要合作完成任務，在溝通上有回應選項可以選擇，透過學生不同的選項，系統可以偵測學生在團體互動上有何困難，讓教師透過此類題目，幫助學生解決團體溝通上的障礙。另外一大特色是藉由電腦化的診斷測驗，搭配上建置完整的知識星空圖，可以直接讓授課教師即時反應學生的學習狀況，透過平台特別設置的跨年級診斷，老師可以一目瞭然的看見學生在學習上哪個階段沒有達到精熟，針對知識節點重複讓學生練習。藉此達到「因材施教」、「因材施測」的效果。在教學影片撥放的同時，學生可以立即由旁邊的對話框問問題、得到答案同時也可以做筆記，在影片中也有出現問題需要學生回答，老師可以不用擔心學生影片直接跳過或是沒有專心的狀況。平台設計不但提升老師教學技能，也提升學生的學習效能。<br />
+</p>
+
+<p>
+這個學習平台，喜歡線上遊戲的一定會愛上，是5大學習平台中最具故事性的平台，結合遊戲趣味性和素養題型，透過領土攻佔、擴張等遊戲機置激發學生解題興趣。學生答對的題數也可轉換成攻擊力並挑戰魔王關卡，魔王則以過去出錯的迎戰挑戰學生，激勵學生補強弱勢。甚至可以分組對戰，提升學生學習動機。<br />
+這個平台設計是小學三年級以上方可使用。另一方面，我覺得這個遊戲也比較容易入迷，建議家長在給小孩玩的時候，要控制時間，避免眼睛過度使用。<br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgc4f6959"></a>因材網<br />
+<div class="outline-text-4" id="text-13-3-2">
+
+<div id="orga8a4883" class="figure">
+<p><img src="images/2022-09-05_13-09-22.png" alt="2022-09-05_13-09-22.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 40: </span>Caption</p>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="orgc0096ce"></a>四大功能<br />
+<div class="outline-text-5" id="text-13-3-2-1">
+<ul class="org-ul">
+<li>知識結構學習<br /></li>
+<li>智慧適性診斷<br /></li>
+<li>互動式學習<br /></li>
+<li>21世紀核心素養<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgba27f45"></a>因材網如何輔助自主學習<br />
+<div class="outline-text-5" id="text-13-3-2-2">
+
+<div id="org485c73f" class="figure">
+<p><img src="images/2022-09-05_16-14-49.png" alt="2022-09-05_16-14-49.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 41: </span>Caption</p>
+</div>
+</div>
+</li>
+<li><a id="orgc7da9ea"></a>組內共學需要指引<br />
+<div class="outline-text-5" id="text-13-3-2-3">
+<ul class="org-ul">
+<li><p>
+要有組內共學檢核單: 聚焦<br />
+</p>
+
+<div id="org5702436" class="figure">
+<p><img src="images/2022-09-05_16-37-47.png" alt="2022-09-05_16-37-47.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 42: </span>Caption</p>
+</div></li>
+<li><p>
+小組工作分配表: 不要讓學生成為free rider<br />
+</p>
+
+<div id="org1800abc" class="figure">
+<p><img src="images/2022-09-05_16-38-11.png" alt="2022-09-05_16-38-11.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 43: </span>Caption</p>
+</div></li>
+<li><p>
+組間互學評分表: 讓學生聽其他組的報告<br />
+</p>
+
+<div id="orgfe3d6d8" class="figure">
+<p><img src="images/2022-09-05_16-39-21.png" alt="2022-09-05_16-39-21.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 44: </span>Caption</p>
+</div></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgd876897"></a>步騾<br />
+<ol class="org-ol">
+<li><a id="org409183b"></a>學生自學<br />
+<div class="outline-text-5" id="text-13-3-3-1">
+
+<div id="org505e512" class="figure">
+<p><img src="images/2022-09-06_09-46-18.png" alt="2022-09-06_09-46-18.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 45: </span>Caption</p>
+</div>
+
+<div id="org014b896" class="figure">
+<p><img src="images/2022-09-06_09-46-47.png" alt="2022-09-06_09-46-47.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 46: </span>看影片</p>
+</div>
+
+<div id="orgf480aeb" class="figure">
+<p><img src="images/2022-09-06_09-46-47.png" alt="2022-09-06_09-46-47.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 47: </span>Caption</p>
+</div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge8f21d0" class="outline-3">
+<h3 id="orge8f21d0"><span class="section-number-3">13.4.</span> 評量</h3>
+<div class="outline-text-3" id="text-13-4">
+</div>
+<ol class="org-ol">
+<li><a id="org4f12640"></a>Moodle VPL<br /></li>
+</ol>
+</div>
+<div id="outline-container-org5dca3a9" class="outline-3">
+<h3 id="org5dca3a9"><span class="section-number-3">13.5.</span> 互動</h3>
+<div class="outline-text-3" id="text-13-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgb34d9ec"></a>Slido(可匿名)<br />
+<div class="outline-text-4" id="text-13-5-1">
+<ul class="org-ul">
+<li>教學: 收集問題<br /></li>
+<li>演講: 即時投票<br /></li>
+<li>上課: 即時互動測驗<br /></li>
+<li>使用教學：<a href="https://www.youtube.com/watch?v=Ya6KtqGNCSs">數位教學好幫手Nearpod &amp; Slido</a><br /></li>
+<li>演講示範<br />
+<a href="https://www.youtube.com/watch?v=0v_QiISs7OE">- 2017-12-20 唐鳳赴交通大學演講</a><br />
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=Ya6KtqGNCSs&amp;t=655s">數位教學好幫手Nearpod &amp; Slido</a><br /></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf40ab60"></a>Nearpod(互動式投影片)<br />
+<div class="outline-text-4" id="text-13-5-2">
+<p>
+簡報+影片+活動+測驗<br />
+</p>
+
+<div id="org8b1847d" class="figure">
+<p><img src="images/2022-09-11_11-27-17.png" alt="2022-09-11_11-27-17.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 48: </span>Caption</p>
+</div>
+
+<div id="org1e71020" class="figure">
+<p><img src="images/2022-09-11_11-27-29.png" alt="2022-09-11_11-27-29.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 49: </span>Caption</p>
+</div>
+
+<p>
+教師可在Nearpod平台內匯入簡報(PowerPoint)，便能在簡報內加入不同的互動活動，例如測驗、繪圖、投票、影片等，讓學生參與課堂之中。另外，教師可收集每一位學生的答案，了解個別學生的學習狀況，並能將其中的答案與全班即時分享，有助老師進行評析，補充傳統簡報的不足。<br />
+</p>
+
+<p>
+教師更可把製作的簡報發佈到學生的流動裝置內，學生只需輸入簡單的編碼，便能連結教師所預備的課堂，同步閱讀教學內容。<br />
+</p>
+<ul class="org-ul">
+<li>demob<br />
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=PCeFtfIcWb8">教材及教學活動All In One-Nearpo(實體教學實況錄製)</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=Ya6KtqGNCSs&amp;t=655s">數位教學好幫手Nearpod &amp; Slido</a><br /></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org51f918f"></a>Kahoot<br /></li>
+<li><a id="org02916b2"></a>desmos(數學)<br />
+<div class="outline-text-4" id="text-13-5-4">
+<p>
+繪圖計算機: <a href="https://webdemo.myscript.com/views/diagram/edit">https://webdemo.myscript.com/views/diagram/edit</a><br />
+</p>
+</div>
+</li>
+<li><a id="org6fefab6"></a>myscript<br />
+<div class="outline-text-4" id="text-13-5-5">
+<ul class="org-ul">
+<li>Math: <a href="https://webdemo.myscript.com/views/math/index.html">https://webdemo.myscript.com/views/math/index.html</a><br /></li>
+<li>Write: <a href="https://webdemo.myscript.com/views/text/index.html">https://webdemo.myscript.com/views/text/index.html</a><br /></li>
+<li>Diagram: <a href="https://webdemo.myscript.com/views/diagram/edit">https://webdemo.myscript.com/views/diagram/edit</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org8bb33d7"></a>醍摩豆 TEAM Model<br />
+<div class="outline-text-4" id="text-13-5-6">
+<p>
+後疫情時代，線上教學與線下教育並行成為校園新常態，視訊工具和雲端智慧教室如何幫助教學第一線<br />
+</p>
+
+<div id="orgdc862bc" class="figure">
+<p><img src="images/2022-09-11_14-39-42.png" alt="2022-09-11_14-39-42.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 50: </span>Caption</p>
+</div>
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=0IGXHx8CfUg">0625仁和國小研習 數位學習工作坊(二)：混合式教學載具操作與應用 梁仁楷博士&amp;石哲安顧問</a><br /></li>
+</ul>
+<p>
+模式<br />
+</p>
+
+<div id="orgd9db66e" class="figure">
+<p><img src="images/2022-09-11_17-43-28.png" alt="2022-09-11_17-43-28.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 51: </span>Caption</p>
+</div>
+
+<div id="orgab3284e" class="figure">
+<p><img src="images/2022-09-11_17-43-49.png" alt="2022-09-11_17-43-49.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 52: </span>Caption</p>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="orge7a5f5f"></a>特色: AI文句分析<br />
+<div class="outline-text-5" id="text-13-5-6-1">
+<p width="500">
+<img src="images/2022-09-11_17-45-55.png" alt="2022-09-11_17-45-55.png" width="500" /><br />
+人工智慧 + 工人(教師)智慧<br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf2e44d1" class="outline-3">
+<h3 id="orgf2e44d1"><span class="section-number-3">13.6.</span> 合作</h3>
+<div class="outline-text-3" id="text-13-6">
+<p>
+應用領域:<br />
+</p>
+<ul class="org-ul">
+<li>上課的共同筆記或講義<br /></li>
+<li>多位教職員共同撰寫工作計畫，或開會的議程<br /></li>
+<li>學生之間的合作共筆寫作（書籍、小組作業）<br /></li>
+<li>合作的故事接龍，或詩詞創作，讓每位參與者寫一行或一段<br /></li>
+<li>個人的日記，準備考試的筆記（用於個人的 wiki）<br /></li>
+<li>小組合作、專題、科展&#x2026;<br /></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org3580a4e"></a>Collaborative coding (pair programming)<br />
+<div class="outline-text-4" id="text-13-6-1">
+<ul class="org-ul">
+<li><a href="https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/pair-programming-%E6%98%AF%E4%BB%80%E9%BA%BC-d4fffa7f0466">Pair programming 是什麼？</a><br /></li>
+<li><a href="https://akuma1.pixnet.net/blog/post/358886316-pair-programming-%28%E7%B5%90%E5%B0%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%29%E7%9A%84%E5%9F%B7%E8%A1%8C%E5%BF%83%E5%BE%97">Pair Programming (結對程式設計)的執行心得</a><br /></li>
+<li><a href="https://codecollab.io">https://codecollab.io</a><br /></li>
+<li></li>
+</ul>
+</div>
+</li>
+<li><a id="org641e062"></a>神奇的組內共學分享方式<br />
+<div class="outline-text-4" id="text-13-6-2">
+<p width="500">
+<img src="images/2022-08-31_08-44-26.png" alt="2022-08-31_08-44-26.png" width="500" /><br />
+桃園仁和國小邱奕明老師<br />
+</p>
+<ol class="org-ol">
+<li>寫在小白板、拍照、上傳到班級共用臉書、教師在大螢幕播放<br /></li>
+<li>寫在平板備忘錄、截圖、上傳到網路留言板或因材網討論區<br /></li>
+<li>Google Jamboard<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="orgeab39b7"></a>Trello<br />
+<div class="outline-text-4" id="text-13-6-3">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=9KLuBG-1yK8">利用 Trello 進行專案管理</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org6ba97a4"></a>組內共學的促進策略<br />
+<div class="outline-text-4" id="text-13-6-4">
+<p width="500">
+<img src="images/2022-08-31_08-54-01.png" alt="2022-08-31_08-54-01.png" width="500" /><br />
+桃園仁和國小邱奕明老師<br />
+</p>
+<ul class="org-ul">
+<li>小組報告一般都由最好的人上台<br /></li>
+<li>如何解決:<br />
+<ol class="org-ol">
+<li>異質分組<br /></li>
+<li>每組5號上台加5分<br /></li>
+<li>通常每組5號是每組的低成就學生，為了讓該組員能順利上台報告，小組會進行組內共學<br /></li>
+</ol></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb046b88"></a>Classroomscreen<br />
+<div class="outline-text-4" id="text-13-6-5">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=89CrRd0Arak&amp;t=2s">好用工具手把手教學2 Classroomscreen、Canva課堂實作與應用</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org01a356d"></a>Canva<br />
+<div class="outline-text-4" id="text-13-6-6">
+<p>
+店家的廣告文宣、上班族的簡報、老師的教材、社群媒體上的貼文，在我們的生活當中，常常會需要設計，而 Canva 就是現代人的設計好幫手！<br />
+</p>
+
+<p>
+從模板範本、貼紙素材到圖片都一手包辦，讓設計小白也可以輕鬆快速完成精美作品。今天這一篇文章將會帶了解什麼是 Canva 以及手把手教學，在最後我也會跟你分享幾個超實用小技巧喔！不要錯過了～<br />
+</p>
+
+<p>
+社群行銷人/社群編輯/KOL/YouTuber/網紅/品牌在經營Facebook粉絲團、Instagram帳號時，多少都需要使用到設計製圖工具，Canva設計過程簡單、快速、好上手，是社群行銷人/品牌用來設計海報、簡報、資訊圖表、貼文圖片最方便的工具之一。<br />
+Canva擁有超過3,000萬的使用者市值估計超過60億美金，在歐美即使是擅長使用Adob​​e Illustrator及Adobe Photoshop的專業設計師，有時也會為了爭取時間效益，而使用Canva作為線上設計製圖的工具。<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://youtu.be/9DDMu9rfYIU">Canva平面設計不求人-慈濟大學教資中心數位教學組 feat.燕秋老師</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=fXuzIwiw7h8">好用工具手把手教學：Padlet、Canva</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=89CrRd0Arak&amp;t=2s">好用工具手把手教學2 Classroomscreen、Canva課堂實作與應用</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org7a8eb39"></a>Padlet<br />
+<div class="outline-text-4" id="text-13-6-7">
+<p width="500">
+<img src="images/2022-09-07_09-55-53.png" alt="2022-09-07_09-55-53.png" width="500" /><br />
+允許不用登入即可使用<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://youtu.be/fXuzIwiw7h8">好用工具手把手教學：Padlet、Canva</a>: very good<br /></li>
+<li><a href="https://youtu.be/_Glimn2SgS8">Padlet 使用教學</a><br /></li>
+<li><a href="https://youtu.be/4RQi34XrU9s">使用 Padlet 做大班級自我介紹</a><br /></li>
+<li>Padlet 是一個非常易用的雲端分享工具網站，它的概念是提供「壁佈板」給用家寫上文字，並隨意貼上圖片、網頁、文件、錄音等，向其他人分享個人的看法。一個非常易用的雲端分享工具網站，它的概念是提供「壁佈板」給用家寫上文字，並隨意貼上圖片、網頁、文件、錄音等，向其他人分享個人的看法。而Padlet會給每一個「壁佈板」獨一的網址，只要開啟這個網址，就能發表意見。過程中，大家的意見會不斷在同一個版面上呈現，讓學生可觀摩別人的意見，再補充個人的論點，令看法更加全面。<br /></li>
+<li>「 Padlet 」把學校、公司裡的白板討論流程雲端化，又把資料與計畫的整理流程視覺化，提供了一個非常簡單易用，而且「樣式模板多變」的看板工具，免費且有中文版，或許值得你試試看，也思考看看可以用在下次什麼樣的資料整理、計畫討論上。<br /></li>
+<li><a href="https://hkedcity.instructure.com/courses/4760/pages/padlet-xiao-zu-tao-lun-slash-brain-storming?module_item_id=85572">Padlet (小組討論 / Brain Storming)</a><br /></li>
+<li><a href="https://youtu.be/IuVZn9Cq-FU">2小時打造你的第一堂數位國語課</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org9993700"></a>Jamboard(協作)<br />
+<ol class="org-ol">
+<li><a id="org9acc3c5"></a>小組合作的做法<br />
+<ol class="org-ol">
+<li><a id="orgc6b63e6"></a>教師端<br />
+<div class="outline-text-6" id="text-13-6-8-1-1">
+<ol class="org-ol">
+<li>事先為各組建立Jamboard新白板<br /></li>
+<li>按右上角「共用」，選擇「知道連結的人可以編輯」<br /></li>
+<li>變更Jamboard名稱<br /></li>
+<li>將網址張貼於google classroom<br /></li>
+<li>利用Google表單進行組間共學評分(由組長填寫)<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org218ba97"></a>學生端<br /></li>
+<li><a id="org34453cc"></a>DEMO<br />
+<div class="outline-text-6" id="text-13-6-8-1-3">
+
+<div id="org388db9c" class="figure">
+<p><img src="images/2022-09-01_09-51-15.png" alt="2022-09-01_09-51-15.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 53: </span>Caption</p>
+</div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="orgee71fc3"></a>Microsoft 365(共筆)<br />
+<div class="outline-text-4" id="text-13-6-9">
+<p>
+示範影片:<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://www.microsoft.com/zh-tw/videoplayer/embed/RWFY4D?pid=ocpVideo1-innediv-oneplayer&amp;maskLevel=20&amp;market=zh-tw">https://www.microsoft.com/zh-tw/videoplayer/embed/RWFY4D?pid=ocpVideo1-innediv-oneplayer&amp;maskLevel=20&amp;market=zh-tw</a><br /></li>
+<li><a href="https://www.microsoft.com/zh-tw/videoplayer/embed/RE3Tgor?pid=ocpVideo1-innerdiv-oneplayer&amp;maskLevel=20&amp;market=zh-tw">https://www.microsoft.com/zh-tw/videoplayer/embed/RE3Tgor?pid=ocpVideo1-innerdiv-oneplayer&amp;maskLevel=20&amp;market=zh-tw</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org0876bff"></a>Google文件(共編)<br />
+<div class="outline-text-4" id="text-13-6-10">
+<ul class="org-ul">
+<li>Google雲端文件多人共同編輯: <a href="https://blog.xuite.net/yh96301/blog/214149544">https://blog.xuite.net/yh96301/blog/214149544</a><br /></li>
+<li><p>
+#+CAPTION: Caption<br />
+</p>
+
+<div id="org82fecc4" class="figure">
+<p><img src="images/googledocshare.png" alt="googledocshare.png" width="500" /><br />
+</p>
+</div></li>
+<li>如何新增Google文件並以協同作業(共用)方式編輯文件(Google Drive雲端硬碟應用): <a href="https://www.youtube.com/watch?v=5Thb9Rfb_2I">https://www.youtube.com/watch?v=5Thb9Rfb_2I</a><br /></li>
+<li>可以即時DEMO讓多人try<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org5508869"></a>moodle/wiki共筆<br />
+<div class="outline-text-4" id="text-13-6-11">
+<p>
+可以比對版本差異<br />
+</p>
+
+<div id="org1c37ed1" class="figure">
+<p><img src="images/2022-08-03_16-36-31.png" alt="2022-08-03_16-36-31.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 54: </span>Caption</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8ce7701" class="outline-3">
+<h3 id="org8ce7701"><span class="section-number-3">13.7.</span> 影片錄製</h3>
+<div class="outline-text-3" id="text-13-7">
+</div>
+<ol class="org-ol">
+<li><a id="org7848c32"></a>Camtasia &amp; Snagit<br /></li>
+</ol>
+</div>
+<div id="outline-container-org7b149ea" class="outline-3">
+<h3 id="org7b149ea"><span class="section-number-3">13.8.</span> 社群:</h3>
+<div class="outline-text-3" id="text-13-8">
+</div>
+<ol class="org-ol">
+<li><a id="org0e2b8a3"></a>StackOverflow<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3343190" class="outline-3">
+<h3 id="org3343190"><span class="section-number-3">13.9.</span> AR/VR</h3>
+<div class="outline-text-3" id="text-13-9">
+</div>
+<ol class="org-ol">
+<li><a id="org0185b60"></a>輔助運動訓練<br />
+<ol class="org-ol">
+<li><a id="org288373d"></a><a href="https://www.youtube.com/watch?time_continue=9&amp;v=nh9P5Kfq0ng&amp;feature=emb_logo">ValoClimb</a><br />
+<div class="outline-text-5" id="text-13-9-1-1">
+<p>
+ValoClimb是一間芬蘭的遊戲開發公司，它設計出全世界第一個AR攀岩牆Augmented Climbing Wall，並且沒有用戶上的限制，不管是孩童還是大人，都可以盡情享受這神奇的攀岩時光。<br />
+</p>
+
+<p>
+他們將攀岩結合AR，讓AR影像可以直接被投射在攀岩牆上面，而這些影像會根據玩家的動作進行相對應的回應，達到互動的效果，如打擊隨機出現的蝙蝠或光點、避開不斷移動的光線……，近年甚至還發展出雙人互動的模式。<br />
+</p>
+</div>
+</li>
+<li><a id="orge3a85f3"></a><a href="https://www.youtube.com/watch?v=5WiY5Hv74q4&amp;t=51s">vGolf</a><br />
+<div class="outline-text-5" id="text-13-9-1-2">
+<p>
+虛擬的輔助教學：vGolf結合AR眼鏡，讓用戶看到周圍360°的全景狀況，並且配有虛擬個人高爾夫球助理Virtual Caddy，提供揮桿時的相關數據(如揮桿角度、速度、轉速……)，藉此協助用戶進行相對應的調整與學習。<br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org893f971" class="outline-3">
+<h3 id="org893f971"><span class="section-number-3">13.10.</span> AI</h3>
+<div class="outline-text-3" id="text-13-10">
+</div>
+<ol class="org-ol">
+<li><a id="orgfb5c8c0"></a>語言<br />
+<ol class="org-ol">
+<li><a id="orgb37f029"></a>學習吧語音辨識<br />
+<div class="outline-text-5" id="text-13-10-1-1">
+<p>
+<a href="https://webdemo.myscript.com/views/diagram/edit">https://webdemo.myscript.com/views/diagram/edit</a><br />
+</p>
+<p width="500">
+<img src="images/2022-08-03_15-55-54.png" alt="2022-08-03_15-55-54.png" width="500" /><br />
+教學: <a href="https://share.learnmode.net/?page_id=3742">https://share.learnmode.net/?page_id=3742</a><br />
+</p>
+</div>
+</li>
+<li><a id="org73db561"></a>文字轉語音mp3<br />
+<div class="outline-text-5" id="text-13-10-1-2">
+<p>
+Vanilla: <a href="https://www.vanillavoice.com">https://www.vanillavoice.com</a><br />
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org33cc402"></a>Plugins / Extensions for Browser<br />
+<ol class="org-ol">
+<li><a id="orgacaa155"></a>英文專業<br />
+<div class="outline-text-6" id="text-13-10-2-0-1">
+<ul class="org-ul">
+<li>TJDict: <a href="https://chrome.google.com/webstore/detail/tjdict-%E7%B7%9A%E4%B8%8A%E5%AD%97%E5%85%B8/caafmojgjlbflohillejdmnghkpcjjpp?hl=zh-TW">Chrome</a><br /></li>
+<li>WordHippo: <a href="https://chrome.google.com/webstore/detail/extension-for-wordhippo-t/aodmmgciojljmgnocelfennldiemmgpj">Chrome</a><br /></li>
+<li>Wordtune: 協助英文潤稿/有年齡限制<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org87ad290"></a>聲音<br />
+<div class="outline-text-6" id="text-13-10-2-0-2">
+<ul class="org-ul">
+<li>Read Aloud:<br /></li>
+<li>Google Read&amp;Write: <a href="https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp">Chrome</a>, <a href="http://ruthedtech.blogspot.com/2019/04/g-suite-in-2-minute-read-20190404.html">教學</a><br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgce43e1d"></a>錄音<br />
+<div class="outline-text-6" id="text-13-10-2-0-3">
+<ul class="org-ul">
+<li>Mote: <a href="https://www.mote.com/signup">官網註冊</a>，可用於回復學生、Google表單、<a href="https://tech2021.mystrikingly.com/blog/mote">英文聽寫</a><br /></li>
+<li>Talk and Comment: 隨時可錄，MIC圖像就在側邊<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgde7947b"></a>截圖<br />
+<div class="outline-text-6" id="text-13-10-2-0-4">
+<ul class="org-ul">
+<li>Nimbus<br /></li>
+<li>Awesome Screenshot<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org0e71f7e"></a>錄影<br />
+<div class="outline-text-6" id="text-13-10-2-0-5">
+<p>
+學生如果要交錄影作業，最好是錄完直接上傳Youtube再傳連結，否則學校的免費空間會大量消耗。另，Google格式的文件(如Google doc、Google slide)不列入空間計算<br />
+</p>
+<ul class="org-ul">
+<li>Screencastify<br /></li>
+<li>Loom<br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5b7aff4" class="outline-2">
+<h2 id="org5b7aff4"><span class="section-number-2">14.</span> 逐步責任轉移的歷程(台東大學特教系曾世杰教授：閱讀)</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+Gradual Release of responsibility<br />
+</p>
+
+<div id="orgf72b16a" class="figure">
+<p><img src="images/2022-07-30_15-53-59.png" alt="2022-07-30_15-53-59.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 55: </span>Caption</p>
+</div>
+<ol class="org-ol">
+<li>我做你看<br /></li>
+<li>我做你幫<br /></li>
+<li>你做我幫<br /></li>
+<li>你自己做<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf7b8b61" class="outline-2">
+<h2 id="orgf7b8b61"><span class="section-number-2">15.</span> 挑選工具的原則</h2>
+<div class="outline-text-2" id="text-15">
+<ul class="org-ul">
+<li>使用限制最少(slido僅限使用三個問題)<br /></li>
+<li>padlet(僅限使用&#x2026;) / 但有解決方式<br /></li>
+<li>方便整合(取決於你的主要平台為何)<br /></li>
+<li>主要平台: google classroom  / 因材網 / moodle<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga2b86e8" class="outline-2">
+<h2 id="orga2b86e8"><span class="section-number-2">16.</span> 自主學習沒告訴你的事</h2>
+<div class="outline-text-2" id="text-16">
+</div>
+<div id="outline-container-org2a329a8" class="outline-3">
+<h3 id="org2a329a8"><span class="section-number-3">16.1.</span> 可以節省時間</h3>
+<div class="outline-text-3" id="text-16-1">
+<p>
+學生學同一個主題，採自主學習只會更花時間、效能更低<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd50baef" class="outline-3">
+<h3 id="orgd50baef"><span class="section-number-3">16.2.</span> 學生可能同時學到自主學習與學習內容，也可能同時都沒學到</h3>
+<div class="outline-text-3" id="text-16-2">
+<ul class="org-ul">
+<li>即便如此，還是要給學生自主學習的機會<br /></li>
+<li>學生可能學習空白<br /></li>
+<li>更需要進行 <b>心理調節</b> 的除了學生，可能是老師和家長(尤其是對於self-directed learning)<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org42d5f82" class="outline-3">
+<h3 id="org42d5f82"><span class="section-number-3">16.3.</span> 解決: 學生的分享以錄影方式製作/播放</h3>
+</div>
+</div>
+
+<div id="outline-container-org4ac1597" class="outline-2">
+<h2 id="org4ac1597"><span class="section-number-2">17.</span> 現階段面臨的問題</h2>
+<div class="outline-text-2" id="text-17">
+<ul class="org-ul">
+<li>工具太多<br /></li>
+<li>資料/成績太過分散、增加教師負擔<br /></li>
+</ul>
+</div>
+<div id="outline-container-org9f33cb9" class="outline-3">
+<h3 id="org9f33cb9"><span class="section-number-3">17.1.</span> 工具無優劣，適用才重要</h3>
+<div class="outline-text-3" id="text-17-1">
+<ul class="org-ul">
+<li>現階段不存在一個所謂「面面俱到」的工具<br /></li>
+<li>每項工具都有其各自適用的狀況與存在的必要<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga31f8e1" class="outline-3">
+<h3 id="orga31f8e1"><span class="section-number-3">17.2.</span> 作業繳交</h3>
+<div class="outline-text-3" id="text-17-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=YA930DM-Mw8">20220806【親師生線上教學教師增能系列課程】Seesaw, Flip(Flipgrid)翻轉數位讀寫素養</a><br /></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org9461ea8"></a>Seesaw<br />
+<div class="outline-text-5" id="text-17-2-0-1">
+<ul class="org-ul">
+<li><a href="https://web.seesaw.me/">https://web.seesaw.me/</a><br /></li>
+<li>簡介(<a href="https://vtedu.mt.ntnu.edu.tw/uploads/1611022517150pv1bj4Lj.pdf">https://vtedu.mt.ntnu.edu.tw/uploads/1611022517150pv1bj4Lj.pdf</a>)<br />
+Seesaw為課程管理平台，平台版面清楚，有類似臉書社交網站互動功能老師可以發布課程所需教學檔案，學生可以上傳個人作業、小組作業，類別包含有：錄影、錄音、拍照、畫圖、筆記、小白板、網站連結等，學生還能夠以此做為個人課程的學習記錄，平台亦提供社交功能，如按讚(愛心圖示)、互給回饋、留言平台能保存學生上傳的各式學習資料，老師能將學生的資料用PDF格式下載存檔<br /></li>
+<li>可建立班級<br /></li>
+<li>學生可以代號或QR code登入<br /></li>
+<li>點選新增作品按鈕後，可選擇上傳的類別，如：靜態的相片、動態錄影，檔案也能整合google&#x2026;等雲端硬碟，也可隨手塗鴉<br /></li>
+<li>Journal：類似動態牆<br /></li>
+<li>Activities：適用於教師指定活動或作業，教師可以看見學生繳交的情況，Activities中有內建一些學習活動，可以直接指派給班級學生進行練習(或當成指定作業)<br /></li>
+<li>Blog：可以張貼與課程的相關的內容(此功能需由教師於Class Settings中開起，Blog需由教師開起才會顯示，如：至Class Settings中開起Blog功能，並設定Blog名稱為“infotech”,完成後此Blog網址就為：<a href="https://blog.seesaw.me/infotech">https://blog.seesaw.me/infotech</a><br /></li>
+<li>INBOX: 可查看平台的通知訊息(包含各個活動記錄，按照時間序列顯示<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd556237"></a>Flipgrid<br />
+<div class="outline-text-5" id="text-17-2-0-2">
+<ul class="org-ul">
+<li><a href="https://info.flip.com/">https://info.flip.com/</a><br /></li>
+<li>一個讓教師透過建立數位社群、以短影片為工具，讓學生進行社交學習的應用軟體。每一位老師都可以在 Flipgrid 建立自己的教室，並在教室裡發布討論主題，學生可以透過製作短影片來分享自己的觀點，影片內容可以被教室裡的所有用戶看到，老師可以選擇開放影片的按讚、評論功能，這樣會帶來一定的競爭性，進而激發學生的積極性；而且每個教室都有密碼確保安全性，老師可以將密碼或者連結分享給自己的學生。<br /></li>
+<li>FlipGrid是一個含社會學習（Social Learning）元素的平台，讓學生錄製功課討論。師生可以跨平台登入Flipgrid，不論身在家中或學校亦能錄製短片表達意見，促進協作學習。<br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org69e1ef2" class="outline-2">
+<h2 id="org69e1ef2"><span class="section-number-2">18.</span> 學生的五種學習模式(花蓮林國源校長)</h2>
+<div class="outline-text-2" id="text-18">
+<ul class="org-ul">
+<li>嚐試錯誤<br /></li>
+<li>觀察模仿<br /></li>
+<li>閱讀理解<br /></li>
+<li>看影片<br /></li>
+<li>閏密學習法(同儕)<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a617f5" class="outline-2">
+<h2 id="org5a617f5"><span class="section-number-2">19.</span> 大綱</h2>
+<div class="outline-text-2" id="text-19">
+</div>
+<div id="outline-container-org4d540f5" class="outline-3">
+<h3 id="org4d540f5"><span class="section-number-3">19.1.</span> 自主學習需要什麼輔助</h3>
+</div>
+<div id="outline-container-org7977314" class="outline-3">
+<h3 id="org7977314"><span class="section-number-3">19.2.</span> 目前教學的問題：問題不是工具不夠、是工具太多</h3>
+</div>
+<div id="outline-container-orgf70820b" class="outline-3">
+<h3 id="orgf70820b"><span class="section-number-3">19.3.</span> 如何挑選合適的工具</h3>
+</div>
+<div id="outline-container-org0cbb02e" class="outline-3">
+<h3 id="org0cbb02e"><span class="section-number-3">19.4.</span> 挑選的原則</h3>
+<div class="outline-text-3" id="text-19-4">
+<ul class="org-ul">
+<li>統一<br /></li>
+<li>免費、一次能開多個班<br /></li>
+<li>計分方便<br /></li>
+<li>學生容易使用，不用一直切換<br /></li>
+<li>適合現場與線上(Google Classroom)<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfdb546a" class="outline-2">
+<h2 id="orgfdb546a"><span class="section-number-2">20.</span> 示例</h2>
+<div class="outline-text-2" id="text-20">
+</div>
+<div id="outline-container-orgec8f61c" class="outline-3">
+<h3 id="orgec8f61c"><span class="section-number-3">20.1.</span> 國文<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup></h3>
+<div class="outline-text-3" id="text-20-1">
+</div>
+<ol class="org-ol">
+<li><a id="org842953e"></a>自主學習<br />
+<div class="outline-text-4" id="text-20-1-1">
+<ol class="org-ol">
+<li>請學生自主閱讀課文: 當學生遇到不會的字詞，請學生自行圈註，不討論，不詢問，獨立思考學習。<br /></li>
+<li>閱讀後回想課文大意: 於閱讀之後，眼睛閉上，在腦中回想這一課課文大意是什麼。<br /></li>
+<li>動筆寫下全文主旨: 自行寫下（寫在學習單、課本、小白板等）這篇的主旨，並連結自身的生活經驗。<br /></li>
+<li>抓出全文關鍵詞: 並於閱讀之後，自行寫下段落或文章的關鍵詞，再依著這些關鍵詞，嘗試串出段落或全文大意，<br /></li>
+<li>善用心智圖、魚骨圖、樹狀圖: 請小朋友自行在小白板上運用六何法提問數題、擬出題目詢問作者、自行歸納統整出心智圖、魚骨圖、樹狀圖等組織圖，由於這些策略較有深度，可讓學生自學10到20分鐘不等。<br /></li>
+<li>讓 Google 大神幫忙學習: 利用電腦課上課的前5分鐘時間（可和電腦教師商量），自行搜尋關於課文的相關資訊，這考驗著學生「關鍵字詞」的擷取能力。<br /></li>
+<li>學生自己動手規劃活動: 讓學生在一個期限內，完成任務。例如：「如何從林園國小搭車到台南？請小朋友規劃出時間、捷運或公車客運路線、可參觀的景點等」，教師給予提示的方向，包括：「捷運網站、公車網站、台南市觀光局⋯⋯」，再讓學生自行規劃。<br /></li>
+<li>有了「自學」，可以延伸到「互學」<br /></li>
+<li>事前建立策略，事後方便自學<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org00d965b"></a>國語文教學實務的12種多元評量<br />
+<div class="outline-text-4" id="text-20-1-2">
+<ol class="org-ol">
+<li>聆聽<br />
+聆聽教學在語文領綱中，也為學習重點、學習表現之一。然而，在語文課或任何的學科中，卻常流於形式上的行為，而非專業上的學習。因此，筆者曾經在語文課時，請學生闔上課本，指派一位同學朗讀課文，並擬出題目做簡易的施測。若教師行有餘力，亦可以擷取廣播、故事、新聞等音檔，試著讓學生正式練習。<br /></li>
+<li>說話<br />
+在新課綱中，提及了「自動好」，其中的「動」，便是「溝通互動」。教師在課堂上，除了讓孩子多「互動」，亦可以觀察孩子在互動時，「說」了什麼。教師未必要給予孩子很正式的評量分數，但可以將之視為參與、表現、學習態度的參考。<br /></li>
+<li>上台表達<br />
+上台表達，比起兩兩溝通互動，或在座位表達，來得更正式，也更有難度。教師在評量上，可以採取有趣的方式，包括「自評、他評」。學生初上台，若無一定的基礎，難免會稍覺困難，因此，教師可以先讓孩子在座位模擬一次，以建立熟悉感與自信心。<br /></li>
+<li>朗讀<br />
+通常，我們習慣全班齊讀、輪讀、默讀課文，或指派學生「唸」課文。若能將「唸誦」的境界，提升到「朗讀」的境界，對於語文教學的內涵，勢必能著墨更深。然而，在教學現場，我們發現，並非每一位老師、學生，都具備朗讀的特長，因此，不一定要強求抑揚頓挫、輕重緩急、語情語速語調，但需指導學生正確、流暢、斷句等基本原則。<br /></li>
+<li>寫作<br />
+通常，一學期寫4到6篇作文。此外，若能增加更多的開放性書寫，如句型練習、小日記書寫、開放性學習單、閱讀筆述等，相信對於學生的寫作能力必有幫助。教師在評定寫作時，亦可以以「等第」來評比，避免學生過於計較。關於教師評定的指標，亦可以事先向學生說明。<br /></li>
+<li>寫字<br />
+我們平時再批閱生字本時，往往以「字體工整」做為評分的標準。其實如果教師行有餘力的話，可以帶入「硬筆書法」的元素，帶領孩子寫出更具美感的字。教師也可以買坊間的硬筆字本，供學生練習，或上網搜尋關於「硬筆字」的資料。在評量時，亦可採取同學互評的方式，做為評量的方式。此外，毛筆字亦可以做為評分的標準。<br /></li>
+<li>小組合作<br />
+新課綱的教學，提及了「自動好」，而「好」便是希望孩子可以共好、達到社會參與。孩子在小組中，就是一種小型社會的概念，如何進行任務分組、責任分工、溝通協調，甚至到最後小組上台報告，這些都是需要培養的能力。教師在制定評量規準時，亦可以告知評分項目，以便孩子重視小組合作。<br /></li>
+<li>筆記<br />
+在我的課堂上，常有額外的筆記，包括上課補充的資料，或是學生自學所記錄下來的內容。有些學生善於做筆記，包括表格、圖像、顏色區分等等。平時也要建立起學生做筆記的習慣，以便銜接國中生活。除了可以由教師本人、學生評分之外，若學年老師想一起參與，也可以邀請其他老師一起欣賞、評分。<br /></li>
+<li>自學策略<br />
+在課堂的前5到10分鐘，我會請學生進行簡單的自學。我會走動巡視觀察學生的自學行為，有時自學包括自己畫表格、概念圖、自己提問、註記……等，這些都可以當做評量的參考。筆者這一年來，發現學生一旦有了自學能力之後，很多時候都可以自己探索、延伸學習。由於「自動好」的「自」，是新課綱所強調的「自學、自發、自主行動」，也是許多家長較不熟悉的，因此，在進行多元評量時，可以將此原則讓家長知道，並盡量從寬給分。<br /></li>
+<li>遊戲學習<br />
+筆者課堂的最後幾分鐘，常會採取遊戲式學習，例如：玩文字遊戲、猜部件、語詞或成語遊戲、趣味閱讀⋯⋯等，雖然不是很正式的評量，但是師長可以在孩子參與遊戲學習的過程，或多或少給予評分，可以個人、兩兩、小組計分。而筆者也發現，遊戲學習是一種「寓教於樂」的學習方式，只要教師引導得當，都可以在遊戲中培養孩子的語文能力。<br /></li>
+<li>成語<br />
+筆者曾經要求孩子自備一本筆記本，上面以記錄成語為主，其他語文知識為輔。也會運用第10項「遊戲學習」的方式，進行成語遊戲。在筆者的班級，亦曾有過成語闖關、成語檢測，由於這是延伸、額外的學習，所以不用給予很正式的評分。當然，也可以設計一份正式的成語卷，做為成語施測的參考。<br /></li>
+<li>其他（投稿、競賽與作業）<br />
+凡此未羅列於上述的，均可歸類於此。例如，學生投稿文章上報或登上校刊、參加語文競賽、主動繳交語文相關作業、認真讀報、語文相關作品製作認真、擔任語文小老師⋯⋯等。<br /></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orge1e4fc5" class="outline-2">
+<h2 id="orge1e4fc5"><span class="section-number-2">21.</span> chatGPT</h2>
+<div class="outline-text-2" id="text-21">
+
+<div id="org1cd5cbc" class="figure">
+<p><img src="images/chatGPT/2023-02-16_13-25-26_S__29368326.jpg" alt="2023-02-16_13-25-26_S__29368326.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 56: </span>標題</p>
+</div>
+
+
+<div id="org97a0d0f" class="figure">
+<p><img src="images/chatGPT/2023-02-16_13-25-26_S__29368325.jpg" alt="2023-02-16_13-25-26_S__29368325.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 57: </span>標題</p>
+</div>
+
+
+<div id="orgc6fae07" class="figure">
+<p><img src="images/chatGPT/2023-02-16_13-25-26_S__29368327.jpg" alt="2023-02-16_13-25-26_S__29368327.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 58: </span>標題</p>
+</div>
+
+
+<div id="orgc5f9278" class="figure">
+<p><img src="images/chatGPT/2023-02-16_13-25-26_S__29368328.jpg" alt="2023-02-16_13-25-26_S__29368328.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 59: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0ab2d9a" class="outline-2">
+<h2 id="org0ab2d9a"><span class="section-number-2">22.</span> 國中 v.s. 高中的自主學習</h2>
+<div class="outline-text-2" id="text-22">
+
+<div id="org0221e5a" class="figure">
+<p><img src="images/國中_v.s._高中的自主學習/2023-02-16_13-59-59_2023-02-16_13-56-25.png" alt="2023-02-16_13-59-59_2023-02-16_13-56-25.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 60: </span>標題</p>
+</div>
+
+<p>
+有時太過科技傾向不見的是好事<br />
+</p>
+
+<div id="orgbe111a8" class="figure">
+<p><img src="images/國中_v.s._高中的自主學習/2023-02-16_13-59-50_2023-02-16_13-58-40.png" alt="2023-02-16_13-59-50_2023-02-16_13-58-40.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 61: </span>標題</p>
+</div>
+</div>
+
+
+<div id="outline-container-org48ba31b" class="outline-3">
+<h3 id="org48ba31b"><span class="section-number-3">22.1.</span> 國中</h3>
+<div class="outline-text-3" id="text-22-1">
+<ul class="org-ul">
+<li>偏向如何使用軟體、平板<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc9bf7ca" class="outline-3">
+<h3 id="orgc9bf7ca"><span class="section-number-3">22.2.</span> 高中</h3>
+<div class="outline-text-3" id="text-22-2">
+<ul class="org-ul">
+<li>如何探索自已有興趣的主題<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org541cf7d" class="outline-2">
+<h2 id="org541cf7d"><span class="section-number-2">23.</span> 我們需要什麼輔助?</h2>
+<div class="outline-text-2" id="text-23">
+
+<div id="orgf051e76" class="figure">
+<p><img src="images/我們需要什麼輔助?/2023-02-16_16-51-57_2023-02-16_16-51-49.png" alt="2023-02-16_16-51-57_2023-02-16_16-51-49.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 62: </span>標題</p>
+</div>
+
+
+<div id="orgaee31f5" class="figure">
+<p><img src="images/我們需要什麼輔助?/2023-02-16_16-51-23_2023-02-16_16-50-43.png" alt="2023-02-16_16-51-23_2023-02-16_16-50-43.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 63: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org48b1edb" class="outline-2">
+<h2 id="org48b1edb"><span class="section-number-2">24.</span> 小組出題/解題</h2>
+<div class="outline-text-2" id="text-24">
+</div>
+<div id="outline-container-org8d1e6e4" class="outline-3">
+<h3 id="org8d1e6e4"><span class="section-number-3">24.1.</span> 主講人：國立政治大學 江玥慧助理教授</h3>
+</div>
+<div id="outline-container-orgcb59dce" class="outline-3">
+<h3 id="orgcb59dce"><span class="section-number-3">24.2.</span> 以學習者為主體的程式設計教學實踐  / 推動大學程式設計教學計畫</h3>
+<div class="outline-text-3" id="text-24-2">
+
+<div id="org245e26b" class="figure">
+<p><img src="images/急於待辦/2023-01-15_14-06-44_2023-01-15_14-06-23.png" alt="2023-01-15_14-06-44_2023-01-15_14-06-23.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 64: </span>全學期三次</p>
+</div>
+
+
+<div id="org2affcce" class="figure">
+<p><img src="images/急於待辦/2023-01-15_14-07-59_2023-01-15_14-07-50.png" alt="2023-01-15_14-07-59_2023-01-15_14-07-50.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 65: </span>每個小組任務三週</p>
+</div>
+
+
+<div id="orgb5b722b" class="figure">
+<p><img src="images/急於待辦/2023-01-15_14-10-55_2023-01-15_14-10-52.png" alt="2023-01-15_14-10-55_2023-01-15_14-10-52.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 66: </span>應用到各種不同領域的情境設計</p>
+</div>
+
+
+<div id="org894ed58" class="figure">
+<p><img src="images/急於待辦/2023-01-15_14-11-29_2023-01-15_14-11-24.png" alt="2023-01-15_14-11-29_2023-01-15_14-11-24.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 67: </span>土耳其語硬子音軟化教學: 土耳其系學生</p>
+</div>
+
+
+<div id="orgd63cbea" class="figure">
+<p><img src="images/急於待辦/2023-01-15_14-11-51_2023-01-15_14-11-47.png" alt="2023-01-15_14-11-51_2023-01-15_14-11-47.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 68: </span>摩斯密碼轉換</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd044ab6" class="outline-2">
+<h2 id="orgd044ab6"><span class="section-number-2">25.</span> 資源</h2>
+<div class="outline-text-2" id="text-25">
+<ul class="org-ul">
+<li><a href="https://www.deepl.com/translator">DeepL</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://flipedu.parenting.com.tw/article/006702">當自主學習不由自主（上）：76%學生期待老師給資源，只有10%主動尋求指導</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://flipedu.parenting.com.tw/article/002255">3個C，幫助學生拿回學習自主權<br />
+</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://flipedu.parenting.com.tw/article/006954"> 拆解自主學習策略 7步驟引導孩子自學<br />
+</a><br />
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung Chin, Yen</p>
+<p class="date">Created: 2023-03-03 Fri 12:50</p>
+</div>
+</body>
+</html>

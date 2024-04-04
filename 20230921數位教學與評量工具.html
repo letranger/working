@@ -1,0 +1,2974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-09-19 Tue 14:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20230921數位教學與評量工具</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20230921數位教學與評量工具</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd6e8580">1. 演講內容</a>
+<ul>
+<li><a href="#org0eafd22">1.1. 課表</a></li>
+</ul>
+</li>
+<li><a href="#orgf1b9a6f">2. 前置作業</a></li>
+<li><a href="#orgefafdbf">3. 數位教學與評量工具介紹(50分鐘)</a>
+<ul>
+<li><a href="#orga2e04bd">3.1. 什麼是評量</a>
+<ul>
+<li><a href="#org70f294a">3.1.1. Measurement, Assessment and Evaluation</a></li>
+<li><a href="#org5af5995">3.1.2. Assessment for learning</a></li>
+<li><a href="#orgf415ca1">3.1.3. Assessment of learning</a></li>
+</ul>
+</li>
+<li><a href="#orgb28b4d2">3.2. 評量的目的</a></li>
+<li><a href="#orgc5315fc">3.3. 評量的類型</a>
+<ul>
+<li><a href="#org1c4e856">3.3.1. 形成性評量</a></li>
+<li><a href="#org56ce85c">3.3.2. 總結性評量</a></li>
+</ul>
+</li>
+<li><a href="#orgde6f4fc">3.4. 我們要從評量中得到什麼?</a>
+<ul>
+<li><a href="#org6d8833f">3.4.1. 行政目標</a></li>
+<li><a href="#org3182b88">3.4.2. 教學目標</a></li>
+</ul>
+</li>
+<li><a href="#org2714e61">3.5. 評量的影響</a></li>
+<li><a href="#org5f39c35">3.6. 如何跳脫傳統的評量手段與概念</a>
+<ul>
+<li><a href="#orgc44ee2e">3.6.1. 實作評量</a></li>
+<li><a href="#org4dcb708">3.6.2. 檔案評量</a></li>
+</ul>
+</li>
+<li><a href="#orgda94840">3.7. 各種評量工具的分析比較</a>
+<ul>
+<li><a href="#orga692c56">3.7.1. Google表單測驗</a></li>
+<li><a href="#org25ab631">3.7.2. PaGamO遊戲測驗</a></li>
+<li><a href="#org983bff9">3.7.3. Kahoot競賽測驗</a></li>
+<li><a href="#org70fa011">3.7.4. Quizlet測驗</a></li>
+<li><a href="#orgef4b40e">3.7.5. 測驗系統比較</a></li>
+</ul>
+</li>
+<li><a href="#orge31516c">3.8. 評量工具體驗</a>
+<ul>
+<li><a href="#org8d7a88d">3.8.1. Kahoot!</a></li>
+<li><a href="#org65f4c9c">3.8.2. Quizizz / Google Classroom</a></li>
+<li><a href="#org723aebc">3.8.3. Google表單測驗</a></li>
+<li><a href="#orgce72fe4">3.8.4. dpuzzle</a></li>
+<li><a href="#org67c6183">3.8.5. Slido</a></li>
+<li><a href="#org9e35bf6">3.8.6. Seesaw</a></li>
+<li><a href="#org89b8357">3.8.7. Padlet</a></li>
+<li><a href="#orge7ff1b4">3.8.8. Moodle/VPL</a></li>
+<li><a href="#org92322ab">3.8.9. SkyOJ</a></li>
+</ul>
+</li>
+<li><a href="#org705e784">3.9. Google classroom</a></li>
+<li><a href="#org620f75c">3.10. 作業評分量表</a>
+<ul>
+<li><a href="#orgccc0418">3.10.1. 測驗類作業(表單)</a></li>
+<li><a href="#orgc2e8862">3.10.2. 問題：課堂中學生的互動問答</a></li>
+<li><a href="#org37460bd">3.10.3. 資料</a></li>
+<li><a href="#org2876c62">3.10.4. 重複使用訊息</a></li>
+<li><a href="#orgc293714">3.10.5. 評分</a></li>
+<li><a href="#org65cdbfb">3.10.6. 測驗結果分析</a></li>
+<li><a href="#org3e2c7eb">3.10.7. 成績下載</a></li>
+</ul>
+</li>
+<li><a href="#orge75d389">3.11. Google表單</a>
+<ul>
+<li><a href="#orgbe1b076">3.11.1. Google後台分析</a></li>
+<li><a href="#orgf808ed4">3.11.2. Google線上測驗範本</a></li>
+</ul>
+</li>
+<li><a href="#org10feb76">3.12. 標準本位評量SBASA</a>
+<ul>
+<li><a href="#org0397cec">3.12.1. SBASA</a></li>
+<li><a href="#orge0caad8">3.12.2. 影片</a></li>
+<li><a href="#org0c61f89">3.12.3. 資源示例</a></li>
+</ul>
+</li>
+<li><a href="#orgea77b37">3.13. 線上總結性評量</a>
+<ul>
+<li><a href="#orgcc00106">3.13.1. moodle/vpl</a></li>
+<li><a href="#org2735704">3.13.2. 遠距</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8a3b9e1">4. 教學評量案例分享(90分鐘)</a>
+<ul>
+<li><a href="#orgd9f9377">4.1. 讓AI幫忙出考卷</a>
+<ul>
+<li><a href="#org2d21a46">4.1.1. ChatGPT</a></li>
+<li><a href="#org33de65d">4.1.2. 看文件出題</a></li>
+<li><a href="#org1d34ea3">4.1.3. 看影片出題</a></li>
+</ul>
+</li>
+<li><a href="#org1c2f2f4">4.2. 課前自學</a>
+<ul>
+<li><a href="#orgd5bb3e5">4.2.1. Edpuzzle: 看影片：從影片中回答問題</a></li>
+<li><a href="#orgdee8955">4.2.2. Kami: 看PDF: 從PDF回答問題</a></li>
+</ul>
+</li>
+<li><a href="#orgbff3b3a">4.3. 形成性評量</a>
+<ul>
+<li><a href="#org9721387">4.3.1. Kahoot!</a></li>
+<li><a href="#orga1918e7">4.3.2. Quizizz</a></li>
+<li><a href="#org8aff20e">4.3.3. Slido</a></li>
+<li><a href="#orgfdb8cb6">4.3.4. PaGoMo</a></li>
+</ul>
+</li>
+<li><a href="#org28b7298">4.4. 課中的評量/作業</a>
+<ul>
+<li><a href="#orgd4d2175">4.4.1. 程式作業: Moodle VPL</a></li>
+<li><a href="#orgc76c212">4.4.2. 實作類作品: Seesaw</a></li>
+<li><a href="#org159c5ef">4.4.3. Classkick</a></li>
+</ul>
+</li>
+<li><a href="#org49dd7e0">4.5. 實作評量</a>
+<ul>
+<li><a href="#org9564762">4.5.1. 課堂筆記: Hackmd.io</a></li>
+<li><a href="#org56d6ef6">4.5.2. 期末專題: Padlet</a></li>
+<li><a href="#org318bcf8">4.5.3. 期中期末測驗: SKYOJ</a></li>
+</ul>
+</li>
+<li><a href="#org1a82580">4.6. 結語</a></li>
+</ul>
+</li>
+<li><a href="#org893cce0">5. 大綱</a>
+<ul>
+<li><a href="#orgccd15f0">5.1. 作業繳交</a>
+<ul>
+<li><a href="#orgac97874">5.1.1. MyET</a></li>
+<li><a href="#orgc11d9cd">5.1.2. PhET</a></li>
+<li><a href="#orgb878071">5.1.3. LUMIO</a></li>
+<li><a href="#org11f2285">5.1.4. Flipgrid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org716ce17">6. 要講嗎?</a>
+<ul>
+<li><a href="#orgfb1d4dd">6.1. 同儕互評</a></li>
+<li><a href="#orgdefdd04">6.2. 心智圖</a></li>
+</ul>
+</li>
+<li><a href="#org2d78c54">7. 以後看</a>
+<ul>
+<li><a href="#orgfec0f3c">7.1. 寫作</a></li>
+<li><a href="#orga53cd23">7.2. 因材網</a>
+<ul>
+<li><a href="#org56da713">7.2.1. 組卷、線上測驗</a></li>
+<li><a href="#orge72f18d">7.2.2. 因材網的任務</a></li>
+</ul>
+</li>
+<li><a href="#orgc8668ad">7.3. 科殊需求評量</a></li>
+<li><a href="#org1446064">7.4. 素養導向評量(課設學院SSCD)</a>
+<ul>
+<li><a href="#orgb8f584e">7.4.1. 課程設計中的評量角色</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd6e8580" class="outline-2">
+<h2 id="orgd6e8580"><span class="section-number-2">1.</span> 演講內容</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>時間： 112年9月21日</li>
+<li>140分鐘: 50(工具介紹) + 90(教學評量案例分享)</li>
+<li>對象: 高雄市公私立國中教師，預估25人</li>
+</ul>
+</div>
+<div id="outline-container-org0eafd22" class="outline-3">
+<h3 id="org0eafd22"><span class="section-number-3">1.1.</span> 課表</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div id="org4d27021" class="figure">
+<p><img src="images/演講內容/2023-08-25_14-41-35_課表.jpg" alt="2023-08-25_14-41-35_課表.jpg" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>課表內容</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgf1b9a6f" class="outline-2">
+<h2 id="orgf1b9a6f"><span class="section-number-2">2.</span> 前置作業</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>填寫調查表
+<ol class="org-ol">
+<li>最常使用的教學平台</li>
+<li>曾經在課堂中使用過哪些評量工具</li>
+</ol></li>
+<li>加入Google Classroom的選課LINK</li>
+<li>填寫每個老師目前登入的Email
+第二節實作課時加入Google Classroom教師名單</li>
+<li>還是要用padlet?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgefafdbf" class="outline-2">
+<h2 id="orgefafdbf"><span class="section-number-2">3.</span> 數位教學與評量工具介紹(50分鐘)</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orga2e04bd" class="outline-3">
+<h3 id="orga2e04bd"><span class="section-number-3">3.1.</span> 什麼是評量</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+多數數位教學都在討論怎麼教
+應該要討論怎麼分析學生的學習成果，回頭修正教學
+</p>
+</div>
+<div id="outline-container-org70f294a" class="outline-4">
+<h4 id="org70f294a"><span class="section-number-4">3.1.1.</span> Measurement, Assessment and Evaluation</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>Measurement interprets the situation numerically.</li>
+<li>Assessment is used to know the progression and evaluation is used for decision-making based on progression.</li>
+<li>Measurement is the quantitative assessment of educational outcomes.</li>
+<li>Evaluation is a continuous and comprehensive procedure.</li>
+<li>Measurement results in quantitative determination whereas evaluation makes a qualitative determination of the learner’s performance.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5af5995" class="outline-4">
+<h4 id="org5af5995"><span class="section-number-4">3.1.2.</span> Assessment for learning</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>評量的目的在於促進學生學習</li>
+<li>因為是為了促進學習，在過程中可適度提供協助或鷹架</li>
+<li>如：教學網的作業</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf415ca1" class="outline-4">
+<h4 id="orgf415ca1"><span class="section-number-4">3.1.3.</span> Assessment of learning</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li>評量是為了評估學生的學習成效</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb28b4d2" class="outline-3">
+<h3 id="orgb28b4d2"><span class="section-number-3">3.2.</span> 評量的目的</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>了解學生是否學會</li>
+<li>了解教學、評量過程中，何處理要搭建鷹架幫助學生</li>
+<li>了解課程設計與教學過程是否需要修正</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc5315fc" class="outline-3">
+<h3 id="orgc5315fc"><span class="section-number-3">3.3.</span> 評量的類型</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org1c4e856" class="outline-4">
+<h4 id="org1c4e856"><span class="section-number-4">3.3.1.</span> 形成性評量</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+在學習歷程中，對學生的 <b>各種導向素養目標的表現</b> 所進行的評量， <b>以促進學生學習</b>
+</p>
+</div>
+</div>
+<div id="outline-container-org56ce85c" class="outline-4">
+<h4 id="org56ce85c"><span class="section-number-4">3.3.2.</span> 總結性評量</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<p>
+<b>針對素養學習目標是否達成</b> 而 <b>對學生表現的好壞程度有所評斷(評分)</b> 所進行的評量
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgde6f4fc" class="outline-3">
+<h3 id="orgde6f4fc"><span class="section-number-3">3.4.</span> 我們要從評量中得到什麼?</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org6d8833f" class="outline-4">
+<h4 id="org6d8833f"><span class="section-number-4">3.4.1.</span> 行政目標</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>交成績</li>
+<li>理解學生的學習成效(教師教學成效)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3182b88" class="outline-4">
+<h4 id="org3182b88"><span class="section-number-4">3.4.2.</span> 教學目標</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ul class="org-ul">
+<li>促進學生學習</li>
+<li>教師能理解有哪些概念要重教</li>
+<li>學生能理解自已有哪些概念需要加強</li>
+<li>理解有哪些人要重教</li>
+<li>理解課程設計或教學方式是否應重新規畫</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2714e61" class="outline-3">
+<h3 id="org2714e61"><span class="section-number-3">3.5.</span> 評量的影響</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+評量的類型 -&gt; 課程內容  -&gt; 學生能力
+評量越多元、學生能力越高
+</p>
+</div>
+</div>
+<div id="outline-container-org5f39c35" class="outline-3">
+<h3 id="org5f39c35"><span class="section-number-3">3.6.</span> 如何跳脫傳統的評量手段與概念</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+<a href="https://www.youtube.com/watch?v=Hqaw4I1kbzo">0625-26學習成效評量與研究工具發展議題松－主題座談B</a>
+</p>
+</div>
+<div id="outline-container-orgc44ee2e" class="outline-4">
+<h4 id="orgc44ee2e"><span class="section-number-4">3.6.1.</span> 實作評量</h4>
+<div class="outline-text-4" id="text-3-6-1">
+
+<div id="org0ceab98" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_14-14-41_2023-09-14_14-14-17.png" alt="2023-09-14_14-14-41_2023-09-14_14-14-17.png" width="500" />
+</p>
+</div>
+<p width="500">
+<img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_14-22-00_2023-09-14_14-21-32.png" alt="2023-09-14_14-22-00_2023-09-14_14-21-32.png" width="500" />
+實作評量的設計流程
+</p>
+
+<div id="orgf6382bc" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-03-29_2023-09-14_16-03-13.png" alt="2023-09-14_16-03-29_2023-09-14_16-03-13.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>標題</p>
+</div>
+
+<div id="org2782cc1" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-04-05_2023-09-14_16-03-52.png" alt="2023-09-14_16-04-05_2023-09-14_16-03-52.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 3: </span>標題</p>
+</div>
+
+<div id="org6f8b9cd" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-06-40_2023-09-14_16-05-56.png" alt="2023-09-14_16-06-40_2023-09-14_16-05-56.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 4: </span>標題</p>
+</div>
+
+
+
+<div id="orge33963b" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-08-00_2023-09-14_16-07-48.png" alt="2023-09-14_16-08-00_2023-09-14_16-07-48.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 5: </span>標題</p>
+</div>
+
+
+<div id="orgbb9e87e" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-08-39_2023-09-14_16-08-24.png" alt="2023-09-14_16-08-39_2023-09-14_16-08-24.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 6: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4dcb708" class="outline-4">
+<h4 id="org4dcb708"><span class="section-number-4">3.6.2.</span> 檔案評量</h4>
+<div class="outline-text-4" id="text-3-6-2">
+
+<div id="org01032a8" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-10-36_2023-09-14_16-09-58.png" alt="2023-09-14_16-10-36_2023-09-14_16-09-58.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 7: </span>標題</p>
+</div>
+
+<div id="org0c74a13" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-12-02_2023-09-14_16-11-51.png" alt="2023-09-14_16-12-02_2023-09-14_16-11-51.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 8: </span>標題</p>
+</div>
+
+
+
+<div id="org5c99f2d" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-14-44_2023-09-14_16-13-02.png" alt="2023-09-14_16-14-44_2023-09-14_16-13-02.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 9: </span>標題</p>
+</div>
+
+
+
+
+<div id="org5bc6955" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-14-53_2023-09-14_16-13-15.png" alt="2023-09-14_16-14-53_2023-09-14_16-13-15.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 10: </span>標題</p>
+</div>
+
+
+
+<div id="org5db7c1e" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-15-00_2023-09-14_16-13-42.png" alt="2023-09-14_16-15-00_2023-09-14_16-13-42.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 11: </span>標題</p>
+</div>
+
+
+
+<p>
+對於成果的自評、學生互評
+下學期的計分應該採計這個做法
+</p>
+
+
+<div id="org3f31714" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-15-06_2023-09-14_16-14-18.png" alt="2023-09-14_16-15-06_2023-09-14_16-14-18.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 12: </span>標題</p>
+</div>
+
+
+
+
+
+<div id="org8d76478" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-17-46_2023-09-14_16-17-34.png" alt="2023-09-14_16-17-46_2023-09-14_16-17-34.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 13: </span>標題</p>
+</div>
+
+
+
+<div id="org8582b46" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-18-27_2023-09-14_16-18-08.png" alt="2023-09-14_16-18-27_2023-09-14_16-18-08.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 14: </span>標題</p>
+</div>
+
+
+<div id="orgc906947" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_16-19-00_2023-09-14_16-18-50.png" alt="2023-09-14_16-19-00_2023-09-14_16-18-50.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 15: </span>標題</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda94840" class="outline-3">
+<h3 id="orgda94840"><span class="section-number-3">3.7.</span> 各種評量工具的分析比較</h3>
+<div class="outline-text-3" id="text-3-7">
+
+<div id="orgf2aabcf" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-15_13-55-08_2023-09-15_13-54-27.png" alt="2023-09-15_13-55-08_2023-09-15_13-54-27.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 16: </span>標題</p>
+</div>
+</div>
+
+<div id="outline-container-orga692c56" class="outline-4">
+<h4 id="orga692c56"><span class="section-number-4">3.7.1.</span> Google表單測驗</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<p>
+題型自由度最高、學生可有可無帳號、可以網域限定帳號類型
+有後台提供測驗結果分析
+</p>
+</div>
+</div>
+<div id="outline-container-org25ab631" class="outline-4">
+<h4 id="org25ab631"><span class="section-number-4">3.7.2.</span> PaGamO遊戲測驗</h4>
+<div class="outline-text-4" id="text-3-7-2">
+<p>
+遊戲性最高、可結合作業與測驗
+</p>
+</div>
+</div>
+<div id="outline-container-org983bff9" class="outline-4">
+<h4 id="org983bff9"><span class="section-number-4">3.7.3.</span> Kahoot競賽測驗</h4>
+<div class="outline-text-4" id="text-3-7-3">
+<p>
+有即時競賽&amp;挑戰模式
+</p>
+</div>
+</div>
+<div id="outline-container-org70fa011" class="outline-4">
+<h4 id="org70fa011"><span class="section-number-4">3.7.4.</span> Quizlet測驗</h4>
+<div class="outline-text-4" id="text-3-7-4">
+<p>
+多功能線上筆記&amp;測驗,小遊戲結合練習
+</p>
+</div>
+</div>
+<div id="outline-container-orgef4b40e" class="outline-4">
+<h4 id="orgef4b40e"><span class="section-number-4">3.7.5.</span> 測驗系統比較</h4>
+<div class="outline-text-4" id="text-3-7-5">
+
+<div id="orgde931fa" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_20-19-18_2023-09-13_20-17-16.png" alt="2023-09-13_20-19-18_2023-09-13_20-17-16.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 17: </span>標題</p>
+</div>
+
+
+<div id="orgba59d01" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_20-19-33_2023-09-13_20-18-09.png" alt="2023-09-13_20-19-33_2023-09-13_20-18-09.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 18: </span>標題</p>
+</div>
+
+
+<p>
+＊補充教材｜線上測驗參考操作影片集：<a href="https://pse.is/3m9qp7">https://pse.is/3m9qp7</a>
+＊均一基礎操作常見問題短片教學：<a href="http://junyiacademy.piee.pw/3jda89">http://junyiacademy.piee.pw/3jda89</a>
+＊歡迎老師加入均一官方 LINE 帳號 ，不漏接每一則均一課程推播喔！<a href="https://lin.ee/kxrXzUE">https://lin.ee/kxrXzUE</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge31516c" class="outline-3">
+<h3 id="orge31516c"><span class="section-number-3">3.8.</span> 評量工具體驗</h3>
+<div class="outline-text-3" id="text-3-8">
+<p>
+學生體驗與成績分析
+</p>
+</div>
+<div id="outline-container-org8d7a88d" class="outline-4">
+<h4 id="org8d7a88d"><span class="section-number-4">3.8.1.</span> Kahoot!</h4>
+</div>
+<div id="outline-container-org65f4c9c" class="outline-4">
+<h4 id="org65f4c9c"><span class="section-number-4">3.8.2.</span> Quizizz / Google Classroom</h4>
+</div>
+<div id="outline-container-org723aebc" class="outline-4">
+<h4 id="org723aebc"><span class="section-number-4">3.8.3.</span> Google表單測驗</h4>
+</div>
+<div id="outline-container-orgce72fe4" class="outline-4">
+<h4 id="orgce72fe4"><span class="section-number-4">3.8.4.</span> dpuzzle</h4>
+</div>
+<div id="outline-container-org67c6183" class="outline-4">
+<h4 id="org67c6183"><span class="section-number-4">3.8.5.</span> Slido</h4>
+</div>
+<div id="outline-container-org9e35bf6" class="outline-4">
+<h4 id="org9e35bf6"><span class="section-number-4">3.8.6.</span> Seesaw</h4>
+</div>
+<div id="outline-container-org89b8357" class="outline-4">
+<h4 id="org89b8357"><span class="section-number-4">3.8.7.</span> Padlet</h4>
+</div>
+<div id="outline-container-orge7ff1b4" class="outline-4">
+<h4 id="orge7ff1b4"><span class="section-number-4">3.8.8.</span> Moodle/VPL</h4>
+</div>
+<div id="outline-container-org92322ab" class="outline-4">
+<h4 id="org92322ab"><span class="section-number-4">3.8.9.</span> SkyOJ</h4>
+</div>
+</div>
+<div id="outline-container-org705e784" class="outline-3">
+<h3 id="org705e784"><span class="section-number-3">3.9.</span> Google classroom</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=jydxUCZHJg4">13 線上教學與評量實務分享 江莉萍</a></li>
+</ul>
+
+<p>
+作業發送與配分
+</p>
+
+<p>
+訊息串: LINE
+</p>
+
+<div id="orge825989" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-21-45_2023-09-16_15-21-00.png" alt="2023-09-16_15-21-45_2023-09-16_15-21-00.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 19: </span>標題</p>
+</div>
+
+<p>
+訊息串上的作業: 聯絡簿
+</p>
+
+<p width="500">
+<img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-22-58_2023-09-16_15-22-10.png" alt="2023-09-16_15-22-58_2023-09-16_15-22-10.png" width="500" />
+精簡通 知
+</p>
+
+
+<div id="org6328aa2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-24-21_2023-09-16_15-23-47.png" alt="2023-09-16_15-24-21_2023-09-16_15-23-47.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 20: </span>標題</p>
+</div>
+
+
+<p>
+學習成績配分
+</p>
+
+
+
+<div id="org0e7db9c" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-26-36_2023-09-16_15-25-14.png" alt="2023-09-16_15-26-36_2023-09-16_15-25-14.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 21: </span>標題</p>
+</div>
+
+<p>
+總分: 全部分數相加、依類別加權
+</p>
+
+
+
+<div id="orgf135950" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-27-55_2023-09-16_15-27-26.png" alt="2023-09-16_15-27-55_2023-09-16_15-27-26.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 22: </span>標題</p>
+</div>
+
+
+<p>
+增加課程成員
+</p>
+
+
+
+<div id="org496bf35" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-31-39_2023-09-16_15-30-32.png" alt="2023-09-16_15-31-39_2023-09-16_15-30-32.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 23: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org620f75c" class="outline-3">
+<h3 id="org620f75c"><span class="section-number-3">3.10.</span> 作業評分量表</h3>
+<div class="outline-text-3" id="text-3-10">
+<p>
+適作實作評量的評分
+</p>
+
+
+<div id="orgfcc484f" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-47-39_2023-09-16_15-47-03.png" alt="2023-09-16_15-47-39_2023-09-16_15-47-03.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 24: </span>標題</p>
+</div>
+
+
+
+<div id="org29f8ded" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-48-08_2023-09-16_15-47-58.png" alt="2023-09-16_15-48-08_2023-09-16_15-47-58.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 25: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgca905b6" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-49-08_2023-09-16_15-48-31.png" alt="2023-09-16_15-49-08_2023-09-16_15-48-31.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 26: </span>標題</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgccc0418" class="outline-4">
+<h4 id="orgccc0418"><span class="section-number-4">3.10.1.</span> 測驗類作業(表單)</h4>
+<div class="outline-text-4" id="text-3-10-1">
+
+<div id="org90f7c4e" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-52-37_2023-09-16_15-52-10.png" alt="2023-09-16_15-52-37_2023-09-16_15-52-10.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 27: </span>標題</p>
+</div>
+
+
+
+
+<div id="org58fb5bf" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-53-51_2023-09-16_15-53-31.png" alt="2023-09-16_15-53-51_2023-09-16_15-53-31.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 28: </span>標題</p>
+</div>
+
+
+
+
+
+
+<div id="org5025085" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-54-46_2023-09-16_15-54-25.png" alt="2023-09-16_15-54-46_2023-09-16_15-54-25.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 29: </span>標題</p>
+</div>
+
+
+<div id="org04dc56c" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_15-54-51_2023-09-16_15-54-37.png" alt="2023-09-16_15-54-51_2023-09-16_15-54-37.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 30: </span>標題</p>
+</div>
+
+<p>
+編輯表單
+</p>
+
+
+<div id="orgb80c2a3" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-52-12_2023-09-16_18-50-51.png" alt="2023-09-16_18-52-12_2023-09-16_18-50-51.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 31: </span>標題</p>
+</div>
+
+
+
+
+<div id="org0f662f5" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-52-19_2023-09-16_18-51-50.png" alt="2023-09-16_18-52-19_2023-09-16_18-51-50.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 32: </span>標題</p>
+</div>
+
+
+
+<div id="org7103fe9" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-52-56_2023-09-16_18-52-37.png" alt="2023-09-16_18-52-56_2023-09-16_18-52-37.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 33: </span>標題</p>
+</div>
+
+<p>
+如果有非選題，要勾選「稍後公佈成績」，因為要手動閱卷。
+</p>
+
+
+
+<div id="orgdec4f79" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-54-18_2023-09-16_18-53-17.png" alt="2023-09-16_18-54-18_2023-09-16_18-53-17.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 34: </span>標題</p>
+</div>
+
+<p>
+如果一份測驗要給多個班用，可以建立副本
+</p>
+
+
+
+
+<div id="org1ed4bf3" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-55-37_2023-09-16_18-55-02.png" alt="2023-09-16_18-55-37_2023-09-16_18-55-02.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 35: </span>標題</p>
+</div>
+
+<p>
+測驗表單在未公告或安排預施測時段前都算草稿
+</p>
+
+
+
+<div id="orgf6d879a" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_18-57-11_2023-09-16_18-56-21.png" alt="2023-09-16_18-57-11_2023-09-16_18-56-21.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 36: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc2e8862" class="outline-4">
+<h4 id="orgc2e8862"><span class="section-number-4">3.10.2.</span> 問題：課堂中學生的互動問答</h4>
+<div class="outline-text-4" id="text-3-10-2">
+
+<div id="orga62b1b2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-12-45_2023-09-16_19-12-20.png" alt="2023-09-16_19-12-45_2023-09-16_19-12-20.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 37: </span>標題</p>
+</div>
+
+
+
+
+<div id="org7749b72" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-10-11_2023-09-16_19-09-26.png" alt="2023-09-16_19-10-11_2023-09-16_19-09-26.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 38: </span>標題</p>
+</div>
+
+
+
+<div id="org492037f" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-10-53_2023-09-16_19-10-39.png" alt="2023-09-16_19-10-53_2023-09-16_19-10-39.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 39: </span>標題</p>
+</div>
+
+<p>
+「問題」也可以用來當點名手段，可以預約實施
+</p>
+
+
+
+<div id="org3f57bdd" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-13-45_2023-09-16_19-13-39.png" alt="2023-09-16_19-13-45_2023-09-16_19-13-39.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 40: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org37460bd" class="outline-4">
+<h4 id="org37460bd"><span class="section-number-4">3.10.3.</span> 資料</h4>
+<div class="outline-text-4" id="text-3-10-3">
+
+<div id="orga787613" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-14-50_2023-09-16_19-14-23.png" alt="2023-09-16_19-14-50_2023-09-16_19-14-23.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 41: </span>標題</p>
+</div>
+
+
+
+
+<div id="orgfee1a31" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-15-10_2023-09-16_19-15-03.png" alt="2023-09-16_19-15-10_2023-09-16_19-15-03.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 42: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2876c62" class="outline-4">
+<h4 id="org2876c62"><span class="section-number-4">3.10.4.</span> 重複使用訊息</h4>
+<div class="outline-text-4" id="text-3-10-4">
+<p>
+用其他班級中的資料、表單、測驗&#x2026;.
+</p>
+
+
+<div id="orga989d85" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-16-45_2023-09-16_19-16-29.png" alt="2023-09-16_19-16-45_2023-09-16_19-16-29.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 43: </span>標題</p>
+</div>
+
+
+
+
+<div id="org53a4b43" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-17-06_2023-09-16_19-16-57.png" alt="2023-09-16_19-17-06_2023-09-16_19-16-57.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 44: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc293714" class="outline-4">
+<h4 id="orgc293714"><span class="section-number-4">3.10.5.</span> 評分</h4>
+<div class="outline-text-4" id="text-3-10-5">
+
+<div id="org09629ec" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_19-18-33_2023-09-16_19-18-13.png" alt="2023-09-16_19-18-33_2023-09-16_19-18-13.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 45: </span>標題</p>
+</div>
+
+<p>
+教師可以看「待批閱」作業
+</p>
+
+
+
+<div id="org54b8133" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-06-28_2023-09-16_20-06-00.png" alt="2023-09-16_20-06-28_2023-09-16_20-06-00.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 46: </span>標題</p>
+</div>
+
+
+
+
+<div id="org59487b8" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-06-53_2023-09-16_20-06-42.png" alt="2023-09-16_20-06-53_2023-09-16_20-06-42.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 47: </span>標題</p>
+</div>
+
+
+
+
+<div id="org35fdb5a" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-07-10_2023-09-16_20-07-04.png" alt="2023-09-16_20-07-10_2023-09-16_20-07-04.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 48: </span>標題</p>
+</div>
+
+
+
+<div id="org42d513e" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-07-35_2023-09-16_20-07-27.png" alt="2023-09-16_20-07-35_2023-09-16_20-07-27.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 49: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org65cdbfb" class="outline-4">
+<h4 id="org65cdbfb"><span class="section-number-4">3.10.6.</span> 測驗結果分析</h4>
+<div class="outline-text-4" id="text-3-10-6">
+
+<div id="org3c6c611" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-09-53_2023-09-16_20-08-50.png" alt="2023-09-16_20-09-53_2023-09-16_20-08-50.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 50: </span>標題</p>
+</div>
+
+
+
+
+<div id="org9c3862d" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-10-00_2023-09-16_20-08-56.png" alt="2023-09-16_20-10-00_2023-09-16_20-08-56.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 51: </span>標題</p>
+</div>
+
+
+<div id="org8bc2621" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-10-03_2023-09-16_20-09-26.png" alt="2023-09-16_20-10-03_2023-09-16_20-09-26.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 52: </span>標題</p>
+</div>
+
+
+
+
+<div id="org4e08df1" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-11-13_2023-09-16_20-11-07.png" alt="2023-09-16_20-11-13_2023-09-16_20-11-07.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 53: </span>標題</p>
+</div>
+
+<p>
+要按成績匯入才會進到學生資枓庫中(可分批匯)
+</p>
+
+
+
+<div id="org4065fc5" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-12-01_2023-09-16_20-11-24.png" alt="2023-09-16_20-12-01_2023-09-16_20-11-24.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 54: </span>標題</p>
+</div>
+
+<p>
+拍照作業評分
+</p>
+
+
+
+<div id="org95a238a" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_20-59-20_2023-09-16_20-58-31.png" alt="2023-09-16_20-59-20_2023-09-16_20-58-31.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 55: </span>標題</p>
+</div>
+
+
+
+<div id="org02a2d94" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-02-11_2023-09-16_21-01-52.png" alt="2023-09-16_21-02-11_2023-09-16_21-01-52.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 56: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e2c7eb" class="outline-4">
+<h4 id="org3e2c7eb"><span class="section-number-4">3.10.7.</span> 成績下載</h4>
+<div class="outline-text-4" id="text-3-10-7">
+
+<div id="org69f0b0a" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-02-46_2023-09-16_21-02-32.png" alt="2023-09-16_21-02-46_2023-09-16_21-02-32.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 57: </span>標題</p>
+</div>
+
+
+<div id="org2ee80d7" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-03-20_2023-09-16_21-03-12.png" alt="2023-09-16_21-03-20_2023-09-16_21-03-12.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 58: </span>標題</p>
+</div>
+
+
+
+<div id="orge054cb6" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-03-34_2023-09-16_21-03-29.png" alt="2023-09-16_21-03-34_2023-09-16_21-03-29.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 59: </span>標題</p>
+</div>
+
+
+
+
+
+
+<div id="orgaf2145a" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-06-36_2023-09-16_21-05-58.png" alt="2023-09-16_21-06-36_2023-09-16_21-05-58.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 60: </span>標題</p>
+</div>
+
+
+
+
+<div id="org2890902" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-06-42_2023-09-16_21-06-22.png" alt="2023-09-16_21-06-42_2023-09-16_21-06-22.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 61: </span>標題</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge75d389" class="outline-3">
+<h3 id="orge75d389"><span class="section-number-3">3.11.</span> Google表單</h3>
+<div class="outline-text-3" id="text-3-11">
+<p>
+題型自由度最高、學生可有可無帳號、可以網域限定帳號類型
+有後台提供測驗結果分析
+</p>
+<ul class="org-ul">
+<li>可以裝Google Docs的add-on: form builder，將Google Docs自動轉為form builder</li>
+<li><a href="https://www.youtube.com/watch?v=YIqauUk8458">教師評量篇01 利用google表單測驗功能進行學習評量</a></li>
+<li><a href="https://www.youtube.com/watch?v=fEQZ7W5F-ps">Google表單:線上即時回饋與互評！</a></li>
+<li><a href="https://www.youtube.com/watch?v=h5EoChHtn_s&amp;list=PLYXIDa040aPVxaZzS1xwK7e5pZMtPXErJ&amp;index=1">Google Drive，數位化資料的好幫手</a>
+圖片轉文字/語音轉文字(Google Keeps)</li>
+</ul>
+</div>
+<div id="outline-container-orgbe1b076" class="outline-4">
+<h4 id="orgbe1b076"><span class="section-number-4">3.11.1.</span> Google後台分析</h4>
+<div class="outline-text-4" id="text-3-11-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=SQAg6BDcCdY">劉孟硯老師 評量：一堂線上課程的教學與評量、心法與評量工具</a></li>
+</ul>
+
+<div id="orgc44344d" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_08-46-33_2023-09-13_08-45-21.png" alt="2023-09-13_08-46-33_2023-09-13_08-45-21.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 62: </span>標題</p>
+</div>
+
+<div id="orgda19d3e" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_08-46-43_2023-09-13_08-45-43.png" alt="2023-09-13_08-46-43_2023-09-13_08-45-43.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 63: </span>標題</p>
+</div>
+
+<div id="orga58a396" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_08-48-12_2023-09-13_08-46-04.png" alt="2023-09-13_08-48-12_2023-09-13_08-46-04.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 64: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf808ed4" class="outline-4">
+<h4 id="orgf808ed4"><span class="section-number-4">3.11.2.</span> Google線上測驗範本</h4>
+<div class="outline-text-4" id="text-3-11-2">
+<p>
+由csv匯成測驗表單
+</p>
+<ul class="org-ul">
+<li><a href="https://sites.google.com/email.nchu.edu.tw/gdrive-addon/%E7%B7%9A%E4%B8%8A%E6%B8%AC%E9%A9%97%E8%A1%A8%E5%96%AE">基於Google雲端硬碟平台開發出「線上測驗範本」</a></li>
+<li><p>
+<a href="https://www.youtube.com/watch?v=WuZG8urvZPU">如何利用AI工具製作學習評量試題 (33:38)</a>
+</p>
+
+<div id="org6037119" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_12-50-58_2023-09-17_12-50-46.png" alt="2023-09-17_12-50-58_2023-09-17_12-50-46.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 65: </span>標題</p>
+</div></li>
+</ul>
+
+<p>
+執行方式
+</p>
+
+
+<div id="orgfb7a30f" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_12-53-33_2023-09-17_12-53-11.png" alt="2023-09-17_12-53-33_2023-09-17_12-53-11.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 66: </span>標題</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org10feb76" class="outline-3">
+<h3 id="org10feb76"><span class="section-number-3">3.12.</span> 標準本位評量SBASA</h3>
+<div class="outline-text-3" id="text-3-12">
+</div>
+<div id="outline-container-org0397cec" class="outline-4">
+<h4 id="org0397cec"><span class="section-number-4">3.12.1.</span> SBASA</h4>
+<div class="outline-text-4" id="text-3-12-1">
+<p>
+只有國小、國中
+有提供教材包、有成績系統、有測驗分析
+</p>
+<ul class="org-ul">
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/HomePage/index.aspx#">SBASA十二年國教課綱國民中小學素養導向標準本位評量計畫</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge0caad8" class="outline-4">
+<h4 id="orge0caad8"><span class="section-number-4">3.12.2.</span> 影片</h4>
+<div class="outline-text-4" id="text-3-12-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=TtmP4YHP3dY">國小社會領域素養導向標準本位評量應用經驗分享｜邱玉蘋教師</a></li>
+</ul>
+<p>
+原來的評量標準
+</p>
+
+
+<div id="org966a541" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_11-08-00_2023-09-13_11-07-51.png" alt="2023-09-13_11-08-00_2023-09-13_11-07-51.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 67: </span>標題</p>
+</div>
+
+<p>
+修改後
+</p>
+
+<div id="org29059b2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_11-08-25_2023-09-13_11-08-14.png" alt="2023-09-13_11-08-25_2023-09-13_11-08-14.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 68: </span>標題</p>
+</div>
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=GXKbKR8z87Y">國小自然科學領域素養導向標準本位評量應用經驗分享｜胡秀芳教師</a></li>
+<li><a href="https://www.youtube.com/watch?v=LmM1RMQ_vd0">國中科技領域資訊科技素養導向標準本位評量應用經驗分享｜呂天齡教師</a></li>
+<li><a href="https://www.youtube.com/watch?v=AbZiSj1e9WM">國中科技領域生活科技素養導向標準本位評量應用經驗分享｜陳玫良校長</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0c61f89" class="outline-4">
+<h4 id="org0c61f89"><span class="section-number-4">3.12.3.</span> 資源示例</h4>
+<div class="outline-text-4" id="text-3-12-3">
+<ul class="org-ul">
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/Subject/Subject-J.aspx">首頁&gt;評量標準與示例查詢&gt;國中評量標準</a></li>
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/TiKu/promoteProblemList.aspx#">國中生活科技科施測說明:推廣學校題本列表</a></li>
+</ul>
+
+<div id="org9347145" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_09-44-47_2023-09-13_09-44-25.png" alt="2023-09-13_09-44-47_2023-09-13_09-44-25.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 69: </span>標題</p>
+</div>
+
+<ul class="org-ul">
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/TiKu/promoteProblemList.aspx#">示例八：物聯網科技心智圖</a></li>
+<li><a href="https://sbasa.rcpet.edu.tw/SBASA/TiKu/promoteProblemList.aspx#">推廣學校題本列表</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgea77b37" class="outline-3">
+<h3 id="orgea77b37"><span class="section-number-3">3.13.</span> 線上總結性評量</h3>
+<div class="outline-text-3" id="text-3-13">
+</div>
+<div id="outline-container-orgcc00106" class="outline-4">
+<h4 id="orgcc00106"><span class="section-number-4">3.13.1.</span> moodle/vpl</h4>
+</div>
+<div id="outline-container-org2735704" class="outline-4">
+<h4 id="org2735704"><span class="section-number-4">3.13.2.</span> 遠距</h4>
+<div class="outline-text-4" id="text-3-13-2">
+<p>
+<a href="https://www.youtube.com/watch?v=un9t555KPp8">中階｜遠距教學心法：均一線上測驗與遠端評量工具(後面有quizizz)</a>
+</p>
+
+<div id="orgf48f111" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_20-13-23_2023-09-13_20-12-03.png" alt="2023-09-13_20-13-23_2023-09-13_20-12-03.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 70: </span>標題</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8a3b9e1" class="outline-2">
+<h2 id="org8a3b9e1"><span class="section-number-2">4.</span> 教學評量案例分享(90分鐘)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgd9f9377" class="outline-3">
+<h3 id="orgd9f9377"><span class="section-number-3">4.1.</span> 讓AI幫忙出考卷</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=0Yy2xKg2_l0">AI無限出題幫你搞定差異化教學與各種自製題目的困擾</a></li>
+</ul>
+</div>
+<div id="outline-container-org2d21a46" class="outline-4">
+<h4 id="org2d21a46"><span class="section-number-4">4.1.1.</span> ChatGPT</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9a9562e"></a><a href="https://mrmad.com.tw/aiprm-for-chatgpt">超強ChatGPT 外掛工具 AIPRM for ChatGPT 完全上手教學攻略</a><br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<p>
+簡單來說，就是幫 CHATGPT 開掛，解開它被人類限定只能回答的基本常識問題，讓它能夠思考根據什麼需求，去創造適合的內容。直接看實際操作會更了解，AIPRM for CHATGPT 是在做什麼？
+</p>
+
+<p>
+提供預設模板
+</p>
+</div>
+</li>
+
+<li><a id="org6bb4aa5"></a><a href="https://www.playpcesor.com/2023/04/chatdoc-pdf-ai.html"> ChatDOC 中英文獻 PDF AI 摘要問答工具，可一次分析多份論文</a><br />
+<div class="outline-text-5" id="text-4-1-1-2">
+<p>
+比chatPDF更好用，主要是用來寫論文
+可以用同一個問題叫AI去整理多篇文章
+也就是說，不用再把教材內容貼到對話框中，可以直接上傳doc，再讓chatgpt去生資料
+</p>
+</div>
+</li>
+
+<li><a id="orgb6a14c8"></a><a href="https://www.storm.mg/lifestyle/4781410">ChatPDF怎麼使用？免費ChatGPT學習神器！一鍵光速讀完檔案、整理重點&#x2026;幫報告、論文開外掛</a><br /></li>
+
+<li><a id="orgfffbba4"></a><a href="https://www.kocpc.com.tw/archives/484345">Chat YouTube 丟影片網址，就能向 AI 提問影片內容、做總結、以及其他你想知道的事情</a><br />
+<div class="outline-text-5" id="text-4-1-1-4">
+<p>
+<a href="https://chattube.io/">ChatTube</a>
+</p>
+
+
+<div id="org0cd9f4d" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-42-05_2023-09-16_21-39-50.png" alt="2023-09-16_21-42-05_2023-09-16_21-39-50.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 71: </span>標題</p>
+</div>
+
+
+
+<div id="orgc2eb5d3" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-42-11_2023-09-16_21-40-08.png" alt="2023-09-16_21-42-11_2023-09-16_21-40-08.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 72: </span>標題</p>
+</div>
+
+
+
+
+<div id="org9cf6dbe" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-42-15_2023-09-16_21-40-47.png" alt="2023-09-16_21-42-15_2023-09-16_21-40-47.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 73: </span>標題</p>
+</div>
+
+
+
+
+<div id="org48594f2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-42-23_2023-09-16_21-41-18.png" alt="2023-09-16_21-42-23_2023-09-16_21-41-18.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 74: </span>標題</p>
+</div>
+
+
+<p>
+七分鐘的課堂教學錄影，大概處理2分鐘
+</p>
+
+
+<div id="org6f97e96" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-44-35_2023-09-16_21-44-26.png" alt="2023-09-16_21-44-35_2023-09-16_21-44-26.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 75: </span>標題</p>
+</div>
+
+<p>
+詢問影片重點
+</p>
+
+
+
+
+<div id="orgec7e918" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-16_21-47-03_2023-09-16_21-45-25.png" alt="2023-09-16_21-47-03_2023-09-16_21-45-25.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 76: </span>標題</p>
+</div>
+
+
+
+<p>
+生成測驗
+</p>
+<ol class="org-ol">
+<li>集合在Python中的数据类型是什么？</li>
+<li>List</li>
+<li>Set</li>
+<li>Dict</li>
+<li>Tuple</li>
+</ol>
+<p>
+正确答案：B
+</p>
+
+<ol class="org-ol">
+<li>集合可以进行哪些操作？</li>
+<li>交集和连接</li>
+<li>排序和更新</li>
+<li>删除和修改</li>
+<li>插入和查找</li>
+</ol>
+<p>
+正确答案：A
+</p>
+
+<ol class="org-ol">
+<li>集合与列表以及元组的不同之处在于：</li>
+<li>集合是有序的</li>
+<li>集合可以包含重复的元素</li>
+<li>集合不能进行循环遍历</li>
+<li>集合中可以存储键值对</li>
+</ol>
+<p>
+正确答案：B
+</p>
+
+<ol class="org-ol">
+<li>如何判断一个元素是否存在于集合中？</li>
+<li>使用关键字 &ldquo;in&rdquo;</li>
+<li>使用关键字 &ldquo;not in&rdquo;</li>
+<li>使用索引值进行查找</li>
+<li>使用函数 &ldquo;contains()&rdquo;</li>
+</ol>
+<p>
+正确答案：A
+</p>
+
+<ol class="org-ol">
+<li>下列哪个操作不适用于集合？</li>
+<li>遍历集合的元素</li>
+<li>查找集合的第一个元素</li>
+<li>计算集合的长度</li>
+<li>删除集合中的元素</li>
+</ol>
+<p>
+正确答案：B
+</p>
+</div>
+</li>
+
+<li><a id="org4c4a559"></a>輸入文本、生成試題<br />
+<div class="outline-text-5" id="text-4-1-1-5">
+<p>
+選擇題或填充、簡答
+</p>
+</div>
+</li>
+<li><a id="org4f3cbba"></a>紙本教材<br />
+<div class="outline-text-5" id="text-4-1-1-6">
+<p>
+先掃瞄或拍照、以Google Docs開啟、辨識成文字
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org33de65d" class="outline-4">
+<h4 id="org33de65d"><span class="section-number-4">4.1.2.</span> 看文件出題</h4>
+</div>
+<div id="outline-container-org1d34ea3" class="outline-4">
+<h4 id="org1d34ea3"><span class="section-number-4">4.1.3.</span> 看影片出題</h4>
+</div>
+</div>
+<div id="outline-container-org1c2f2f4" class="outline-3">
+<h3 id="org1c2f2f4"><span class="section-number-3">4.2.</span> 課前自學</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgd5bb3e5" class="outline-4">
+<h4 id="orgd5bb3e5"><span class="section-number-4">4.2.1.</span> Edpuzzle: 看影片：從影片中回答問題</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge926d7c"></a><a href="https://www.youtube.com/watch?v=2HEX0I55BiA">Edpuzzle影片自學評量好工具</a><br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<p>
+edpuzzle的優點
+</p>
+
+<p width="500">
+<img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_07-02-49_2023-09-14_07-02-32.png" alt="2023-09-14_07-02-49_2023-09-14_07-02-32.png" width="500" />
+edpuzzle編影片方式
+</p>
+
+
+
+
+<div id="org993be8c" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_11-51-53_2023-09-14_11-50-49.png" alt="2023-09-14_11-51-53_2023-09-14_11-50-49.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 77: </span>標題</p>
+</div>
+
+
+
+
+<div id="org20022d3" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_13-05-34_2023-09-14_13-05-18.png" alt="2023-09-14_13-05-34_2023-09-14_13-05-18.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 78: </span>標題</p>
+</div>
+</div>
+</li>
+<li><a id="org542fdd2"></a><a href="https://www.youtube.com/watch?v=lsc-Nq9DBYs">把課程變成超 Fun 的互動問答遊戲 Kahoot! 簡單易用讓全球上百萬老師愛不釋手</a><br />
+<div class="outline-text-5" id="text-4-2-1-2">
+<p>
+免費版: 50人
+只有單選：複選要付費
+可輸入數學公式
+題目及選項都有字數限制
+</p>
+
+
+
+<div id="orge508fcf" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_20-09-34_2023-09-14_20-09-07.png" alt="2023-09-14_20-09-34_2023-09-14_20-09-07.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 79: </span>標題</p>
+</div>
+
+<p>
+可以利用Powerpoint製作動畫，轉為GIF，在題目中製作動畫
+可以由csv來批次上傳測驗內容
+測驗也以加入投影片，要複雜版型要付費（也可以由powerpoint先製作好投影片，然後轉為圖片再插入基本的版型)
+可以透過主題來讓測驗背景更生動
+可以當成平常成績，或是依比賽結果來當加分依據
+除了在課堂即時實施，也可以指派為作業
+可以搜尋其他人做的測驗，建立複本
+</p>
+
+<div id="orgd649489" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-14_21-31-34_2023-09-14_20-53-18.png" alt="2023-09-14_21-31-34_2023-09-14_20-53-18.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 80: </span>標題</p>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org0d56bf6"></a>測驗類型<br />
+<div class="outline-text-6" id="text-4-2-1-2-1">
+<ol class="org-ol">
+<li>經典</li>
+<li>組隊</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgdee8955" class="outline-4">
+<h4 id="orgdee8955"><span class="section-number-4">4.2.2.</span> Kami: 看PDF: 從PDF回答問題</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li><a href="https://www.kamiapp.com/">https://www.kamiapp.com/</a></li>
+<li><a href="https://www.youtube.com/watch?v=IvaAFFL4Gvc">網路資源分享&#x2013;教學神器Kami: 蕭仕原Ben</a></li>
+<li><a href="https://www.youtube.com/watch?v=zeF4bY6qAFc">Chrome擴充程式分享&#x2013;人生開外掛</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbff3b3a" class="outline-3">
+<h3 id="orgbff3b3a"><span class="section-number-3">4.3.</span> 形成性評量</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>上一堂的概念小測驗</li>
+<li>本節的概念評量</li>
+</ul>
+</div>
+<div id="outline-container-org9721387" class="outline-4">
+<h4 id="org9721387"><span class="section-number-4">4.3.1.</span> Kahoot!</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org013bcd8"></a>優點<br />
+<div class="outline-text-5" id="text-4-3-1-1">
+<ul class="org-ul">
+<li>即時呈現學生排名</li>
+<li>可設定每題作答時間，方便教師控制節奏</li>
+</ul>
+</div>
+</li>
+<li><a id="org28d02f5"></a>影片<br />
+<div class="outline-text-5" id="text-4-3-1-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=EQqSum1ncyo">教師評量篇03 利用kahoot作為趣味性排名競賽評量</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga1918e7" class="outline-4">
+<h4 id="orga1918e7"><span class="section-number-4">4.3.2.</span> Quizizz</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org67493ab"></a>介紹<br />
+<div class="outline-text-5" id="text-4-3-2-1">
+<ul class="org-ul">
+<li>from 印度</li>
+<li>優點：康軒有製作好的全套題庫,教師無需自行編輯題庫</li>
+<li><a href="https://www.youtube.com/watch?v=Inrpzf9mPKE">線上教學💻善用Quizizz：遠端評量與課堂及時測驗一把罩</a></li>
+<li><a href="https://www.youtube.com/watch?v=un9t555KPp8">中階｜遠距教學心法：均一線上測驗與遠端評量工具(1:30:00以後)</a></li>
+</ul>
+
+
+
+<div id="org85486e0" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_21-10-14_2023-09-13_21-09-59.png" alt="2023-09-13_21-10-14_2023-09-13_21-09-59.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 81: </span>標題</p>
+</div>
+
+
+<p width="500">
+<img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_21-10-36_2023-09-13_21-10-24.png" alt="2023-09-13_21-10-36_2023-09-13_21-10-24.png" width="500" />
+出版社的題目
+</p>
+
+<p width="500">
+<img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_21-48-00_2023-09-13_21-47-34.png" alt="2023-09-13_21-48-00_2023-09-13_21-47-34.png" width="500" />
+從CSV匯入
+</p>
+
+
+
+<div id="org13bebf1" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-13_21-53-44_2023-09-13_21-53-04.png" alt="2023-09-13_21-53-44_2023-09-13_21-53-04.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 82: </span>標題</p>
+</div>
+</div>
+</li>
+<li><a id="org89f803e"></a>[DEMO]在普通教室中實施的狀況:3分鐘 <a href="https://www.youtube.com/watch?v=3eCs3PZojKQ">工具教學】大家都說Quizizz可以把考試變成遊戲？實際在教學現場中使用的效果如何？</a><br />
+<div class="outline-text-5" id="text-4-3-2-2">
+<p>
+分組合作實施
+</p>
+<ul class="org-ul">
+<li><a href="https://medium.com/@celestewu319/%E8%8F%AF%E8%AA%9E%E6%95%99%E5%AD%B8%E8%AA%B2%E5%A0%82%E6%B4%BB%E5%8B%95-quizizz-%E9%81%A9%E5%90%88%E8%A4%87%E7%BF%92%E7%94%9F%E8%A9%9E-%E7%AD%94%E9%A1%8C%E5%8F%8A%E8%80%83%E5%89%8D%E8%A4%87%E7%BF%92%E7%94%A8-3e0ec9f47bdd">華語教學課堂活動 — quizizz</a></li>
+</ul>
+<p>
+測驗的分類
+</p>
+
+<p>
+在老師設定好的頁面點選Live game、選擇遊戲模式：
+</p>
+
+<p>
+1.Team:學生各自答題，但得分來自整組表現
+</p>
+
+<p>
+2.Classic：學生各自答題，得分也是獨立計算
+</p>
+
+<p>
+3.Test：作答期間沒有額外的圖，且學生需要登入才能作答
+</p>
+
+<ul class="org-ul">
+<li>照抄: <a href="https://www.youtube.com/watch?v=zlsZ2yMnDN0">https://www.youtube.com/watch?v=zlsZ2yMnDN0</a></li>
+<li><a href="https://www.youtube.com/watch?v=Inrpzf9mPKE">線上教學💻善用Quizizz：遠端評量與課堂及時測驗一把罩</a></li>
+</ul>
+<p>
+有10個預設題庫
+</p>
+
+<p width="500">
+<img src="images/大綱/2023-09-17_15-57-55_2023-09-17_15-57-48.png" alt="2023-09-17_15-57-55_2023-09-17_15-57-48.png" width="500" />
+可以直接使用出版社做好的試題: 例如康軒
+google 康軒+quizizz
+</p>
+
+
+<div id="org853a35e" class="figure">
+<p><img src="images/大綱/2023-09-17_16-11-44_2023-09-17_16-11-34.png" alt="2023-09-17_16-11-44_2023-09-17_16-11-34.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 83: </span>標題</p>
+</div>
+
+
+
+<div id="org9afd602" class="figure">
+<p><img src="images/大綱/2023-09-17_16-15-35_2023-09-17_16-15-25.png" alt="2023-09-17_16-15-35_2023-09-17_16-15-25.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 84: </span>標題</p>
+</div>
+
+
+
+
+
+
+<div id="orge70d945" class="figure">
+<p><img src="images/大綱/2023-09-17_16-15-39_2023-09-17_16-15-07.png" alt="2023-09-17_16-15-39_2023-09-17_16-15-07.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 85: </span>標題</p>
+</div>
+
+
+<p>
+可以直接用，也可以複製編輯後再用
+</p>
+
+<p>
+Classic: 即時測，自己控制進度
+Instructor-paced: 由教師控制進度，適用時機: 教師師廣播題目，學生以電腦或手機、平板作答，全班同步
+學生如何參加：Google Quizizz
+或是以Google帳號先註冊登入Quizizz
+</p>
+
+
+
+
+
+<div id="org11a61bf" class="figure">
+<p><img src="images/大綱/2023-09-17_16-21-44_2023-09-17_16-21-35.png" alt="2023-09-17_16-21-44_2023-09-17_16-21-35.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 86: </span>標題</p>
+</div>
+
+<p>
+強制請學生命名，沒名字沒分數
+命名格式
+</p>
+<p width="500">
+<img src="images/大綱/2023-09-17_16-22-49_2023-09-17_16-22-01.png" alt="2023-09-17_16-22-49_2023-09-17_16-22-01.png" width="500" />
+10302顏小帆
+</p>
+
+
+<p>
+學生端能同時看到題目和選項
+學生端可以馬上看到對/錯
+教師可以即時看到每一題的作答狀況
+</p>
+
+
+<div id="org34779cd" class="figure">
+<p><img src="images/大綱/2023-09-17_16-24-57_2023-09-17_16-24-32.png" alt="2023-09-17_16-24-57_2023-09-17_16-24-32.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 87: </span>標題</p>
+</div>
+
+<p>
+教師由這裡控制全班測驗進度
+</p>
+
+
+<div id="orgc1464a5" class="figure">
+<p><img src="images/大綱/2023-09-17_16-25-48_2023-09-17_16-25-20.png" alt="2023-09-17_16-25-48_2023-09-17_16-25-20.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 88: </span>標題</p>
+</div>
+
+<p>
+也可以提前結束測驗(下課了)
+</p>
+
+
+
+<div id="org50da465" class="figure">
+<p><img src="images/大綱/2023-09-17_16-26-51_2023-09-17_16-26-27.png" alt="2023-09-17_16-26-51_2023-09-17_16-26-27.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 89: </span>標題</p>
+</div>
+
+<p>
+測驗結束後，學生可以看到所有題目
+老師可以看到所有學生
+</p>
+
+
+<div id="orgfb97770" class="figure">
+<p><img src="images/大綱/2023-09-17_16-28-06_2023-09-17_16-27-38.png" alt="2023-09-17_16-28-06_2023-09-17_16-27-38.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 90: </span>標題</p>
+</div>
+
+
+
+<p>
+leaderboard是排行榜
+</p>
+
+
+
+
+
+
+<p>
+測驗分兩類：
+回家考
+即時考
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=U3eHtMDESIQ">Quizizz簡介</a>
+要自己編題，有提供各種公式工具
+</p>
+
+
+
+<div id="org8c8bb13" class="figure">
+<p><img src="images/大綱/2023-09-17_16-30-42_2023-09-17_16-29-43.png" alt="2023-09-17_16-30-42_2023-09-17_16-29-43.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 91: </span>標題</p>
+</div>
+
+
+<p>
+可以一面自編、一面搜尋線上題庫加入測驗
+</p>
+
+
+
+<div id="orgd9768ab" class="figure">
+<p><img src="images/大綱/2023-09-17_16-33-52_2023-09-17_16-33-12.png" alt="2023-09-17_16-33-52_2023-09-17_16-33-12.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 92: </span>標題</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8aff20e" class="outline-4">
+<h4 id="org8aff20e"><span class="section-number-4">4.3.3.</span> Slido</h4>
+<div class="outline-text-4" id="text-4-3-3">
+
+<div id="orgaf0799c" class="figure">
+<p><img src="images/大綱/2023-09-15_20-43-34_2023-09-15_20-42-43.png" alt="2023-09-15_20-43-34_2023-09-15_20-42-43.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 93: </span>標題</p>
+</div>
+
+
+
+<div id="orga449d63" class="figure">
+<p><img src="images/大綱/2023-09-15_20-44-12_2023-09-15_20-43-58.png" alt="2023-09-15_20-44-12_2023-09-15_20-43-58.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 94: </span>標題</p>
+</div>
+
+
+
+
+<div id="org726ec0a" class="figure">
+<p><img src="images/大綱/2023-09-15_20-44-50_2023-09-15_20-44-40.png" alt="2023-09-15_20-44-50_2023-09-15_20-44-40.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 95: </span>標題</p>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org909fe53"></a>Live Poll<br />
+<div class="outline-text-5" id="text-4-3-3-1">
+<p>
+Poll可以限制最多選幾個選項
+要加圖片要付費
+免費版只有五題
+每個月8元美金: 專業版
+</p>
+
+
+<div id="orgc939ebb" class="figure">
+<p><img src="images/大綱/2023-09-15_20-54-15_2023-09-15_20-53-57.png" alt="2023-09-15_20-54-15_2023-09-15_20-53-57.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 96: </span>標題</p>
+</div>
+
+<p>
+Q&amp;A可以利用Like來解決線上(實體)學生最多的共同問題
+可以視為教學中的學生即時學習狀況監控
+</p>
+
+<div id="orgc35ec9f" class="figure">
+<p><img src="images/大綱/2023-09-15_21-02-43_2023-09-15_21-01-55.png" alt="2023-09-15_21-02-43_2023-09-15_21-01-55.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 97: </span>標題</p>
+</div>
+
+<p>
+Poll的即時投票可以看到學生的即時回應：
+其實可以當成教學過程中的即時測驗
+適合一次少題，非題庫
+即時看，即時分析教學困難
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb1fd868"></a>Analysis<br />
+<div class="outline-text-6" id="text-4-3-3-1-1">
+
+<div id="orga79c7ca" class="figure">
+<p><img src="images/大綱/2023-09-15_21-08-26_2023-09-15_21-08-12.png" alt="2023-09-15_21-08-26_2023-09-15_21-08-12.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 98: </span>標題</p>
+</div>
+</div>
+</li>
+
+<li><a id="orge3bc0ae"></a>particint mode<br />
+<div class="outline-text-6" id="text-4-3-3-1-2">
+<p>
+可以看學生的手機畫面
+</p>
+
+
+
+<div id="orgcbb589b" class="figure">
+<p><img src="images/大綱/2023-09-15_21-10-14_2023-09-15_21-09-34.png" alt="2023-09-15_21-10-14_2023-09-15_21-09-34.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 99: </span>標題</p>
+</div>
+
+<p>
+投影片模式中加入slido
+有windows版powerpoint直接安裝
+</p>
+
+
+<div id="org899e665" class="figure">
+<p><img src="images/大綱/2023-09-16_09-51-39_2023-09-16_09-51-12.png" alt="2023-09-16_09-51-39_2023-09-16_09-51-12.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 100: </span>標題</p>
+</div>
+
+<p>
+google slide要外掛
+mac版的powerpoint開發中
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgfdb8cb6" class="outline-4">
+<h4 id="orgfdb8cb6"><span class="section-number-4">4.3.4.</span> PaGoMo</h4>
+<div class="outline-text-4" id="text-4-3-4">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=NEpovu1OCDU">教師評量篇05 利用PaGamO進行驗收評量</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org28b7298" class="outline-3">
+<h3 id="org28b7298"><span class="section-number-3">4.4.</span> 課中的評量/作業</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-orgd4d2175" class="outline-4">
+<h4 id="orgd4d2175"><span class="section-number-4">4.4.1.</span> 程式作業: Moodle VPL</h4>
+</div>
+<div id="outline-container-orgc76c212" class="outline-4">
+<h4 id="orgc76c212"><span class="section-number-4">4.4.2.</span> 實作類作品: Seesaw</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=KGP7sMBaO4U">教師評量篇04 利用Seesaw作為多元評量方式</a></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org01df42c"></a><a href="https://web.seesaw.me/">https://web.seesaw.me/</a><br />
+<div class="outline-text-5" id="text-4-4-2-1">
+<ul class="org-ul">
+<li>簡介(<a href="https://vtedu.mt.ntnu.edu.tw/uploads/1611022517150pv1bj4Lj.pdf">https://vtedu.mt.ntnu.edu.tw/uploads/1611022517150pv1bj4Lj.pdf</a>)
+Seesaw為課程管理平台，平台版面清楚，有類似臉書社交網站互動功能老師可以發布課程所需教學檔案，學生可以上傳個人作業、小組作業，類別包含有：錄影、錄音、拍照、畫圖、筆記、小白板、網站連結等，學生還能夠以此做為個人課程的學習記錄，平台亦提供社交功能，如按讚(愛心圖示)、互給回饋、留言平台能保存學生上傳的各式學習資料，老師能將學生的資料用PDF格式下載存檔</li>
+<li>可建立班級</li>
+<li>學生可以代號或QR code登入</li>
+<li>點選新增作品按鈕後，可選擇上傳的類別，如：靜態的相片、動態錄影，檔案也能整合google&#x2026;等雲端硬碟，也可隨手塗鴉</li>
+<li>Journal：類似動態牆</li>
+<li>Activities：適用於教師指定活動或作業，教師可以看見學生繳交的情況，Activities中有內建一些學習活動，可以直接指派給班級學生進行練習(或當成指定作業)</li>
+<li>Blog：可以張貼與課程的相關的內容(此功能需由教師於Class Settings中開起，Blog需由教師開起才會顯示，如：至Class Settings中開起Blog功能，並設定Blog名稱為“infotech”,完成後此Blog網址就為：<a href="https://blog.seesaw.me/infotech">https://blog.seesaw.me/infotech</a></li>
+<li>INBOX: 可查看平台的通知訊息(包含各個活動記錄，按照時間序列顯示</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf62b206"></a><a href="https://www.youtube.com/watch?v=Tsq7Osqlc1c&amp;t=5134s">多元評量蹺蹺板 Seesaw</a><br />
+<div class="outline-text-5" id="text-4-4-2-2">
+<ul class="org-ul">
+<li>seesaw一個班最多150個人?</li>
+<li>如何新增班級?可否由classroom匯入?</li>
+<li>免費:10個班</li>
+<li>沒有空間限制</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgff342e1"></a>Student Sign-In Mode<br />
+<div class="outline-text-6" id="text-4-4-2-2-1">
+<ol class="org-ol">
+<li>Class Code - Shared Devices
+教室的載具不足每人一台(共用設備)
+或是平板車，各班輪流用
+學生在登入後要自己選組別</li>
+<li>Class Code - 1:1 Devices
+一人一台，不用Email帳號登入</li>
+<li>Email/Google
+要回家用</li>
+</ol>
+</div>
+</li>
+<li><a id="orgf9be656"></a>建立班級<br />
+<div class="outline-text-6" id="text-4-4-2-2-2">
+<p>
+建立學生名單
+</p>
+
+<div id="org98296c3" class="figure">
+<p><img src="images/大綱/2023-09-15_16-37-56_2023-09-15_16-36-40.png" alt="2023-09-15_16-37-56_2023-09-15_16-36-40.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 101: </span>標題</p>
+</div>
+<ul class="org-ul">
+<li>Add a Student
+可以一個一個</li>
+<li>Paste a list of student names
+直接從試算表貼過來</li>
+</ul>
+</div>
+</li>
+<li><a id="org84b285d"></a>班級特性<br />
+<div class="outline-text-6" id="text-4-4-2-2-3">
+<p>
+學生能否點讚
+按讚要不要教師允許
+學生能不否看到其他人的作業(測驗或作業,是否允許相互觀摩)
+是否允許家長登入(Enable amily access): seesaw parent
+Enable class blog: 展示班級優良作業
+Show add to folder: 作業分門別類，也可以設定優秀作品folder
+Save to camer roll: 存入載具相簿中
+</p>
+
+
+<div id="org838f841" class="figure">
+<p><img src="images/大綱/2023-09-15_17-00-00_2023-09-15_16-59-55.png" alt="2023-09-15_17-00-00_2023-09-15_16-59-55.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 102: </span>標題</p>
+</div>
+</div>
+</li>
+<li><a id="orgcd31a34"></a>如何登出(如果用google帳號)<br />
+<div class="outline-text-6" id="text-4-4-2-2-4">
+<p>
+到ipad中的Safari清除所有瀏覽記錄，這樣Safari的Google登入介面就不會出現一堆
+</p>
+</div>
+</li>
+<li><a id="org7c5cfe7"></a>Journal<br />
+<div class="outline-text-6" id="text-4-4-2-2-5">
+<p>
+類似日誌或是在臉書發表文章
+</p>
+<p width="500">
+<img src="images/大綱/2023-09-15_17-05-46_2023-09-15_17-05-35.png" alt="2023-09-15_17-05-46_2023-09-15_17-05-35.png" width="500" />
+互評: 指定誰看誰的(透過Like/coment)
+可以看影片作業
+作業多元
+</p>
+</div>
+</li>
+<li><a id="orgdcc6434"></a>Activities(作業)<br />
+<div class="outline-text-6" id="text-4-4-2-2-6">
+
+<div id="orgcd31141" class="figure">
+<p><img src="images/大綱/2023-09-15_19-48-31_2023-09-15_19-48-11.png" alt="2023-09-15_19-48-31_2023-09-15_19-48-11.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 103: </span>標題</p>
+</div>
+
+
+
+<p>
+作業
+批改比google classroom方便(只能用文字，沒有分數，可以在Google classroom評分)
+</p>
+
+
+<div id="org17299a7" class="figure">
+<p><img src="images/大綱/2023-09-15_19-43-00_2023-09-15_19-42-39.png" alt="2023-09-15_19-43-00_2023-09-15_19-42-39.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 104: </span>標題</p>
+</div>
+
+
+
+<div id="org3465bbe" class="figure">
+<p><img src="images/大綱/2023-09-15_19-54-57_2023-09-15_19-50-57.png" alt="2023-09-15_19-54-57_2023-09-15_19-50-57.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 105: </span>標題</p>
+</div>
+
+<p>
+免費的作業只能放一頁
+</p>
+
+<p>
+seesaw icon shortcuts
+</p>
+
+<div id="orgf2abd35" class="figure">
+<p><img src="images/大綱/2023-09-15_19-56-45_2023-09-15_19-56-28.png" alt="2023-09-15_19-56-45_2023-09-15_19-56-28.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 106: </span>標題</p>
+</div>
+
+<p>
+可以到community裡去找別人做好的資源
+</p>
+</div>
+</li>
+
+<li><a id="org7cd66fd"></a>Inbox<br />
+<div class="outline-text-6" id="text-4-4-2-2-7">
+<p>
+留言、公告(無法針對單一)
+教師對學生的作品留言也是公開的
+要有private note功能要付費: 所謂private指的是給另一個老師看，不是給學生看
+</p>
+
+
+
+
+<div id="orgf8e2b6e" class="figure">
+<p><img src="images/大綱/2023-09-15_20-13-28_2023-09-15_20-13-16.png" alt="2023-09-15_20-13-28_2023-09-15_20-13-16.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 107: </span>標題</p>
+</div>
+</div>
+</li>
+
+<li><a id="orgbf7023d"></a>blog<br />
+<div class="outline-text-6" id="text-4-4-2-2-8">
+<p>
+當成作品展示空間
+免費
+</p>
+</div>
+</li>
+<li><a id="orgbb0bbc4"></a>Progress(付費)<br />
+<div class="outline-text-6" id="text-4-4-2-2-9">
+<p>
+只有網頁版看的到
+能看到全班進度
+</p>
+
+
+
+<div id="orgf9ce3d6" class="figure">
+<p><img src="images/大綱/2023-09-15_20-15-31_2023-09-15_20-14-30.png" alt="2023-09-15_20-15-31_2023-09-15_20-14-30.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 108: </span>標題</p>
+</div>
+</div>
+</li>
+
+
+<li><a id="org4376162"></a>my library<br />
+<div class="outline-text-6" id="text-4-4-2-2-10">
+<p>
+免費版最多放100個
+</p>
+</div>
+</li>
+<li><a id="orgd17244d"></a>bug<br />
+<div class="outline-text-6" id="text-4-4-2-2-11">
+<p>
+一個班級最多2個老師
+利用Fre 60 days瘋狂建task
+事後再派送
+一個任務也可以分成多個子任務(逃避收費問題)
+</p>
+</div>
+</li>
+<li><a id="org2d0dbe3"></a>Seesaw pioneer<br />
+<div class="outline-text-6" id="text-4-4-2-2-12">
+<p>
+線上認證課程: 基礎
+</p>
+</div>
+</li>
+<li><a id="orgab4b62b"></a>Seesaw ambassador<br />
+<div class="outline-text-6" id="text-4-4-2-2-13">
+<p>
+線上認證課程: 應用，一個學校只能有1~2個教師(一年免費使用)
+</p>
+</div>
+</li>
+<li><a id="orga9efd45"></a>Seesaw Certified educator<br />
+<div class="outline-text-6" id="text-4-4-2-2-14">
+<p>
+三年
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org159c5ef" class="outline-4">
+<h4 id="org159c5ef"><span class="section-number-4">4.4.3.</span> Classkick</h4>
+<div class="outline-text-4" id="text-4-4-3">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=uO4PCmwPJ3A">多元評量的另一選擇—classkick(適合國小生的作業/評量)</a></li>
+<li><a href="https://www.youtube.com/watch?v=L8vIvIjt2JM">Classkick線上評量教學-建功國小三年級英語期末考</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org49dd7e0" class="outline-3">
+<h3 id="org49dd7e0"><span class="section-number-3">4.5.</span> 實作評量</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-org9564762" class="outline-4">
+<h4 id="org9564762"><span class="section-number-4">4.5.1.</span> 課堂筆記: Hackmd.io</h4>
+</div>
+
+<div id="outline-container-org56d6ef6" class="outline-4">
+<h4 id="org56d6ef6"><span class="section-number-4">4.5.2.</span> 期末專題: Padlet</h4>
+<div class="outline-text-4" id="text-4-5-2">
+
+<div id="org8470e22" class="figure">
+<p><img src="images/大綱/2023-09-15_20-25-37_2023-09-15_20-25-15.png" alt="2023-09-15_20-25-37_2023-09-15_20-25-15.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 109: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org318bcf8" class="outline-4">
+<h4 id="org318bcf8"><span class="section-number-4">4.5.3.</span> 期中期末測驗: SKYOJ</h4>
+</div>
+</div>
+
+<div id="outline-container-org1a82580" class="outline-3">
+<h3 id="org1a82580"><span class="section-number-3">4.6.</span> 結語</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+這是個最好的時代、也是個最壞的時代
+軟體工具這麼多，怎麼學的完
+挑自己最熟的
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org893cce0" class="outline-2">
+<h2 id="org893cce0"><span class="section-number-2">5.</span> 大綱</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgccd15f0" class="outline-3">
+<h3 id="orgccd15f0"><span class="section-number-3">5.1.</span> 作業繳交</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=YA930DM-Mw8">20220806【親師生線上教學教師增能系列課程】Seesaw, Flip(Flipgrid)翻轉數位讀寫素養</a></li>
+</ul>
+</div>
+
+<div id="outline-container-orgac97874" class="outline-4">
+<h4 id="orgac97874"><span class="section-number-4">5.1.1.</span> MyET</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=gMjWYMNxP1E">MyET高中英語學習評量工具，防疫期間免費申請</a></li>
+</ul>
+
+
+<div id="orgcc6743f" class="figure">
+<p><img src="images/大綱/2023-09-16_15-10-08_2023-09-16_15-09-41.png" alt="2023-09-16_15-10-08_2023-09-16_15-09-41.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 110: </span>標題</p>
+</div>
+
+
+
+
+<div id="org70f8402" class="figure">
+<p><img src="images/大綱/2023-09-16_15-10-13_2023-09-16_15-08-50.png" alt="2023-09-16_15-10-13_2023-09-16_15-08-50.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 111: </span>標題</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc11d9cd" class="outline-4">
+<h4 id="orgc11d9cd"><span class="section-number-4">5.1.2.</span> PhET</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+PhET+因材網作業: <a href="https://www.youtube.com/watch?v=UL9zkJ3EI_k">數位平台探究教學與評量(1:09:48)</a>
+評量是用因材網的單元診斷測驗
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb878071" class="outline-4">
+<h4 id="orgb878071"><span class="section-number-4">5.1.3.</span> LUMIO</h4>
+<div class="outline-text-4" id="text-5-1-3">
+<ul class="org-ul">
+<li>[[<a href="https://www.youtube.com/watch?v=BnC1fdtWmoM">https://www.youtube.com/watch?v=BnC1fdtWmoM</a>][</li>
+</ul>
+
+<div id="orgb667711" class="figure">
+<p><img src="images/大綱/2023-09-16_11-10-26_2023-09-16_11-10-19.png" alt="2023-09-16_11-10-26_2023-09-16_11-10-19.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 112: </span>標題</p>
+</div>
+
+
+<p>
+選取風格
+</p>
+
+<div id="org72fe12b" class="figure">
+<p><img src="images/大綱/2023-09-16_11-12-52_2023-09-16_11-12-45.png" alt="2023-09-16_11-12-52_2023-09-16_11-12-45.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 113: </span>標題</p>
+</div>
+
+<p>
+排序類
+</p>
+
+
+
+
+<div id="org6262467" class="figure">
+<p><img src="images/大綱/2023-09-16_11-13-50_2023-09-16_11-13-32.png" alt="2023-09-16_11-13-50_2023-09-16_11-13-32.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 114: </span>標題</p>
+</div>
+
+
+<p>
+配對題設計
+</p>
+
+
+<div id="orgfcdb7e3" class="figure">
+<p><img src="images/大綱/2023-09-16_11-18-30_2023-09-16_11-18-05.png" alt="2023-09-16_11-18-30_2023-09-16_11-18-05.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 115: </span>標題</p>
+</div>
+
+<p>
+選項也可以插入圖片()
+最多10組選項
+</p>
+
+
+<div id="orgab5d3b3" class="figure">
+<p><img src="images/大綱/2023-09-16_11-19-05_2023-09-16_11-18-57.png" alt="2023-09-16_11-19-05_2023-09-16_11-18-57.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 116: </span>標題</p>
+</div>
+
+
+<p>
+分類題型
+</p>
+
+
+<div id="org923777d" class="figure">
+<p><img src="images/大綱/2023-09-16_11-20-04_2023-09-16_11-19-59.png" alt="2023-09-16_11-20-04_2023-09-16_11-19-59.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 117: </span>標題</p>
+</div>
+
+
+
+
+<div id="org1a20341" class="figure">
+<p><img src="images/大綱/2023-09-16_11-23-14_2023-09-16_11-22-56.png" alt="2023-09-16_11-23-14_2023-09-16_11-22-56.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 118: </span>標題</p>
+</div>
+
+
+<p>
+遊戲輪盤
+</p>
+
+
+<div id="orgc46838b" class="figure">
+<p><img src="images/大綱/2023-09-16_11-26-07_2023-09-16_11-25-05.png" alt="2023-09-16_11-26-07_2023-09-16_11-25-05.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 119: </span>標題</p>
+</div>
+
+
+
+<div id="orga0ef64f" class="figure">
+<p><img src="images/大綱/2023-09-16_11-26-21_2023-09-16_11-25-53.png" alt="2023-09-16_11-26-21_2023-09-16_11-25-53.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 120: </span>標題</p>
+</div>
+
+
+
+
+
+<div id="org7767aad" class="figure">
+<p><img src="images/大綱/2023-09-16_11-27-51_2023-09-16_11-27-15.png" alt="2023-09-16_11-27-51_2023-09-16_11-27-15.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 121: </span>標題</p>
+</div>
+
+<p>
+賽車型
+</p>
+
+
+
+<div id="orga419f0f" class="figure">
+<p><img src="images/大綱/2023-09-16_11-28-08_2023-09-16_11-27-53.png" alt="2023-09-16_11-28-08_2023-09-16_11-27-53.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 122: </span>標題</p>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org9f730a4"></a>教學模板<br />
+<div class="outline-text-5" id="text-5-1-3-1">
+
+<div id="org57109ad" class="figure">
+<p><img src="images/大綱/2023-09-16_11-29-28_2023-09-16_11-29-01.png" alt="2023-09-16_11-29-28_2023-09-16_11-29-01.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 123: </span>標題</p>
+</div>
+
+
+
+<div id="orgac6bb22" class="figure">
+<p><img src="images/大綱/2023-09-16_11-29-59_2023-09-16_11-29-49.png" alt="2023-09-16_11-29-59_2023-09-16_11-29-49.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 124: </span>標題</p>
+</div>
+
+<p>
+可取代黑板功能
+</p>
+
+
+<div id="org03a70c2" class="figure">
+<p><img src="images/大綱/2023-09-16_11-31-00_2023-09-16_11-30-51.png" alt="2023-09-16_11-31-00_2023-09-16_11-30-51.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 125: </span>標題</p>
+</div>
+
+
+
+<div id="org89e4b6c" class="figure">
+<p><img src="images/大綱/2023-09-16_11-32-31_2023-09-16_11-32-13.png" alt="2023-09-16_11-32-31_2023-09-16_11-32-13.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 126: </span>標題</p>
+</div>
+
+
+
+
+
+<div id="org6faad89" class="figure">
+<p><img src="images/大綱/2023-09-16_11-33-21_2023-09-16_11-33-14.png" alt="2023-09-16_11-33-21_2023-09-16_11-33-14.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 127: </span>標題</p>
+</div>
+
+
+
+<div id="org288d749" class="figure">
+<p><img src="images/大綱/2023-09-16_11-34-27_2023-09-16_11-34-16.png" alt="2023-09-16_11-34-27_2023-09-16_11-34-16.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 128: </span>標題</p>
+</div>
+
+
+
+
+
+<div id="orgfd86ac8" class="figure">
+<p><img src="images/大綱/2023-09-16_11-35-22_2023-09-16_11-35-11.png" alt="2023-09-16_11-35-22_2023-09-16_11-35-11.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 129: </span>標題</p>
+</div>
+</div>
+</li>
+
+
+
+<li><a id="orgfd3c1e1"></a>PhET模版<br />
+<div class="outline-text-5" id="text-5-1-3-2">
+
+<div id="org4c652bf" class="figure">
+<p><img src="images/大綱/2023-09-16_11-40-24_2023-09-16_11-39-48.png" alt="2023-09-16_11-40-24_2023-09-16_11-39-48.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 130: </span>標題</p>
+</div>
+
+<p>
+題型已設計成固定
+但可以提供互動操作界面來作答
+從測驗中學習
+</p>
+
+
+<div id="org6a5426d" class="figure">
+<p><img src="images/大綱/2023-09-16_11-44-58_2023-09-16_11-44-52.png" alt="2023-09-16_11-44-58_2023-09-16_11-44-52.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 131: </span>標題</p>
+</div>
+
+<p>
+分數題型
+</p>
+
+
+<div id="orgcf39b64" class="figure">
+<p><img src="images/大綱/2023-09-16_11-46-18_2023-09-16_11-45-38.png" alt="2023-09-16_11-46-18_2023-09-16_11-45-38.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 132: </span>標題</p>
+</div>
+
+
+<div id="org9b93f34" class="figure">
+<p><img src="images/大綱/2023-09-16_11-47-17_2023-09-16_11-47-07.png" alt="2023-09-16_11-47-17_2023-09-16_11-47-07.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 133: </span>標題</p>
+</div>
+
+<p>
+可以現場出題
+問題：學生是用自己的設備回答，或是用同一台電腦作答？
+看起來好像是用同一台設備
+</p>
+
+<div id="org699c714" class="figure">
+<p><img src="images/大綱/2023-09-16_11-48-18_2023-09-16_11-48-11.png" alt="2023-09-16_11-48-18_2023-09-16_11-48-11.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 134: </span>標題</p>
+</div>
+
+
+
+<p>
+週長題型
+有探索和遊戲類
+</p>
+
+
+<div id="org9374a73" class="figure">
+<p><img src="images/大綱/2023-09-16_11-50-39_2023-09-16_11-50-28.png" alt="2023-09-16_11-50-39_2023-09-16_11-50-28.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 135: </span>標題</p>
+</div>
+
+<p>
+探索類接近自主學習
+</p>
+
+<div id="orgc24e147" class="figure">
+<p><img src="images/大綱/2023-09-16_11-51-31_2023-09-16_11-51-23.png" alt="2023-09-16_11-51-31_2023-09-16_11-51-23.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 136: </span>標題</p>
+</div>
+
+
+<div id="org8c50efa" class="figure">
+<p><img src="images/大綱/2023-09-16_11-52-28_2023-09-16_11-52-19.png" alt="2023-09-16_11-52-28_2023-09-16_11-52-19.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 137: </span>標題</p>
+</div>
+
+
+<div id="org15a3c6a" class="figure">
+<p><img src="images/大綱/2023-09-16_12-02-19_2023-09-16_12-02-07.png" alt="2023-09-16_12-02-19_2023-09-16_12-02-07.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 138: </span>標題</p>
+</div>
+
+<p>
+函數模板
+</p>
+
+
+<div id="org7bb0e2f" class="figure">
+<p><img src="images/大綱/2023-09-16_12-02-56_2023-09-16_12-02-43.png" alt="2023-09-16_12-02-56_2023-09-16_12-02-43.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 139: </span>標題</p>
+</div>
+
+<p>
+國中數學？？
+</p>
+
+
+<div id="org519e9ea" class="figure">
+<p><img src="images/大綱/2023-09-16_12-04-22_2023-09-16_12-04-01.png" alt="2023-09-16_12-04-22_2023-09-16_12-04-01.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 140: </span>標題</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org11f2285" class="outline-4">
+<h4 id="org11f2285"><span class="section-number-4">5.1.4.</span> Flipgrid</h4>
+<div class="outline-text-4" id="text-5-1-4">
+<ul class="org-ul">
+<li><a href="https://info.flip.com/">https://info.flip.com/</a></li>
+<li>一個讓教師透過建立數位社群、以短影片為工具，讓學生進行社交學習的應用軟體。每一位老師都可以在 Flipgrid 建立自己的教室，並在教室裡發布討論主題，學生可以透過製作短影片來分享自己的觀點，影片內容可以被教室裡的所有用戶看到，老師可以選擇開放影片的按讚、評論功能，這樣會帶來一定的競爭性，進而激發學生的積極性；而且每個教室都有密碼確保安全性，老師可以將密碼或者連結分享給自己的學生。</li>
+<li>FlipGrid是一個含社會學習（Social Learning）元素的平台，讓學生錄製功課討論。師生可以跨平台登入Flipgrid，不論身在家中或學校亦能錄製短片表達意見，促進協作學習。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org716ce17" class="outline-2">
+<h2 id="org716ce17"><span class="section-number-2">6.</span> 要講嗎?</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgfb1d4dd" class="outline-3">
+<h3 id="orgfb1d4dd"><span class="section-number-3">6.1.</span> 同儕互評</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=fEQZ7W5F-ps">Google表單:線上即時回饋與互評！</a></li>
+</ul>
+<p>
+以表單針對學生範文來互評，不是很理想
+<a href="https://www.youtube.com/watch?v=UL9zkJ3EI_k">數位平台探究教學與評量</a>
+社群討論要利用數位共編工具形成記錄
+要能聆聽同儕報告、進行自評及互評
+有什麼合適的互評工具?
+</p>
+<ul class="org-ul">
+<li><a href="https://isvincent.pixnet.net/blog/post/49679322-%E5%AF%A6%E6%96%BD%E9%81%A0%E8%B7%9D%E6%95%99%E5%AD%B8%E5%A4%9A%E5%85%83%E8%A9%95%E9%87%8F%E8%AE%93%E5%90%8C%E5%84%95%E4%BA%92%E8%A9%95(google%E8%A1%A8%E5%96%AE+e">實施遠距教學多元評量讓同儕互評(Google表單+Excel)</a></li>
+<li><a href="https://www.facebook.com/groups/3128005617216424/permalink/5614186255265002/?paipv=0&amp;eav=AfbjQmnG2bPVAAiypZOAlVSIRok4pcikAeOdlZwjTAtWFKwmV9zCaMHq652K-12zcdw&amp;_rdr">【#同儕互評新利器：google form add-on_ doc appender】 </a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdefdd04" class="outline-3">
+<h3 id="orgdefdd04"><span class="section-number-3">6.2.</span> 心智圖</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=tCHjBtlYsdY">教師評量篇02 利用coggle作為心智圖線上作業</a></li>
+<li><a href="https://www.youtube.com/watch?v=kbMbqSmxtew">Coggle 教學 如何由桌面將圖形加到心智圖 (衛道中學特色課程設計)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2d78c54" class="outline-2">
+<h2 id="org2d78c54"><span class="section-number-2">7.</span> 以後看</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgfec0f3c" class="outline-3">
+<h3 id="orgfec0f3c"><span class="section-number-3">7.1.</span> 寫作</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=8RfFPcglTNA">【Google Docs文件】對Google Docs文件標出修訂建議</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga53cd23" class="outline-3">
+<h3 id="orga53cd23"><span class="section-number-3">7.2.</span> 因材網</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=U-uaecV8Zwg">A 指派知識結構任務</a></li>
+<li><a href="https://www.youtube.com/watch?v=frgTHV_DE5A">B 指派單元診斷任務</a></li>
+<li><a href="https://www.youtube.com/watch?v=Oa5aJTU5iIY">C 指派縱貫指派任務</a></li>
+<li><a href="https://www.youtube.com/watch?v=S4zBra7ywlY">E 建立及指派課程包任務</a></li>
+<li><a href="https://www.youtube.com/watch?v=jiw1u5lFGM8">G 教師使用學習扶助科技化評量功能指派任務</a></li>
+</ul>
+</div>
+<div id="outline-container-org56da713" class="outline-4">
+<h4 id="org56da713"><span class="section-number-4">7.2.1.</span> 組卷、線上測驗</h4>
+<div class="outline-text-4" id="text-7-2-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=0rVyTJxM0dM">評量後的教與學(因材網教學直播6)</a></li>
+</ul>
+
+
+<div id="org65353e6" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_13-25-06_2023-09-17_13-24-52.png" alt="2023-09-17_13-25-06_2023-09-17_13-24-52.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 141: </span>標題</p>
+</div>
+
+<p>
+診斷測驗
+</p>
+
+
+<div id="orgb13398b" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_13-25-48_2023-09-17_13-25-21.png" alt="2023-09-17_13-25-48_2023-09-17_13-25-21.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 142: </span>標題</p>
+</div>
+
+
+<div id="org73031d5" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_13-29-20_2023-09-17_13-29-11.png" alt="2023-09-17_13-29-20_2023-09-17_13-29-11.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 143: </span>標題</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge72f18d" class="outline-4">
+<h4 id="orge72f18d"><span class="section-number-4">7.2.2.</span> 因材網的任務</h4>
+<div class="outline-text-4" id="text-7-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org56f9a5b"></a>知識結構學習<br />
+<div class="outline-text-5" id="text-7-2-2-1">
+<p>
+指派影片學習任務
+</p>
+</div>
+</li>
+<li><a id="orgfd239b9"></a>縱貫診斷測驗<br />
+<div class="outline-text-5" id="text-7-2-2-2">
+<p>
+類似數學跨年級下修測驗
+這類測驗以能力指標為主
+四則運算不會，可能是因為加法有問題
+</p>
+</div>
+</li>
+<li><a id="org98420e5"></a>單元診斷測驗<br />
+<div class="outline-text-5" id="text-7-2-2-3">
+<p>
+一般考試
+</p>
+
+<div id="org969c196" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_13-34-05_2023-09-17_13-33-57.png" alt="2023-09-17_13-34-05_2023-09-17_13-33-57.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 144: </span>標題</p>
+</div>
+
+<p>
+可以組卷、可以挑全班或各別學生指派
+</p>
+
+
+<div id="org8bce6fe" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_14-24-21_2023-09-17_14-23-43.png" alt="2023-09-17_14-24-21_2023-09-17_14-23-43.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 145: </span>標題</p>
+</div>
+
+<p>
+也可以跨班選學生
+(應該要能加入條件選學生)
+</p>
+
+
+
+<div id="orgc91ccd2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_14-24-55_2023-09-17_14-24-46.png" alt="2023-09-17_14-24-55_2023-09-17_14-24-46.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 146: </span>標題</p>
+</div>
+
+<p>
+測驗任務細部設定
+</p>
+
+
+<div id="org01b2954" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_14-27-10_2023-09-17_14-26-53.png" alt="2023-09-17_14-27-10_2023-09-17_14-26-53.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 147: </span>標題</p>
+</div>
+
+<p>
+可以到任務維護去看是否指派完成
+</p>
+
+
+<div id="org37575c9" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_14-28-20_2023-09-17_14-27-56.png" alt="2023-09-17_14-28-20_2023-09-17_14-27-56.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 148: </span>標題</p>
+</div>
+
+<p>
+組卷
+</p>
+
+
+<div id="org1eb9de2" class="figure">
+<p><img src="images/數位教學與評量工具介紹(50分鐘)/2023-09-17_14-59-00_2023-09-17_14-58-40.png" alt="2023-09-17_14-59-00_2023-09-17_14-58-40.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 149: </span>標題</p>
+</div>
+
+<p>
+自組的考卷要先上鎖才能指派
+上鎖後就不能再改內容，只能指派
+因材網的概念：主教師只有一位，但可以任務權限開放給導師，也就是不允許有一個班有多個教師
+</p>
+</div>
+</li>
+<li><a id="orgbfc8789"></a>素養導向試題<br /></li>
+<li><a id="orgc0ada73"></a>學力檢測考古題<br />
+<div class="outline-text-5" id="text-7-2-2-5">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=COU5XzQPRfU">【教學實踐計畫南區基地】110/7/16行動研究與評量工具設計工作坊</a></li>
+<li><a href="https://www.youtube.com/watch?v=p5zLhUyGhPo">0625-26 學習成效評量與研究工具發展議題松－主題座談A</a></li>
+<li><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=video&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjS2qjRnayBAxUUslYBHWboBLQQtwJ6BAgNEAI&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHqaw4I1kbzo&amp;usg=AOvVaw3-J3oB8TT-mpizfCKiMUGp&amp;opi=89978449">0625-26學習成效評量與研究工具發展議題松－主題座談B</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc8668ad" class="outline-3">
+<h3 id="orgc8668ad"><span class="section-number-3">7.3.</span> 科殊需求評量</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li><a href="https://exam.tcte.edu.tw/tbt_html/">國民小學及國民中學補救教學科技化評量</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1446064" class="outline-3">
+<h3 id="org1446064"><span class="section-number-3">7.4.</span> 素養導向評量(課設學院SSCD)</h3>
+<div class="outline-text-3" id="text-7-4">
+<ul class="org-ul">
+<li>「素養(competency)」要從學生的「表現(performance)」中觀察</li>
+<li>在某個情境中採取行動稱為「表現」</li>
+<li>情境中出現問題或任務，才能採取探究行動</li>
+<li>表現之後省思、調整與成長，逐漸形成素養</li>
+</ul>
+</div>
+<div id="outline-container-orgb8f584e" class="outline-4">
+<h4 id="orgb8f584e"><span class="section-number-4">7.4.1.</span> 課程設計中的評量角色</h4>
+<div class="outline-text-4" id="text-7-4-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=-3JW-4WqcPU">【課設學院101】課程設計｜階段一：決定核心知識</a></li>
+<li><a href="https://www.youtube.com/watch?v=BJ3aQh-xs4Q">【課設學院101】課程設計｜階段三：設計學習評量</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2023-09-19 Tue 14:01</p>
+</div>
+</body>
+</html>

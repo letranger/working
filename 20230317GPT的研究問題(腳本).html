@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-03-22 Wed 09:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Yung Chin, Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc227ba6">1. Links:</a></li>
+<li><a href="#orge21606b">2. </a></li>
+<li><a href="#org99d33f7">3. 什麼是chatGPT</a></li>
+<li><a href="#org79a18bd">4. openai</a>
+<ul>
+<li><a href="#org76ee2cc">4.1. 我們該如何應對</a></li>
+</ul>
+</li>
+<li><a href="#org46dcc92">5. 聊天機器人</a></li>
+</ul>
+</div>
+</div>
+<p>
+3#+title: 20230317gpt的研究問題 腳本
+</p>
+
+
+<div id="outline-container-orgc227ba6" class="outline-2">
+<h2 id="orgc227ba6"><span class="section-number-2">1.</span> Links:</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=yiY4nPOzJEg&amp;list=RDCMUC2ggjtuuWvxrHHHiaDH1dlQ&amp;index=3">【生成式AI】ChatGPT 原理剖析 (1/3) — 對 ChatGPT 的常見誤解</a></li>
+<li><a href="https://www.youtube.com/watch?v=1ah7Qsri_c8&amp;list=RDCMUC2ggjtuuWvxrHHHiaDH1dlQ&amp;index=1">【生成式AI】ChatGPT 原理剖析 (2/3) — 預訓練 (Pre-train)</a></li>
+<li><a href="https://www.youtube.com/watch?v=UsaZhQ9bY2k&amp;list=RDCMUC2ggjtuuWvxrHHHiaDH1dlQ&amp;index=3">【生成式AI】ChatGPT 原理剖析 (3/3) — ChatGPT 所帶來的研究問題</a></li>
+<li><a href="https://www.youtube.com/watch?v=e0aKI2GGZNg&amp;list=RDCMUC2ggjtuuWvxrHHHiaDH1dlQ&amp;index=4"> ChatGPT (可能)是怎麼煉成的 - GPT 社會化的過程 </a></li>
+<li><a href="https://www.setn.com/News.aspx?NewsID=1264894&amp;fbclid=IwAR0IQ75IkMEi9dwQXPP4zR4Vy3m4WyS4qQGFWvEpJ4_y6PZMMpe-lKG_qCc">獨家／ChatGPT融入教育！教授用它當「助教」報告將變少改課堂測驗</a></li>
+<li><a href="https://www.dlc.ntu.edu.tw/ai-tools/">臺大針對生成式AI工具之教學因應措施</a></li>
+<li><a href="https://www.techbang.com/posts/104547-chatgpt-jb">ChatGPT 黑化版來了！只要你威脅它 ChatGPT 什麼都敢講，還替各社群平台使用者智商評分</a></li>
+<li><a href="https://www.ettoday.net/amp/amp_news.php7?news_id=2453772&amp;from=google.com">神運用ChatGPT！達人曝「這6工具必裝」工作幫大忙　一票人喊實用</a></li>
+<li><a href="https://www.youtube.com/watch?v=cNbnRWVN-qQ&amp;feature=youtu.be">用ChatGPT寫論文.報告?! 大學教授出題攻防 防堵不如駕馭它</a></li>
+<li><a href="https://crossing.cw.com.tw/article/17272">ChatGPT 對教育的挑戰，你準備好了嗎？國際名校教授：老師必須比學生更懂運用 AI</a></li>
+<li><a href="https://technews.tw/2023/03/15/learning-challenges/">生成式 AI 對學習的挑戰與反思！陽明交大發起師生對談 ChatGPT</a></li>
+<li><a href="https://flipedu.parenting.com.tw/article/008119">ChatGPT怎麼用？7種老師應用ChatGPT的方法分享</a></li>
+<li><a href="https://tw.news.yahoo.com/%E9%99%BD%E6%98%8E%E4%BA%A4%E5%A4%A7%E8%88%89%E8%BE%A6%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%B0%8D%E5%AD%B8%E7%BF%92%E7%9A%84%E6%8C%91%E6%88%B0%E8%88%87%E5%8F%8D%E6%80%9D%E7%9A%84%E8%AB%96%E5%A3%87-113229683.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAANEplQmOgalyg6aV2ZyHStlxh5_7c9RF9JlVYh1a64_LzPe2mInAzQzjcqZYltup3xoHOLkB-II_S9EMKfhA9o-J6hjIQ17Pcox4a5VY1s3kHKScoG0nD4e1tjnB1QW5PYaQsRj3SryeDcUFdxPnjRyNXVk2Y70kVAbatssL4P4p">陽明交大舉辦生成式AI對學習的挑戰與反思的論壇</a></li>
+<li><a href="https://www.gvm.com.tw/article/100530">當學生比教授懂ChatGPT，大學仍有用？那些新專業正崛起？</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge21606b" class="outline-2">
+<h2 id="orge21606b"><span class="section-number-2">2.</span> </h2>
+</div>
+
+<div id="outline-container-org99d33f7" class="outline-2">
+<h2 id="org99d33f7"><span class="section-number-2">3.</span> 什麼是chatGPT</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>由chatGPT自己介紹自己：很高興為您介紹我自己。我是ChatGPT，一個基於GPT-3.5架構的大型語言模型，由OpenAI訓練。我的主要功能是通過自然語言生成與理解，幫助人們解決各種問題。我在各種領域中都有豐富的知識，例如自然語言處理、計算機科學和數學等[1]。對於學習和發展新想法，我始終持開放的態度，不斷地提高自己。如果您有任何問題或需要幫助，請隨時向我提出。謝謝！</li>
+<li>ChatGPT，全稱聊天生成型預訓練變換模型（英語：Chat Generative Pre-trained Transformer），是OpenAI開發的人工智慧聊天機器人程式，於2022年11月推出。該程式使用基於GPT-3.5架構的大型語言模型並以強化學習訓練。ChatGPT目前仍以文字方式互動，而除了可以用人類自然對話方式來互動，還可以用於甚為複雜的語言工作，包括自動生成文字、自動問答、自動摘要等多種任務。如：在自動文字生成方面，ChatGPT可以根據輸入的文字自動生成類似的文字（劇本、歌曲、企劃等），在自動問答方面，ChatGPT可以根據輸入的問題自動生成答案。還有編寫和除錯電腦程式的能力。在推廣期間，所有人可以免費註冊，並在登入後免費使用ChatGPT與AI機器人對話<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>。</li>
+<li>ChatGPT 是由 OpenAI 開發的自然語言處理（NLP）模型「GPT-3」延伸出的「GPT-3.5」製作的，基於 人類反饋強化學習(RLHF) 進行訓練，簡單來說就是人類提問機器答、機器提問人類答，並且不斷迭代，再排除掉不健康的答案，透過人類干預以增強機器學習的效果，獲得更為逼真的結果<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>。</li>
+</ul>
+
+<div id="org15bd7d8" class="figure">
+<p><img src="images/什麼是chatGPT/2023-03-20_20-23-11_2023-03-18_13-12-15_2.OpenAI-2.jpeg" alt="2023-03-20_20-23-11_2023-03-18_13-12-15_2.OpenAI-2.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>標題</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org79a18bd" class="outline-2">
+<h2 id="org79a18bd"><span class="section-number-2">4.</span> openai</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+OpenAI 於 2015 年由埃隆馬斯克牽頭出資創立，是一家非盈利的研究性創業公司，矽谷知名創業孵化器 Y Combinator 掌門人 Sam Altman 和 Elon Musk 作為 OpenAI 首屆聯合主席，為其籌得了 10 億美金的起步資金。
+</p>
+
+<p>
+在短短四年內，OpenAI 推出了用於開發和比較強化學習的演算法工具包 OpenAI Gym，用於在全球遊戲、網站和其他應用程序中測量和訓練 AI 的一般智能軟件平台 Universe，新的強化學習演算法近段策略優化，Dota AI OpenAI Five，類人機械手 Dactyl，GPT1 和 GPT2 等諸多產品。從人工智慧的底層架構出發，打造 AGI 的全方位研究版圖。
+</p>
+
+<p>
+除了初創時投資者與創辦人共同承諾投入的10億美元以外，2019年微軟（Microsoft）加碼投資10億美元，希望透過此次和OpenAI的合作共同發展通用人工智慧，微軟想利用OpenAI先進人工智慧研究的力量，並且相關技術其民主化。
+</p>
+
+
+<div id="org8adbf3f" class="figure">
+<p><img src="images/openai/2023-03-18_13-12-15_2.OpenAI-2.jpeg" alt="2023-03-18_13-12-15_2.OpenAI-2.jpeg" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>標題</p>
+</div>
+</div>
+
+<div id="outline-container-org76ee2cc" class="outline-3">
+<h3 id="org76ee2cc"><span class="section-number-3">4.1.</span> 我們該如何應對</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+我們常常會討論究竟是「時代造英雄」還是「英雄造時勢」，無論是前者還是後者，任何人都需要積極的面對世界的改變，從而更好的享受生活。
+或許在未來的兩三年內，AI 不會取代太多的工作。但十年、二十年之後，可以提高平均社會生產效率的 AI 毫無疑問會成為社會發展的重要技術。轉移支付以及對失業人員的重新培訓和重新就業就顯得尤為重要。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org46dcc92" class="outline-2">
+<h2 id="org46dcc92"><span class="section-number-2">5.</span> 聊天機器人</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>廣義來說 ChatGPT 是一種聊天機器人的技術</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://zh.wikipedia.org/zh-tw/ChatGPT">Wiki ChatGPT</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://ithelp.ithome.com.tw/articles/10310593">【GPT-3 LINE BOT】(1) 前情提要 介紹ChatGPT&amp;GPT-3</a>
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung Chin, Yen</p>
+<p class="date">Created: 2023-03-22 Wed 09:10</p>
+</div>
+</body>
+</html>

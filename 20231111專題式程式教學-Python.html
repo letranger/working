@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-11 Sat 15:35 -->
+<!-- 2023-12-03 Sun 16:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>20231111專題式程式教學-Python</title>
@@ -202,46 +202,46 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga3ef507">研習內容</a></li>
-<li><a href="#org3cd39a0">Python 編寫環境與基礎語法</a>
+<li><a href="#org44df719">研習內容</a></li>
+<li><a href="#org336e783">Python 編寫環境與基礎語法</a>
 <ul>
-<li><a href="#orgc8c9f54">0. 研習預期成果</a></li>
-<li><a href="#orga64578f">1. Colab編寫環境</a></li>
-<li><a href="#org0a9b3ff">2. 變數、輪入、輸出、運算</a></li>
+<li><a href="#org25a0e0b">0. 研習預期成果</a></li>
+<li><a href="#org047e3aa">1. Colab編寫環境</a></li>
+<li><a href="#orgdb7a889">2. 變數、輪入、輸出、運算</a></li>
 </ul>
 </li>
-<li><a href="#org9c11d0d">休息1(10:00-10:10)</a></li>
-<li><a href="#org57388cb">Python 基礎語法實作</a>
+<li><a href="#orge20a426">休息1(10:00-10:10)</a></li>
+<li><a href="#org3e540e0">Python 基礎語法實作</a>
 <ul>
-<li><a href="#org4f69447">3. 條件判斷</a></li>
-<li><a href="#org5abd02d">4. 自訂函數</a></li>
-<li><a href="#orgf1baf55">5. 假裝很專業的UI設計</a></li>
+<li><a href="#orgd01a715">3. 條件判斷</a></li>
+<li><a href="#orgd318637">4. 自訂函數</a></li>
+<li><a href="#org15fa017">5. 假裝很專業的UI設計</a></li>
 </ul>
 </li>
-<li><a href="#orgd4407de">午膳休息</a></li>
-<li><a href="#org9271db3">資料分析實作1</a>
+<li><a href="#org312bdaa">午膳休息</a></li>
+<li><a href="#orgeb60cce">資料分析實作1</a>
 <ul>
-<li><a href="#org5fc8801">6. 當資料變多後: List</a></li>
-<li><a href="#org8ac1584">7. 第三方套件: MatPlotLib</a></li>
+<li><a href="#org335bf60">6. 當資料變多後: List</a></li>
+<li><a href="#orgf3e28d4">7. 第三方套件: MatPlotLib</a></li>
 </ul>
 </li>
-<li><a href="#org672c8a7">休息2(14:30-14:40)</a></li>
-<li><a href="#org69abe71">資料分析應用2</a>
+<li><a href="#org444ed22">休息2(14:30-14:40)</a></li>
+<li><a href="#org363f40d">資料分析應用2</a>
 <ul>
-<li><a href="#org7d7aed0">8. 第三方套件: LINE Notification</a></li>
-<li><a href="#orgdcd814f">10.小組實作</a></li>
+<li><a href="#orgdf4d2e8">8. 第三方套件: LINE Notification</a></li>
+<li><a href="#org4b45e90">10.小組實作</a></li>
 </ul>
 </li>
-<li><a href="#org1a5592f">休息3(15:30-15:40)</a></li>
-<li><a href="#orgc360b3b">綜合座談</a></li>
-<li><a href="#orgc621839">番外篇: 什麼是ipynb?</a></li>
+<li><a href="#orga82547c">休息3(15:30-15:40)</a></li>
+<li><a href="#org4e7dcd8">綜合座談</a></li>
+<li><a href="#orga7e8964">番外篇: 什麼是ipynb?</a></li>
 </ul>
 </div>
 </div>
 <a href="https://hits.sh/letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html.svg"/></a>
-<div id="outline-container-orga3ef507" class="outline-2">
-<h2 id="orga3ef507">研習內容</h2>
-<div class="outline-text-2" id="text-orga3ef507">
+<div id="outline-container-org44df719" class="outline-2">
+<h2 id="org44df719">研習內容</h2>
+<div class="outline-text-2" id="text-org44df719">
 <ul class="org-ul">
 <li>研習講義: <a href="https://tinyurl.com/kh1111">https://tinyurl.com/kh1111</a> (<a href="https://letranger.github.io/working/20231111%E5%B0%88%E9%A1%8C%E5%BC%8F%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8-Python.html">20231111專題式程式教學-Python</a>)<br /></li>
 <li>國中科技領域召集人課程領導增能研習<br /></li>
@@ -250,23 +250,23 @@
 <li>研習地點:輔導團305會議室<br /></li>
 </ul>
 
-<div id="org878591b" class="figure">
+<div id="org647784a" class="figure">
 <p><img src="images/2023-10-23_20-17-36_1698034030302.jpg" alt="2023-10-23_20-17-36_1698034030302.jpg" width="600" /><br />
 </p>
 <p><span class="figure-number">Figure 1: </span>20231111專題式程式教學-Python</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org3cd39a0" class="outline-2">
-<h2 id="org3cd39a0">Python 編寫環境與基礎語法</h2>
-<div class="outline-text-2" id="text-org3cd39a0">
+<div id="outline-container-org336e783" class="outline-2">
+<h2 id="org336e783">Python 編寫環境與基礎語法</h2>
+<div class="outline-text-2" id="text-org336e783">
 <ul class="org-ul">
 <li>9:10-10:00 / 50 mins<br /></li>
 </ul>
 </div>
-<div id="outline-container-orgc8c9f54" class="outline-3">
-<h3 id="orgc8c9f54">0. 研習預期成果</h3>
-<div class="outline-text-3" id="text-orgc8c9f54">
+<div id="outline-container-org25a0e0b" class="outline-3">
+<h3 id="org25a0e0b">0. 研習預期成果</h3>
+<div class="outline-text-3" id="text-org25a0e0b">
 <ul class="org-ul">
 <li>以Python撰寫一團購網站<br /></li>
 <li>提供團員線上登記團購內容<br /></li>
@@ -275,9 +275,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga64578f" class="outline-3">
-<h3 id="orga64578f">1. Colab編寫環境</h3>
-<div class="outline-text-3" id="text-orga64578f">
+<div id="outline-container-org047e3aa" class="outline-3">
+<h3 id="org047e3aa">1. Colab編寫環境</h3>
+<div class="outline-text-3" id="text-org047e3aa">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1IowJ_8ZYdGLCdxCJarYbhR_haic66v30?usp=sharing">20231111專題式程式教學1-Colab環境.ipynb</a><br /></li>
 <li>儲存格的類型<br /></li>
@@ -288,9 +288,9 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org0a9b3ff" class="outline-3">
-<h3 id="org0a9b3ff">2. 變數、輪入、輸出、運算</h3>
-<div class="outline-text-3" id="text-org0a9b3ff">
+<div id="outline-container-orgdb7a889" class="outline-3">
+<h3 id="orgdb7a889">2. 變數、輪入、輸出、運算</h3>
+<div class="outline-text-3" id="text-orgdb7a889">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1JSLCt_AJDSEPtr1J9LHXqZzGgAsWGPCZ?usp=sharing">20231111專題式程式教學2-Python的變數.ipynb</a><br /></li>
 <li>變數<br /></li>
@@ -304,24 +304,24 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org9c11d0d" class="outline-2">
-<h2 id="org9c11d0d">休息1(10:00-10:10)</h2>
-<div class="outline-text-2" id="text-org9c11d0d">
+<div id="outline-container-orge20a426" class="outline-2">
+<h2 id="orge20a426">休息1(10:00-10:10)</h2>
+<div class="outline-text-2" id="text-orge20a426">
 <p>
 10:00-10:10 / 10 mins<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org57388cb" class="outline-2">
-<h2 id="org57388cb">Python 基礎語法實作</h2>
-<div class="outline-text-2" id="text-org57388cb">
+<div id="outline-container-org3e540e0" class="outline-2">
+<h2 id="org3e540e0">Python 基礎語法實作</h2>
+<div class="outline-text-2" id="text-org3e540e0">
 <ul class="org-ul">
 <li>10:10-11:40 / 90 mins<br /></li>
 </ul>
 </div>
-<div id="outline-container-org4f69447" class="outline-3">
-<h3 id="org4f69447">3. 條件判斷</h3>
-<div class="outline-text-3" id="text-org4f69447">
+<div id="outline-container-orgd01a715" class="outline-3">
+<h3 id="orgd01a715">3. 條件判斷</h3>
+<div class="outline-text-3" id="text-orgd01a715">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1MG_7dAAH4W0LiHLOUXDtMvLQAc_JDOdU?usp=sharing">20231111專題式程式教學3-Python的條件判斷.ipynb</a><br /></li>
 <li>簡單的條件判斷: if / if else<br /></li>
@@ -334,9 +334,9 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org5abd02d" class="outline-3">
-<h3 id="org5abd02d">4. 自訂函數</h3>
-<div class="outline-text-3" id="text-org5abd02d">
+<div id="outline-container-orgd318637" class="outline-3">
+<h3 id="orgd318637">4. 自訂函數</h3>
+<div class="outline-text-3" id="text-orgd318637">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1OtZIt87PW5giijo6ASv5Zb-euy9_Y9CF?usp=sharing">20231111專題式程式教學4-Python自訂函數.ipynb</a><br /></li>
 <li>function的種類<br /></li>
@@ -346,9 +346,9 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf1baf55" class="outline-3">
-<h3 id="orgf1baf55">5. 假裝很專業的UI設計</h3>
-<div class="outline-text-3" id="text-orgf1baf55">
+<div id="outline-container-org15fa017" class="outline-3">
+<h3 id="org15fa017">5. 假裝很專業的UI設計</h3>
+<div class="outline-text-3" id="text-org15fa017">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1Vt5JR6jR99yRj5m5UjiPTV-oZ2VBn4nU?usp=sharing">20231111專題式程式教學5-Python的UI設計.ipynb</a><br /></li>
 <li>Gradio的用法<br /></li>
@@ -358,24 +358,24 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgd4407de" class="outline-2">
-<h2 id="orgd4407de">午膳休息</h2>
-<div class="outline-text-2" id="text-orgd4407de">
+<div id="outline-container-org312bdaa" class="outline-2">
+<h2 id="org312bdaa">午膳休息</h2>
+<div class="outline-text-2" id="text-org312bdaa">
 <p>
 11:40-13:00 / 80 mins<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org9271db3" class="outline-2">
-<h2 id="org9271db3">資料分析實作1</h2>
-<div class="outline-text-2" id="text-org9271db3">
+<div id="outline-container-orgeb60cce" class="outline-2">
+<h2 id="orgeb60cce">資料分析實作1</h2>
+<div class="outline-text-2" id="text-orgeb60cce">
 <ul class="org-ul">
 <li>13:00-14:30 / 90 mins<br /></li>
 </ul>
 </div>
-<div id="outline-container-org5fc8801" class="outline-3">
-<h3 id="org5fc8801">6. 當資料變多後: List</h3>
-<div class="outline-text-3" id="text-org5fc8801">
+<div id="outline-container-org335bf60" class="outline-3">
+<h3 id="org335bf60">6. 當資料變多後: List</h3>
+<div class="outline-text-3" id="text-org335bf60">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1NnFFv1bcwmqkkpaQq2hnHdUBggHno-vK?usp=sharing">20231111專題式程式教學6-Python的資料型別.ipynb</a><br /></li>
 <li>List的基本操作<br /></li>
@@ -386,9 +386,9 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org8ac1584" class="outline-3">
-<h3 id="org8ac1584">7. 第三方套件: MatPlotLib</h3>
-<div class="outline-text-3" id="text-org8ac1584">
+<div id="outline-container-orgf3e28d4" class="outline-3">
+<h3 id="orgf3e28d4">7. 第三方套件: MatPlotLib</h3>
+<div class="outline-text-3" id="text-orgf3e28d4">
 <ol class="org-ol">
 <li><a href="https://colab.research.google.com/drive/1c2y_EELAB5LIruKUrokyLe6yRAbqK1j5?usp=sharing">20231111專題式程式教學7-Python的圖表.ipynb</a><br /></li>
 <li>MatPlotLib基本語法: 折線圖<br /></li>
@@ -400,85 +400,85 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org672c8a7" class="outline-2">
-<h2 id="org672c8a7">休息2(14:30-14:40)</h2>
-<div class="outline-text-2" id="text-org672c8a7">
+<div id="outline-container-org444ed22" class="outline-2">
+<h2 id="org444ed22">休息2(14:30-14:40)</h2>
+<div class="outline-text-2" id="text-org444ed22">
 <p>
 14:30-14:40 / 10 mins<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org69abe71" class="outline-2">
-<h2 id="org69abe71">資料分析應用2</h2>
-<div class="outline-text-2" id="text-org69abe71">
+<div id="outline-container-org363f40d" class="outline-2">
+<h2 id="org363f40d">資料分析應用2</h2>
+<div class="outline-text-2" id="text-org363f40d">
 <p>
 14:40-15:30 / 50 mins<br />
 </p>
 </div>
-<div id="outline-container-org7d7aed0" class="outline-3">
-<h3 id="org7d7aed0">8. 第三方套件: LINE Notification</h3>
-<div class="outline-text-3" id="text-org7d7aed0">
+<div id="outline-container-orgdf4d2e8" class="outline-3">
+<h3 id="orgdf4d2e8">8. 第三方套件: LINE Notification</h3>
+<div class="outline-text-3" id="text-orgdf4d2e8">
 <p>
 <a href="https://colab.research.google.com/drive/1AQEzKCcIhAIBT_Hi3oscOeDO4aWenuXF?usp=sharing">20231111專題式程式教學8-Python與LINE.ipynb</a><br />
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org805f2bd"></a>申請LINE Notify<br />
+<li><a id="orgd48bd1c"></a>申請LINE Notify<br />
 <ul class="org-ul">
-<li><a id="orgdd0a8f4"></a>使用LINE帳號登入<a href="https://notify-bot.line.me/zh_TW/">LINE Notify官網</a><br />
-<div class="outline-text-5" id="text-orgdd0a8f4">
+<li><a id="orgee5df8f"></a>使用LINE帳號登入<a href="https://notify-bot.line.me/zh_TW/">LINE Notify官網</a><br />
+<div class="outline-text-5" id="text-orgee5df8f">
 
-<div id="org7c3b35f" class="figure">
+<div id="org658a499" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-16-44_2023-11-09_14-16-39.png" alt="2023-11-09_14-16-44_2023-11-09_14-16-39.png" width="400" /><br />
 </p>
 <p><span class="figure-number">Figure 2: </span>登入LINE網頁</p>
 </div>
 </div>
 </li>
-<li><a id="orgfcdfd7c"></a>點選右上角帳號底下的個人頁面<br />
-<div class="outline-text-5" id="text-orgfcdfd7c">
+<li><a id="org715612e"></a>點選右上角帳號底下的個人頁面<br />
+<div class="outline-text-5" id="text-org715612e">
 
-<div id="orgf437803" class="figure">
+<div id="orgc1fe69e" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-22-40_2023-11-09_14-19-16.png" alt="2023-11-09_14-22-40_2023-11-09_14-19-16.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 3: </span>登入後點選網頁右上角個人頁面</p>
 </div>
 </div>
 </li>
-<li><a id="orgce0c36c"></a>拉到網頁下方，點選發行權杖<br />
-<div class="outline-text-5" id="text-orgce0c36c">
+<li><a id="org6f170ec"></a>拉到網頁下方，點選發行權杖<br />
+<div class="outline-text-5" id="text-org6f170ec">
 
-<div id="orgf95a841" class="figure">
+<div id="org2dbcf21" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-23-49_2023-11-09_14-23-23.png" alt="2023-11-09_14-23-49_2023-11-09_14-23-23.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 4: </span>允許發行權杖</p>
 </div>
 </div>
 </li>
-<li><a id="org63c8be6"></a>為權杖取名、選擇1對1接收LINE Notify通知、發行<br />
-<div class="outline-text-5" id="text-org63c8be6">
+<li><a id="orgea1cfbf"></a>為權杖取名、選擇1對1接收LINE Notify通知、發行<br />
+<div class="outline-text-5" id="text-orgea1cfbf">
 
-<div id="orgd36428a" class="figure">
+<div id="orga1e9331" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-49-40_2023-11-09_14-47-42.png" alt="2023-11-09_14-49-40_2023-11-09_14-47-42.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 5: </span>選擇LINE通知模式</p>
 </div>
 </div>
 </li>
-<li><a id="org361f17b"></a>點選複製，把權杖先找個地方貼上(可以先貼在colab的Text Cell)<br />
-<div class="outline-text-5" id="text-org361f17b">
+<li><a id="org1c7e718"></a>點選複製，把權杖先找個地方貼上(可以先貼在colab的Text Cell)<br />
+<div class="outline-text-5" id="text-org1c7e718">
 
-<div id="orgc5b6115" class="figure">
+<div id="org409febd" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-51-52_2023-11-09_14-50-08.png" alt="2023-11-09_14-51-52_2023-11-09_14-50-08.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 6: </span>複製權杖、貼在記事本</p>
 </div>
 </div>
 </li>
-<li><a id="org15ffb21"></a>查看你的LINE通知<br />
-<div class="outline-text-5" id="text-org15ffb21">
+<li><a id="org651c7f8"></a>查看你的LINE通知<br />
+<div class="outline-text-5" id="text-org651c7f8">
 
-<div id="orgced536b" class="figure">
+<div id="org9fcc651" class="figure">
 <p><img src="images/Python_編寫環境與基礎語法/2023-11-09_14-55-26_2023-11-09_14-54-27.png" alt="2023-11-09_14-55-26_2023-11-09_14-54-27.png" width="400" /><br />
 </p>
 <p><span class="figure-number">Figure 7: </span>LINE通知</p>
@@ -489,9 +489,9 @@
 </li>
 </ul>
 </div>
-<div id="outline-container-orgdcd814f" class="outline-3">
-<h3 id="orgdcd814f">10.小組實作</h3>
-<div class="outline-text-3" id="text-orgdcd814f">
+<div id="outline-container-org4b45e90" class="outline-3">
+<h3 id="org4b45e90">10.小組實作</h3>
+<div class="outline-text-3" id="text-org4b45e90">
 <ul class="org-ul">
 <li>團購輸入<br /></li>
 <li>統計<br /></li>
@@ -501,29 +501,29 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org1a5592f" class="outline-2">
-<h2 id="org1a5592f">休息3(15:30-15:40)</h2>
-<div class="outline-text-2" id="text-org1a5592f">
+<div id="outline-container-orga82547c" class="outline-2">
+<h2 id="orga82547c">休息3(15:30-15:40)</h2>
+<div class="outline-text-2" id="text-orga82547c">
 <p>
 15:30-15:40 / 10 mins<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgc360b3b" class="outline-2">
-<h2 id="orgc360b3b">綜合座談</h2>
-<div class="outline-text-2" id="text-orgc360b3b">
+<div id="outline-container-org4e7dcd8" class="outline-2">
+<h2 id="org4e7dcd8">綜合座談</h2>
+<div class="outline-text-2" id="text-org4e7dcd8">
 <p>
 15:40-16:00 / 20 mins<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgc621839" class="outline-2">
-<h2 id="orgc621839">番外篇: 什麼是ipynb?</h2>
+<div id="outline-container-orga7e8964" class="outline-2">
+<h2 id="orga7e8964">番外篇: 什麼是ipynb?</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung-Chin Yen</p>
-<p class="date">Created: 2023-11-11 Sat 15:35</p>
+<p class="date">Created: 2023-12-03 Sun 16:37</p>
 </div>
 </body>
 </html>

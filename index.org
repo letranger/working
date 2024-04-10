@@ -11,14 +11,21 @@
 #+begin_export html
 <a href="https://hits.sh/letranger.github.io/working/index.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/index.html.svg?style=plastic"/></a>
 #+end_export
+* 明年 :noexport:
+- [[file:20250515-素養導向程式設計-教學與評量.org][20250515-素養導向程式設計:教學與評量-以Python為例]]
 
 * Working
-- [[file:20230209AI教學實務分享.pdf][20230209AI教學實務分享]]
-- [[file:20221229科技力Ⅹ雙語Ⅹ跨域教學示例.pdf][20221229科技力Ⅹ雙語Ⅹ跨域教學示例]]
-- [[file:20220924自主學習與科技輔助示例.pdf][20220924自主學習與科技輔助示例]]
-- [[file:20220428資訊科技理念與素養導向課程設計.pdf][20220428資訊科技理念與素養導向課程設計]]
+- [[https://github.com/letranger/working/blob/gh-pages/20240222-%E6%96%B0%E8%88%88%E7%A7%91%E6%8A%80%E8%A8%88%E7%95%AB-%E7%95%B6AI%E9%81%87%E4%B8%8A%E8%82%A1%E7%A5%A8%E8%AA%B2%E7%A8%8B%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB.pdf][20240222-新興科技計畫-當AI遇上股票課程經驗分享]]
+- [[file:20231111專題式程式教學-Python.html][20231111-專題式程式教學-Python]]
+- [[file:20231020-「當AI遇上股票」課程經驗.pdf][20231020-「當AI遇上股票」課程經驗]]
+- [[file:20230921-數位教學與評量工具.pdf][20230921-數位教學與評量工具]]
+- [[file:20230209AI教學實務分享.pdf][20230209-AI教學實務分享]]
+- [[file:20221229科技力Ⅹ雙語Ⅹ跨域教學示例.pdf][20221229-科技力Ⅹ雙語Ⅹ跨域教學示例]]
+- [[file:20220924自主學習與科技輔助示例.pdf][20220924-自主學習與科技輔助示例]]
+- [[file:20220428資訊科技理念與素養導向課程設計.pdf][20220428-資訊科技理念與素養導向課程設計]]
 
 * Pending :noexport:
+- [[file:20240508好用的線上評量工具.org][20240508-好用的線上評量工具]]
 - [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
 - [[file:AI試題.org][AI試題]]
 - [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]

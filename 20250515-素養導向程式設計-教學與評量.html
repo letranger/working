@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-10 Wed 11:35 -->
+<!-- 2024-04-11 Thu 10:20 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>20250515素養導向程式設計:教學與評量-以Python為例</title>
@@ -234,57 +234,57 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgccf52e6">1. 研習內容</a></li>
-<li><a href="#orgeed3fdd">2. Python簡介與應用</a>
+<li><a href="#org197d3c2">1. 研習內容</a></li>
+<li><a href="#orgfd86529">2. Python簡介與應用</a>
 <ul>
-<li><a href="#org86f721d">2.1. 程式語言教學考量方向</a></li>
-<li><a href="#orgf08260d">2.2. Why Python?</a></li>
-<li><a href="#orgf3332df">2.3. Python應用領域</a></li>
-<li><a href="#org232690a">2.4. Python的幾種編輯工具</a></li>
+<li><a href="#orgb69026f">2.1. 程式語言教學考量方向</a></li>
+<li><a href="#orgf7c4fb5">2.2. Why Python?</a></li>
+<li><a href="#org48c38e1">2.3. Python應用領域</a></li>
+<li><a href="#org1837613">2.4. Python的幾種編輯工具</a></li>
 </ul>
 </li>
-<li><a href="#org7623cf3">3. 幾種平台應用於教學的優缺點</a>
+<li><a href="#org79211fd">3. 幾種平台應用於教學的優缺點</a>
 <ul>
-<li><a href="#org47c210f">3.1. Google Colab</a></li>
-<li><a href="#orgd824cfb">3.2. Jupyter Notebook</a></li>
-<li><a href="#org822fc48">3.3. PyCharm</a></li>
+<li><a href="#org9070b0f">3.1. Google Colab</a></li>
+<li><a href="#org1b20957">3.2. Jupyter Notebook</a></li>
+<li><a href="#org7044724">3.3. PyCharm</a></li>
 </ul>
 </li>
-<li><a href="#orgda41ed4">4. 互動式教學</a>
+<li><a href="#org4182a67">4. 互動式教學</a>
 <ul>
-<li><a href="#org4efca82">4.1. 教師端</a></li>
-<li><a href="#orgccd7b0d">4.2. 學生端DEMO</a></li>
+<li><a href="#org78e9e46">4.1. 教師端</a></li>
+<li><a href="#org443a8cc">4.2. 學生端DEMO</a></li>
 </ul>
 </li>
-<li><a href="#orgac2463a">5. 作業繳交</a>
+<li><a href="#org2f152ae">5. 作業繳交</a>
 <ul>
-<li><a href="#org2d6d8a9">5.1. 教師端</a></li>
-<li><a href="#org1da36fc">5.2. 學生端DEMO</a></li>
-<li><a href="#orgba4a978">5.3. 教師評分</a></li>
-<li><a href="#orgd599352">5.4. 學生端收到批閱後的作業</a></li>
+<li><a href="#org825f0fd">5.1. 教師端</a></li>
+<li><a href="#orge136342">5.2. 學生端DEMO</a></li>
+<li><a href="#org0255c82">5.3. 教師評分</a></li>
+<li><a href="#org5991b86">5.4. 學生端收到批閱後的作業</a></li>
 </ul>
 </li>
-<li><a href="#orgd5bdd1c">6. 線上評量</a>
+<li><a href="#org2d22557">6. 線上評量</a>
 <ul>
-<li><a href="#orgf2f88de">6.1. Online Judge系統</a></li>
-<li><a href="#org9bebfb4">6.2. 學生端</a></li>
-<li><a href="#org2eca2ba">6.3. 教師端</a></li>
-<li><a href="#org2cbef93">6.4. 管理者</a></li>
+<li><a href="#org7cba522">6.1. Online Judge系統</a></li>
+<li><a href="#org30685eb">6.2. 學生端</a></li>
+<li><a href="#org0c35659">6.3. 教師端</a></li>
+<li><a href="#org5265811">6.4. 管理者</a></li>
 </ul>
 </li>
-<li><a href="#orge96a0bd">7. [示範]安裝Online Judge Server</a>
+<li><a href="#org4744771">7. [示範]安裝Online Judge Server</a>
 <ul>
-<li><a href="#org668a48a">7.1. 安裝 Docker</a></li>
-<li><a href="#orgec249f3">7.2. 安裝Online Judge Server</a></li>
+<li><a href="#org1ff5c27">7.1. 安裝 Docker</a></li>
+<li><a href="#org16aee6d">7.2. 安裝Online Judge Server</a></li>
 </ul>
 </li>
-<li><a href="#org627ca7e">8. Resource</a></li>
+<li><a href="#org59286f4">8. Resource</a></li>
 </ul>
 </div>
 </div>
 <a href="https://letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html.svg?style=plastic"/></a>
-<div id="outline-container-orgccf52e6" class="outline-2">
-<h2 id="orgccf52e6"><span class="section-number-2">1.</span> 研習內容</h2>
+<div id="outline-container-org197d3c2" class="outline-2">
+<h2 id="org197d3c2"><span class="section-number-2">1.</span> 研習內容</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>國中科技領域召集人課程領導增能研習<br /></li>
@@ -293,23 +293,23 @@
 <li>研習地點:輔導團 305 會議室<br /></li>
 </ul>
 
-<div id="org180c10d" class="figure">
+<div id="org35a59ea" class="figure">
 <p><img src="images/研習內容/2024-02-22_14-43-53_1708580777543.jpg" alt="2024-02-22_14-43-53_1708580777543.jpg" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 1: </span>202405 素養導向程式設計教學與評量-Python 為例</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgeed3fdd" class="outline-2">
-<h2 id="orgeed3fdd"><span class="section-number-2">2.</span> Python簡介與應用</h2>
+<div id="outline-container-orgfd86529" class="outline-2">
+<h2 id="orgfd86529"><span class="section-number-2">2.</span> Python簡介與應用</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org86f721d" class="outline-3">
-<h3 id="org86f721d"><span class="section-number-3">2.1.</span> 程式語言教學考量方向</h3>
+<div id="outline-container-orgb69026f" class="outline-3">
+<h3 id="orgb69026f"><span class="section-number-3">2.1.</span> 程式語言教學考量方向</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org40c3312" class="outline-4">
-<h4 id="org40c3312"><span class="section-number-4">2.1.1.</span> 開發工具/平台</h4>
+<div id="outline-container-org3374415" class="outline-4">
+<h4 id="org3374415"><span class="section-number-4">2.1.1.</span> 開發工具/平台</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>PyCharm, Visual Studio Code, Spyder<br /></li>
@@ -324,24 +324,24 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org019500e" class="outline-4">
-<h4 id="org019500e"><span class="section-number-4">2.1.2.</span> 語言的親和力</h4>
+<div id="outline-container-org9205cb4" class="outline-4">
+<h4 id="org9205cb4"><span class="section-number-4">2.1.2.</span> 語言的親和力</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 語言是否易學易用: 對文字式程式初學者來說這尤其重要<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org09ca7d4" class="outline-4">
-<h4 id="org09ca7d4"><span class="section-number-4">2.1.3.</span> 語言的實用性</h4>
+<div id="outline-container-org05decba" class="outline-4">
+<h4 id="org05decba"><span class="section-number-4">2.1.3.</span> 語言的實用性</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <p>
 語言是否能應用於日常生活: 學習程式語言來解題雖然有其樂趣，但若能利用所學來解決學生日常生活中的實際問題會更有動機<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org1d51d3a" class="outline-4">
-<h4 id="org1d51d3a"><span class="section-number-4">2.1.4.</span> 教學資源</h4>
+<div id="outline-container-org1e5e764" class="outline-4">
+<h4 id="org1e5e764"><span class="section-number-4">2.1.4.</span> 教學資源</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <ul class="org-ul">
 <li>相關教材資源<br /></li>
@@ -352,12 +352,12 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgf08260d" class="outline-3">
-<h3 id="orgf08260d"><span class="section-number-3">2.2.</span> Why Python?</h3>
+<div id="outline-container-orgf7c4fb5" class="outline-3">
+<h3 id="orgf7c4fb5"><span class="section-number-3">2.2.</span> Why Python?</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org4f858ae" class="outline-4">
-<h4 id="org4f858ae"><span class="section-number-4">2.2.1.</span> 受歡迎程度: TOIBE index</h4>
+<div id="outline-container-orgf26fb06" class="outline-4">
+<h4 id="orgf26fb06"><span class="section-number-4">2.2.1.</span> 受歡迎程度: TOIBE index</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 <a href="https://www.tiobe.com/tiobe-index/">TIOBE指數</a>（TIOBE programming community index）是一種衡量程式語言流行度的標準，該指數是根據網絡搜尋引擎對含有該語言名稱的查詢結果的數量計算出來的<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>。該指數涵蓋了網民在Google、Google Blogger、MSN 、雅虎、百度、維基百科和YouTube的搜索結果。該指數於2001年推出，每月更新一次。用戶可以免費查詢信息，但如果需要長期的統計數據則要付費購買。該指數的作者表示，在人們做出各種戰略決策時，該指數可能是有價值的。TIOBE主要關注於圖靈完備性語言<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>，所以它不提供例如HTML的受歡迎程度信息<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>。<br />
@@ -367,7 +367,7 @@
 Python由2019年的第三名<br />
 </p>
 
-<div id="org0c19e62" class="figure">
+<div id="orga66802c" class="figure">
 <p><img src="images/Python簡介與應用/2024-03-28_10-55-02_2024-03-28_10-37-24.png" alt="2024-03-28_10-55-02_2024-03-28_10-37-24.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 2: </span>2019年Python排名第三</p>
@@ -377,53 +377,53 @@ Python由2019年的第三名<br />
 到2024年已躍居榜首，2,3,4名的分別為C, C++, Java<br />
 </p>
 
-<div id="org3585646" class="figure">
+<div id="orge4533fb" class="figure">
 <p><img src="images/Python簡介與應用/2024-03-28_10-57-00_2024-03-28_10-56-46.png" alt="2024-03-28_10-57-00_2024-03-28_10-56-46.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 3: </span>2024年Python排名第一</p>
 </div>
 
 
-<div id="orgd1b3372" class="figure">
+<div id="orgaab662c" class="figure">
 <p><img src="images/Python簡介與應用/2024-03-28_10-16-57_2024-03-28_10-09-31.png" alt="2024-03-28_10-16-57_2024-03-28_10-09-31.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 4: </span>Python: 2002-2024年Python的TOIBE index變化</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org14862a0" class="outline-4">
-<h4 id="org14862a0"><span class="section-number-4">2.2.2.</span> 未來趨勢</h4>
+<div id="outline-container-orgc42b675" class="outline-4">
+<h4 id="orgc42b675"><span class="section-number-4">2.2.2.</span> 未來趨勢</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <ul class="org-ul">
 <li><a href="https://zerotomastery.io/blog/best-programming-languages-to-learn/">Best Programming Languages To Learn In 2024</a><br /></li>
 </ul>
 
-<div id="orgfcf9089" class="figure">
+<div id="orgc4b591a" class="figure">
 <p><img src="images/Python簡介與應用/2024-04-05_12-30-47_2024-04-04_21-41-46.png" alt="2024-04-05_12-30-47_2024-04-04_21-41-46.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 5: </span>工作機會</p>
 </div>
 
 
-<div id="org4722a73" class="figure">
+<div id="org8970cdc" class="figure">
 <p><img src="images/Python簡介與應用/2024-04-05_12-30-54_2024-04-05_12-29-37.png" alt="2024-04-05_12-30-54_2024-04-05_12-29-37.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 6: </span>平均薪資</p>
 </div>
 
 
-<div id="org1dd4e96" class="figure">
+<div id="org6ccfda3" class="figure">
 <p><img src="images/Python簡介與應用/2024-04-05_12-30-59_2024-04-05_12-30-00.png" alt="2024-04-05_12-30-59_2024-04-05_12-30-00.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 7: </span>需求/喜愛</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcc67463" class="outline-4">
-<h4 id="orgcc67463"><span class="section-number-4">2.2.3.</span> 為何要學習AI+大數據</h4>
+<div id="outline-container-org83dc83f" class="outline-4">
+<h4 id="org83dc83f"><span class="section-number-4">2.2.3.</span> 為何要學習AI+大數據</h4>
 <div class="outline-text-4" id="text-2-2-3">
 
-<div id="org927a14a" class="figure">
+<div id="org590e76f" class="figure">
 <p><img src="images/Python簡介與應用/2024-03-28_10-00-52_2024-03-28_09-55-32.png" alt="2024-03-28_10-00-52_2024-03-28_09-55-32.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 8: </span>學習Python的幾個理由</p>
@@ -440,22 +440,22 @@ Python由2019年的第三名<br />
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc126aec" class="outline-4">
-<h4 id="orgc126aec"><span class="section-number-4">2.2.4.</span> Python應用於AI與大數據的優勢</h4>
+<div id="outline-container-org32d3ec8" class="outline-4">
+<h4 id="org32d3ec8"><span class="section-number-4">2.2.4.</span> Python應用於AI與大數據的優勢</h4>
 <div class="outline-text-4" id="text-2-2-4">
 </div>
-<div id="outline-container-orgb703bb3" class="outline-5">
-<h5 id="orgb703bb3">人工智慧 (AI)：</h5>
-<div class="outline-text-5" id="text-orgb703bb3">
+<div id="outline-container-orgc612f72" class="outline-5">
+<h5 id="orgc612f72">人工智慧 (AI)：</h5>
+<div class="outline-text-5" id="text-orgc612f72">
 <ul class="org-ul">
 <li>Python 在人工智慧領域中扮演著重要角色，因為它具有豐富的 AI 相關庫和框架，如 TensorFlow、PyTorch、Keras 等，這些庫提供了許多強大的工具和算法，用於機器學習、深度學習和自然語言處理等 AI 應用。<br /></li>
 <li>Python 的簡潔語法和豐富的庫使得開發 AI 應用變得更加容易和高效，因此，許多 AI 專案和研究都選擇 Python 作為開發語言。<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9f61d53" class="outline-5">
-<h5 id="org9f61d53">大數據：</h5>
-<div class="outline-text-5" id="text-org9f61d53">
+<div id="outline-container-org4937761" class="outline-5">
+<h5 id="org4937761">大數據：</h5>
+<div class="outline-text-5" id="text-org4937761">
 <ul class="org-ul">
 <li>Python 也在大數據領域中廣泛應用，因為它提供了許多處理和分析大數據的庫和工具，如 Pandas、NumPy、SciPy 等，這些庫使得大數據的處理和分析變得更加方便和高效。<br /></li>
 <li>此外，Python 還與大數據生態系統中的其他技術密切集成，例如 Apache Hadoop、Spark 等，使得 Python 成為一個理想的大數據開發語言。<br /></li>
@@ -464,8 +464,8 @@ Python由2019年的第三名<br />
 </div>
 </div>
 </div>
-<div id="outline-container-org9872fef" class="outline-4">
-<h4 id="org9872fef"><span class="section-number-4">2.2.5.</span> 適合初學者</h4>
+<div id="outline-container-org8c86d3a" class="outline-4">
+<h4 id="org8c86d3a"><span class="section-number-4">2.2.5.</span> 適合初學者</h4>
 <div class="outline-text-4" id="text-2-2-5">
 <ul class="org-ul">
 <li>簡潔易懂的語法，不需要繁瑣的記憶和掌握。<br /></li>
@@ -477,8 +477,8 @@ Python由2019年的第三名<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orga6341bd" class="outline-4">
-<h4 id="orga6341bd"><span class="section-number-4">2.2.6.</span> 適合解決生活中的問題</h4>
+<div id="outline-container-org9b978e0" class="outline-4">
+<h4 id="org9b978e0"><span class="section-number-4">2.2.6.</span> 適合解決生活中的問題</h4>
 <div class="outline-text-4" id="text-2-2-6">
 <ul class="org-ul">
 <li>Python 是一門容易上手的程式語言，具有強大的應用範疇，包括網頁開發、資料分析、人工智慧等，教導學生 Python 可以培養其解決問題和創造力的能力。<br /></li>
@@ -486,8 +486,8 @@ Python由2019年的第三名<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org9119f00" class="outline-4">
-<h4 id="org9119f00"><span class="section-number-4">2.2.7.</span> 適合偷懶的老師</h4>
+<div id="outline-container-orgf262a24" class="outline-4">
+<h4 id="orgf262a24"><span class="section-number-4">2.2.7.</span> 適合偷懶的老師</h4>
 <div class="outline-text-4" id="text-2-2-7">
 <ul class="org-ul">
 <li>不一定要買課本, 線上免費教材豐富, 例如<a href="https://letranger.github.io/PythonCourse/">Python: From Zero to Error</a><br /></li>
@@ -502,8 +502,8 @@ Python由2019年的第三名<br />
 </div>
 </div>
 </div>
-<div id="outline-container-orgf3332df" class="outline-3">
-<h3 id="orgf3332df"><span class="section-number-3">2.3.</span> Python應用領域</h3>
+<div id="outline-container-org48c38e1" class="outline-3">
+<h3 id="org48c38e1"><span class="section-number-3">2.3.</span> Python應用領域</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Python 在應用領域上有許多特色，與其他程式語言相比，它的主要特點包括：<br />
@@ -517,8 +517,8 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </ol>
 </div>
 </div>
-<div id="outline-container-org232690a" class="outline-3">
-<h3 id="org232690a"><span class="section-number-3">2.4.</span> Python的幾種編輯工具</h3>
+<div id="outline-container-org1837613" class="outline-3">
+<h3 id="org1837613"><span class="section-number-3">2.4.</span> Python的幾種編輯工具</h3>
 <div class="outline-text-3" id="text-2-4">
 <ol class="org-ol">
 <li>Online Python<br /></li>
@@ -529,19 +529,19 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </div>
 </div>
 </div>
-<div id="outline-container-org7623cf3" class="outline-2">
-<h2 id="org7623cf3"><span class="section-number-2">3.</span> 幾種平台應用於教學的優缺點</h2>
+<div id="outline-container-org79211fd" class="outline-2">
+<h2 id="org79211fd"><span class="section-number-2">3.</span> 幾種平台應用於教學的優缺點</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 以下的優缺點係以學生/教師的教/學為出發點進行分析。<br />
 </p>
 </div>
-<div id="outline-container-org47c210f" class="outline-3">
-<h3 id="org47c210f"><span class="section-number-3">3.1.</span> Google Colab</h3>
+<div id="outline-container-org9070b0f" class="outline-3">
+<h3 id="org9070b0f"><span class="section-number-3">3.1.</span> Google Colab</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-orgfd25b8c" class="outline-4">
-<h4 id="orgfd25b8c"><span class="section-number-4">3.1.1.</span> 簡介</h4>
+<div id="outline-container-org38adf8e" class="outline-4">
+<h4 id="org38adf8e"><span class="section-number-4">3.1.1.</span> 簡介</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <ul class="org-ul">
 <li>Google Colab是一個基於雲端的Python開發環境，提供免費的CPU和GPU資源，讓用戶可以在網頁瀏覽器中運行和編寫Python程式。它具有強大的協作功能，可以與他人共享和編輯程式碼。Google Colab支援Jupyter筆記本，並提供預裝的Python套件，方便進行數據分析、機器學習等任務<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>。<br /></li>
@@ -549,8 +549,8 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf1ec94a" class="outline-4">
-<h4 id="orgf1ec94a"><span class="section-number-4">3.1.2.</span> 優點</h4>
+<div id="outline-container-org7185dfa" class="outline-4">
+<h4 id="org7185dfa"><span class="section-number-4">3.1.2.</span> 優點</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <ol class="org-ol">
 <li>使用方便簡單，學生只要有Gmail帳號即可使用，介面易學易用，容易上手<br /></li>
@@ -573,8 +573,8 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgab88262" class="outline-4">
-<h4 id="orgab88262"><span class="section-number-4">3.1.3.</span> 缺點</h4>
+<div id="outline-container-orgff24b54" class="outline-4">
+<h4 id="orgff24b54"><span class="section-number-4">3.1.3.</span> 缺點</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <ol class="org-ol">
 <li>須提供網路環境: 不適用線上測驗<br /></li>
@@ -588,8 +588,8 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfb888e8" class="outline-4">
-<h4 id="orgfb888e8"><span class="section-number-4">3.1.4.</span> <span class="todo TODO">TODO</span> 使用教學</h4>
+<div id="outline-container-orgd05f4ad" class="outline-4">
+<h4 id="orgd05f4ad"><span class="section-number-4">3.1.4.</span> <span class="todo TODO">TODO</span> 使用教學</h4>
 <div class="outline-text-4" id="text-3-1-4">
 <ul class="org-ul">
 <li><a href="https://letranger.github.io/AI/20240106142947-colab.html#ID-a2cc4686-5e51-46e4-84b3-e930dccb4b91">CoLab</a><br /></li>
@@ -597,12 +597,12 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 </div>
 </div>
 </div>
-<div id="outline-container-orgd824cfb" class="outline-3">
-<h3 id="orgd824cfb"><span class="section-number-3">3.2.</span> Jupyter Notebook</h3>
+<div id="outline-container-org1b20957" class="outline-3">
+<h3 id="org1b20957"><span class="section-number-3">3.2.</span> Jupyter Notebook</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-org3ce3ff2" class="outline-4">
-<h4 id="org3ce3ff2"><span class="section-number-4">3.2.1.</span> 簡介</h4>
+<div id="outline-container-org32f7e6b" class="outline-4">
+<h4 id="org32f7e6b"><span class="section-number-4">3.2.1.</span> 簡介</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <ul class="org-ul">
 <li>Jupyter這個名字主要是由Julia、Python及R所構成，當然除了Julia、的Python及R之外，還有提供許多的kernels(例如Java、C#、Go、Ruby、JavaScript等超過50多種Jupyter kernels)。<br /></li>
@@ -610,7 +610,7 @@ Python 在應用領域上有許多特色，與其他程式語言相比，它的�
 Jupyter是由Notebook Frontend、 Jupyter Server及Kernel Protocol這三部分所建立<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup><br />
 </p>
 
-<div id="orgdb3a8a4" class="figure">
+<div id="org6554a6e" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_17-50-58_2024-03-30_17-50-45.png" alt="2024-03-30_17-50-58_2024-03-30_17-50-45.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 9: </span>Jupyter notebook架構</p>
@@ -624,8 +624,8 @@ Jupyter是由Notebook Frontend、 Jupyter Server及Kernel Protocol這三部分�
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfcc4195" class="outline-4">
-<h4 id="orgfcc4195"><span class="section-number-4">3.2.2.</span> 優點</h4>
+<div id="outline-container-org0c35a4d" class="outline-4">
+<h4 id="org0c35a4d"><span class="section-number-4">3.2.2.</span> 優點</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <ol class="org-ol">
 <li>可於單機環境運作，無需網路環境: 方便學生自行練習<br /></li>
@@ -637,8 +637,8 @@ Jupyter是由Notebook Frontend、 Jupyter Server及Kernel Protocol這三部分�
 </ol>
 </div>
 </div>
-<div id="outline-container-org532f86e" class="outline-4">
-<h4 id="org532f86e"><span class="section-number-4">3.2.3.</span> 缺點</h4>
+<div id="outline-container-orgf7211ad" class="outline-4">
+<h4 id="orgf7211ad"><span class="section-number-4">3.2.3.</span> 缺點</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <ol class="org-ol">
 <li>運算速度受限本機資源(CPU、GPU)<br /></li>
@@ -648,21 +648,21 @@ Jupyter是由Notebook Frontend、 Jupyter Server及Kernel Protocol這三部分�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf228247" class="outline-4">
-<h4 id="orgf228247"><span class="section-number-4">3.2.4.</span> 安裝</h4>
+<div id="outline-container-orga9f618d" class="outline-4">
+<h4 id="orga9f618d"><span class="section-number-4">3.2.4.</span> 安裝</h4>
 <div class="outline-text-4" id="text-3-2-4">
 </div>
-<div id="outline-container-orgde7d74b" class="outline-5">
-<h5 id="orgde7d74b">使用Anaconda安裝</h5>
-<div class="outline-text-5" id="text-orgde7d74b">
+<div id="outline-container-org634b84b" class="outline-5">
+<h5 id="org634b84b">使用Anaconda安裝</h5>
+<div class="outline-text-5" id="text-org634b84b">
 <p>
 官方強烈建議使用Anaconda Distribution來進行安裝，因為Jupyter Notebook、常用的科學計算(Scientific Computing)及資料科學(Data Science)所需packages都已經包含在裡面，對於未來想進行Data Science的應用學習有很大的方便性<sup><a id="fnr.6.100" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>。<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org3f1800d" class="outline-5">
-<h5 id="org3f1800d">使用pip安裝</h5>
-<div class="outline-text-5" id="text-org3f1800d">
+<div id="outline-container-org42ca488" class="outline-5">
+<h5 id="org42ca488">使用pip安裝</h5>
+<div class="outline-text-5" id="text-org42ca488">
 <p>
 As an existing Python user, you may wish to install Jupyter using Python’s package manager, pip, instead of Anaconda. First, ensure that you have the latest pip; older versions may have trouble with some dependencies:<br />
 </p>
@@ -680,55 +680,55 @@ Then install the Jupyter Notebook using:<br />
 </div>
 </div>
 </div>
-<div id="outline-container-org96ef68d" class="outline-4">
-<h4 id="org96ef68d"><span class="section-number-4">3.2.5.</span> 使用</h4>
+<div id="outline-container-org2723f9e" class="outline-4">
+<h4 id="org2723f9e"><span class="section-number-4">3.2.5.</span> 使用</h4>
 <div class="outline-text-4" id="text-3-2-5">
 <div class="org-src-container">
 <pre class="src src-shell"><span class="linenr">1: </span>jupyter notebook
 </pre>
 </div>
 </div>
-<div id="outline-container-org2cd511f" class="outline-5">
-<h5 id="org2cd511f">介面</h5>
-<div class="outline-text-5" id="text-org2cd511f">
+<div id="outline-container-org4fb15a6" class="outline-5">
+<h5 id="org4fb15a6">介面</h5>
+<div class="outline-text-5" id="text-org4fb15a6">
 <p>
 Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)、主選單(Menu)、工具列(Toolbar)及編輯單元(Cell)。<br />
 </p>
 
-<div id="orge62a362" class="figure">
+<div id="org88d6dec" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_17-57-45_2024-03-30_17-57-30.png" alt="2024-03-30_17-57-45_2024-03-30_17-57-30.png" width="600" /><br />
 </p>
 <p><span class="figure-number">Figure 10: </span>Jupyter notebook</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org129f6ba" class="outline-5">
-<h5 id="org129f6ba">管理Cell</h5>
-<div class="outline-text-5" id="text-org129f6ba">
+<div id="outline-container-orge97b0d3" class="outline-5">
+<h5 id="orge97b0d3">管理Cell</h5>
+<div class="outline-text-5" id="text-orge97b0d3">
 
-<div id="org6820a63" class="figure">
+<div id="org6447354" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_17-59-45_2024-03-30_17-59-39.png" alt="2024-03-30_17-59-45_2024-03-30_17-59-39.png" width="600" /><br />
 </p>
 <p><span class="figure-number">Figure 11: </span>Cell management</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcb34227" class="outline-5">
-<h5 id="orgcb34227">編輯Cell</h5>
-<div class="outline-text-5" id="text-orgcb34227">
+<div id="outline-container-org9f47042" class="outline-5">
+<h5 id="org9f47042">編輯Cell</h5>
+<div class="outline-text-5" id="text-org9f47042">
 
-<div id="org7145b92" class="figure">
+<div id="org18574fb" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_18-01-29_2024-03-30_18-01-13.png" alt="2024-03-30_18-01-29_2024-03-30_18-01-13.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 12: </span>Cell</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org3324000" class="outline-5">
-<h5 id="org3324000">載入/儲存程式</h5>
-<div class="outline-text-5" id="text-org3324000">
+<div id="outline-container-orgb880c0b" class="outline-5">
+<h5 id="orgb880c0b">載入/儲存程式</h5>
+<div class="outline-text-5" id="text-orgb880c0b">
 
-<div id="orgf77fcde" class="figure">
+<div id="org83d3536" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_18-03-16_2024-03-30_18-03-06.png" alt="2024-03-30_18-03-16_2024-03-30_18-03-06.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 13: </span>ipynb load/save</p>
@@ -741,31 +741,31 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </div>
 </div>
 </div>
-<div id="outline-container-org822fc48" class="outline-3">
-<h3 id="org822fc48"><span class="section-number-3">3.3.</span> PyCharm</h3>
+<div id="outline-container-org7044724" class="outline-3">
+<h3 id="org7044724"><span class="section-number-3">3.3.</span> PyCharm</h3>
 <div class="outline-text-3" id="text-3-3">
 </div>
-<div id="outline-container-org425d9ed" class="outline-4">
-<h4 id="org425d9ed"><span class="section-number-4">3.3.1.</span> 簡介</h4>
+<div id="outline-container-orgea812e9" class="outline-4">
+<h4 id="orgea812e9"><span class="section-number-4">3.3.1.</span> 簡介</h4>
 <div class="outline-text-4" id="text-3-3-1">
 <ul class="org-ul">
 <li><a href="https://www.jetbrains.com/pycharm/">PyCharm官網</a><br /></li>
 <li><a href="https://hackmd.io/@ntust-ossda/HktEgqkwi?utm_source=preview-mode&amp;utm_medium=rec">PyCharm 安裝教學 (for Windows User)</a><br /></li>
 </ul>
 </div>
-<div id="outline-container-orgceefd37" class="outline-5">
-<h5 id="orgceefd37">Professional Edition v.s. Community Edition<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup></h5>
-<div class="outline-text-5" id="text-orgceefd37">
+<div id="outline-container-orgb6060e8" class="outline-5">
+<h5 id="orgb6060e8">Professional Edition v.s. Community Edition<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup></h5>
+<div class="outline-text-5" id="text-orgb6060e8">
 
-<div id="org90181c5" class="figure">
+<div id="org1461eeb" class="figure">
 <p><img src="images/Python程式測試、除錯與評量/2024-03-30_15-32-17_2024-03-30_15-31-57.png" alt="2024-03-30_15-32-17_2024-03-30_15-31-57.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 14: </span>專業版與社區版的差異</p>
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgd577332"></a>功能上的區別：<br />
-<div class="outline-text-6" id="text-orgd577332">
+<li><a id="org39f2e2d"></a>功能上的區別：<br />
+<div class="outline-text-6" id="text-org39f2e2d">
 <ol class="org-ol">
 <li>PyCharm專業版是功能最豐富的，與社區版相比，PyCharm 專業版增加了Web開發、Python We框架、Python分析器、遠端開發、支援資料庫與SQL等更多高級功能。<br /></li>
 <li>PyCharm的社區版中沒有Web開發、Python We框架、Python分析器、遠端開發、支援資料庫與SQL等這些功能。<br /></li>
@@ -773,8 +773,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </li>
-<li><a id="org4b679e4"></a>授權方式不同<br />
-<div class="outline-text-6" id="text-org4b679e4">
+<li><a id="org7b51136"></a>授權方式不同<br />
+<div class="outline-text-6" id="text-org7b51136">
 <ol class="org-ol">
 <li>PyCharm的專業版是需要付費購買該軟體的啟動碼才可以進行使用。<br /></li>
 <li>PyCharm的社區版提供給開發者免費使用的。<br /></li>
@@ -782,8 +782,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </li>
-<li><a id="org83672b2"></a>適用人群不同<br />
-<div class="outline-text-6" id="text-org83672b2">
+<li><a id="org2e8d893"></a>適用人群不同<br />
+<div class="outline-text-6" id="text-org2e8d893">
 <ol class="org-ol">
 <li>PyCharm的專業版是適用於一些公司進行專業網際網路開發適用，這需要使用公司投入一定資金。<br /></li>
 <li>PyCharm的社區版是提供給程式設計愛好者使用學術交流的，所以是免費提供的，其功能雖然不夠全面，但能夠滿足日常開發需要。<br /></li>
@@ -794,8 +794,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbf08838" class="outline-4">
-<h4 id="orgbf08838"><span class="section-number-4">3.3.2.</span> 優點</h4>
+<div id="outline-container-org2e63b39" class="outline-4">
+<h4 id="org2e63b39"><span class="section-number-4">3.3.2.</span> 優點</h4>
 <div class="outline-text-4" id="text-3-3-2">
 <ol class="org-ol">
 <li>除錯、追踪功能完善<br /></li>
@@ -809,8 +809,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </div>
-<div id="outline-container-org68fe8e4" class="outline-4">
-<h4 id="org68fe8e4"><span class="section-number-4">3.3.3.</span> 缺點</h4>
+<div id="outline-container-orgdd07911" class="outline-4">
+<h4 id="orgdd07911"><span class="section-number-4">3.3.3.</span> 缺點</h4>
 <div class="outline-text-4" id="text-3-3-3">
 <ol class="org-ol">
 <li>需安裝軟體: 電腦教室需事先安裝，學生帳戶無安裝權限<br /></li>
@@ -818,27 +818,27 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgbc2dde8" class="outline-4">
-<h4 id="orgbc2dde8"><span class="section-number-4">3.3.4.</span> <span class="todo TODO">TODO</span> DEMO</h4>
+<div id="outline-container-org4e4e8b5" class="outline-4">
+<h4 id="org4e4e8b5"><span class="section-number-4">3.3.4.</span> <span class="todo TODO">TODO</span> DEMO</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgda41ed4" class="outline-2">
-<h2 id="orgda41ed4"><span class="section-number-2">4.</span> 互動式教學</h2>
+<div id="outline-container-org4182a67" class="outline-2">
+<h2 id="org4182a67"><span class="section-number-2">4.</span> 互動式教學</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 以Google Classroom + Google Colab為例，示範如何在Google Classroom平台提供互動式教材<br />
 </p>
 </div>
-<div id="outline-container-org4efca82" class="outline-3">
-<h3 id="org4efca82"><span class="section-number-3">4.1.</span> 教師端</h3>
+<div id="outline-container-org78e9e46" class="outline-3">
+<h3 id="org78e9e46"><span class="section-number-3">4.1.</span> 教師端</h3>
 <div class="outline-text-3" id="text-4-1">
 <ol class="org-ol">
 <li><p>
 新增colab的教學notebook<br />
 </p>
 
-<div id="org67491d1" class="figure">
+<div id="orga7f6de3" class="figure">
 <p><img src="images/互動式教學/2024-04-06_13-19-16_2024-04-06_13-19-03.png" alt="2024-04-06_13-19-16_2024-04-06_13-19-03.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 15: </span>編寫互動教材</p>
@@ -849,7 +849,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 於classroom中新增教材資料<br />
 </p>
 
-<div id="orge2efeef" class="figure">
+<div id="org7b6c411" class="figure">
 <p><img src="images/互動式教學/2024-04-06_13-23-51_2024-04-06_13-21-07.png" alt="2024-04-06_13-23-51_2024-04-06_13-21-07.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 16: </span>建立資料</p>
@@ -858,7 +858,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 自雲端硬碟中挑選編好的notebook<br />
 </p>
 
-<div id="org5cf5288" class="figure">
+<div id="orgff9fc1f" class="figure">
 <p><img src="images/互動式教學/2024-04-06_13-25-53_2024-04-06_13-20-08.png" alt="2024-04-06_13-25-53_2024-04-06_13-20-08.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 17: </span>挑選notebook</p>
@@ -867,8 +867,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgccd7b0d" class="outline-3">
-<h3 id="orgccd7b0d"><span class="section-number-3">4.2.</span> 學生端DEMO</h3>
+<div id="outline-container-org443a8cc" class="outline-3">
+<h3 id="org443a8cc"><span class="section-number-3">4.2.</span> 學生端DEMO</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li><a href="https://classroom.google.com/c/NjcyNjM2NDg4NTE5/m/NjcyNzk2NTYwMDM3/details">Colab使用教學</a><br /></li>
@@ -877,22 +877,22 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </div>
 </div>
 </div>
-<div id="outline-container-orgac2463a" class="outline-2">
-<h2 id="orgac2463a"><span class="section-number-2">5.</span> 作業繳交</h2>
+<div id="outline-container-org2f152ae" class="outline-2">
+<h2 id="org2f152ae"><span class="section-number-2">5.</span> 作業繳交</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 以Google Classroom + Google Colab為例，示範如何在Google Classroom平台發派程式作業<br />
 </p>
 </div>
-<div id="outline-container-org2d6d8a9" class="outline-3">
-<h3 id="org2d6d8a9"><span class="section-number-3">5.1.</span> 教師端</h3>
+<div id="outline-container-org825f0fd" class="outline-3">
+<h3 id="org825f0fd"><span class="section-number-3">5.1.</span> 教師端</h3>
 <div class="outline-text-3" id="text-5-1">
 <ol class="org-ol">
 <li><p>
 新增colab的教學notebook<br />
 </p>
 
-<div id="org2493de6" class="figure">
+<div id="org05596ca" class="figure">
 <p><img src="images/作業繳交/2024-04-06_14-29-53_2024-04-06_14-29-40.png" alt="2024-04-06_14-29-53_2024-04-06_14-29-40.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 18: </span>設計作業編寫notebook互動教材</p>
@@ -903,7 +903,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 於classroom中新增作業<br />
 </p>
 
-<div id="orgaf75864" class="figure">
+<div id="org2a63f0d" class="figure">
 <p><img src="images/作業繳交/2024-04-06_18-27-17_2024-04-06_14-34-09.png" alt="2024-04-06_18-27-17_2024-04-06_14-34-09.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 19: </span>建立作業</p>
@@ -912,7 +912,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 自雲端硬碟中挑選編好的notebook、選擇&ldquo;為每位學生建立副本&rdquo;<br />
 </p>
 
-<div id="org800deda" class="figure">
+<div id="org20a01b8" class="figure">
 <p><img src="images/作業繳交/2024-04-06_18-32-11_2024-04-06_18-31-13.png" alt="2024-04-06_18-32-11_2024-04-06_18-31-13.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 20: </span>加入作業說明、附加notebook互動教材</p>
@@ -921,43 +921,43 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </div>
-<div id="outline-container-org1da36fc" class="outline-3">
-<h3 id="org1da36fc"><span class="section-number-3">5.2.</span> 學生端DEMO</h3>
+<div id="outline-container-orge136342" class="outline-3">
+<h3 id="orge136342"><span class="section-number-3">5.2.</span> 學生端DEMO</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li><a href="https://classroom.google.com/c/NjcyNjM2NDg4NTE5/a/NjcyODEwNzk3MDkz/details">[變數/輸入/輸出作業]三角形面積求解</a><br /></li>
 </ul>
 </div>
-<div id="outline-container-org290bc1f" class="outline-4">
-<h4 id="org290bc1f"><span class="section-number-4">5.2.1.</span> 點選作業附件</h4>
+<div id="outline-container-org90d59eb" class="outline-4">
+<h4 id="org90d59eb"><span class="section-number-4">5.2.1.</span> 點選作業附件</h4>
 <div class="outline-text-4" id="text-5-2-1">
 <p>
 要寫作業時，學生先點選作業連結，再開啟作業中的附件notebook<br />
 </p>
 
-<div id="orgbf0b53f" class="figure">
+<div id="orgab680d2" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-38-20_2024-04-06_18-49-42.png" alt="2024-04-07_11-38-20_2024-04-06_18-49-42.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 21: </span>點選作業附件</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org1a551f8" class="outline-4">
-<h4 id="org1a551f8"><span class="section-number-4">5.2.2.</span> 編寫作業</h4>
+<div id="outline-container-org782a224" class="outline-4">
+<h4 id="org782a224"><span class="section-number-4">5.2.2.</span> 編寫作業</h4>
 <div class="outline-text-4" id="text-5-2-2">
 <p>
 開啟notebook後，學生依作業要求撰寫解題程式<br />
 </p>
 
-<div id="orgb7577cb" class="figure">
+<div id="org96ee8d5" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-39-59_2024-04-07_11-37-16.png" alt="2024-04-07_11-39-59_2024-04-07_11-37-16.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 22: </span>依作業要求編寫程式</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org558e5f6" class="outline-4">
-<h4 id="org558e5f6"><span class="section-number-4">5.2.3.</span> 繳交作業</h4>
+<div id="outline-container-org1a94773" class="outline-4">
+<h4 id="org1a94773"><span class="section-number-4">5.2.3.</span> 繳交作業</h4>
 <div class="outline-text-4" id="text-5-2-3">
 <p>
 學生繳交作業的程序如下:<br />
@@ -967,7 +967,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 回到作業連結，點選查看說明<br />
 </p>
 
-<div id="org803dc54" class="figure">
+<div id="orgedd1256" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-42-23_2024-04-06_18-49-42.png" alt="2024-04-07_11-42-23_2024-04-06_18-49-42.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 23: </span>點選作業中的查看說明</p>
@@ -976,7 +976,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 點選「繳交」按鈕即可上傳作業<br />
 </p>
 
-<div id="org4ad2433" class="figure">
+<div id="org29ac76f" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-43-30_2024-04-06_18-50-11.png" alt="2024-04-07_11-43-30_2024-04-06_18-50-11.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 24: </span>點選作業說明中的「繳交」</p>
@@ -986,7 +986,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 系統會要求學生再次確認是否要繳交附件的作業<br />
 </p>
 
-<div id="org90424d7" class="figure">
+<div id="org0abde10" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-45-20_2024-04-06_18-50-27.png" alt="2024-04-07_11-45-20_2024-04-06_18-50-27.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 25: </span>再次確認</p>
@@ -995,8 +995,8 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </div>
 </div>
 </div>
-<div id="outline-container-orgba4a978" class="outline-3">
-<h3 id="orgba4a978"><span class="section-number-3">5.3.</span> 教師評分</h3>
+<div id="outline-container-org0255c82" class="outline-3">
+<h3 id="org0255c82"><span class="section-number-3">5.3.</span> 教師評分</h3>
 <div class="outline-text-3" id="text-5-3">
 <ol class="org-ol">
 <li><p>
@@ -1004,7 +1004,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 學生上傳作業後，教師端就會看到作業的繳交狀況<br />
 </p>
 
-<div id="orgd77ce91" class="figure">
+<div id="org8ea2331" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-48-00_2024-04-06_19-32-23.png" alt="2024-04-07_11-48-00_2024-04-06_19-32-23.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 26: </span>作業繳交情形</p>
@@ -1014,7 +1014,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 教師逐一為作業評分、加入註解，完成後點選發還，學生就能收到作業<br />
 </p>
 
-<div id="org22d19e4" class="figure">
+<div id="org46054b0" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-49-24_2024-04-06_19-33-43.png" alt="2024-04-07_11-49-24_2024-04-06_19-33-43.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 27: </span>評分、註解</p>
@@ -1023,7 +1023,7 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 確認發還<br />
 </p>
 
-<div id="orge713c9c" class="figure">
+<div id="org495b266" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-51-02_2024-04-06_19-34-21.png" alt="2024-04-07_11-51-02_2024-04-06_19-34-21.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 28: </span>再次確認發還</p>
@@ -1031,15 +1031,15 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd599352" class="outline-3">
-<h3 id="orgd599352"><span class="section-number-3">5.4.</span> 學生端收到批閱後的作業</h3>
+<div id="outline-container-org5991b86" class="outline-3">
+<h3 id="org5991b86"><span class="section-number-3">5.4.</span> 學生端收到批閱後的作業</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 教師發還作業後，學生端就能看到評分與註解<br />
 至於是否允許重新繳交則視教師的作業設定而有所不同<br />
 </p>
 
-<div id="orgfdfdbcf" class="figure">
+<div id="org2945208" class="figure">
 <p><img src="images/作業繳交/2024-04-07_11-53-20_2024-04-07_11-36-49.png" alt="2024-04-07_11-53-20_2024-04-07_11-36-49.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 29: </span>學生查看收到的作業</p>
@@ -1047,16 +1047,16 @@ Jupyter Notebook的編輯介面主要分為下面四部分：檔名(File Name)�
 </div>
 </div>
 </div>
-<div id="outline-container-orgd5bdd1c" class="outline-2">
-<h2 id="orgd5bdd1c"><span class="section-number-2">6.</span> 線上評量</h2>
+<div id="outline-container-org2d22557" class="outline-2">
+<h2 id="org2d22557"><span class="section-number-2">6.</span> 線上評量</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgf2f88de" class="outline-3">
-<h3 id="orgf2f88de"><span class="section-number-3">6.1.</span> Online Judge系統</h3>
+<div id="outline-container-org7cba522" class="outline-3">
+<h3 id="org7cba522"><span class="section-number-3">6.1.</span> Online Judge系統</h3>
 <div class="outline-text-3" id="text-6-1">
 </div>
-<div id="outline-container-org8f1af26" class="outline-4">
-<h4 id="org8f1af26"><span class="section-number-4">6.1.1.</span> 簡介</h4>
+<div id="outline-container-org5495ac5" class="outline-4">
+<h4 id="org5495ac5"><span class="section-number-4">6.1.1.</span> 簡介</h4>
 <div class="outline-text-4" id="text-6-1-1">
 <p>
 體驗完上述的手動評分，看著改不完的作業，是否感受到身為資訊科教師的悲痛&#x2026;，此時就是線上評測系統出場的時機了。Online Judge有許多不同的類型和平台，包括練習題、競賽題、以及專業題目等等。許多大學和專業程式設計比賽都使用Online Judge作為平台。<br />
@@ -1098,7 +1098,7 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 <a href="https://github.com/DMOJ/online-judge">DMOJ</a>: 這一套功能看起來最豐富最完整，而且支援的語言最多，可以到 60 幾種！而且還支援 Google, Facebook, Github 這些第三方登入。後端是 Python 寫的，而且一直持續有在維護，文件也滿完整的<sup><a id="fnr.9" class="footref" href="#fn.9" role="doc-backlink">9</a></sup>。<br />
 </p>
 
-<div id="org239a199" class="figure">
+<div id="org590cf47" class="figure">
 <p><img src="images/線上評量/2024-04-08_11-58-51_2024-04-08_11-58-35.png" alt="2024-04-08_11-58-51_2024-04-08_11-58-35.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 30: </span>DMOJ</p>
@@ -1107,7 +1107,7 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 <a href="https://github.com/ZsgsDesign/NOJ">NOJ</a>: 中國南京郵電大學開源出來的系統，是用 Laravel 寫成的。介面使用 Material UI，看起來比較現代，但是文件比較不完整<sup><a id="fnr.9.100" class="footref" href="#fn.9" role="doc-backlink">9</a></sup>。<br />
 </p>
 
-<div id="org3c3e120" class="figure">
+<div id="org1f5d027" class="figure">
 <p><img src="images/線上評量/2024-04-08_11-59-24_2024-04-08_11-59-18.png" alt="2024-04-08_11-59-24_2024-04-08_11-59-18.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 31: </span>NOJ</p>
@@ -1116,7 +1116,7 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 <a href="https://github.com/QingdaoU/OnlineJudge">QDOJ</a>: 中國青島大學開源出來的，後端是 Python + Django，前端是 Vue，採用 docker 部署簡單快速，支援的程式語言有：C, C++, Java 跟 Python。介面的部分則是使用 Ant Design<sup><a id="fnr.9.100" class="footref" href="#fn.9" role="doc-backlink">9</a></sup>。<br />
 </p>
 
-<div id="org0afcf69" class="figure">
+<div id="org00e85d0" class="figure">
 <p><img src="images/線上評量/2024-04-08_11-59-56_2024-04-08_11-59-51.png" alt="2024-04-08_11-59-56_2024-04-08_11-59-51.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 32: </span>QDOJ</p>
@@ -1128,11 +1128,11 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </p>
 </div>
 </div>
-<div id="outline-container-orge7edb41" class="outline-4">
-<h4 id="orge7edb41"><span class="section-number-4">6.1.2.</span> 運作原理</h4>
+<div id="outline-container-org3078f7e" class="outline-4">
+<h4 id="org3078f7e"><span class="section-number-4">6.1.2.</span> 運作原理</h4>
 <div class="outline-text-4" id="text-6-1-2">
 <p>
-典型的線上評測系統運作原理如圖<a href="#org7eb8ec6">33</a>所示，大致流程如下：<br />
+典型的線上評測系統運作原理如圖<a href="#org1e92481">33</a>所示，大致流程如下：<br />
 </p>
 <ol class="org-ol">
 <li>學生透過線上評測網頁(網站伺服器)將寫好的程式碼送出評分<br /></li>
@@ -1149,7 +1149,7 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </p>
 
 
-<div id="org7eb8ec6" class="figure">
+<div id="org1e92481" class="figure">
 <p><img src="images/onlineJudgeServer.png" alt="onlineJudgeServer.png" width="800" /><br />
 </p>
 <p><span class="figure-number">Figure 33: </span>線上評分系統架構</p>
@@ -1157,23 +1157,23 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </div>
 </div>
 </div>
-<div id="outline-container-org9bebfb4" class="outline-3">
-<h3 id="org9bebfb4"><span class="section-number-3">6.2.</span> 學生端</h3>
+<div id="outline-container-org30685eb" class="outline-3">
+<h3 id="org30685eb"><span class="section-number-3">6.2.</span> 學生端</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 以QindaU Online Judge Server為例，示範學生如何進行線上評量<br />
 </p>
 </div>
-<div id="outline-container-org3ee1555" class="outline-4">
-<h4 id="org3ee1555"><span class="section-number-4">6.2.1.</span> 測試用評測系統</h4>
+<div id="outline-container-org4ac7faa" class="outline-4">
+<h4 id="org4ac7faa"><span class="section-number-4">6.2.1.</span> 測試用評測系統</h4>
 <div class="outline-text-4" id="text-6-2-1">
 <ul class="org-ul">
 <li>IP: <a href="http://210.70.138.233/">http://210.70.138.233/</a><br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org008da74" class="outline-4">
-<h4 id="org008da74"><span class="section-number-4">6.2.2.</span> 學生帳號</h4>
+<div id="outline-container-org6d59fde" class="outline-4">
+<h4 id="org6d59fde"><span class="section-number-4">6.2.2.</span> 學生帳號</h4>
 <div class="outline-text-4" id="text-6-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1293,37 +1293,37 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </table>
 </div>
 </div>
-<div id="outline-container-org45929cb" class="outline-4">
-<h4 id="org45929cb"><span class="section-number-4">6.2.3.</span> 答題</h4>
+<div id="outline-container-org6d28d0c" class="outline-4">
+<h4 id="org6d28d0c"><span class="section-number-4">6.2.3.</span> 答題</h4>
 <div class="outline-text-4" id="text-6-2-3">
 </div>
-<div id="outline-container-org6d08d1e" class="outline-5">
-<h5 id="org6d08d1e">選題</h5>
-<div class="outline-text-5" id="text-org6d08d1e">
+<div id="outline-container-org2a01865" class="outline-5">
+<h5 id="org2a01865">選題</h5>
+<div class="outline-text-5" id="text-org2a01865">
 
-<div id="orgea12d1a" class="figure">
+<div id="orgceecee2" class="figure">
 <p><img src="images/線上評量/2024-04-09_13-09-48_2024-04-09_13-02-54.png" alt="2024-04-09_13-09-48_2024-04-09_13-02-54.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 34: </span>選題</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org31aa47a" class="outline-5">
-<h5 id="org31aa47a">查看試題說明</h5>
-<div class="outline-text-5" id="text-org31aa47a">
+<div id="outline-container-orgc7276de" class="outline-5">
+<h5 id="orgc7276de">查看試題說明</h5>
+<div class="outline-text-5" id="text-orgc7276de">
 
-<div id="orgd84880b" class="figure">
+<div id="orgcbed6e2" class="figure">
 <p><img src="images/線上評量/2024-04-09_13-29-01_2024-04-09_13-28-55.png" alt="2024-04-09_13-29-01_2024-04-09_13-28-55.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 35: </span>查看試題</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orga6ed216" class="outline-5">
-<h5 id="orga6ed216">作答</h5>
-<div class="outline-text-5" id="text-orga6ed216">
+<div id="outline-container-org2ad8f9c" class="outline-5">
+<h5 id="org2ad8f9c">作答</h5>
+<div class="outline-text-5" id="text-org2ad8f9c">
 
-<div id="org82ab961" class="figure">
+<div id="orgfa080f0" class="figure">
 <p><img src="images/線上評量/2024-04-09_13-29-43_2024-04-09_13-29-34.png" alt="2024-04-09_13-29-43_2024-04-09_13-29-34.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 36: </span>答題</p>
@@ -1331,43 +1331,43 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </div>
 </div>
 </div>
-<div id="outline-container-org93e61de" class="outline-4">
-<h4 id="org93e61de"><span class="section-number-4">6.2.4.</span> 撰寫程式</h4>
+<div id="outline-container-org155d565" class="outline-4">
+<h4 id="org155d565"><span class="section-number-4">6.2.4.</span> 撰寫程式</h4>
 </div>
-<div id="outline-container-orgd41aa8f" class="outline-4">
-<h4 id="orgd41aa8f"><span class="section-number-4">6.2.5.</span> 查看</h4>
+<div id="outline-container-orgc986577" class="outline-4">
+<h4 id="orgc986577"><span class="section-number-4">6.2.5.</span> 查看</h4>
 </div>
 </div>
-<div id="outline-container-org2eca2ba" class="outline-3">
-<h3 id="org2eca2ba"><span class="section-number-3">6.3.</span> 教師端</h3>
+<div id="outline-container-org0c35659" class="outline-3">
+<h3 id="org0c35659"><span class="section-number-3">6.3.</span> 教師端</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 以QindaU Online Judge Server為例，示範教師如何出題<br />
 </p>
 </div>
-<div id="outline-container-org14580cc" class="outline-4">
-<h4 id="org14580cc"><span class="section-number-4">6.3.1.</span> TMP</h4>
+<div id="outline-container-org4fb1a13" class="outline-4">
+<h4 id="org4fb1a13"><span class="section-number-4">6.3.1.</span> TMP</h4>
 <div class="outline-text-4" id="text-6-3-1">
 </div>
-<div id="outline-container-org235605f" class="outline-5">
-<h5 id="org235605f">ID</h5>
-<div class="outline-text-5" id="text-org235605f">
+<div id="outline-container-org64e5449" class="outline-5">
+<h5 id="org64e5449">ID</h5>
+<div class="outline-text-5" id="text-org64e5449">
 <p>
 1001<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org00f2d72" class="outline-5">
-<h5 id="org00f2d72">TITLE</h5>
-<div class="outline-text-5" id="text-org00f2d72">
+<div id="outline-container-org7a0b732" class="outline-5">
+<h5 id="org7a0b732">TITLE</h5>
+<div class="outline-text-5" id="text-org7a0b732">
 <p>
 世界上最遙遠的距離<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org8eb3b55" class="outline-5">
-<h5 id="org8eb3b55">content</h5>
-<div class="outline-text-5" id="text-org8eb3b55">
+<div id="outline-container-orgd7fbe1b" class="outline-5">
+<h5 id="orgd7fbe1b">content</h5>
+<div class="outline-text-5" id="text-orgd7fbe1b">
 <ul class="org-ul">
 <li>世界上最遙遠的距離不是你面前的題目與你心中的程式碼，而是你站在心儀的女同學面前，她卻把你當成討厭的肥宅&#x2026;<br /></li>
 <li>三角形<br /></li>
@@ -1379,9 +1379,9 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </ul>
 </div>
 </div>
-<div id="outline-container-org55a326b" class="outline-5">
-<h5 id="org55a326b">INPUT</h5>
-<div class="outline-text-5" id="text-org55a326b">
+<div id="outline-container-org2a1fbe6" class="outline-5">
+<h5 id="org2a1fbe6">INPUT</h5>
+<div class="outline-text-5" id="text-org2a1fbe6">
 <ul class="org-ul">
 <li>輸入只有一行，分別為兩個正整數a,b<br /></li>
 <li>兩整數以一空白相隔<br /></li>
@@ -1389,9 +1389,9 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb8a0b39" class="outline-5">
-<h5 id="orgb8a0b39">OUTPU</h5>
-<div class="outline-text-5" id="text-orgb8a0b39">
+<div id="outline-container-org10b9e77" class="outline-5">
+<h5 id="org10b9e77">OUTPU</h5>
+<div class="outline-text-5" id="text-org10b9e77">
 <ul class="org-ul">
 <li>請輸出c<br /></li>
 <li>輸出請四捨五入到小數點後第4位<br /></li>
@@ -1400,8 +1400,8 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </div>
 </div>
 </div>
-<div id="outline-container-org2e03396" class="outline-4">
-<h4 id="org2e03396"><span class="section-number-4">6.3.2.</span> 教師帳號</h4>
+<div id="outline-container-org03c9ae1" class="outline-4">
+<h4 id="org03c9ae1"><span class="section-number-4">6.3.2.</span> 教師帳號</h4>
 <div class="outline-text-4" id="text-6-3-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1521,70 +1521,70 @@ Online Judge（線上評測系統）是一個可以替代教師為學生送出�
 </table>
 </div>
 </div>
-<div id="outline-container-orgb5e7b96" class="outline-4">
-<h4 id="orgb5e7b96"><span class="section-number-4">6.3.3.</span> 編寫題目</h4>
+<div id="outline-container-orgecb2ed9" class="outline-4">
+<h4 id="orgecb2ed9"><span class="section-number-4">6.3.3.</span> 編寫題目</h4>
 <div class="outline-text-4" id="text-6-3-3">
 </div>
-<div id="outline-container-orge79cd91" class="outline-5">
-<h5 id="orge79cd91">1. 以管理者身份登入系統</h5>
-<div class="outline-text-5" id="text-orge79cd91">
+<div id="outline-container-org773b431" class="outline-5">
+<h5 id="org773b431">1. 以管理者身份登入系統</h5>
+<div class="outline-text-5" id="text-org773b431">
 <p>
 ta01~ta20<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc43aeb" class="outline-5">
-<h5 id="orgfc43aeb">2. 點選Problem List</h5>
-<div class="outline-text-5" id="text-orgfc43aeb">
+<div id="outline-container-org92cca2f" class="outline-5">
+<h5 id="org92cca2f">2. 點選Problem List</h5>
+<div class="outline-text-5" id="text-org92cca2f">
 <p>
 點選&ldquo;+Create&rdquo;按鈕<br />
 </p>
 
-<div id="org3c652c9" class="figure">
+<div id="org04bc1bf" class="figure">
 <p><img src="images/線上評量/2024-04-09_11-13-59_2024-04-09_11-12-14.png" alt="2024-04-09_11-13-59_2024-04-09_11-12-14.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 37: </span>新增試題</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc6ccd89" class="outline-5">
-<h5 id="orgc6ccd89">3. 編輯試題</h5>
-<div class="outline-text-5" id="text-orgc6ccd89">
+<div id="outline-container-org8e9652f" class="outline-5">
+<h5 id="org8e9652f">3. 編輯試題</h5>
+<div class="outline-text-5" id="text-org8e9652f">
 </div>
 <ul class="org-ul">
-<li><a id="org97965fe"></a>Step #1<br />
-<div class="outline-text-6" id="text-org97965fe">
+<li><a id="org82e92ef"></a>Step #1<br />
+<div class="outline-text-6" id="text-org82e92ef">
 
-<div id="org8a0e53f" class="figure">
+<div id="orgf24baf1" class="figure">
 <p><img src="images/線上評量/2024-04-09_11-17-07_2024-04-09_11-15-16.png" alt="2024-04-09_11-17-07_2024-04-09_11-15-16.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 38: </span>編輯試題#1</p>
 </div>
 </div>
 </li>
-<li><a id="orgae652e8"></a>1. 輸入試題編號(ID)<br /></li>
-<li><a id="org3b077e5"></a>2. 輸入試題標題(TITLE)<br /></li>
-<li><a id="orgd56a52c"></a>3. 輸入題幹(Description)<br /></li>
-<li><a id="orgf5c8653"></a>Step #2<br />
-<div class="outline-text-6" id="text-orgf5c8653">
+<li><a id="org9cf1abc"></a>1. 輸入試題編號(ID)<br /></li>
+<li><a id="org3753005"></a>2. 輸入試題標題(TITLE)<br /></li>
+<li><a id="orgfcbb9bf"></a>3. 輸入題幹(Description)<br /></li>
+<li><a id="org85136f7"></a>Step #2<br />
+<div class="outline-text-6" id="text-org85136f7">
 
-<div id="org6d4a7cf" class="figure">
+<div id="orgde10a9a" class="figure">
 <p><img src="images/線上評量/2024-04-09_11-19-25_2024-04-09_11-17-51.png" alt="2024-04-09_11-19-25_2024-04-09_11-17-51.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 39: </span>編輯試題#2</p>
 </div>
 </div>
 </li>
-<li><a id="org73a7270"></a>4. 編輯試題輸入條件<br /></li>
-<li><a id="org9fb7611"></a>5. 編輯試題輸出條件<br /></li>
-<li><a id="org0d569ad"></a>6. 編輯試題執行時間限制<br /></li>
-<li><a id="org8aee4d3"></a>7. 編輯試題執行空間(記憶體)限制<br /></li>
-<li><a id="org7c46f17"></a>8. 編輯試題難度<br /></li>
-<li><a id="org51ad1e9"></a>9. 是否隱藏試題<br /></li>
-<li><a id="org722c4b3"></a>10. 加入試題Tag(至少要加一個)<br /></li>
-<li><a id="orgfad0fec"></a>11. 允許編寫之語言列表<br /></li>
-<li><a id="org9c8b306"></a>STEP 3:<br />
-<div class="outline-text-6" id="text-org9c8b306">
+<li><a id="orgbea9402"></a>4. 編輯試題輸入條件<br /></li>
+<li><a id="org42bca4a"></a>5. 編輯試題輸出條件<br /></li>
+<li><a id="orge9e8ba3"></a>6. 編輯試題執行時間限制<br /></li>
+<li><a id="org1cd4e9e"></a>7. 編輯試題執行空間(記憶體)限制<br /></li>
+<li><a id="org39d77de"></a>8. 編輯試題難度<br /></li>
+<li><a id="orgdcd8998"></a>9. 是否隱藏試題<br /></li>
+<li><a id="org4ca0e7f"></a>10. 加入試題Tag(至少要加一個)<br /></li>
+<li><a id="orgc566948"></a>11. 允許編寫之語言列表<br /></li>
+<li><a id="org60d1dff"></a>STEP 3:<br />
+<div class="outline-text-6" id="text-org60d1dff">
 <p>
 (1) 編輯測資<br />
 測試資料(case)的格式如下:<br />
@@ -1609,43 +1609,43 @@ ta01~ta20<br />
 (2) 壓縮測資檔(zip)<br />
 </p>
 
-<div id="org45e09b2" class="figure">
+<div id="org9711f2d" class="figure">
 <p><img src="images/線上評量/2024-04-09_12-56-57_2024-04-09_12-56-50.png" alt="2024-04-09_12-56-57_2024-04-09_12-56-50.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 40: </span>壓縮測資檔</p>
 </div>
 </div>
 </li>
-<li><a id="org150b105"></a>STEP 4: 上傳測資壓縮檔<br />
-<div class="outline-text-6" id="text-org150b105">
+<li><a id="orgb7c7105"></a>STEP 4: 上傳測資壓縮檔<br />
+<div class="outline-text-6" id="text-orgb7c7105">
 
-<div id="org8675706" class="figure">
+<div id="orgbd80de9" class="figure">
 <p><img src="images/線上評量/2024-04-09_12-57-53_2024-04-09_12-54-22.png" alt="2024-04-09_12-57-53_2024-04-09_12-54-22.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 41: </span>上傳壓縮檔</p>
 </div>
 </div>
 </li>
-<li><a id="org554ca58"></a>12. 選取縮檔，上傳<br /></li>
-<li><a id="org9f78a89"></a>13. 存檔<br /></li>
+<li><a id="orga82641d"></a>12. 選取縮檔，上傳<br /></li>
+<li><a id="org07e52cf"></a>13. 存檔<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org268fa39" class="outline-4">
-<h4 id="org268fa39"><span class="section-number-4">6.3.4.</span> 查看學生作答</h4>
+<div id="outline-container-orgf63aa38" class="outline-4">
+<h4 id="orgf63aa38"><span class="section-number-4">6.3.4.</span> 查看學生作答</h4>
 </div>
 </div>
-<div id="outline-container-org2cbef93" class="outline-3">
-<h3 id="org2cbef93"><span class="section-number-3">6.4.</span> 管理者</h3>
+<div id="outline-container-org5265811" class="outline-3">
+<h3 id="org5265811"><span class="section-number-3">6.4.</span> 管理者</h3>
 <div class="outline-text-3" id="text-6-4">
 </div>
-<div id="outline-container-org2183601" class="outline-4">
-<h4 id="org2183601"><span class="section-number-4">6.4.1.</span> 新增使用者(滙入csv檔)</h4>
+<div id="outline-container-org9ac85a5" class="outline-4">
+<h4 id="org9ac85a5"><span class="section-number-4">6.4.1.</span> 新增使用者(滙入csv檔)</h4>
 <div class="outline-text-4" id="text-6-4-1">
 </div>
-<div id="outline-container-orgca647a2" class="outline-5">
-<h5 id="orgca647a2">1. 編輯使用者資料檔(csv)</h5>
-<div class="outline-text-5" id="text-orgca647a2">
+<div id="outline-container-org7fb77bd" class="outline-5">
+<h5 id="org7fb77bd">1. 編輯使用者資料檔(csv)</h5>
+<div class="outline-text-5" id="text-org7fb77bd">
 <p>
 格式: id, password, email<br />
 </p>
@@ -1656,77 +1656,77 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </div>
 </div>
 </div>
-<div id="outline-container-orgc5bb6bb" class="outline-5">
-<h5 id="orgc5bb6bb">2. 進入系統管理頁面</h5>
-<div class="outline-text-5" id="text-orgc5bb6bb">
+<div id="outline-container-orgfe903a2" class="outline-5">
+<h5 id="orgfe903a2">2. 進入系統管理頁面</h5>
+<div class="outline-text-5" id="text-orgfe903a2">
 
-<div id="org0d0ddc1" class="figure">
+<div id="orgfda4ba1" class="figure">
 <p><img src="images/線上評量/2024-04-08_21-01-03_2024-04-08_20-59-20.png" alt="2024-04-08_21-01-03_2024-04-08_20-59-20.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 42: </span>點選Management</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgceeee3f" class="outline-5">
-<h5 id="orgceeee3f">3. 點選左側功能表User選項</h5>
-<div class="outline-text-5" id="text-orgceeee3f">
+<div id="outline-container-org83de2ed" class="outline-5">
+<h5 id="org83de2ed">3. 點選左側功能表User選項</h5>
+<div class="outline-text-5" id="text-org83de2ed">
 
-<div id="org262a7df" class="figure">
+<div id="org6a4b5f1" class="figure">
 <p><img src="images/線上評量/2024-04-08_21-11-33_2024-04-08_21-09-24.png" alt="2024-04-08_21-11-33_2024-04-08_21-09-24.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 43: </span>點選User</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org746dbb2" class="outline-5">
-<h5 id="org746dbb2">4. 進入Import User，選擇匯入csv檔</h5>
-<div class="outline-text-5" id="text-org746dbb2">
+<div id="outline-container-org8a3a0e5" class="outline-5">
+<h5 id="org8a3a0e5">4. 進入Import User，選擇匯入csv檔</h5>
+<div class="outline-text-5" id="text-org8a3a0e5">
 
-<div id="org50d054d" class="figure">
+<div id="org8d19a89" class="figure">
 <p><img src="images/線上評量/2024-04-08_21-12-21_2024-04-08_21-09-49.png" alt="2024-04-08_21-12-21_2024-04-08_21-09-49.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 44: </span>點選Choose File</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org07139bd" class="outline-5">
-<h5 id="org07139bd">5. 匯入失敗QQ</h5>
-<div class="outline-text-5" id="text-org07139bd">
+<div id="outline-container-org626bec5" class="outline-5">
+<h5 id="org626bec5">5. 匯入失敗QQ</h5>
+<div class="outline-text-5" id="text-org626bec5">
 <p>
 原因未知<br />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org8b46bec" class="outline-4">
-<h4 id="org8b46bec"><span class="section-number-4">6.4.2.</span> 新增使用者(系統自動生成)</h4>
+<div id="outline-container-org84af8de" class="outline-4">
+<h4 id="org84af8de"><span class="section-number-4">6.4.2.</span> 新增使用者(系統自動生成)</h4>
 <div class="outline-text-4" id="text-6-4-2">
 </div>
-<div id="outline-container-org522d542" class="outline-5">
-<h5 id="org522d542">1. 進入系統管理頁面</h5>
-<div class="outline-text-5" id="text-org522d542">
+<div id="outline-container-orga0ab84a" class="outline-5">
+<h5 id="orga0ab84a">1. 進入系統管理頁面</h5>
+<div class="outline-text-5" id="text-orga0ab84a">
 
-<div id="org9bed6b1" class="figure">
+<div id="org9197004" class="figure">
 <p><img src="images/線上評量/2024-04-08_21-01-03_2024-04-08_20-59-20.png" alt="2024-04-08_21-01-03_2024-04-08_20-59-20.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 45: </span>點選Management</p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgbfbe1fe" class="outline-5">
-<h5 id="orgbfbe1fe">2. 點選左側功能表User選項</h5>
-<div class="outline-text-5" id="text-orgbfbe1fe">
+<div id="outline-container-orgf7c70c5" class="outline-5">
+<h5 id="orgf7c70c5">2. 點選左側功能表User選項</h5>
+<div class="outline-text-5" id="text-orgf7c70c5">
 
-<div id="org36ae704" class="figure">
+<div id="orgbd45394" class="figure">
 <p><img src="images/線上評量/2024-04-08_21-11-33_2024-04-08_21-09-24.png" alt="2024-04-08_21-11-33_2024-04-08_21-09-24.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 46: </span>點選User</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org4b36568" class="outline-5">
-<h5 id="org4b36568">3. 點選Generate User</h5>
-<div class="outline-text-5" id="text-org4b36568">
+<div id="outline-container-org76eabfb" class="outline-5">
+<h5 id="org76eabfb">3. 點選Generate User</h5>
+<div class="outline-text-5" id="text-org76eabfb">
 <ol class="org-ol">
 <li>填入前置字串(Prefix)<br /></li>
 <li>後置字串(Suffix)<br /></li>
@@ -1736,21 +1736,21 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 <li>此時會自動下載一個users.xlsx檔案<br /></li>
 </ol>
 
-<div id="org08bdf6f" class="figure">
+<div id="orge2bb387" class="figure">
 <p><img src="images/線上評量/2024-04-09_08-39-16_2024-04-08_21-31-15.png" alt="2024-04-09_08-39-16_2024-04-08_21-31-15.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 47: </span>由系統自動生成使用者帳號</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org81e7b89" class="outline-5">
-<h5 id="org81e7b89">4. 開啟使用者列表檔</h5>
-<div class="outline-text-5" id="text-org81e7b89">
+<div id="outline-container-org5e98b1d" class="outline-5">
+<h5 id="org5e98b1d">4. 開啟使用者列表檔</h5>
+<div class="outline-text-5" id="text-org5e98b1d">
 <p>
 這個檔案裡有系統為每個使用者生成的密碼，請妥善保存<br />
 </p>
 
-<div id="org819948d" class="figure">
+<div id="orgff5179b" class="figure">
 <p><img src="images/線上評量/2024-04-09_08-44-41_2024-04-09_08-44-33.png" alt="2024-04-09_08-44-41_2024-04-09_08-44-33.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 48: </span>系統自動生成的使用者</p>
@@ -1760,58 +1760,58 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </div>
 </div>
 </div>
-<div id="outline-container-orge96a0bd" class="outline-2">
-<h2 id="orge96a0bd"><span class="section-number-2">7.</span> [示範]安裝Online Judge Server</h2>
+<div id="outline-container-org4744771" class="outline-2">
+<h2 id="org4744771"><span class="section-number-2">7.</span> [示範]安裝Online Judge Server</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org668a48a" class="outline-3">
-<h3 id="org668a48a"><span class="section-number-3">7.1.</span> 安裝 Docker</h3>
+<div id="outline-container-org1ff5c27" class="outline-3">
+<h3 id="org1ff5c27"><span class="section-number-3">7.1.</span> 安裝 Docker</h3>
 <div class="outline-text-3" id="text-7-1">
 </div>
-<div id="outline-container-org4035e5a" class="outline-4">
-<h4 id="org4035e5a"><span class="section-number-4">7.1.1.</span> 安裝 Windows Docker Desktop</h4>
+<div id="outline-container-org83c6d93" class="outline-4">
+<h4 id="org83c6d93"><span class="section-number-4">7.1.1.</span> 安裝 Windows Docker Desktop</h4>
 <div class="outline-text-4" id="text-7-1-1">
 </div>
-<div id="outline-container-org6999836" class="outline-5">
-<h5 id="org6999836">resource</h5>
-<div class="outline-text-5" id="text-org6999836">
+<div id="outline-container-orgec96006" class="outline-5">
+<h5 id="orgec96006">resource</h5>
+<div class="outline-text-5" id="text-orgec96006">
 <ul class="org-ul">
 <li><a href="https://learn.microsoft.com/zh-tw/windows/wsl/install">如何使用 WSL 在 Windows 上安裝 Linux</a><br /></li>
 <li><a href="https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers">在 WSL 2 上開始使用 Docker 遠端容器</a><br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb68f91e" class="outline-5">
-<h5 id="orgb68f91e">安裝Python</h5>
-<div class="outline-text-5" id="text-orgb68f91e">
+<div id="outline-container-orgee590d1" class="outline-5">
+<h5 id="orgee590d1">安裝Python</h5>
+<div class="outline-text-5" id="text-orgee590d1">
 <ul class="org-ul">
 <li>powershell, 輸入python<br /></li>
 <li>取得python<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4781f39" class="outline-5">
-<h5 id="org4781f39">Step 1:</h5>
+<div id="outline-container-org2323414" class="outline-5">
+<h5 id="org2323414">Step 1:</h5>
 </div>
-<div id="outline-container-org8c59e19" class="outline-5">
-<h5 id="org8c59e19">設定BIOS</h5>
-<div class="outline-text-5" id="text-org8c59e19">
+<div id="outline-container-org2728e93" class="outline-5">
+<h5 id="org2728e93">設定BIOS</h5>
+<div class="outline-text-5" id="text-org2728e93">
 <ul class="org-ul">
 <li>確定BIOS: Configuration / Intel Virtual Technology為Enabled<br /></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org8fe336a" class="outline-4">
-<h4 id="org8fe336a"><span class="section-number-4">7.1.2.</span> 下載Docker</h4>
+<div id="outline-container-org38e3c4d" class="outline-4">
+<h4 id="org38e3c4d"><span class="section-number-4">7.1.2.</span> 下載Docker</h4>
 <div class="outline-text-4" id="text-7-1-2">
 <ul class="org-ul">
 <li>下載: <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a><br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd430522" class="outline-4">
-<h4 id="orgd430522"><span class="section-number-4">7.1.3.</span> 安裝</h4>
+<div id="outline-container-org6793d7f" class="outline-4">
+<h4 id="org6793d7f"><span class="section-number-4">7.1.3.</span> 安裝</h4>
 <div class="outline-text-4" id="text-7-1-3">
 <ul class="org-ul">
 <li>check: Use WSL 2 instead of Hyper-V<br /></li>
@@ -1821,8 +1821,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ec5a9f" class="outline-4">
-<h4 id="org5ec5a9f"><span class="section-number-4">7.1.4.</span> 除錯</h4>
+<div id="outline-container-org41cd0d8" class="outline-4">
+<h4 id="org41cd0d8"><span class="section-number-4">7.1.4.</span> 除錯</h4>
 <div class="outline-text-4" id="text-7-1-4">
 <ul class="org-ul">
 <li>出現錯誤<br /></li>
@@ -1839,8 +1839,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </ul>
 </div>
 </div>
-<div id="outline-container-orga2e5204" class="outline-4">
-<h4 id="orga2e5204"><span class="section-number-4">7.1.5.</span> 設定Docker</h4>
+<div id="outline-container-orga72a1bb" class="outline-4">
+<h4 id="orga72a1bb"><span class="section-number-4">7.1.5.</span> 設定Docker</h4>
 <div class="outline-text-4" id="text-7-1-5">
 <ul class="org-ul">
 <li>點選Settings / Resources / File sharing<br /></li>
@@ -1850,8 +1850,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </ul>
 </div>
 </div>
-<div id="outline-container-orga68e735" class="outline-4">
-<h4 id="orga68e735"><span class="section-number-4">7.1.6.</span> 安裝git</h4>
+<div id="outline-container-org2f9e675" class="outline-4">
+<h4 id="org2f9e675"><span class="section-number-4">7.1.6.</span> 安裝git</h4>
 <div class="outline-text-4" id="text-7-1-6">
 <ul class="org-ul">
 <li>下載Git for Windows: <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a><br /></li>
@@ -1865,8 +1865,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </p>
 </div>
 </div>
-<div id="outline-container-orga77fa89" class="outline-4">
-<h4 id="orga77fa89"><span class="section-number-4">7.1.7.</span> Clone and Start QD</h4>
+<div id="outline-container-org574f5d6" class="outline-4">
+<h4 id="org574f5d6"><span class="section-number-4">7.1.7.</span> Clone and Start QD</h4>
 <div class="outline-text-4" id="text-7-1-7">
 <div class="org-src-container">
 <pre class="src src-shell"><span class="linenr">1: </span><span style="color: #ECBE7B;">cd</span> D:\QD
@@ -1878,8 +1878,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </div>
 </div>
 </div>
-<div id="outline-container-orgec249f3" class="outline-3">
-<h3 id="orgec249f3"><span class="section-number-3">7.2.</span> 安裝Online Judge Server</h3>
+<div id="outline-container-org16aee6d" class="outline-3">
+<h3 id="org16aee6d"><span class="section-number-3">7.2.</span> 安裝Online Judge Server</h3>
 <div class="outline-text-3" id="text-7-2">
 <ul class="org-ul">
 <li><a href="https://blog.techbridge.cc/2020/03/20/build-your-own-online-judge/">自己架一個 Online Judge 系統</a><br /></li>
@@ -1889,8 +1889,8 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </div>
 </div>
 </div>
-<div id="outline-container-org627ca7e" class="outline-2">
-<h2 id="org627ca7e"><span class="section-number-2">8.</span> Resource</h2>
+<div id="outline-container-org59286f4" class="outline-2">
+<h2 id="org59286f4"><span class="section-number-2">8.</span> Resource</h2>
 <div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li><a href="https://theriseofdavid.github.io/2021/03/29/linux/linux-build-online-judge/">快速建立屬於你的 online judge</a><br /></li>
@@ -1948,7 +1948,7 @@ ta00, tnfshta00, ta00@gm.tnfsh.tn.edu.tw
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung-Chin Yen</p>
-<p class="date">Created: 2024-04-10 Wed 11:35</p>
+<p class="date">Created: 2024-04-11 Thu 10:20</p>
 </div>
 </body>
 </html>

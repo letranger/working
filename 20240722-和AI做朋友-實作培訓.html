@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-07-13 Sat 21:18 -->
+<!-- 2024-07-15 Mon 16:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>20240722和AI做朋友-實作培訓</title>
@@ -202,89 +202,116 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3d6e9a2">1. 研習內容</a>
+<li><a href="#org1ce3196">1. 研習內容</a>
 <ul>
-<li><a href="#orgf09b115">1.1. 課表</a></li>
-<li><a href="#org941eeb6">1.2. 前置作業</a></li>
+<li><a href="#org7982770">1.1. 課表</a></li>
+<li><a href="#org2ac6ee6">1.2. 前置作業</a>
+<ul>
+<li><a href="#orgd136aee">1.2.1. 教材、講義</a></li>
+<li><a href="#orgb56589d">1.2.2. 待用網站</a></li>
+<li><a href="#org99da629">1.2.3. 投影片下載</a></li>
 </ul>
 </li>
-<li><a href="#org29bb5bf">2. 從類神經網路到生成式AI</a></li>
-<li><a href="#orgc6c00bd">3. 資料集、特徵與資料預處理</a>
-<ul>
-<li><a href="#org3723a87">3.1. SKLearn / Keras 內建資料集</a></li>
-<li><a href="#org65300ae">3.2. 特徵選擇</a></li>
-<li><a href="#org9f92dc4">3.3. 正規化</a></li>
-<li><a href="#orga52aae8">3.4. 資料集切割</a></li>
-<li><a href="#orgd20a27d">3.5. K最近鄰域</a></li>
-<li><a href="#org881deeb">3.6. 決策樹</a></li>
 </ul>
 </li>
-<li><a href="#org9ccbfa7">4. 監督式學習</a>
+<li><a href="#org14e4e42">2. 從類神經網路到生成式AI</a></li>
+<li><a href="#orgcaeef3d">3. 資料、模型與監督式學習</a>
 <ul>
-<li><a href="#org6832a69">4.1. MLP</a></li>
-<li><a href="#org71d2bbe">4.2. 深度學習</a></li>
-<li><a href="#org4c35d0d">4.3. CNN</a></li>
+<li><a href="#org316093b">3.1. 機器學習SOP</a>
+<ul>
+<li><a href="#orgb8fd671">3.1.1. 解決問題的兩種模式</a></li>
+<li><a href="#org9509df0">3.1.2. 機器學習的SOP</a></li>
 </ul>
 </li>
-<li><a href="#org1f82395">5. 非監督式學習</a>
+<li><a href="#org4a36c52">3.2. 資料預處理</a>
 <ul>
-<li><a href="#org60b17f3">5.1. K均值</a></li>
-<li><a href="#org785804c">5.2. DBSCAN</a></li>
-<li><a href="#org476c1d8">5.3. 階層式分群</a></li>
-<li><a href="#orgb911093">5.4. 文生圖</a></li>
-<li><a href="#orgf214d1d">5.5. AI孫燕姿</a></li>
-<li><a href="#org44fa4e5">5.6. ChatGPT程式解析</a></li>
+<li><a href="#org7bc4de6">3.2.1. 資料集</a></li>
+</ul>
+</li>
+<li><a href="#org4f55874">3.3. 監督式學習</a>
+<ul>
+<li><a href="#org9f6c754">3.3.1. 最短距離分類</a></li>
+<li><a href="#orgc6837ef">3.3.2. KNN分類器</a></li>
+<li><a href="#orga88f6ff">3.3.3. 決策樹</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5f0baa5">4. 非監督式學習與強化學習</a>
+<ul>
+<li><a href="#orgf0a66f2">4.1. 非監督式學習</a>
+<ul>
+<li><a href="#orgb8a98e3">4.1.1. K-means</a></li>
+<li><a href="#orgffda4bc">4.1.2. 階層式分群</a></li>
+<li><a href="#org4f1851c">4.1.3. 應用實作</a></li>
+<li><a href="#orge22dc72">4.1.4. Oragne</a></li>
+</ul>
+</li>
+<li><a href="#orgab27ed7">4.2. 增強式學習</a></li>
+</ul>
+</li>
+<li><a href="#orgb7eeb78">5. 深度學習與卷積神經網路</a>
+<ul>
+<li><a href="#org12ee3d5">5.1. 感知器與神經網路</a></li>
+<li><a href="#org952693e">5.2. 深度學習</a></li>
+<li><a href="#orga945a74">5.3. 卷積神經網路</a></li>
+<li><a href="#org19f3b4c">5.4. 實作專題所需技能</a>
+<ul>
+<li><a href="#org6888fe5">5.4.1. 從現成資料集到你的資料集</a></li>
+<li><a href="#orgbd67adf">5.4.2. 給訓練好的模型一個UI</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <a href="https://hits.sh/letranger.github.io/working/20240722-和AI做朋友-實作培訓.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20240722-和AI做朋友-實作培訓.html.svg"/></a>
-<div id="outline-container-org3d6e9a2" class="outline-2">
-<h2 id="org3d6e9a2"><span class="section-number-2">1.</span> 研習內容</h2>
+<div id="outline-container-org1ce3196" class="outline-2">
+<h2 id="org1ce3196"><span class="section-number-2">1.</span> 研習內容</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>系列研習: 和AI做朋友-實作培訓<br /></li>
 <li>時間： 113年7月22日 09:00 ~ 113年7月23日 14:00<br /></li>
-<li>180分鐘: 數位教學與評量工具介紹(50分鐘) + 教學評量案例分享(90分鐘)<br /></li>
-<li>對象: 高雄市公私立國中教師，預估25人<br /></li>
 </ul>
 </div>
-<div id="outline-container-orgf09b115" class="outline-3">
-<h3 id="orgf09b115"><span class="section-number-3">1.1.</span> 課表</h3>
+<div id="outline-container-org7982770" class="outline-3">
+<h3 id="org7982770"><span class="section-number-3">1.1.</span> 課表</h3>
 <div class="outline-text-3" id="text-1-1">
 
-<div id="orgab581be" class="figure">
+<div id="org133ce13" class="figure">
 <p><img src="images/研習內容/2024-07-13_15-44-16_課表.jpg" alt="2024-07-13_15-44-16_課表.jpg" width="600" /><br />
 </p>
 <p><span class="figure-number">Figure 1: </span>課程表</p>
 </div>
 </div>
 </div>
-<div id="outline-container-org941eeb6" class="outline-3">
-<h3 id="org941eeb6"><span class="section-number-3">1.2.</span> 前置作業</h3>
+<div id="outline-container-org2ac6ee6" class="outline-3">
+<h3 id="org2ac6ee6"><span class="section-number-3">1.2.</span> 前置作業</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org642cc2c" class="outline-4">
-<h4 id="org642cc2c"><span class="section-number-4">1.2.1.</span> 教材、講義</h4>
+<div id="outline-container-orgd136aee" class="outline-4">
+<h4 id="orgd136aee"><span class="section-number-4">1.2.1.</span> 教材、講義</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
-<li><a href="https://drive.google.com/drive/folders/18XpHjo1VqxU1dE3-piduzpOp1l13coTW">教材、投影片</a><br /></li>
+<li><a href="https://drive.google.com/drive/folders/18XpHjo1VqxU1dE3-piduzpOp1l13coTW">和AI做朋友教材、投影片</a><br /></li>
+<li><a href="https://moodle.tnfsh.tn.edu.tw/course/view.php?id=43">和AI做朋友(教材/簡報/影片)</a><br /></li>
 <li><a href="https://letranger.github.io/AI/">AI Notes: from Zero to Error</a><br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgacd72b1" class="outline-4">
-<h4 id="orgacd72b1"><span class="section-number-4">1.2.2.</span> 登入: Google Classroom</h4>
+<div id="outline-container-orgb56589d" class="outline-4">
+<h4 id="orgb56589d"><span class="section-number-4">1.2.2.</span> 待用網站</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
-<li>課程代碼：<br /></li>
-<li>邀請連結:<br /></li>
+<li>Google Colab<br /></li>
+<li>Google Classroom(課程代碼:)<br /></li>
+<li>ChatGPT<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org60d36f8" class="outline-4">
-<h4 id="org60d36f8"><span class="section-number-4">1.2.3.</span> 投影片下載</h4>
+<div id="outline-container-org99da629" class="outline-4">
+<h4 id="org99da629"><span class="section-number-4">1.2.3.</span> 投影片下載</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>我是這次研習的投影片<br /></li>
@@ -293,8 +320,8 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org29bb5bf" class="outline-2">
-<h2 id="org29bb5bf"><span class="section-number-2">2.</span> 從類神經網路到生成式AI</h2>
+<div id="outline-container-org14e4e42" class="outline-2">
+<h2 id="org14e4e42"><span class="section-number-2">2.</span> 從類神經網路到生成式AI</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>113年7月22日 09:00 ~ 12:00<br /></li>
@@ -302,112 +329,242 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc6c00bd" class="outline-2">
-<h2 id="orgc6c00bd"><span class="section-number-2">3.</span> 資料集、特徵與資料預處理</h2>
+<div id="outline-container-orgcaeef3d" class="outline-2">
+<h2 id="orgcaeef3d"><span class="section-number-2">3.</span> 資料、模型與監督式學習</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>113年7月22日 13:00 ~ 16:00<br /></li>
-<li>對應教材: 第二章 背景知識<br /></li>
-<li>參考教材<br />
+<li>對應教材:<br />
 <ul class="org-ul">
-<li><a href="https://letranger.github.io/AI/20221023101456-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92.html">機器學習</a><br /></li>
-<li><a href="https://letranger.github.io/AI/20221023130936-%E8%B3%87%E6%96%99%E9%A0%90%E8%99%95%E7%90%86.html">資料預處理</a><br /></li>
+<li>第二章 背景知識<br /></li>
+<li>第五章 監督式學習<br /></li>
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org3723a87" class="outline-3">
-<h3 id="org3723a87"><span class="section-number-3">3.1.</span> SKLearn / Keras 內建資料集</h3>
-</div>
-<div id="outline-container-org65300ae" class="outline-3">
-<h3 id="org65300ae"><span class="section-number-3">3.2.</span> 特徵選擇</h3>
-</div>
-<div id="outline-container-org9f92dc4" class="outline-3">
-<h3 id="org9f92dc4"><span class="section-number-3">3.3.</span> 正規化</h3>
-</div>
-<div id="outline-container-orga52aae8" class="outline-3">
-<h3 id="orga52aae8"><span class="section-number-3">3.4.</span> 資料集切割</h3>
-</div>
-<div id="outline-container-orgd20a27d" class="outline-3">
-<h3 id="orgd20a27d"><span class="section-number-3">3.5.</span> K最近鄰域</h3>
-</div>
-<div id="outline-container-org881deeb" class="outline-3">
-<h3 id="org881deeb"><span class="section-number-3">3.6.</span> 決策樹</h3>
-</div>
-</div>
-<div id="outline-container-org9ccbfa7" class="outline-2">
-<h2 id="org9ccbfa7"><span class="section-number-2">4.</span> 監督式學習</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org316093b" class="outline-3">
+<h3 id="org316093b"><span class="section-number-3">3.1.</span> 機器學習SOP</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
-<li>113年7月23日 0900 ~ 12:00<br /></li>
-<li>對應教材<br />
+<li><a href="https://letranger.github.io/AI/20221023101456-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92.html">機器學習</a><br /></li>
+</ul>
+</div>
+<div id="outline-container-orgb8fd671" class="outline-4">
+<h4 id="orgb8fd671"><span class="section-number-4">3.1.1.</span> 解決問題的兩種模式</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+解決問題的兩種模式:<br />
+</p>
 <ul class="org-ul">
-<li>第五章 監督式學習<br /></li>
-<li>第八章 深度學習<br /></li>
-</ul></li>
-<li>參考教材<br />
+<li>程式設計: 知道規則-&gt;算出結果<br /></li>
+<li>機器學習: 知道結果-&gt;推估規則<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9509df0" class="outline-4">
+<h4 id="org9509df0"><span class="section-number-4">3.1.2.</span> 機器學習的SOP</h4>
+</div>
+</div>
+<div id="outline-container-org4a36c52" class="outline-3">
+<h3 id="org4a36c52"><span class="section-number-3">3.2.</span> 資料預處理</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/AI/20221023130936-%E8%B3%87%E6%96%99%E9%A0%90%E8%99%95%E7%90%86.html">資料預處理</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Numpy.html">Numpy</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Pandas.html">Pandas </a><br /></li>
+<li>資枓視覺化<br /></li>
+<li>剔除無效資料<br /></li>
+<li>資料重組/簡化<br /></li>
+<li>資料標準化<br /></li>
+<li>如何挑選資料: 特徵<br /></li>
+</ul>
+</div>
+<div id="outline-container-org7bc4de6" class="outline-4">
+<h4 id="org7bc4de6"><span class="section-number-4">3.2.1.</span> 資料集</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<div id="outline-container-orgb1dcd00" class="outline-5">
+<h5 id="orgb1dcd00">常見的資料集</h5>
+</div>
+<div id="outline-container-orge6d2975" class="outline-5">
+<h5 id="orge6d2975">資料集切割</h5>
+<div class="outline-text-5" id="text-orge6d2975">
+</div>
+<ul class="org-ul">
+<li><a id="org15a8493"></a>訓練集<br /></li>
+<li><a id="org9ae2669"></a>驗證集<br /></li>
+<li><a id="org2d67e3d"></a>測試集<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4f55874" class="outline-3">
+<h3 id="org4f55874"><span class="section-number-3">3.3.</span> 監督式學習</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li><a href="https://letranger.github.io/AI/20221023101626-%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92.html">監督式學習</a><br /></li>
 <li><a href="https://letranger.github.io/AI/20231204210821-%E5%88%86%E9%A1%9E.html">分類</a><br /></li>
 <li><a href="https://letranger.github.io/AI/20221023154410-regression.html">迴歸</a><br /></li>
-<li><a href="https://letranger.github.io/AI/20221023103538-%E6%84%9F%E7%9F%A5%E5%99%A8.html">感知器</a><br /></li>
-<li><a href="https://letranger.github.io/AI/20221025104603-%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF.html">神經網路</a><br /></li>
-<li><a href="https://letranger.github.io/AI/20221023101228-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92.html">深度學習</a><br /></li>
-<li><a href="https://letranger.github.io/AI/20221023101414-%E5%8D%B7%E7%A9%8D%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF.html">卷積神經網路</a><br /></li>
-</ul></li>
 </ul>
 </div>
-<div id="outline-container-org6832a69" class="outline-3">
-<h3 id="org6832a69"><span class="section-number-3">4.1.</span> MLP</h3>
+<div id="outline-container-org9f6c754" class="outline-4">
+<h4 id="org9f6c754"><span class="section-number-4">3.3.1.</span> 最短距離分類</h4>
 </div>
-<div id="outline-container-org71d2bbe" class="outline-3">
-<h3 id="org71d2bbe"><span class="section-number-3">4.2.</span> 深度學習</h3>
+<div id="outline-container-orgc6837ef" class="outline-4">
+<h4 id="orgc6837ef"><span class="section-number-4">3.3.2.</span> KNN分類器</h4>
 </div>
-<div id="outline-container-org4c35d0d" class="outline-3">
-<h3 id="org4c35d0d"><span class="section-number-3">4.3.</span> CNN</h3>
+<div id="outline-container-orga88f6ff" class="outline-4">
+<h4 id="orga88f6ff"><span class="section-number-4">3.3.3.</span> 決策樹</h4>
 </div>
 </div>
-<div id="outline-container-org1f82395" class="outline-2">
-<h2 id="org1f82395"><span class="section-number-2">5.</span> 非監督式學習</h2>
-<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org5f0baa5" class="outline-2">
+<h2 id="org5f0baa5"><span class="section-number-2">4.</span> 非監督式學習與強化學習</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
-<li>113年7月23日 13:00 ~ 16:00<br /></li>
-<li>對應教材: 第六章 非監督式學習<br /></li>
+<li>113年7月23日 0900 ~ 12:00<br /></li>
+<li>對應教材:<br />
+<ul class="org-ul">
+<li>第六章 非監督式學習<br /></li>
+<li>第七章 增強式學習<br /></li>
+</ul></li>
 <li>參考教材<br />
 <ul class="org-ul">
 <li><a href="https://letranger.github.io/AI/20221023101716-%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92.html%5D">非監督式學習</a><br /></li>
+<li><a href="https://letranger.github.io/AI/20230210172919-%E5%A2%9E%E5%BC%B7%E5%BC%8F%E5%AD%B8%E7%BF%92.html">增強式學習</a><br /></li>
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org60b17f3" class="outline-3">
-<h3 id="org60b17f3"><span class="section-number-3">5.1.</span> K均值</h3>
+<div id="outline-container-orgf0a66f2" class="outline-3">
+<h3 id="orgf0a66f2"><span class="section-number-3">4.1.</span> 非監督式學習</h3>
+<div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org785804c" class="outline-3">
-<h3 id="org785804c"><span class="section-number-3">5.2.</span> DBSCAN</h3>
+<div id="outline-container-orgb8a98e3" class="outline-4">
+<h4 id="orgb8a98e3"><span class="section-number-4">4.1.1.</span> K-means</h4>
 </div>
-<div id="outline-container-org476c1d8" class="outline-3">
-<h3 id="org476c1d8"><span class="section-number-3">5.3.</span> 階層式分群</h3>
+<div id="outline-container-orgffda4bc" class="outline-4">
+<h4 id="orgffda4bc"><span class="section-number-4">4.1.2.</span> 階層式分群</h4>
 </div>
-<div id="outline-container-orgb911093" class="outline-3">
-<h3 id="orgb911093"><span class="section-number-3">5.4.</span> 文生圖</h3>
+<div id="outline-container-org4f1851c" class="outline-4">
+<h4 id="org4f1851c"><span class="section-number-4">4.1.3.</span> 應用實作</h4>
 </div>
-<div id="outline-container-orgf214d1d" class="outline-3">
-<h3 id="orgf214d1d"><span class="section-number-3">5.5.</span> AI孫燕姿</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-orge22dc72" class="outline-4">
+<h4 id="orge22dc72"><span class="section-number-4">4.1.4.</span> Oragne</h4>
+<div class="outline-text-4" id="text-4-1-4">
 <ul class="org-ul">
-<li>歌詞產生<br /></li>
-<li>歌曲生成<br /></li>
-<li>唱歌頭像生成<br /></li>
+<li>數值分群<br /></li>
+<li><a href="https://orangedatamining.com/blog/image-analytics-clustering/">圖片分群</a><br /></li>
+<li><a href="https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/model/savemodel.html">Save Orange Model</a><br /></li>
+<li><a href="https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/exporting-models/index.html">Export Orange Model</a><br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org44fa4e5" class="outline-3">
-<h3 id="org44fa4e5"><span class="section-number-3">5.6.</span> ChatGPT程式解析</h3>
+</div>
+<div id="outline-container-orgab27ed7" class="outline-3">
+<h3 id="orgab27ed7"><span class="section-number-3">4.2.</span> 增強式學習</h3>
+</div>
+</div>
+<div id="outline-container-orgb7eeb78" class="outline-2">
+<h2 id="orgb7eeb78"><span class="section-number-2">5.</span> 深度學習與卷積神經網路</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>113年7月23日 13:00 ~ 16:00<br /></li>
+<li>對應教材<br />
+<ul class="org-ul">
+<li>第八章 深度學習<br /></li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org12ee3d5" class="outline-3">
+<h3 id="org12ee3d5"><span class="section-number-3">5.1.</span> 感知器與神經網路</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/AI/20221023103538-%E6%84%9F%E7%9F%A5%E5%99%A8.html">感知器</a><br /></li>
+<li><a href="https://letranger.github.io/AI/20221025104603-%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF.html">神經網路</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org952693e" class="outline-3">
+<h3 id="org952693e"><span class="section-number-3">5.2.</span> 深度學習</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/AI/20221023101228-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92.html">深度學習</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga945a74" class="outline-3">
+<h3 id="orga945a74"><span class="section-number-3">5.3.</span> 卷積神經網路</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/AI/20221023101414-%E5%8D%B7%E7%A9%8D%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF.html">卷積神經網路</a><br /></li>
+<li>建立自己的模型<br /></li>
+<li>站在巨人的肩膀: 直接取用現成模型<br />
+<ul class="org-ul">
+<li>TeachableMachine<br /></li>
+</ul></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">-*- coding: utf-8 -*-</span>
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span><span style="color: #51afef;">import</span> numpy <span style="color: #51afef;">as</span> np
+<span class="linenr"> 4: </span><span style="color: #51afef;">import</span> matplotlib.pyplot <span style="color: #51afef;">as</span> plt
+<span class="linenr"> 5: </span><span style="color: #51afef;">import</span> tensorflow <span style="color: #51afef;">as</span> tf
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span><span style="color: #dcaeea;">model</span> = tf.keras.applications.InceptionV3(include_top=<span style="color: #a9a1e1;">True</span>, weights=<span style="color: #98be65;">'imagenet'</span>)
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>model.summary()
+<span class="linenr">10: </span>
+<span class="linenr">11: </span><span style="color: #51afef;">from</span> tensorflow.keras.applications.inception_v3 <span style="color: #51afef;">import</span> preprocess_input
+<span class="linenr">12: </span><span style="color: #51afef;">from</span> tensorflow.keras.applications.inception_v3 <span style="color: #51afef;">import</span> decode_predictions
+<span class="linenr">13: </span>
+<span class="linenr">14: </span><span style="color: #51afef;">def</span> <span style="color: #c678dd;">read_img</span>(img_path, resize=(<span style="color: #da8548; font-weight: bold;">299</span>,<span style="color: #da8548; font-weight: bold;">299</span>)):
+<span class="linenr">15: </span>    <span style="color: #dcaeea;">img_string</span> = tf.io.read_file(img_path)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#35712;&#21462;&#27284;&#26696;</span>
+<span class="linenr">16: </span>    <span style="color: #dcaeea;">img_decode</span> = tf.image.decode_image(img_string)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23559;&#27284;&#26696;&#20197;&#24433;&#20687;&#26684;&#24335;&#20358;&#35299;&#30908;</span>
+<span class="linenr">17: </span>    <span style="color: #dcaeea;">img_decode</span> = tf.image.resize(img_decode, resize)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23559;&#24433;&#20687;resize&#21040;&#32178;&#36335;&#36664;&#20837;&#22823;&#23567;</span>
+<span class="linenr">18: </span>    <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23559;&#24433;&#20687;&#26684;&#24335;&#22686;&#21152;&#21040;4&#32173;(batch, height, width, channels)&#65292;&#27169;&#22411;&#38928;&#28204;&#35201;&#27714;&#26684;&#24335;</span>
+<span class="linenr">19: </span>    <span style="color: #dcaeea;">img_decode</span> = tf.expand_dims(img_decode, axis=<span style="color: #da8548; font-weight: bold;">0</span>)
+<span class="linenr">20: </span>    <span style="color: #51afef;">return</span> img_decode
+<span class="linenr">21: </span>
+<span class="linenr">22: </span><span style="color: #dcaeea;">img</span> = preprocess_input(img)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24433;&#20687;&#21069;&#34389;&#29702;</span>
+<span class="linenr">23: </span><span style="color: #dcaeea;">preds</span> = model.predict(img)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#38928;&#28204;&#22294;&#29255;</span>
+<span class="linenr">24: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Predicted:"</span>, decode_predictions(preds, top=<span style="color: #da8548; font-weight: bold;">3</span>)[<span style="color: #da8548; font-weight: bold;">0</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20986;&#38928;&#28204;&#26368;&#39640;&#30340;&#19977;&#20491;&#39006;&#21029;</span>
+<span class="linenr">25: </span>
+<span class="linenr">26: </span><span style="color: #dcaeea;">img_path</span> = <span style="color: #98be65;">'mango-1327290.jpg'</span>
+<span class="linenr">27: </span><span style="color: #dcaeea;">img</span> = read_img(img_path)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36879;&#36942;&#21083;&#21109;&#24314;&#30340;&#20989;&#24335;&#35712;&#21462;&#24433;&#20687;</span>
+<span class="linenr">28: </span>plt.imshow(tf.cast(img, tf.uint8)[<span style="color: #da8548; font-weight: bold;">0</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36879;&#36942;matplotlib&#39023;&#31034;&#22294;&#29255;&#38656;&#23559;&#24433;&#20687;&#36681;&#28858;Integers</span>
+</pre>
+</div>
+<ul class="org-ul">
+<li>模型中的圖片樣貌<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19f3b4c" class="outline-3">
+<h3 id="org19f3b4c"><span class="section-number-3">5.4.</span> 實作專題所需技能</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-org6888fe5" class="outline-4">
+<h4 id="org6888fe5"><span class="section-number-4">5.4.1.</span> 從現成資料集到你的資料集</h4>
+<div class="outline-text-4" id="text-5-4-1">
+<ul class="org-ul">
+<li><a href="../roam/20240524084930-用自己的資料訓練模型.html#ID-f9c64912-9c7e-4d24-87b1-be0ca63311c9">用你的資料訓練模型</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbd67adf" class="outline-4">
+<h4 id="orgbd67adf"><span class="section-number-4">5.4.2.</span> 給訓練好的模型一個UI</h4>
+<div class="outline-text-4" id="text-5-4-2">
+<ul class="org-ul">
+<li><a href="https://medium.com/@royhwang_78906/streamlit-%E8%88%87-gradio-python%E6%A1%86%E6%9E%B6%E7%9A%84%E6%B7%B1%E5%BA%A6%E6%AF%94%E8%BC%83-8d576560ff05">Streamlit 與 Gradio：Python框架的深度比較</a><br /></li>
+<li><a href="https://www.toolify.ai/tw/ai-news-tw/%E4%BD%BF%E7%94%A8streamlit%E9%83%A8%E7%BD%B2%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8-727541">使用Streamlit部署機器學習模型的完整教學</a><br /></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung-Chin Yen</p>
-<p class="date">Created: 2024-07-13 Sat 21:18</p>
+<p class="date">Created: 2024-07-15 Mon 16:42</p>
 </div>
 </body>
 </html>

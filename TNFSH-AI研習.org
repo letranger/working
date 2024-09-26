@@ -1,0 +1,50 @@
+#+title: 手把手教你玩AI(人工智慧與數理邏輯跨領域實作工作坊)
+#+TAGS: AI
+#+OPTIONS: toc:3 ^:nil num:3
+#+OPTIONS: H:4
+#+PROPERTY: header-args :eval never-export
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+HTML_HEAD_EXTRA: <script src="../css/copy_code.js"></script>
+#+EXCLUDE_TAGS: noexport
+#+begin_export html
+<a href="https://letranger.github.io/AI/20240117081647-非監督式學習.html"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/AI/20240117081647-非監督式學習.html.svg"/></a>
+#+end_export
+
+* 課程教材
+- [[https://classroom.google.com/c/NzExNjA4ODI5NDMy?cjc=5hnpvbz][Google Classroom]]
+- [[https://letranger.github.io/AI][AI Notes: from Zero to Error]]
+- [[https://moodle.tnfsh.tn.edu.tw/course/view.php?id=43][和AI做朋友[教材/簡報/影片]]
+
+* 第1週：工欲善其事: 工具套件簡介
+- 內容：資料處理會用到的工具套件，如、C資料如何影響AI模型的表現，學習資料清理、轉換、特徵選擇等技術，為AI訓練做好準備。
+- 涵蓋範疇：Pandas、Numpy、Matplotlib、BeautifulSoup、Gradio、Streamlit、Pyinstaller、Tkinter
+-
+* 第2週：數據的魔法：從雜亂到精準
+- 內容：資料如何影響AI模型的表現，學習資料清理、轉換、特徵選擇等技術，為AI訓練做好準備。
+- 涵蓋範疇：資料預處理
+
+* 第3週：分類與迴歸
+- 內容：介紹AI如何做出「分類」決策，模擬AI如何像人類一樣作出預測，探索不同的決策模型。
+- 涵蓋範疇：分類與迴歸
+
+* 第4週：發掘隱藏的真相
+- 內容：當AI沒有指引時，如何學習數據中的模式？探索如何在沒有標籤的情況下，AI依然能找到隱藏的關聯。
+- 涵蓋範疇：非監督式學習
+
+* 第5週：遊戲中的智慧：AI如何自學成才
+- 內容：從遊戲的角度看AI，如何通過自我嘗試和錯誤修正來學習最佳策略，像是在打遊戲一樣學習。
+- 涵蓋範疇：強化學習
+
+* 第6週：大腦的靈感：模仿人類神經元
+- 內容：深度學習的核心概念，類神經網絡如何模仿人腦運作，理解多層次網絡如何從數據中提取出高階資訊。
+- 涵蓋範疇：深度學習與CNN
+
+* 第7週：語言的未來：機器如何聽懂我們的話
+:PROPERTIES:
+:ID:       634ca950-eec0-45ec-b8cd-d5425a511a49
+:END:
+- 內容：語言模型及其應用，探索AI如何理解與生成語言，並應用在對話機器人、翻譯等情境中。
+- 涵蓋範疇：語言模型與自然語言處理
+** Whisper
+- [[https://medium.com/ddsakura-blog/%E5%9C%A8-mac-%E6%9C%AC%E6%A9%9F%E4%B8%8A%E8%B7%91-openai-whisper-b32a8ea021ce][在 Mac 本機上跑 OpenAI Whisper]]
+- [[https://oj.fcuai.tw/][教育部 AI Tutor]]

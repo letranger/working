@@ -10,12 +10,13 @@
 <a href="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html.svg"/></a>
 #+end_export
 
-* 研習內容
+* 研習
+** 內容
 - 研習對象: 國小各科教師
 - 研習時間: 113年10月11日（星期五）14:00-15:30
 - 研習地點: 高雄市信義國小
 - 投影片: [[file:20241011-AI融入教學設計-1.pdf][投影片]]
-* 目標
+** 目標
 1. 介紹AI技術在教育中的應用，並討論如何將AI融入高中課程和教學設計中。
 2. 幫助國小教師了解AI技術的潛力，並探索具體的應用案例。
 3. 提供實用的策略和工具，讓教師能夠在課堂中有效地整合AI。

@@ -1,4 +1,4 @@
-#+TITLE: 工作中專案
+#+TITLE: 研習、工作坊
 
 # -*- org-export-babel-evaluate: nil -*-
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/reveal.js/3.0.0/
@@ -11,20 +11,54 @@
 #+begin_export html
 <a href="https://hits.sh/letranger.github.io/working/index.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/index.html.svg?style=plastic"/></a>
 #+end_export
-* 明年 :noexport:
+* 2025
 - [[file:20250515-素養導向程式設計-教學與評量.org][20250515-素養導向程式設計:教學與評量-以Python為例]]
 
-* Working
-- [[https://github.com/letranger/working/blob/gh-pages/20240222-%E6%96%B0%E8%88%88%E7%A7%91%E6%8A%80%E8%A8%88%E7%95%AB-%E7%95%B6AI%E9%81%87%E4%B8%8A%E8%82%A1%E7%A5%A8%E8%AA%B2%E7%A8%8B%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB.pdf][20240222-新興科技計畫-當AI遇上股票課程經驗分享]]
+* 2024
+- 20241213-Python專題式程式設計教學探究
+- [[https://letranger.github.io/working/TNFSH-AI研習.html][20241025-手把手教你玩AI#2(人工智慧與數理邏輯跨領域實作工作坊)]]
+- [[file:20241025AI課程推廣.org][20241025-課程推廣(新興科技教育遠距示範服務計畫)]]
+- 20241018-AI在國小教學的應用(二)
+- [[file:20241011-AI在國小教學的應用-1.org][20241011-AI在國小教學的應用(一)]]
+- [[https://letranger.github.io/working/TNFSH-AI研習.html][20240927-手把手教你玩AI#1(人工智慧與數理邏輯跨領域實作工作坊)]]
+- [[file:images/Working/2024-09-11_12-08-19_AI融入領域課程及教學設計.pdf][20240903-教育部AI共備工作坊:AI融入領域課程及教學設計]]
+- [[https://letranger.github.io/working/20240726Python%E5%B0%88%E9%A1%8C%E5%BC%8F%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E5%AD%B8%E6%8E%A2%E7%A9%B6.html][20240726-Python專題式程式設計教學探究]]
+- [[https://letranger.github.io/working/20240722-%E5%92%8CAI%E5%81%9A%E6%9C%8B%E5%8F%8B-%E5%AF%A6%E4%BD%9C%E5%9F%B9%E8%A8%93.html][20240722-AI DREAMER-中小學人工智慧教育種子教師培訓]]
+- [[file:20240508-好用的線上評量工具.pdf][20240508-好用的線上評量工具]]
+- [[file:20240222-新興科技計畫-當AI遇上股票課程經驗分享.pdf][20240222-新興科技計畫-當AI遇上股票課程經驗分享]]
+
+* 2023
 - [[file:20231111專題式程式教學-Python.html][20231111-專題式程式教學-Python]]
 - [[file:20231020-「當AI遇上股票」課程經驗.pdf][20231020-「當AI遇上股票」課程經驗]]
 - [[file:20230921-數位教學與評量工具.pdf][20230921-數位教學與評量工具]]
 - [[file:20230209AI教學實務分享.pdf][20230209-AI教學實務分享]]
+
+* 2022
 - [[file:20221229科技力Ⅹ雙語Ⅹ跨域教學示例.pdf][20221229-科技力Ⅹ雙語Ⅹ跨域教學示例]]
 - [[file:20220924自主學習與科技輔助示例.pdf][20220924-自主學習與科技輔助示例]]
 - [[file:20220428資訊科技理念與素養導向課程設計.pdf][20220428-資訊科技理念與素養導向課程設計]]
 
 * Pending :noexport:
+** AI
+- [[https://www.perplexity.ai/?login-source=oneTapHome][RAG/替代收費的chat gpt]]
+- [[https://resource.webduino.io/blog/ai-learning-resources][AI 人工智慧學習資源：2023 年必看學習平台與書籍推薦]]
+- [[https://drive.google.com/file/d/1CDhaXbmuJFPbDklwUMcs41F8DaRKozFk/view][我的專屬執事]]
+- [[https://github.com/OpenGenerativeAI/llm-colosseum][OpenGenerativeAI/llm-colosseum]]: 以LLMs玩Street Fighter III
+- [[https://home.gamer.com.tw/artwork.php?sn=5855128][關於AI生成歌曲「Suno 」的簡單介紹＆使用心得]]
+- [[https://suno.com/][Suno]]: AI生成歌曲
+- [[https://hix.ai/tw/ai-writer/song-lyrics-generator][歌詞產生器]]
+- [[https://tutor.webduino.io][AI伴學小助教]]
+- [[https://www.midjourney.com/home][Midjourney]]: 圖片生成
+** Jetson Nano
+- [[https://ithelp.ithome.com.tw/articles/10297084?sc=rss.qu][【Day 12】Getting Started with AI on Jetson Nano (一)： 環境準備與 hello Camera ]]
+- [[https://www.waveshare.net/study/article-881-1.html][Jetson Nano系列教程1：烧写系统镜像 ]]
+- [[https://www.waveshare.net/study/portal.php?mod=list&catid=59&page=2][JetBot系列教程]]
+- [[https://github.com/NVIDIA-AI-IOT/jetcam][NVIDIA-AI-IOT/jetcam ]]
+** 2D轉3D相關資源
+- [[https://github.com/VAST-AI-Research/TripoSR][VAST-AI-Research/TripoSR]]: 2D轉3D模型
+- [[https://www.linkedin.com/pulse/ai-generated-3d-models-from-images-text-descriptions-shawn-zindroski][AI Generated 3D Models from Images and Text Descriptions.]]
+- [[https://alexasiu.com/publications/siu2019shapecad.pdf][shapeCAD: An Accessible 3D Modelling Workflow for the Blind and Visually-Impaired Via 2.5D Shape Displays]]
+** 研習
 - [[file:20240508好用的線上評量工具.org][20240508-好用的線上評量工具]]
 - [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
 - [[file:AI試題.org][AI試題]]
@@ -33,6 +67,7 @@
 - [[file:教科書審查修訂.html][教科書審查修訂]]
 - [[file:HadoopCreating.org][HDFS檔案架構建置]]
 - K8S
+
 
 * HIDE :noexport:
 - [[file:AI教學實務分享.org][20230209-台東-AI教學實務分享]]

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-10 Thu 23:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20241011: AI在國小教學的應用(一)</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20241011: AI在國小教學的應用(一)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org048589a">1. 研習內容</a></li>
+<li><a href="#org70240b9">2. 目標</a></li>
+<li><a href="#orgade80cb">3. 前言</a></li>
+<li><a href="#org4295181">4. 國小AI教科書</a>
+<ul>
+<li><a href="#org679bbee">4.1. 《和AI做朋友 - 人工智慧有意思》</a></li>
+<li><a href="#org5eedc81">4.2. 可以補充的實作體驗資源</a></li>
+</ul>
+</li>
+<li><a href="#orgd6caa4a">5. 現況與教師態度</a>
+<ul>
+<li><a href="#orgc099c72">5.1. 現況</a></li>
+<li><a href="#org2dd587e">5.2. AI chatbots in schools: Findings from a poll of K-12 teachers, students, parents, and college undergraduates - Nickolas Bagley (202405)</a></li>
+</ul>
+</li>
+<li><a href="#orga6b1f3a">6. 生成式AI的演變</a>
+<ul>
+<li><a href="#org1c114fc">6.1. 2022/11/30：ChatGPT 初始版本</a></li>
+<li><a href="#org5070c3a">6.2. 接下來的變化</a></li>
+</ul>
+</li>
+<li><a href="#org67f8e08">7. 教學情境中的GAI工具</a>
+<ul>
+<li><a href="#orgd5f49a9">7.1. 文字生成 AI 工具（通用型）</a></li>
+<li><a href="#org71b6991">7.2. 圖片生成 AI 工具</a></li>
+<li><a href="#orga2b9be2">7.3. 影音生成 AI 工具</a></li>
+<li><a href="#org594fb28">7.4. 簡報生成 AI 工具</a></li>
+<li><a href="#orge230b15">7.5. 其他類型</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<a href="https://hits.sh/letranger.github.io/working/20240726Python專題式程式設計教學探究.html
+/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20240726Python專題式程式設計教學探究.html
+20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html.svg"/></a>
+<div id="outline-container-org048589a" class="outline-2">
+<h2 id="org048589a"><span class="section-number-2">1.</span> 研習內容</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>研習對象: 國小各科教師<br /></li>
+<li>研習時間: 113年10月11日（星期五）14:00-15:30<br /></li>
+<li>研習地點: 高雄市信義國小<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org70240b9" class="outline-2">
+<h2 id="org70240b9"><span class="section-number-2">2.</span> 目標</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>介紹AI技術在教育中的應用，並討論如何將AI融入高中課程和教學設計中。<br /></li>
+<li>幫助國小教師了解AI技術的潛力，並探索具體的應用案例。<br /></li>
+<li>提供實用的策略和工具，讓教師能夠在課堂中有效地整合AI。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgade80cb" class="outline-2">
+<h2 id="orgade80cb"><span class="section-number-2">3.</span> 前言</h2>
+<div class="outline-text-2" id="text-3">
+
+<div id="orgac6f736" class="figure">
+<p><img src="images/演講內容/2024-10-07_09-07-54_2024-10-07_09-06-27.png" alt="2024-10-07_09-07-54_2024-10-07_09-06-27.png" width="500" /><br />
+</p>
+</div>
+<ol class="org-ol">
+<li>0903我去講了一個主題:AI融入領域課程及教學設計，當時看到這個主題，我有一種回到20年前的錯覺，那時我的老闆(師大何榮桂老師)有兩大研究領域(電腦化測驗和資訊教育)，碩班期間也跟著做了一些資訊科技融入教學的研究，沒想到二十年後，又接觸到類似的主題<br /></li>
+<li>若說 2023 年是生成式 AI 的爆發年，2024 即是生成式 AI 的穩定發展年，到了這個階段 AI 融入教學的重點不再是「『認識』生成式 AI 延伸有哪些功能、工具」，而是「『理解』生成式 AI 在教學生態系中能扮演什麼樣的角色」，才能進一步推展到「『應用』生成式 AI 在個別變數的課堂情境」的思維。<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup><br /></li>
+<li>目前能做到什麼程度<br />
+<ul class="org-ul">
+<li>個人化教學: <a href="https://youtu.be/_nSmkyDNulk?si=e6_YXdNKmrNj-yGk">Math problems with GPT-4o</a>, 看到這段我感概萬千，我的小孩出生的太早了，自己的小孩最難教，最難得的是，當chatgpt發現你在說話時她會立刻停下來聽完你的問題，即便當時她正在說話。<br /></li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4295181" class="outline-2">
+<h2 id="org4295181"><span class="section-number-2">4.</span> 國小AI教科書</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org679bbee" class="outline-3">
+<h3 id="org679bbee"><span class="section-number-3">4.1.</span> 《和AI做朋友 - 人工智慧有意思》</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+由教育部編輯，目的是讓國小學生對人工智慧產生興趣，培養基礎科技素養。<br />
+教材的內容涵蓋了人工智慧的應用，例如語音辨識、影像辨識等，幫助學生理解AI在生活中的作用。<br />
+</p>
+<ol class="org-ol">
+<li>教學資源-教材/教案 <a href="https://market.cloud.edu.tw/list/ai.jsp">https://market.cloud.edu.tw/list/ai.jsp</a><br /></li>
+<li>教學資源-影音 <a href="https://www.junyiacademy.org/computing/cs-ai/ai_elementary">https://www.junyiacademy.org/computing/cs-ai/ai_elementary</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5eedc81" class="outline-3">
+<h3 id="org5eedc81"><span class="section-number-3">4.2.</span> 可以補充的實作體驗資源</h3>
+<div class="outline-text-3" id="text-4-2">
+<ol class="org-ol">
+<li>Teachable Machine<br />
+<ul class="org-ul">
+<li><a href="https://teachablemachine.withgoogle.com/">https://teachablemachine.withgoogle.com/</a><br /></li>
+<li>由 Google 開發的一個免費且簡單易用的工具，旨在讓任何人都可以輕鬆訓練機器學習模型，而無需具備編程或技術知識。<br /></li>
+<li>它的主要特色是通過一個互動式的網頁介面，讓用戶能夠創建圖像分類、聲音識別及姿勢檢測等機器學習模型。<br /></li>
+</ul></li>
+<li>Runway ML<br />
+<ul class="org-ul">
+<li><a href="https://runwayml.com/">https://runwayml.com/</a><br /></li>
+<li>一個視覺化的機器學習平台，允許用戶無需編碼即可使用預訓練的模型，進行影像、影片和音訊的創意項目。<br /></li>
+</ul></li>
+<li>Lobe<br />
+<ul class="org-ul">
+<li><a href="https://www.lobe.ai/">https://www.lobe.ai/</a><br /></li>
+<li>微軟推出的免費應用程式，讓用戶透過簡單的拖放介面訓練機器學習模型，主要針對圖像分類。<br /></li>
+<li><p>
+<a href="https://www.youtube.com/watch?v=Mdcw3Sb98DA">Introducing Lobe | Build your first machine learning model in ten minutes.</a><br />
+</p>
+
+<div id="org66fa0c6" class="figure">
+<p><img src="images/演講內容/2024-10-07_11-37-43_2024-10-07_11-34-25.png" alt="2024-10-07_11-37-43_2024-10-07_11-34-25.png" width="500" /><br />
+</p>
+</div></li>
+</ul></li>
+<li>TensorFlow Playground:<br />
+<ul class="org-ul">
+<li><a href="http://playground.tensorflow.org/">http://playground.tensorflow.org/</a><br /></li>
+<li>一個互動式的網頁工具，讓用戶可視化並理解神經網路的運作方式，適合想深入了解機器學習原理的初學者。<br /></li>
+</ul></li>
+<li>CNN Explainer:<br />
+<ul class="org-ul">
+<li><a href="https://poloclub.github.io/cnn-explainer/">https://poloclub.github.io/cnn-explainer/</a><br /></li>
+<li>CNN Explainer 是一個互動式的網頁工具，旨在幫助用戶理解卷積神經網絡（Convolutional Neural Networks，CNN）的工作原理。該網站通過可視化和直觀的交互介面，展示了 CNN 的核心組件，如卷積層、池化層和激活函數等。在這個平台上，用戶可以：<br />
+<ol class="org-ol">
+<li>觀察數據流：了解輸入圖像如何通過各個網絡層逐步處理。<br /></li>
+<li>調整參數：修改網絡結構和參數，觀察這些改變對輸出結果的影響。<br /></li>
+<li>學習概念：獲取關於 CNN 基本概念的簡明解釋，加深對深度學習的理解。<br /></li>
+</ol></li>
+</ul></li>
+<li>AI Experiments by Google<br />
+<ul class="org-ul">
+<li><a href="https://experiments.withgoogle.com/collection/ai">https://experiments.withgoogle.com/collection/ai</a><br /></li>
+<li><a href="https://www.autodraw.com/">Auto Draw</a><br /></li>
+<li><a href="https://experiments.withgoogle.com/quick-draw">Quick, Draw!</a><br /></li>
+<li><a href="https://magic-sketchpad.glitch.me/">Magic Sketchpad</a><br /></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd6caa4a" class="outline-2">
+<h2 id="orgd6caa4a"><span class="section-number-2">5.</span> 現況與教師態度</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgc099c72" class="outline-3">
+<h3 id="orgc099c72"><span class="section-number-3">5.1.</span> 現況</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>全球有11個國家將AI納入基礎教育課程規劃，以促進學習者的競爭力並為其未來的工作做準備（Miao &amp; Shiohira, 2022）<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup><br /></li>
+<li>2024年教育部宣稱未來會將AI納入課綱<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>，代表著學生在學校裡將會學到更多跟AI相關的知識和技能。例如，學生們可能會學習如何使用AI來做研究、創作、解決問題等等。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2dd587e" class="outline-3">
+<h3 id="org2dd587e"><span class="section-number-3">5.2.</span> AI chatbots in schools: Findings from a poll of K-12 teachers, students, parents, and college undergraduates - Nickolas Bagley (202405)</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<div id="org526e5f2" class="figure">
+<p><img src="images/分享內容/2024-08-31_15-54-48_2024-08-31_15-54-09.png" alt="2024-08-31_15-54-48_2024-08-31_15-54-09.png" width="500" /><br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga3e4994" class="outline-4">
+<h4 id="orga3e4994"><span class="section-number-4">5.2.1.</span> 重點<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>:</h4>
+<div class="outline-text-4" id="text-5-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org85f07cb"></a>多數受訪者(老師、學生、家長)認為AI對個人有正面影響，那些少用的人則對AI抱持負面態度(尤其是教師)<br />
+<div class="outline-text-5" id="text-5-2-1-1">
+
+<div id="org16970fc" class="figure">
+<p><img src="images/分享內容/2024-08-31_15-58-11_2024-08-31_15-58-01.png" alt="2024-08-31_15-58-11_2024-08-31_15-58-01.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org4fb3826"></a>老師教授的年級越高、越傾向鼓勵學生使用AI<br />
+<div class="outline-text-5" id="text-5-2-1-2">
+
+<div id="org173fce7" class="figure">
+<p><img src="images/分享內容/2024-08-31_16-05-36_2024-08-31_16-05-21.png" alt="2024-08-31_16-05-36_2024-08-31_16-05-21.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org13629fb"></a>教師相信學生在未獲得教師允許下使用ChatGPT的比例逐漸提高<br />
+<div class="outline-text-5" id="text-5-2-1-3">
+
+<div id="org702a3c9" class="figure">
+<p><img src="images/分享內容/2024-08-31_16-18-16_2024-08-31_16-18-10.png" alt="2024-08-31_16-18-16_2024-08-31_16-18-10.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org32e6550"></a>對那些會用AI聊天機器人的學生，「教師是否允許」影響不大<br />
+<div class="outline-text-5" id="text-5-2-1-4">
+
+<div id="orgb167bbb" class="figure">
+<p><img src="images/分享內容/2024-08-31_16-19-45_2024-08-31_16-19-39.png" alt="2024-08-31_16-19-45_2024-08-31_16-19-39.png" width="500" /><br />
+</p>
+</div>
+
+<p>
+這讓我想起以前在師大讀書，有一門「英文論文寫作」的課，期末要寫一篇期末報告，教授要求不能使用Google，結果我跟我同學的電腦瀏覽器開滿了Google分頁，應該是被教授看到就直接當掉的那種&#x2026;<br />
+</p>
+</div>
+</li>
+<li><a id="org1465693"></a>七成的教師認為AI有助於協助教師的成長與學生的學習<br />
+<div class="outline-text-5" id="text-5-2-1-5">
+
+<div id="orgf54d4bd" class="figure">
+<p><img src="images/分享內容/2024-08-31_16-26-14_2024-08-31_16-26-08.png" alt="2024-08-31_16-26-14_2024-08-31_16-26-08.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org1b82a7b"></a>但多數的教師並未接受「使用AI的訓練」<br />
+<div class="outline-text-5" id="text-5-2-1-6">
+
+<div id="orgd100c1f" class="figure">
+<p><img src="images/分享內容/2024-08-31_16-26-49_2024-08-31_16-26-42.png" alt="2024-08-31_16-26-49_2024-08-31_16-26-42.png" width="500" /><br />
+</p>
+</div>
+
+<p>
+個人以為，教師所需要的，與其是個別工具的訓練，應該更需要AI融入學科的方法，這種方法需要精通AI知識與工具的專家和精通學科知識教學的教師一起探討，就如同我在這裡分享的，只能更深入去討論AI如何融入到我的教學中，因為我對其他領域畢竟過於陌生&#x2026;..<br />
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orga6b1f3a" class="outline-2">
+<h2 id="orga6b1f3a"><span class="section-number-2">6.</span> 生成式AI的演變</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org1c114fc" class="outline-3">
+<h3 id="org1c114fc"><span class="section-number-3">6.1.</span> 2022/11/30：ChatGPT 初始版本</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+基於GPT-3.5架構，OpenAI推出了ChatGPT的初始版本。這是一個對話式AI模型，能夠理解和生成類似人類的自然語言，回答各種問題並協助完成多種任務。<br />
+</p>
+</div>
+<div id="outline-container-orgacc73ea" class="outline-4">
+<h4 id="orgacc73ea"><span class="section-number-4">6.1.1.</span> The time it took for various platforms to reach the 100 million user mark</h4>
+<div class="outline-text-4" id="text-6-1-1">
+
+<div id="orgd6ab409" class="figure">
+<p><img src="images/演講內容/2024-10-07_09-13-15_2024-10-07_09-12-46.png" alt="2024-10-07_09-13-15_2024-10-07_09-12-46.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>不同平台達到一億使用者所花費時間#1</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd784f42" class="outline-4">
+<h4 id="orgd784f42"><span class="section-number-4">6.1.2.</span> 我記憶中的聊天機器人: ELIZA</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>1966年，Joseph Weizenbaum在麻省理工學院開發了早期的聊天機器人ELIZA。ELIZA使用簡單的模式匹配和替換方法，模擬與人類的對話，最著名的是模仿羅傑斯心理療法的「醫生」腳本。雖然ELIZA並不具備真正的理解能力，但許多用戶在與其互動時產生了情感聯繫，甚至認為它具有人類智慧。這引發了對人類語言、人工智能以及我們如何感知機器的深入討論，揭示了人類傾向於將情感投射到機器上的現象。<br /></li>
+<li><p>
+Joseph Weizenbaum<br />
+</p>
+
+<div id="orga99daf8" class="figure">
+<p><img src="images/演講內容/2024-10-07_11-14-37_2024-10-07_11-14-25.png" alt="2024-10-07_11-14-37_2024-10-07_11-14-25.png" width="500" /><br />
+</p>
+</div></li>
+<li>web-based Eliza: <a href="https://web.njit.edu/~ronkowit/eliza.html">https://web.njit.edu/~ronkowit/eliza.html</a><br /></li>
+<li><p>
+ELIZA<br />
+</p>
+
+<div id="orgc8c0642" class="figure">
+<p><img src="images/演講內容/2024-10-07_09-22-45_2024-10-07_09-22-34.png" alt="2024-10-07_09-22-45_2024-10-07_09-22-34.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org2f1a355"></a>中文版ELIZA<br />
+<div class="outline-text-5" id="text-6-1-2-1">
+<ul class="org-ul">
+<li><a href="https://ccckmit.github.io/aibook/htm/eliza.html">人工智慧 - 採用 JavaScript 實作</a><br /></li>
+<li>TRY: <a href="https://letranger.github.io/working/eliza.html">https://letranger.github.io/working/eliza.html</a><br /></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5070c3a" class="outline-3">
+<h3 id="org5070c3a"><span class="section-number-3">6.2.</span> 接下來的變化</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>重點是生成，不是聊天<br /></li>
+<li>ChatGPT 每年賺取約 13 億美元。<br /></li>
+<li>運行 ChatGPT 每天的成本為 700,000 美元，每個查詢的成本為 0.36 美元。<br /></li>
+<li>77% 的行銷人員使用 ChatGPT，但在保險領域只有 33%。<br /></li>
+<li>OpenAI 的估值為 860 億美元。<br /></li>
+</ul>
+</div>
+<div id="outline-container-org79b1686" class="outline-4">
+<h4 id="org79b1686"><span class="section-number-4">6.2.1.</span> 2023/02/01：ChatGPT Plus</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<p>
+OpenAI推出了付費訂閱服務ChatGPT Plus。訂閱者可享受更快速的響應時間、優先訪問新功能，以及在高流量時段的穩定服務。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org92b6f00" class="outline-4">
+<h4 id="org92b6f00"><span class="section-number-4">6.2.2.</span> 2023/02/07: MS將GPT-4模型結合到自家Bing搜尋引撉</h4>
+</div>
+<div id="outline-container-orgecd5e4c" class="outline-4">
+<h4 id="orgecd5e4c"><span class="section-number-4">6.2.3.</span> 2023/0314: GPT-4 集成</h4>
+<div class="outline-text-4" id="text-6-2-3">
+<p>
+ChatGPT升級整合了更先進的GPT-4模型。GPT-4具備更強的理解和推理能力，能處理更複雜的指令，提供更精確和詳盡的回應。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc8efefe" class="outline-4">
+<h4 id="orgc8efefe"><span class="section-number-4">6.2.4.</span> 2023/09/25: 多模態功能</h4>
+<div class="outline-text-4" id="text-6-2-4">
+<p>
+ChatGPT開始支持語音和圖像輸入。用戶現在可以通過語音與ChatGPT對話，或上傳圖片讓模型進行分析和解釋，提升了互動性和實用性。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0267fee" class="outline-4">
+<h4 id="org0267fee"><span class="section-number-4">6.2.5.</span> 2024/05/01: GPT-4o</h4>
+<div class="outline-text-4" id="text-6-2-5">
+<p>
+能理解、生成文本、圖像等內容<br />
+</p>
+<ol class="org-ol">
+<li>GPT-4o 發布時間與功能：於 2024 年 5 月 13 日推出，接受多模態輸入（文字、音訊、圖像、視訊）並產生相應的多模態輸出。<br /></li>
+<li>對用戶的提供：OpenAI 將 GPT-4o 提供給免費用戶，Plus 用戶則享有 5 倍的用量(免費用戶每三小時可以使用GPT-4o 16 次，而ChatGPT Plus 用戶則有80 次的使用上限)。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6010377" class="outline-4">
+<h4 id="org6010377"><span class="section-number-4">6.2.6.</span> 2024/07/01: GPT-4o mini 發布</h4>
+<div class="outline-text-4" id="text-6-2-6">
+<p>
+2024 年 6 月 18 日，OpenAI 推出了一款具成本效益的小型模型，名為 GPT-4o mini，旨在使 AI 技術更加經濟實惠，擴展其應用範圍(取代GPT-3.5)。功能：<br />
+</p>
+<ul class="org-ul">
+<li>支援文本和視覺 API<br /></li>
+<li>具備 128K 上下文窗口，支持每次請求最多 16K 的輸出token。<br /></li>
+<li>擁有至 2023 年 10 月的知識。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgee1f1d2" class="outline-4">
+<h4 id="orgee1f1d2"><span class="section-number-4">6.2.7.</span> 2024/07/25: SearchGPT</h4>
+<div class="outline-text-4" id="text-6-2-7">
+<p>
+可即時讀取網路資訊<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8597ab3" class="outline-4">
+<h4 id="org8597ab3"><span class="section-number-4">6.2.8.</span> 2024/09/12: o1-preview, o1-mini</h4>
+<div class="outline-text-4" id="text-6-2-8">
+<ul class="org-ul">
+<li>ChatGPT o1-preview 是一個較新的版本，相較於之前的 GPT-4o針對多模態交互性和效能優化。<br /></li>
+<li>多模態輸入的改進：<br />
+<ul class="org-ul">
+<li>o1-preview 提供了對多模態輸入（文本、圖像、音訊、視訊）更深入的理解能力，特別是在視覺和音訊的處理上，增強了對更複雜情境的分析。<br /></li>
+<li>具備更強大的 圖像和影片理解 功能，包括對圖像中的物體、場景和上下文的理解能力。它能提供更精確的圖像分析和生成解釋。<br /></li>
+</ul></li>
+<li>上下文理解的擴展：<br />
+<ul class="org-ul">
+<li>o1-preview 在上下文理解和多回合對話方面比 GPT-4o 更加精細，能夠追踪更長的對話記錄，並保持更高的上下文一致性，讓對話過程更自然流暢。<br /></li>
+<li>支持更大的上下文窗口，允許使用者在一次對話中進行更深入的交談和探索。<br /></li>
+</ul></li>
+<li>工具和插件支持：<br />
+<ul class="org-ul">
+<li>o1-preview 在工具整合方面增強了與外部插件和其他服務的互動能力，這包括與搜索引擎、計算工具以及資料庫的更好集成，使得 AI 能夠更容易地從外部資料源獲取信息來增強其回答。<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge8aad6a" class="outline-4">
+<h4 id="orge8aad6a"><span class="section-number-4">6.2.9.</span> 2024/10/03: ChatGPT-4 with Canvas</h4>
+<div class="outline-text-4" id="text-6-2-9">
+<ol class="org-ol">
+<li>畫布視覺化交互：<br />
+ChatGPT-4 with Canvas 提供了一個類似白板的視覺化畫布，讓用戶可以自由地在畫布上進行圖形化操作。用戶可以以卡片或節點的形式組織問題、想法和 AI 回應，使得整個對話更加結構化，適合非線性的創作和知識探索。<br /></li>
+<li>非線性對話：<br />
+相較於傳統的聊天模式，畫布模式允許用戶在不同的節點之間移動，重啟先前的話題或對某個特定主題進行深入探討，這樣可以避免在長對話中迷失，並能有效地追踪思路的發展。<br /></li>
+<li>創意和腦力激盪：<br />
+畫布功能非常適合進行創意工作和腦力激盪，尤其是在涉及到多個概念或需要發散思維的情況下。用戶可以自由地將想法和 AI 的回答可視化，連接不同的點，從而幫助更好地探索和擴展創意。<br /></li>
+<li>跨模式整合：<br />
+ChatGPT-4 with Canvas 支持多模態的輸入，包括文本、圖片等。這意味著用戶可以在畫布上加入圖像，並讓 AI 對這些圖像進行解釋或生成相關內容。這種跨模式的整合提升了用戶與 AI 交互的靈活性和創造性。<br /></li>
+<li>更好的內容管理：<br />
+畫布上的每個對話節點都可以清楚地標示，使得用戶在長對話中可以更輕鬆地管理和組織不同的內容。這對於進行複雜問題的探討或需要保留對話記錄進行後續分析的情況尤其有幫助。<br /></li>
+<li>協作功能：<br />
+畫布模式還使得與他人協作更加方便，用戶可以與團隊成員共同操作畫布，分享創意或共同完成某些創作任務，這對於需要團隊合作的項目特別有利。<br /></li>
+<li>高效記錄與回顧：<br />
+用戶可以保存畫布中的各種節點和對話，這樣方便隨時回顧，並且在需要時可以隨時重新參考之前的內容，這對於長期項目或複雜知識的管理很有幫助。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org67f8e08" class="outline-2">
+<h2 id="org67f8e08"><span class="section-number-2">7.</span> 教學情境中的GAI工具</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgd5f49a9" class="outline-3">
+<h3 id="orgd5f49a9"><span class="section-number-3">7.1.</span> 文字生成 AI 工具（通用型）</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+若想用 AIGC 生成文字，最常使用的軟體有 ChatGPT、Claude、Gemini 和 Copilot，下面將分別介紹。<br />
+</p>
+</div>
+<div id="outline-container-orged33598" class="outline-4">
+<h4 id="orged33598"><span class="section-number-4">7.1.1.</span> ChatGPT</h4>
+<div class="outline-text-4" id="text-7-1-1">
+<ul class="org-ul">
+<li><a href="https://chatgpt.com/">https://chatgpt.com/</a><br /></li>
+<li>收費版使用的是 GPT-4 模型<br /></li>
+<li>免費版則使用的是 GPT-3.5 模型<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgde79a94" class="outline-4">
+<h4 id="orgde79a94"><span class="section-number-4">7.1.2.</span> Claude</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<ul class="org-ul">
+<li><a href="https://claude.ai">https://claude.ai</a><br /></li>
+<li>免費版 Claud.ai: Claude 3.5 Sonnet<br /></li>
+<li>收費版 Claude Pro，使用Clause 3 Opus<br /></li>
+<li>目前也加入 Artifect 功能，讓 AI 在產生程式代碼的同時，也能於操作介面的右邊欄位預覽代碼執行後的成果。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0479874" class="outline-4">
+<h4 id="org0479874"><span class="section-number-4">7.1.3.</span> Gemini</h4>
+<div class="outline-text-4" id="text-7-1-3">
+<ul class="org-ul">
+<li><a href="https://gemini.google.com">https://gemini.google.com</a><br /></li>
+<li>Gemini 是 Google 發佈的人工智慧聊天工具，過去的測試版命名為 Bard，現在已升級更名為 Gemini。<br /></li>
+<li>表格可以匯出到Google試算表<br /></li>
+<li>可要求Google對於生成內容進行查核<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgae7f84e" class="outline-4">
+<h4 id="orgae7f84e"><span class="section-number-4">7.1.4.</span> Bing</h4>
+<div class="outline-text-4" id="text-7-1-4">
+<ul class="org-ul">
+<li><a href="https://copilot.microsoft.com/">https://copilot.microsoft.com/</a><br /></li>
+<li>基於 GPT-4 架構的對話式 AI 模型<br /></li>
+<li>Microsoft Copilot: Bing, Office 365<br /></li>
+<li>GitHub Copilot: VS code<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org71b6991" class="outline-3">
+<h3 id="org71b6991"><span class="section-number-3">7.2.</span> 圖片生成 AI 工具</h3>
+<div class="outline-text-3" id="text-7-2">
+</div>
+<div id="outline-container-orgea0b42c" class="outline-4">
+<h4 id="orgea0b42c"><span class="section-number-4">7.2.1.</span> ChatGPT</h4>
+<div class="outline-text-4" id="text-7-2-1">
+<ul class="org-ul">
+<li><a href="https://chatgpt.com/">https://chatgpt.com/</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org969523d" class="outline-4">
+<h4 id="org969523d"><span class="section-number-4">7.2.2.</span> Bing Image Creator</h4>
+<div class="outline-text-4" id="text-7-2-2">
+<ul class="org-ul">
+<li><a href="https://www.bing.com/images/create">https://www.bing.com/images/create</a><br /></li>
+<li>Bing Image Creator是微軟搜尋引擎 Bing 的免費圖片生成技術，只要輸入需求圖片的指令，給予大略的視覺描述，大約30秒就能產生圖片，不喜歡還可以再次生成，讓 Image Creator 提案第二版。<br /></li>
+<li><p>
+例: 在電腦教室裡，一位高中教師正在利用生成式AI教授學生學習Python語言<br />
+</p>
+
+<div id="orgaf4f950" class="figure">
+<p><img src="images/大綱/2024-09-01_12-19-48_2024-09-01_12-19-19.png" alt="2024-09-01_12-19-48_2024-09-01_12-19-19.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6681dd7" class="outline-4">
+<h4 id="org6681dd7"><span class="section-number-4">7.2.3.</span> Adobe Firefly</h4>
+<div class="outline-text-4" id="text-7-2-3">
+<ul class="org-ul">
+<li><a href="https://firefly.adobe.com">https://firefly.adobe.com</a><br /></li>
+<li>Adobe Express使用的生成AI<br /></li>
+<li>Adobe Firefly 可以生成文字、圖片、填色，用 AI 和簡單的文字指令生成影像，自動生成後的圖片也可以再更新。Firefly 結合了大家常用的 Photoshop 修圖、繪圖功能，新增或移除物件，融入自己的創意。<br /></li>
+<li><p>
+例: 在電腦教室裡，一位高中教師正在利用生成式AI教授學生學習Python語言<br />
+</p>
+
+<div id="orgdea1fd0" class="figure">
+<p><img src="images/大綱/2024-09-01_12-20-34_2024-09-01_12-20-21.png" alt="2024-09-01_12-20-34_2024-09-01_12-20-21.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8f4d69e" class="outline-4">
+<h4 id="org8f4d69e"><span class="section-number-4">7.2.4.</span> Tensor Art</h4>
+<div class="outline-text-4" id="text-7-2-4">
+<ul class="org-ul">
+<li><a href="https://tensor.art/">https://tensor.art/</a><br /></li>
+<li>Tensor Art 是能用 Stable Diffusion 模型進行 AI 繪圖的網頁，免費版一天約可以生成 100 張圖，並且可以高清下載。在調整長寬比、編輯細節及色彩上都非常自由，能輕鬆創個人化的藝術作品。<br /></li>
+<li><p>
+例: 在電腦教室裡，一位高中教師正在利用生成式AI教授學生學習Python語言<br />
+</p>
+
+<div id="org2fe9c76" class="figure">
+<p><img src="images/大綱/2024-09-01_12-21-34_2024-09-01_12-21-23.png" alt="2024-09-01_12-21-34_2024-09-01_12-21-23.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga2b9be2" class="outline-3">
+<h3 id="orga2b9be2"><span class="section-number-3">7.3.</span> 影音生成 AI 工具</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+除了生成平面圖片，AIGC 的應用已擴展至動態音樂和影音內容的製作。下面介紹幾個非常實用的影音生成 AI 工具。<br />
+</p>
+</div>
+<div id="outline-container-orgc268db8" class="outline-4">
+<h4 id="orgc268db8"><span class="section-number-4">7.3.1.</span> Suno AI</h4>
+<div class="outline-text-4" id="text-7-3-1">
+<ul class="org-ul">
+<li><a href="https://suno.com/">https://suno.com/</a><br /></li>
+<li>Suno AI是一款以人工智慧生成音樂的工具，可以用AI產出非常逼真的人聲與樂器聲，構成逼真的歌曲。依據據使用戶提供的文字，Suno AI 可以從指令中匹配合適的旋律、風格、人聲及節奏，創造出一首全新的歌曲。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga969aa0" class="outline-4">
+<h4 id="orga969aa0"><span class="section-number-4">7.3.2.</span> Hedra AI</h4>
+<div class="outline-text-4" id="text-7-3-2">
+<ul class="org-ul">
+<li><a href="https://www.hedra.com">https://www.hedra.com</a><br /></li>
+<li>Hedra AI 是一款 AIGC 生成影片工具，能將靜態圖片轉換為流暢的影片，甚至可以搭配人聲，並精準對應人物的嘴形。透過 Hedra AI，過去的經典畫像、歷史照片，都有活靈或現、動起來的可能。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9a2469d" class="outline-4">
+<h4 id="org9a2469d"><span class="section-number-4">7.3.3.</span> Vidnoz AI</h4>
+<div class="outline-text-4" id="text-7-3-3">
+<ul class="org-ul">
+<li><a href="https://aiapp-tw.vidnoz.com">https://aiapp-tw.vidnoz.com</a><br /></li>
+<li>Vidnoz AI 是一個生成式影片平台，點選 Vidnoz AI 網頁即可開始使用，透過 AI 指令生成專屬的特色影片。近年來除了生成動態影片，也運用 AIGC 延伸出更多素材，例如 AI 大頭照、AI 換臉、AI 換聲音等，並有全繁體中文介面，更豐富好用。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4dc67e5" class="outline-4">
+<h4 id="org4dc67e5"><span class="section-number-4">7.3.4.</span> Pika</h4>
+<div class="outline-text-4" id="text-7-3-4">
+<ul class="org-ul">
+<li><a href="https://pika.art/">https://pika.art/</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org04e5ea5" class="outline-4">
+<h4 id="org04e5ea5"><span class="section-number-4">7.3.5.</span> Genmo</h4>
+<div class="outline-text-4" id="text-7-3-5">
+<ul class="org-ul">
+<li><a href="https://www.genmo.ai/">https://www.genmo.ai/</a><br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org594fb28" class="outline-3">
+<h3 id="org594fb28"><span class="section-number-3">7.4.</span> 簡報生成 AI 工具</h3>
+<div class="outline-text-3" id="text-7-4">
+<ul class="org-ul">
+<li><a href="https://gamma.app/">https://gamma.app/</a><br /></li>
+<li>Gamma 是運用AI，讓使用者一鍵生成簡報、網頁和文件的工具，過程中也能與聊天機器人進行對話、詢問，對焦出最符合需求的內容，節省大量製作簡報的時間。<br /></li>
+<li>Gamma 內建大量的視覺模板、素材和套件，可以支援影音、音樂等，在生成簡報之後也能再微調修改，讓簡報有一定程度的美感，也能有符合口頭報告的素材。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge230b15" class="outline-3">
+<h3 id="orge230b15"><span class="section-number-3">7.5.</span> 其他類型</h3>
+<div class="outline-text-3" id="text-7-5">
+</div>
+<div id="outline-container-org897a1b1" class="outline-4">
+<h4 id="org897a1b1"><span class="section-number-4">7.5.1.</span> Napkin.ai: 文字轉圖表</h4>
+<div class="outline-text-4" id="text-7-5-1">
+<ul class="org-ul">
+<li><a href="https://www.napkin.ai/">https://www.napkin.ai/</a><br /></li>
+<li>Napkin AI 提供了一種創新的方式來將文字內容轉化為視覺元素，使得理念的傳達變得更加迅速與直觀。用戶只需將文字粘貼到 Napkin 中，系統便能根據文字內容生成相關的視覺圖像，用戶可以選擇最能表達其想法的圖像進行進一步的個性化調整。<br /></li>
+<li><p>
+napkin<br />
+</p>
+
+<div id="orge1c7b89" class="figure">
+<p><img src="images/演講內容/2024-10-07_15-45-25_2024-10-07_15-43-32.png" alt="2024-10-07_15-45-25_2024-10-07_15-43-32.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga06379e" class="outline-4">
+<h4 id="orga06379e"><span class="section-number-4">7.5.2.</span> Whisper 語音轉文字</h4>
+<div class="outline-text-4" id="text-7-5-2">
+<ul class="org-ul">
+<li><a href="https://whisper-web-two.vercel.app/">Whisper Web</a><br /></li>
+<li>Whisper Desktop for Windows: <a href="https://github.com/Const-me/Whisper">https://github.com/Const-me/Whisper</a><br /></li>
+<li>Whisper Mate for macOS: <a href="https://whisper.marksdo.com/en">https://whisper.marksdo.com/en</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc7e7543" class="outline-4">
+<h4 id="orgc7e7543"><span class="section-number-4">7.5.3.</span> Mapify 心智圖</h4>
+<div class="outline-text-4" id="text-7-5-3">
+<ul class="org-ul">
+<li>Mapify(Chatmind): <a href="https://mapify.so/tc/app/new">https://mapify.so/tc/app/new</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8dc7031" class="outline-4">
+<h4 id="org8dc7031"><span class="section-number-4">7.5.4.</span> AI筆記工具</h4>
+<div class="outline-text-4" id="text-7-5-4">
+<ul class="org-ul">
+<li>notebook lm: <a href="https://www.youtube.com/watch?v=T91QkwJ_Obo">https://www.youtube.com/watch?v=T91QkwJ_Obo</a><br /></li>
+</ul>
+<p>
+內建Gemini Pro, 適合學生整理、製作筆記工具<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup><br />
+</p>
+<ol class="org-ol">
+<li>匯入文章: 由AI來建議針對該篇文章所需問的問題，可以做課前預習<br /></li>
+<li>可以同時摘要多篇文章，適合學生寫小論文的文獻探討<br /></li>
+<li>可以提供FAQ，適合學生在看完課文後練習作答，也適合教師拿來做出題參考<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org67d1af6" class="outline-4">
+<h4 id="org67d1af6"><span class="section-number-4">7.5.5.</span> 程式生成</h4>
+<div class="outline-text-4" id="text-7-5-5">
+<ul class="org-ul">
+<li>ChatGPT: <a href="https://chatgpt.com/">https://chatgpt.com/</a><br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://flipedu.parenting.com.tw/article/008926">教育第一線視角下，生成式 AI 融入教學生態系的多模態</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Miao, F., &amp; Shiohira, K. (2022). K-12 AI curricula. A mapping of government-endorsed AI curricula. In: UNESCO.<a href="https://unesdoc.unesco.org/ark:/48223/pf0000380602">https://unesdoc.unesco.org/ark:/48223/pf0000380602</a>.<br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://www.cna.com.tw/news/ahel/202405270044.aspx">教長鄭英耀盼科技素養融入教學 不排除將AI納課綱</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://8ce82b94a8c4fdc3ea6d-b1d233e3bc3cb10858bea65ff05e18f2.ssl.cf2.rackcdn.com/bf/24/cd3646584af89e7c668c7705a006/deck-impact-analysis-national-schools-tech-tracker-may-2024-1.pdf">AI Chatbots in Schools</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://www.youtube.com/watch?v=PD5s7R3GRRg"> Google NotebookLM 教學 | 潛力無窮的AI筆記軟體，內建Gemini Pro，人機協作，陪我讀書做筆記、文獻整理、教學備課出題</a><br />
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2024-10-10 Thu 23:28</p>
+</div>
+</body>
+</html>

@@ -7,12 +7,7 @@
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
 #+begin_export html
-<a href="https://hits.sh/letranger.github.io/working/20241011-AI在國小教學的應用#1.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20241011-AI在國小教學的應用#1.html.svg"/></a>
-
-<a href="https://hits.sh/letranger.github.io/working/20240726Python專題式程式設計教學探究.html
-/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20240726Python專題式程式設計教學探究.html
-20231111%E9%81%8B%E7%AE%97%E6%80%9D%E7%B6%AD%E5%8F%96%E5%90%91%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E8%82%B2.html.svg"/></a>
-
+<a href="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html.svg"/></a>
 #+end_export
 
 * 研習內容

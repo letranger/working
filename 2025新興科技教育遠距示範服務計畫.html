@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-21 Mon 11:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2025新興科技教育遠距示範服務計畫</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+<script src="../css/copy_code.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">2025新興科技教育遠距示範服務計畫</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org94fbb54">1. 前言</a></li>
+<li><a href="#orgc1f57da">2. 跨域素養</a>
+<ul>
+<li><a href="#org0f20998">2.1. 資訊科技</a></li>
+<li><a href="#org1e3286b">2.2. 數學科</a></li>
+</ul>
+</li>
+<li><a href="#org56fe657">3. 學習目標</a></li>
+<li><a href="#org6c76c6e">4. 教學大綱</a>
+<ul>
+<li><a href="#org7916e30">4.1. 第1週: Introduction to AI</a></li>
+<li><a href="#org4ee92d7">4.2. 第2週: Statistical Analysis and Regression Prediction</a></li>
+<li><a href="#org759665e">4.3. 第3週: Data Preprocessing and Cleaning</a></li>
+<li><a href="#org17bb370">4.4. 第4週: Introduction to Supervised Learning</a></li>
+<li><a href="#orgb2aa41a">4.5. 第5週: Introduction to Supervised Learning</a></li>
+<li><a href="#org3e107ac">4.6. 第6週: Introduction to Unsupervised Learning</a></li>
+<li><a href="#org593d4c3">4.7. 第7週: Perceptron: The Foundation of Neural Networks</a></li>
+<li><a href="#org3188d37">4.8. 第8週: Introduction to Deep Learning</a></li>
+<li><a href="#org60ca4e2">4.9. 第9週: Introduction to Deep Learning and CNN</a></li>
+<li><a href="#orgf929f27">4.10. 第10週: Mathematics Special Topic: Mathematical Explanation of Gradient Descent</a></li>
+<li><a href="#org14ff023">4.11. 第11週: You Only Look Once</a></li>
+<li><a href="#org8e92c73">4.12. 第12週: LSTM與RNN簡介及實作</a></li>
+<li><a href="#org06dd055">4.13. 第13週: AI Prediction: Unveiling the Sacred Exam Outcome</a></li>
+<li><a href="#orgc3bd9e6">4.14. 第14週: One Model Isn’t Enough? Let’s Use More!</a></li>
+<li><a href="#orgd2b07b7">4.15. 第15週: 期末專題準備</a></li>
+<li><a href="#org10d72f3">4.16. 第16週: 期末專題實作</a></li>
+<li><a href="#org8205e38">4.17. 第17週: 期末專題實作</a></li>
+<li><a href="#org0a8b755">4.18. 第18週: 期末專題成果發表</a></li>
+</ul>
+</li>
+<li><a href="#orgcb0b12f">5. 學習評量</a>
+<ul>
+<li><a href="#orgd682980">5.1. 卜聖卦活動1：自我預測 (Self-Assessment Prediction)</a></li>
+<li><a href="#org5e4d833">5.2. 卜聖卦活動2：數學迴歸分析預測 (Regression Prediction)</a></li>
+<li><a href="#org6b318dd">5.3. 卜聖卦活動3：AI迴歸模型預測 (AI Regression Model Prediction)</a></li>
+<li><a href="#orgacd40fb">5.4. 卜聖卦活動4：KNN與決策樹模型的學測預測 (KNN and Decision Tree Prediction for Entrance Exam Scores)</a></li>
+<li><a href="#org42f3438">5.5. 卜聖卦活動5：LSTM/RNN模型的段考預測 (LSTM/RNN Model Prediction for Exams)</a></li>
+<li><a href="#org2e8812d">5.6. 卜聖卦活動6：隨機森林模型的學測預測 (Random Forest Prediction for Entrance Exam Scores)</a></li>
+<li><a href="#org356d7ec">5.7. 期末專題實作與發表 (Final Project Implementation and Presentation)</a></li>
+</ul>
+</li>
+<li><a href="#org0b3e698">6. 採購</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94fbb54" class="outline-2">
+<h2 id="org94fbb54"><span class="section-number-2">1.</span> 前言</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+抽靈籤，卜聖卦，籤聖卦定，卜卦兼算命，囝仔來卜好搖飼，大人來卜大賺錢，少年來卜好代誌，老人來卜活百二。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc1f57da" class="outline-2">
+<h2 id="orgc1f57da"><span class="section-number-2">2.</span> 跨域素養</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0f20998" class="outline-3">
+<h3 id="org0f20998"><span class="section-number-3">2.1.</span> 資訊科技</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>運 a-V-2 能使用多元的觀點評論資訊科技相關議題。<br /></li>
+<li>運 a-V-3 能探索新興的資訊科技。<br /></li>
+<li>運 c-V-1 能使用資訊科技增進團隊合作效率。<br /></li>
+<li>運 p-V-1 能整合資訊科技進行有效的溝通表達。<br /></li>
+<li>運 t-V-2 能使用程式設計實現運算思維的解題方法。<br /></li>
+<li>運 t-V-3  能應用運算思維評估解題方法的優劣。<br /></li>
+<li>※運 a-V-5 能主動探索資訊科技新知。<br /></li>
+<li>※設 c-V-3 能具備溝通協調、組織工作團隊的能力。<br /></li>
+<li>※設 k-V-2 能了解科技產業現況及新興科技發展趨勢。<br /></li>
+<li>※運 r-V-3能利用程式語言表達運算程序<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1e3286b" class="outline-3">
+<h3 id="org1e3286b"><span class="section-number-3">2.2.</span> 數學科</h3>
+<div class="outline-text-3" id="text-2-2">
+<ol class="org-ol">
+<li>f-V-7: 理解導函數的意義，熟練其操作，並能用以解決問題。<br /></li>
+<li>f-V-8: 認識微分與積分互為逆運算，理解微積分基本定理的意義，並能用以推論。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org56fe657" class="outline-2">
+<h2 id="org56fe657"><span class="section-number-2">3.</span> 學習目標</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>資料預處理與統計分析技能：學生能理解並應用資料清理、正規化及基本統計分析方法，為後續AI模型訓練做好準備。<br /></li>
+<li>AI模型的運作原理：學生理解分類與迴歸模型的原理，並能將這些技術應用於預測段考成績與學測級分。<br /></li>
+<li>實作AI模型：學生能實作包括KNN、決策樹、感知器、神經網絡、YOLO、LSTM、RNN等多種AI模型，並應用這些模型進行實際預測。<br /></li>
+<li>優化與評估模型：學生學會如何通過超參數調整來優化模型效能，並能評估不同模型的預測準確度，找出最佳解法。<br /></li>
+<li>跨學科知識整合：學生能結合數學知識（如梯度下降法）與AI技術，深入理解AI模型的數學基礎。<br /></li>
+<li>專題實作與發表：學生在期末專題中應用所學知識進行實作，並能展示專題成果，提升協作與表達能力。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6c76c6e" class="outline-2">
+<h2 id="org6c76c6e"><span class="section-number-2">4.</span> 教學大綱</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org7916e30" class="outline-3">
+<h3 id="org7916e30"><span class="section-number-3">4.1.</span> 第1週: Introduction to AI</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>本學期課程內容規畫簡介<br /></li>
+<li>了解AI的運作原理與建構流程、認識不同AI類型以及其應用領域。<br /></li>
+<li>介紹AI模型的基本概念，講解分類與迴歸的差異(段考成績預測為迴歸、學測級分預測為分類)，並簡介分類技術。<br /></li>
+<li>理解資料正確性對於預測的重要性，進而了解資料預處理的必要性。<br /></li>
+<li><span style="color:orange;">卜聖卦活動1</span>: 讓學生自行預測自己本學期(2下)第一次段考的各科成績，並讓學生列出自己做出預測的依據<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4ee92d7" class="outline-3">
+<h3 id="org4ee92d7"><span class="section-number-3">4.2.</span> 第2週: Statistical Analysis and Regression Prediction</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>[<span style="color:green;">內聘講師/數學科</span>]介紹基本統計分析方法，並進行數據的初步分析，然後引入數學迴歸分析，讓學生進行第一次段考的數據預測。<br /></li>
+<li><span style="color:orange;">卜聖卦活動2</span>: 學生根據歷屆段考成績進行數學迴歸分析計算，以自己的一年級與二上成績預測二下第一次段考的成績，並與 <b><b><span style="color:orange;">卜聖卦活動1</span>的結果</b></b> 比較，討論預測依據的差異。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org759665e" class="outline-3">
+<h3 id="org759665e"><span class="section-number-3">4.3.</span> 第3週: Data Preprocessing and Cleaning</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>介紹資料清理與預處理的基本概念，包括處理缺失值、數據標準化、正規化，並收集歷屆段考成績作為參考資料。<br /></li>
+<li>學生收集學校提供的歷屆段考成績數據，並進行資料預處理實作，為後續模型建立做準備。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org17bb370" class="outline-3">
+<h3 id="org17bb370"><span class="section-number-3">4.4.</span> 第4週: Introduction to Supervised Learning</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>介紹AI實作迴歸的模型及運作原理<br /></li>
+<li><span style="color:orange;">卜聖卦活動3</span>: 以AI迴歸模型來預測二下第一次段考成績，並與前兩次的預測結果比較，討論預測依據的差異。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb2aa41a" class="outline-3">
+<h3 id="orgb2aa41a"><span class="section-number-3">4.5.</span> 第5週: Introduction to Supervised Learning</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>介紹AI實作分類的模型及運作原理<br /></li>
+<li>介紹K最近鄰（KNN）分類模型的原理，並讓學生實作KNN模型來預測學測成績級分(依據一年級全學年及二上的成績)。<br /></li>
+<li>介紹決策樹模型的原理及其應用，學生學習如何利用決策樹進行學測成績級分預測。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e107ac" class="outline-3">
+<h3 id="org3e107ac"><span class="section-number-3">4.6.</span> 第6週: Introduction to Unsupervised Learning</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li><span style="color:orange;">卜聖卦活動4</span>: 依據學生二下第一次段考實際成績評估前三次(<span style="color:orange;">卜聖卦活動1</span>, <span style="color:orange;">卜聖卦活動2</span>, <span style="color:orange;">卜聖卦活動3</span>)預測的準確性<br /></li>
+<li>了解非監督式學習的概念與運作原理。<br /></li>
+<li>能實做簡單的非監督式學習模型。<br /></li>
+<li>以K-Means技術實作影像壓縮<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org593d4c3" class="outline-3">
+<h3 id="org593d4c3"><span class="section-number-3">4.7.</span> 第7週: Perceptron: The Foundation of Neural Networks</h3>
+<div class="outline-text-3" id="text-4-7">
+<ul class="org-ul">
+<li>介紹神經網絡的基本概念與運作原理，了解如何將其應用到各項領域。<br /></li>
+<li>能實作神經網路中的感知器。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3188d37" class="outline-3">
+<h3 id="org3188d37"><span class="section-number-3">4.8.</span> 第8週: Introduction to Deep Learning</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>能理解神經網路與深度學習的關係<br /></li>
+<li>活動：神經網絡實作競賽: 學生實作神經網絡模型，並比賽誰的模型能最準確地預測下一次段考的成績。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org60ca4e2" class="outline-3">
+<h3 id="org60ca4e2"><span class="section-number-3">4.9.</span> 第9週: Introduction to Deep Learning and CNN</h3>
+<div class="outline-text-3" id="text-4-9">
+<ul class="org-ul">
+<li>介紹卷積神經網絡（CNN）的概念，並了解其在圖像分類中的應用，為學生理解模型架構打下基礎。<br /></li>
+<li>了解CNN的運作原理。<br /></li>
+<li>展示CNN在不同領域的應用，學生討論CNN是否適合段考分數與學測預測。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf929f27" class="outline-3">
+<h3 id="orgf929f27"><span class="section-number-3">4.10.</span> 第10週: Mathematics Special Topic: Mathematical Explanation of Gradient Descent</h3>
+<div class="outline-text-3" id="text-4-10">
+<ul class="org-ul">
+<li>[<span style="color:green;">內聘講師/數學科</span>] 介紹梯度下降法的數學基礎，講解微分與導數的概念，並以數學公式解釋梯度下降法的原理。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org14ff023" class="outline-3">
+<h3 id="org14ff023"><span class="section-number-3">4.11.</span> 第11週: You Only Look Once</h3>
+<div class="outline-text-3" id="text-4-11">
+<ul class="org-ul">
+<li>介紹YOLO (You Only Look Once) 演算法的基本概念及其在即時物體偵測中的應用。<br /></li>
+<li>舉例說明YOLO在即時影像、監控系統、交通管理等領域的實際應用。<br /></li>
+<li>學生實作YOLO模型進行即時物體偵測。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e92c73" class="outline-3">
+<h3 id="org8e92c73"><span class="section-number-3">4.12.</span> 第12週: LSTM與RNN簡介及實作</h3>
+<div class="outline-text-3" id="text-4-12">
+<ul class="org-ul">
+<li>介紹長短期記憶（LSTM）和遞歸神經網絡（RNN）的原理，理解其在時間序列數據中的應用<br /></li>
+<li>學生實作LSTM/RNN模型來預測學測成績。<br /></li>
+<li><span style="color:orange;">卜聖卦活動5</span>: 依據學生一年級全學年、二上以及二下第一次段考成績，以LSTM/RNN預測二下第二次段考成績<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org06dd055" class="outline-3">
+<h3 id="org06dd055"><span class="section-number-3">4.13.</span> 第13週: AI Prediction: Unveiling the Sacred Exam Outcome</h3>
+<div class="outline-text-3" id="text-4-13">
+<ul class="org-ul">
+<li>學生進行模型的參數調整與優化，學習如何提升分類模型的預測精度。<br /></li>
+<li>參數調整競賽: 學生嘗試調整模型參數，提升模型預測效果，並比較各組模型的預測效果。<br /></li>
+<li><span style="color:orange;">卜聖卦活動6</span>: 學生分組(跨校異質分組)，以學校提供之歷屆學生段考與學測成績做為訓練資料，建立各組的預測模型。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc3bd9e6" class="outline-3">
+<h3 id="orgc3bd9e6"><span class="section-number-3">4.14.</span> 第14週: One Model Isn’t Enough? Let’s Use More!</h3>
+<div class="outline-text-3" id="text-4-14">
+<ul class="org-ul">
+<li><span style="color:orange;">卜聖卦活動6</span>結果實測: 教師以額外的測試資料對各組模型進行效能測試，請模型效能表現優異各組發表模型設計原理。<br /></li>
+<li>介紹隨機森林模型的概念，並進行隨機森林的實作與模型優化。<br /></li>
+<li>卜聖卦最終回: 各組以隨機森林實作出最後版本的學測級分預測模型<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd2b07b7" class="outline-3">
+<h3 id="orgd2b07b7"><span class="section-number-3">4.15.</span> 第15週: 期末專題準備</h3>
+<div class="outline-text-3" id="text-4-15">
+<ul class="org-ul">
+<li>卜聖卦最終回結果揭曉: 教師以額外的測試資料對各組最終模型進行效能測試。<br /></li>
+<li>學生分組進行期末專題的準備，探討專題主題與所需資料與應用模型。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org10d72f3" class="outline-3">
+<h3 id="org10d72f3"><span class="section-number-3">4.16.</span> 第16週: 期末專題實作</h3>
+<div class="outline-text-3" id="text-4-16">
+<ul class="org-ul">
+<li>學生進行期末專題實作，完成分類模型的構建，並準備專題報告。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8205e38" class="outline-3">
+<h3 id="org8205e38"><span class="section-number-3">4.17.</span> 第17週: 期末專題實作</h3>
+<div class="outline-text-3" id="text-4-17">
+<ul class="org-ul">
+<li>學生進行期末專題實作，完成分類模型的構建，並準備專題報告。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0a8b755" class="outline-3">
+<h3 id="org0a8b755"><span class="section-number-3">4.18.</span> 第18週: 期末專題成果發表</h3>
+<div class="outline-text-3" id="text-4-18">
+<ul class="org-ul">
+<li>學生展示專題成果，各組發表專題實作的成果及學習心得，發表過程進行線上直播，邀請學生家長及校內同學上線觀看。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb0b12f" class="outline-2">
+<h2 id="orgcb0b12f"><span class="section-number-2">5.</span> 學習評量</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgd682980" class="outline-3">
+<h3 id="orgd682980"><span class="section-number-3">5.1.</span> <span style="color:orange;">卜聖卦活動1</span>：自我預測 (Self-Assessment Prediction)</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>預測依據的合理性 (50%)：學生是否能清楚列出自己預測段考成績時的依據（如過去成績、學習習慣、學習時間等），並給出合理的解釋。<br /></li>
+<li>預測準確度 (50%)：比較學生預測成績與實際段考成績，根據預測準確度進行評分。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5e4d833" class="outline-3">
+<h3 id="org5e4d833"><span class="section-number-3">5.2.</span> <span style="color:orange;">卜聖卦活動2</span>：數學迴歸分析預測 (Regression Prediction)</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>數據處理能力 (30%)：學生是否正確進行數據的清理與預處理，並運用適當的迴歸方法進行預測。<br /></li>
+<li>模型選擇與解釋 (30%)：學生是否能清楚解釋為什麼選擇某種迴歸模型，並合理說明預測過程中的假設與限制。<br /></li>
+<li>預測準確度 (40%)：根據迴歸分析結果與實際段考成績的對比，計算預測的準確性。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6b318dd" class="outline-3">
+<h3 id="org6b318dd"><span class="section-number-3">5.3.</span> <span style="color:orange;">卜聖卦活動3</span>：AI迴歸模型預測 (AI Regression Model Prediction)</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>模型實作能力 (30%)：學生是否能成功實作迴歸模型，並正確應用數據進行訓練和預測。<br /></li>
+<li>模型調參與優化 (30%)：學生是否對模型參數進行合理調整，並嘗試優化預測效果。<br /></li>
+<li>預測準確度 (40%)：比較AI模型的預測結果與實際成績，計算模型的準確度，並分析準確度的高低。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgacd40fb" class="outline-3">
+<h3 id="orgacd40fb"><span class="section-number-3">5.4.</span> <span style="color:orange;">卜聖卦活動4</span>：KNN與決策樹模型的學測預測 (KNN and Decision Tree Prediction for Entrance Exam Scores)</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>模型實作能力 (30%)：學生是否能成功實作KNN與決策樹模型，並正確應用模型進行學測成績級分的預測。<br /></li>
+<li>模型比較與選擇 (30%)：學生是否能對比KNN與決策樹模型的優缺點，並能合理選擇哪個模型更適合特定數據集。<br /></li>
+<li>預測準確度 (40%)：根據預測結果與實際歷屆學測成績的對比，計算預測的準確度。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org42f3438" class="outline-3">
+<h3 id="org42f3438"><span class="section-number-3">5.5.</span> <span style="color:orange;">卜聖卦活動5</span>：LSTM/RNN模型的段考預測 (LSTM/RNN Model Prediction for Exams)</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>模型實作與應用 (30%)：學生能否成功實作LSTM/RNN模型，並正確使用時間序列數據進行預測。<br /></li>
+<li>數據處理與預測 (30%)：學生能否正確處理時間序列數據，並進行準確的預測。<br /></li>
+<li>預測準確度 (40%)：LSTM/RNN模型的預測結果與實際段考成績的比較，並計算準確性。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2e8812d" class="outline-3">
+<h3 id="org2e8812d"><span class="section-number-3">5.6.</span> <span style="color:orange;">卜聖卦活動6</span>：隨機森林模型的學測預測 (Random Forest Prediction for Entrance Exam Scores)</h3>
+<div class="outline-text-3" id="text-5-6">
+<ul class="org-ul">
+<li>模型實作與應用 (30%)：學生是否能成功實作隨機森林模型，並正確應用來預測學測成績級分。<br /></li>
+<li>模型優化與調參 (30%)：學生是否能有效地進行參數調整與模型優化，提升預測的準確度。<br /></li>
+<li>預測準確度 (40%)：根據隨機森林模型的預測結果與實際成績進行比較，評估預測準確性。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org356d7ec" class="outline-3">
+<h3 id="org356d7ec"><span class="section-number-3">5.7.</span> 期末專題實作與發表 (Final Project Implementation and Presentation)</h3>
+<div class="outline-text-3" id="text-5-7">
+<ul class="org-ul">
+<li>專題模型構建與應用 (40%)：學生能否成功完成專題模型的構建，並應用所學技術進行有效的預測。專題應涵蓋數據預處理、模型實作、參數調整和結果分析等部分。<br /></li>
+<li>專題創新性 (30%)：專題中有無創新性的應用，學生是否嘗試探索新技術或新的應用場景，並結合不同技術（如YOLO、LSTM等）進行預測。<br /></li>
+<li>專題報告與成果展示 (30%)：學生的專題報告是否結構清晰、表達充分，並在成果展示中能有效解釋專題內容與核心技術。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0b3e698" class="outline-2">
+<h2 id="org0b3e698"><span class="section-number-2">6.</span> 採購</h2>
+<div class="outline-text-2" id="text-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">產品</th>
+<th scope="col" class="org-right">單價</th>
+<th scope="col" class="org-right">數量</th>
+<th scope="col" class="org-right">總價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://remarkable.com/store/overview/remarkable-paper-pro">reMarkable Paper Pro</a></td>
+<td class="org-right">34000</td>
+<td class="org-right">1</td>
+<td class="org-right">34000</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.yingxiang.com.tw/product/nvidia-quadro-rtx5000-16gb/">NVIDIA Quadro RTX 5000 16GB GPU繪圖卡</a></td>
+<td class="org-right">73000</td>
+<td class="org-right">1</td>
+<td class="org-right">73000</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.pcstore.com.tw/cheerchain/M43434601.htm">TechSmith Camtasia 2024 教育單機下載版</a></td>
+<td class="org-right">9990</td>
+<td class="org-right">1</td>
+<td class="org-right">9990</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://pdf.wondershare.tw/pdf-editor-mac/free-pdf-editing-software-mac.html">PDFelement(PDF編輯器/年費))</a></td>
+<td class="org-right">2600</td>
+<td class="org-right">2</td>
+<td class="org-right">5200</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.books.com.tw/products/N001036755?loc=P_0009_005">A5筆記本</a></td>
+<td class="org-right">160</td>
+<td class="org-right">10</td>
+<td class="org-right">1600</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.books.com.tw/products/N001038981?loc=P_0009_031">A4筆記本</a></td>
+<td class="org-right">260</td>
+<td class="org-right">10</td>
+<td class="org-right">2600</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10490529&amp;str_category_code=4201300088&amp;ctype=B&amp;Area=DgrpCategory&amp;sourcePageType=4">6開5插USB+Type C PD 30W 快充延長線 </a></td>
+<td class="org-right">1290</td>
+<td class="org-right">20</td>
+<td class="org-right">25800</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/prod/DYAPH4-A900GY943?fq=/S/DYAPH4">AponeType-C to Type-C USB4 PD240W 充電傳輸線 1.5M</a></td>
+<td class="org-right">790</td>
+<td class="org-right">5</td>
+<td class="org-right">3950</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.apple.com/tw/shop/product/MLYV3FE/A/usb-c-%E5%B0%8D-magsafe-3-%E9%80%A3%E6%8E%A5%E7%B7%9A-2-%E5%85%AC%E5%B0%BA-%E9%8A%80%E8%89%B2?fnode=e7f8880b9bf3ebb501e2b2e6aebefebbda241e527575cf816849435c5f4fc55aff3416ea51f266a05e0f5869d9680186274749c411dbc94685b201d7be4a33e5482d0391fa99406e87638e441a6664fe37bfa3546a0c429572d73e06f9a4cc7e">USB-C 對 MagSafe 3 連接線 (2 公尺) - 銀色</a></td>
+<td class="org-right">1490</td>
+<td class="org-right">1</td>
+<td class="org-right">1490</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/prod/DYAP4B-A900HGLAW?fq=/S/DYAP4B">USB-C to Lightning傳輸線</a></td>
+<td class="org-right">700</td>
+<td class="org-right">5</td>
+<td class="org-right">3500</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://chatgpt.com/#pricing">ChatGPT Plus 24月</a></td>
+<td class="org-right">650</td>
+<td class="org-right">24</td>
+<td class="org-right">15600</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/region/DCAB?srsltid=AfmBOootGSjNOjT4SfPTeGJidTJImzL6GmGKS44cdl0kHxMwDrBl52eK">Panasonic eneloop pro充電電池</a></td>
+<td class="org-right">3600</td>
+<td class="org-right">1</td>
+<td class="org-right">3600</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/prod/QBAA27-A9009APZK?fq=/S/DYBE56">Panasonic充電器</a></td>
+<td class="org-right">1690</td>
+<td class="org-right">1</td>
+<td class="org-right">1690</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://m.momoshop.com.tw/goods.momo?i_code=8346321">Logitech 羅技 Ergo M575無線藍牙軌跡球</a></td>
+<td class="org-right">1490</td>
+<td class="org-right">10</td>
+<td class="org-right">14900</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.ambertech.com.tw/ecommerce/mub-c12.html">MUB-C12_ USB A to micro USB (micro B)極強韌QC 3.0快速充電線</a></td>
+<td class="org-right">420</td>
+<td class="org-right">3</td>
+<td class="org-right">1260</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/prod/DCAYBL-A900ALIZV?fq=/S/DYAPAI">USB-C 對 3.5mm 耳機插孔轉接器</a></td>
+<td class="org-right">590</td>
+<td class="org-right">3</td>
+<td class="org-right">1770</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://soundpathaudio.com/product/rode-nt-usb-%E9%9B%BB%E5%AE%B9%E5%BC%8F%E9%BA%A5%E5%85%8B%E9%A2%A8/">RODE NT-USB+ 電容式麥克風</a></td>
+<td class="org-right">7000</td>
+<td class="org-right">1</td>
+<td class="org-right">7000</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.patron-dry.com.tw/142~490%E5%85%AC%E5%8D%87%E4%B8%AD%E5%9E%8B%E9%98%B2%E6%BD%AE%E7%AE%B1/09000731.html">AH-216 中型防潮箱 W400.D510.H1395mm</a></td>
+<td class="org-right">17800</td>
+<td class="org-right">1</td>
+<td class="org-right">17800</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://24h.pchome.com.tw/prod/DRAB6A-A900HRHNA?fq=/S/DRAB77">TOSHIBA 東芝【N300 NAS碟】(HDWG51CAZSTA) 12TB /7200轉/512MB/3.5吋/3Y NAS硬碟</a></td>
+<td class="org-right">10390</td>
+<td class="org-right">1</td>
+<td class="org-right">10390</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://www.da-xin.com.tw/product-detail-3601966.html">開閉式磁性烤漆玻璃白板-雙層</a> (大致詢價結果)</td>
+<td class="org-right">40000</td>
+<td class="org-right">1</td>
+<td class="org-right">40000</td>
+</tr>
+
+<tr>
+<td class="org-left">電腦椅(我找不到教室那種椅子的網頁,單價也忘了!!，應該是沒超過1000&#x2026;)</td>
+<td class="org-right">900</td>
+<td class="org-right">35</td>
+<td class="org-right">31500</td>
+</tr>
+
+<tr>
+<td class="org-left">廣播系統(詢價中)</td>
+<td class="org-right">100000</td>
+<td class="org-right">1</td>
+<td class="org-right">100000</td>
+</tr>
+
+<tr>
+<td class="org-left">電腦書(可以的話先些錢，書要慢慢找，最好是經費下來後再買當年度的新書)</td>
+<td class="org-right">10000</td>
+<td class="org-right">1</td>
+<td class="org-right">10000</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">總價</td>
+<td class="org-right">19589</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">416640</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2024-10-21 Mon 11:25</p>
+</div>
+</body>
+</html>

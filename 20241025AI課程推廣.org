@@ -7,7 +7,7 @@
 #+EXCLUDE_TAGS: noexport
 #+latex:\newpage
 #+begin_export html
-<a href="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html/"><img alt="Hits" align="right"  src="https://hits.sh/letranger.github.io/working/20241011-AI%E5%9C%A8%E5%9C%8B%E5%B0%8F%E6%95%99%E5%AD%B8%E7%9A%84%E6%87%89%E7%94%A8-1.html.svg"/></a>
+<a href="https://hits.sh/letranger.github.io/working/20241025AI%E8%AA%B2%E7%A8%8B%E6%8E%A8%E5%BB%A3.html/"><img alt="Hits" align="right" src="https://hits.sh/letranger.github.io/working/20241025AI%E8%AA%B2%E7%A8%8B%E6%8E%A8%E5%BB%A3.html.svg"/></a>
 #+end_export
 
 * 當AI遇上股票課程經驗分享工作坊

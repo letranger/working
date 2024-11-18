@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-09-26 Thu 21:24 -->
+<!-- 2024-10-24 Thu 15:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>手把手教你玩AI(人工智慧與數理邏輯跨領域實作工作坊)</title>
 <meta name="author" content="Yung-Chin Yen" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -203,44 +203,44 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org2a4d264">1. 課程教材</a></li>
-<li><a href="#org2859ab5">2. 第1週：工欲善其事: 工具套件簡介</a></li>
-<li><a href="#org37d622d">3. 第2週：數據的魔法：從雜亂到精準</a></li>
-<li><a href="#org6a23b42">4. 第3週：分類與迴歸</a></li>
-<li><a href="#orge2dc4e1">5. 第4週：發掘隱藏的真相</a></li>
-<li><a href="#org5b8441d">6. 第5週：遊戲中的智慧：AI如何自學成才</a></li>
-<li><a href="#org614f78a">7. 第6週：大腦的靈感：模仿人類神經元</a></li>
-<li><a href="#org8500db3">8. 第7週：語言的未來：機器如何聽懂我們的話</a>
+<li><a href="#org81feadb">1. 課程教材</a></li>
+<li><a href="#orga55d374">2. 第1週：工欲善其事: 工具套件簡介</a></li>
+<li><a href="#org0d7366f">3. 第2週：數據的魔法：從雜亂到精準</a></li>
+<li><a href="#org70da00b">4. 第3週：分類與迴歸</a></li>
+<li><a href="#org158fd0b">5. 第4週：發掘隱藏的真相</a></li>
+<li><a href="#org78b7fc6">6. 第5週：遊戲中的智慧：AI如何自學成才</a></li>
+<li><a href="#org7fa22d5">7. 第6週：大腦的靈感：模仿人類神經元</a></li>
+<li><a href="#org7e5c8bb">8. 第7週：語言的未來：機器如何聽懂我們的話</a>
 <ul>
-<li><a href="#org0d09e27">8.1. Whisper</a></li>
+<li><a href="#org33ce904">8.1. Whisper</a></li>
+<li><a href="#org10c3c29">8.2. 建構本地端的語言模型</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <a href="https://letranger.github.io/working/TNFSH-AI研習.html"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/TNFSH-AI研習.html.svg"/></a>
-<div id="outline-container-org2a4d264" class="outline-2">
-<h2 id="org2a4d264"><span class="section-number-2">1.</span> 課程教材</h2>
+<div id="outline-container-org81feadb" class="outline-2">
+<h2 id="org81feadb"><span class="section-number-2">1.</span> 課程教材</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="https://classroom.google.com/c/NzExNjA4ODI5NDMy?cjc=5hnpvbz">Google Classroom</a></li>
 <li><a href="https://letranger.github.io/AI">AI Notes: from Zero to Error</a></li>
-<li><a href="https://moodle.tnfsh.tn.edu.tw/course/view.php?id=43">和AI做朋友[教材/簡報/影片</a></li>
+<li><a href="https://moodle.tnfsh.tn.edu.tw/course/view.php?id=43">和AI做朋友(教材/簡報/影片)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2859ab5" class="outline-2">
-<h2 id="org2859ab5"><span class="section-number-2">2.</span> 第1週：工欲善其事: 工具套件簡介</h2>
+<div id="outline-container-orga55d374" class="outline-2">
+<h2 id="orga55d374"><span class="section-number-2">2.</span> 第1週：工欲善其事: 工具套件簡介</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>內容：資料處理會用到的工具套件，如、C資料如何影響AI模型的表現，學習資料清理、轉換、特徵選擇等技術，為AI訓練做好準備。</li>
 <li>涵蓋範疇：Pandas、Numpy、Matplotlib、BeautifulSoup、Gradio、Streamlit、Pyinstaller、Tkinter</li>
-<li></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org37d622d" class="outline-2">
-<h2 id="org37d622d"><span class="section-number-2">3.</span> 第2週：數據的魔法：從雜亂到精準</h2>
+<div id="outline-container-org0d7366f" class="outline-2">
+<h2 id="org0d7366f"><span class="section-number-2">3.</span> 第2週：數據的魔法：從雜亂到精準</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>內容：資料如何影響AI模型的表現，學習資料清理、轉換、特徵選擇等技術，為AI訓練做好準備。</li>
@@ -248,8 +248,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org6a23b42" class="outline-2">
-<h2 id="org6a23b42"><span class="section-number-2">4.</span> 第3週：分類與迴歸</h2>
+<div id="outline-container-org70da00b" class="outline-2">
+<h2 id="org70da00b"><span class="section-number-2">4.</span> 第3週：分類與迴歸</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>內容：介紹AI如何做出「分類」決策，模擬AI如何像人類一樣作出預測，探索不同的決策模型。</li>
@@ -257,8 +257,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orge2dc4e1" class="outline-2">
-<h2 id="orge2dc4e1"><span class="section-number-2">5.</span> 第4週：發掘隱藏的真相</h2>
+<div id="outline-container-org158fd0b" class="outline-2">
+<h2 id="org158fd0b"><span class="section-number-2">5.</span> 第4週：發掘隱藏的真相</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>內容：當AI沒有指引時，如何學習數據中的模式？探索如何在沒有標籤的情況下，AI依然能找到隱藏的關聯。</li>
@@ -266,8 +266,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org5b8441d" class="outline-2">
-<h2 id="org5b8441d"><span class="section-number-2">6.</span> 第5週：遊戲中的智慧：AI如何自學成才</h2>
+<div id="outline-container-org78b7fc6" class="outline-2">
+<h2 id="org78b7fc6"><span class="section-number-2">6.</span> 第5週：遊戲中的智慧：AI如何自學成才</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>內容：從遊戲的角度看AI，如何通過自我嘗試和錯誤修正來學習最佳策略，像是在打遊戲一樣學習。</li>
@@ -275,8 +275,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org614f78a" class="outline-2">
-<h2 id="org614f78a"><span class="section-number-2">7.</span> 第6週：大腦的靈感：模仿人類神經元</h2>
+<div id="outline-container-org7fa22d5" class="outline-2">
+<h2 id="org7fa22d5"><span class="section-number-2">7.</span> 第6週：大腦的靈感：模仿人類神經元</h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>內容：深度學習的核心概念，類神經網絡如何模仿人腦運作，理解多層次網絡如何從數據中提取出高階資訊。</li>
@@ -284,16 +284,16 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8500db3" class="outline-2">
-<h2 id="org8500db3"><span class="section-number-2">8.</span> 第7週：語言的未來：機器如何聽懂我們的話</h2>
+<div id="outline-container-org7e5c8bb" class="outline-2">
+<h2 id="org7e5c8bb"><span class="section-number-2">8.</span> 第7週：語言的未來：機器如何聽懂我們的話</h2>
 <div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li>內容：語言模型及其應用，探索AI如何理解與生成語言，並應用在對話機器人、翻譯等情境中。</li>
 <li>涵蓋範疇：語言模型與自然語言處理</li>
 </ul>
 </div>
-<div id="outline-container-org0d09e27" class="outline-3">
-<h3 id="org0d09e27"><span class="section-number-3">8.1.</span> Whisper</h3>
+<div id="outline-container-org33ce904" class="outline-3">
+<h3 id="org33ce904"><span class="section-number-3">8.1.</span> Whisper</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li><a href="https://medium.com/ddsakura-blog/%E5%9C%A8-mac-%E6%9C%AC%E6%A9%9F%E4%B8%8A%E8%B7%91-openai-whisper-b32a8ea021ce">在 Mac 本機上跑 OpenAI Whisper</a></li>
@@ -301,11 +301,22 @@
 </ul>
 </div>
 </div>
+<div id="outline-container-org10c3c29" class="outline-3">
+<h3 id="org10c3c29"><span class="section-number-3">8.2.</span> 建構本地端的語言模型</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=Gh4plFSbW8M">部署本地大模型和知识库，最简单的方法</a></li>
+<li><a href="https://www.youtube.com/watch?v=8SiivF_P_zg">一键部署本地私人专属知识库，开源免费！可接入GPT-4、Llama 3、Gemma、Kimi等几十种大模型，零代码集成，1Panel出品。</a></li>
+<li><a href="https://www.youtube.com/watch?v=biMrHwwsK-M&amp;t=65s">从零开始学习大语言模型（一）</a></li>
+<li><a href="https://steam.oxxostudio.tw/category/python/ai/opencv-gif.html">STEAM教學網-Python</a></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung-Chin Yen</p>
-<p class="date">Created: 2024-09-26 Thu 21:24</p>
+<p class="date">Created: 2024-10-24 Thu 15:41</p>
 </div>
 </body>
 </html>

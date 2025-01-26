@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 19:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>James Exam</title>
+<meta name="author" content="Yung-Chin Yen" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+<script src="../css/copy_code.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">James Exam</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org64a52b8">1. prompt</a></li>
+<li><a href="#orgfee5b26">2. 中山</a></li>
+<li><a href="#org56b4c96">3. 中興</a></li>
+<li><a href="#org594a1d1">4. 清大</a></li>
+<li><a href="#org681fd47">5. 成大</a></li>
+<li><a href="#org757cb40">6. 中央</a></li>
+<li><a href="#org965cbf5">7. 北大</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64a52b8" class="outline-2">
+<h2 id="org64a52b8"><span class="section-number-2">1.</span> prompt</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li></li>
+</ol>
+<blockquote>
+<p>
+請大致說明近10年的考題趨勢<br />
+</p>
+</blockquote>
+<ol class="org-ol">
+<li></li>
+</ol>
+<blockquote>
+<p>
+請依前10年的命題格式，參考近年的新興技術，生成一份今年的考題，並附上詳細解說答案<br />
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-orgfee5b26" class="outline-2">
+<h2 id="orgfee5b26"><span class="section-number-2">2.</span> 中山</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9d7e1c8" class="outline-3">
+<h3 id="org9d7e1c8"><span class="section-number-3">2.1.</span> 近10年趨勢</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>計算機概論與資料結構：這部分是歷年考題的重點，從101學年度到112學年度都有相關考題出現。內容涵蓋了基礎的程式碼分析、資料結構的應用與分析、演算法的時間複雜度分析、以及圖論相關的知識。例如，常出現的考題類型包括：<br /></li>
+<li>程式碼追蹤：給定一段程式碼，要求判斷程式的輸出結果。<br /></li>
+<li>資料結構操作：例如，樹的遍歷 (pre-order, in-order, post-order)，堆積 (heap) 的操作，以及圖的最小生成樹 (minimum spanning tree, MST) 的計算。<br /></li>
+<li>演算法分析：例如，排序演算法 (merge sort, selection sort, bubble sort, quick sort, insertion sort) 的時間複雜度分析，以及各種搜尋演算法的應用。<br /></li>
+<li>遞迴 (Recursion): 遞迴函數的編寫與分析，以及遞迴在程式碼中的應用.<br /></li>
+<li>資料庫：這部分也常被納入考題，包括了 SQL 語法、正規化 (normalization)、以及關聯式資料庫的概念。近年來，也開始出現 NoSQL 資料庫的相關考題。<br /></li>
+<li>網路：網路相關的考題也佔有一定比例，考題內容包括網路協定 (TCP/IP, UDP, ARP, HTTP, etc.)、IP 位址與子網路遮罩 (subnet mask) 的計算、以及無線網路技術 (WiMAX, LTE, WIFI)。<br /></li>
+<li>作業系統：作業系統的考題內容包括行程管理 (process management)，記憶體管理 (memory management)，以及系統呼叫 (system call) 的概念。<br /></li>
+<li>資訊管理：資訊管理方面的考題包括電子商務策略 (e-commerce strategy)、供應鏈管理 (supply chain management)、服務科學 (service science)、雲端運算 (cloud computing)、物聯網 (Internet of Things, IoT)、大數據 (big data)、以及資訊安全管理 (information security management)。此外，近年來也出現了關於區塊鏈 (blockchain)、人工智慧 (artificial intelligence, AI)、機器學習 (machine learning)、以及數位轉型 (digital transformation) 等新興技術的考題。<br /></li>
+<li>其他：考題中也出現了一些較為分散的主題，如函數式編程 (functional programming)、軟體架構 (software architecture)、專案管理 (project management)、以及編譯程式 (compiler) 的步驟。<br /></li>
+</ul>
+
+<p>
+總體而言，近十年的考題趨勢呈現出以下幾個特點：<br />
+</p>
+<ol class="org-ol">
+<li>廣度增加：考題涵蓋的範圍越來越廣，除了傳統的計算機科學基礎知識外，也開始納入資訊管理、新興科技等相關知識。<br /></li>
+<li>深度提升：考題不僅要求考生掌握基本概念，也要求考生具備分析問題、解決問題的能力。例如，對於演算法的時間複雜度分析，以及對於不同資料結構的應用情境分析，都是考題中常見的重點。<br /></li>
+<li>實務導向：考題開始出現一些與實務相關的應用問題，例如，如何利用雲端運算提升企業競爭力，以及如何利用物聯網技術改善生活品質等。<br /></li>
+<li>新興技術：近年來，區塊鏈、人工智慧、機器學習等新興技術成為熱門考題。<br /></li>
+<li>跨領域整合：考題越來越強調跨領域知識的整合應用，例如，資訊管理與資訊科技的整合，或是資訊科技與商業應用的整合。<br /></li>
+</ol>
+
+<p>
+準備考試時，建議考生：<br />
+</p>
+<ul class="org-ul">
+<li>扎實掌握基礎知識：計算機概論、資料結構、演算法、資料庫、網路、作業系統等基礎知識，是所有考題的基礎。<br /></li>
+<li>關注新興技術：除了基礎知識，也需要關注新興技術的發展，並了解其應用情境。<br /></li>
+<li>練習歷屆考題：透過練習歷屆考題，可以了解考試的題型、出題方向，以及難易程度。<br /></li>
+<li>加強英文能力：部分考題會以英文呈現，因此考生需具備一定的英文能力，才能順利應考。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org80f928f" class="outline-3">
+<h3 id="org80f928f"><span class="section-number-3">2.2.</span> AI模擬試題</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+國立中山大學資訊管理學系碩士班入學考試模擬試題<br />
+科目：計算機概論、資料結構與資訊管理<br />
+</p>
+
+<p>
+作答說明：<br />
+</p>
+<ul class="org-ul">
+<li>本試題分為選擇題與問答題，請仔細閱讀題目後作答。<br /></li>
+<li>選擇題請於答案卡上劃記作答，問答題請於答案卷上作答。<br /></li>
+<li>考試時間為 100 分鐘。<br /></li>
+</ul>
+</div>
+<div id="outline-container-org484e3f1" class="outline-4">
+<h4 id="org484e3f1"><span class="section-number-4">2.2.1.</span> 一、選擇題 (每題 3 分，共 60 分)</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ol class="org-ol">
+<li>以下何者為非物件導向程式設計 (Object-Oriented Programming) 的特性？ (A) 繼承 (Inheritance) (B) 多型 (Polymorphism) (C) 封裝 (Encapsulation) (D) 遞迴 (Recursion)<br /></li>
+<li>下列何者不屬於網路層 (Network Layer) 的協定？ (A) IP (B) TCP (C) ARP (D) ICMP<br /></li>
+<li>在二元搜尋樹 (Binary Search Tree) 中，若要找出最小值，應該從哪個節點開始搜尋？ (A) 根節點 (Root Node) (B) 最右邊的節點 (Rightmost Node) (C) 最左邊的節點 (Leftmost Node) (D) 任何節點都可<br /></li>
+<li>下列哪一種資料結構最常被用來實作深度優先搜尋 (Depth-First Search) 演算法？ (A) 堆疊 (Stack) (B) 佇列 (Queue) (C) 堆積 (Heap) (D) 鏈結串列 (Linked List)<br /></li>
+<li>關於雲端運算 (Cloud Computing)，下列敘述何者為非？ (A) 是一種分散式運算環境。 (B) SaaS (軟體即服務) 是雲端運算的一種商業模式。 (C) IaaS (基礎設施即服務) 主要提供虛擬機器。 (D) 雲端運算適合用來處理小量資料的即時分析。<br /></li>
+<li>以下哪一個選項是快排 (Quick Sort) 演算法最壞情況 (worst-case) 的時間複雜度？ (A) O(n) (B) O(n log n) (C) O(n^2) (D) O(log n)<br /></li>
+<li>下列哪個選項是用來將網域名稱 (domain name) 對應到 IP 位址？ (A) 網域名稱系統 (DNS) (B) 位址解析協定 (ARP) (C) 傳輸控制協定 (TCP) (D) 使用者資料包協定 (UDP)<br /></li>
+<li>一個迴圈程式碼如下：這題失敗，沒生出程式碼&#x2026;.<br /></li>
+<li>請問執行完以上程式碼後，變數 w 的值是多少？ (A) 20 (B) 30 (C) 40 (D) 42<br /></li>
+<li>在關聯式資料庫中，若一表格滿足第三正規化 (3NF)，則下列何者敘述錯誤？ (A) 每一個非主鍵屬性都必須完全相依於主鍵。 (B) 表格可能有多個候選鍵。 (C) 每一個非主鍵屬性都不能遞移相依於任何其他非主鍵屬性。 (D) 此表格必定也滿足 BCNF<br /></li>
+<li>若要從頭到尾反向印出一個字串，最適合使用哪一種資料結構？ (A) 佇列 (Queue) (B) 堆疊 (Stack) (C) 二元搜尋樹 (Binary Search Tree) (D) 鏈結串列 (Linked List)<br /></li>
+<li>下列何者為物聯網 (Internet of Things, IoT) 的應用範疇？ (A) 智慧家庭 (B) 工業自動化 (C) 智慧醫療 (D) 以上皆是<br /></li>
+<li>關於區塊鏈 (Blockchain)，下列敘述何者正確？ (A) 區塊鏈上的資料可以隨意竄改。 (B) 區塊鏈是一種中心化的資料庫。 (C) 區塊鏈的特性包括去中心化、不可竄改、透明性。 (D) 比特幣 (Bitcoin) 是唯一使用區塊鏈技術的應用。<br /></li>
+<li>下列哪一種機器學習 (Machine Learning) 演算法屬於監督式學習 (Supervised Learning)？ (A) K-means 分群法 (B) 支持向量機 (Support Vector Machine) (C) 主成分分析 (Principal Component Analysis) (D) 關聯規則學習 (Association Rule Learning)<br /></li>
+<li>下列何者為非同步 (Asynchronous) 通訊的特性？ (A) 資料傳輸需要發送端和接收端的時脈同步。 (B) 資料傳輸不需要時脈信號。 (C) 資料傳輸前需要建立連線。 (D) 資料傳輸是同步進行的。<br /></li>
+<li>以下哪一個選項不是大數據 (Big Data) 分析中常見的工具或框架？ (A) Apache Hadoop (B) Apache Spark (C) TensorFlow (D) MySQL<br /></li>
+<li>若一系統使用 LRU (Least Recently Used) 分頁置換演算法，參考字串為 abgabdcabcad，且系統有三個可用頁框，請問會發生幾次 page fault？ (A) 9 (B) 10 (C) 11 (D) 12<br /></li>
+<li>下列何者為 Deep Learning 常用的框架？ (A) TensorFlow (B) PyTorch (C) MXNet (D) 以上皆是<br /></li>
+<li>下列哪一種資料結構不適合用於實現優先權佇列 (Priority Queue)？ (A) 堆積 (Heap) (B) 佇列 (Queue) (C) 二元搜尋樹 (Binary Search Tree) (D) 鏈結串列 (Linked List)<br /></li>
+<li>下列哪一個選項是後序 (postfix) 運算式 A B + C D * - 的中序 (infix) 運算式？ (A) A + B - C * D (B) (A + B) - (C * D) (C) A + B - C * D (D) (A - C * D) + B<br /></li>
+<li>以下何者不屬於常見的NoSQL 資料庫類型？ (A) 圖形資料庫 (Graph Database) (B) 文件資料庫 (Document Database) (C) 關聯式資料庫 (Relational Database) (D) 鍵值資料庫 (Key-Value Database)<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1635549" class="outline-4">
+<h4 id="org1635549"><span class="section-number-4">2.2.2.</span> 二、問答題 (共 40 分)</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ol class="org-ol">
+<li>請簡述 資訊安全管理系統 (Information Security Management System, ISMS) 的概念，並說明導入 ISMS 的六個主要階段。 (10 分)<br /></li>
+<li>請解釋 網路效應 (Network Effect) 的概念，並舉例說明在平台經濟中，如何利用網路效應來提升競爭力。(10 分)<br /></li>
+<li>請說明 人工智慧 (Artificial Intelligence) 、機器學習 (Machine Learning) 與 深度學習 (Deep Learning) 三者之間的關係，並舉例說明在資訊管理領域的應用。(10 分)<br /></li>
+<li>請說明 虛擬整合 (Virtual Integration) 的概念，並舉例說明其在供應鏈管理中的應用，並分析其優缺點。(10 分)<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org08585ef" class="outline-3">
+<h3 id="org08585ef"><span class="section-number-3">2.3.</span> 參考答案</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org5103048" class="outline-4">
+<h4 id="org5103048"><span class="section-number-4">2.3.1.</span> 一、選擇題</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ol class="org-ol">
+<li>(D) 遞迴是程式設計的一種技巧，不屬於物件導向程式設計的特性。<br /></li>
+<li>(B) TCP 屬於傳輸層的協定。<br /></li>
+<li>(C) 二元搜尋樹的最小值在最左邊的節點。<br /></li>
+<li>(A) 堆疊具有後進先出 (LIFO) 的特性，適合用於深度優先搜尋。<br /></li>
+<li>(D) 雲端運算適合用來處理大量的數據，而非小量數據的即時分析。<br /></li>
+<li>(C) 快排演算法在最壞情況下的時間複雜度為 O(n^2)。<br /></li>
+<li>(A) DNS 用於將網域名稱對應到 IP 位址。<br /></li>
+<li>(A) w 的值為 2+4+6+8=20<br /></li>
+<li>(D) 滿足 BCNF 一定滿足 3NF，但滿足 3NF 不一定滿足 BCNF<br /></li>
+<li>(B) 堆疊具有後進先出的特性，適合用於反轉字串。<br /></li>
+<li>(D) 物聯網可應用於智慧家庭、工業自動化、智慧醫療等領域。<br /></li>
+<li>(C) 區塊鏈的核心特性為去中心化、不可竄改和透明性。<br /></li>
+<li>(B) 支持向量機屬於監督式學習演算法。<br /></li>
+<li>(B) 非同步通訊不需要時脈信號。<br /></li>
+<li>(D) MySQL 是關聯式資料庫，不屬於大數據分析的框架。<br /></li>
+<li>(A) 根據 LRU 演算法，會有 9 次 page fault。<br /></li>
+<li>(D) TensorFlow, PyTorch, MXNet 皆為 Deep Learning 常用框架。<br /></li>
+<li>(B) 佇列不適合用來實現優先權佇列，因其以先進先出方式取出元素。<br /></li>
+<li>(B) 後序運算式 A B + C D * - 的中序運算式為 (A + B) - (C * D)<br /></li>
+<li>(C) 關聯式資料庫屬於傳統資料庫，不屬於 NoSQL 資料庫。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org97d17d0" class="outline-4">
+<h4 id="org97d17d0"><span class="section-number-4">2.3.2.</span> 二、問答題</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ol class="org-ol">
+<li>資訊安全管理系統 (ISMS) 是一個系統化的方法，用來分析、評估和管理組織的資訊安全風險。它提供了一套流程和架構，幫助組織建立、實施、維護和改進資訊安全措施。導入 ISMS 的六個主要階段包括：<br />
+<ul class="org-ul">
+<li>規劃 (Planning)：確立 ISMS 的範圍、目標和政策。<br /></li>
+<li>實施 (Implementation)：根據計畫執行資訊安全措施，包括建立控制機制、培訓員工等。<br /></li>
+<li>檢查 (Checking)：定期檢查和評估資訊安全措施的有效性。<br /></li>
+<li>行動 (Action)：根據檢查結果，進行改進和調整。<br /></li>
+<li>監控 (Monitoring)：持續監控 ISMS 的運作狀況。<br /></li>
+<li>審查 (Review)：定期審查 ISMS 的成效，並進行必要的更新和改進。<br /></li>
+</ul></li>
+<li>網路效應指的是當一個產品或服務的使用者增加時，其價值也會隨之增加的現象。簡單來說，用的人越多，這個產品或服務就越有價值。在平台經濟中，網路效應非常重要。例如：<br />
+<ul class="org-ul">
+<li>社群媒體平台：當越多使用者加入社群媒體平台時，此平台對使用者的吸引力就越大。因為使用者可以與更多人聯繫、分享資訊。<br /></li>
+<li>電商平台：當越多商家在電商平台上販售商品時，此平台對消費者的吸引力就越大。因為消費者可以在此平台上找到更多選擇、比較商品。<br /></li>
+<li>應用程式商店：當越多開發者在應用程式商店上架應用程式，此商店對使用者的吸引力就越大，使用者可以在此商店找到更多應用程式。<br /></li>
+<li>共乘平台：當越多使用者在共乘平台上註冊，此平台對使用者就越方便，因為使用者可以更容易地找到汽車共享。 利用網路效應來提升競爭力的方式包括：<br /></li>
+<li>早期採用者獎勵：鼓勵早期使用者加入平台，以觸發網路效應。<br /></li>
+<li>策略性合作：與其他平台或服務合作，擴大網路效應的範圍。<br /></li>
+<li>差異化競爭：提供獨特的服務或功能，吸引更多使用者。<br /></li>
+</ul></li>
+<li>人工智慧 (AI) 是一種廣泛的概念，指的是讓電腦執行通常需要人類智慧才能完成的任務。機器學習 (ML) 是實現人工智慧的一種方法，它讓電腦可以從數據中學習，而不需要明確的程式碼。深度學習 (DL) 則是機器學習的一種分支，它使用人工神經網路 (Artificial Neural Networks) 來學習複雜的模式。在資訊管理領域的應用包括：<br />
+<ul class="org-ul">
+<li>客戶關係管理 (CRM)：利用機器學習分析客戶數據，提供個人化的產品推薦。<br /></li>
+<li>供應鏈管理 (SCM)：利用深度學習預測供應鏈風險，優化庫存管理。<br /></li>
+<li>網路安全：利用機器學習偵測網路攻擊，保護企業資訊資產。<br /></li>
+<li>商業分析：利用機器學習和深度學習分析大量數據，提供商業決策的依據。<br /></li>
+<li>自然語言處理 (NLP)：利用自然語言處理技術分析顧客評論，提升客戶服務品質。<br /></li>
+</ul></li>
+<li><p>
+虛擬整合 (Virtual Integration) 指的是企業在供應鏈中，不擁有實體資產或設施，而是透過資訊科技 (IT) 連結不同的供應鏈夥伴，形成一個整合的虛擬供應鏈網路。在供應鏈管理中的應用包括：<br />
+</p>
+<ul class="org-ul">
+<li>協同產品設計：透過網路平台與供應商協同設計產品。<br /></li>
+<li>即時庫存資訊：透過系統即時取得供應商的庫存資訊，減少自身庫存成本。<br /></li>
+<li>協同需求預測：與供應商共享需求預測資訊，提高供應鏈效率。<br /></li>
+<li>彈性生產：根據即時需求資訊，調整生產計畫。<br /></li>
+<li>即時物流追蹤：透過網路系統追蹤物流，提供即時的貨物位置資訊<br /></li>
+</ul>
+
+<p>
+優點：<br />
+</p>
+<ul class="org-ul">
+<li>彈性高：可以快速調整供應鏈以應對市場變化。<br /></li>
+<li>成本低：降低了擁有實體資產的成本。<br /></li>
+<li>效率高：透過資訊科技提高供應鏈效率。<br /></li>
+</ul>
+
+<p>
+缺點：<br />
+</p>
+<ul class="org-ul">
+<li>依賴資訊科技：過度依賴資訊系統，若系統故障，會影響供應鏈運作。<br /></li>
+<li>信任風險：需要信任供應鏈夥伴，確保資訊透明度。<br /></li>
+<li>資料安全：需要確保在合作中資料的安全性。<br /></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org56b4c96" class="outline-2">
+<h2 id="org56b4c96"><span class="section-number-2">3.</span> 中興</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org50e8685" class="outline-3">
+<h3 id="org50e8685"><span class="section-number-3">3.1.</span> 近10年趨勢</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org0ac540e" class="outline-4">
+<h4 id="org0ac540e"><span class="section-number-4">3.1.1.</span> 資料結構與演算法: 歷年考題中，資料結構與演算法是相當重要的部分。</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>常見的資料結構如linked list、binary tree、binary search tree、AVL tree、heap、hash table 等觀念頻繁出現。<br /></li>
+<li>演算法部分，排序演算法如 insertion sort, selection sort, quick sort, merge sort, heap sort 都有被考過，binary search algorithm 也有出現。<br /></li>
+<li>另外，圖論的 Floyd-Warshall algorithm 也曾出現。<br /></li>
+<li>有些題目會要求寫出程式碼或是虛擬碼，來完成特定的操作，像是linked list的反轉或是計算特定範圍節點總和。<br /></li>
+<li>Big-Oh 的時間複雜度分析 也會出現。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6828d2f" class="outline-4">
+<h4 id="org6828d2f"><span class="section-number-4">3.1.2.</span> 程式設計:</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>會出現需要讀懂程式碼並寫出結果的題目，程式語言包含 C, Java, Python。<br /></li>
+<li>程式設計的考題包含 遞迴，還有一些字串的操作。<br /></li>
+<li>也會出現要求寫出函式 (function) 的題目，例如多項式相乘 、檢查質數 等。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64af45c" class="outline-4">
+<h4 id="org64af45c"><span class="section-number-4">3.1.3.</span> 計算機組織與結構:</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li>基本的計算機組成元件如 accumulator, program counter, memory, ALU 等觀念需要理解。<br /></li>
+<li>一些概念，例如 buffer、direct memory access、interrupt 等也要了解。<br /></li>
+<li>指令執行週期 (instruction cycle)也有被考到。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgce49d09" class="outline-4">
+<h4 id="orgce49d09"><span class="section-number-4">3.1.4.</span> 作業系統:</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<ul class="org-ul">
+<li>考題中會出現 preemptive scheduling、non-preemptive scheduling 的觀念。<br /></li>
+<li>paging 的觀念以及相關的計算也需要了解。<br /></li>
+<li>多程式系統的記憶體管理也是重點。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbce7195" class="outline-4">
+<h4 id="orgbce7195"><span class="section-number-4">3.1.5.</span> 網路:</h4>
+<div class="outline-text-4" id="text-3-1-5">
+<ul class="org-ul">
+<li>考題中會出現 OSI 模型。<br /></li>
+<li>IPv4 相關的觀念如 datagram, fragmentation，還有網路設備的設定也需要了解。<br /></li>
+<li>DHCP 的觀念也有被考到。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf423132" class="outline-4">
+<h4 id="orgf423132"><span class="section-number-4">3.1.6.</span> 資料庫:</h4>
+<div class="outline-text-4" id="text-3-1-6">
+<ul class="org-ul">
+<li>考題中出現 關聯式資料庫 的 正規化 (normalization) 以及 SQL 語法 。<br /></li>
+<li>NoSQL 資料庫也出現在考題中。<br /></li>
+<li>Entity-relationship model 的觀念也需要了解。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orged5ff04" class="outline-4">
+<h4 id="orged5ff04"><span class="section-number-4">3.1.7.</span> 軟體工程:</h4>
+<div class="outline-text-4" id="text-3-1-7">
+<ul class="org-ul">
+<li>考題中出現 系統開發的生命週期，例如 訪談、原型開發。<br /></li>
+<li>Use case 的使用 也需要理解。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e383a1" class="outline-4">
+<h4 id="org1e383a1"><span class="section-number-4">3.1.8.</span> 機器學習:</h4>
+<div class="outline-text-4" id="text-3-1-8">
+<ul class="org-ul">
+<li>近年來開始出現關於機器學習的題目，例如 supervised learning, unsupervised learning, reinforcement learning。<br /></li>
+<li>K-fold cross-validation 也會出現。<br /></li>
+<li>神經網路 的相關題目也開始出現， 例如基本的神經網路架構 ，還有計算梯度下降 。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcb4a0a3" class="outline-4">
+<h4 id="orgcb4a0a3"><span class="section-number-4">3.1.9.</span> 其他:</h4>
+<div class="outline-text-4" id="text-3-1-9">
+<ul class="org-ul">
+<li>Turing test、Turing machine, Von Neumann architecture 也曾被考到。<br /></li>
+<li>RSA 加密 也有出現。<br /></li>
+<li>霍夫曼編碼 (Huffman code) 的觀念也需要了解。<br /></li>
+<li>數字系統的轉換，例如 二進位、十進位、八進位、十六進位 之間的轉換 。<br /></li>
+<li>二補數 的概念也需要理解。<br /></li>
+<li>CAP theorem 也有被考到。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7ae2485" class="outline-3">
+<h3 id="org7ae2485"><span class="section-number-3">3.2.</span> AI模擬試題</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgebfef52" class="outline-4">
+<h4 id="orgebfef52"><span class="section-number-4">3.2.1.</span> 一、選擇題 (每題3分，共30分)</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ol class="org-ol">
+<li>下列哪一個描述是錯誤的？ (A) 累加器 (Accumulator) 是一個暫存器，用來儲存算術和邏輯運算的結果。 (B) 程式計數器 (Program Counter) 指出程式中下一個要執行的指令位址。 (C) 直接記憶體存取 (Direct Memory Access, DMA) 允許周邊設備直接與記憶體傳輸數據，而不需要 CPU 的介入。 (D) 緩衝區 (Buffer) 是一種介面，用於兩個數據傳輸速度不同的設備之間，用來暫時儲存數據。 (E) 算術邏輯單元 (Arithmetic Logic Unit, ALU) 直接控制處理器的操作，並告知電腦的記憶體如何響應程式指令。<br /></li>
+<li>下列哪一個排序演算法在最壞情況下的時間複雜度不是 O(n log n)? (A) 合併排序 (Merge Sort) (B) 快速排序 (Quick Sort) (C) 堆積排序 (Heap Sort) (D) 插入排序 (Insertion Sort) (E) 以上皆非<br /></li>
+<li>在 OSI 模型 中，哪一層負責提供端對端的可靠傳輸？ (A) 網路層 (Network Layer) (B) 資料鏈路層 (Data Link Layer) (C) 傳輸層 (Transport Layer) (D) 會議層 (Session Layer) (E) 表達層 (Presentation Layer)<br /></li>
+<li>下列哪一個不是 NoSQL 資料庫的類型？ (A) 鍵值對 (Key-value) 資料庫 (B) 文件 (Document) 資料庫 (C) 圖形 (Graph) 資料庫 (D) 關聯式 (Relational) 資料庫 (E) 寬列式 (Wide-column) 資料庫<br /></li>
+<li>在 機器學習 中，下列哪一個問題最適合使用監督式學習 (Supervised Learning)？ (A) 找出顧客在零售市場中的區隔。 (B) 訓練一個 AI 機器人下棋。 (C) 將文章分類到不同的主題。 (D) 將一群顧客分成幾個群體。 (E) 在沒有標籤資料的情況下，找出數據的隱藏模式。<br /></li>
+<li>若要利用 RSA 加密系統， 需先找到兩個質數 p 和 q，計算 n = p * q。 若 p = 5, q = 11, 則 n 為何？ (A) 16 (B) 45 (C) 55 (D) 65 (E) 99<br /></li>
+<li>下列哪一個是 二元搜尋演算法 (binary search algorithm) 的限制？ (A) 需要使用排序過的陣列。 (B) 插入和刪除元素的花費較高。 (C) 必須有一個機制存取中間的元素。 (D) 不能應用於二元樹。 (E) 當數據量超過 1000 時，效率不高<br /></li>
+<li>下列關於 CAP 定理 的敘述，何者為真？ (A) 分散式資料庫系統可以同時保證一致性 (Consistency)、可用性 (Availability) 和分割容錯性 (Partition tolerance)。 (B) 分散式資料庫系統只能保證一致性和可用性。 (C) 分散式資料庫系統只能保證一致性和分割容錯性。 (D) 分散式資料庫系統只能保證可用性和分割容錯性。 (E) 分散式資料庫系統只能保證一致性或可用性。<br /></li>
+<li>下列哪一個是 Turing Test 的目標？ (A) 測試機器是否能執行複雜的計算。 (B) 測試機器是否能通過自然語言處理測試。 (C) 測試機器是否能模仿人類的智能。 (D) 測試機器是否能進行機器學習。 (E) 測試機器是否能夠解密。<br /></li>
+<li>下列哪一個不是在系統開發的原型開發 (prototyping) 的優點？ (A) 作為使用者訓練的機制。 (B) 允許使用者嘗試操作軟體並了解其功能。 (C) 協助建立測試計畫和情境。 (D) 在發生高成本之前，協助確定系統的可用性和有用性。 (E) 使得計畫和排程更加容易。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6157d08" class="outline-4">
+<h4 id="org6157d08"><span class="section-number-4">3.2.2.</span> 二、簡答題 (每題10分，共40分)</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ol class="org-ol">
+<li>請解釋分頁 (paging) 的觀念，以及它在多程式作業系統中如何運作。<br /></li>
+<li>請寫出一個程式碼片段 (可以使用 C, Java, 或 Python)，來實作一個遞迴函式，計算 n! (n 階乘)。<br /></li>
+<li>請說明梯度下降 (Gradient Descent) 在神經網路訓練中的作用，並簡述其步驟。<br /></li>
+<li>請解釋 K-fold cross-validation 的概念，以及它如何應用在模型驗證上。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0161881" class="outline-4">
+<h4 id="org0161881"><span class="section-number-4">3.2.3.</span> 程式設計題 (每題15分，共30分)</h4>
+<div class="outline-text-4" id="text-3-2-3">
+<ol class="org-ol">
+<li>給定一個 linked list 的頭節點 (head node)，請寫一個程式碼片段 (可以使用 C, Java, 或 Python) 來反轉這個 linked list。<br /></li>
+<li>給定一個二元樹的前序 (preorder) 和中序 (inorder) 遍歷結果，請寫一個程式碼片段 (可以使用 C, Java, 或 Python) 來重建這個二元樹。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org124db67" class="outline-3">
+<h3 id="org124db67"><span class="section-number-3">3.3.</span> 詳細解說答案</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org65082fd" class="outline-4">
+<h4 id="org65082fd"><span class="section-number-4">3.3.1.</span> 一、選擇題</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ol class="org-ol">
+<li>答案：(E)。 算術邏輯單元 (ALU) 負責執行算術和邏輯運算，但它並不直接控制處理器的所有操作，控制單元 (Control Unit) 才是負責控制處理器的操作並告知電腦記憶體如何響應程式指令。<br /></li>
+<li>答案：(D)。插入排序在最壞情況下的時間複雜度是 O(n^2)，而合併排序、快速排序、堆積排序在最壞情況下的時間複雜度都是 O(n log n)。<br /></li>
+<li>答案：(C)。 傳輸層 (Transport Layer) 負責提供端對端的可靠傳輸，例如 TCP 協定。<br /></li>
+<li>答案：(D)。關聯式資料庫使用結構化的表格和 SQL 語言。 NoSQL 資料庫包括鍵值對、文件、圖形和寬列式資料庫。<br /></li>
+<li>答案：(C)。將文章分類到不同的主題是一個典型的監督式學習問題，因為需要有標籤的數據來訓練模型。<br /></li>
+<li>答案：(C)。 RSA 加密系統中，n = p * q = 5 * 11 = 55。<br /></li>
+<li>答案：(A)。 二元搜尋演算法只能應用於已排序的數據。<br /></li>
+<li>答案：(D)。 CAP 定理指出，分散式資料庫系統只能保證一致性、可用性和分割容錯性中的兩個。<br /></li>
+<li>答案：(C)。 圖靈測試的目標是測試機器是否能夠模仿人類的智能。<br /></li>
+<li>答案：(E)。原型開發的主要優點是能夠在早期階段發現問題，協助建立測試計畫，並評估系統的可用性和有用性。計畫和排程在原型開發的早期階段可能不夠完善。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1c0518b" class="outline-4">
+<h4 id="org1c0518b"><span class="section-number-4">3.3.2.</span> 二、簡答題</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ol class="org-ol">
+<li>分頁 (paging) 是一種記憶體管理技術，將邏輯記憶體分割成固定大小的區塊（稱為頁面），而物理記憶體也分割成相同大小的區塊（稱為頁框）。多程式作業系統使用分頁來允許每個程式使用非連續的記憶體空間。當程式執行時，作業系統會將程式的頁面載入到物理記憶體的頁框中，並使用分頁表來記錄邏輯地址到物理地址的映射。<br /></li>
+<li><p>
+以下為 Python 的程式碼範例：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span>   <span style="color: #51afef;">def</span> <span style="color: #c678dd;">factorial</span>(n):
+<span class="linenr">2: </span>       <span style="color: #51afef;">if</span> n == <span style="color: #da8548; font-weight: bold;">0</span>:
+<span class="linenr">3: </span>           <span style="color: #51afef;">return</span> <span style="color: #da8548; font-weight: bold;">1</span>
+<span class="linenr">4: </span>       <span style="color: #51afef;">else</span>:
+<span class="linenr">5: </span>           <span style="color: #51afef;">return</span> n * factorial(n-<span style="color: #da8548; font-weight: bold;">1</span>)
+</pre>
+</div></li>
+<li>梯度下降 (Gradient Descent) 是一種優化演算法，用於訓練神經網路的權重。它通過迭代地調整權重，使得損失函數的值最小化。步驟如下：<br />
+<ul class="org-ul">
+<li>計算當前權重下損失函數的梯度。<br /></li>
+<li>根據學習率和梯度，更新權重。<br /></li>
+<li>重複以上步驟，直到損失函數收斂或達到迭代次數的上限。<br /></li>
+</ul></li>
+<li>K-fold cross-validation 是一種模型驗證技術，將數據集分成 K 個子集（稱為 fold）。然後，使用其中 K-1 個子集來訓練模型，並使用剩下的 1 個子集來驗證模型。重複這個過程 K 次，每次使用不同的子集作為驗證集。最後，平均 K 次驗證結果，以獲得更可靠的模型性能評估。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org554bfe8" class="outline-4">
+<h4 id="org554bfe8"><span class="section-number-4">3.3.3.</span> 三、程式設計題</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<ol class="org-ol">
+<li><p>
+以下為 Java 的程式碼範例：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-javascript"><span class="linenr"> 1: </span>   <span style="color: #51afef;">public</span> <span style="color: #51afef;">class</span> ListNode {
+<span class="linenr"> 2: </span>       <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">val</span>;
+<span class="linenr"> 3: </span>       ListNode next;
+<span class="linenr"> 4: </span>       ListNode(<span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">x</span>) { val = x; }
+<span class="linenr"> 5: </span>   }
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span>   <span style="color: #51afef;">public</span> ListNode reverseList(ListNode head) {
+<span class="linenr"> 8: </span>       ListNode prev = <span style="color: #a9a1e1;">null</span>;
+<span class="linenr"> 9: </span>       ListNode current = head;
+<span class="linenr">10: </span>       ListNode next = <span style="color: #a9a1e1;">null</span>;
+<span class="linenr">11: </span>       <span style="color: #51afef;">while</span> (current != <span style="color: #a9a1e1;">null</span>) {
+<span class="linenr">12: </span>           next = current.next;
+<span class="linenr">13: </span>           current.next = prev;
+<span class="linenr">14: </span>           prev = current;
+<span class="linenr">15: </span>           current = next;
+<span class="linenr">16: </span>       }
+<span class="linenr">17: </span>       head = prev;
+<span class="linenr">18: </span>       <span style="color: #51afef;">return</span> head;
+<span class="linenr">19: </span>   }
+</pre>
+</div></li>
+<li>以下為 Python 的程式碼範例：<br /></li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #51afef;">class</span> <span style="color: #ECBE7B;">TreeNode</span>:
+<span class="linenr"> 2: </span>    <span style="color: #51afef;">def</span> <span style="color: #c678dd;">__init__</span>(<span style="color: #51afef;">self</span>, val):
+<span class="linenr"> 3: </span>        <span style="color: #51afef;">self</span>.<span style="color: #dcaeea;">val</span> = val
+<span class="linenr"> 4: </span>        <span style="color: #51afef;">self</span>.<span style="color: #dcaeea;">left</span> = <span style="color: #a9a1e1;">None</span>
+<span class="linenr"> 5: </span>        <span style="color: #51afef;">self</span>.<span style="color: #dcaeea;">right</span> = <span style="color: #a9a1e1;">None</span>
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span><span style="color: #51afef;">def</span> <span style="color: #c678dd;">buildTree</span>(preorder, inorder):
+<span class="linenr"> 8: </span>    <span style="color: #51afef;">if</span> <span style="color: #51afef;">not</span> preorder <span style="color: #51afef;">or</span> <span style="color: #51afef;">not</span> inorder:
+<span class="linenr"> 9: </span>        <span style="color: #51afef;">return</span> <span style="color: #a9a1e1;">None</span>
+<span class="linenr">10: </span>
+<span class="linenr">11: </span>    <span style="color: #dcaeea;">root_val</span> = preorder
+<span class="linenr">12: </span>    <span style="color: #dcaeea;">root</span> = TreeNode(root_val)
+<span class="linenr">13: </span>
+<span class="linenr">14: </span>    <span style="color: #dcaeea;">root_index</span> = inorder.index(root_val)
+<span class="linenr">15: </span>
+<span class="linenr">16: </span>    root.<span style="color: #dcaeea;">left</span> = buildTree(preorder[<span style="color: #da8548; font-weight: bold;">1</span>:root_index+<span style="color: #da8548; font-weight: bold;">1</span>], inorder[:root_index])
+<span class="linenr">17: </span>    root.<span style="color: #dcaeea;">right</span> = buildTree(preorder[root_index+<span style="color: #da8548; font-weight: bold;">1</span>:], inorder[root_index+<span style="color: #da8548; font-weight: bold;">1</span>:])
+<span class="linenr">18: </span>
+<span class="linenr">19: </span>    <span style="color: #51afef;">return</span> root
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org594a1d1" class="outline-2">
+<h2 id="org594a1d1"><span class="section-number-2">4.</span> 清大</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org47bcbbd" class="outline-3">
+<h3 id="org47bcbbd"><span class="section-number-3">4.1.</span> 近10年趨勢</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+以下是從這些考古題中觀察到的趨勢：<br />
+</p>
+</div>
+<div id="outline-container-orgd5e83ec" class="outline-4">
+<h4 id="orgd5e83ec"><span class="section-number-4">4.1.1.</span> 基本程式概念和資料結構：</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>遞迴：有多個題目都使用遞迴概念來解題，例如將十進制數字轉換為二進制。<br /></li>
+<li>鏈結串列：考題中有要求反轉鏈結串列的實作。<br /></li>
+<li>二元樹：有考題關於二元樹的儲存方式、遍歷以及二元搜尋樹的建立。<br /></li>
+<li>堆疊：有題目要求使用堆疊來反轉相鄰的資料。<br /></li>
+<li>佇列：有題目提到佇列的相關概念。<br /></li>
+<li>雜湊表：有考題關於雜湊表的碰撞機率計算。<br /></li>
+<li>前序式、後序式：有考題要求將前序式轉換為後序式。<br /></li>
+<li>排序演算法：有提到排序演算法的相關概念，例如快速排序和合併排序。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org707f662" class="outline-4">
+<h4 id="org707f662"><span class="section-number-4">4.1.2.</span> 計算機組織與結構：</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>浮點數表示法：考題中有關於浮點數的二進制表示法以及誤差計算。<br /></li>
+<li>二補數：有題目探討二補數的表示範圍和加法運算。<br /></li>
+<li>位元運算：有題目關於位元循環移位的操作。<br /></li>
+<li>指令週期：有考題探討 CPU 的指令執行時間，包括有無 pipeline 的情況。<br /></li>
+<li>快取記憶體：雖然沒有直接的考題，但在第 30 頁有提及快取記憶體（cache）的概念。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd29aaf8" class="outline-4">
+<h4 id="orgd29aaf8"><span class="section-number-4">4.1.3.</span> 作業系統：</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<ul class="org-ul">
+<li>核心：有考題詢問作業系統核心的主要組成部分和功能，以及核心如何從使用者程式奪回控制權。<br /></li>
+<li>行程和工作佇列：考題中有關於作業系統中工作佇列和行程佇列的內容。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb6bf54" class="outline-4">
+<h4 id="orgfb6bf54"><span class="section-number-4">4.1.4.</span> 網路：</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<ul class="org-ul">
+<li>TCP/UDP：有題目比較 TCP 和 UDP 的服務差異，以及 TCP 如何偵測網路擁塞。<br /></li>
+<li>網路層：有考題詢問網路軟體的層級和功能。<br /></li>
+<li>CSMA/CD：有考題說明 CSMA/CD 的功能與運作原理。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2953f8f" class="outline-4">
+<h4 id="org2953f8f"><span class="section-number-4">4.1.5.</span> 演算法分析：</h4>
+<div class="outline-text-4" id="text-4-1-5">
+<ul class="org-ul">
+<li>時間複雜度：有題目要求分析程式的時間複雜度，並使用 big-O 符號表示。<br /></li>
+<li>遞迴關係式：考題中有遞迴關係式的分析。<br /></li>
+<li>圖論：有考題關於圖的頂點覆蓋問題和最小生成樹演算法，以及歐拉路徑的概念。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org83b6f48" class="outline-4">
+<h4 id="org83b6f48"><span class="section-number-4">4.1.6.</span> 其他：</h4>
+<div class="outline-text-4" id="text-4-1-6">
+<ul class="org-ul">
+<li>圖靈機：有題目要求設計圖靈機來執行減值操作。<br /></li>
+<li>錯誤更正碼：有題目關於錯誤更正碼的偵測和修正能力。<br /></li>
+<li>開源/閉源軟體：有考題詢問開源和閉源軟體的差異，並舉例說明。<br /></li>
+<li>邊界值分析：考題中有關於使用邊界值分析進行測試的題目。<br /></li>
+<li>生產系統：有題目要求將一個問題以生產系統的狀態和規則描述。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga516268" class="outline-4">
+<h4 id="orga516268"><span class="section-number-4">4.1.7.</span> 數學概念：</h4>
+<div class="outline-text-4" id="text-4-1-7">
+<ul class="org-ul">
+<li>機率：有考題計算雜湊碰撞的機率。<br /></li>
+<li>幾何：有題目要求計算平面上的反射點。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org54b30c9" class="outline-3">
+<h3 id="org54b30c9"><span class="section-number-3">4.2.</span> AI模擬試題</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+清華大學資訊工程學系 113 學年度「計算機概論」模擬試題<br />
+考試時間：100 分鐘<br />
+總分：100 分<br />
+</p>
+</div>
+<div id="outline-container-orgcb28b08" class="outline-4">
+<h4 id="orgcb28b08"><span class="section-number-4">4.2.1.</span> 1. 程式設計與資料結構 (30 分)</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<div id="outline-container-org32be31f" class="outline-5">
+<h5 id="org32be31f">(a) 遞迴與迭代 (10%)：</h5>
+<div class="outline-text-5" id="text-org32be31f">
+<p>
+請使用遞迴和迭代兩種方式，實作一個函數來計算費氏數列的第 n 項 (Fibonacci sequence)。並分析這兩種方式的時間複雜度。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org11c084a" class="outline-5">
+<h5 id="org11c084a">(b) 鏈結串列操作 (10%)：</h5>
+<div class="outline-text-5" id="text-org11c084a">
+<p>
+給定一個單向鏈結串列的頭節點，請實作一個函數來判斷此鏈結串列是否為迴文 (palindrome)。請分析你的演算法的時間複雜度。 (c) 二元樹與搜尋 (10%)：給定一個二元搜尋樹 (BST)，請實作一個函數來找出樹中第 k 小的元素。請分析你的演算法的時間複雜度，並解釋如何應用中序走訪 (inorder traversal)。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc793d71" class="outline-4">
+<h4 id="orgc793d71"><span class="section-number-4">4.2.2.</span> 2. 計算機組織與結構 (25 分)</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<div id="outline-container-org375db3c" class="outline-5">
+<h5 id="org375db3c">(a) 浮點數表示法 (10%)：</h5>
+<div class="outline-text-5" id="text-org375db3c">
+<p>
+假設有一個 10 位元的浮點數表示法，其中 1 位元為符號位元，5 位元為指數 (excess-15 表示法)，4 位元為尾數。請將十進制數字 -5.625 轉換為此浮點數表示法。並討論此表示法的最大和最小可表示數字。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgabaae80" class="outline-5">
+<h5 id="orgabaae80">(b) 記憶體階層 (10%)：</h5>
+<div class="outline-text-5" id="text-orgabaae80">
+<p>
+請說明快取記憶體 (cache memory) 的運作原理，並解釋快取記憶體如何提高記憶體存取速度。請比較直接映射 (direct mapping) 和集合關聯 (set-associative) 快取之間的差異。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8d44cb6" class="outline-5">
+<h5 id="org8d44cb6">(c) 指令集架構 (5%)：</h5>
+<div class="outline-text-5" id="text-org8d44cb6">
+<p>
+簡述 RISC (精簡指令集計算機) 和 CISC (複雜指令集計算機) 的主要差異，並各舉一個例子說明。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf2b7611" class="outline-4">
+<h4 id="orgf2b7611"><span class="section-number-4">4.2.3.</span> 3. 作業系統與網路 (25 分)</h4>
+<div class="outline-text-4" id="text-4-2-3">
+</div>
+<div id="outline-container-org7265ed5" class="outline-5">
+<h5 id="org7265ed5">(a) 行程管理 (10%)：</h5>
+<div class="outline-text-5" id="text-org7265ed5">
+<p>
+請解釋作業系統中的行程 (process) 和執行緒 (thread) 的概念，並比較它們之間的差異。說明行程排程演算法 (例如：FCFS, SJF, Round Robin) 的目的。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8b83b82" class="outline-5">
+<h5 id="org8b83b82">(b) 網路協定 (10%)：</h5>
+<div class="outline-text-5" id="text-org8b83b82">
+<p>
+請說明 TCP 三次握手 (three-way handshake) 的過程，並解釋為什麼需要這個過程。比較 TCP 和 UDP 在可靠性、速度和應用場景上的差異。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5d10ca0" class="outline-5">
+<h5 id="org5d10ca0">(c) 雲端運算 (5%)：</h5>
+<div class="outline-text-5" id="text-org5d10ca0">
+<p>
+簡述雲端運算 (cloud computing) 的基本概念，並說明 IaaS (基礎設施即服務)、PaaS (平台即服務) 和 SaaS (軟體即服務) 的差異。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6b3db9f" class="outline-4">
+<h4 id="org6b3db9f"><span class="section-number-4">4.2.4.</span> 4. 演算法與新興技術 (20 分)</h4>
+<div class="outline-text-4" id="text-4-2-4">
+</div>
+<div id="outline-container-orgf97d4fd" class="outline-5">
+<h5 id="orgf97d4fd">(a) 圖論演算法 (10%)：</h5>
+<div class="outline-text-5" id="text-orgf97d4fd">
+<p>
+給定一個加權無向圖，請使用 Dijkstra 演算法找出從起點到所有其他節點的最短路徑。請解釋 Dijkstra 演算法的原理，並說明其時間複雜度。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc4cccf" class="outline-5">
+<h5 id="orgcc4cccf">(b) 機器學習基礎 (10%)：</h5>
+<div class="outline-text-5" id="text-orgcc4cccf">
+<p>
+簡述機器學習 (machine learning) 中監督式學習 (supervised learning) 和非監督式學習 (unsupervised learning) 的概念，並各舉一個實際應用的例子。<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge18f2e4" class="outline-3">
+<h3 id="orge18f2e4"><span class="section-number-3">4.3.</span> 詳細解答：</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org64f60fd" class="outline-4">
+<h4 id="org64f60fd"><span class="section-number-4">4.3.1.</span> 1. 程式設計與資料結構</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<div id="outline-container-orgd354310" class="outline-5">
+<h5 id="orgd354310">(a) 遞迴與迭代</h5>
+<div class="outline-text-5" id="text-orgd354310">
+</div>
+<ul class="org-ul">
+<li><a id="org70cf138"></a>遞迴： cpp<br />
+<div class="outline-text-6" id="text-org70cf138">
+<div class="org-src-container">
+<pre class="src src-cpp"><span class="linenr">1: </span><span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">fib_recursive</span>(<span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">n</span>) {
+<span class="linenr">2: </span>  <span style="color: #51afef;">if</span> (n &lt;= <span style="color: #da8548; font-weight: bold;">1</span>) <span style="color: #51afef;">return</span> n;
+<span class="linenr">3: </span>  <span style="color: #51afef;">return</span> fib_recursive(n - <span style="color: #da8548; font-weight: bold;">1</span>) + fib_recursive(n - <span style="color: #da8548; font-weight: bold;">2</span>);
+<span class="linenr">4: </span>}
+</pre>
+</div>
+<p>
+時間複雜度為 O(2^n)，因為每個呼叫都會產生兩個新的呼叫。<br />
+</p>
+</div>
+</li>
+<li><a id="orgbd972d8"></a>迭代： cpp<br />
+<div class="outline-text-6" id="text-orgbd972d8">
+<div class="org-src-container">
+<pre class="src src-cpp"><span class="linenr"> 1: </span><span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">fib_iterative</span>(<span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">n</span>) {
+<span class="linenr"> 2: </span>  <span style="color: #51afef;">if</span> (n &lt;= <span style="color: #da8548; font-weight: bold;">1</span>) <span style="color: #51afef;">return</span> n;
+<span class="linenr"> 3: </span>  <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">prev</span> = <span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #dcaeea;">curr</span> = <span style="color: #da8548; font-weight: bold;">1</span>;
+<span class="linenr"> 4: </span>  <span style="color: #51afef;">for</span> (<span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">i</span> = <span style="color: #da8548; font-weight: bold;">2</span>; i &lt;= n; i++) {
+<span class="linenr"> 5: </span>    <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">next</span> = prev + curr;
+<span class="linenr"> 6: </span>    prev = curr;
+<span class="linenr"> 7: </span>    curr = next;
+<span class="linenr"> 8: </span>  }
+<span class="linenr"> 9: </span>  <span style="color: #51afef;">return</span> curr;
+<span class="linenr">10: </span>}
+</pre>
+</div>
+<p>
+時間複雜度為 O(n)，因為只遍歷一次迴圈。<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org3c93290" class="outline-5">
+<h5 id="org3c93290">(b) 鏈結串列操作</h5>
+<div class="outline-text-5" id="text-org3c93290">
+<ul class="org-ul">
+<li>將鏈結串列複製一份並反轉，然後比較反轉後的鏈結串列是否與原鏈結串列相同。 * 可以使用快慢指針找到鏈結串列的中點，然後反轉後一半的鏈結串列，再與前半部比較。<br /></li>
+<li>時間複雜度：O(n)，需走訪鏈結串列一次。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org375e5f6" class="outline-5">
+<h5 id="org375e5f6">(c) 二元樹與搜尋</h5>
+<div class="outline-text-5" id="text-org375e5f6">
+<ul class="org-ul">
+<li>使用中序走訪 (inorder traversal) 可以按照排序順序訪問二元搜尋樹的所有節點。<br /></li>
+<li>使用一個計數器追蹤走訪的節點數，當計數器等於 k 時，返回當前節點的值。<br /></li>
+<li>時間複雜度：O(n) 最差情況下需要走訪所有節點。平均情況下為 O(k)，如果樹平衡良好，則可以在 O(h) 的時間找到，h是樹的高度。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4911472" class="outline-4">
+<h4 id="org4911472"><span class="section-number-4">4.3.2.</span> 2. 計算機組織與結構</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<div id="outline-container-orgad1d5ec" class="outline-5">
+<h5 id="orgad1d5ec">(a) 浮點數表示法</h5>
+<div class="outline-text-5" id="text-orgad1d5ec">
+<ul class="org-ul">
+<li>-5.625 的二進制表示為 -101.101。<br /></li>
+<li>將其標準化為 -1.01101 x 2^2。<br /></li>
+<li>符號位元：1 (負數)<br /></li>
+<li>指數：2 + 15 = 17，二進制為 10001<br /></li>
+<li>尾數：01101 (取小數部分，不足補 0)<br /></li>
+<li>因此，表示為 1 10001 0110。<br /></li>
+<li>最大可表示數字：約為 (1.1111) 2^15<br /></li>
+<li>最小可表示數字：約為 (1.0000) 2^-15<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf857fe1" class="outline-5">
+<h5 id="orgf857fe1">(b) 記憶體階層</h5>
+<div class="outline-text-5" id="text-orgf857fe1">
+<ul class="org-ul">
+<li>快取記憶體是一個小而快的記憶體，用於儲存經常存取的資料，以減少 CPU 從主記憶體讀取資料的時間。 * 直接映射快取：每個主記憶體區塊只能映射到快取中的一個特定位置。<br /></li>
+<li>集合關聯快取：每個主記憶體區塊可以映射到快取中多個特定位置的集合，提供更高的靈活性和較低的碰撞率。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org70b1bab" class="outline-5">
+<h5 id="org70b1bab">(c) 指令集架構</h5>
+<div class="outline-text-5" id="text-org70b1bab">
+<ul class="org-ul">
+<li>RISC：指令集簡化，指令長度固定，硬體實現簡單，執行速度快。例如：ARM。<br /></li>
+<li>CISC：指令集複雜，指令長度不固定，硬體實現複雜，功能強大。例如：Intel x86。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2147363" class="outline-4">
+<h4 id="org2147363"><span class="section-number-4">4.3.3.</span> 3. 作業系統與網路</h4>
+<div class="outline-text-4" id="text-4-3-3">
+</div>
+<div id="outline-container-org53d2b00" class="outline-5">
+<h5 id="org53d2b00">(a) 行程管理</h5>
+<div class="outline-text-5" id="text-org53d2b00">
+<ul class="org-ul">
+<li>行程：程式執行時的實例，包含程式碼、資料、堆疊、和程式計數器等資源，是作業系統進行資源分配和調度的基本單位。<br /></li>
+<li>執行緒：行程內的一個執行單元，多個執行緒共享同一行程的資源，因此執行緒間的切換比行程切換快。<br /></li>
+<li>行程排程演算法：<br />
+<ul class="org-ul">
+<li>FCFS (First Come First Served)：先到先服務，依據行程到達的先後順序執行。<br /></li>
+<li>SJF (Shortest Job First)：最短工作優先，優先執行所需時間最短的行程。<br /></li>
+<li>Round Robin：循環排程，每個行程執行一段時間後，輪流執行下一個行程。<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc140830" class="outline-5">
+<h5 id="orgc140830">(b) 網路協定</h5>
+<div class="outline-text-5" id="text-orgc140830">
+<ul class="org-ul">
+<li><p>
+TCP 三次握手：<br />
+</p>
+<ol class="org-ol">
+<li>客戶端發送 SYN 封包到伺服器。<br /></li>
+<li>伺服器收到 SYN 後，回覆 SYN-ACK 封包給客戶端。<br /></li>
+<li>客戶端收到 SYN-ACK 後，發送 ACK 封包給伺服器。<br /></li>
+</ol>
+<p>
+此過程用於建立可靠的 TCP 連線，並協商雙方初始序列號。<br />
+</p></li>
+<li>TCP：可靠傳輸、面向連線、有流量控制和擁塞控制。適用於檔案傳輸、網頁瀏覽。<br /></li>
+<li>UDP：不可靠傳輸、無連線、速度快，但沒有流量控制。適用於串流媒體、線上遊戲。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8767344" class="outline-5">
+<h5 id="org8767344">(c) 雲端運算</h5>
+<div class="outline-text-5" id="text-org8767344">
+<ul class="org-ul">
+<li>雲端運算：通過網路提供可擴展的計算資源。<br /></li>
+<li>IaaS：提供虛擬機、儲存和網路等基礎設施，用戶需自行管理作業系統和應用程式。<br /></li>
+<li>PaaS：提供開發平台和工具，用戶可在此平台上開發和部署應用程式。<br /></li>
+<li>SaaS：提供現成的應用軟體，用戶直接使用即可。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf8e4c5a" class="outline-4">
+<h4 id="orgf8e4c5a"><span class="section-number-4">4.3.4.</span> 4. 演算法與新興技術</h4>
+<div class="outline-text-4" id="text-4-3-4">
+</div>
+<div id="outline-container-orgc13bcbf" class="outline-5">
+<h5 id="orgc13bcbf">(a) 圖論演算法</h5>
+<div class="outline-text-5" id="text-orgc13bcbf">
+<ul class="org-ul">
+<li>Dijkstra 演算法：從起點開始，維護一個最短路徑集合，並逐步擴展到其他節點，直到找到所有節點的最短路徑。<br /></li>
+<li>時間複雜度：O(E log V)，其中 E 為邊的數量，V 為頂點的數量。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf1a6810" class="outline-5">
+<h5 id="orgf1a6810">(b) 機器學習基礎</h5>
+<div class="outline-text-5" id="text-orgf1a6810">
+<ul class="org-ul">
+<li>監督式學習：使用標記過的資料進行訓練，讓模型學習從輸入到輸出的對應關係。例如：圖像分類、語音辨識。<br /></li>
+<li>非監督式學習：使用未標記的資料進行訓練，讓模型自行找出資料中的模式和結構。例如：分群、降維。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org681fd47" class="outline-2">
+<h2 id="org681fd47"><span class="section-number-2">5.</span> 成大</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgbdb7bbc" class="outline-3">
+<h3 id="orgbdb7bbc"><span class="section-number-3">5.1.</span> 近10年趨勢</h3>
+</div>
+<div id="outline-container-org3c2e11e" class="outline-3">
+<h3 id="org3c2e11e"><span class="section-number-3">5.2.</span> AI模擬試題</h3>
+</div>
+</div>
+<div id="outline-container-org757cb40" class="outline-2">
+<h2 id="org757cb40"><span class="section-number-2">6.</span> 中央</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgfd8dad6" class="outline-3">
+<h3 id="orgfd8dad6"><span class="section-number-3">6.1.</span> 近10年趨勢</h3>
+</div>
+<div id="outline-container-orga195eb5" class="outline-3">
+<h3 id="orga195eb5"><span class="section-number-3">6.2.</span> AI模擬試題</h3>
+</div>
+</div>
+<div id="outline-container-org965cbf5" class="outline-2">
+<h2 id="org965cbf5"><span class="section-number-2">7.</span> 北大</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org77cefa0" class="outline-3">
+<h3 id="org77cefa0"><span class="section-number-3">7.1.</span> 近10年趨勢</h3>
+</div>
+<div id="outline-container-orga107b79" class="outline-3">
+<h3 id="orga107b79"><span class="section-number-3">7.2.</span> AI模擬試題</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung-Chin Yen</p>
+<p class="date">Created: 2025-01-26 Sun 19:18</p>
+</div>
+</body>
+</html>

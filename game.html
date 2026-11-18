@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1A2B Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+            width: 200px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        #message {
+            margin-top: 20px;
+        }
+        #history {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1A2B 猜數字遊戲</h1>
+    <p>請猜一個不重複的 4 位數字：</p>
+    <input type="text" id="guessInput" maxlength="4" placeholder="輸入4位數字">
+    <button onclick="checkGuess()">送出猜測</button>
+
+    <div id="message"></div>
+    <div id="history"></div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>

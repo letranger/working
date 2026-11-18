@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-06-20 Fri 20:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20250621-AI教學應用原理實作[金門場]</title>
+<meta name="author" content="顏永進" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20250621-AI教學應用原理實作[金門場]</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9aa0681">1. 課程規劃</a>
+<ul>
+<li><a href="#org925f4be">1.1. 目的</a></li>
+<li><a href="#orgd6a8ac9">1.2. 課程內容</a></li>
+</ul>
+</li>
+<li><a href="#org2e65a6a">2. AI應用(上午)</a>
+<ul>
+<li><a href="#org74a45d7">2.1. 教/學科技的演化之路</a></li>
+<li><a href="#orgd71c917">2.2. 生成式AI工具類型</a></li>
+<li><a href="#org0eeaa1b">2.3. AI融入各階段教學情境</a></li>
+<li><a href="#orgfdc606c">2.4. 你應該知道的AI使用技巧</a></li>
+<li><a href="#org8c723e7">2.5. AI融入教學注意事項、風險與對策</a></li>
+<li><a href="#org7df4c81">2.6. Vibe Coder</a></li>
+</ul>
+</li>
+<li><a href="#orga580931">3. AI原理(下午)</a></li>
+</ul>
+</div>
+</div>
+<a href="https://letranger.github.io/working/20250621-AI教學實務與實作(金門).html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/20250621-AI教學實務與實作(金門).svg?style=plastic"/></a>
+<div id="outline-container-org9aa0681" class="outline-2">
+<h2 id="org9aa0681"><span class="section-number-2">1.</span> 課程規劃</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org925f4be" class="outline-3">
+<h3 id="org925f4be"><span class="section-number-3">1.1.</span> 目的</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+當代AI工具已能有效輔助教學設計與實施，特別適合一般科目教師應用於備課、教學與評量。本研習PART #1[上午場]將以生成式AI為起點，從課堂應用實例出發，介紹多種免費易用的平台與工具，幫助教師提升教學效率與學生參與度。下午[PART #2]則進一步說明AI原理，讓老師從「會用」進一步理解「為什麼能這樣用」，強化教學整合的信心與能力。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd6a8ac9" class="outline-3">
+<h3 id="orgd6a8ac9"><span class="section-number-3">1.2.</span> 課程內容</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>教育部人工智慧技術應用與人才培育計畫-中小學推廣教育<br /></li>
+<li>AI 教學與實作推廣研習(金門場次)<br /></li>
+<li>研習時間:114 年 06 月 21 日（星期六）09:00 - 16:00<br /></li>
+<li>研習地點:國立金門高級農工職業學校電腦教室(金門縣金湖鎮復興路1 之 11 號)<br /></li>
+</ul>
+
+<div id="org1e46ea3" class="figure">
+<p><img src="images/2025-06-17_12-16-02.png" alt="2025-06-17_12-16-02.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>課程時間表</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2e65a6a" class="outline-2">
+<h2 id="org2e65a6a"><span class="section-number-2">2.</span> AI應用(上午)</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://padlet.com/letranger1/ai-f0683ljrtwj7eyn5">AI開外掛，教學變厲害(Padlet)</a><br /></li>
+</ul>
+</div>
+<div id="outline-container-org74a45d7" class="outline-3">
+<h3 id="org74a45d7"><span class="section-number-3">2.1.</span> 教/學科技的演化之路</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<div id="org866f33c" class="figure">
+<p><img src="images/教_學科技的演化之路 - visual selection.png" alt="教_學科技的演化之路 - visual selection.png" width="800" /><br />
+</p>
+<p><span class="figure-number">Figure 2: </span>不同時期的教/學科技</p>
+</div>
+</div>
+<div id="outline-container-org865aca1" class="outline-4">
+<h4 id="org865aca1"><span class="section-number-4">2.1.1.</span> 展示型科技時期</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+展示型科技時期(Technology as Presentation Tool):這個階段的教學科技僅限於展示與傳遞資訊，教師使用科技工具來輔助教學，但學生的互動性較低。<br />
+</p>
+<ul class="org-ul">
+<li>代表工具：<br />
+<ul class="org-ul">
+<li>幻燈片<br /></li>
+<li>投影機<br /></li>
+<li>PowerPoint<br /></li>
+<li>數位教材、作業、考卷<br /></li>
+</ul></li>
+<li>教學方式：教師主導，學生被動接收資訊。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge87e47e" class="outline-4">
+<h4 id="orge87e47e"><span class="section-number-4">2.1.2.</span> 互動型科技時期</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+互動型科技時期(Technology as Teaching/Learning Tool):隨著電腦軟硬體的發展，科技開始成為教學與學習的互動媒介，學生能夠透過科技進行主動學習與練習，同時也開始能支援有限度的個別化學習與即時回饋。<br />
+</p>
+<ul class="org-ul">
+<li>代表工具：<br />
+<ul class="org-ul">
+<li>電腦輔助教學(CAI)<br /></li>
+<li>電腦輔助測驗(CAT)<br /></li>
+<li>電腦輔助學習(CAL)<br /></li>
+</ul></li>
+<li>教學方式：教師設計學習流程，學生能透過科技主動練習與測試。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org154a341" class="outline-4">
+<h4 id="org154a341"><span class="section-number-4">2.1.3.</span> 整合型科技時期</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<p>
+整合型科技時期(Technology as All-in-one Tool):當網頁技術與雲端服務興起後，科技開始整合多種功能，成為一個全面的教學與學習平台。這個階段的科技能夠集中管理教學資源、作業、討論與評量，並提供即時的學習歷程追蹤與分析。<br />
+</p>
+<ul class="org-ul">
+<li>代表工具：<br />
+<ul class="org-ul">
+<li>整合式教學平台(如 Moodle)<br /></li>
+<li>教學管理系統(LMS)<br /></li>
+<li>線上評量系統<br /></li>
+</ul></li>
+<li>教學方式：教學資源、作業、討論、評量集中管理，提升效率與可控性。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbed47fd" class="outline-4">
+<h4 id="orgbed47fd"><span class="section-number-4">2.1.4.</span> 智慧型科技時期</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<p>
+智慧型科技時期(Technology as Intelligent Partner):隨著AI與生成式AI的發展，科技開始具備智能化的特徵，能夠理解學生需求、提供個別化支援與即時建議。這個階段的科技不僅是工具，更成為教師的教學夥伴，能夠協助設計教案、生成內容與評量。<br />
+</p>
+<ul class="org-ul">
+<li>代表工具：<br />
+<ul class="org-ul">
+<li>AI 工具：學習歷程分析、自適應學習系統、智能評量<br /></li>
+<li>生成式 AI 工具：ChatGPT、Copilot、Gemini、自動出題與批改工具<br /></li>
+</ul></li>
+<li>教學方式：科技成為教學夥伴，能與教師共同設計教案、提供學生即時建議與支援。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd71c917" class="outline-3">
+<h3 id="orgd71c917"><span class="section-number-3">2.2.</span> 生成式AI工具類型</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<div id="org5529062" class="figure">
+<p><img src="images/生成式AI工具類型 - visual selection.png" alt="生成式AI工具類型 - visual selection.png" width="800" /><br />
+</p>
+<p><span class="figure-number">Figure 3: </span>生成式AI工具類型</p>
+</div>
+</div>
+<div id="outline-container-orge67e8d0" class="outline-4">
+<h4 id="orge67e8d0"><span class="section-number-4">2.2.1.</span> 通用型(基礎模型)</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div>
+<div id="outline-container-orgb42464d" class="outline-5">
+<h5 id="orgb42464d">1) ChatGPT</h5>
+<div class="outline-text-5" id="text-orgb42464d">
+<p>
+ChatGPT 是 OpenAI 開發的人工智慧聊天機器人，能夠進行自然語言對話、回答問題、生成文字等。它的功能強大且易於使用，適合用於各種教學場景，如教案設計、考題生成、學生互動等。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd4b5a06" class="outline-5">
+<h5 id="orgd4b5a06">2) Claude</h5>
+<div class="outline-text-5" id="text-orgd4b5a06">
+<p>
+Claude 目前進入 3.5 Sonnet 版本，除了用 AIGC 生成文字，更特別的功能是可以透過自然語言處理(NLP)模型產出程式，讓沒有系統性學習過程式語言的人，也能在短時間內完成網頁設計、遊戲動畫。目前也加入 Artifect 功能，讓 AI 在產生程式代碼的同時，也能於操作介面的右邊欄位預覽代碼執行後的成果。詳細如何使用 Claude，可以參考〈Claude 3.5讓文組寫程式：AI浪潮該學什麼〉。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7d1c84a" class="outline-5">
+<h5 id="org7d1c84a">3) Gemini</h5>
+<div class="outline-text-5" id="text-org7d1c84a">
+<p>
+Gemini 利用 AI 協助用戶獲取資訊、解決問題，並激發創造力。它的功能和 ChatGPT 類似，同樣可以聊天對話、產出文字，不過 Gemini 的特色是能提供 3 個不同的文字草稿做選擇，點擊生成內容下方的「Regenerate response(重新產生回應)」還可以再次產生不同回答。<br />
+</p>
+<ul class="org-ul">
+<li>Gemini 是 Google 發佈的人工智慧聊天工具，過去的測試版命名為 Bard，現在已升級更名為 Gemini。<br /></li>
+<li>表格可以匯出到Google試算表<br /></li>
+<li>可要求Google對於生成內容進行查核<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeb32a4b" class="outline-5">
+<h5 id="orgeb32a4b">4) Copilot</h5>
+<div class="outline-text-5" id="text-orgeb32a4b">
+<p>
+Copilot 同樣可以 AIGC 生成文字，是一款由微軟設計的人工智慧聊天機器人助理，使用方式為進入 Copilot 官網，登入免費微軟帳戶，即可以開始與 AI 機器人互動。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe636e6" class="outline-5">
+<h5 id="orgfe636e6">5) LLAMA</h5>
+<div class="outline-text-5" id="text-orgfe636e6">
+<p>
+LLaMA（Large Language Model Meta AI）是由 Meta（臉書母公司）開發的大型語言模型，主要提供學術與研究用途。LLaMA 強調的是模型的高效性與精準度，在公開社群中引起廣泛討論。雖然不是完全開源，但許多教育單位與開發者已利用其模型進行教學平台或教案輔助設計。<br />
+</p>
+<ul class="org-ul">
+<li>模型版本包含 LLaMA 1、LLaMA 2，LLaMA 3<br /></li>
+<li>開放模型參數（需申請授權使用），部分限制商業使用<br /></li>
+<li>適合有程式背景的教師，進行客製化模型實驗或教育研究<br /></li>
+<li>可透過 Hugging Face 或多個開源社群取得範例模型與工具包<br /></li>
+<li>優點為效能佳、可微調訓練，缺點是使用門檻較高、授權條件複雜<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb0f6cb7" class="outline-5">
+<h5 id="orgb0f6cb7">6) MISTRAL</h5>
+<div class="outline-text-5" id="text-orgb0f6cb7">
+<p>
+Mistral 是一家法國新創 AI 公司開發的開源語言模型，以其 <b><b>真正開源（Apache 2.0 授權）</b></b> 著稱，允許自由下載、修改與商業使用。其代表模型如 Mistral 7B 和 Mixtral 8x7B（稀疏專家模型），性能優異且部署容易，是目前最受推崇的「教育友善」開源模型之一。<br />
+</p>
+<ul class="org-ul">
+<li>採用 Apache 2.0 開源授權，可自由商用、修改與再訓練<br /></li>
+<li>支援低資源設備運行，易於本地端建置、離線部署<br /></li>
+<li>社群活躍、範例程式與教學資源豐富<br /></li>
+<li>非常適合推動 AI 自主學習課程、跨校開源實作競賽等<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org420f395" class="outline-5">
+<h5 id="org420f395">LLAMA與MISTRAL的開源</h5>
+<div class="outline-text-5" id="text-org420f395">
+<p>
+Meta的Llama和Mistral AI的語言模型，其「開源」主要是指模型權重（model weights）和原始程式碼的公開釋出。這使得開發者、研究人員和廣大社群能夠自由地存取、修改、並在這些模型的基礎上進行客製化開發。然而，二者的「開源」並不完全等同於傳統開源軟體中無限制的自由，而是各自附帶了特定的授權條款。<br />
+</p>
+
+<p>
+我們可以將它們的開源想像成提供一份詳細的「大腦」藍圖和其完整的「知識」內容。開發者可以利用這份藍圖和知識，進行微調（fine-tuning）以適應特定任務，或者將其整合到自己的應用程式中。對於Llama和Mistral模型而言，其開源的核心在於以下幾個層面：<br />
+</p>
+
+<ol class="org-ol">
+<li>模型權重 (Model Weights): 這是模型經過大量資料訓練後所學習到的參數，是模型「知識」的核心。開發者可以直接使用這些權重來進行推論（inference），或在此基礎上進行進一步的訓練。<br /></li>
+<li>原始程式碼 (Source Code): 提供了運行和使用模型的程式碼，讓使用者了解模型的架構和運作方式。<br /></li>
+<li>社群驅動的創新生態: 開源讓全球的開發者能共同為模型的改進做出貢獻，例如開發新的應用、找出並修復潛在問題，以及分享微調後的模型，形成了一個蓬勃發展的生態系。<br /></li>
+</ol>
+
+<p>
+儘管都屬於開源，Llama和Mistral在授權上有著關鍵的不同，這也決定了其商業應用的範疇：<br />
+</p>
+<ul class="org-ul">
+<li>Meta Llama 系列 (例如 Llama 3): Llama 3 採用的是一份特製的「Llama 3 社群授權條款」（Llama 3 Community License）。這份授權雖然允許了廣泛的使用和修改，但設有重要的商業限制：<br />
+<ol class="org-ol">
+<li>商業使用限制: 如果您的產品或服務的每月活躍使用者超過7億，您需要向Meta申請特別授權才能使用Llama 3。這項條款主要是為了防止大型科技公司直接利用Meta的成果與其競爭。<br /></li>
+<li>非傳統開源: 自由軟體基金會（Free Software Foundation）認為Llama 3的授權條款並不符合其對「自由軟體」的定義，主要是因為上述的商業限制。<br /></li>
+</ol></li>
+<li>Mistral AI: 採取了更多元化的授權策略<br />
+<ol class="org-ol">
+<li>Mistral的部分模型（例如 Mistral 7B）採用了極為寬鬆的Apache 2.0授權。這是一個非常商業友善的授權，幾乎沒有任何商業使用的限制，允許使用者自由地進行商業化應用。<br /></li>
+<li>非商業授權 (Non-Production License) / 研究授權 (Research License): 對於一些更先進或特定的模型，Mistral則可能採用限制性較高的授權，僅供學術研究或非商業性質的測試使用。<br /></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3d40e93" class="outline-4">
+<h4 id="org3d40e93"><span class="section-number-4">2.2.2.</span> 客製化AI: POE, GPTs, Google AI Studio</h4>
+<div class="outline-text-4" id="text-2-2-2">
+</div>
+<div id="outline-container-orgbefa54f" class="outline-5">
+<h5 id="orgbefa54f">1) POE</h5>
+<div class="outline-text-5" id="text-orgbefa54f">
+<ul class="org-ul">
+<li><a href="https://poe.com/create_bot">POE</a> 是一個由 Quora 開發的 AI 聊天平台，提供多種 AI 模型供使用者選擇，包括 ChatGPT、Claude、Gemini 等。使用者可以在 POE 上與不同的 AI 模型互動，並根據自己的需求選擇最適合的模型進行對話。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org157578e" class="outline-5">
+<h5 id="org157578e">2) GPTs</h5>
+<div class="outline-text-5" id="text-org157578e">
+<ul class="org-ul">
+<li><a href="https://chatgpt.com/gpts">GPTs</a> 是 OpenAI 推出的 AI 聊天平台，提供多種 AI 模型供使用者選擇，包括 ChatGPT、Claude、Gemini 等。使用者可以在 GPTs 上與不同的 AI 模型互動，並根據自己的需求選擇最適合的模型進行對話。<br /></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="orgc4f361d"></a>實作示範(<a href="https://chatgpt.com/g/g-68369e7981008191a1fe40515271a426-cheng-shi-zuo-ye-xiao-zhu-jiao">GPTs 程式作業小助教</a>)<br />
+<div class="outline-text-6" id="text-orgc4f361d">
+<pre class="example" id="org623ecb9">
+你是一位有耐心且擅長引導學生思考的程式設計老師，教學對象是高中的程式設計初學者，使用的語言是 Python。
+當學生提供一個題目時，請扮演一位引導式教學的老師，不要直接給出完整答案，而是以逐步引導和提問互動的方式，幫助學生理解問題並自己想出解法。請依照以下步驟進行：
+釐清題目：先幫助學生理解題目的需求，可以詢問他們是否知道輸入與輸出是什麼、有哪些條件或限制。
+拆解流程：引導學生將解題邏輯拆成幾個小步驟，並問他們每一步可能需要做什麼(例如：讀取輸入、處理資料、使用哪些語法或結構)。
+提示語法與概念：根據學生卡關的地方，給予關鍵的 Python 語法或概念提示(如：for 迴圈、if 判斷、字串處理等)，但不要直接給出程式碼。
+提問式引導：當學生卡住時，請不要直接給答案，而是提出問題來幫助他們自己思考(例如：「你覺得這段資料要用什麼結構儲存比較方便？」、「這裡需不需要判斷條件呢？」)
+鼓勵與回饋：對學生的回應給予正面回饋，並針對他們的想法進一步引導。即使不完全正確，也請以鼓勵和修正的方式互動。
+確認理解：在學生逐步完成後，協助他們檢查整體邏輯是否正確，並確認他們是否真正理解了解題過程與背後的原理。
+你的目標是建立學生的解題能力與邏輯思維，幫助他們一步一步學會如何用 Python 解題，而不是代為寫出正確答案。
+首先要求學生貼上程式設計的題目，然後依照上述步驟進行引導，直到學生完成解題為止。
+</pre>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org3fbe635" class="outline-5">
+<h5 id="org3fbe635">3) Google AI Studio</h5>
+<div class="outline-text-5" id="text-org3fbe635">
+<ul class="org-ul">
+<li><a href="https://aistudio.google.com">Google AI Studio</a> 是 Google 推出的 AI 聊天平台，提供多種 AI 模型供使用者選擇，包括 ChatGPT、Claude、Gemini 等。使用者可以在 Google AI Studio 上與不同的 AI 模型互動，並根據自己的需求選擇最適合的模型進行對話。<br /></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org261bbed"></a>實作示範(<a href="https://service-405018439480.us-west1.run.app/">AI Studio程式題庫小助手</a>)<br />
+<div class="outline-text-6" id="text-org261bbed">
+<pre class="example" id="org3bd7cb2">
+### 任務說明(Task Instruction)
+您是一位具備跨領域教學設計能力的教師，專門協助台灣教師設計Python程式設計題目。目標是透過「程式題庫小助手」的教學主題，協助設計完整題庫。
+### 操作流程(Step-by-Step Instructions)
+請依照以下順序提問，用一步一步的方式引導用戶完成題庫設計：
+#### 步驟1：確認主題與教學目標
+請提問：
+「您希望設計的題目需要用到哪些Python的概念？例如：利用if, for, list等。」
+「希望設計的題目難度為何？由1到5來描述試題難度。」
+#### 步驟2：確認學習對象與年級
+請提問：
+「這個題目是設計給哪個年級或學習階段的學生？例如：高一資訊課程，或是國中資優班。」
+### 題目格式(Markdown 表格)
+**1. 題目描述**
+  描述題目要求
+**2. 輸入說明**
+  描述輸入格式與範例
+**3. 輸出說明**
+  描述輸出格式與範例
+**4. 測試範例**
+  - 輸入: 程式輸入範例
+  - 輸出: 程式輸出範例
+**5. 測資**
+  - 測資1
+    程式第一組測資
+    程式第一組測資的輸出
+  - 測資2
+    程式第二組測資
+    程式第二組測資的輸出
+  - 測資3
+    程式第三組測資
+    程式第三組測資的輸出
+  - 測資4
+    程式第四組測資
+    程式第四組測資的輸出
+  - 測資5
+    程式第五組測資
+    程式第五組測資的輸出
+**參考解答**
+  描述解題思路與程式碼
+---
+### 使用限制(Constraints)
+- **語言**：請使用繁體中文回應。
+- **風格**：語氣親切但專業，條理清晰。
+- **格式**：最終教案以 Markdown 表格形式呈現，便於教師後續使用或列印。
+### 教師輸入範例
+```json
+{
+  "主題": "Python程式設計，以for, if解題",
+  "年級": "高二",
+  "目標": "能結合for和if來解決問題",
+}
+</pre>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgc5cff16" class="outline-5">
+<h5 id="orgc5cff16">4) AI代理大市集</h5>
+<div class="outline-text-5" id="text-orgc5cff16">
+<ul class="org-ul">
+<li><a href="https://taipinshe.notion.site/">AI代理大市集</a><br /></li>
+</ul>
+
+<div id="orgaca50fc" class="figure">
+<p><img src="images/2025-06-02_20-51-31.png" alt="2025-06-02_20-51-31.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 4: </span>AI Agent Marketplace</p>
+</div>
+
+<p>
+以下的分類是tag，非category<br />
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org0307906"></a>課程設計<br />
+<div class="outline-text-6" id="text-org0307906">
+<ol class="org-ol">
+<li><a href="https://poe.com/curriculum_markdown">#1 Curriculum_AI代理產出四節課</a>: 使用者輸入文章，AI代理產出四節課的課程。<br /></li>
+<li><a href="https://chatgpt.com/g/g-PFgWL48BF-xue-xi-mu-biao-xiao-jing-ling-shuang-xiang-xi-mu-biao">#23 學習目標小精靈-雙向細目表</a>: 學習目標小精靈-雙向細目表<br /></li>
+<li><a href="https://poe.com/CurriculumPlanner">#56 CurriculumPlanner【課程計畫】</a>:請輸入課程名稱，我將為您產生課程目標、課程內涵與課程實施方式。<br /></li>
+<li><a href="https://chatgpt.com/g/g-lOqxFYqb5-ke-cheng-chuang-zuo-jia">#123 課程創作家GPT</a>: 可上傳PDF, 根據使用者上傳的文件設計適合國小或國中學生的20節課程。它會分析文件內容，並根據文件的主題和重要資訊設計出課程計劃，包括每節課的目標、名稱、內容、活動步驟和評量方法。每一節課的評量將提供詳細的表格，欄位包括評量目標和評量活動。它會考慮到學生的學習特點和需求，確保課程有趣且具挑戰性。<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org6a81db4"></a>學科學習:<br />
+<div class="outline-text-6" id="text-org6a81db4">
+<ol class="org-ol">
+<li><a href="https://poe.com/ElementalRobot">#52 ElementalRobot</a>: 我需要你輸入的主體物件名稱,才能幫你詳細規劃裡面的元素和人物活動。比如說,你可以輸入咖啡廳、書店、廚房、臥室等等。我會根據不同的主體物件,規劃出具體的內部元素和人物動作,讓回覆更加完整和有意義。請你試著輸入一個具體的主體物件名稱,我就能為你提供更詳細的規劃。<br /></li>
+<li><a href="https://poe.com/MathExercises">#57 MathExercises</a>: 請給我參考的數學題目，我將為您變更數據重新出題。數學題重新出題。<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org67c1fc2"></a>評量設計<br />
+<div class="outline-text-6" id="text-org67c1fc2">
+<ol class="org-ol">
+<li><a href="https://poe.com/Assessment_Criteria">#19 Assessment_Criteria</a>: 輸入學習目標，AI會依據學習目標提供評量標準A-E。<br /></li>
+<li><a href="https://poe.com/Learn_suggestions">#44 Learn_suggestions</a>: 請輸入學生的學習表現，我將為您產生學習評語。也能為您產生一系列的學習活動建議。<br /></li>
+<li><a href="https://poe.com/5QuizQuiz">#46 5QuizQuiz</a>: 請輸入文章，我會為您產生5道題目。<br /></li>
+<li><a href="https://poe.com/ENG_quiz">#47 ENG_quiz</a>: 請輸入英語的文章內容，我將為您產生3題閱讀情境題以及2題文法題。<br /></li>
+<li><a href="https://poe.com/Students-feedback">#67 Students-feedback</a>: 輸入學生優、缺點，產生期末評語。<br /></li>
+<li><a href="https://poe.com/Measurement.AI">#120 標準本位評量規準設計機器人</a>: 能根據學習目標，設計A-E五個等級的評量標準。<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org217d35d"></a>文章寫作:<br />
+<div class="outline-text-6" id="text-org217d35d">
+<ol class="org-ol">
+<li><a href="https://poe.com/ORIDwriter">#26 ORID Writer</a>: ORID心得寫作機器人，能協助使用者撰寫ORID格式的心得文章。<br /></li>
+<li><a href="https://chatgpt.com/g/g-lYbjjRnsk-wen-zhang-gai-xie">#78 文章改寫機器人(謹慎使用)</a>: 避免文章抄襲的問題，請謹慎使用。<br /></li>
+<li><a href="https://chatgpt.com/g/g-Lq7UjNxjV-lun-wen-xie-shou">#79 論文寫手</a>: 能協助使用者撰寫論文，提供結構、內容和參考資料等建議。<br /></li>
+<li><a href="https://chatgpt.com/g/g-AB3vyEp0a-zuo-wen-yin-dao-zhu-shou">#137 作文引導助手</a>: 輸入作文題目，AI會提供作文大綱、段落結構、關鍵詞等。<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org208bdae"></a>學生學習<br />
+<div class="outline-text-6" id="text-org208bdae">
+<ol class="org-ol">
+<li><a href="https://poe.com/TestingMCQs">#11 TestingMCQs</a>: 透過ai協助您編寫故事，ai並且在故事中提供選擇題，讓你選擇接下來的劇情。<br /></li>
+<li><a href="https://poe.com/BotD4Q91J4BN7">#18 寫作自學小助手</a>: 針對各種寫作文體與寫作技巧提供引導與提示<br /></li>
+<li><a href="https://poe.com/Coloring_Book_Art">#32 Coloring_Book_Art</a>: 生成的圖形可供幼小學生著色(線條圖)，並適合紙筆評量圖形所需<br /></li>
+<li><a href="https://poe.com/SuperSunoMaster">#37 SuperSunoMaster</a>: 輸入音樂風格、樂器等，AI會生成一首音樂。<br /></li>
+<li><a href="https://huggingface.co/spaces/playgroundai/playground-v2.5">#117 playground-v2.5</a>: 圖片生成，不限點數。<br /></li>
+<li><a href="https://poe.com/inventor01">#149 專題產生器(arduino microbit esp32等)</a>: 我是帶領發明專題的助理，請告訴我你想發明甚麼類型的專題你可以告訴我(選擇一種方式)<br />
+<ol class="org-ol">
+<li>題目(例如：智慧垃圾桶)<br /></li>
+<li>感測器+反應器+粗略的方向(例如：光敏電阻+竹樂器+可互動)<br /></li>
+<li>大方向(例如：有關防疫的)<br /></li>
+<li>給我幾個題目(例如：給我5個題目)<br /></li>
+</ol></li>
+</ol>
+</div>
+</li>
+<li><a id="orgd204db9"></a>摘要整理<br />
+<div class="outline-text-6" id="text-orgd204db9">
+<ol class="org-ol">
+<li><a href="https://poe.com/Mindmap_ch_mark">#20 Markmap中文摘要</a>: 使用者輸入文章，AI代理摘要重點成mindmap，以markdown語法呈現。<br /></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org79dbcd7" class="outline-4">
+<h4 id="org79dbcd7"><span class="section-number-4">2.2.3.</span> 特定目的型AI工具</h4>
+<div class="outline-text-4" id="text-2-2-3">
+
+<div id="org6ae0c3a" class="figure">
+<p><img src="images/特定目的型AI工具.png" alt="特定目的型AI工具.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 5: </span>特定目的型AI工具</p>
+</div>
+</div>
+<div id="outline-container-org81b63ab" class="outline-5">
+<h5 id="org81b63ab">1) 圖片生成</h5>
+<div class="outline-text-5" id="text-org81b63ab">
+<p>
+除了 AIGC 文字，使用者也開始運用 AI 生成自己所需的圖片，不用在圖庫網站大海撈針找尋素材，若是簡單的示意圖，也可以直接使用 AI，減少親自拍攝、繪製的時間和成本。<br />
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org64d537c"></a>Bing Image Creator<br />
+<div class="outline-text-6" id="text-org64d537c">
+<ul class="org-ul">
+<li>微軟的 Bing Image Creator 是一個免費的圖片生成工具，使用者可以透過簡單的文字指令，生成各種風格的圖片。這個工具特別適合用於創意設計和藝術創作，讓使用者能夠輕鬆地探索不同的視覺風格。<br /></li>
+<li>Bing Image Creator是微軟搜尋引擎 Bing 的免費圖片生成技術，只要輸入需求圖片的指令，給予大略的視覺描述，大約30秒就能產生圖片，不喜歡還可以再次生成，讓 Image Creator 提案第二版。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org369760d"></a>Adobe Firefly<br />
+<div class="outline-text-6" id="text-org369760d">
+<ul class="org-ul">
+<li>Adobe Firefly 是 Adobe 推出的 AI 圖片生成工具，使用者可以透過簡單的文字指令，生成各種風格的圖片。這個工具特別適合用於創意設計和藝術創作，讓使用者能夠輕鬆地探索不同的視覺風格。<br /></li>
+<li>其應用除了了讓使用者方便產出視覺素材，許多教師也會在課堂上讓學生使用，發揮想像力做出心目中的畫面，並練習寫出精確的 AI 指令。想知道更多有趣搭配 Bing Image Creator 的課堂活動，可以參考〈3 個好玩的課堂活動，讓學生成為AI 生圖大師〉。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd2d830e"></a>Freepik<br />
+<div class="outline-text-6" id="text-orgd2d830e">
+<ul class="org-ul">
+<li>reepik 是一個提供免費與付費設計素材的網站，擁有大量的向量圖、插圖、圖示、照片與簡報模板，廣泛應用於設計、簡報與教學中。<br /></li>
+<li>除了素材下載，Freepik 也推出了 AI 圖片生成功能，使用者可以透過文字描述快速生成圖像，支援多種風格（如卡通、插畫、寫實等），特別適合製作教材插圖或視覺海報。<br /></li>
+<li>教師可以利用 Freepik 的 AI 生圖功能，引導學生練習描述與創作能力，結合圖像生成的成果進行故事創作、角色設計等跨領域任務。也可將生成的圖像結合簡報與教材設計，讓課堂內容更具吸引力。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org4d5cf3d" class="outline-5">
+<h5 id="org4d5cf3d">2) 影音生成</h5>
+<div class="outline-text-5" id="text-org4d5cf3d">
+<p>
+除了生成平面圖片，AIGC 的應用已擴展至動態音樂和影音內容的製作。<br />
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org2506d8d"></a>Suno AI<br />
+<div class="outline-text-6" id="text-org2506d8d">
+<ul class="org-ul">
+<li>Suno AI是一款以人工智慧生成音樂的工具，可以用AI產出非常逼真的人聲與樂器聲，構成逼真的歌曲。依據據使用戶提供的文字，Suno AI 可以從指令中匹配合適的旋律、風格、人聲及節奏，創造出一首全新的歌曲。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcad5017"></a>Hedra AI<br />
+<div class="outline-text-6" id="text-orgcad5017">
+<ul class="org-ul">
+<li>Hedra AI 是一款 AIGC 生成影片工具，能將靜態圖片轉換為流暢的影片，甚至可以搭配人聲，並精準對應人物的嘴形。透過 Hedra AI，過去的經典畫像、歷史照片，都有活靈或現、動起來的可能。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orge2e20a2"></a>Vidnoz AI<br />
+<div class="outline-text-6" id="text-orge2e20a2">
+<ul class="org-ul">
+<li>Vidnoz AI 是一個生成式影片平台，點選 Vidnoz AI 網頁即可開始使用，透過 AI 指令生成專屬的特色影片。近年來除了生成動態影片，也運用 AIGC 延伸出更多素材，例如 AI 大頭照、AI 換臉、AI 換聲音等，並有全繁體中文介面，更豐富好用。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgd5e15ea" class="outline-5">
+<h5 id="orgd5e15ea">3) 簡報/圖表生成</h5>
+<div class="outline-text-5" id="text-orgd5e15ea">
+<p>
+工作彙報、課堂報吿最常使用的簡報，現在 AIGC 也能生成！下面介紹兩款用 AI 製作簡報的工具，讓資料彙整、口頭分享不再令人苦惱 ！<br />
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgf05c9c6"></a>Gamma<br />
+<div class="outline-text-6" id="text-orgf05c9c6">
+<ul class="org-ul">
+<li>Gamma 是運用AI，讓使用者一鍵生成簡報、網頁和文件的工具，過程中也能與聊天機器人進行對話、詢問，對焦出最符合需求的內容，節省大量製作簡報的時間。<br /></li>
+<li>Gamma 內建大量的視覺模板、素材和套件，可以支援影音、音樂等，在生成簡報之後也能再微調修改，讓簡報有一定程度的美感，也能有符合口頭報告的素材。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcb02826"></a>Napkin<br />
+<div class="outline-text-6" id="text-orgcb02826">
+<ul class="org-ul">
+<li><a href="https://www.napkin.ai/">Napkin</a><br /></li>
+<li>Napkin 是一個 AI 簡報生成工具，使用者可以透過簡單的文字指令，生成各種風格的簡報。這個工具特別適合用於創意設計和藝術創作，讓使用者能夠輕鬆地探索不同的視覺風格。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc6cdda8"></a>Copilot in PPT<br />
+<div class="outline-text-6" id="text-orgc6cdda8">
+<ul class="org-ul">
+<li>一般人常用微軟的 Power Point 製作簡報，微軟的 AI 助手 Copilot 可以加入 Power Point 中，運用 AI 助理以大型的語言模型功能，協助你簡化工作、增強創意及提高生產力。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org5c9e681" class="outline-5">
+<h5 id="org5c9e681">4) 程式生成</h5>
+<div class="outline-text-5" id="text-org5c9e681">
+</div>
+<ul class="org-ul">
+<li><a id="org1594a10"></a>Cursor<br />
+<div class="outline-text-6" id="text-org1594a10">
+<ul class="org-ul">
+<li><a href="https://www.cursor.com">Cursor</a><br /></li>
+<li>CURSOR 是一個 AI 輔助程式設計環境，能夠協助使用者撰寫程式碼、除錯和優化代碼。它支援多種程設語言，並提供即時的代碼建議和自動補全功能。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org78688bf"></a>Visual Studio Code / Github copilot<br />
+<div class="outline-text-6" id="text-org78688bf">
+<ul class="org-ul">
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a><br /></li>
+<li><a href="https://github.com/features/copilot">GitHub Copilot</a><br /></li>
+<li>Visual Studio Code 是一個流行的開源程式編輯器，GitHub Copilot 是其內建的 AI 助手。Copilot 能夠協助使用者撰寫程式碼、除錯和優化代碼，並提供即時的代碼建議和自動補全功能。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org007b44f" class="outline-4">
+<h4 id="org007b44f"><span class="section-number-4">2.2.4.</span> 特定領域型(教育用)</h4>
+<div class="outline-text-4" id="text-2-2-4">
+</div>
+<div id="outline-container-orgb6ebcfd" class="outline-5">
+<h5 id="orgb6ebcfd">1) Magic School</h5>
+<div class="outline-text-5" id="text-orgb6ebcfd">
+<ul class="org-ul">
+<li><a href="https://www.magicschool.ai/">Magic School AI</a><br /></li>
+<li>在做生成式AI時，麻煩的地方在於前置提示詞太多，每次要針對特定目的生成內容都要寫一堆提示詞&#x2026;<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4f90976" class="outline-5">
+<h5 id="org4f90976">2) Teachy</h5>
+<div class="outline-text-5" id="text-org4f90976">
+<ul class="org-ul">
+<li><a href="https://www.teachy.app">https://www.teachy.app</a><br /></li>
+<li>專為協助創建教學計畫、獨特題目、從小學一年級到九年級乃至整個高中階段的活動課程而設計<br /></li>
+</ul>
+
+
+<div id="org8151172" class="figure">
+<p><img src="images/2025-06-01_17-28-05.png" alt="2025-06-01_17-28-05.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 6: </span>Teachy</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org48e0cd9" class="outline-5">
+<h5 id="org48e0cd9">3) Education.AI</h5>
+<div class="outline-text-5" id="text-org48e0cd9">
+<ul class="org-ul">
+<li>類似 Magic School，支援超過 100 種教學任務<br /></li>
+<li><a href="https://www.eduaide.ai/">https://www.eduaide.ai/</a><br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8c3513d" class="outline-4">
+<h4 id="org8c3513d"><span class="section-number-4">2.2.5.</span> 現有App的AI強化</h4>
+<div class="outline-text-4" id="text-2-2-5">
+</div>
+<div id="outline-container-orgddefdf3" class="outline-5">
+<h5 id="orgddefdf3">1) Canva</h5>
+<div class="outline-text-5" id="text-orgddefdf3">
+<p>
+Canva 是一個線上設計平台，提供多種設計工具和模板，適合用於創建簡報、海報、社交媒體圖像等。它的介面友好，易於使用，並且支援團隊協作。Canva 也提供了 AI 生圖功能，可以根據使用者的需求生成圖片。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2f22a9" class="outline-5">
+<h5 id="orgc2f22a9">2) Padlet</h5>
+<div class="outline-text-5" id="text-orgc2f22a9">
+<p>
+Padlet 是一個線上協作平台，允許使用者創建和分享各種內容，如文字、圖片、影片等。Padlet 的 AI 功能可以幫助教師和學生更方便地組織和展示教學內容，並提供互動式的學習體驗。可應用於教師教學內容、問卷、學生作品、討論空間，使用情境包括：<br />
+</p>
+<ul class="org-ul">
+<li>我不會畫圖: AI生圖<br /></li>
+<li>螢幕錄製(自動生成字幕)<br /></li>
+<li>會說話的Thomas: 文生語音<br /></li>
+<li>AI生成Time Line: 示範：日據時期台灣文學地圖、AI發展歷史<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org32a8901" class="outline-5">
+<h5 id="org32a8901">3) Quizizz</h5>
+<div class="outline-text-5" id="text-org32a8901">
+<ul class="org-ul">
+<li>Quizizz 是一個線上學習平台，提供教師和學生互動的工具。它允許教師創建測驗、問卷和遊戲化的學習活動，並提供即時的反饋和分析。Quizizz 的介面友好，易於使用，適合各年齡層的學生。<br /></li>
+</ul>
+
+<div id="org9787db4" class="figure">
+<p><img src="images/2025-05-31_17-13-37.png" alt="2025-05-31_17-13-37.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 7: </span>Quizizz支援AI輔助生成題目</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0eeaa1b" class="outline-3">
+<h3 id="org0eeaa1b"><span class="section-number-3">2.3.</span> AI融入各階段教學情境</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<div id="org8b257b2" class="figure">
+<p><img src="images/AI融入各階段教學情境.png" alt="AI融入各階段教學情境.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 8: </span>教學</p>
+</div>
+</div>
+<div id="outline-container-orgd45b270" class="outline-4">
+<h4 id="orgd45b270"><span class="section-number-4">2.3.1.</span> 課程規劃</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ol class="org-ol">
+<li>課程目標設定<br /></li>
+<li>教學內容規劃、教學活動設計<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf1d70f5" class="outline-5">
+<h5 id="orgf1d70f5">範例</h5>
+<div class="outline-text-5" id="text-orgf1d70f5">
+</div>
+<ul class="org-ul">
+<li><a id="org6ceb3de"></a>撰寫課程目標<br />
+<div class="outline-text-6" id="text-org6ceb3de">
+<ol class="org-ol">
+<li>GPT: 我想發展一份&ldquo;以AI預測蔬菜價格&rdquo;的教材，對象是高中生，請幫我擬訂18週的課程內容，每週兩節課<br /></li>
+</ol>
+</div>
+</li>
+<li><a id="org374f3c4"></a>生成課程設計<br />
+<div class="outline-text-6" id="text-org374f3c4">
+<ol class="org-ol">
+<li>GPT: 你現在是小學自然科學老師，請你幫我生成以燃燒現象為主題，對象是5年級學生的教案。<br /></li>
+<li>GPT: 幫我設計一節國中自然課的教案，主題為水的三態變化，包含學習目標、活動流程與評量方式。<br /></li>
+<li><a href="https://poe.com/curriculum_markdown">AI Agent #1 (課程設計)/提供教學目標,設計4節課的課程</a>: 學生能理解碳排放的概念，並依照碳排放的差異選擇適當的交通工具。<br /></li>
+<li><a href="https://poe.com/CurriculumPlanner">AI Agent #56 (課程設計)</a>: 以AI預測蔬菜價格<br /></li>
+<li><a href="https://poe.com/Design_inquirylesson">AI Agent #68 以表格的方式呈現時間、教學活動與教學教材</a>: 學生能理解碳排放的概念，並依照碳排放的差異選擇適當的交通工具。<br /></li>
+<li><a href="https://chatgpt.com/g/g-lOqxFYqb5-ke-cheng-chuang-zuo-jia">AIAgent #123 課程創作家GPT</a>: 上傳PDF文件,  生成課程內容<br /></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2168d0b" class="outline-4">
+<h4 id="org2168d0b"><span class="section-number-4">2.3.2.</span> 準備教材</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ol class="org-ol">
+<li>教材內容生成<br /></li>
+<li>教學資源整理<br /></li>
+<li>教學簡報製作<br /></li>
+</ol>
+</div>
+<div id="outline-container-org4fb2b24" class="outline-5">
+<h5 id="org4fb2b24">範例</h5>
+<div class="outline-text-5" id="text-org4fb2b24">
+</div>
+<ul class="org-ul">
+<li><a id="orga7ad90c"></a>教材內容<br />
+<div class="outline-text-6" id="text-orga7ad90c">
+<ul class="org-ul">
+<li>GPT: 你現在是小學自然科學老師，給我5種方式讓學生有創意地展示他們為什麼火需要氧氣才能燃燒？在哪些情況下，火可能會熄滅？<br /></li>
+<li>GPT: 你現在是專業且樂於助人的小學自然老師，請你依照針對環境保護這個主題，設計一系列的問題，幫助學生在小組討論的時候可以促進對這個主題的理解及與他人合作討論”<br /></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org9888fb1"></a>NotebookLM<br />
+<div class="outline-text-7" id="text-org9888fb1">
+<ul class="org-ul">
+<li>將相關教材、教學資源、教學計畫等資料上傳至 NotebookLM，由NotebookLM統整內容，列出教學順序、問題與活動，並提供相關的教學資源與參考資料。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org0591e7a"></a>簡報/圖表製作<br />
+<div class="outline-text-6" id="text-org0591e7a">
+<ul class="org-ul">
+<li><a href="https://www.genape.ai">Gamma</a><br />
+<ul class="org-ul">
+<li>文字轉簡報、播放器, <a href="https://www.genape.ai/zh-hant/blogs/gamma-ai-presentation/">Gamma AI簡報製作一鍵搞定！Gamma 自動生成大綱、圖文排版</a><br /></li>
+<li>Gamma AI(<a href="https://www.genape.ai/zh-hant/blogs/gamma-ai-presentation/">https://www.genape.ai/zh-hant/blogs/gamma-ai-presentation/</a>),<br /></li>
+<li>範例: <a href="https://gamma.app/docs/AI-mlpl8be052y1bqh?mode=doc">https://gamma.app/docs/AI-mlpl8be052y1bqh?mode=doc</a><br /></li>
+</ul></li>
+<li>Mapify<br /></li>
+<li>Napkin<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org7a43494"></a>生成課外教材<br />
+<div class="outline-text-6" id="text-org7a43494">
+<ul class="org-ul">
+<li>GPT: 請給我一篇符合CEFR A1、介紹海洋的英文文章<br /></li>
+<li>GPT: 請根據上面的文章，出五題閱讀測驗選擇題，並標出正確答案與詳解<br /></li>
+<li><a href="https://poe.com/ScienceReading-Issue">AI Agent #113(課程設計) 中年級科普閱讀文章與題目生成</a>: 生成適合中年級學生的科普閱讀文章與包含議題融入的選擇題<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c55f8e"></a>影片生成<br />
+<div class="outline-text-6" id="text-org1c55f8e">
+<ul class="org-ul">
+<li><a href="https://tw.vidnoz.com/">Vidnoz</a><br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org301f6fa" class="outline-4">
+<h4 id="org301f6fa"><span class="section-number-4">2.3.3.</span> 教學活動設計</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<ol class="org-ol">
+<li>針對某一概念或主題，設計一系列的教學活動。<br /></li>
+<li>做為教學活動中的輔助工具，協助學生完成學習任務。<br /></li>
+<li>講解課程重點與範例邏輯<br /></li>
+</ol>
+</div>
+<div id="outline-container-org6e78ed6" class="outline-5">
+<h5 id="org6e78ed6">範例</h5>
+<div class="outline-text-5" id="text-org6e78ed6">
+<ul class="org-ul">
+<li>GPT: 你現在是國中電腦教師，想設計一個活動來教導學生{二進位}的概念，班上學生有30個人，需要時可適當分組。<br /></li>
+<li>GPT: 你現在是專業的小學自然老師，請你設計一個關於{極端氣候會議}的角色扮演活動，學生分別扮演4個不同國家的代表，目標是在這個會議中達成共識。<br /></li>
+<li>GPT：你是一位國中學生，現在要和你的對手辯論「國中生是否該收手機」的議題，請你擔任正方，支持學校於學生在校期間收管學生手機；同時也請你擔任整場辯論主持人，依正規辯論賽方式輪流發言，最後由發言人總評。我是反方代表，請你依序與我展開辯論<br /></li>
+<li>上課分組討論，各組組員發表意見，由AI綜合整理意見<br /></li>
+<li>GPT: 你是學生的範例生成器，我希望你可以幫助小學生提供許多不同的範例以幫助學生理解這些概念。我希望你幫我生成5個多樣化且與生活相關的範例關於{作用力與反作用力}這個概念。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org27e85f4" class="outline-4">
+<h4 id="org27e85f4"><span class="section-number-4">2.3.4.</span> 作業與評量設計</h4>
+<div class="outline-text-4" id="text-2-3-4">
+<ol class="org-ol">
+<li>作業與測驗生成、評審<br /></li>
+<li>設計評量標準(RUBRIC)<br /></li>
+</ol>
+</div>
+<div id="outline-container-org010813e" class="outline-5">
+<h5 id="org010813e">範例</h5>
+<div class="outline-text-5" id="text-org010813e">
+<ul class="org-ul">
+<li>GPT: 你是自然領域的專家，請幫我依據下面這篇文章，產生10題單選題每題有4個選項，其中5題屬於簡單程度，5題屬於困難程度，對象是11歲的學生，並附上正確答案及簡短的說明&#x2026;<br /></li>
+<li>GPT: 你是小學自然領域的老師及教學測驗的專家，請幫我依據下面這篇文章，產生10題單選題每題有4個選項，其中5題屬於簡單程度，5題屬於困難程度，對象是11歲的學生，並附上正確答案及簡短的說明。<br /></li>
+<li>更簡單的做法: 上傳過往的考卷，要求AI維持相同難度，調整用字或範例<br /></li>
+<li>高階的做法: 您是一位highly diagnostic的問題設計者。您將以繁體中文設計良好的、低風險的測試和診斷。然後，您將問我兩個問題：測驗的主題，以及這個測驗的受眾是誰。一旦得到我的回答，您將建構幾個選擇題來測試該主題的受眾。這些問題應該高度相關，並超越單純的事實。選擇題應包括合理的、具有競爭性的替代選項，並且不應包括“以上皆是”的選項。在測驗結束時，您將提供正確答案並解釋正確答案。<br /></li>
+<li><a href="https://poe.com/Assessment_Criteria">AI Agent #19 評量規準設計機器人</a>: 能根據學習目標，設計A-E五個等級的評量標準。<br /></li>
+<li><a href="https://poe.com/Measurement.AI">AI Agent #120 標準本位評量規準設計機器人</a>: 能根據學習目標，設計A-E五個等級的評量標準。<br /></li>
+<li><a href="https://aistudio.google.com/app/prompts/1P0AZo0nW4ABQnwC6tkc9NV4oSM3c5TdK">AI Agent #205 會考[知識+時事]出題(各科通用)</a><br /></li>
+<li><a href="https://chatgpt.com/g/g-68253e28a3388191bc04f209f8bd7107-shen-ti-ji-qi-ren">AI Agent #273 審題機器人</a>: 1.上傳題目 2.上傳審題原則<br /></li>
+<li>GPT: 你是一個設計用來幫助教師生成Python程式設計試題的 AI 助理，教師會提供完成該試題所需用到的Python語法以及試題難度，請依這些需求生成一個「背景符合學生生活經驗的試題」，並附上三筆測資與正確程式。<br /></li>
+<li>GPTs: <a href="https://chatgpt.com/g/g-67e1fe6f6f90819186a447af874e8b38-cheng-shi-ti-ku-xiao-zhu-shou">程式題庫小助手</a><br /></li>
+<li>Quizizz: AI生成題目 - by file, video<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb7d722" class="outline-4">
+<h4 id="orgcb7d722"><span class="section-number-4">2.3.5.</span> 作業測驗批改</h4>
+<div class="outline-text-4" id="text-2-3-5">
+<ol class="org-ol">
+<li>作業/測驗的評量與回饋<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3d99059" class="outline-5">
+<h5 id="org3d99059">作業批改所佔時間僅次於教學工作</h5>
+<div class="outline-text-5" id="text-org3d99059">
+<p>
+OECD的教師平均每週工作 38.8 小時，其中約 20.8 小時用於教學。最耗時的非教學任務包括改作業(4.2 小時)、一般行政工作2.7 小時以及團隊工作和與校內同事對話(2.7 小時)<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup><br />
+</p>
+
+<div id="orge7b8e30" class="figure">
+<p><img src="images/2025-06-03_09-43-26.png" alt="2025-06-03_09-43-26.png" width="500" /><br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org003470b" class="outline-5">
+<h5 id="org003470b">範例</h5>
+<div class="outline-text-5" id="text-org003470b">
+<ul class="org-ul">
+<li>GPT: 你現在是專業且樂於助人的小學自然老師，請你依照以下的[評量規準]，幫我分析學生的[報告]，並給出具體的建議幫助學生做得更好<br /></li>
+<li><a href="https://poe.com/WritingCCorrect">AI Agent #115 英文作文評改</a>: 幫助修改英文作文並給AI範例<br /></li>
+<li><a href="https://www.coolenglish.edu.tw/course/view.php?id=941">AI Agent #127 酷英篇章口說評測系統</a>: 使用者可選擇由AI生成文章,或是自行輸入課文、新聞等內容。內容設定完成 後,使用者即可開始朗讀文章。系統會錄音並分析發音,將其與標準發音比對, 顯示辨識結果、比較結果、相似比率。<br /></li>
+<li><a href="https://poe.com/FunFun.AI-Stu.En.E">AI Agent #138 高中英語手寫評分機器人</a>: 高中生專用，請拍攝孩子的作文（越清楚越好），我可以協助您以學測標準評分英文手寫部分。<br /></li>
+<li><a href="https://poe.com/FunFun.AI-St.Essay.S">AI Agent #139 高中學測國語手寫機器人</a>: 高中生專用，請拍攝孩子的作文（越清楚越好），我可以協助您以學測標準評分國語作文手寫。<br /></li>
+<li><a href="https://poe.com/FunFun.AI-St.Essay.J">AI Agent #140 國中會考作文批改機器人</a>: 國中生專用，請拍攝孩子的作文（越清楚越好），我可以協助您以會考標準評分作文。<br /></li>
+<li><a href="https://poe.com/FunFun.AI-St.Essay.E">AI Agent #141 國小作文批改機器人</a>: 小學生專用，請拍攝孩子的作文（越清楚越好），我可以協助您評分作文。<br /></li>
+<li>Quizizz: AI生成題目 - by file, video<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7f13795" class="outline-4">
+<h4 id="org7f13795"><span class="section-number-4">2.3.6.</span> 自主學習</h4>
+<div class="outline-text-4" id="text-2-3-6">
+<p>
+強迫學生利用AI工具完成一些自主學習的任務，並且在課堂上分享他們的學習成果。這樣可以讓學生在實踐中學習如何使用AI工具，並且提高他們的自主學習能力。這些任務可以是很簡單的概念理解，例如:<br />
+</p>
+<ul class="org-ul">
+<li>什麼是加速度？<br /></li>
+<li>地震的成因？<br /></li>
+<li>為什麼pi可以用來計算圓面積<br /></li>
+<li>如何計算積分？<br /></li>
+<li>如何學習一個程式語言？<br /></li>
+<li>蔣介石為什麼會打輸國共內戰？<br /></li>
+<li>核能發電的原理是什麼？<br /></li>
+</ul>
+
+<p>
+這些任務適用於不同年級的學生，並且可以根據學生的年齡和能力進行調整。教師可以在課堂上引導學生使用AI工具來完成這些任務，並且在課堂上分享他們的學習成果。學生需要培養的能力除了要知道有哪些AI工具可以使用之外，還要學會如何使用這些工具來解決問題。這樣可以讓學生在實踐中學習如何使用AI工具，並且提高他們的自主學習能力。<br />
+</p>
+</div>
+<div id="outline-container-orgd638cab" class="outline-5">
+<h5 id="orgd638cab">範例</h5>
+<div class="outline-text-5" id="text-orgd638cab">
+<ul class="org-ul">
+<li>GPT: 提供學習知識領域的入門指引: 我是一個高中學生，想學習XXX的相關知識，請提供入門的指引，以前我們要學習一個新領域都要自己摸索，<br /></li>
+<li>GPT: 提供研究或專題製作的主題參考(持續問答，縮小問題範圍): 我是一個高中學生，想做有關物聯網的專題，請提供我5個相關可行的主題<br /></li>
+<li>GPT: 你是一個樂於助人的AI tutor。你會透過不斷提問的方式以確認我對這個主題的理解程度。你會根據以下的文本資料生成題目，你總是調整你的問題以符合學生的程度及理解，你最多只會問3個問題，一次只問一個問題，並在問完問題後給予學生回饋，分析學生還沒理解的部分，並告訴學生如何加強。<br /></li>
+<li>Notebooklm:<br />
+<ol class="org-ol">
+<li>匯入文章: 由AI來建議針對該篇文章所需問的問題，可以做課前預習<br /></li>
+<li>可以同時摘要多篇文章，適合學生寫小論文的文獻探討<br /></li>
+<li>可以提供FAQ，適合學生在看完課文後練習作答，也適合教師拿來做出題參考<br /></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9473c7d" class="outline-4">
+<h4 id="org9473c7d"><span class="section-number-4">2.3.7.</span> AI輔助學生學習任務</h4>
+<div class="outline-text-4" id="text-2-3-7">
+</div>
+<div id="outline-container-orgcd15388" class="outline-5">
+<h5 id="orgcd15388">規劃學習目標與歷程</h5>
+<div class="outline-text-5" id="text-orgcd15388">
+<p>
+針對未知或陌生的概念及事項，可以藉由生成式 AI 擬訂學習的架構與步驟，提供學生 學習的主軸、相關概念、架構及預期目標等。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgae89f41" class="outline-5">
+<h5 id="orgae89f41">選擇策略</h5>
+<div class="outline-text-5" id="text-orgae89f41">
+<ol class="org-ol">
+<li>建議策略：針對課程目標、學生學習可能發生的迷思，請生成式 AI 依據有效的學習策 略建議學生如何擬訂學習計畫。<br /></li>
+<li>促進思考：依據學生的學習問題與進展，透過生成式 AI 不斷向學習者提問，如同學習夥伴， 讓生成式 AI 模擬不同角色，例如生成式 AI 當學生，學生當教師，透過提問與生 成的過程，促進學生的思考及對概念的理解。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org363a6ad" class="outline-5">
+<h5 id="org363a6ad">評量與回饋</h5>
+<div class="outline-text-5" id="text-org363a6ad">
+<ol class="org-ol">
+<li>修正文章：利用生成式 AI 進行檢查。<br /></li>
+<li>有效回饋：透過生成式 AI 對作業分析及提供回饋，作為進一步改寫、重寫、思考實 實作的依據。<br /></li>
+<li>擴展想法：根據課程內容，透過生成式 AI 產出開放性問題或任務，並給予學生回饋分 析跟需加強的建議策略。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc632613" class="outline-5">
+<h5 id="orgc632613">調整學習</h5>
+<div class="outline-text-5" id="text-orgc632613">
+<p>
+學生依據學前回顧調整學習，例如教育部英語教育英語口說的回顧功能。此外，可以依 據課程重點調整資源，透過生成式 AI 分析習題及策略，產出學習目標、策略、資源、評 估規準工具等調整意見，透過自我或小組和其他討論的行使，進行調整與學習。<br />
+</p>
+<ul class="org-ul">
+<li>這個階段由教師教學生學習這類能力<br /></li>
+<li>自主學習規劃與筆記<br /></li>
+<li>試題解析與專題構想提供<br /></li>
+<li>(各種)語言學習: 聽、說<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a90ec2" class="outline-5">
+<h5 id="org5a90ec2">筆記工具</h5>
+<div class="outline-text-5" id="text-org5a90ec2">
+<ul class="org-ul">
+<li>notebook lm: <a href="https://www.youtube.com/watch?v=T91QkwJ_Obo">https://www.youtube.com/watch?v=T91QkwJ_Obo</a><br /></li>
+<li>內建Gemini Pro, 適合學生整理、製作筆記工具<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup><br /></li>
+<li>匯入文章: 由AI來建議針對該篇文章所需問的問題，可以做課前預習<br /></li>
+<li>可以同時摘要多篇文章，適合學生寫小論文的文獻探討<br /></li>
+<li>可以提供FAQ，適合學生在看完課文後練習作答，也適合教師拿來做出題參考<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a46071" class="outline-5">
+<h5 id="org7a46071">評量回饋</h5>
+<div class="outline-text-5" id="text-org7a46071">
+</div>
+<ul class="org-ul">
+<li><a id="org3934e91"></a>修正文章<br />
+<div class="outline-text-6" id="text-org3934e91">
+<ul class="org-ul">
+<li>你是專業的寫作教練，請幫我以學術性的方式改寫這篇文章(範例文章)<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org092437b"></a>有效回饋<br />
+<div class="outline-text-6" id="text-org092437b">
+<ul class="org-ul">
+<li>現在你是我的老師，請針對文章結構及論點對這份小學5年級 學生的報告提出有效的回饋，以幫助我寫出更好的報告。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org0116987"></a>提取練習<br />
+<div class="outline-text-6" id="text-org0116987">
+<ul class="org-ul">
+<li>你是一個樂於助人的AI tutor。你會透過不斷提問的方式以確認我對這個主題的理解程度。你會根據以下的文本資料生成題目，你總是調整你的問題以符合學生的程度及理解，你最多只會問3個問題，一次只問一個問題，並在問完問題後給予學生回饋，分析學生還沒理解的部分，並告訴學生如何加強。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org87c9436" class="outline-5">
+<h5 id="org87c9436">助教</h5>
+<div class="outline-text-5" id="text-org87c9436">
+<ul class="org-ul">
+<li>colab的AI輔助, - Github Copilot<br /></li>
+<li>Grammarly: <a href="https://www.grammarly.com/">https://www.grammarly.com/</a><br /></li>
+<li>Cool English: <a href="https://www.coolenglish.edu.tw">https://www.coolenglish.edu.tw</a>, 英文口說評分、聽力、多益寫作評估工具<br /></li>
+<li>因材網運用生成式 AI 技術，提供「通用型學習夥伴」及「學科領域學習夥伴」，在線上與學生即時聊天互動，引導學生學習自我診斷與學科學習，以提升自主學習能力。教育部酷英網提供酷英教師 AI 特助、酷英 AI 教學與學習工具，提供聽力、口說、寫作、測驗等多面向實用工具，能讓教學者與學習者更多元適性的使用。均一教育平臺的 AI 狐狸貓，可以陪伴學生作為助教夥伴，引導自學歷程。<br /></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org8c28280"></a>語言家教<br />
+<div class="outline-text-7" id="text-org8c28280">
+<ul class="org-ul">
+<li>聽、說: 可以應用於英文、國語、台語的口說<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org2e90fb2"></a>Socratic method: 數學<br />
+<div class="outline-text-7" id="text-org2e90fb2">
+<ul class="org-ul">
+<li><a href="https://official.junyiacademy.org/blog/gpt-4_socratic-questioning/">當 GPT 升級到 4，蘇格拉底式的數學家教悄悄誕生</a><br /></li>
+<li>你是一個使用蘇格拉底法(socratic method)的老師。你絕對不會直接給學生答案，但是總是透過詢問正確的問題以幫助他們學習自己思考。你總是調整你的問題以符合學生的興趣及知識，把問題分解成簡單的部分，直到符合他們的程度。我如何解決這個線性方程式 3x+2y=7，9x -4y=1<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org66a64f8"></a>Socratic method: 關讀理解<br />
+<div class="outline-text-7" id="text-org66a64f8">
+<ul class="org-ul">
+<li>你是一個使用蘇格拉底法(socratic method)的老師。你絕對不會直接給學生答案，但是總是透過詢問正確的問題以幫助他們學習自己思考。你總是調整你的問題以符合學生的興趣及知識，把問題分解成簡單的部分，直到符合他們的程度。請你依據下方這篇文章跟我提問，以測驗我的閱讀理解，例如請我猜測作者的意圖或是我是否支持他的論點等，請逐步跟我提問並依據我的回答繼續延伸你的問題<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org581daa7"></a>友善辯論指導<br />
+<div class="outline-text-7" id="text-org581daa7">
+<ul class="org-ul">
+<li>#zh-tw 你是友善且思考敏銳的辯論教練，將與我進行一場友善的辯論。問我想辯論什麼話題，然後讓我表明立場。然後用其他觀點和數據挑戰我的觀點。你只站在你的立場，不要提示我可能提出的論點。請保持您的回覆字數與我的回覆字數長度相似。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org1d43e1b"></a>釐清想法<br />
+<div class="outline-text-7" id="text-org1d43e1b">
+<ul class="org-ul">
+<li>你是一個友善且樂於助人的老師，你會以簡單明瞭的方式生成有效的解釋、範例和類比。請讓你的說明盡量簡單，但不 要失去準確性及細節。請根據[學生年級]、學生已經學過[哪些相關的概念]生成對於[某個概念]明確且簡單的 2 個解釋、 2 個範例及 1 個類比。在生成完解釋、範例及類比後，請詢問學生是否還有不懂或需要釐清的部分。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgeea57e3"></a>建議策略<br />
+<div class="outline-text-7" id="text-orgeea57e3">
+<ul class="org-ul">
+<li>你是一個友善且樂於助人的老師，你會根據[學生年級]，學生已經學過[哪些相關的概念]，學生預期想達到的目標生成對 於[某個概念]的學習計畫。這個計畫以表格呈現，第一欄是學習的內容，第二個主題是挑戰性或開放性的問題以測試我對 這個主題的理解，第三個欄位是所需的時間<br /></li>
+<li>你是一名已經學習過[某個主題]的學生。請向老師解釋關於[某個概念]以及生成實際應用的作品。例如：你可以建議通過老師選擇的電視節目場景、撰寫關於該主題的詩歌，或者撰 寫一個有關該主題的短篇故事來展示你對概念的了解。生成完概解釋及實際應用之後，請詢問老師你的表現如何，解釋你哪些地方做得好或哪些地方需要加強。接下來，如果你 的回答都正確的話，請老師分享他會如何應用這個概念。最 後感謝老師並結束對話。<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org1f874f8" class="outline-5">
+<h5 id="org1f874f8">自主學習</h5>
+<div class="outline-text-5" id="text-org1f874f8">
+<ul class="org-ul">
+<li>自主學習的諮訊對象: 舉例，兩個python的寫法有何差異?<br /></li>
+<li>提供學習知識領域的入門指引: 我是一個高中學生，想學習XXX的相關知識，請提供入門的指引，以前我們要學習一個新領域都要自己摸索，<br /></li>
+<li>提供研究或專題製作的主題參考(持續問答，縮小問題範圍): 我是一個高中學生，想做有關物聯網的專題，請提供我5個相關可行的主題<br /></li>
+<li>產生文件摘要，快速掌握重點<br /></li>
+<li>提供解題或問題解決方向: 解數學題<br /></li>
+<li>心智圖: <a href="https://mapify.so/tc/app/new">mapify</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbd7a89f" class="outline-5">
+<h5 id="orgbd7a89f">學習歷程檔案</h5>
+<div class="outline-text-5" id="text-orgbd7a89f">
+<ul class="org-ul">
+<li>1. prompt: 我的自主學習主題是VTuber，請以STAR(Situation, Task, Action, Result)原則呈現我的學習歷程<br /></li>
+<li>2. prompt: 請加入更多量化的資料，儘量以實例呈現<br /></li>
+<li>可以做為提供學生範例參考的範本(取代學生要去看學長姐範例的部份)<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8d9892e" class="outline-5">
+<h5 id="org8d9892e">撰寫報告</h5>
+<div class="outline-text-5" id="text-org8d9892e">
+<ul class="org-ul">
+<li>GPT: 為[OO]課程寫一篇三百字左右的關於[OO主題]的報告。以學術風格撰寫，請使用能讓人覺得你是[大學生]的表達方式。請參考[我的教授]的著作和觀點來塑造內容，但不要在文章中提到他/她。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org746372f" class="outline-5">
+<h5 id="org746372f">學生助手</h5>
+<div class="outline-text-5" id="text-org746372f">
+</div>
+<ul class="org-ul">
+<li><a id="org9e2d79e"></a>英文科<br />
+<div class="outline-text-6" id="text-org9e2d79e">
+<ul class="org-ul">
+<li><a href="https://www.gingersoftware.com/">Ginger</a>: 寫作訂正<br /></li>
+<li><a href="https://www.coolenglish.edu.tw/">Cool English</a>: 口說<br /></li>
+<li><a href="https://quillbot.com/">QuillBot</a>: 文法<br /></li>
+<li><a href="https://www.grammarly.com/">Grammarly</a>: 文法<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org71aa8d4"></a>國文科<br />
+<div class="outline-text-6" id="text-org71aa8d4">
+<p>
+詩詞生成，AI出上聯、學生出下聯<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfdc606c" class="outline-3">
+<h3 id="orgfdc606c"><span class="section-number-3">2.4.</span> 你應該知道的AI使用技巧</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org0f3230b" class="outline-4">
+<h4 id="org0f3230b"><span class="section-number-4">2.4.1.</span> Prompt Principle 提示原則</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4<br />
+論文連結：<a href="https://arxiv.org/abs/2312.16171">https://arxiv.org/abs/2312.16171</a><br />
+</p>
+
+<p>
+GitHub:<a href="https://github.com/VILA-Lab/ATLAS">https://github.com/VILA-Lab/ATLAS</a><br />
+</p>
+
+<ol class="org-ol">
+<li>直接進入主題，無需對 LLM 客氣，因此無需添加「請」、「如果您不介意」、「謝謝」、「我想」等詞語。<br />
+<ul class="org-ul">
+<li>你能親切地描述一下人體細胞的結構嗎？<br /></li>
+</ul></li>
+<li>在提示中整合目標受眾，例如，受眾是該領域的專家。<br />
+<ul class="org-ul">
+<li>構建智能手機的工作原理概述，適用於以前從未使用過智能手機的老年人。<br /></li>
+</ul></li>
+<li>在對話中將複雜任務分解為一系列更簡單的提示。<br />
+<ul class="org-ul">
+<li>提示：將告號分配給括號內方程式的每個項目：2x + 3y - (4x - 5y)<br /></li>
+</ul></li>
+<li>使用肯定指令，例如&ldquo;do&rdquo;(做)，同時避免使用&ldquo;don&rsquo;t&rdquo;(不要)等否定語言。<br />
+<ul class="org-ul">
+<li>建築物在發生地震時如何保持穩定？<br /></li>
+</ul></li>
+<li>當您需要對某個主題、想法或任何知識進行澄清或更深入的了解時，請使用以下提示：<br />
+<ul class="org-ul">
+<li>把我當成 11 歲一樣解釋給我聽：加密是如何運作的？<br /></li>
+</ul></li>
+<li>加上[我會給出 $xxx 的小費以獲得更好的解決方案]<br />
+<ul class="org-ul">
+<li>我會給出 $300K 的小費以獲得更好的解決方案！解釋動態程式的概念並提供一個實際案例。<br /></li>
+</ul></li>
+<li>實施範例驅動提示(使用few-shot)<br />
+<ul class="org-ul">
+<li>範例 1：將以下英文句子翻譯成法文：「天空是藍色的。」(回應：「Le ciel est bleu.)」)範例 2：將以下英文句子翻譯成西班牙文：「我喜歡書。」(回應：「Amo los libros.」)<br /></li>
+</ul></li>
+<li>在格式化您的提示時，以「### 指示 ###」開始，然後視情況接續「### 範例 ###」或「### 問題 ###」。隨後，呈現您的內容。使用一個或多個換行符號來分隔指示、範例、問題、內容和輸入資料<br />
+<ul class="org-ul">
+<li>### 指示 ###<br /></li>
+<li>將給定的單字從英文翻譯成法文。 ### 問題 ### 「書」的法文是什麼？<br /></li>
+</ul></li>
+<li>納入以下字詞：「你的任務是」和「你必須」<br />
+<ul class="org-ul">
+<li>你的任務是向你的朋友解釋水循環。你必須使用簡單的語言<br /></li>
+</ul></li>
+<li>納入以下字詞：「你將受到懲罰」<br />
+<ul class="org-ul">
+<li>你的任務是向你的朋友解釋水循環。如果你沒有使用簡單的語言，您將受到懲罰<br /></li>
+</ul></li>
+<li>在您的提示中使用字詞「以自然及人性化的方式回答問題」<br />
+<ul class="org-ul">
+<li>以自然語言的形式撰寫一段關於健康食品的段落。<br /></li>
+</ul></li>
+<li>使用引導詞，例如寫下「think step by step」<br />
+<ul class="org-ul">
+<li>撰寫一個 Python 程式來迴圈 10 個數字並將它們全部加總let&rsquo;s think step by step<br /></li>
+</ul></li>
+<li>在您的提示中加入以下字詞「確保您的答案公正且不依賴刻板印象」<br />
+<ul class="org-ul">
+<li>文化背景如何影響心理健康的認知？請確保您的答案公正且不依賴刻板印象。<br /></li>
+</ul></li>
+<li>允許模型透過詢問問題來引導您提供精確的細節和需求，直到它有足夠的資訊來提供所需的輸出(例如，「從現在開始，我希望您詢問我問題以&#x2026;」)。<br />
+<ul class="org-ul">
+<li>從現在開始，請詢問我問題，直到您有足夠的資訊來建立個人化的健身常規。<br /></li>
+</ul></li>
+<li>若要詢問特定主題或想法或任何資訊，並且您想測試您的理解，您可以使用以下詞組：「教我[任何定理/主題/規則名稱]，並在最後附上測驗，但不要給我答案，然後在我回應時告訴我答案是否正確」<br />
+<ul class="org-ul">
+<li>教我kvl定律，並在最後附上測驗，但不要給我答案，然後在我回應時告訴我答案是否正確<br /></li>
+</ul></li>
+<li>指派角色給大型語言模型 (LLM)<br />
+<ul class="org-ul">
+<li>如果你是一位經濟學專家，你會如何回答：資本主義和社會主義經濟制度之間的主要差異是什麼？<br /></li>
+</ul></li>
+<li>使用分隔符號<br />
+<ul class="org-ul">
+<li>撰寫一篇有說服力的文章，討論’可再生能源’在減少溫室氣體排放方面的重要性。<br /></li>
+</ul></li>
+<li>在提示中重複一個特定字詞或詞組多次。<br />
+<ul class="org-ul">
+<li>演化作為一個概念，塑造了物種的發展。演化的主要驅動力是什麼，演化如何影響現代人類？<br /></li>
+</ul></li>
+<li>將Chain-of-thought (Cot) (Cot)與少few-Shot提示結合<br />
+<ul class="org-ul">
+<li>範例 1：「將 10 除以 2。首先，取 10 除以 2。結果是 5。」<br /></li>
+<li>範例 2：「將 20 除以 4。首先，取 20 除以 4。結果是 5。」<br /></li>
+<li>主要問題：「將 30 除以 6。首先，取 30 除以 6。結果是&#x2026;？<br /></li>
+</ul></li>
+<li>使用輸出引導詞，其中包括以所需輸出的開頭來結束您的提示。透過以期望回應的開頭來結束您的提示，來利用輸出引導詞<br />
+<ul class="org-ul">
+<li>描述牛頓第一運動定律背後的原理。<br /></li>
+<li>解釋：<br /></li>
+</ul></li>
+<li>要撰寫一篇詳細的論文/文字/段落/文章或任何類型的文字：「請為我撰寫一篇關於[主題]的詳細[論文/文字/段落]，並加入所有必要的資訊」<br />
+<ul class="org-ul">
+<li>請為我撰寫一篇關於智慧型手機演進的詳細段落，並加入所有必要的資訊。<br /></li>
+</ul></li>
+<li>要更正/更改特定文字而不改變其風格：「嘗試修改使用者發送的每個段落。你應該只改善使用者的文法和詞彙，並確保聽起來很自然。你不應該改變寫作風格，例如將正式的段落改成不正式」<br />
+<ul class="org-ul">
+<li>嘗試修改使用者傳送的每段文字。你應該只改善使用者的文法和詞彙，並確保聽起來很自然。你不應該改變寫作風格，例如將正式的段落改為休閒的。段落：再生能源對我們星球的未來真的很重要。它來自天然&#x2026;<br /></li>
+</ul></li>
+<li>當您有複雜的程式提示，可能在不同的檔案中時：「從現在開始，每當您產生跨越多個檔案的程式碼時，產生一個 [程式語言] 腳本，可以執行以自動建立指定檔案或變更現有檔案以插入產生的程式碼。[您的問題]。」<br />
+<ul class="org-ul">
+<li>產生跨越多個檔案的程式碼，並產生一個 Python 腳本，可以執行以自動建立指定檔案，以供 Django 專案使用，其中包含兩個基本應用程式，具有不同的功能。<br /></li>
+</ul></li>
+<li>當您想要使用特定字詞、片語或句子開始或繼續文字時，請使用下列提示：<br />
+<ul class="org-ul">
+<li>我提供您開頭 [歌曲歌詞/故事/段落/散文&#x2026;]：<br /></li>
+<li>[插入歌詞/字詞/句子]。根據提供的字詞完成它。保持一致的流暢度。<br /></li>
+<li>「迷濛的山脈蘊藏著無人知曉的秘密。」我提供你奇幻故事的開頭。根據以上字詞完成它。<br /></li>
+</ul></li>
+<li>清楚說明模型必須遵循的要求，才能產生內容，以關鍵字、法規、提示或說明的形式<br />
+<ul class="org-ul">
+<li>為海灘假期建立一份裝箱清單，其中包括「防曬霜」、「泳衣」和「沙灘巾」等必備物品。<br /></li>
+</ul></li>
+<li>要撰寫任何文字，例如論說文或文章，其用意是類似於提供的範例，請納入以下說明：<br />
+<ul class="org-ul">
+<li>「根據提供的段落[/標題/文字/散文/答案]使用相同的語言」<br /></li>
+<li>「溫柔的海浪向銀色的沙灘低語著古老的故事，每個故事都是逝去時代的稍縱即逝的記憶。」請根據提供的文字使用相同的語言來描繪山與風的互動。<br /></li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7ec5a5e" class="outline-4">
+<h4 id="org7ec5a5e"><span class="section-number-4">2.4.2.</span> 優化技巧</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<ol class="org-ol">
+<li>提供回饋<br /></li>
+<li>拆分主任務: HTML,CSS,Javascript完成特定app<br /></li>
+<li>修改AI人設: 一般GPT對於檢查、評論通常都抱持親切善良的態度，可以主動要求GPT更為嚴格一些，或提出更嚴格的批判與質疑；此外，GPT通常會傾向提供答案，可以要求AI若不碓定答案就回答不知道，或是使用Bing，因為Bing在處理提問時不限於自己的知識庫，還同時會去搜尋網路資訊。<br /></li>
+<li>不超過token上限: 同一對話累積token上限，GPT會捨棄最早的內容，也會縮減輸出長度<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgbce3f20" class="outline-4">
+<h4 id="orgbce3f20"><span class="section-number-4">2.4.3.</span> 關於token</h4>
+<div class="outline-text-4" id="text-2-4-3">
+<ul class="org-ul">
+<li><p>
+<a href="https://platform.openai.com/docs/models/gpt-4o">https://platform.openai.com/docs/models/gpt-4o</a><br />
+</p>
+
+<div id="org3ce3e6f" class="figure">
+<p><img src="images/Google_v.s._AI/2024-08-30_23-52-48_2024-08-30_23-52-33.png" alt="2024-08-30_23-52-48_2024-08-30_23-52-33.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 9: </span>標題</p>
+</div></li>
+</ul>
+
+<p>
+在使用 GPT 模型時，了解 “context window” 與 “max output tokens” 之間的差異對於有效地使用模型非常重要。以下是兩者的定義及其對使用者的影響：<br />
+</p>
+</div>
+<div id="outline-container-org632ef14" class="outline-5">
+<h5 id="org632ef14">Context Window(上下文窗口</h5>
+<div class="outline-text-5" id="text-org632ef14">
+<ul class="org-ul">
+<li>定義: “Context window” 指的是模型在一次處理中能夠接收的最大 token 數量，包含了輸入的文本(prompt)和生成的回應(output)。這個窗口的大小決定了模型可以同時考慮多少信息來生成回應。<br /></li>
+<li>GPT-4 的 context window: 例如，GPT-4 可能有 8,000 或 32,000 個 token 的上下文窗口，具體取決於你使用的模型版本。<br /></li>
+<li>影響: 如果輸入的文本超過了模型的 context window，最早的部分可能會被截斷，導致模型在生成回應時無法參考那些被截斷的部分。因此，如果你的輸入非常長，需要注意可能會丟失一些關鍵信息。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgee592d9" class="outline-5">
+<h5 id="orgee592d9">Max Output Tokens(最大輸出 tokens)</h5>
+<div class="outline-text-5" id="text-orgee592d9">
+<ul class="org-ul">
+<li>定義: “Max output tokens” 指的是模型在生成回應時最多可以生成的 token 數量。這個參數通常可以在 API 調用時進行設定，限制模型的回應長度。<br /></li>
+
+<li>影響: 設定 max output tokens 會影響回應的長度。如果你將這個值設置得太低，回應可能會被截斷；如果設置得太高，回應可能會變得冗長且不必要。一般來說，為了確保回應完整，應合理設定這個參數。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb3dc2a2" class="outline-5">
+<h5 id="orgb3dc2a2">兩者的關係</h5>
+<div class="outline-text-5" id="text-orgb3dc2a2">
+<ul class="org-ul">
+<li>上下文窗口(context window)= 輸入 tokens + 輸出 tokens: 這意味著你的 prompt 和模型的回應總共不能超過上下文窗口的大小。<br />
+<ul class="org-ul">
+<li>例如: 如果你使用的是 8,000 個 token 的 context window，並且你輸入了 7,500 個 token，模型最多只能生成 500 個 token 的回應。<br /></li>
+</ul></li>
+<li>使用者的影響:<br />
+<ul class="org-ul">
+<li>輸入過長: 如果你輸入的 prompt 太長，超過了上下文窗口，模型將無法使用整個 prompt 來生成回應，這可能會導致回應的質量下降。<br /></li>
+<li>輸出過短: 如果 max output tokens 設定得太低，模型的回應可能會不完整，特別是如果回應需要詳細解釋或包含多個步驟。<br /></li>
+<li>效率與成本: 增加上下文窗口或輸出 tokens 數量可能會增加 API 調用的成本和時間。這意味著你需要在完整性和效率之間做出平衡。<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1af62cd" class="outline-5">
+<h5 id="org1af62cd">總結</h5>
+<div class="outline-text-5" id="text-org1af62cd">
+<ul class="org-ul">
+<li>Context window 確定了模型能夠同時處理多少信息，包含輸入和輸出的總 token 數量。<br /></li>
+<li>Max output tokens 確定了模型生成的回應能有多長。<br /></li>
+<li>使用者應根據需求調整輸入長度和最大輸出 token 數量，以確保模型生成完整且有意義的回應，同時保持效率。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1bea7c0" class="outline-4">
+<h4 id="org1bea7c0"><span class="section-number-4">2.4.4.</span> 通用型AI使用小技巧</h4>
+<div class="outline-text-4" id="text-2-4-4">
+</div>
+<div id="outline-container-org1804b26" class="outline-5">
+<h5 id="org1804b26">無法輸入太多字數時:</h5>
+<div class="outline-text-5" id="text-org1804b26">
+<ul class="org-ul">
+<li>我先分段提供給你&ldquo;XXXX@1&rdquo;的內容，先記住即可<br /></li>
+<li>我先分段提供給你&ldquo;XXXX@2&rdquo;的內容，先記住即可<br /></li>
+<li>幫我用繁體中文與&ldquo;報告書範本&rdquo;架構，整理XXX@1~5的資料內容，撰寫XXX產品重點報告書，請逐段分析資料以完成撰寫:<br />
+報告書範本:###<br />
+<ul class="org-ul">
+<li>產品市場性分析:<br /></li>
+<li>產品消費者面貌分析:<br /></li>
+<li>產品特色分析<br /></li>
+<li>如何撰寫產品介紹文案建議<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8c723e7" class="outline-3">
+<h3 id="org8c723e7"><span class="section-number-3">2.5.</span> AI融入教學注意事項、風險與對策</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>把AI能做的丟給AI吧: 標準化評量、出題、英文寫作訂正、英文口說、程式設計、<br /></li>
+<li>教師花心力去培養人類的能力: (Bloom教育目標分類的頂層)有效提問策略、學習遷移、主動建構知識的策略<br /></li>
+<li>您的工作中哪些部分花費的時間最多？<br /></li>
+<li>你希望自己在哪些方面更有效率？<br /></li>
+<li>您認為哪些必要任務可以自動化？<br /></li>
+<li>如果你有時間，你會在課堂上花更多時間做哪一件事？<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgb031f5f" class="outline-4">
+<h4 id="orgb031f5f"><span class="section-number-4">2.5.1.</span> 師生使用生成式AI的注意事項</h4>
+<div class="outline-text-4" id="text-2-5-1">
+</div>
+<div id="outline-container-org688f533" class="outline-5">
+<h5 id="org688f533">學生學習注意事項</h5>
+<div class="outline-text-5" id="text-org688f533">
+<ol class="org-ol">
+<li>學習辨別與負責：生成式 AI 會產生偏見、歧視、邏輯或不正確資料等問題，學生不應 該只依賴生成式 AI 的成果，而要學習識別、判斷，並且抱持批判態度，避免依賴 生成式 AI 產生內容而失去自我思考及檢查的機會。<br /></li>
+<li>將生成式 AI 當作學習夥伴：透過生成式 AI 互動過程中，獲得不同角度的啟發及更 豐富的答案。<br /></li>
+<li>注重清晰度：在與生成式 AI 互動過程中，應使用清晰且重的語氣，以培養良好的對話 與溝通習慣。<br /></li>
+<li>善用提示詞：生成式 AI 產生的內容需清楚表達需求，同樣的提示 (Prompt) 可能產生不 同的答案，因此更要學習如何撰寫具體的需求，一步步提高與增強問題與提問的 準確度。<br /></li>
+<li>思維擴展：善用生成式 AI 產生的回答，如果生成的答案或方向不如預期，要保持開放 思維，繼續探索新知。<br /></li>
+<li>保護隱私：避免在對話中提供任何個人資訊，僅對生成式 AI 分享非關機密的學習數 據及需求。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org14f3193" class="outline-5">
+<h5 id="org14f3193">教師教學注意事項</h5>
+<div class="outline-text-5" id="text-org14f3193">
+<ol class="org-ol">
+<li>教師教學專業優先：使用前須以學科及教學的專業知識來評估生成式 AI 產生的資料， 加以辨識與應用，使之強輔教師教學與學生學習目標的需要。<br /></li>
+<li>增加學習任務設計的策略：學習任務的設計要讓學生無法直接由生成式 AI 得到答案， 讓其與學生的思考緊密結合。<br /></li>
+<li>採用的內容真實：使用生成式 AI 搜尋的數據或資料，生成內容的正確性有時會有所 眼疑，可可能存在省略、偏見或錯誤的內容。在採用生成式 AI 提供的資訊時，教 師需再加以審查與驗證。<br /></li>
+<li>建立使用共識與規範：對家長與學生而言，使用生成式 AI 是新工具與新思維的學習， 為能促進教師生學習經驗共享與同步，教師可應用本指引與學生及家長進行溝通， 共同建立使用生成式 AI 的共識規範，例如使用生成式 AI 寫的原則及界限等，特別 是學生的作業、作品或報告如有使用生成式 AI 助助，教師應要求學生說明該作品使 用的 AI 名稱、版本與版本日期，並提供使用與製作過程中的作為佐證，以對生成內容 進行評估。<br /></li>
+<li>保護學校及個人隱私：避免在使用生成式 AI 過程中，提到學校保密的內容及個資。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb6c85b" class="outline-4">
+<h4 id="orgcb6c85b"><span class="section-number-4">2.5.2.</span> 禁止? 鼓勵? 輔導?</h4>
+<div class="outline-text-4" id="text-2-5-2">
+</div>
+<div id="outline-container-orgd2d2dd0" class="outline-5">
+<h5 id="orgd2d2dd0">個人做法: 開放</h5>
+<div class="outline-text-5" id="text-orgd2d2dd0">
+<ul class="org-ul">
+<li>不符合現實生活: 日常我們在開發系統一定是GOOGLE+AI<br /></li>
+<li>學生平時可以問同學，有的學生不喜和同儕互動<br /></li>
+<li>由評量來決定主要的分數(斷網+onlinePDF教材)<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org756b6f9" class="outline-4">
+<h4 id="org756b6f9"><span class="section-number-4">2.5.3.</span> 從生命週期看AI發展</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<p>
+若說 2023 年是生成式 AI 的爆發年，2024 即是生成式 AI 的穩定發展年，到了這個階段 AI 融入教學的重點不再是「『認識』生成式 AI 延伸有哪些功能、工具」，而是「『理解』生成式 AI 在教學生態系中能扮演什麼樣的角色」，才能進一步推展到「『應用』生成式 AI 在個別變數的課堂情境」的思維。<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup><br />
+</p>
+</div>
+<div id="outline-container-org703a43c" class="outline-5">
+<h5 id="org703a43c">10年一次創新科技</h5>
+<div class="outline-text-5" id="text-org703a43c">
+
+<div id="org3444b0f" class="figure">
+<p><img src="images/10年一次創新科技.png" alt="10年一次創新科技.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 10: </span>每十年一次的科技創新</p>
+</div>
+
+<p>
+綜觀近半個世紀的資訊科技發展，幾乎每隔十年就有一種能深刻改變人類生活的革命性科技問世。<br />
+</p>
+<ul class="org-ul">
+<li>1980年代開始普及的電腦將計算、資料處理與自動化引入日常生活，提高了人類的工作效率；<br /></li>
+<li>1990年代崛起的網際網路打破了時空限制，讓全球資訊得以即時傳遞，徹底改變人類的溝通方式與資訊獲取模式。<br /></li>
+<li>2000年開始普及的行動通訊與智慧型手機使人們隨時隨地都能連接到數位世界，實現天涯若比隣的想像。<br /></li>
+<li>到了2010年，步入成熟期的人工智慧(AI)技術更是掀起了新一波科技革命，自此機器具備了學習、推理和決策的能力，並在醫療、交通、金融等各領域帶來顛覆性的應用。這些變革性的科技不僅改變了人類的生活方式，也持續引領著社會進步。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfa7b993" class="outline-5">
+<h5 id="orgfa7b993">從AI到生成式AI的快速跳躍</h5>
+<div class="outline-text-5" id="text-orgfa7b993">
+
+<div id="orgbfe3960" class="figure">
+<p><img src="images/技術生命週期.png" alt="技術生命週期.png" width="600" /><br />
+</p>
+<p><span class="figure-number">Figure 11: </span>技術生命週期</p>
+</div>
+
+<p>
+技術生命週期(Technology Life Cycle, TLC)是指一項技術從最初開發到最終被淘汰的過程，可以分為如下四個階段 ：<br />
+</p>
+<ol class="org-ol">
+<li>引入階段(Introduction Stage)：技術生命週期的早期階段，技術剛剛推出市場，採用率有限，成本高昂且存在不確定性。<br /></li>
+<li>成長階段(Growth Stage)：技術採用速度加快，市場快速擴展。<br /></li>
+<li>成熟階段(Maturity Stage)：市場穩定並達到飽和。<br /></li>
+<li>衰退階段(Decline Stage)：技術逐漸被其他新技術淘汰，市佔率下降。<br /></li>
+</ol>
+<p>
+反觀生成式AI技術，第一篇GPT論文 發佈時間為2018年、第一篇DALL-E相關論文 於2021年發佈，之後這兩項改變人類使用電腦習慣的革命性技術旋即於2022年正式上線，接下來生成式AI就成為全民運動。2023年甚至已被視為生成式AI元年。面對還來不及進入成熟階段就已被市場廣泛採用的新技術，身為用戶的我們在享受新技術帶來的便利的同時，也將被迫承受這項未成熟的技術所衍生的問題。<br />
+</p>
+
+<div id="orgb8f4ce4" class="figure">
+<p><img src="images/AI 發展生命週期.png" alt="AI 發展生命週期.png" width="800" /><br />
+</p>
+<p><span class="figure-number">Figure 12: </span>AI重要發展階段</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3c93b8f" class="outline-5">
+<h5 id="org3c93b8f">早期的AI聊天機器人</h5>
+<div class="outline-text-5" id="text-org3c93b8f">
+<ul class="org-ul">
+<li><p>
+ELIZA<br />
+1966 年，麻省理工學院的約瑟夫·韋森鮑姆(Joseph Weizenbaum)開發了一個有趣的程式： ELIZA (如圖 ‎1.2 1)，該程式試圖扮演一個心理治療師的角色來與人類交談。覺得有點似曾相識嗎？是的，這就是遠古時代的聊天機器人、如今ChatGPT(Chat Generative Pre-trained Transformer)的鼻祖。<br />
+</p>
+
+<div id="orgbb9403a" class="figure">
+<p><img src="images/圖1.2-1.png" alt="圖1.2-1.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 13: </span>ELIZA</p>
+</div></li>
+<li>目前能做到什麼程度<br />
+個人化教學: <a href="https://youtu.be/_nSmkyDNulk?si=e6_YXdNKmrNj-yGk">Math problems with GPT-4o</a>, 看到這段我感概萬千，我的小孩出生的太早了，自己的小孩最難教，最難得的是，當chatgpt發現你在說話時她會立刻停下來聽完你的問題，即便當時她正在說話。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc439f30" class="outline-5">
+<h5 id="orgc439f30">生命週期變快的影響</h5>
+<div class="outline-text-5" id="text-orgc439f30">
+<ul class="org-ul">
+<li>法律來不及反應<br /></li>
+<li>教育領域來不及反應: 從禁止到輔導使用<br /></li>
+<li>學習速度跟不上科技的進化<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4be1205" class="outline-5">
+<h5 id="org4be1205">AI</h5>
+<div class="outline-text-5" id="text-org4be1205">
+<p>
+AI 發展生命週期：每十年一大突破<br />
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgd83126f"></a>1966：ELIZA 誕生(早期自然語言處理嘗試)<br />
+<div class="outline-text-6" id="text-orgd83126f">
+<ul class="org-ul">
+<li>貢獻：模擬心理諮詢對話，成為聊天機器人的濫觴。<br /></li>
+<li>代表概念：符號式 AI、簡單模式匹配。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org45b38c1"></a>1980s：專家系統盛行(Symbolic AI)<br />
+<div class="outline-text-6" id="text-org45b38c1">
+<ul class="org-ul">
+<li>代表技術：MYCIN、XCON。<br /></li>
+<li>特徵：以「規則庫 + 推理機」為核心，模擬專家決策流程。<br /></li>
+<li>應用領域：醫療診斷、企業決策。<br /></li>
+<li>限制：缺乏學習能力、維護成本高。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc1f28ea"></a>1997：IBM Deep Blue 擊敗西洋棋王卡斯帕羅夫<br />
+<div class="outline-text-6" id="text-orgc1f28ea">
+<ul class="org-ul">
+<li>意義：AI 首度在策略性複雜遊戲中超越人類頂尖棋手。<br /></li>
+<li>技術重點：搜尋演算法、評估函數、專用硬體。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb716f26"></a>2006：深度學習(Deep Learning)重啟<br />
+<div class="outline-text-6" id="text-orgb716f26">
+<ul class="org-ul">
+<li>由來：Geoffrey Hinton 提出「深度置信網路」(DBN)。<br /></li>
+<li>突破點：能從大量資料中自動學習抽象特徵。<br /></li>
+<li>後續影響：為圖像辨識、語音辨識、NLP 開啟新紀元。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgaba6c16"></a>2012：ImageNet 大勝(AlexNet)<br />
+<div class="outline-text-6" id="text-orgaba6c16">
+<ul class="org-ul">
+<li>比賽事件：ImageNet 大規模圖像分類競賽。<br /></li>
+<li>成績：錯誤率大幅降低，證明深度卷積神經網路(CNN)效果卓越。<br /></li>
+<li>衝擊：引爆深度學習應用潮流，成為 AI 主流架構。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orge59b909"></a>2016：AlphaGo 擊敗李世乭(圍棋)<br />
+<div class="outline-text-6" id="text-orge59b909">
+<ul class="org-ul">
+<li>意義：首次在極高複雜度的圍棋中擊敗人類頂尖選手。<br /></li>
+<li>技術重點：深度強化學習(Deep Reinforcement Learning)、蒙地卡羅樹搜尋(MCTS)。<br /></li>
+<li>影響：證明 AI 能從「自我學習」中獲得超越人類的策略判斷力。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc2a478f"></a>2018：BERT 模型發表(語言理解革命)<br />
+<div class="outline-text-6" id="text-orgc2a478f">
+<ul class="org-ul">
+<li>貢獻：Google 推出 BERT(Bidirectional Encoder Representations from Transformers)，可從雙向理解句意。<br /></li>
+<li>技術亮點：Transformer 架構、預訓練語言模型(PLM)。<br /></li>
+<li>影響：大幅提升問答系統、摘要、分類等語言任務的準確度，並成為 NLP 領域新標準。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org3938ef2"></a>2020：GPT-3 公布(通用語言生成突破)<br />
+<div class="outline-text-6" id="text-org3938ef2">
+<ul class="org-ul">
+<li>開發者：OpenAI。<br /></li>
+<li>規模：1750 億參數，能生成高品質長篇文章。<br /></li>
+<li>創新點：僅需「少量提示」即可完成對話、寫作、翻譯、程式設計等任務。<br /></li>
+<li>社會效應：開始引發 AI 應用於知識工作、教育、創作的廣泛討論。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org52c117e"></a>2022：ChatGPT 爆紅(大眾化轉捩點)<br />
+<div class="outline-text-6" id="text-org52c117e">
+<ul class="org-ul">
+<li>關鍵事件：ChatGPT(基於 GPT-3.5)免費開放使用，數天內突破百萬用戶。<br /></li>
+<li>社會效應：大量使用者首次感受到生成式 AI 的實用性與自然互動。<br /></li>
+<li>教育與職場影響：從輔助學習、教案設計到客服與內容生成皆見其蹤影。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org8392fdd"></a>2023：生成式 AI 爆發年<br />
+<div class="outline-text-6" id="text-org8392fdd">
+<ul class="org-ul">
+<li>關鍵發展：<br />
+<ul class="org-ul">
+<li>GPT-4 上線，能力更穩定，支援多模態輸入。<br /></li>
+<li>Stable Diffusion / Midjourney / DALL·E 2 等圖像生成模型蓬勃發展。<br /></li>
+<li>AutoGPT / Agent 系統 開始探索多步任務執行。<br /></li>
+</ul></li>
+<li>整體趨勢：生成式 AI 成為生產力工具(文字、圖像、影音)。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org3433af8"></a>2024：生成式 AI 穩定發展年<br />
+<div class="outline-text-6" id="text-org3433af8">
+<ul class="org-ul">
+<li>特徵：<br />
+<ul class="org-ul">
+<li>多家企業將生成式 AI 整合進產品線。<br /></li>
+<li>教育、法律、金融、媒體等領域出現廣泛應用與倫理審查。<br /></li>
+<li>國際間開始制定規範(如歐盟 AI Act、美國 AI 政策草案)。<br /></li>
+</ul></li>
+<li>應用趨勢：<br />
+<ul class="org-ul">
+<li>從「新奇實驗」走向「實務整合」與「產業流程重構」。<br /></li>
+<li>使用者素養與道德思辨能力成為關鍵。<br /></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org843bf0e" class="outline-4">
+<h4 id="org843bf0e"><span class="section-number-4">2.5.4.</span> 風險</h4>
+<div class="outline-text-4" id="text-2-5-4">
+</div>
+<div id="outline-container-org12d0882" class="outline-5">
+<h5 id="org12d0882">幻覺(Hallucinations)</h5>
+<div class="outline-text-5" id="text-org12d0882">
+</div>
+<ul class="org-ul">
+<li><a id="org809fa6c"></a>ChatGPT: 請介紹&ldquo;寒夜三部曲&rdquo;這部作品及其作者。<br />
+<div class="outline-text-6" id="text-org809fa6c">
+
+<div id="org41d371b" class="figure">
+<p><img src="images/大綱/2024-09-01_14-04-56_2024-09-01_14-04-44.png" alt="2024-09-01_14-04-56_2024-09-01_14-04-44.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org8c00d41"></a>ChatGPT: 請介紹&ldquo;北港香爐人人插&rdquo;這部作品與其作者。<br />
+<div class="outline-text-6" id="text-org8c00d41">
+<p>
+黃春明<br />
+</p>
+</div>
+</li>
+<li><a id="org4703e0d"></a>ChatGPT: &ldquo;北港香爐人人插&rdquo;的作者不是黃春明嗎?<br />
+<div class="outline-text-6" id="text-org4703e0d">
+
+<div id="orgf04a854" class="figure">
+<p><img src="images/大綱/2024-09-01_14-09-31_2024-09-01_14-09-24.png" alt="2024-09-01_14-09-31_2024-09-01_14-09-24.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+<li><a id="orge52f939"></a>Gemini: 請介紹&ldquo;寒夜三部曲&rdquo;這部作品及其作者。<br />
+<div class="outline-text-6" id="text-orge52f939">
+
+<div id="org5467eb9" class="figure">
+<p><img src="images/大綱/2024-09-01_14-12-18_2024-09-01_14-11-21.png" alt="2024-09-01_14-12-18_2024-09-01_14-11-21.png" width="500" /><br />
+</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org582609d" class="outline-5">
+<h5 id="org582609d">歧視和偏見(Discrimination and Bias)</h5>
+<div class="outline-text-5" id="text-org582609d">
+<ul class="org-ul">
+<li>生成式AI可能會在訓練數據中反映出存在的社會偏見，從而在生成內容中出現歧視性或偏見性的言論。<br /></li>
+<li>這對於教育環境特別有害，因為它可能會強化學生的不正確觀念或造成不公平的學習環境。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9cb09a6" class="outline-5">
+<h5 id="org9cb09a6">依賴性(Over-reliance)</h5>
+<div class="outline-text-5" id="text-org9cb09a6">
+<ul class="org-ul">
+<li>學生可能過於依賴AI生成的答案，而忽視了獨立思考和問題解決的能力發展。這可能削弱他們的批判性思維和創造力。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge94138d" class="outline-5">
+<h5 id="orge94138d">隱私問題(Privacy Concerns)</h5>
+<div class="outline-text-5" id="text-orge94138d">
+<ul class="org-ul">
+<li>AI工具可能會收集和處理學生的個人數據，這可能帶來隱私和數據保護的風險，尤其是在數據被不當使用或泄露的情況下。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07d00ba" class="outline-5">
+<h5 id="org07d00ba">認知卸載(Cognitive Offloading)的風險</h5>
+<div class="outline-text-5" id="text-org07d00ba">
+<ul class="org-ul">
+<li>我們使用手機來儲存資訊、設置鬧鐘以及使用像Google Maps 導航，或者像倒車時使用360環警雷達等，從而減少這些任務所需的心智努力。而過度仰賴外部工具，可能導致我們在沒有這些工具的情況下提取資訊的能力下降，可能會影響我們將知識轉化到長期記憶。<br /></li>
+<li>換句話說，未來可能出現學生沒有GAI就不會學習、教師沒有GAI就不會教學的場景?但是我完全沒有這種擔心，不是對學生有信心，是對GAI不會消失有信<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd420529" class="outline-5">
+<h5 id="orgd420529">抄襲</h5>
+<div class="outline-text-5" id="text-orgd420529">
+<p>
+以AI生成的內容繳交作業<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org527d472" class="outline-4">
+<h4 id="org527d472"><span class="section-number-4">2.5.5.</span> Solution</h4>
+<div class="outline-text-4" id="text-2-5-5">
+</div>
+<div id="outline-container-orgf520e7f" class="outline-5">
+<h5 id="orgf520e7f">solution to 幻覺</h5>
+<div class="outline-text-5" id="text-orgf520e7f">
+</div>
+<ul class="org-ul">
+<li><a id="org4fb7573"></a>複查<br />
+<div class="outline-text-6" id="text-org4fb7573">
+<ul class="org-ul">
+<li>針對同一問題請它重複生成，比較兩次的內容<br /></li>
+<li>以不同AI對同一問題生成結果進行比對<br /></li>
+<li><p>
+介紹不同AI工具的優劣<br />
+</p>
+
+<div id="orgfa19293" class="figure">
+<p><img src="images/大綱/2024-09-01_14-23-46_2024-09-01_14-18-17.png" alt="2024-09-01_14-23-46_2024-09-01_14-18-17.png" width="500" /><br />
+</p>
+</div></li>
+<li>同時用多個GPT驗證資枓: <a href="https://www.youtube.com/watch?v=KFX3SVpQ-Kg">結局跌破眼鏡！ChatGPT vs Claude vs Gemini 付費版AI大PK</a><br /></li>
+<li><p>
+chathub<br />
+簡介台灣文學作品&ldquo;浪淘沙&rdquo;及其故事背景<br />
+</p>
+
+<div id="org1c96fd7" class="figure">
+<p><img src="images/分享內容/2024-08-30_16-15-28_2024-08-30_16-15-10.png" alt="2024-08-30_16-15-28_2024-08-30_16-15-10.png" width="500" /><br />
+</p>
+</div></li>
+<li>Google it<br /></li>
+<li>請教專家<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgc019709" class="outline-5">
+<h5 id="orgc019709">質疑</h5>
+<div class="outline-text-5" id="text-orgc019709">
+<ul class="org-ul">
+<li>引導學生質疑AI生成的結果，進而質疑Google搜尋的結果<br />
+活動1: 設計一個問題，刻意讓AI回答錯誤<br />
+活動2：(台大陳縕農老師)設計一個程式，讓AI生成的程式是無法執行，接下來由學生引導AI修正這支程式，進行生成可行的程式，由這個活動來讓學生理解即便AI能方便生成程式，但仍需要使用者的專業知識來引導、修正<br /></li>
+<li>[來源忘了]在課堂中，我們已經講述過儒、墨、道、法，此四家的的基本學說，並請請各位同學思考此四家如何用其思想來解決社會與政治的動盪。接下來，請各位同學利用「ChatGPT」跟AI討論此問題：「請問先秦諸子：儒家、墨家、道家、法家，如何運用他們的思想來解決當時社會與政治的動盪？」(直接複製給AI即可)等AI回答後，請思考並回答以下問題：<br />
+<ol class="org-ol">
+<li>我在講義上的回答與AI的回答有何差異？哪裡是我沒有注意到的？<br /></li>
+<li>AI的回答中，此四家有何共通點？<br /></li>
+<li>針對AI的回答，根據你的學習與查找的資料，提出一點質疑。<br /></li>
+</ol></li>
+<li>找出老師課堂說錯、教材講義錯誤：加分<br /></li>
+<li>由AI生成的資料是否需要引用來源取決於使用的情境和要求。如果您在正式的學術或專業文獻中使用AI生成的資料，通常需要說明這些資料的來源，即便它是由AI生成的。這可以包括引用AI模型或工具的名稱，以及使用的特定提示(prompt)或參數。例如，如果使用了ChatGPT生成某些內容，可以在文中注明「本內容由ChatGPT生成，基於特定提示」，並在參考文獻中列出工具的相關信息。如果您需要更詳細的指導，可以根據所在機構或出版物的要求來決定如何處理引用。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ccdc9f" class="outline-5">
+<h5 id="org8ccdc9f">GAI內容檢查</h5>
+<div class="outline-text-5" id="text-org8ccdc9f">
+</div>
+<ul class="org-ul">
+<li><a id="org925452e"></a>工具<br />
+<ul class="org-ul">
+<li><a id="org0f81c11"></a>GPTZero<br />
+<div class="outline-text-7" id="text-org0f81c11">
+<ul class="org-ul">
+<li>簡介：GPTZero 是一個專門用來檢測GPT模型生成文本的工具。它通過分析文本的困難度和複雜度來判斷其是否可能由AI生成。<br /></li>
+<li>特點：該工具會分析文本的流暢性、複雜性和不規則性，並給出一個“可疑度”的評分。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb703296"></a>Turnitin AI Detection<br />
+<div class="outline-text-7" id="text-orgb703296">
+<ul class="org-ul">
+<li>簡介：Turnitin 是一個學術誠信檢查工具，它最近增加了對AI生成文本的檢測功能，特別是在學術環境中使用廣泛。<br /></li>
+<li>特點：它不僅能檢測抄襲，還能檢測文本是否有可能是由AI生成的，並且會提供詳細的報告。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org8eac2b8"></a>Writer.com AI Content Detector<br />
+<div class="outline-text-7" id="text-org8eac2b8">
+<ul class="org-ul">
+<li>簡介：Writer.com 提供一個可以檢測AI生成文本的工具，適用於檢查文章、報告或其他類型的文本。<br /></li>
+<li>特點：該工具會提供一個AI生成文本的可能性評分，並標記可疑的部分。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org2dc0e03"></a>Crossplag AI Content Detector<br />
+<div class="outline-text-7" id="text-org2dc0e03">
+<ul class="org-ul">
+<li>簡介：這是一個新興的AI檢測工具，專注於檢測文本是否由AI生成或修改。<br /></li>
+<li>特點：該工具提供了詳細的報告和簡單的界面，適合不同背景的用戶使用。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc65447e"></a>Hugging Face’s Transformers-based Classifier<br />
+<div class="outline-text-7" id="text-orgc65447e">
+<ul class="org-ul">
+<li>簡介：Hugging Face提供了一些開源工具，可以用來訓練模型檢測生成式AI文本。你可以基於這些模型開發自訂的檢測工具。<br /></li>
+<li>特點：這種方法靈活性高，但需要一定的技術知識來設置和運行。<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org05494ab"></a>Winston.AI<br />
+<div class="outline-text-7" id="text-org05494ab">
+<ul class="org-ul">
+<li>文字偵測(<a href="https://gowinston.ai">https://gowinston.ai</a>)<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org0e63cb6"></a>AI or Not<br />
+<div class="outline-text-7" id="text-org0e63cb6">
+<ul class="org-ul">
+<li>圖片及聲音(<a href="https://www.aiornot.com">https://www.aiornot.com</a>)<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org9c5b5a2"></a>關於道魔之爭<br />
+<ul class="org-ul">
+<li><a id="orgb55b39d"></a>GPTZero<br />
+<div class="outline-text-7" id="text-orgb55b39d">
+<ul class="org-ul">
+<li>簡介：GPTZero 是一個專門用來檢測GPT模型生成文本的工具。它通過分析文本的困難度和複雜度來判斷其是否可能由AI生成。<br /></li>
+<li>特點：該工具會分析文本的流暢性、複雜性和不規則性，並給出一個“可疑度”的評分。<br /></li>
+<li><p>
+AI生成的內容<br />
+</p>
+<blockquote>
+<p>
+我是一位高中資訊科師，請幫我生成一份演講講稿，主題是&ldquo;AI融入教學設計&rdquo;，對象是高中各領域教師，演講時間一小時。<br />
+</p>
+</blockquote>
+
+
+<div id="org86067f9" class="figure">
+<p><img src="images/大綱/2024-09-01_21-40-18_2024-09-01_21-38-25.png" alt="2024-09-01_21-40-18_2024-09-01_21-38-25.png" width="500" /><br />
+</p>
+</div>
+
+
+<div id="org93fe86d" class="figure">
+<p><img src="images/大綱/2024-09-01_21-40-41_2024-09-01_21-39-31.png" alt="2024-09-01_21-40-41_2024-09-01_21-39-31.png" width="500" /><br />
+</p>
+</div></li>
+
+<li><p>
+自己的教材<br />
+</p>
+
+<div id="orgfaad59d" class="figure">
+<p><img src="images/大綱/2024-09-01_21-28-39_2024-09-01_21-23-13.png" alt="2024-09-01_21-28-39_2024-09-01_21-23-13.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+<p>
+2  #+ATTR_HTML: :width 500<br />
+  <img src="images/大綱/2024-09-01_21-29-00_2024-09-01_21-28-22.png" alt="2024-09-01_21-29-00_2024-09-01_21-28-22.png" /><br />
+</p>
+<ul class="org-ul">
+<li><p>
+GAI出現之前的PAPER<br />
+</p>
+
+<div id="org23f205a" class="figure">
+<p><img src="images/工具/2024-08-31_16-18-36_2024-08-31_16-16-36.png" alt="2024-08-31_16-18-36_2024-08-31_16-16-36.png" width="500" /><br />
+</p>
+</div>
+
+
+<div id="org85d5e17" class="figure">
+<p><img src="images/大綱/2024-09-01_21-31-41_2024-09-01_21-31-01.png" alt="2024-09-01_21-31-41_2024-09-01_21-31-01.png" width="500" /><br />
+</p>
+</div></li>
+</ul>
+</div>
+</li>
+<li><a id="org521062c"></a><a href="https://bypass.hix.ai/tw">HIX.AI</a>:<br />
+<div class="outline-text-7" id="text-org521062c">
+<p width="500">
+<a href="images/大綱/2024-09-01_12-49-49_HIX.mp4" width="500">images/大綱/2024-09-01_12-49-49_HIX.mp4</a><br />
+</p>
+</div>
+</li>
+<li><a id="orgb334e0c"></a>GPTZero Plus?<br /></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8dd5150" class="outline-4">
+<h4 id="org8dd5150"><span class="section-number-4">2.5.6.</span> 結論</h4>
+<div class="outline-text-4" id="text-2-5-6">
+<p>
+Richard E. Clark(南加大教育學院) v.s. Robert Kozma(密西根大學教育學院)<br />
+針對 教學媒體v.s教學本身 ，clark與kozma曾經有過如下精彩的互動:<br />
+</p>
+<ul class="org-ul">
+<li>1983年Clark宣稱媒體只是載具(vehicles)，就如購物中心運送食品的推車，我們不會因為使用載具不同就會增加食品的養份，換言之，在任何情形下媒體均對學習沒有任何助益，如果有，那是基於教師使用不同教學設計所致。<br /></li>
+<li>1991年Robert Kozma(時職於美國密西根大學教育學院)以「媒體伴學」(Learning with Media)一文向Clark做出回應，Kozma認為媒體是設計科學，不是自然科學，若是媒體無益學習，那是因為人們尚未研發出有助學習的媒體，而不是媒體無益學習。<br /></li>
+<li>1994年Clark再度以「媒體未曾影響學習」(Media will Never Influence Learning)為文回應Kozma的主張，認為「新理論」發展之前無需投注於新媒體影響學習的研究上浪費時間心力，科技特性論無法取代教學內容及教學方法而成為獨特個體認知代理的必要條件，科技選擇無關學習者信念或動機，但攸關教育經濟、認知經濟。<br /></li>
+<li>同(1994)年Kozma回應以「媒體對學習的影響─持續論證」(The Influence of Media on Learning: The Debate Continues)呼籲不可忽視媒體重塑表徵符號系統及資訊處理系統，否則，科技單純只為教育娛樂的思維將導致學習微乎其微。Kozma認為理論使用與研究設計缺乏衡量學習發生的認知、情意、社會等歷程，導致科技淪為載具。新理論、新方法、新評估適配新科技才是未來研究趨勢。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7df4c81" class="outline-3">
+<h3 id="org7df4c81"><span class="section-number-3">2.6.</span> Vibe Coder</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Vibe Coder是一個專為教育工作者設計的AI工具，旨在幫助教師更有效地整合AI技術到課堂教學中。它提供了多種功能，包括課程設計、教學資源生成和學生互動等，旨在提升教學效率和學生學習體驗。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga580931" class="outline-2">
+<h2 id="orga580931"><span class="section-number-2">3.</span> AI原理(下午)</h2>
+<div class="outline-text-2" id="text-3">
+<blockquote>
+<p>
+我們不能完全確定其他人是否真的在思考,我們只能通過他們的行為來判斷。<br />
+</p>
+
+<p>
+&#x2026; the only way by which one could be sure that a machine thinks is to be the machine and to feel oneself thinking. &#x2026; Likewise according to this view the only way to know that a man thinks is to be that<br />
+particular man.<br />
+</p>
+
+<p>
+by A. M. Turing<br />
+</p>
+</blockquote>
+<ul class="org-ul">
+<li><a href="https://classroom.google.com/c/NzgyMjE3NjgwMzg0?cjc=xp7weqkz">生成式AI的基本原理(Google Classroom)</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://www.oecd-ilibrary.org/education/talis-2018-results-volume-ii_19cf08df-en">TALIS 2018 Results</a>, TALIS 2018 Results (Volume II), Teachers and School Leaders as Valued Professionals<br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://www.youtube.com/watch?v=PD5s7R3GRRg"> Google NotebookLM 教學 | 潛力無窮的AI筆記軟體，內建Gemini Pro，人機協作，陪我讀書做筆記、文獻整理、教學備課出題</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://flipedu.parenting.com.tw/article/008926">教育第一線視角下，生成式 AI 融入教學生態系的多模態</a><br />
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: 顏永進</p>
+<p class="date">Created: 2025-06-20 Fri 20:44</p>
+</div>
+</body>
+</html>

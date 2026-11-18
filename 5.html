@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku (Five in a Row) Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <script>
+     const canvas = document.getElementById("gameCanvas");
+     const ctx = canvas.getContext("2d");
+     const size = 30;
+     const rows = 19;
+     const cols = 19;
+     let board = Array(rows).fill(null).map(() => Array(cols).fill(null));
+     let currentPlayer = "black";
+
+     canvas.addEventListener("click", placePiece);
+
+     function drawBoard() {
+         for (let i = 0; i < rows; i++) {
+             for (let j = 0; j < cols; j++) {
+                 ctx.strokeStyle = "#000";
+                 ctx.strokeRect(j * size, i * size, size, size);
+             }
+         }
+     }
+
+     function placePiece(event) {
+         const rect = canvas.getBoundingClientRect();
+         const x = event.clientX - rect.left;
+         const y = event.clientY - rect.top;
+         const row = Math.floor(y / size);
+         const col = Math.floor(x / size);
+
+         if (board[row][col] === null) {
+             board[row][col] = currentPlayer;
+             drawPiece(col, row, currentPlayer);
+             if (checkWin(row, col, currentPlayer)) {
+                 setTimeout(() => alert(`${currentPlayer} wins!`), 10);
+                 canvas.removeEventListener("click", placePiece);
+             }
+             currentPlayer = currentPlayer === "black" ? "white" : "black";
+         }
+     }
+
+     function drawPiece(col, row, color) {
+         const centerX = col * size + size / 2;
+         const centerY = row * size + size / 2;
+         const radius = size / 2 - 2;
+         ctx.fillStyle = color;
+         ctx.beginPath();
+         ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+         ctx.fill();
+         ctx.strokeStyle = "#000";
+         ctx.stroke();
+     }
+
+     function checkWin(row, col, color) {
+         return (
+             checkDirection(row, col, color, 1, 0) || // Horizontal
+             checkDirection(row, col, color, 0, 1) || // Vertical
+             checkDirection(row, col, color, 1, 1) || // Diagonal (∕)
+             checkDirection(row, col, color, 1, -1)   // Diagonal (∖)
+         );
+     }
+
+     function checkDirection(row, col, color, deltaX, deltaY) {
+         let count = 1;
+         for (let i = 1; i < 5; i++) {
+             const newRow = row + deltaX * i;
+             const newCol = col + deltaY * i;
+             if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols && board[newRow][newCol] === color) {
+                 count++;
+             } else {
+                 break;
+             }
+         }
+         for (let i = 1; i < 5; i++) {
+             const newRow = row - deltaX * i;
+             const newCol = col - deltaY * i;
+             if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols && board[newRow][newCol] === color) {
+                 count++;
+             } else {
+                 break;
+             }
+         }
+         return count >= 5;
+     }
+
+     drawBoard();
+    </script>
+</body>
+</html>

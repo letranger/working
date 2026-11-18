@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Kami - Bring Learning to Life</title>
+	<meta name="description" content="Annotate, collaborate and assess with Kami – the all-in-one learning platform. Enhance your existing resources and curriculum with 40+ tools and features." />
+	<link rel="canonical" href="https://www.kamiapp.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Kami - Bring Learning to Life" />
+	<meta property="og:description" content="Annotate, collaborate and assess with Kami – the all-in-one learning platform. Enhance your existing resources and curriculum with 40+ tools and features." />
+	<meta property="og:url" content="https://www.kamiapp.com/" />
+	<meta property="og:site_name" content="Kami" />
+	<meta property="article:publisher" content="https://www.facebook.com/kamiapp" />
+	<meta property="article:modified_time" content="2023-01-20T02:27:14+00:00" />
+	<meta property="og:image" content="https://www.kamiapp.com/wp-content/uploads/2022/10/Home-page.png" />
+	<meta property="og:image:width" content="2500" />
+	<meta property="og:image:height" content="1309" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@kamiapp" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="8 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.kamiapp.com/","url":"https://www.kamiapp.com/","name":"Kami - Bring Learning to Life","isPartOf":{"@id":"https://www.kamiapp.com/#website"},"about":{"@id":"https://www.kamiapp.com/#organization"},"primaryImageOfPage":{"@id":"https://www.kamiapp.com/#primaryimage"},"image":{"@id":"https://www.kamiapp.com/#primaryimage"},"thumbnailUrl":"https://www.kamiapp.com/wp-content/uploads/2022/10/Home-page.png","datePublished":"2022-08-03T09:14:42+00:00","dateModified":"2023-01-20T02:27:14+00:00","description":"Annotate, collaborate and assess with Kami – the all-in-one learning platform. Enhance your existing resources and curriculum with 40+ tools and features.","breadcrumb":{"@id":"https://www.kamiapp.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.kamiapp.com/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.kamiapp.com/#primaryimage","url":"https://www.kamiapp.com/wp-content/uploads/2022/10/Home-page.png","contentUrl":"https://www.kamiapp.com/wp-content/uploads/2022/10/Home-page.png","width":2500,"height":1309,"caption":"Kami app with voice comment and add media and the purple Kami dog in the corner"},{"@type":"BreadcrumbList","@id":"https://www.kamiapp.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog"}]},{"@type":"WebSite","@id":"https://www.kamiapp.com/#website","url":"https://www.kamiapp.com/","name":"Kami","description":"Bring learning to life","publisher":{"@id":"https://www.kamiapp.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.kamiapp.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.kamiapp.com/#organization","name":"Kami","url":"https://www.kamiapp.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.kamiapp.com/#/schema/logo/image/","url":"https://www.kamiapp.com/wp-content/uploads/2022/08/kami-logo.svg","contentUrl":"https://www.kamiapp.com/wp-content/uploads/2022/08/kami-logo.svg","width":107,"height":37,"caption":"Kami"},"image":{"@id":"https://www.kamiapp.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/kamiapp","https://twitter.com/kamiapp","https://www.instagram.com/kamiapp/","https://www.youtube.com/c/Kamiapp"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel="alternate" type="application/rss+xml" title="Kami &raquo; Feed" href="https://www.kamiapp.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kami &raquo; Comments Feed" href="https://www.kamiapp.com/comments/feed/" />
+<script type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.kamiapp.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.kamiapp.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.kamiapp.com/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='geot-css-css' href='https://www.kamiapp.com/wp-content/plugins/geotargetingwp/public/css/geotarget-public.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://www.kamiapp.com/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://www.kamiapp.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/custom-frontend-lite.min.css?ver=1674489786' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/post-7.css?ver=1674489786' media='all' />
+<link rel='stylesheet' id='elementor-lazyload-css' href='https://www.kamiapp.com/wp-content/plugins/elementor/assets/css/modules/lazyload/frontend.min.css?ver=3.11.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.18.0' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1674489786' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.11.1' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.11.1' media='all' />
+<link rel='stylesheet' id='elementor-post-134-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/post-134.css?ver=1675223279' media='all' />
+<link rel='stylesheet' id='elementor-post-11-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/post-11.css?ver=1674489787' media='all' />
+<link rel='stylesheet' id='elementor-post-71-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/post-71.css?ver=1674489787' media='all' />
+<link rel='stylesheet' id='elementor-icons-ekiticons-css' href='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.kamiapp.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.0.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-child-style-css' href='https://www.kamiapp.com/wp-content/themes/hello-elementor-child/style.css?ver=1677027169' media='all' />
+<link rel='stylesheet' id='custom-style-css' href='https://www.kamiapp.com/wp-content/themes/hello-elementor-child/assets/css/custom.css?ver=1677027169' media='all' />
+<link rel='stylesheet' id='owl-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css?ver=1677027169' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-css' href='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='ekit-responsive-css' href='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='https://www.kamiapp.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.5.4' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src='https://www.kamiapp.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.11.1' id='font-awesome-4-shim-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<link rel="https://api.w.org/" href="https://www.kamiapp.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.kamiapp.com/wp-json/wp/v2/pages/134" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kamiapp.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.kamiapp.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://www.kamiapp.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.kamiapp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kamiapp.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.kamiapp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kamiapp.com%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.11.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<!-- Google Tag Manager -->
+<script type="4c9bd3fc4c8466e6c9847a4d-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVKDGXG');</script>
+<!-- End Google Tag Manager -->
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-PP8BQHX" type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<link rel="icon" href="https://www.kamiapp.com/wp-content/uploads/2022/08/fevicon.png" sizes="32x32" />
+<link rel="icon" href="https://www.kamiapp.com/wp-content/uploads/2022/08/fevicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.kamiapp.com/wp-content/uploads/2022/08/fevicon.png" />
+<meta name="msapplication-TileImage" content="https://www.kamiapp.com/wp-content/uploads/2022/08/fevicon.png" />
+</head>
+<body class="home page-template page-template-elementor_header_footer page page-id-134 wp-custom-logo e-lazyload elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-134 elementor-page-23469">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVKDGXG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div data-elementor-type="header" data-elementor-id="11" class="elementor elementor-11 elementor-location-header">
+								<header class="elementor-section elementor-top-section elementor-element elementor-element-47e2608 elementor-section-height-min-height elementor-section-content-middle header elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="47e2608" data-element_type="section" id="header" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-cb1ce24" data-id="cb1ce24" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c262cad elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="c262cad" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.1 - 15-02-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="https://www.kamiapp.com">
+							<img width="107" height="37" src="https://www.kamiapp.com/wp-content/uploads/2022/08/kami-logo.svg" class="attachment-full size-full wp-image-15" alt="Kami logo" loading="lazy" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-84bc2ab" data-id="84bc2ab" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-dc37e46 header_menu elementor-widget elementor-widget-ekit-nav-menu" data-id="dc37e46" data-element_type="widget" data-widget_type="ekit-nav-menu.default">
+				<div class="elementor-widget-container">
+			<div class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="https://www.kamiapp.com/wp-content/uploads/2022/08/humber-icon.svg" data-hamburger-icon-type="url" data-responsive-breakpoint="1024">            <button class="elementskit-menu-hamburger elementskit-menu-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#EDECFF"></circle><path d="M11 26H29" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 20H29" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 14H29" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>            </button>
+            <div id="ekit-megamenu-header-menu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default elementskit_line_arrow ekit-nav-menu-one-page-no ekit-nav-dropdown-hover"><ul id="menu-header-menu" class="elementskit-navbar-nav elementskit-menu-po-left submenu-click-on-"><li id="menu-item-1611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1611 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Product<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-2000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/features/" class=" dropdown-item">Tools &#038; Features</a>	<li id="menu-item-2752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2752 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/integrations/" class=" dropdown-item">Integrations</a>	<li id="menu-item-1628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1628 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="/google" class=" dropdown-item">Chrome Extension</a>	<li id="menu-item-23301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23301 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/whats-new/" class=" dropdown-item">What’s New</a></ul>
+</li>
+<li id="menu-item-1612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1612 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-full_width elementskit-megamenu-has elementskit-mobile-builder-content" data-vertical-menu=""><a href="#" class="ekit-menu-nav-link">Solutions<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a><div class="elementskit-megamenu-panel">		<div data-elementor-type="wp-post" data-elementor-id="1617" class="elementor elementor-1617">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-e8d1c84 mega_menu-section elementor-section-content-top elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e8d1c84" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-503ea14" data-id="503ea14" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2a75cb2 elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="2a75cb2" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.kamiapp.com/wp-content/uploads/elementor/css/custom-widget-icon-box.min.css?ver=1674489788">		<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/classroom">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#EDECFF"></circle><path d="M41.6667 20.5H34.6667C33.429 20.5 32.242 20.9917 31.3668 21.8668C30.4917 22.742 30 23.929 30 25.1667V41.5C30 40.5717 30.3687 39.6815 31.0251 39.0251C31.6815 38.3687 32.5717 38 33.5 38H41.6667V20.5Z" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.3335 20.5H25.3335C26.5712 20.5 27.7582 20.9917 28.6333 21.8668C29.5085 22.742 30.0002 23.929 30.0002 25.1667V41.5C30.0002 40.5717 29.6314 39.6815 28.975 39.0251C28.3187 38.3687 27.4284 38 26.5002 38H18.3335V20.5Z" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/classroom" >
+						In the Classroom					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Love learning with your students using efficient, fun, and engaging content.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-c6aa817" data-id="c6aa817" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9a9284e elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="9a9284e" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/blended-learning">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#FFFAC5"></circle><path d="M23.4583 43.7917L18.625 38.9583L23.4583 34.125" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M40.375 31.7083V34.1249C40.375 35.4068 39.8658 36.6362 38.9593 37.5426C38.0529 38.449 36.8235 38.9583 35.5417 38.9583H18.625" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.5415 17.2083L40.3748 22.0416L35.5415 26.8749" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.625 29.2917V26.8751C18.625 25.5932 19.1342 24.3638 20.0407 23.4574C20.9471 22.551 22.1765 22.0417 23.4583 22.0417H40.375" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/blended-learning" >
+						Blended Learning 					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Enhance your online and in-class curriculum with a little Kami-magic.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-52033e1" data-id="52033e1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-41acbf1 elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="41acbf1" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/home-based-learning">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#E8FFDC"></circle><path d="M18.625 26.8751L29.5 18.4167L40.375 26.8751V40.1667C40.375 40.8077 40.1204 41.4224 39.6672 41.8756C39.214 42.3288 38.5993 42.5834 37.9583 42.5834H21.0417C20.4007 42.5834 19.786 42.3288 19.3328 41.8756C18.8796 41.4224 18.625 40.8077 18.625 40.1667V26.8751Z" stroke="#053029" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M25.875 42.5833V30.5H33.125V42.5833" stroke="#053029" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/home-based-learning" >
+						Home-based learning					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Nobody has to fly solo again. Keep your class connected in Kami. 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-b49e594" data-id="b49e594" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-07609de elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="07609de" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/accessibility">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#FCE8FD"></circle><path d="M29.4998 42.5834C36.1733 42.5834 41.5832 37.1735 41.5832 30.5001C41.5832 23.8266 36.1733 18.4167 29.4998 18.4167C22.8264 18.4167 17.4165 23.8266 17.4165 30.5001C17.4165 37.1735 22.8264 42.5834 29.4998 42.5834Z" stroke="#640C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.6665 32.9167C24.6665 32.9167 26.479 35.3334 29.4998 35.3334C32.5207 35.3334 34.3332 32.9167 34.3332 32.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M33.125 26.875H33.1371" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M25.875 26.875H25.8871" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/accessibility" >
+						Accessibility					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Level the playing field so that progress is guaranteed for all your students.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-08338b7" data-id="08338b7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a4b2795 elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="a4b2795" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/collaboration">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#FCE8FD"></circle><g clip-path="url(#clip0_1294_8556)"><path d="M42.4664 39.452V37.2602C42.4657 36.2889 42.1424 35.3454 41.5473 34.5778C40.9523 33.8102 40.1191 33.2619 39.1787 33.0191" stroke="#640C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.8907 39.452V37.2602C35.8907 36.0976 35.4289 34.9826 34.6068 34.1606C33.7847 33.3385 32.6697 32.8766 31.5071 32.8766H22.74C21.5774 32.8766 20.4624 33.3385 19.6404 34.1606C18.8183 34.9826 18.3564 36.0976 18.3564 37.2602V39.452" stroke="#640C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M34.7949 19.8684C35.7378 20.1098 36.5736 20.6582 37.1704 21.4271C37.7672 22.196 38.0912 23.1416 38.0912 24.115C38.0912 25.0883 37.7672 26.034 37.1704 26.8029C36.5736 27.5717 35.7378 28.1201 34.7949 28.3616" stroke="#640C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M27.1238 28.4931C29.5448 28.4931 31.5074 26.5305 31.5074 24.1095C31.5074 21.6885 29.5448 19.726 27.1238 19.726C24.7028 19.726 22.7402 21.6885 22.7402 24.1095C22.7402 26.5305 24.7028 28.4931 27.1238 28.4931Z" stroke="#640C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_1294_8556"><rect width="26.3014" height="26.3014" fill="white" transform="translate(17.2607 16.4383)"></rect></clipPath></defs></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/collaboration" >
+						Group Projects & Collaboration					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Encourage meaningful collaboration for all students, anywhere.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-0fbf874" data-id="0fbf874" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-35eef53 elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="35eef53" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/assessments-and-feedback">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#EDECFF"></circle><path d="M25.875 29.2916L29.5 32.9166L41.5833 20.8333" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M40.375 30.5V38.9583C40.375 39.5993 40.1204 40.214 39.6672 40.6672C39.214 41.1204 38.5993 41.375 37.9583 41.375H21.0417C20.4007 41.375 19.786 41.1204 19.3328 40.6672C18.8796 40.214 18.625 39.5993 18.625 38.9583V22.0417C18.625 21.4007 18.8796 20.786 19.3328 20.3328C19.786 19.8796 20.4007 19.625 21.0417 19.625H34.3333" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/assessments-and-feedback" >
+						Assessments & Feedback					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Save time by grading efficiently, and give your students the help they need.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-7ef6a65" data-id="7ef6a65" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-99b0a34 elementor-position-top elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="99b0a34" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="/solutions/whiteboarding">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#FFFAC5"></circle><path d="M29.2915 20.8333H20.8332C20.1922 20.8333 19.5775 21.0879 19.1243 21.5411C18.6711 21.9943 18.4165 22.609 18.4165 23.2499V40.1666C18.4165 40.8075 18.6711 41.4222 19.1243 41.8754C19.5775 42.3286 20.1922 42.5833 20.8332 42.5833H37.7498C38.3908 42.5833 39.0055 42.3286 39.4587 41.8754C39.9119 41.4222 40.1665 40.8075 40.1665 40.1666V31.7083" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M38.354 19.0208C38.8347 18.5401 39.4867 18.27 40.1665 18.27C40.8463 18.27 41.4983 18.5401 41.979 19.0208C42.4597 19.5015 42.7298 20.1535 42.7298 20.8333C42.7298 21.5131 42.4597 22.1651 41.979 22.6458L30.4998 34.1249L25.6665 35.3333L26.8748 30.4999L38.354 19.0208Z" stroke="#FF7A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<a href="/solutions/whiteboarding" >
+						Whiteboarding					</a>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Capture and develop great ideas from every student, in an instant.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		</div></li>
+<li id="menu-item-1613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1613 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Resources<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-2751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2751 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/blog/" class=" dropdown-item">Kami Blog</a>	<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/kami-academy/" class=" dropdown-item">Kami Academy </a>	<li id="menu-item-3297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3297 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/teacher-teacher/" class=" dropdown-item">Podcast</a>	<li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="http://www.kamiapp.com/library" class=" dropdown-item">Kami Library</a></ul>
+</li>
+<li id="menu-item-2994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2994 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.kamiapp.com/pricing/" class="ekit-menu-nav-link">Pricing</a></li>
+<li id="menu-item-1664" class="mobile_menu_item menu-item menu-item-type-custom menu-item-object-custom menu-item-1664 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link">Login</a></li>
+<li id="menu-item-1669" class="mobile_menu_item btn menu-item menu-item-type-custom menu-item-object-custom menu-item-1669 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://web.kamihq.com/" class="ekit-menu-nav-link">Try Kami for free</a></li>
+</ul>
+				<div class="elementskit-nav-identity-panel">
+					<div class="elementskit-site-title">
+						<a class="elementskit-nav-logo" href="https://www.kamiapp.com" target="_self" rel="">
+                            <img width="107" height="37" src="https://www.kamiapp.com/wp-content/uploads/2022/08/kami-logo.svg" class="attachment-full size-full" alt="Kami logo" decoding="async" loading="lazy" />
+						</a> 
+					</div>
+					<button class="elementskit-menu-close elementskit-menu-toggler" type="button">X</button>
+				</div>
+			</div><div class="elementskit-menu-overlay elementskit-menu-offcanvas-elements elementskit-menu-toggler ekit-nav-menu--overlay"></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-109574f elementor-hidden-tablet elementor-hidden-mobile" data-id="109574f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7c7f632 elementor-icon-list--layout-inline elementor-align-right header__right elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7c7f632" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.kamiapp.com/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1674489789">		<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://web.kamihq.com/">
+
+											<span class="elementor-icon-list-text">Login</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://web.kamihq.com/">
+
+											<span class="elementor-icon-list-text">Try Kami for free</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</header>
+						</div>
+				<div data-elementor-type="wp-page" data-elementor-id="134" class="elementor elementor-134">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-64b7d51 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64b7d51" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-e-bg-lazyload="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5c35a26" data-id="5c35a26" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-26c41a4 elementor-widget elementor-widget-heading" data-id="26c41a4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.1 - 15-02-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Your all-in-one<br>classroom sidekick</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-be6a327 elementor-widget elementor-widget-text-editor" data-id="be6a327" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.1 - 15-02-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><span style="font-weight: 400;">Enhance your existing resources and curriculum with 40+ tools and features</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a22a130 elementor-align-center elementor-widget elementor-widget-button" data-id="a22a130" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://web.kamihq.com/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Try Kami for free</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-bc491ac elementor-widget elementor-widget-text-editor" data-id="bc491ac" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>No credit card required</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-eb4ef64 elementor-widget elementor-widget-image" data-id="eb4ef64" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1176" height="642" src="https://www.kamiapp.com/wp-content/uploads/2023/01/Homepage_header-1.png" class="attachment-full size-full wp-image-23597" alt="" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2023/01/Homepage_header-1.png 1176w, https://www.kamiapp.com/wp-content/uploads/2023/01/Homepage_header-1-300x164.png 300w, https://www.kamiapp.com/wp-content/uploads/2023/01/Homepage_header-1-1024x559.png 1024w, https://www.kamiapp.com/wp-content/uploads/2023/01/Homepage_header-1-768x419.png 768w" sizes="(max-width: 1176px) 100vw, 1176px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-62e9427 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="62e9427" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b7cb500" data-id="b7cb500" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d02dfe4 eybrow-text letter-spacing elementor-widget elementor-widget-heading" data-id="d02dfe4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">HOW to use kami</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c6eea7b elementor-widget elementor-widget-heading" data-id="c6eea7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Using Kami in your classroom</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-815e32f elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-text-editor" data-id="815e32f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							No matter the grade or subject, teachers are supported and learning is personalized with Kami.						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c98ceb3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c98ceb3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f20849b" data-id="f20849b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e1e4305 elementor-widget elementor-widget-image" data-id="e1e4305" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="692" height="674" src="https://www.kamiapp.com/wp-content/uploads/2022/08/1.-Complete-customisation.jpg" class="attachment-large size-large wp-image-18072" alt="Teacher uploading a resource to Kami" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/08/1.-Complete-customisation.jpg 692w, https://www.kamiapp.com/wp-content/uploads/2022/08/1.-Complete-customisation-300x292.jpg 300w" sizes="(max-width: 692px) 100vw, 692px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ec2215a" data-id="ec2215a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-83469a6 elementor-widget elementor-widget-heading" data-id="83469a6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Upload and customize</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-290e41d elementor-widget elementor-widget-text-editor" data-id="290e41d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Upload all your teaching resources (including PDFs, slides, images, and more) and turn them into interactive and engaging learning experiences.						</div>
+				</div>
+				<div class="elementor-element elementor-element-9ea9ed6 elementor-align-left button-link elementor-widget elementor-widget-button" data-id="9ea9ed6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/features" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M5.16553 12.262H19.1655" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.1655 19.262L19.1655 12.262L12.1655 5.26196" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>			</span>
+						<span class="elementor-button-text">Learn more</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-668909c elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="668909c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-624b372" data-id="624b372" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3a3ab07 elementor-widget elementor-widget-heading" data-id="3a3ab07" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Integrate with your LMS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f6088d5 elementor-widget elementor-widget-text-editor" data-id="f6088d5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Elevate what you already use by assigning your Kami-fied document via your preferred Learning Management System.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-4624e11 elementor-align-left button-link elementor-widget elementor-widget-button" data-id="4624e11" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/integrations/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M5.16553 12.262H19.1655" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.1655 19.262L19.1655 12.262L12.1655 5.26196" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>			</span>
+						<span class="elementor-button-text">Learn more </span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7c6b679" data-id="7c6b679" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f446b39 elementor-widget elementor-widget-image" data-id="f446b39" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="587" height="526" src="https://www.kamiapp.com/wp-content/uploads/2022/08/2.-Integration.jpg" class="attachment-large size-large wp-image-18073" alt="LMS integration logos" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/08/2.-Integration.jpg 587w, https://www.kamiapp.com/wp-content/uploads/2022/08/2.-Integration-300x269.jpg 300w" sizes="(max-width: 587px) 100vw, 587px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-edd55bb elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="edd55bb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-157b008" data-id="157b008" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9c3edec elementor-widget elementor-widget-image" data-id="9c3edec" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="666" height="584" src="https://www.kamiapp.com/wp-content/uploads/2022/08/3.-Engagement.jpg" class="attachment-large size-large wp-image-18074" alt="Two students adding media to a Kami doc together" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/08/3.-Engagement.jpg 666w, https://www.kamiapp.com/wp-content/uploads/2022/08/3.-Engagement-300x263.jpg 300w" sizes="(max-width: 666px) 100vw, 666px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e5a40ad" data-id="e5a40ad" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e3f5b93 elementor-widget elementor-widget-heading" data-id="e3f5b93" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Increase engagement</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a808b95 elementor-widget elementor-widget-text-editor" data-id="a808b95" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Students have access to a range of tools to help them learn and show understanding in a way that works for them. You can also set feature controls to keep them on task.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a715c5d elementor-align-left button-link elementor-widget elementor-widget-button" data-id="a715c5d" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/features/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M5.16553 12.262H19.1655" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.1655 19.262L19.1655 12.262L12.1655 5.26196" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>			</span>
+						<span class="elementor-button-text">See all tools and features</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bc4e245 elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bc4e245" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4241921" data-id="4241921" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0e5391e elementor-widget elementor-widget-heading" data-id="0e5391e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Encourage collaboration</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2e8904c elementor-widget elementor-widget-text-editor" data-id="2e8904c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Watch in real time as your students work and track version history. Check in whenever you’re needed to keep them on track.						</div>
+				</div>
+				<div class="elementor-element elementor-element-3ef3250 elementor-align-left button-link elementor-widget elementor-widget-button" data-id="3ef3250" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/solutions/collaboration/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M5.16553 12.262H19.1655" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.1655 19.262L19.1655 12.262L12.1655 5.26196" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>			</span>
+						<span class="elementor-button-text">Learn more </span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a11f41b" data-id="a11f41b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a73f147 elementor-widget elementor-widget-image" data-id="a73f147" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="587" height="526" src="https://www.kamiapp.com/wp-content/uploads/2022/08/4.-Classroom-collab.jpg" class="attachment-large size-large wp-image-18075" alt="A list of collaborator icons on a Kami doc" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/08/4.-Classroom-collab.jpg 587w, https://www.kamiapp.com/wp-content/uploads/2022/08/4.-Classroom-collab-300x269.jpg 300w" sizes="(max-width: 587px) 100vw, 587px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c999816 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c999816" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9a0766" data-id="b9a0766" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d21cf54 elementor-widget elementor-widget-image" data-id="d21cf54" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="655" height="718" src="https://www.kamiapp.com/wp-content/uploads/2022/08/5.-Focused-feedback.jpg" class="attachment-large size-large wp-image-18076" alt="A teacher helping a student" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/08/5.-Focused-feedback.jpg 655w, https://www.kamiapp.com/wp-content/uploads/2022/08/5.-Focused-feedback-274x300.jpg 274w" sizes="(max-width: 655px) 100vw, 655px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-df65116" data-id="df65116" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7cd1b4e elementor-widget elementor-widget-heading" data-id="7cd1b4e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Provide effective feedback</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cfb1a0d elementor-widget elementor-widget-text-editor" data-id="cfb1a0d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Kami allows you to feedback in a variety of formats including text, voice, video, and screen capture, so you can respond to your students the way you know is best.						</div>
+				</div>
+				<div class="elementor-element elementor-element-19add55 elementor-align-left button-link elementor-widget elementor-widget-button" data-id="19add55" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/solutions/assessments-and-feedback" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M5.16553 12.262H19.1655" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.1655 19.262L19.1655 12.262L12.1655 5.26196" stroke="#873ECF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>			</span>
+						<span class="elementor-button-text">Learn more</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6408909 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6408909" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0b1a599" data-id="0b1a599" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cedef74 eybrow-text letter-spacing elementor-widget elementor-widget-heading" data-id="cedef74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">WHY CHOOSE KAMI</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-78446f7 elementor-widget elementor-widget-heading" data-id="78446f7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Everyone wins with Kami</h3>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0532753 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0532753" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-41309ae" data-id="41309ae" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a820174 elementor-position-top elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a820174" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none"><circle cx="30.5" cy="30" r="30" fill="#E8FFDC"></circle><path d="M42.9664 39.4519V37.2601C42.9657 36.2889 42.6424 35.3454 42.0473 34.5777C41.4523 33.8101 40.6191 33.2619 39.6787 33.019" stroke="#053029" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36.3907 39.4521V37.2603C36.3907 36.0977 35.9289 34.9827 35.1068 34.1606C34.2847 33.3385 33.1697 32.8767 32.0071 32.8767H23.24C22.0774 32.8767 20.9624 33.3385 20.1404 34.1606C19.3183 34.9827 18.8564 36.0977 18.8564 37.2603V39.4521" stroke="#053029" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.2949 19.8684C36.2378 20.1098 37.0736 20.6582 37.6704 21.4271C38.2672 22.196 38.5912 23.1416 38.5912 24.115C38.5912 25.0883 38.2672 26.034 37.6704 26.8029C37.0736 27.5717 36.2378 28.1201 35.2949 28.3616" stroke="#053029" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M27.6238 28.4931C30.0448 28.4931 32.0074 26.5305 32.0074 24.1095C32.0074 21.6885 30.0448 19.726 27.6238 19.726C25.2028 19.726 23.2402 21.6885 23.2402 24.1095C23.2402 26.5305 25.2028 28.4931 27.6238 28.4931Z" stroke="#053029" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<span  >
+						Students					</span>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Kami’s tools and features make learning accessible and engaging for all.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-613d52d" data-id="613d52d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4b89023 elementor-position-top elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="4b89023" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none"><circle cx="30.5" cy="30" r="30" fill="#EDECFF"></circle><path d="M29.3332 18.3334C27.0257 18.3334 24.7701 19.0176 22.8515 20.2996C20.9329 21.5815 19.4376 23.4036 18.5546 25.5354C17.6716 27.6672 17.4405 30.013 17.8907 32.2761C18.3408 34.5392 19.452 36.618 21.0836 38.2496C22.7152 39.8812 24.794 40.9924 27.0571 41.4425C29.3202 41.8927 31.666 41.6617 33.7978 40.7786C35.9296 39.8956 37.7517 38.4003 39.0337 36.4817C40.3156 34.5631 40.9998 32.3075 40.9998 30C40.9998 28.468 40.6981 26.9509 40.1118 25.5354C39.5255 24.1199 38.6661 22.8338 37.5828 21.7505C36.4994 20.6671 35.2133 19.8078 33.7978 19.2214C32.3824 18.6351 30.8653 18.3334 29.3332 18.3334ZM29.3332 39.3334C27.4872 39.3334 25.6827 38.786 24.1479 37.7604C22.613 36.7349 21.4167 35.2772 20.7103 33.5718C20.0039 31.8663 19.8191 29.9897 20.1792 28.1792C20.5393 26.3687 21.4282 24.7057 22.7335 23.4004C24.0388 22.0951 25.7018 21.2062 27.5123 20.846C29.3228 20.4859 31.1994 20.6707 32.9049 21.3772C34.6103 22.0836 36.068 23.2799 37.0936 24.8147C38.1191 26.3496 38.6665 28.1541 38.6665 30C38.6665 32.4754 37.6832 34.8494 35.9328 36.5997C34.1825 38.35 31.8085 39.3334 29.3332 39.3334ZM30.4998 29.9184V24.1667C30.4998 23.8573 30.3769 23.5605 30.1581 23.3417C29.9393 23.123 29.6426 23 29.3332 23C29.0238 23 28.727 23.123 28.5082 23.3417C28.2894 23.5605 28.1665 23.8573 28.1665 24.1667V30C28.1665 30 28.1665 30.0817 28.1665 30.1284C28.1378 30.3655 28.1826 30.6058 28.2948 30.8167L30.0448 33.85C30.1996 34.1192 30.4549 34.3159 30.7546 34.3969C31.0544 34.4779 31.374 34.4364 31.6432 34.2817C31.9124 34.127 32.1091 33.8717 32.19 33.5719C32.271 33.2722 32.2296 32.9526 32.0748 32.6834L30.4998 29.9184Z" fill="#873ECF"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<span  >
+						Teachers					</span>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Kami streamlines and elevates what you already do which means more time for you and your students.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e9151f6" data-id="e9151f6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-38b9023 elementor-position-top elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="38b9023" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none"><circle cx="30.5" cy="30" r="30" fill="#FCE8FD"></circle><path d="M34.25 28.375H29.75C29.1533 28.375 28.581 28.1379 28.159 27.716C27.7371 27.294 27.5 26.7217 27.5 26.125C27.5 25.5283 27.7371 24.956 28.159 24.534C28.581 24.1121 29.1533 23.875 29.75 23.875H35.375C35.6734 23.875 35.9595 23.9935 36.1705 24.2045C36.3815 24.4155 36.5 24.7016 36.5 25C36.5 25.2984 36.6185 25.5845 36.8295 25.7955C37.0405 26.0065 37.3266 26.125 37.625 26.125C37.9234 26.125 38.2095 26.0065 38.4205 25.7955C38.6315 25.5845 38.75 25.2984 38.75 25C38.75 24.1049 38.3944 23.2464 37.7615 22.6135C37.1286 21.9806 36.2701 21.625 35.375 21.625H33.125V19.375C33.125 19.0766 33.0065 18.7905 32.7955 18.5795C32.5845 18.3685 32.2984 18.25 32 18.25C31.7016 18.25 31.4155 18.3685 31.2045 18.5795C30.9935 18.7905 30.875 19.0766 30.875 19.375V21.625H29.75C28.5565 21.625 27.4119 22.0991 26.568 22.943C25.7241 23.7869 25.25 24.9315 25.25 26.125C25.25 27.3185 25.7241 28.4631 26.568 29.307C27.4119 30.1509 28.5565 30.625 29.75 30.625H34.25C34.8467 30.625 35.419 30.8621 35.841 31.284C36.2629 31.706 36.5 32.2783 36.5 32.875C36.5 33.4717 36.2629 34.044 35.841 34.466C35.419 34.8879 34.8467 35.125 34.25 35.125H28.625C28.3266 35.125 28.0405 35.0065 27.8295 34.7955C27.6185 34.5845 27.5 34.2984 27.5 34C27.5 33.7016 27.3815 33.4155 27.1705 33.2045C26.9595 32.9935 26.6734 32.875 26.375 32.875C26.0766 32.875 25.7905 32.9935 25.5795 33.2045C25.3685 33.4155 25.25 33.7016 25.25 34C25.25 34.8951 25.6056 35.7536 26.2385 36.3865C26.8714 37.0194 27.7299 37.375 28.625 37.375H30.875V39.625C30.875 39.9234 30.9935 40.2095 31.2045 40.4205C31.4155 40.6315 31.7016 40.75 32 40.75C32.2984 40.75 32.5845 40.6315 32.7955 40.4205C33.0065 40.2095 33.125 39.9234 33.125 39.625V37.375H34.25C35.4435 37.375 36.5881 36.9009 37.432 36.057C38.2759 35.2131 38.75 34.0685 38.75 32.875C38.75 31.6815 38.2759 30.5369 37.432 29.693C36.5881 28.8491 35.4435 28.375 34.25 28.375Z" fill="#640C66"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<span  >
+						Schools					</span>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Kami has something to offer any grade and any subject. Oh – and you’ll save $$ on printing costs.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-820dc77" data-id="820dc77" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-90a12ae elementor-position-top elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="90a12ae" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none"><circle cx="30.5" cy="30" r="30" fill="#FFFAC5"></circle><path d="M35.7498 21.8333C34.7226 21.8325 33.7145 22.1107 32.8332 22.6383C32.1941 21.1716 31.072 19.968 29.6535 19.228C28.235 18.488 26.6058 18.2562 25.0372 18.5713C23.4686 18.8864 22.0553 19.7293 21.0326 20.9596C20.0099 22.19 19.4396 23.7336 19.4165 25.3333V30C19.4182 31.653 20.0048 33.2521 21.0725 34.5141C22.1401 35.7761 23.6199 36.6195 25.2498 36.895V40.5C25.2498 40.8094 25.3728 41.1061 25.5915 41.3249C25.8103 41.5437 26.1071 41.6666 26.4165 41.6666C26.7259 41.6666 27.0227 41.5437 27.2415 41.3249C27.4603 41.1061 27.5832 40.8094 27.5832 40.5V36.895C28.7717 36.6887 29.888 36.1828 30.8265 35.425C31.243 36.0935 31.7906 36.6707 32.4363 37.1219C33.0819 37.573 33.8122 37.8887 34.5832 38.05V40.5C34.5832 40.8094 34.7061 41.1061 34.9249 41.3249C35.1437 41.5437 35.4404 41.6666 35.7498 41.6666C36.0593 41.6666 36.356 41.5437 36.5748 41.3249C36.7936 41.1061 36.9165 40.8094 36.9165 40.5V38.05C38.2341 37.781 39.4183 37.0651 40.2687 36.0234C41.1191 34.9816 41.5834 33.6781 41.5832 32.3333V27.6666C41.5832 26.1196 40.9686 24.6358 39.8746 23.5419C38.7807 22.4479 37.2969 21.8333 35.7498 21.8333ZM29.9165 27.6666V32.3333C29.9277 32.5561 29.951 32.7781 29.9865 32.9983C29.3626 33.7414 28.5225 34.2716 27.5832 34.515V31.1666C27.5832 30.8572 27.4603 30.5605 27.2415 30.3417C27.0227 30.1229 26.7259 30 26.4165 30C26.1071 30 25.8103 30.1229 25.5915 30.3417C25.3728 30.5605 25.2498 30.8572 25.2498 31.1666V34.5033C24.2506 34.2453 23.3651 33.6634 22.7318 32.8486C22.0985 32.0337 21.7532 31.032 21.7498 30V25.3333C21.7468 24.4088 22.0184 23.5042 22.5303 22.7343C23.0421 21.9644 23.7711 21.3639 24.6247 21.009C25.4784 20.654 26.4182 20.5606 27.3251 20.7406C28.2319 20.9206 29.0648 21.3659 29.7182 22.02C30.3497 22.6601 30.7797 23.4713 30.9548 24.3533C30.2804 25.3268 29.9183 26.4824 29.9165 27.6666ZM39.2498 32.3333C39.2478 33.0554 39.0225 33.7592 38.6047 34.3482C38.187 34.9372 37.5973 35.3826 36.9165 35.6233V31.1666C36.9165 30.8572 36.7936 30.5605 36.5748 30.3417C36.356 30.1229 36.0593 30 35.7498 30C35.4404 30 35.1437 30.1229 34.9249 30.3417C34.7061 30.5605 34.5832 30.8572 34.5832 31.1666V35.6233C33.9024 35.3826 33.3127 34.9372 32.8949 34.3482C32.4772 33.7592 32.2519 33.0554 32.2498 32.3333V27.6666C32.2498 26.7384 32.6186 25.8482 33.275 25.1918C33.9313 24.5354 34.8216 24.1666 35.7498 24.1666C36.6781 24.1666 37.5683 24.5354 38.2247 25.1918C38.8811 25.8482 39.2498 26.7384 39.2498 27.6666V32.3333Z" fill="#FF7A00"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h5 class="elementor-icon-box-title">
+					<span  >
+						The planet					</span>
+				</h5>
+									<p class="elementor-icon-box-description">
+						Paper resources are so old school. Save trees and embrace the future with Kami!					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08a72fa elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08a72fa" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc2a7cf" data-id="cc2a7cf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-e-bg-lazyload=".elementor-element-populated">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+								<div class="elementor-element elementor-element-7f9d32e elementor-widget elementor-widget-heading" data-id="7f9d32e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Join over 35 million educators &amp; students</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2ccb933 elementor-widget elementor-widget-text-editor" data-id="2ccb933" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Try Kami for free. No credit card required.						</div>
+				</div>
+				<div class="elementor-element elementor-element-587b19c elementor-align-center elementor-widget elementor-widget-button" data-id="587b19c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://web.kamihq.com/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Sign up for free</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8f86e89 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8f86e89" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-05bccda" data-id="05bccda" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9ae838a eybrow-text letter-spacing elementor-widget elementor-widget-heading" data-id="9ae838a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default"><a href="/integrations/">INTEGRATIONS</a></h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1772f9e elementor-widget elementor-widget-heading" data-id="1772f9e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Kami works with what you already use</h4>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1e321ea elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1e321ea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-99bd0dc" data-id="99bd0dc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0f8dc1a elementor-widget elementor-widget-image" data-id="0f8dc1a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="239" height="39" src="https://www.kamiapp.com/wp-content/uploads/2022/08/google-drive.svg" class="attachment-large size-large wp-image-245" alt="Google Drive" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-6b26081" data-id="6b26081" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e7c3bc3 elementor-widget elementor-widget-image" data-id="e7c3bc3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="271" height="36" src="https://www.kamiapp.com/wp-content/uploads/2022/11/classroom.svg" class="attachment-large size-large wp-image-22221" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-656e69f" data-id="656e69f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2c29762 elementor-widget elementor-widget-image" data-id="2c29762" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="217" height="39" src="https://www.kamiapp.com/wp-content/uploads/2022/08/schoology.svg" class="attachment-large size-large wp-image-247" alt="Schoology logo" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-a5be060" data-id="a5be060" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f976297 elementor-widget elementor-widget-image" data-id="f976297" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="163" height="39" src="https://www.kamiapp.com/wp-content/uploads/2022/08/canvas.svg" class="attachment-large size-large wp-image-248" alt="Canvas logo" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-2651362" data-id="2651362" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bddceb1 elementor-widget elementor-widget-image" data-id="bddceb1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="196" height="45" src="https://www.kamiapp.com/wp-content/uploads/2022/08/Frame-2.svg" class="attachment-medium_large size-medium_large wp-image-243" alt="Microsoft Teams logo" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-15b04ad" data-id="15b04ad" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-58454c9 elementor-widget elementor-widget-image" data-id="58454c9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="208" height="34" src="https://www.kamiapp.com/wp-content/uploads/2022/08/Frame-3.svg" class="attachment-medium_large size-medium_large wp-image-244" alt="OneDrive logo" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ff9e630 elementor-section-full_width testimonial_div elementor-section-height-default elementor-section-height-default" data-id="ff9e630" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9f73088" data-id="9f73088" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a9c83e9 elementor-widget elementor-widget-shortcode" data-id="a9c83e9" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><section class="owl testimonial-container">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css" />-->
+	<div class="owl-carousel testimonial-slider owl-theme">
+				<div class="item testimonial " style="background-color: #fce8fd">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">Kami has been a game changer for my students. I feel that Kami allows each one of my students to have a voice in the classroom.</span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Kaya Jones</h4>
+					<p>Gifted and Talented Specialist</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/08/Kaya-Jones-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+				<div class="item testimonial " style="background-color: #edecff">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">It’s a game-changer! There’s almost nothing I can’t do in Kami, and I use it every single day!</span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Lisa Bump Meschutt</h4>
+					<p>Science teacher</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/11/LisaMeschutt-7-1-1-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+				<div class="item testimonial " style="background-color: #e8ffdc">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">If you aren’t using Kami with your students right now, you need to get it ASAP. This tech tool has been completely life-changing. It’s all my students use to do their work!</span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Jamie Ellman</h4>
+					<p>Adjunct Professor</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/11/Untitled-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+				<div class="item testimonial " style="background-color: #fce8fd">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">Kami has been an invaluable tool to help the teachers in our district respond to student needs.</span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Lilly Jensby</h4>
+					<p>Digital Learning Specialist</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/11/lilly_profile_2-1-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+				<div class="item testimonial " style="background-color: #edecff">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">Kami has opened accessibility doors in the classroom! With Kami, it is so much easier to have one assignment that all my students can do.</span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Amber Moenning</h4>
+					<p>ELAR Special Education Teacher</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/11/amber-moenning-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+				<div class="item testimonial " style="background-color: #e8ffdc">
+			<div class="content">
+				<img decoding="async" src="/wp-content/uploads/2022/08/quote.svg" />
+				<div class="testimonial--body">
+					<p>
+						<p><span style="font-weight: 400;">I love that anything I make in Google Slides can easily become an interactive document to raise the level of engagement. </span></p>
+					</p>
+				</div>
+				<div class="testimonial--footer">
+					<h4>Laurie Guyon</h4>
+					<p>Model Schools Coordinator</p>
+				</div>
+			</div>
+			<div class="image">
+				<img decoding="async" src="https://www.kamiapp.com/wp-content/uploads/2022/08/Laurie-Guyon-1-1.jpeg" style=" border-radius: 15px;" /> <!--//uppli -->
+			</div>
+		</div>
+		
+	</div>
+</section>
+</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e5ba871 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5ba871" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a6fac0d" data-id="a6fac0d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5fb1d6a elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="5fb1d6a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="48" src="https://www.kamiapp.com/wp-content/uploads/2022/12/IconsBW-1024x61.png" class="attachment-large size-large wp-image-23181" alt="" loading="lazy" srcset="https://www.kamiapp.com/wp-content/uploads/2022/12/IconsBW-1024x61.png 1024w, https://www.kamiapp.com/wp-content/uploads/2022/12/IconsBW-300x18.png 300w, https://www.kamiapp.com/wp-content/uploads/2022/12/IconsBW-768x46.png 768w, https://www.kamiapp.com/wp-content/uploads/2022/12/IconsBW.png 1282w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+				<div data-elementor-type="footer" data-elementor-id="71" class="elementor elementor-71 elementor-location-footer">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-c60445b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c60445b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-e-bg-lazyload="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-089b342" data-id="089b342" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7fc1814 elementor-widget elementor-widget-heading" data-id="7fc1814" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Bring some Kami-magic <br>to your classroom</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fc1b034 elementor-align-center elementor-widget elementor-widget-button" data-id="fc1b034" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://web.kamihq.com/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Try Kami for free</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fa671b1 elementor-widget elementor-widget-heading" data-id="fa671b1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">No credit card required</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-293ed2e elementor-widget elementor-widget-image" data-id="293ed2e" data-element_type="widget" id="back_to_top" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="222" height="296" src="https://www.kamiapp.com/wp-content/uploads/2022/08/back-to-top-1.png" class="attachment-large size-large wp-image-21956" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cb7ce24 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cb7ce24" data-element_type="section" id="footer-wrapper" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-e-bg-lazyload="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-8f5a85b logo-column" data-id="8f5a85b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-13ba679 elementor-hidden-mobile elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="13ba679" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.kamiapp.com">
+							<img width="107" height="37" src="https://www.kamiapp.com/wp-content/uploads/2022/08/kami-logo.svg" class="attachment-full size-full wp-image-15" alt="Kami logo" loading="lazy" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-92c10bc elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="92c10bc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">© Kami, 2022</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c67277a e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="c67277a" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.1 - 15-02-2023 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#818a91;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#818a91}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-Facebook purple logo elementor-repeater-item-0873a4b" href="https://www.facebook.com/kamiapp/" target="_blank">
+						<span class="elementor-screen-only">Facebook Purple Logo</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="25" viewBox="0 0 12 25" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.92047 24.5V12.2486H11.4443L11.9113 8.02665H7.92047L7.92646 5.91355C7.92646 4.81241 8.03547 4.22239 9.68338 4.22239H11.8863V0H8.36201C4.12875 0 2.63874 2.04808 2.63874 5.49231V8.02713H0V12.249H2.63874V24.5H7.92047Z" fill="#873ECF"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-Purple Youtube logo elementor-repeater-item-f2b8e27" href="https://www.youtube.com/user/notablepdf" target="_blank">
+						<span class="elementor-screen-only">Purple Youtube Logo</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.6568 2.93308C26.3437 1.77851 25.4211 0.869335 24.2497 0.560773C22.1267 0 13.6129 0 13.6129 0C13.6129 0 5.09911 0 2.97596 0.560773C1.80448 0.869335 0.881899 1.77851 0.568802 2.93308C0 5.0256 0 9.39167 0 9.39167C0 9.39167 0 13.7576 0.568802 15.8503C0.881899 17.0048 1.80448 17.914 2.97596 18.2227C5.09911 18.7833 13.6129 18.7833 13.6129 18.7833C13.6129 18.7833 22.1267 18.7833 24.2497 18.2227C25.4211 17.914 26.3437 17.0048 26.6568 15.8503C27.2258 13.7576 27.2258 9.39167 27.2258 9.39167C27.2258 9.39167 27.2258 5.0256 26.6568 2.93308Z" fill="#873ECF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.062 13.883V5.71631L17.8685 9.7998L11.062 13.883Z" fill="#DBD9FF"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-Purple Instagram logo elementor-repeater-item-88898ce" href="https://www.instagram.com/kamiapp/" target="_blank">
+						<span class="elementor-screen-only">Purple Instagram Logo</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1488 0.432617C10.4518 0.432617 9.98778 0.448134 8.53573 0.511562C7.08651 0.575263 6.09729 0.795493 5.23173 1.11862C4.33639 1.45237 3.5769 1.89882 2.82024 2.62539C2.06301 3.35169 1.5979 4.08071 1.24907 4.93985C0.911579 5.77095 0.681859 6.72075 0.61663 8.11127C0.551684 9.50506 0.534668 9.9507 0.534668 13.4994C0.534668 17.0481 0.551117 17.4921 0.616913 18.8859C0.68356 20.277 0.912997 21.2265 1.24935 22.0574C1.59734 22.9168 2.06245 23.6458 2.81939 24.3721C3.57576 25.0989 4.33526 25.5465 5.23003 25.8802C6.09616 26.2034 7.08565 26.4236 8.53459 26.4873C9.98665 26.5507 10.4503 26.5662 14.1471 26.5662C17.8445 26.5662 18.307 26.5507 19.7591 26.4873C21.2083 26.4236 22.1987 26.2034 23.0648 25.8802C23.9599 25.5465 24.7182 25.0989 25.4746 24.3721C26.2318 23.6458 26.6969 22.9168 27.0458 22.0576C27.3804 21.2265 27.6101 20.2767 27.6782 18.8862C27.7434 17.4924 27.7604 17.0481 27.7604 13.4994C27.7604 9.9507 27.7434 9.50533 27.6782 8.11154C27.6101 6.72047 27.3804 5.77095 27.0458 4.94012C26.6969 4.08071 26.2318 3.35169 25.4746 2.62539C24.7174 1.89855 23.9601 1.4521 23.0639 1.11862C22.1961 0.795493 21.2063 0.575263 19.7571 0.511562C18.3051 0.448134 17.8428 0.432617 14.1446 0.432617H14.1488ZM12.9277 2.78891C13.2901 2.78837 13.6945 2.78891 14.1489 2.78891C17.7835 2.78891 18.2143 2.80143 19.6497 2.86405C20.9769 2.9223 21.6973 3.13518 22.1771 3.31403C22.8124 3.55087 23.2653 3.83398 23.7415 4.29132C24.218 4.74866 24.5129 5.18422 24.7602 5.794C24.9465 6.25406 25.1686 6.94551 25.229 8.21953C25.2942 9.59699 25.3084 10.0108 25.3084 13.498C25.3084 16.9852 25.2942 17.399 25.229 18.7764C25.1683 20.0504 24.9465 20.7419 24.7602 21.2019C24.5135 21.8117 24.218 22.2459 23.7415 22.703C23.2651 23.1603 22.8127 23.4434 22.1771 23.6803C21.6979 23.8599 20.9769 24.0723 19.6497 24.1305C18.2146 24.1931 17.7835 24.2068 14.1489 24.2068C10.5139 24.2068 10.0831 24.1931 8.64807 24.1305C7.3208 24.0717 6.60045 23.8589 6.1203 23.68C5.48503 23.4432 5.03126 23.1601 4.5548 22.7027C4.07835 22.2454 3.7834 21.8109 3.5361 21.2008C3.34977 20.7408 3.12771 20.0493 3.0673 18.7753C3.00207 17.3979 2.98902 16.9841 2.98902 13.4947C2.98902 10.0053 3.00207 9.59372 3.0673 8.21626C3.12799 6.94225 3.34977 6.2508 3.5361 5.79019C3.78283 5.18041 4.07835 4.74485 4.5548 4.28751C5.03126 3.83017 5.48503 3.54706 6.1203 3.30968C6.60016 3.13001 7.3208 2.91767 8.64807 2.85915C9.90387 2.8047 10.3905 2.78837 12.9277 2.78564V2.78891ZM21.4164 4.95733C20.5146 4.95733 19.7829 5.65886 19.7829 6.5248C19.7829 7.39048 20.5146 8.09282 21.4164 8.09282C22.3183 8.09282 23.05 7.39048 23.05 6.5248C23.05 5.65913 22.3183 4.95679 21.4164 4.95679V4.95733ZM14.15 6.79004C10.2893 6.79004 7.15916 9.79459 7.15916 13.5004C7.15916 17.2062 10.2893 20.2094 14.15 20.2094C18.0107 20.2094 21.1397 17.2062 21.1397 13.5004C21.1397 9.79459 18.0104 6.79004 14.1497 6.79004H14.15ZM14.1498 9.14429C16.6557 9.14429 18.6874 11.0942 18.6874 13.4999C18.6874 15.9053 16.6557 17.8555 14.1498 17.8555C11.6435 17.8555 9.61207 15.9053 9.61207 13.4999C9.61207 11.0942 11.6435 9.14429 14.1498 9.14429Z" fill="#873ECF"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-Purple TikTok logo elementor-repeater-item-85b1d58" href="https://www.tiktok.com/@kamiapp" target="_blank">
+						<span class="elementor-screen-only">Purple TikTok Logo</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.0037 8.18388C11.018 17.0925 11.0297 16.7807 10.6456 17.7317C10.1439 18.9737 9.32796 19.7267 8.21555 19.9742C6.29509 20.4015 4.24708 19.0585 3.83432 17.1011C3.43363 15.2012 4.32482 13.8067 6.40423 13.0798C6.83266 12.9301 8.12374 12.6008 8.28275 12.6008C8.29256 12.6008 8.30056 11.698 8.30056 10.5944V8.58804L7.80052 8.63171C4.47083 8.9226 2.02087 10.3816 0.79952 12.8009C0.258351 13.8729 0 15.0147 0 16.3344C0 18.6234 0.825656 20.5991 2.41183 22.1055C3.27302 22.9233 4.15301 23.4294 5.31476 23.7751C6.10594 24.0105 7.60664 24.0726 8.48804 23.9065C11.389 23.3597 13.7478 21.0956 14.5979 18.0417C14.9491 16.7804 14.9581 16.6446 14.9975 12.0875L15.0343 7.80719L15.601 8.13601C16.9815 8.9372 18.3914 9.3869 19.716 9.44857L20.5306 9.4865L20.5494 7.57677C20.5596 6.52637 20.553 5.66685 20.5347 5.66671C20.3165 5.66525 19.1615 5.4327 18.8456 5.32662C17.9747 5.03427 17.4062 4.67791 16.7343 4.00313C16.2252 3.49183 16.0399 3.24908 15.7909 2.76685C15.4577 2.12194 15.1854 1.34262 15.0685 0.700047C15.0285 0.480032 14.9813 0.232549 14.9638 0.15001L14.9318 0H12.9612H10.9906L11.0037 8.18388Z" fill="#873ECF"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-Purple Twitter logo elementor-repeater-item-0c00cae" href="https://twitter.com/kamiapp" target="_blank">
+						<span class="elementor-screen-only">Purple Twitter Logo</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9976 5.21391L12.0512 6.06166L11.1585 5.95786C7.90916 5.55993 5.07043 4.21044 2.66019 1.94399L1.48185 0.819421L1.17834 1.64987C0.535609 3.5011 0.946242 5.45612 2.28526 6.77101C2.99941 7.49766 2.83873 7.60146 1.60683 7.16894C1.17834 7.03053 0.803413 6.92672 0.767706 6.97862C0.64273 7.09973 1.07122 8.67413 1.41044 9.29698C1.87463 10.162 2.82087 11.0098 3.85638 11.5115L4.73121 11.9094L3.6957 11.9267C2.6959 11.9267 2.66019 11.944 2.76731 12.3074C3.12438 13.4319 4.53482 14.6257 6.10594 15.1448L7.21286 15.5081L6.24877 16.0617C4.82048 16.8576 3.14224 17.3074 1.464 17.342C0.660584 17.3593 0 17.4285 0 17.4804C0 17.6534 2.17814 18.6223 3.44575 19.0029C7.24857 20.1275 11.7655 19.6431 15.1577 17.7226C17.568 16.3558 19.9782 13.6396 21.103 11.0098C21.71 9.60839 22.317 7.04783 22.317 5.81945C22.317 5.0236 22.3706 4.91979 23.3704 3.96823C23.9596 3.41459 24.513 2.80905 24.6201 2.63604C24.7987 2.30732 24.7808 2.30732 23.8703 2.60144C22.3527 3.12047 22.1385 3.05127 22.8883 2.27272C23.4418 1.71908 24.1024 0.715614 24.1024 0.421495C24.1024 0.369591 23.8346 0.456097 23.5311 0.611807C23.2097 0.784818 22.4956 1.04434 21.96 1.20005L20.9959 1.49416L20.121 0.923227C19.639 0.611807 18.9605 0.265784 18.6035 0.161978C17.6929 -0.0802383 16.3004 -0.0456361 15.4791 0.231182C13.2474 1.00973 11.837 3.01666 11.9976 5.21391Z" fill="#873ECF"></path></svg>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-9cdb0a0 footer-column" data-id="9cdb0a0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-38f453f elementor-widget elementor-widget-heading" data-id="38f453f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Company</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a45cd70 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="a45cd70" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.kamiapp.com/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css?ver=1674489789">			<nav migration_allowed="1" migrated="0" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-a45cd70" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3738"><a href="https://www.kamiapp.com/about-us/" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19628"><a href="https://www.kamiapp.com/careers/" class="elementor-item">Careers</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-a45cd70" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3738"><a href="https://www.kamiapp.com/about-us/" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19628"><a href="https://www.kamiapp.com/careers/" class="elementor-item" tabindex="-1">Careers</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-9221a15 footer-column" data-id="9221a15" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-907ad22 elementor-widget elementor-widget-heading" data-id="907ad22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Product</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-53ea866 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="53ea866" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-53ea866" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="/features/" class="elementor-item">Tools &#038; Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="/integrations/" class="elementor-item">Integrations</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19250"><a href="https://www.kamiapp.com/google/" class="elementor-item">Google</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2995"><a href="https://www.kamiapp.com/pricing/" class="elementor-item">Pricing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19599"><a href="/workplace/" class="elementor-item">Work Plans</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23648"><a href="https://www.kamiapp.com/solutions/accessibility/" class="elementor-item">Accessibility</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19602"><a href="/espanol/" class="elementor-item">Kami en Español</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-53ea866" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="/features/" class="elementor-item" tabindex="-1">Tools &#038; Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="/integrations/" class="elementor-item" tabindex="-1">Integrations</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19250"><a href="https://www.kamiapp.com/google/" class="elementor-item" tabindex="-1">Google</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2995"><a href="https://www.kamiapp.com/pricing/" class="elementor-item" tabindex="-1">Pricing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19599"><a href="/workplace/" class="elementor-item" tabindex="-1">Work Plans</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23648"><a href="https://www.kamiapp.com/solutions/accessibility/" class="elementor-item" tabindex="-1">Accessibility</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19602"><a href="/espanol/" class="elementor-item" tabindex="-1">Kami en Español</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-923f145 footer-column resource-footer-column" data-id="923f145" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cb80edd elementor-widget elementor-widget-heading" data-id="cb80edd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Resources</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-12f7f89 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="12f7f89" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-12f7f89" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://www.kamiapp.com/kami-academy/" class="elementor-item">Kami Academy </a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115"><a href="https://www.kamiapp.com/library" class="elementor-item">Kami Library</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2975"><a href="https://www.kamiapp.com/blog/" class="elementor-item">Kami Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3298"><a href="https://www.kamiapp.com/teacher-teacher/" class="elementor-item">Podcast</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="/certified/" class="elementor-item">Kami Certified</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117"><a href="https://www.youtube.com/user/notablepdf" class="elementor-item">Youtube</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-12f7f89" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://www.kamiapp.com/kami-academy/" class="elementor-item" tabindex="-1">Kami Academy </a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115"><a href="https://www.kamiapp.com/library" class="elementor-item" tabindex="-1">Kami Library</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2975"><a href="https://www.kamiapp.com/blog/" class="elementor-item" tabindex="-1">Kami Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3298"><a href="https://www.kamiapp.com/teacher-teacher/" class="elementor-item" tabindex="-1">Podcast</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="/certified/" class="elementor-item" tabindex="-1">Kami Certified</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117"><a href="https://www.youtube.com/user/notablepdf" class="elementor-item" tabindex="-1">Youtube</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-7d9d0c5 footer-column" data-id="7d9d0c5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bdd9d30 elementor-widget elementor-widget-heading" data-id="bdd9d30" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Support</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-26154dc elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="26154dc" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-26154dc" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118"><a href="https://help.kamiapp.com/en/" class="elementor-item">Help Center</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://www.kamiapp.com/contact/" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19249"><a href="https://www.kamiapp.com/book-a-training/" class="elementor-item">Book a Free Training</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119"><a href="/privacy-policy/" class="elementor-item">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3295"><a href="https://www.kamiapp.com/terms-of-service/" class="elementor-item">Terms of Service</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22801"><a href="https://www.kamiapp.com/responsible-disclosure-policy/" class="elementor-item">Responsible Disclosure Policy</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-26154dc" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118"><a href="https://help.kamiapp.com/en/" class="elementor-item" tabindex="-1">Help Center</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://www.kamiapp.com/contact/" class="elementor-item" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19249"><a href="https://www.kamiapp.com/book-a-training/" class="elementor-item" tabindex="-1">Book a Free Training</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119"><a href="/privacy-policy/" class="elementor-item" tabindex="-1">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3295"><a href="https://www.kamiapp.com/terms-of-service/" class="elementor-item" tabindex="-1">Terms of Service</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22801"><a href="https://www.kamiapp.com/responsible-disclosure-policy/" class="elementor-item" tabindex="-1">Responsible Disclosure Policy</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-a17b4c2 footer-column" data-id="a17b4c2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ac3491f elementor-widget elementor-widget-heading" data-id="ac3491f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Community</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0b970a0 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="0b970a0" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-0b970a0" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111"><a href="/events/" class="elementor-item">Events</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108"><a href="/heroes" class="elementor-item">Become a Kami Hero</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="https://www.facebook.com/groups/2049199525099611" class="elementor-item">Facebook Community</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19600"><a href="https://www.facebook.com/groups/kamieducatorsspanish" class="elementor-item">Spanish Educators Group</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19601"><a href="/rewards/" class="elementor-item">Kami Rewards</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-0b970a0" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111"><a href="/events/" class="elementor-item" tabindex="-1">Events</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108"><a href="/heroes" class="elementor-item" tabindex="-1">Become a Kami Hero</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="https://www.facebook.com/groups/2049199525099611" class="elementor-item" tabindex="-1">Facebook Community</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19600"><a href="https://www.facebook.com/groups/kamieducatorsspanish" class="elementor-item" tabindex="-1">Spanish Educators Group</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19601"><a href="/rewards/" class="elementor-item" tabindex="-1">Kami Rewards</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+		
+			<script type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+				const lazyloadRunObserver = () => {
+					const dataAttribute = 'data-e-bg-lazyload';
+					const lazyloadBackgrounds = document.querySelectorAll( `[${ dataAttribute }]:not(.lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+					entries.forEach( ( entry ) => {
+						if ( entry.isIntersecting ) {
+							let lazyloadBackground = entry.target;
+							const lazyloadSelector = lazyloadBackground.getAttribute( dataAttribute );
+							if ( lazyloadSelector ) {
+								lazyloadBackground = entry.target.querySelector( lazyloadSelector );
+							}
+							lazyloadBackground.classList.add( 'lazyloaded' );
+							lazyloadBackgroundObserver.unobserve( entry.target );
+						}
+					});
+					}, { rootMargin: '100px 0px 100px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<!-- Geotargeting GeoLocation START -->
+		<div class="geotloc_overlay_box" style="display: none;">
+			<div class="geotloc_overlay_container">
+				<div class="geotloc_overlay_remove"></div>
+				<div class="geotloc_overlay_text">
+					<p>Please share your location to continue.</p>
+					<p class="geotloc_overlay_help">Check our <a href="https://geotargetingwp.com/docs/geotargetingwp/how-to-share-location" rel="noreferrer noopener nofollow">help guide</a> for more info.</p>
+				</div>
+				<div class="geotloc_overlay_img">
+					<img src="https://www.kamiapp.com/wp-content/plugins/geotargetingwp/public/images/give_consent.png" alt="share your location"/>
+				</div>
+			</div>
+		</div>
+		<!-- Geotargeting GeoLocation END --><link rel='stylesheet' id='elementor-post-1617-css' href='https://www.kamiapp.com/wp-content/uploads/elementor/css/post-1617.css?ver=1674489786' media='all' />
+<script id='geot-js-js-extra' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var geot = {"ajax_url":"https:\/\/www.kamiapp.com\/wp-admin\/admin-ajax.php","ajax":"1","pid":"134","is_archive":"","is_search":"","is_singular":"1","is_front_page":"1","is_category":"","is_page":"1","is_single":"","disable_remove_on_singular":"1","is_builder":"","has_geo_posts":"1","dropdown_search":"","dropdown_redirect":"","elementor_popup":"1","hide_class":"","hide_override_class":"","remove_class":"","remove_override_class":"","disable_console":"","geoloc_enable":"by_ip","geoloc_force":"","geoloc_fail":"Geolocation is not supported by this browser"};
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/geotargetingwp/public/js/geotarget-public.js?ver=3.4.2.4' id='geot-js-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/geotargetingwp/public/js/min/selectize.min.js?ver=3.4.2.4' id='geot-slick-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.8.1' id='elementskit-framework-js-frontend-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='elementskit-framework-js-frontend-js-after' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+		var elementskit = {
+			resturl: 'https://www.kamiapp.com/wp-json/elementskit/v1/',
+		}
+
+		
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.8.1' id='ekit-widget-scripts-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js?ver=1' id='owl-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='app-js-extra' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var kami_blog = {"ajaxurl":"https:\/\/www.kamiapp.com\/wp-admin\/admin-ajax.php","nonce":"2c7986c190","postID":"134"};
+</script>
+<script src='https://www.kamiapp.com/wp-content/themes/hello-elementor-child/assets/js/app.js?ver=1677027169' id='app-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='eael-general-js-extra' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var localize = {"ajaxurl":"https:\/\/www.kamiapp.com\/wp-admin\/admin-ajax.php","nonce":"f83ae943d7","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping"},"page_permalink":"https:\/\/www.kamiapp.com\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1280,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":1680,"default_value":2400,"direction":"min","is_enabled":true}}};
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.5.4' id='eael-general-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1' id='smartmenus-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.9.2' id='elementor-pro-webpack-runtime-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.11.1' id='elementor-webpack-runtime-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.11.1' id='elementor-frontend-modules-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='wp-i18n-js-after' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='elementor-pro-frontend-js-before' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.kamiapp.com\/wp-admin\/admin-ajax.php","nonce":"e364da814b","urls":{"assets":"https:\/\/www.kamiapp.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.kamiapp.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.kamiapp.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.9.2' id='elementor-pro-frontend-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='elementor-frontend-js-before' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1280,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":1680,"default_value":2400,"direction":"min","is_enabled":true}}},"version":"3.11.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"e_lazyload":true,"kit-elements-defaults":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/www.kamiapp.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_mobile":767,"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"viewport_laptop":1280,"viewport_widescreen":1680,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":134,"title":"Kami%20-%20Bring%20Learning%20to%20Life","excerpt":"","featuredImage":"https:\/\/www.kamiapp.com\/wp-content\/uploads\/2022\/10\/Home-page-1024x536.png"}};
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.11.1' id='elementor-frontend-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.9.2' id='pro-elements-handlers-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js?ver=2.8.1' id='animate-circle-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script id='elementskit-elementor-js-extra' type="4c9bd3fc4c8466e6c9847a4d-text/javascript">
+var ekit_config = {"ajaxurl":"https:\/\/www.kamiapp.com\/wp-admin\/admin-ajax.php","nonce":"d95524297e"};
+</script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.8.1' id='elementskit-elementor-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+<script src='https://www.kamiapp.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=2.8.1' id='swiper-js' type="4c9bd3fc4c8466e6c9847a4d-text/javascript"></script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4c9bd3fc4c8466e6c9847a4d-|49" defer=""></script></body>
+
+</html>

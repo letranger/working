@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-09-19 Fri 08:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20250925-AI輔助評量/POE</title>
+<meta name="author" content="顏永進" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20250925-AI輔助評量/POE</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org67b8cd8">1. 研習資訊</a>
+<ul>
+<li><a href="#orga1bbb41">1.1. 研習時間表</a></li>
+<li><a href="#org9eec3d7">1.2. 研習內容</a></li>
+</ul>
+</li>
+<li><a href="#org3ee8858">2. 為什麼需要AI代理人</a></li>
+<li><a href="#org292868b">3. GPTs、Google AI Studio與POE</a>
+<ul>
+<li><a href="#orgaf56482">3.1. GPTs</a></li>
+<li><a href="#org5ae1f7c">3.2. Google AI Studio</a></li>
+<li><a href="#org23eaec8">3.3. Poe</a></li>
+<li><a href="#org26b9254">3.4. AI代理大市集</a></li>
+</ul>
+</li>
+<li><a href="#org75a57fa">4. Poe</a>
+<ul>
+<li><a href="#org30a3984">4.1. 如何收費</a></li>
+<li><a href="#orgcc573c6">4.2. 有哪些可用的Poe</a></li>
+<li><a href="#org0de6482">4.3. Official Bots</a></li>
+<li><a href="#org4c28126">4.4. Image generation Bots</a></li>
+<li><a href="#org347de4a">4.5. Audio generation Bots</a></li>
+<li><a href="#org66982bc">4.6. Traditional Chinese Bots</a></li>
+<li><a href="#org15a3860">4.7. Video generation Bots</a></li>
+<li><a href="#orge728ec7">4.8. 其他：</a></li>
+</ul>
+</li>
+<li><a href="#orga357e2e">5. 設計自己的專用Poe</a>
+<ul>
+<li><a href="#org09fc2a2">5.1. 可建立的Poe bot類型</a></li>
+<li><a href="#orgcccca88">5.2. 所有自訂bot的共通設定</a></li>
+<li><a href="#orgbc6b1a5">5.3. Prompt bot</a></li>
+<li><a href="#orgbc2ac91">5.4. Image generation bot</a></li>
+<li><a href="#org0f5853e">5.5. Video generation bot</a></li>
+<li><a href="#orgfdeb6ad">5.6. Role play bot</a></li>
+<li><a href="#org03357dd">5.7. Canvas app</a></li>
+<li><a href="#org70ce9cf">5.8. Server bot</a></li>
+</ul>
+</li>
+<li><a href="#org3627546">6. 其他</a>
+<ul>
+<li><a href="#orgccc2bf7">6.1. 生成式AI提示詞的簡單原則</a></li>
+<li><a href="#orge67f62d">6.2. 你的創作靈感</a></li>
+<li><a href="#orga797ed2">6.3. 回到今天的主題：評量</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<a href="https://letranger.github.io/working/20250925-AI輔助評量.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/20250925-AI輔助評量.html.svg?style=plastic"/></a>
+<div id="outline-container-org67b8cd8" class="outline-2">
+<h2 id="org67b8cd8"><span class="section-number-2">1.</span> 研習資訊</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>國中科技領域<br /></li>
+<li>研習對象及人數:本市公私立國中教師，預估 25 人<br /></li>
+<li>研習時間:114 年 09 月 25 日（星期四）10:10-12:00<br /></li>
+<li>研習地點:輔導團 302 會議室<br /></li>
+</ul>
+</div>
+<div id="outline-container-orga1bbb41" class="outline-3">
+<h3 id="orga1bbb41"><span class="section-number-3">1.1.</span> 研習時間表</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div id="orge20cac0" class="figure">
+<p><img src="images/研習內容/2024-02-22_14-43-53_1708580777543.jpg" alt="2024-02-22_14-43-53_1708580777543.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>20250925 生成式AI在課堂評量的應用</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9eec3d7" class="outline-3">
+<h3 id="org9eec3d7"><span class="section-number-3">1.2.</span> 研習內容</h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li>AI代理大市集<br /></li>
+<li>GPTs與Google AI Studio<br /></li>
+<li>POE<br /></li>
+<li>有哪些可用的POE<br /></li>
+<li>設計自己的專用POE<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org3ee8858" class="outline-2">
+<h2 id="org3ee8858"><span class="section-number-2">2.</span> 為什麼需要AI代理人</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+在過去的幾年中，生成式AI技術取得了顯著的進展，這些技術能夠自動生成文本、圖像、音頻和視頻等多種形式的內容。但是目前我們與生成式AI的互動方式主要仍是透過「提示詞」（Prompt）來引導AI生成所需的內容。這種方式雖然有效，但也存在一些挑戰和限制：<br />
+</p>
+<ol class="org-ol">
+<li>提示詞設計的複雜性：設計有效的提示詞需要一定的技巧和經驗，對於不熟悉AI技術的使用者來說，這可能是一個門檻。<br /></li>
+<li>結果的不可預測性：即使是精心設計的提示詞，有時也可能產生不符合預期的結果，這需要使用者進行多次嘗試和調整。<br /></li>
+<li>時間成本：反覆調整提示詞和生成內容可能需要花費大量時間，這對於需要快速獲取信息或創作內容的使用者來說並不理想。<br /></li>
+</ol>
+
+<p>
+為了解決這些問題，AI代理人（AI Agents）應運而生。你可以把AI代理人想像成是一個專為某種目的所打造的AI應用程式，它們內建了特定的提示詞和工作流程，能夠自動化地完成某些任務，從而大大降低了使用生成式AI的門檻。<br />
+</p>
+
+<p>
+例如，如果你想為班上的30份學生作品撰寫評語，傳統的做法可能需要你手動為每一份作品設計提示詞並生成評語，這不僅耗時，而且容易出錯。如果有專用的AI代理人，你可能只要拿著手機為每一份作品拍照，就能得到自動生成的評語，這樣不僅節省了時間，還能確保評語的一致性和質量。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org292868b" class="outline-2">
+<h2 id="org292868b"><span class="section-number-2">3.</span> GPTs、Google AI Studio與POE</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgaf56482" class="outline-3">
+<h3 id="orgaf56482"><span class="section-number-3">3.1.</span> GPTs</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+OpenAI 推出的GPT自訂平台<br />
+GPTs的優勢<br />
+</p>
+<ol class="org-ol">
+<li>多樣化選擇：整合多種 AI 模型（ChatGPT、Claude、Gemini…），使用者可依需求自由切換。<br /></li>
+<li>高度客製化：允許使用者建立自己的 GPT，設定專屬任務、風格與回應方式。<br /></li>
+<li>操作簡單：免安裝、免額外設定，即可快速體驗不同模型的特色。<br /></li>
+<li>共享與社群：使用者可將自訂 GPT 分享給他人，形成應用生態系。<br /></li>
+<li>跨領域應用：不僅能處理文字對話，還可用於教學、研究、創作與專案管理。<br /></li>
+</ol>
+</div>
+<div id="outline-container-orga3a04c8" class="outline-4">
+<h4 id="orga3a04c8"><span class="section-number-4">3.1.1.</span> 實作示範(<a href="https://chatgpt.com/g/g-68369e7981008191a1fe40515271a426-cheng-shi-zuo-ye-xiao-zhu-jiao">GPTs 程式作業小助教</a>)</h4>
+</div>
+<div id="outline-container-org64f840c" class="outline-4">
+<h4 id="org64f840c"><span class="section-number-4">3.1.2.</span> 建立</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+-<a href="https://chatgpt.com/g/g-67e1fe6f6f90819186a447af874e8b38-cheng-shi-ti-ku-xiao-zhu-shou"> 程式題庫小助手</a><br />
+</p>
+</div>
+</div>
+<div id="outline-container-org484bf95" class="outline-4">
+<h4 id="org484bf95"><span class="section-number-4">3.1.3.</span> 提示詞</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<pre class="example" id="org429b11d">
+我要建立一個程式設計題目的輔助生成機器人，這個機器人會要求使用者輸入下列資訊
+1. 選擇程式語言(如C, Python)
+2. 選擇解題所需概念(如變數、if、for、陣列)
+3. 試題難度(1,2,3,4,5，數字越高難度越大)
+依據上述題目生成以下內容
+1. 題目
+2. 輸入說明及輸入範例
+3. 輸出說明及輸出範例
+4. 5組測資
+5. 程式碼詳解
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ae1f7c" class="outline-3">
+<h3 id="org5ae1f7c"><span class="section-number-3">3.2.</span> Google AI Studio</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+<a href="https://aistudio.google.com">Google AI Studio</a> 是Google 推出的雲端 AI 平台，讓使用者能快速體驗、設計與測試各類生成式 AI 應用。<br />
+核心功能：<br />
+</p>
+<ul class="org-ul">
+<li>提供 Gemini 模型（文字、程式碼、影像理解等）<br /></li>
+<li>支援 Prompt 設計與測試，方便教師或開發者反覆調整<br /></li>
+<li>可將設計好的 Prompt 匯出為 API，直接串接應用程式<br /></li>
+</ul>
+<p>
+特色：<br />
+</p>
+<ul class="org-ul">
+<li>操作介面簡單，適合初學者與開發者<br /></li>
+<li>與 Google Cloud 緊密結合，方便部署到實際專案<br /></li>
+<li>提供多語言支援（含繁體中文）<br /></li>
+</ul>
+<p>
+應用場景：<br />
+</p>
+<ul class="org-ul">
+<li>教師設計課堂專屬 AI 助教<br /></li>
+<li>研究者快速驗證 AI 任務可行性<br /></li>
+<li>開發者將生成式 AI 整合到網站或 App<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgb89152f" class="outline-4">
+<h4 id="orgb89152f"><span class="section-number-4">3.2.1.</span> 實作示範(<a href="https://service-405018439480.us-west1.run.app/">AI Studio程式題庫小助手</a>)</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<pre class="example" id="orgb7cd1ce">
+### 任務說明（Task Instruction）
+您是一位具備跨領域教學設計能力的教師，專門協助台灣教師設計Python程式設計題目。目標是透過「程式題庫小助手」的教學主題，協助設計完整題庫。
+
+### 操作流程（Step-by-Step Instructions）
+
+請依照以下順序提問，用一步一步的方式引導用戶完成題庫設計：
+
+#### 步驟1：確認主題與教學目標
+請提問：
+「您希望設計的題目需要用到哪些Python的概念？例如：利用if, for, list等。」
+「希望設計的題目難度為何？由1到5來描述試題難度。」
+
+#### 步驟2：確認學習對象與年級
+請提問：
+「這個題目是設計給哪個年級或學習階段的學生？例如：高一資訊課程，或是國中資優班。」
+
+### 題目格式（Markdown 表格）
+**1. 題目描述**
+  描述題目要求
+**2. 輸入說明**
+  描述輸入格式與範例
+**3. 輸出說明**
+  描述輸出格式與範例
+**4. 測試範例**
+  - 輸入: 程式輸入範例
+  - 輸出: 程式輸出範例
+**5. 測資**
+  - 測資1
+    程式第一組測資
+    程式第一組測資的輸出
+  - 測資2
+    程式第二組測資
+    程式第二組測資的輸出
+  - 測資3
+    程式第三組測資
+    程式第三組測資的輸出
+  - 測資4
+    程式第四組測資
+    程式第四組測資的輸出
+  - 測資5
+    程式第五組測資
+    程式第五組測資的輸出
+**參考解答**
+  描述解題思路與程式碼
+
+---
+
+### 使用限制（Constraints）
+
+- **語言**：請使用繁體中文回應。
+- **風格**：語氣親切但專業，條理清晰。
+- **格式**：最終教案以 Markdown 表格形式呈現，便於教師後續使用或列印。
+
+### 教師輸入範例
+```json
+{
+  "主題": "Python程式設計，以for, if解題",
+  "年級": "高二",
+  "目標": "能結合for和if來解決問題",
+}
+
+</pre>
+
+<p>
+這些都反應了通用不等於易用，事實上，這些也只是階段性的solution，隨著AI的成熟，prompt engineering會越來越不重要<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org23eaec8" class="outline-3">
+<h3 id="org23eaec8"><span class="section-number-3">3.3.</span> Poe</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Poe的母公司Quora是一個問答平台，成立於2009年，並在2010年獲得了來自風險投資公司的資金支持。Quora的目標是成為一個全球性的知識共享平台，讓人們可以分享和獲取各種領域的知識和經驗。截至2023年，Quora已經擁有超過4億的活躍用戶，並且每天都有數百萬的問題和回答被發布。<br />
+</p>
+
+<p>
+如果你沒聽過Quora，沒關係，至少你應該聽過StackOverflow，這是目前全球最大的程式設計師問答平台，成立於2008年，並在2010年獲得了來自風險投資公司的資金支持。StackOverflow的目標是成為一個全球性的程式設計師社群，讓程式設計師可以分享和獲取各種程式設計相關的知識和經驗。截至2023年，StackOverflow已經擁有超過1億的註冊用戶，並且每天都有數百萬的問題和回答被發布。<br />
+</p>
+
+<p>
+在StackOverflow最風光的時候，甚至有畢業生直接把StackOverflow列為主要感謝對象之一（其他的包括Google、YouTube、Copy/Paste）<br />
+</p>
+
+<div id="orgddf13ff" class="figure">
+<p><img src="images/2025-09-15_18-59-27.png" alt="2025-09-15_18-59-27.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 2: </span>Thank You to StackOverflow</p>
+</div>
+
+<p>
+但是當問答平台遇上AI，這些平台就不再風光了，因為AI可以更快更準確地回答問題，這對於問答平台來說是一個巨大的挑戰。隨著AI浪潮的興起，StackOverflow的使用率開始下降，因為AI可以更快更準確地回答程式設計相關的問題，這對於StackOverflow來說是一個巨大的挑戰。<br />
+</p>
+
+<p>
+打不過怎麼辦?<br />
+</p>
+
+<p>
+就加入啊<br />
+</p>
+
+<p>
+為了應對這一挑戰，StackOverflow開始積極探索AI技術在問答領域的應用，例如推出了自己的AI聊天機器人「OverflowAI」，並且與OpenAI合作，將GPT-3模型整合到StackOverflow平台中。<br />
+</p>
+
+
+<div id="org7cf12bf" class="figure">
+<p><img src="images/2025-09-15_18-56-26.png" alt="2025-09-15_18-56-26.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 3: </span>StackOverflow近年成長趨勢</p>
+</div>
+
+<p>
+Poe就是Quora向AI領域的一次嘗試，向用戶提供一個新的尋求知識的管道和體驗。當然，考慮到目前AI語言模型中存在的種種缺陷，例如缺乏訓練數據的時效，以及難以保證事實真實性，Poe目前獨立於Quora，並且不會出現在社區問答的內容中。<br />
+</p>
+
+<p>
+Poe本身並不提供基礎的大語言模型，而是整合多個來自不同科技巨頭的基於不同模型的AI聊天機器人，其中包括來自OpenAI的GPT-4、ChatGPT，Anthropic的Claude、Claude-instant，Google的PaLM，以及來自Meta的開源模型Llama-2。<br />
+</p>
+
+<p>
+Poe 本身內建許多 AI 聊天機器人，各個聊天機器人都具有不同的用途和特色，下方列出一些 Poe 可以實現的功能：<br />
+</p>
+<ul class="org-ul">
+<li>詢問和探索：向機器人詢問，尋求解答或靈感。<br /></li>
+<li>跨平台：在不同裝置上同步聊天記錄和對話內容。<br /></li>
+<li>AI 繪圖：呼叫指定 AI 繪圖機器人，透過提示詞進行繪圖。<br /></li>
+<li>客製化機器人：提供外部知識檔案，建立自己的客製化機器人。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org26b9254" class="outline-3">
+<h3 id="org26b9254"><span class="section-number-3">3.4.</span> AI代理大市集</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+「AI 代理大市集平臺」是臺北市日新國小徐臺屏老師分享的AI代理人分享筆記，整理了超過 200 種針對不同應用情境設計的 GAI 工具，這些工具已設定好<br />
+基本指令與回覆模式，方便老師快速上手使用。<br />
+</p>
+<ul class="org-ul">
+<li>網址: <a href="https://taipinshe.notion.site/">https://taipinshe.notion.site/</a><br /></li>
+<li>主要受眾: 教師、學生、不熟悉提示工程的使用者<br /></li>
+<li>以下的分類是tag，非category<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgfa1b718" class="outline-4">
+<h4 id="orgfa1b718"><span class="section-number-4">3.4.1.</span> 課程設計</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ol class="org-ol">
+<li><a href="https://poe.com/curriculum_markdown">#1 Curriculum_AI代理產出四節課</a>: 使用者輸入文章，AI代理產出四節課的課程。<br /></li>
+<li><a href="https://chatgpt.com/g/g-PFgWL48BF-xue-xi-mu-biao-xiao-jing-ling-shuang-xiang-xi-mu-biao">#23 學習目標小精靈-雙向細目表</a>: 學習目標小精靈-雙向細目表<br /></li>
+<li><a href="https://poe.com/CurriculumPlanner">#56 CurriculumPlanner【課程計畫】</a>:請輸入課程名稱，我將為您產生課程目標、課程內涵與課程實施方式。<br /></li>
+<li><a href="https://chatgpt.com/g/g-lOqxFYqb5-ke-cheng-chuang-zuo-jia">#123 課程創作家GPT</a>: 可上傳PDF, 根據使用者上傳的文件設計適合國小或國中學生的20節課程。它會分析文件內容，並根據文件的主題和重要資訊設計出課程計劃，包括每節課的目標、名稱、內容、活動步驟和評量方法。每一節課的評量將提供詳細的表格，欄位包括評量目標和評量活動。它會考慮到學生的學習特點和需求，確保課程有趣且具挑戰性。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org840f887" class="outline-4">
+<h4 id="org840f887"><span class="section-number-4">3.4.2.</span> 學科學習</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ol class="org-ol">
+<li><a href="https://poe.com/ElementalRobot">#52 ElementalRobot</a>: 我需要你輸入的主體物件名稱,才能幫你詳細規劃裡面的元素和人物活動。比如說,你可以輸入咖啡廳、書店、廚房、臥室等等。我會根據不同的主體物件,規劃出具體的內部元素和人物動作,讓回覆更加完整和有意義。請你試著輸入一個具體的主體物件名稱,我就能為你提供更詳細的規劃。<br /></li>
+<li><a href="https://poe.com/MathExercises">#57 MathExercises</a>: 請給我參考的數學題目，我將為您變更數據重新出題。數學題重新出題。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd369038" class="outline-4">
+<h4 id="orgd369038"><span class="section-number-4">3.4.3.</span> 評量設計</h4>
+<div class="outline-text-4" id="text-3-4-3">
+<ol class="org-ol">
+<li><a href="https://poe.com/Assessment_Criteria">#19 Assessment_Criteria</a>: 輸入學習目標，AI會依據學習目標提供評量標準A-E。<br /></li>
+<li><a href="https://poe.com/Learn_suggestions">#44 Learn_suggestions</a>: 請輸入學生的學習表現，我將為您產生學習評語。也能為您產生一系列的學習活動建議。<br /></li>
+<li><a href="https://poe.com/5QuizQuiz">#46 5QuizQuiz</a>: 請輸入文章，我會為您產生5道題目。<br /></li>
+<li><a href="https://poe.com/ENG_quiz">#47 ENG_quiz</a>: 請輸入英語的文章內容，我將為您產生3題閱讀情境題以及2題文法題。<br /></li>
+<li><a href="https://poe.com/Students-feedback">#67 Students-feedback</a>: 輸入學生優、缺點，產生期末評語。<br /></li>
+<li><a href="https://poe.com/Measurement.AI">#120 標準本位評量規準設計機器人</a>: 能根據學習目標，設計A-E五個等級的評量標準。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org95655e6" class="outline-4">
+<h4 id="org95655e6"><span class="section-number-4">3.4.4.</span> 文章寫作</h4>
+<div class="outline-text-4" id="text-3-4-4">
+<ol class="org-ol">
+<li><a href="https://poe.com/ORIDwriter">#26 ORID Writer</a>: ORID心得寫作機器人，能協助使用者撰寫ORID格式的心得文章。<br /></li>
+<li><a href="https://chatgpt.com/g/g-lYbjjRnsk-wen-zhang-gai-xie">#78 文章改寫機器人(謹慎使用)</a>: 避免文章抄襲的問題，請謹慎使用。<br /></li>
+<li><a href="https://chatgpt.com/g/g-Lq7UjNxjV-lun-wen-xie-shou">#79 論文寫手</a>: 能協助使用者撰寫論文，提供結構、內容和參考資料等建議。<br /></li>
+<li><a href="https://chatgpt.com/g/g-AB3vyEp0a-zuo-wen-yin-dao-zhu-shou">#137 作文引導助手</a>: 輸入作文題目，AI會提供作文大綱、段落結構、關鍵詞等。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5aa4c8a" class="outline-4">
+<h4 id="org5aa4c8a"><span class="section-number-4">3.4.5.</span> 學生學習</h4>
+<div class="outline-text-4" id="text-3-4-5">
+<ol class="org-ol">
+<li><a href="https://poe.com/TestingMCQs">#11 TestingMCQs</a>: 透過ai協助您編寫故事，ai並且在故事中提供選擇題，讓你選擇接下來的劇情。<br /></li>
+<li><a href="https://poe.com/BotD4Q91J4BN7">#18 寫作自學小助手</a>: 針對各種寫作文體與寫作技巧提供引導與提示<br /></li>
+<li><a href="https://poe.com/Coloring_Book_Art">#32 Coloring_Book_Art</a>: 生成的圖形可供幼小學生著色(線條圖)，並適合紙筆評量圖形所需<br /></li>
+<li><a href="https://poe.com/SuperSunoMaster">#37 SuperSunoMaster</a>: 輸入音樂風格、樂器等，AI會生成一首音樂。<br /></li>
+<li><a href="https://huggingface.co/spaces/playgroundai/playground-v2.5">#117 playground-v2.5</a>: 圖片生成，不限點數。<br /></li>
+<li><a href="https://poe.com/inventor01">#149 專題產生器(arduino microbit esp32等)</a>: 我是帶領發明專題的助理，請告訴我你想發明甚麼類型的專題你可以告訴我(選擇一種方式)<br />
+<ol class="org-ol">
+<li>題目(例如：智慧垃圾桶)<br /></li>
+<li>感測器+反應器+粗略的方向(例如：光敏電阻+竹樂器+可互動)<br /></li>
+<li>大方向(例如：有關防疫的)<br /></li>
+<li>給我幾個題目(例如：給我5個題目)<br /></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb593d0f" class="outline-4">
+<h4 id="orgb593d0f"><span class="section-number-4">3.4.6.</span> 摘要整理</h4>
+<div class="outline-text-4" id="text-3-4-6">
+<ol class="org-ol">
+<li><a href="https://poe.com/Mindmap_ch_mark">#20 Markmap中文摘要</a>: 使用者輸入文章，AI代理摘要重點成mindmap，以markdown語法呈現。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org75a57fa" class="outline-2">
+<h2 id="org75a57fa"><span class="section-number-2">4.</span> Poe</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org30a3984" class="outline-3">
+<h3 id="org30a3984"><span class="section-number-3">4.1.</span> 如何收費</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Poe目前提供免費使用，使用者可以無限制地與不同的AI模型互動，探索各種功能和應用場景。不過，某些高階功能或特定模型可能需要付費訂閱才能使用。<br />
+</p>
+</div>
+<div id="outline-container-org0eb0906" class="outline-4">
+<h4 id="org0eb0906"><span class="section-number-4">4.1.1.</span> 免費方案</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+每天可以用3000點數(point)，可以用來和各種AI聊天機器人互動，或是使用AI繪圖服務。<br />
+</p>
+
+<div id="org90072a0" class="figure">
+<p><img src="images/2025-09-16_21-05-25.png" alt="2025-09-16_21-05-25.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 4: </span>Poe免費方案</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfca0c49" class="outline-4">
+<h4 id="orgfca0c49"><span class="section-number-4">4.1.2.</span> 訂閱方案</h4>
+<div class="outline-text-4" id="text-4-1-2">
+
+<div id="org4f46946" class="figure">
+<p><img src="images/2025-09-16_20-40-16.png" alt="2025-09-16_20-40-16.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 5: </span>Poe訂閱方案</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc759b0d" class="outline-4">
+<h4 id="orgc759b0d"><span class="section-number-4">4.1.3.</span> 你還有多少點數(point)</h4>
+<div class="outline-text-4" id="text-4-1-3">
+
+<div id="orged2d0a2" class="figure">
+<p><img src="images/2025-09-16_20-42-07.png" alt="2025-09-16_20-42-07.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 6: </span>Poe點數查詢</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbcf727c" class="outline-4">
+<h4 id="orgbcf727c"><span class="section-number-4">4.1.4.</span> 各種服務的收費方式</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<ul class="org-ul">
+<li>具體的收費標準和計算方式通常會在相關平台的使用條款或定價頁面中說明。<br /></li>
+<li>不同的服務會消耗不同數量的點數，具體的消耗標準會根據服務的類型和使用情況而有所不同。<br /></li>
+</ul>
+
+<p>
+以文字生成的服務(GPT-5-Chat)為例，一段文字可能會消耗140點左右<br />
+</p>
+
+<div id="orge51d850" class="figure">
+<p><img src="images/2025-09-16_20-52-07.png" alt="2025-09-16_20-52-07.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 7: </span>使用GPT-5-Chat生成一段文字所需的點數</p>
+</div>
+
+<p>
+以生成影像的服務(Gemini-2.5-Flash-Image)為例，生成一張影像可能會消耗1000點左右<br />
+</p>
+
+<div id="orgfdcea6c" class="figure">
+<p><img src="images/2025-09-16_20-42-46.png" alt="2025-09-16_20-42-46.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 8: </span>生成一張影像所需的點數</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org12332bd" class="outline-4">
+<h4 id="org12332bd"><span class="section-number-4">4.1.5.</span> 什麼是token</h4>
+<div class="outline-text-4" id="text-4-1-5">
+<p>
+Token 是自然語言處理中的一個基本單位，通常指的是一段文字中的一個詞、一個子詞或一個字元。不同的語言模型對 token 的定義可能有所不同，但一般來說，token 是用來表示文本中最小的語義單位。<br />
+</p>
+
+<p>
+如果你想測試一下你的文字有多少token，可以使用<a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>這個工具。輸入一段文字，它會告訴你這段文字被分解成多少個 token。<br />
+</p>
+
+<div id="org7afbace" class="figure">
+<p><img src="images/圖2-3-1.png" alt="圖2-3-1.png" width="800" /><br />
+</p>
+<p><span class="figure-number">Figure 9: </span>OpenAI Tokenizer</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcc573c6" class="outline-3">
+<h3 id="orgcc573c6"><span class="section-number-3">4.2.</span> 有哪些可用的Poe</h3>
+<div class="outline-text-3" id="text-4-2">
+<p width="800">
+<img src="images/2025-09-12_09-23-17.png" alt="2025-09-12_09-23-17.png" width="800" /><br />
+Poe上的Bot主要分為兩大類：<br />
+</p>
+<ul class="org-ul">
+<li>Official Bots: 由Poe官方開發或是其他知名AI公司提供的Bots (例如ChatGPT、Claude等)<br /></li>
+<li>其他用戶基於官方Bots建立的Bots (包括Image generation Bots、Audio generation Bots等)<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0de6482" class="outline-3">
+<h3 id="org0de6482"><span class="section-number-3">4.3.</span> Official Bots</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Poe最大慨優勢之一：一個平台可以使用多種不同的AI模型，無需分別註冊和登入各個平台。<br />
+</p>
+<ul class="org-ul">
+<li>由Poe官方開發和維護的機器人(預設使用OpenAI GPT-3.5)，通常具有較高的穩定性和功能完整性。<br /></li>
+<li>由Poe平台以API串接到其他服務的機器人，例如ChatGPT、Claude等。<br /></li>
+</ul>
+
+<div id="org9896fbf" class="figure">
+<p><img src="images/2025-09-12_09-52-31.png" alt="2025-09-12_09-52-31.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 10: </span>Poe Official Bots的可用模型</p>
+</div>
+
+<p>
+但並不是所有的模型都能免費使用。收費的方式可能會因平台而異，以下是一些常見的計算方法：<br />
+</p>
+<ul class="org-ul">
+<li>按次計費：每次生成圖片收取固定費用。<br /></li>
+<li>訂閱制：用戶支付月費或年費，能夠在訂閱期間內生成一定數量的圖片。<br /></li>
+<li>按使用量計費：根據圖片的解析度、複雜性或生成時間收取不同的費用。<br /></li>
+<li>免費配額：提供一定數量的免費生成次數，超過後開始收費。<br /></li>
+</ul>
+<p>
+具體的收費標準和計算方式通常會在相關平台的使用條款或定價頁面中說明。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4c28126" class="outline-3">
+<h3 id="org4c28126"><span class="section-number-3">4.4.</span> Image generation Bots</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+專門用於生成圖像的機器人，適合需要視覺內容的應用場景。目前支援的模型包括Gemini系列、GPT系列、Imagen系列、FLUX、DALL-E、Claude&#x2026;.等等。<br />
+</p>
+
+
+<div id="orgc8890fb" class="figure">
+<p><img src="images/2025-09-12_09-54-50.png" alt="2025-09-12_09-54-50.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 11: </span>Poe Image generation Bots的可用模型</p>
+</div>
+</div>
+<div id="outline-container-orgff2579a" class="outline-4">
+<h4 id="orgff2579a"><span class="section-number-4">4.4.1.</span> Gemini-2.5-Flash-Image</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<blockquote>
+<p>
+一隻飛向月球的貓，穿著一套太空人的服裝。<br />
+</p>
+</blockquote>
+
+<div id="org1f1555a" class="figure">
+<p><img src="images/2025-09-15_14-05-43.png" alt="2025-09-15_14-05-43.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 12: </span>使用Gemini-2.5-Flash-Image生成的圖像</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org517f66c" class="outline-4">
+<h4 id="org517f66c"><span class="section-number-4">4.4.2.</span> Imagen-3</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<blockquote>
+<p>
+一隻飛向月球的貓，穿著一套太空人的服裝。<br />
+</p>
+</blockquote>
+
+<div id="org2d792df" class="figure">
+<p><img src="images/2025-09-15_14-09-42.png" alt="2025-09-15_14-09-42.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 13: </span>使用Imagen-3畫圖</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcf1cee5" class="outline-4">
+<h4 id="orgcf1cee5"><span class="section-number-4">4.4.3.</span> Claude-Opus-4</h4>
+<div class="outline-text-4" id="text-4-4-3">
+<blockquote>
+<p>
+一隻飛向月球的貓，穿著一套太空人的服裝。<br />
+</p>
+</blockquote>
+
+<div id="org97fe8d1" class="figure">
+<p><img src="images/2025-09-15_14-07-19.png" alt="2025-09-15_14-07-19.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 14: </span>使用Claude-Opus-4畫圖</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org347de4a" class="outline-3">
+<h3 id="org347de4a"><span class="section-number-3">4.5.</span> Audio generation Bots</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+專門用於生成音訊內容的機器人，例如音樂創作、文字轉語音等。目前支援的模型包括ElevenLabs系列、Hailuo-Speech等。<br />
+</p>
+</div>
+<div id="outline-container-org9d01f0a" class="outline-4">
+<h4 id="org9d01f0a"><span class="section-number-4">4.5.1.</span> ElevenLabs-v2.5-Turbo</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<blockquote>
+<p>
+Poe, 全稱Platform for Open Exploration，是著名問答平台Quora於2022年12月，緊接著ChatGPT公測後推出的一款聊天機器人。和ChatGPT一樣，用戶可以用自然語言和Poe內一系列AI機器人對話，詢問專業知識，甚至要求它創作文章等等。<br />
+</p>
+</blockquote>
+<audio controls>
+  <source src="images/Poe_Platform_for_Open_ExplorationQuora202212ChatGPTChatGPTPoeAI.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</div>
+</div>
+<div id="outline-container-org06ee291" class="outline-4">
+<h4 id="org06ee291"><span class="section-number-4">4.5.2.</span> Hailuo-Speech-02</h4>
+<div class="outline-text-4" id="text-4-5-2">
+<blockquote>
+<p>
+Poe, 全稱Platform for Open Exploration，是著名問答平台Quora於2022年12月，緊接著ChatGPT公測後推出的一款聊天機器人。和ChatGPT一樣，用戶可以用自然語言和Poe內一系列AI機器人對話，詢問專業知識，甚至要求它創作文章等等。<br />
+</p>
+</blockquote>
+<audio controls>
+  <source src="images/Bo2iM4QtG_DSWPvdUFNGN_speech.mp3" type="audio/mpeg"Your browser does not support the audio element.
+</div>
+</div>
+</div>
+<div id="outline-container-org66982bc" class="outline-3">
+<h3 id="org66982bc"><span class="section-number-3">4.6.</span> Traditional Chinese Bots</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+支援繁體中文的機器人，適合中文使用者的需求。提供的機器人類型種類繁多，包括吐槽、塔羅牌算命、八字運勢分析、寫作、學習輔助、虛擬情人&#x2026;..等。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org15a3860" class="outline-3">
+<h3 id="org15a3860"><span class="section-number-3">4.7.</span> Video generation Bots</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+影片生成，包括Veo、Runway、Sora&#x2026;等等，但多數都需要付費。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge728ec7" class="outline-3">
+<h3 id="orge728ec7"><span class="section-number-3">4.8.</span> 其他：</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>Featured Bots<br /></li>
+<li>Game BotsS<br /></li>
+<li>Programming<br /></li>
+<li>Mind<br /></li>
+<li>Search<br /></li>
+<li>Apps<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga357e2e" class="outline-2">
+<h2 id="orga357e2e"><span class="section-number-2">5.</span> 設計自己的專用Poe</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org09fc2a2" class="outline-3">
+<h3 id="org09fc2a2"><span class="section-number-3">5.1.</span> 可建立的Poe bot類型</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Prompt bot: 提示詞機器人<br /></li>
+<li>Image generation bot: 圖像生成，text-to-image, image-to-image<br /></li>
+<li>Video generation bot: 影片生成<br /></li>
+<li>Role play bot: 角色扮演<br /></li>
+<li>Canvas app: web app<br /></li>
+<li>Server bot: 自己有伺服器適用，在伺服器上跑後端程式(Backend, 可以用Node.js之類的語言來撰寫)、提供API服務<br /></li>
+</ul>
+
+<div id="org76b4154" class="figure">
+<p><img src="images/2025-09-17_14-05-00.png" alt="2025-09-17_14-05-00.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 15: </span>Caption</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcccca88" class="outline-3">
+<h3 id="orgcccca88"><span class="section-number-3">5.2.</span> 所有自訂bot的共通設定</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>Type: Bot的類型<br /></li>
+<li>Edit pictures: 可以選擇是否允許使用者上傳圖片，並且對圖片進行修改<br /></li>
+<li>Name: 選一個沒人用過的名字, 這個也是你的Bot ID<br /></li>
+<li>Description: 對這個bot的簡短描述<br /></li>
+<li>Base bot: 選一個基礎的bot ( 例如 GPT-4, Claude-instant, Gemini-1.5-Turbo )，看你的機器人需要用到哪一個模型的能力<br /></li>
+</ul>
+</div>
+<div id="outline-container-org6007fa9" class="outline-4">
+<h4 id="org6007fa9"><span class="section-number-4">5.2.1.</span> Behavior設定</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>Base bot: 選一個基礎的bot ( 例如 GPT-4, Claude-instant, Gemini-1.5-Turbo )，看你的機器人需要用到哪一個模型的能力<br /></li>
+<li>System prompt: 這是給bot的指令，讓它知道它是誰、要做什麼，這是對機器人的說的話<br /></li>
+<li>Greeting prompt: 這是給使用者的指令，讓使用者知道這個bot是什麼、能做什麼，這是對使用者說的話<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07d82a7" class="outline-4">
+<h4 id="org07d82a7"><span class="section-number-4">5.2.2.</span> Settings設定</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<ul class="org-ul">
+<li>Make app publicly accessible: 是否公開(允許其他人使用)<br /></li>
+<li>Related recmmendations: 是否允許推薦<br /></li>
+<li>Show prompt in app profile: 是否在app顯示提示詞，如果你不想讓別人看到你的提示詞，可以關閉這個選項<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37d2919" class="outline-4">
+<h4 id="org37d2919"><span class="section-number-4">5.2.3.</span> Monetization設定</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<p>
+這個只有申請為開發者後才會看到, 可以選擇是否要收費，但是目前台灣還沒有開放(2024/09/17)申請Creator。<br />
+</p>
+
+<p>
+等等&#x2026;收費?<br />
+</p>
+
+<p>
+是的，我們也可以在Poe上架自己的bot，並且收取使用者的費用，這對於想要販售自己設計的bot的人來說是一個很好的機會。前提是你能寫出一個很有用的bot，讓人願意付費使用。嗯&#x2026;我想至少比當講師好賺多了&#x2026; -_-<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbc6b1a5" class="outline-3">
+<h3 id="orgbc6b1a5"><span class="section-number-3">5.3.</span> Prompt bot</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li><a href="https://poe.com/PGAssist">程式解題小助手</a><br /></li>
+</ul>
+</div>
+<div id="outline-container-org580e097" class="outline-4">
+<h4 id="org580e097"><span class="section-number-4">5.3.1.</span> 範例</h4>
+<div class="outline-text-4" id="text-5-3-1">
+</div>
+<ul class="org-ul">
+<li><a id="org2dbb729"></a>線上客服：<a href="https://poe.com/ProgramOnlineTutor">https://poe.com/ProgramOnlineTutor</a><br />
+<div class="outline-text-5" id="text-org2dbb729">
+<ul class="org-ul">
+<li>Type: Role play bot<br /></li>
+<li>Edit picture: 自己上傳圖片並修改<br /></li>
+<li>Name: ProgramOnlineTutor<br /></li>
+<li>Discription: 異鄉人學院線上客服<br /></li>
+<li>Base bot: GPT-5-Chat<br /></li>
+<li>Character definition<br /></li>
+</ul>
+<blockquote>
+<p>
+你是&ldquo;異鄉人線上學院&rdquo;的客服人員，負責解答學員對課程的查詢、回應一些學習問題，引起一些討論，了解學生需要，及在當發現學生對某一個課程有興趣，可以請他們到<a href="https://letranger.github.io/">https://letranger.github.io/</a> 付學費報名。但不要一開始就請學生直接報名，你要反問一下學員，引起學生的對話，先問學生想學哪一種程式語言，給一些簡單的小題目，測試學生的能力，在確定學生有報名的意願後，才請他們進行線上報名。<br />
+</p>
+
+<p>
+在Knowledge base中有以下課程：<br />
+</p>
+<ol class="org-ol">
+<li>Python基礎<br /></li>
+<li>Python進階<br /></li>
+<li>C++基礎<br /></li>
+<li>C++進階<br /></li>
+</ol>
+<p>
+如果學生詢問的課程在上述範圍，你可以參考Knowledge base內容，如果沒有，就先依據你的知識來回廧。<br />
+</p>
+
+<p>
+你回應的對話要短一些，不宜太長，要令人有跟客戶服務輕鬆溝通的感覺、以繁體中文和學生互動。<br />
+</p>
+
+<p>
+你可以問學生：你之前有沒有學過任何程式設計的經驗？你之前有沒有試過寫網頁之類的問題你也可以分享一下自己的工作經驗，及對相關學習內容的看法。<br />
+</p>
+
+<p>
+你的回應可以是一句簡單的認同或者問題，以推進交流<br />
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>Greeting message: 您好，請問你對哪一種程式語言有興趣？<br /></li>
+<li>Knowledge base: 課程內容(pdf檔)<br /></li>
+<li>Cite sources: Yes<br /></li>
+<li>Make app publicly accessible: Yes<br /></li>
+<li>Related recommendations: Yes<br /></li>
+<li>Show prompt in app profile: No<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org8c59dfb" class="outline-4">
+<h4 id="org8c59dfb"><span class="section-number-4">5.3.2.</span> 如何繼續改進你建好的bot</h4>
+<div class="outline-text-4" id="text-5-3-2">
+
+<div id="org88fbda1" class="figure">
+<p><img src="images/2025-09-17_15-36-49.png" alt="2025-09-17_15-36-49.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 16: </span>1. 先點選More Actions</p>
+</div>
+
+
+<div id="org1770df8" class="figure">
+<p><img src="images/2025-09-17_15-37-08.png" alt="2025-09-17_15-37-08.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 17: </span>2. 再點選Edit</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbc2ac91" class="outline-3">
+<h3 id="orgbc2ac91"><span class="section-number-3">5.4.</span> Image generation bot</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-org721655b" class="outline-4">
+<h4 id="org721655b"><span class="section-number-4">5.4.1.</span> 範例</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<ul class="org-ul">
+<li><a id="orgbf3d690"></a>文生圖Bot測試: <a href="https://poe.com/JapanStyleCartoonGen">JapanStyleCartoonGen</a><br />
+<div class="outline-text-5" id="text-orgbf3d690">
+<ul class="org-ul">
+<li>Type: Image generation bot<br /></li>
+<li>Edit picture: 自己上傳圖片並修改<br /></li>
+<li>Name: JapanStyleCartoonGen<br /></li>
+<li>Discription: 這是一個日本動漫風格的圖片生成機器人<br /></li>
+<li>Base bot: StableDiffusionXL(可試試Gemini-2.5-Flash-Image、DALL-E-3或其他模型(部份要收費)<br /></li>
+<li>System prompt: 可愛的日系卡通風格<br /></li>
+<li>Greeting message: 請說出您希望生成的圖片內容，我會幫您轉為日系漫畫風。<br /></li>
+<li>Make app publicly accessible: Yes<br /></li>
+<li>Related recommendations: Yes<br /></li>
+<li>Show prompt in app profile: No<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="orga77ba39"></a>圖生圖Bot測試：<a href="https://poe.com/PhotoQQ">PhotoQQ</a><br />
+<div class="outline-text-5" id="text-orga77ba39">
+<ul class="org-ul">
+<li>Type: Image generation bot<br /></li>
+<li>Edit picture: 自己上傳圖片並修改<br /></li>
+<li>Name: PhotoQQ<br /></li>
+<li>Discription: 這是一個可以將照片轉換成老照片風格的機器人<br /></li>
+<li>Base bot: Gemini-2.5-Flash-Image<br /></li>
+<li>System prompt: 請使用者上傳一張相片，將相片加上一些老化、褪色的效果<br /></li>
+<li>Greeting message: 你好，請按+上傳一張照片到時光機中<br /></li>
+<li>Make app publicly accessible: Yes<br /></li>
+<li>Related recommendations: Yes<br /></li>
+<li>Show prompt in app profile: No<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0f5853e" class="outline-3">
+<h3 id="org0f5853e"><span class="section-number-3">5.5.</span> Video generation bot</h3>
+</div>
+
+<div id="outline-container-orgfdeb6ad" class="outline-3">
+<h3 id="orgfdeb6ad"><span class="section-number-3">5.6.</span> Role play bot</h3>
+<div class="outline-text-3" id="text-5-6">
+</div>
+<div id="outline-container-org2b6204f" class="outline-4">
+<h4 id="org2b6204f"><span class="section-number-4">5.6.1.</span> 範例</h4>
+<div class="outline-text-4" id="text-5-6-1">
+</div>
+<ul class="org-ul">
+<li><a id="org5c312ab"></a>文字冒險遊戲: <a href="https://poe.com/MUDPlayer">MUDPlayer</a><br />
+<div class="outline-text-5" id="text-org5c312ab">
+<ul class="org-ul">
+<li>Type: Role play bot<br /></li>
+<li>Edit picture: 自己上傳圖片並修改<br /></li>
+<li>Name: MUDPlayer<br /></li>
+<li>Discription: 武俠文字冒險遊戲<br /></li>
+<li>Base bot: GPT-5-Chat<br /></li>
+<li>Character definition<br /></li>
+</ul>
+<blockquote>
+<p>
+你是一個武俠小說作家，你會不停給讀者 2個選擇，當讀者選了1個後，故事便會向某一個方法發展下去。然後再在一些關頭問讀者如何決定。<br />
+</p>
+
+<p>
+當讀者說&ldquo;開始&rdquo;時，你便要創作一段新的劇情，故事背景是典型的修仙故事，故事主角要不斷的透過修煉提高自己的等級，劇情要緊張、充滿選擇的困難，讀者可以透過2選1的情節選擇來繼續發展故事、或是與故事中其他人物角色的對話，要求讀者輸入說話內容，劇情也會因此而推演。<br />
+</p>
+
+<p>
+在每段劇情中，都會在最下方註明主人公的「生命值」，最健康是100，如果受傷了，會按受傷的情況扣減「生命值」，例如中了輕傷就會減10分。生命值必須要得到醫治才能提升。如果生命值到達0，便會死亡，故事就會結束。<br />
+</p>
+
+<p>
+主人公有不同的道具、武器、護具、絕招<br />
+</p>
+
+<p>
+每個武器、護具、絕招都有等級，等級越高，攻擊力、防禦力、威力就會越高(例如：1~5級，1級是最低，5級是最高)<br />
+</p>
+
+<p>
+攻擊力越高的武器，就算對手有護具，也會受到較大的損害防具的等級會令行動力下降<br />
+絕招會有使用的次數限制，要在作戰時列出，給讀者選擇使用道具可以補充體力，或者用劇情中使用<br />
+</p>
+
+<p>
+每個用具也有數量，起初是 O，會按劇情發展增加，或使用後減少。<br />
+</p>
+
+<p>
+如果是作戰的劇情，要列出對手的「生命值」<br />
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>Knowledge base: 相關武俠小說的資料(txt檔)<br /></li>
+<li>Cite sources: No<br /></li>
+<li>Greeting message: 請輸入&ldquo;開始&rdquo;進入冒險世界<br /></li>
+<li>Suggest replies:<br />
+<ul class="org-ul">
+<li>開啟後，系統會自動幫你產生一些可能的「快速回覆」按鈕。你可以直接點選，不用自己打字。<br /></li>
+<li>關閉後，就不會出現建議回覆。<br /></li>
+</ul></li>
+<li>Render markdown content:<br />
+<ul class="org-ul">
+<li>開啟（藍色狀態）後，機器人輸出的內容會以 Markdown 格式 顯示，例如粗體、斜體、標題、程式碼區塊、表格等等。<br /></li>
+<li>關閉後，所有文字會以純文字顯示，不會有格式。<br /></li>
+</ul></li>
+<li>Custom temperature: 這是控制 AI 生成內容「創意與隨機性」的參數。<br />
+<ul class="org-ul">
+<li>數值高（例如 0.8–1.0）：生成的回覆更有創意、更不固定，有時候比較天馬行空。<br /></li>
+<li>數值低（例如 0.2–0.3）：回覆更一致、更嚴謹，但比較保守、不會太多變化。<br /></li>
+<li>Poe 預設是 0.35，算是偏穩定。<br /></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org03357dd" class="outline-3">
+<h3 id="org03357dd"><span class="section-number-3">5.7.</span> Canvas app</h3>
+<div class="outline-text-3" id="text-5-7">
+</div>
+<div id="outline-container-orgea44676" class="outline-4">
+<h4 id="orgea44676"><span class="section-number-4">5.7.1.</span> 範例</h4>
+<div class="outline-text-4" id="text-5-7-1">
+</div>
+<ul class="org-ul">
+<li><a id="org061cc74"></a>打字練習程式: <a href="https://poe.com/LetrangerTyping">LetrangerTyping</a><br />
+<ul class="org-ul">
+<li><a id="org07fe30e"></a>Canvas app<br />
+<div class="outline-text-6" id="text-org07fe30e">
+<ul class="org-ul">
+<li>Generate with a bot: 選這個<br /></li>
+<li>Build manually<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org73f8a3f"></a>App-Creator<br />
+<div class="outline-text-6" id="text-org73f8a3f">
+<blockquote>
+<p>
+寫一個打字練習網站，隨機出現英文單字，使用者可以在底下輸入該單字，完整輸入後系統會唸出該單字，然後換下一個單字<br />
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="org740bde4"></a>Publish<br />
+<div class="outline-text-6" id="text-org740bde4">
+<ul class="org-ul">
+<li>Type: Canvas app<br /></li>
+<li>Name: OnlineTypingPractice<br /></li>
+<li>Description: 線上打字練習網站<br /></li>
+<li>source code: Poe自動生成<br /></li>
+<li>Make app publicly accessible: Yes<br /></li>
+<li>Allow remix: No<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org70ce9cf" class="outline-3">
+<h3 id="org70ce9cf"><span class="section-number-3">5.8.</span> Server bot</h3>
+<div class="outline-text-3" id="text-5-8">
+<p>
+PASS<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3627546" class="outline-2">
+<h2 id="org3627546"><span class="section-number-2">6.</span> 其他</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgccc2bf7" class="outline-3">
+<h3 id="orgccc2bf7"><span class="section-number-3">6.1.</span> 生成式AI提示詞的簡單原則</h3>
+<div class="outline-text-3" id="text-6-1">
+<ol class="org-ol">
+<li>定義角色 ( 你是誰 )<br /></li>
+<li>任務目標 ( 你要做什麼 )<br /></li>
+<li>行動指引 ( 你要怎麼做 )<br /></li>
+<li>希望結果 ( 你要達成什麼 )<br /></li>
+<li>例子 ( 你可以參考的範例 )<br /></li>
+<li>不要做什麼 ( 你不能做什麼 )<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge67f62d" class="outline-3">
+<h3 id="orge67f62d"><span class="section-number-3">6.2.</span> 你的創作靈感</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>你可以參考<a href="https://poe.com/explore">Explore</a>頁面，看看其他人創作的bot，或是從<a href="https://poe.com/discover">Discover</a>頁面，看看Poe官方推薦的bot<br /></li>
+<li>有些時候，你是不是會為了讓AI幫你精確的做到某一件事而花了很多時間在與之來回溝通，這時候，你就可以將這些你與AI互動的過程，整理成一個bot，之後就能省去這些麻煩的步驟，還能將這個bot分享給其他人使用。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga797ed2" class="outline-3">
+<h3 id="orga797ed2"><span class="section-number-3">6.3.</span> 回到今天的主題：評量</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+做為教學歷程中的一環，評量是不可或缺的，然而，評量也是一個相當耗時費心的工作，在一份相關研究中，教師花費在評量的時間僅次於備課與教學，如圖<a href="#orgb400b34">18</a>。<br />
+</p>
+
+
+<div id="orgb400b34" class="figure">
+<p><img src="images/2025-09-18_21-11-54.png" alt="2025-09-18_21-11-54.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 18: </span>教師花費在教學相關工作的時間分配</p>
+</div>
+</div>
+<div id="outline-container-org7b437fa" class="outline-4">
+<h4 id="org7b437fa"><span class="section-number-4">6.3.1.</span> 相關評量工具</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<p>
+為了解決自己或其他老師在評量上的困擾，許多老師會自行設計一些線上評量工具，以下<a href="#org26b9254">3.4</a>裡一些好用的評量相關Bot：<br />
+</p>
+<ol class="org-ol">
+<li>AI Agent #115 <a href="https://poe.com/WritingCCorrect">英文作文評改</a><br /></li>
+<li>AI Agent #127 <a href="https://poe.com/WritingCCorrect">酷英篇章口說評測系統</a><br /></li>
+<li>AI Agent #138 <a href="https://poe.com/FunFun.AI-Stu.En.E">高中英語手寫評分機器人</a><br /></li>
+<li>AI Agent #139 <a href="https://poe.com/FunFun.AI-St.Essay.S">高中學測國語手寫機器人</a><br /></li>
+<li>AI Agent #140 <a href="https://poe.com/FunFun.AI-St.Essay.J">國中會考作文批改機器人</a><br /></li>
+<li>AI Agent #141 <a href="https://poe.com/FunFun.AI-St.Essay.E">國小作文批改機器人</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgbfd32ab" class="outline-4">
+<h4 id="orgbfd32ab"><span class="section-number-4">6.3.2.</span> 作業</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<p>
+沒有能力時只能使用別人貢獻的工具，當你有能力時也可以自己設計一個符合你需求的工具，然後換你當貢獻工具的人&#x2026;.<br />
+</p>
+
+<p>
+請你在 POE 平台上設計一個 學生作品自動評量 Bot。這個 Bot 要能夠協助老師與學生：<br />
+</p>
+<ul class="org-ul">
+<li>學生上傳作品（含相機拍照功能），Bot 自動依「評分標準」給分與提出改進建議。<br /></li>
+<li>學生可根據建議修改作品，再次上傳，直到得到滿意的分數，也就是每位學生身邊都有一位專屬的 AI 助教。<br /></li>
+<li>老師可上傳一份「評分標準文字檔」，Bot 會依此標準進行評分。<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: 顏永進</p>
+<p class="date">Created: 2025-09-19 Fri 08:14</p>
+</div>
+</body>
+</html>

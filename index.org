@@ -1,0 +1,101 @@
+#+TITLE: 研習、工作坊
+#+AUTHOR: 顏永進
+
+# -*- org-export-babel-evaluate: nil -*-
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+OPTIONS: num:3 toc:2
+#+TAGS: working
+#+INCLUDE: ../pdf.org
+#+EXCLUDE_TAGS: noexport
+#+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/working/index.html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/index.html.svg?style=plastic"/></a>
+#+end_export
+* 2026
+- [暫] 20261119-龍蝦養殖實務研習手冊(臺南市國教輔導團科技領域分團第九場研習「教學的AI助理」，中山國中科技中心)：[[https://letranger.github.io/2026-hermes-3hr/手冊.html][講義]]、[[https://letranger.github.io/2026-hermes-3hr/][課前安裝說明]]
+- [暫] 20261031-龍蝦養殖實務研習手冊(中小學AI教育探索者南區社群第4次共學)：[[https://letranger.github.io/2026-hermes-1hr/手冊.html][講義]]、[[https://letranger.github.io/2026-hermes-1hr/][課前安裝說明]]
+- 20260923-程式與數學的相遇─和AI做朋友：AI是怎麼學會的？：[[file:pdf/20260923-AI是怎麼學會的_初學者版.pdf][投影片]]
+- [[https://letranger.github.io/ai-explorers-community-2026/][20260521-從閒聊到動手：不斷進化中的生成式AI(中小學AI探索者南區社群第一次共學)]]
+- [[https://letranger.github.io/2026-05-14-matsu-ai-workshop/][20260514-從閒聊到動手：不斷進化中的生成式AI(教育部中小學推廣教育計畫AI教學與實作推廣研習-馬祖場)]]
+- [[https://letranger.github.io/2026-05-07-AI-Reading/][20260507-從陪聊到動手──AI走進閱讀課(115精進計畫高雄市輔導團研習)]]
+- [[https://letranger.github.io/2026-04-30-AI-work/][20260430-和AI作朋友──高中生的AI工具箱(雲林場高中生AI工作坊)]]
+
+* 2025
+- [[https://letranger.github.io/working/20251127-%E9%9B%B2%E6%9E%97%E8%B3%87%E8%A8%8A%E7%A7%91%E6%8A%80%E6%87%89%E7%94%A8%E5%B0%88%E9%A1%8C.html][20251127]資訊科技應用專題：從Scratch到Python]]
+- 20251016-生成式AI基本原理(台南二中)：[[file:pdf/20251016-生成式AI基本原理(台南二中).pdf][投影片]]
+- [[https://letranger.github.io/working/20250925-AI%E8%BC%94%E5%8A%A9%E8%A9%95%E9%87%8F.html][[2025][0925]AI輔助評量Poe bot體驗與建置(高市輔導團國中科技領域召集人課程領導增能研習)]]
+- [[https://classroom.google.com/c/ODAyMTAwMDk3NzUy?cjc=ob2fge5m][[2025][0913,0920]114年中小學校人工智慧教育計畫AI共備工作坊(台南大學)]]
+- [[file:20250621-AI教學實務與實作(金門).org][20250621教育部中小學推廣教育:AI教學與實作推廣研習(金門場)]]
+- [[file:20250607-夢N雲林場.org][20250607教學的N次方：AI開外掛，教學變厲害！(夢N雲林場)]]
+- [[https://padlet.com/letranger1/ai-powered-programming-education-sy076q08smmzq9xb][20250529素養導向程式設計:教學與評量-以Python為例]]
+- [[file:20250327生成式AI在教學上的應用.org][20250327生成式AI在教學上的應用]]
+
+* 2024
+- [[file:20241213Python專題式程式設計教學探究.org][20241213-Python專題式程式設計教學探究]]
+- [[https://letranger.github.io/working/20241121-AI%E7%A8%AE%E5%AD%90%E6%95%99%E5%B8%AB%E5%9F%B9%E8%A8%93%E5%B7%A5%E4%BD%9C%E5%9D%8A.html][20241121-AI DREAMER-中小學人工智慧教育種子教師培訓#2]]
+- [[file:20241025AI課程推廣.org][20241025-當AI遇上股票 課程推廣(新興科技教育遠距示範服務計畫)]]
+- [[file:20241011-AI在國小教學的應用-1.org][20241018-AI在國小教學的應用#2]]
+- [[file:20241011-AI在國小教學的應用-1.org][20241011-AI在國小教學的應用#1]]
+- [[https://letranger.github.io/working/TNFSH-AI研習.html][20240927-手把手教你玩AI(人工智慧與數理邏輯跨領域實作工作坊)]]
+- [[file:images/Working/2024-09-11_12-08-19_AI融入領域課程及教學設計.pdf][20240903-教育部AI共備工作坊:AI融入領域課程及教學設計]]
+- [[https://letranger.github.io/working/20240726Python%E5%B0%88%E9%A1%8C%E5%BC%8F%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%95%99%E5%AD%B8%E6%8E%A2%E7%A9%B6.html][20240726-Python專題式程式設計教學探究]]
+- [[https://letranger.github.io/working/20240722-%E5%92%8CAI%E5%81%9A%E6%9C%8B%E5%8F%8B-%E5%AF%A6%E4%BD%9C%E5%9F%B9%E8%A8%93.html][20240722-AI DREAMER-中小學人工智慧教育種子教師培訓]]
+- [[file:20240508-好用的線上評量工具.pdf][20240508-好用的線上評量工具]]
+- [[file:20240222-新興科技計畫-當AI遇上股票課程經驗分享.pdf][20240222-新興科技計畫-當AI遇上股票課程經驗分享]]
+
+* 2023
+- [[file:20231111專題式程式教學-Python.html][20231111-專題式程式教學-Python]]
+- [[file:20231020-「當AI遇上股票」課程經驗.pdf][20231020-「當AI遇上股票」課程經驗]]
+- [[file:20230921-數位教學與評量工具.pdf][20230921-數位教學與評量工具]]
+- [[file:../../結案/2023-07-07 新興科技專業發展暨期中教案撰寫分享工作坊][20230707-新興科技專業發展暨期中教案撰寫分享工作坊]]
+- [[file:20230316科技力應用與自主學習示例分享.html][20230316-高雄輔導團-科技應用力與自主學習示例分享]]
+- [[file:20230209AI教學實務分享.pdf][20230209-AI教學實務分享]]
+
+* 2022
+- [[file:20221229科技力Ⅹ雙語Ⅹ跨域教學示例.pdf][20221229-科技力Ⅹ雙語Ⅹ跨域教學示例]]
+- [[file:20220924自主學習與科技輔助示例.pdf][20220924-自主學習與科技輔助示例]]
+- [[file:../../結案/2022-09-15 演講 高雄輔導團-科技力支持自主學習探究][20220915-高雄輔導團-科技力支持自主學習探究]]
+- [[file:../../結案/2022-07-26 演講-AI4Y Intel Module 6][20220726-AI4Y Intel Module 6]]
+- [[file:20220428資訊科技理念與素養導向課程設計.pdf][20220428-資訊科技理念與素養導向課程設計]]
+
+* Pending :noexport:
+** AI
+- [[https://www.perplexity.ai/?login-source=oneTapHome][RAG/替代收費的chat gpt]]
+- [[https://resource.webduino.io/blog/ai-learning-resources][AI 人工智慧學習資源：2023 年必看學習平台與書籍推薦]]
+- [[https://drive.google.com/file/d/1CDhaXbmuJFPbDklwUMcs41F8DaRKozFk/view][我的專屬執事]]
+- [[https://github.com/OpenGenerativeAI/llm-colosseum][OpenGenerativeAI/llm-colosseum]]: 以LLMs玩Street Fighter III
+- [[https://home.gamer.com.tw/artwork.php?sn=5855128][關於AI生成歌曲「Suno 」的簡單介紹＆使用心得]]
+- [[https://suno.com/][Suno]]: AI生成歌曲
+- [[https://hix.ai/tw/ai-writer/song-lyrics-generator][歌詞產生器]]
+- [[https://tutor.webduino.io][AI伴學小助教]]
+- [[https://www.midjourney.com/home][Midjourney]]: 圖片生成
+** Jetson Nano
+- [[https://ithelp.ithome.com.tw/articles/10297084?sc=rss.qu][【Day 12】Getting Started with AI on Jetson Nano (一)： 環境準備與 hello Camera ]]
+- [[https://www.waveshare.net/study/article-881-1.html][Jetson Nano系列教程1：烧写系统镜像 ]]
+- [[https://www.waveshare.net/study/portal.php?mod=list&catid=59&page=2][JetBot系列教程]]
+- [[https://github.com/NVIDIA-AI-IOT/jetcam][NVIDIA-AI-IOT/jetcam ]]
+** 2D轉3D相關資源
+- [[https://github.com/VAST-AI-Research/TripoSR][VAST-AI-Research/TripoSR]]: 2D轉3D模型
+- [[https://www.linkedin.com/pulse/ai-generated-3d-models-from-images-text-descriptions-shawn-zindroski][AI Generated 3D Models from Images and Text Descriptions.]]
+- [[https://alexasiu.com/publications/siu2019shapecad.pdf][shapeCAD: An Accessible 3D Modelling Workflow for the Blind and Visually-Impaired Via 2.5D Shape Displays]]
+** 研習
+- [[file:20240508好用的線上評量工具.org][20240508-好用的線上評量工具]]
+- [[file:台科大教科書編修記錄.html][台科大教科書編修記錄]]
+- [[file:AI試題.org][AI試題]]
+- [[file:InterdisciplinaryLearning.html][高雄輔導團跨域研習]]
+- [[file:textbook.org][台科大教科書]]
+- [[file:教科書審查修訂.html][教科書審查修訂]]
+- [[file:HadoopCreating.org][HDFS檔案架構建置]]
+- K8S
+
+
+* HIDE :noexport:
+- [[file:AI教學實務分享.org][20230209-台東-AI教學實務分享]]
+- [[file:科技力支持雙語跨域.org][科技力支持雙語教學與跨域教學應用]]
+#+begin_export html
+<footer class="footer">
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4822956-5951-490a-a270-07a930f627e5"></div>
+</footer>
+#+end_export

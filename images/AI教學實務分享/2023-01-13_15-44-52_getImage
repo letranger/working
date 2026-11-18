@@ -1,0 +1,898 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="zh-tw">
+<title>博客來-少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) </title>
+<meta name="keywords" content="少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) ">
+<meta name="description" content="書名：少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) ，語言：繁體中文，ISBN：9786263282964，頁數：400，出版社：全華圖書，作者：蔡炎龍,林澤佑,黃瑜萍,焉 然，出版日期：2022/09/19，類別：專業/教科書/政府出版品">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:site_name" content="博客來"/>
+<meta property="og:type" content="product"/>
+<meta property="fb:app_id" content="210743125726405" />
+<meta property="og:title" content="少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) "/>
+<meta property="og:image" content="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350.jpg&v=63245041k&w=1146&h=600"/>
+<meta property="og:image:width" content="1146">
+<meta property="og:image:height" content="600">
+<meta property="og:url" content="https://www.books.com.tw/products/0010936350" />
+<meta property="og:description" content="書名：少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) ，語言：繁體中文，ISBN：9786263282964，頁數：400，出版社：全華圖書，作者：蔡炎龍,林澤佑,黃瑜萍,焉 然，出版日期：2022/09/19，類別：專業/教科書/政府出版品"/>
+<meta property="product:brand" content="chwa"><meta property="product:price:amount" content="551">
+<meta property="product:price:currency" content="TWD"><meta property="product:availability" content="in stock"><meta property="product:retailer_item_id" content="0010936350">
+<link rel="stylesheet" href="https://jci.book.com.tw/css/books/product/overlay-n.css">
+<link rel="stylesheet" href="https://jci.book.com.tw/css/css.css">
+<link rel="canonical" href="https://www.books.com.tw/products/0010936350">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TBZGS7');</script><script>dataLayer.push({'event':'VirtualPageview','virtualPageURL':'/products/0010936350?bcat=001&bsub=20&bbrand=chwa'});</script><script>dataLayer.push({"ecommerce":{"detail":{"products":[{"id":"0010936350","name":"\u5c11\u5e74Py\u7684\u5927\u5192\u96aa\uff0d\u6210\u70baPython AI\u6df1\u5ea6\u5b78\u7fd2\u9054\u4eba\u7684\u7b2c\u4e00\u9580\u8ab2(\u9644\u7bc4\u4f8b\u5149\u789f)\u00a0","price":551,"cat":"001","sub":"20","brand":"chwa","category":"001"}]}}});</script>
+<script language="JavaScript" src="https://jci.book.com.tw/jss/jquery/jquery-1.6.4.min.js "></script>
+<script language="JavaScript" src="/jss/jquery/plugin/jquery.timers-1.2.js?v=593f57ff"></script>
+<script language="JavaScript" type="text/javascript" src="https://jci.book.com.tw/jss/header/header-www.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://jci.book.com.tw/jss/header/aeil.js"></script>
+<script language="JavaScript" type="text/javascript" src="/jss/web/adv_log.js?v=5aefea69"></script>
+<script language="JavaScript" type="text/javascript" src="https://jci.book.com.tw/jss/books/jqueryplugin/lazyload/1.9.3/jquery.lazyload.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/jss/web/uselazyload.js?v=593f57ff"></script>
+<script language="JavaScript" type="text/javascript" src="https://jci.book.com.tw/jss/books/head.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/jss/web/overlay-n.js?v=593f57ff"></script><script language="JavaScript" type="text/javascript" src="/jss/web/switch_page.js?v=60cacc17"></script><script language="JavaScript" type="text/javascript" src="/jss/web/ajax_product_show.js?v=638817fc"></script><script language="JavaScript" type="text/javascript" src="/jss/web/switch_loaded_tab.js?v=61db99cd"></script><script language="JavaScript" type="text/javascript" src="/jss/web/share_to_fb.js?v=618b3b72"></script><script language="JavaScript" type="text/javascript" src="/jss/web/switch_bankevent_wide.js?v=6201d79e"></script><script language="JavaScript" type="text/javascript" src="/jss/web/show_more.js?v=593f57ff"></script><script language="JavaScript" type="text/javascript" src="/jss/web/more_on_off.js?v=5d269bcd"></script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Book","@id":"https:\/\/www.books.com.tw\/products\/0010936350","sku":"https:\/\/www.books.com.tw\/products\/0010936350","url":"https:\/\/www.books.com.tw\/products\/0010936350","name":"\u5c11\u5e74Py\u7684\u5927\u5192\u96aa\uff0d\u6210\u70baPython AI\u6df1\u5ea6\u5b78\u7fd2\u9054\u4eba\u7684\u7b2c\u4e00\u9580\u8ab2(\u9644\u7bc4\u4f8b\u5149\u789f)\u00a0","image":"https:\/\/im1.book.com.tw\/image\/getImage?i=https:\/\/www.books.com.tw\/img\/001\/093\/63\/0010936350.jpg&v=63245041k&w=1146&h=600","datePublished":"2022\/09\/19","inLanguage":"\u7e41\u9ad4\u4e2d\u6587","author":[{"@type":"Person","name":"\u8521\u708e\u9f8d,\u6797\u6fa4\u4f51,\u9ec3\u745c\u840d,\u7109 \u7136"}],"workExample":{"workExample":{"@type":"Book","isbn":"9786263282964","bookFormat":"http:\/\/schema.org\/Paperback","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.books.com.tw\/products\/0010936350","actionPlatform":["http:\/\/schema.org\/DesktopWebPlatform","http:\/\/schema.org\/MobileWebPlatform"]},"expectsAcceptanceOf":{"@type":"Offer","priceCurrency":"TWD","price":551,"availability":"http:\/\/schema.org\/InStock"}}}},"publisher":[{"@type":"Organization","name":"\u5168\u83ef\u5716\u66f8"}],"numberOfPages":"400"}</script>
+</head>
+<body class="color_books type02" >
+<script type="text/javascript" src="https://www.books.com.tw/webs/header_js/pmenu/html/menu_compon.js?v=f4aab2b4f3630879fb2433acd3c26f57"></script>
+<div class="overlay" id="div_language_overlay" style="display:none" onclick="hide_lang_panel();"></div>
+<div class="pop_win change_language_win" id="div_language_win" style="display:none">
+<h3>選擇語言<a href="javascript:;" class="btn-close" onclick="hide_lang_panel();"></a></h3>
+<div>
+<ul>
+<li id="header_li_change_lang_en"><a class="btn" href="javascript:;" onclick="change_lang('en');">English</a></li>
+<li id="header_li_change_lang_zh_TW"><a class="btn" href="javascript:;" onclick="change_lang('zh_TW');">繁體中文</a></li>
+<li id="header_li_change_lang_zh_CN"><a class="btn" href="javascript:;" onclick="change_lang('zh_CN');">简体中文</a></li>
+</ul>
+</div></div><header id="header_full_v2" data-attr="books" class="header_v2">
+<nav class="fix__box clearfix">
+<div class="header__box1 clearfix">
+<h2 class="hide">:::相關網站</h2>
+<div class="website_nav_wrap">
+<ul class="website__nav">
+<li><a href="https://www.books.com.tw/?loc=tw_website_001"><i class="svg-icon-home"></i>回首頁</a></li>
+<li><a href="https://tickets.books.com.tw/index/?loc=tw_website_003">售票網</a></li>
+<li><a href="https://group.books.com.tw/?loc=tw_website_004">企業採購</a></li>
+<li><a href="https://www.books.com.tw/benefit/?loc=tw_website_005">福利平台</a></li>
+<li><a href="https://www.books.com.tw/web/ovs/?loc=tw_website_006">海外專館</a></li>
+</ul>
+</div><div class="service_nav_wrap">
+<h2 class="hide"><a accesskey="U" href="#accesskey_service_nav" title="上方導覽區塊:會員服務|快速功能" id="accesskey_service_nav">:::會員服務|快速功能</a></h2>
+<ul class="service__nav">
+<li class="logout li_label_member_login user_login">
+<a href="javascript:void(0);" onclick="location.href='https://cart.books.com.tw/member/login?loc=customer_003&url=' + encodeURIComponent(window.location.href);"><i class="svg-icon-user"></i><span class='member_class_cname'>會員登入</span></a>
+<div class="user_info_tip_box" style="display:none;">
+<div class="member">
+<i class="icon-svg-graded-g"></i>
+<ul class="record">
+<li class='member_class_cname'>黃金會員</li>
+</ul>
+</div><div class="list_box">
+<ul class="list">
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/index/">前往會員專區</a></li>
+<li><a href="https://viewer-ebook.books.com.tw/viewer/index.html?readlist=all&MemberLogout=true">我的電子書櫃</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getOrder/">訂單查詢</a></li>
+<li><a href="https://www.books.com.tw/web/sys_browseitems/">瀏覽記錄</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/nextbuylist/">下次再買</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getReorder">可訂購時通知</a></li>
+</ul>
+<ul class="list mycoupons">
+<li><a href="https://activity.books.com.tw/memday/">本月獨享</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getPercentcouponlist?loc=tw_customer_coupon">可用E-Coupon<span class="number" id="my_ecoupon_count">0</span>&nbsp;張</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getPercentIcouponlist?loc=tw_customer_icoupon">可用單品折價券<span class="number" id="my_icoupon_count">0</span>&nbsp;張</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getShoppingmoneylist?loc=tw_customer_005">可用購物金<span class="number" id="shopping_cash">0</span>&nbsp;元</a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getPointExchangeView/">可用 OPEN POINT<span id="open_opint_num">0</em></span>&nbsp;點</a></li>
+</ul>
+<a href="https://cart.books.com.tw/member/logout?loc=customer_004"><button type="button" class="sign_out">登出</button></a>
+</div></div></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/getOrder/?loc=tw_customer_order">訂單查詢</a></li>
+<li class="shopping">
+<a href="https://db.books.com.tw/shopping/cart_list.php?loc=tw_customer_001">購物車(<span id="shopping_cart_num">0</span>)</a>
+</li>
+<li><a href="https://viewer-ebook.books.com.tw/viewer/index.html?readlist=all&MemberLogout=true">電子書櫃</a></li>
+<li onclick="show_lang_panel();"><a href="javascript:;" class="modalBtn"><i class="svg-icon-globe"></i><span id="header_a_lang_title">繁體</span></a></li>
+</ul>
+</div></div></nav>
+<div class="header_pop" style="background:#4e4e4e">
+<span class="bg_left" style="background:#12AE57"></span>
+<span class="bg_right" style="background:#12AE57"></span>
+<div class="flash_pic" style="background-image:url(https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/ACG/1920x70.jpg&v=63bb8ce3k&w=1920&h=70)">
+<a class="activity" href="https://www.books.com.tw/activity/2023/01/ACG/?loc=topbanner_001" title="" ><span class="hide"></span></a>
+<a class="open"  href="javascript:;" title="" id="open_top_banner"><span>展開廣告</span><i></i></a>
+<input type="hidden" id="tbanner_data" data-skey ="0" data-okey="330101" data-preview ="" data-sec ="8">
+</div><div class="flash_pic_pop" style="display:none;">
+<a class="close" href="javascript:;" title="關閉廣告" aria-label="關閉廣告" id="close_top_banner"><span>關閉廣告</span><i></i></a>
+<a class="activity" href="https://www.books.com.tw/activity/2023/01/ACG/?loc=topbanner_001" title="" ><span class="hide"></span>
+<img src="https://im2.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/ACG/1200x655.jpg&v=63bd57eak&w=1200&h=" alt="上稿標題文案">
+</a>
+</div></div><div class="header_box2 clearfix">
+<div class="logo">
+<a href="https://www.books.com.tw?loc=tw_logo_001" title="回博客來首頁" aria-label="回博客來首頁">
+<img src="https://jci.book.com.tw/css/header/images/books_logo_185x52.png" alt="博客來">
+</a>
+</div><div class="hot_key_words clearfix">
+<strong>HOT</strong>
+<a class="item" href="https://www.books.com.tw/products/0010939614?loc=hot_001">模仿欲望</a>
+<a class="item" href="https://www.books.com.tw/products/0010946355?loc=hot_002">紅色賭盤</a>
+<a class="item" href="https://www.books.com.tw/products/0010945463?loc=hot_003">算利教官公益</a>
+<a class="item" href="https://www.books.com.tw/products/0010946121?loc=hot_004">灌籃高手</a>
+</div><div class="search_box clearfix">
+<h2 class="hide"><a title="網站搜尋" id="accesskey_search" href="#accesskey_search">:::網站搜尋</a></h2>
+<form action="https://search.books.com.tw/search/query/" name="search" id="search"  method="GET" onsubmit="if(typeof go_search == 'function'){go_search();return false;}">
+<input type="hidden" name="fclick" id="search_fclick" value="0" data-fkey="">
+<div class="search_wrap">
+<div class="select_set" id='select_set'>
+<button type="button" class="toggle_btn" data-js="select-collapse"><span id="search_name" >全部</span><i></i></button>
+</div><input type="search" class="search_key" accesskey="S" name="key" id="key" value="" message ="請輸入關鍵字" autocomplete="off" placeholder="請輸入關鍵字" >
+<input type="hidden" name="cat" id="cat" value ="all">
+<button class="search_btn" type="submit" title="搜尋">
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10.76" cy="11.26" r="8.11" stroke="#fff" stroke-width="1.3"></circle>
+<rect width="2.20667" height="7.13156" rx="1.10334" transform="matrix(0.692391 -0.721523 0.692391 0.721523 15.7273 17.3545)" fill="#fff"></rect>
+</svg>
+</button>
+</div><ul class="search_select_ul search_popup" role="group" data-js="select-options">
+<li><a href="javascript:;" cat="all" id="default_search_key">全部</a></li>
+<li><a href="javascript:;" cat="BKA" >圖書</a></li>
+<li><a href="javascript:;" cat="EBA" >電子書</a></li>
+<li><a href="javascript:;" cat="MDB" >有聲書</a></li>
+<li><a href="javascript:;" cat="ERT" >訂閱</a></li>
+<li><a href="javascript:;" cat="AVA" >影音</a></li>
+<li><a href="javascript:;" cat="DPA" >百貨</a></li>
+<li><a href="javascript:;" cat="MGA" >雜誌</a></li>
+<li><a href="javascript:;" cat="TKA" >售票</a></li>
+<li><a href="javascript:;" cat="OVS" >海外專館</a></li>
+<li><a href="javascript:;" cat="FST" >快速到貨</a></li>
+<li><a href="javascript:;" cat="GFC" >禮物卡</a></li>
+</ul>
+</form>
+<ul id="search_words_ul" class="search_words_ul" style="display:none;"></ul>
+</div><div class="figure_img">
+<a href="https://www.books.com.tw/activity/marketing/2023/01/gold2023/?loc=diamond_001"><img src="https://im2.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/marketing/2023/01/gold2023/24_320x72_0113.png&v=63c0c731k&w=320&h=72" ></a>
+</div></div><div class="header_box3 clearfix">
+<div class="service_msg">
+<p><i class="svg-icon-horn"></i>客服公告：反詐騙！提醒您「不碰ATM、網銀，不說信用卡資料」<span class="more"><a href="https://www.books.com.tw/my_account/books_message1.html?loc=qainfo_001&loc=qainfo_001">詳情</a></span></p><p><i class="svg-icon-horn"></i>客服公告：2023年博客來春節過年各項服務說明<span class="more"><a href="https://www.books.com.tw/G/QA/file/index2023010305.html?loc=qainfo_001&loc=qainfo_002">詳情</a></span></p></div>
+</div><div class="header_box4 clearfix">
+<ul class="featured_activity">
+<li><a href="https://www.books.com.tw/web/sys_hourstop/home/?loc=key_act_001">
+                    全館即時榜      </a></li>
+<li><a href="https://www.books.com.tw/happybuy/?loc=key_act_002">
+<img src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/marketing/2022/homenew/Discount.png&v=636e293ck&w=24&h=24" alt="天天爆殺">
+                    天天爆殺      </a></li>
+<li><a href="https://activity.books.com.tw/books66/?loc=key_act_003">
+<img src="https://im2.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/marketing/2022/homenew/Books.png&v=636e293ck&w=24&h=24" alt="今日66折">
+                    今日66折      </a></li>
+<li><a href="https://myaccount.books.com.tw/myaccount/myaccount/memberReadMileage/?loc=key_act_004">
+                    每日簽到      </a></li>
+<li><a href="https://www.books.com.tw/web/giftcard/?loc=key_act_005">
+                    禮物卡      </a></li>
+<li><a href="https://activity.books.com.tw/coupondraw/coupon/?loc=key_act_006">
+                    現領折價券      </a></li>
+</ul>
+<nav class="nav_wrap" id='books_nav'>
+<div id="home" class="menu_title dropdown ">
+<h2 class="title" onclick="Hmenu('compon')">全站分類  <i></i></h2>
+</div><div id='greenbar'>
+<div class="menu_bar">
+<ul class="menu_bar_ul">
+<li class="item" data-key="1059"><a href='https://www.books.com.tw/web/exhibition/?loc=P_greenbar_001'>國際書展</a></li>
+<li class="item" data-key="1">親子幼童</li>
+<li class="item" data-key="2">日本選物</li>
+<li class="item" data-key="3">健康運動</li>
+<li class="item" data-key="4">家居日用</li>
+<li class="item" data-key="5">美妝個清</li>
+<li class="item" data-key="6">旅遊戶外</li>
+</ul>
+</div></div></nav>
+</div><div class="header_category books_nav" id='home_menu_list' style="display:none">
+<div class="category_bar">
+<ul class="category_bar_ul">
+<li id='flagship' class="item" data-key="13"><a href="JavaScript:;">旗艦品牌</a>
+</li>
+<li class="item" data-key="43"><a href="https://www.books.com.tw/web/gallery/?loc=menu_1_001">線上藝廊</a>．<a href="https://www.books.com.tw/web/flagship_S8500128101/?loc=menu_1_002">婚紗</a>
+</li>
+<li class="item" data-key="44"><a href="https://www.books.com.tw/web/ebook?loc=menu_2_001">電子書</a>．<a href="https://www.books.com.tw/web/audioandvideo?loc=menu_2_002">有聲</a>．<a href="https://www.books.com.tw/web/rent?loc=menu_2_003">訂閱</a>
+</li>
+<li class="item" data-key="45"><a href="https://www.books.com.tw/web/books/?loc=menu_3_001">中文書</a>．<a href="https://www.books.com.tw/web/china?loc=menu_3_002">簡體</a>．<a href="https://www.books.com.tw/web/fbooks?loc=menu_3_003">外文</a>
+</li>
+<li class="item" data-key="46"><a href="https://www.books.com.tw/web/magazine?loc=menu_4_001">雜誌</a>．<a href="https://www.books.com.tw/web/mook?loc=menu_4_002">日文書</a>
+</li>
+<li class="item" data-key="47"><a href="https://www.books.com.tw/web/cd?loc=menu_5_001">CD</a>．<a href="https://www.books.com.tw/web/dvd?loc=menu_5_002">DVD</a>
+</li>
+<li class="item" data-key="48"><a href="https://www.books.com.tw/web/stationery?loc=menu_6_001">文具</a>．<a href="https://www.books.com.tw/web/stationery_topm_15?loc=menu_6_002">動漫</a>
+</li>
+<li class="item" data-key="49"><a href="https://www.books.com.tw/web/clean?loc=menu_7_001">日用品</a>．<a href="https://www.books.com.tw/web/mammybaby?loc=menu_7_002">婦幼玩具</a>
+</li>
+<li class="item" data-key="50"><a href="https://www.books.com.tw/web/cosmetic?loc=menu_8_001">彩妝</a>．<a href="https://www.books.com.tw/web/cosmetic?loc=menu_8_002">保養</a>．<a href="https://www.books.com.tw/web/cosmetic?loc=menu_8_003">洗沐</a>
+</li>
+<li class="item" data-key="51"><a href="https://www.books.com.tw/web/shoes_topm_01?loc=menu_9_001">鞋子</a>．<a href="https://www.books.com.tw/web/shoes_topm_01?loc=menu_9_002">包箱</a>．<a href="https://www.books.com.tw/web/fashion/?loc=menu_9_003">服裝</a>
+</li>
+<li class="item" data-key="52"><a href="https://www.books.com.tw/web/3C?loc=menu_10_001">3C</a>．<a href="https://www.books.com.tw/web/3C_topm_26?loc=menu_10_002">手機</a>．<a href="https://www.books.com.tw/web/3C_topm_29?loc=menu_10_003">電玩</a>
+</li>
+<li class="item" data-key="53"><a href="https://www.books.com.tw/web/fm?loc=menu_11_001">家電</a>．<a href="https://www.books.com.tw/web/fm_topm_13?loc=menu_11_002">視聽</a>
+</li>
+<li class="item" data-key="54"><a href="https://www.books.com.tw/web/food?loc=menu_12_001">美食</a>．<a href="https://www.books.com.tw/web/food_topm_10?loc=menu_12_002">生鮮</a>．<a href="https://www.books.com.tw/web/health?loc=menu_12_003">保健</a>
+</li>
+<li class="item" data-key="55"><a href="https://www.books.com.tw/web/petlife?loc=menu_13_001">寵物</a>．<a href="https://www.books.com.tw/web/design?loc=menu_13_002">家居</a>．<a href="https://www.books.com.tw/web/kitchen?loc=menu_13_003">餐廚</a>
+</li>
+<li class="item" data-key="56"><a href="https://www.books.com.tw/web/outdoors?loc=menu_14_001">運動</a>．<a href="https://www.books.com.tw/web/outdoors_topm_01?loc=menu_14_002">戶外</a>．<a href="https://www.books.com.tw/web/outdoors_topm_07?loc=menu_14_003">旅用</a>
+</li>
+<li class="item" data-key="57"><a href="https://www.books.com.tw/web/giftcard/?loc=menu_15_001">禮券</a>．<a href="https://www.books.com.tw/web/icash?loc=menu_15_002">票證</a>．<a href="https://www.books.com.tw/web/ticket?loc=menu_15_003">票券</a>
+</li>
+</ul>
+</div></div><nav class="header_box5 clearfix">
+<h3 class="title"><a href="https://www.books.com.tw/web/books/?loc=subject_main_001">中文書</a><i></i></h3>
+<ul class="nav"><li><a href="https://www.books.com.tw/web/books_newbook/?loc=subject_001">新書</a></li>
+<li><a href="https://www.books.com.tw/web/sys_prebooks/books/?loc=subject_002">預購</a></li>
+<li><a href="https://www.books.com.tw/web/sys_tdrntb/books/?loc=subject_003">排行榜</a></li>
+<li><a href="https://www.books.com.tw/web/sys_selbooks/books/?loc=subject_004">選書</a></li>
+<li><a href="https://www.books.com.tw/web/sys_compub/books/?loc=subject_005">即將出版</a></li>
+<li><a href="https://www.books.com.tw/web/books_specbook/?loc=subject_006">特價書</a></li>
+<li><a href="https://www.books.com.tw/web/store_hkbooks/?loc=subject_007">香港出版</a></li>
+<li><a href="https://www.books.com.tw/web/books_review/?loc=subject_008">讀者書評</a></li>
+<li><a href="https://www.books.com.tw/web/books_publist/?loc=subject_009">出版社專區</a></li>
+<li><a href="https://www.books.com.tw/web/sys_sublistb/books/?loc=subject_010">分類總覽</a></li>
+</ul>
+</nav>
+<div class="header_box7 clearfix">
+<a href="https://activity.books.com.tw/crosscat/show/A00000056950?loc=mood_001"><img src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/setbooks_95040kid.jpg&v=63bfe49ak&w=&h=" alt="童書年貨大街"></a>
+</div></div></header>
+</div><script>
+  if ($(window).scrollTop() > 150) { 
+    $('#header_full_v2 .fix__box').addClass('active');
+    $('#header_full_v2 .header_box2').addClass('active');
+  }; 
+  $(window).scroll(function () {      
+    if ($(window).scrollTop() > 150) {          
+    $('#header_full_v2 .fix__box').addClass('active');
+    $('#header_full_v2 .header_box2').addClass('active');
+    } else { 
+      $('#header_full_v2 .fix__box').removeClass('active');      
+      $('#header_full_v2 .header_box2').removeClass('active');        
+    }
+  });
+</script>
+<div class="container_24 clearfix">
+<div class="grid_24">
+<div class='clearfix'>
+<ul id="breadcrumb-trail" vocab="https://schema.org/" typeof="BreadcrumbList"  class='clearfix'>
+<li property='itemListElement' typeof='ListItem'><a property='item' typeof='WebPage' href='https://www.books.com.tw/'>博客來</a><meta property='name' content='博客來'><meta property='position' content='1'></li><li property='itemListElement' typeof='ListItem'><a property='item' typeof='WebPage' href='https://www.books.com.tw/web/books/'>中文書</a><meta property='name' content='中文書'><meta property='position' content='2'></li><li property='itemListElement' typeof='ListItem'><a property='item' typeof='WebPage' href='https://www.books.com.tw/web/books_topm_20/'>專業/教科書/政府出版品</a><meta property='name' content='專業/教科書/政府出版品'><meta property='position' content='3'></li><li property='itemListElement' typeof='ListItem'><a property='item' typeof='WebPage' href='https://www.books.com.tw/web/books_bmidm_2011/'>電機資訊類</a><meta property='name' content='電機資訊類'><meta property='position' content='4'></li><li property='itemListElement' typeof='ListItem'><a property='item' typeof='WebPage' href='https://www.books.com.tw/web/sys_bbotm/books/201104/'>資訊</a><meta property='name' content='資訊'><meta property='position' content='5'></li><li class='last' property='itemListElement' typeof='ListItem'>商品介紹<meta property='name' content='商品介紹'><meta property='position' content='6'></li></ul>
+</div></div></div><div class="container_24 main_wrap clearfix">
+<div class="grid_24 main_column">
+<div class="mod type02_p01_wrap clearfix">
+<div class="grid_9 alpha">
+<script type="text/javascript" src="//www.books.com.tw/jss/jquery/plugin/tools.js"></script>
+<script type="text/javascript" src="//www.books.com.tw/jss/jquery/plugin/jqModal_fix.js"></script>
+<script type="text/javascript" src="//www.books.com.tw/jss/web/img_zoomer.js"></script>
+<div class="mod cnt_prod_img001 nolazyload_img clearfix">
+<div class="cnt_mod002 cover_img" id="M201106_0_getTakelook_P00a400020052">
+<ul>
+<span ></span></ul>
+<ul class="looks" >
+<li class="icon_pic"  title="看大圖"><a href="https://www.books.com.tw/takelook/showPic/0010936350" class="thickbox">看大圖</a></li></ul>
+<img class="cover M201106_0_getTakelook_P00a400020052_image_wrap" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350.jpg&v=63245041k&w=348&h=348" alt="少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) "  >
+</div><div class="cnt_mod003" id="container">
+<div class="each_wrap" id="thumbnail">
+<div class="eh_switcher eh_swleft"><a  title="!上頁" class="prev browse left"><span>!上頁</span></a></div>
+<div class="eh_switcher eh_swright"><a  title="下頁" class="next browse right"><span>下頁</span></a></div>
+<div class="each_box M201106_0_getTakelook_P00a400020052_scroll" >
+<div class="items" style="overflow:hidden;width:9999em;position:absolute;*top:0;*left:0;"><ul class="li_box M201106_0_getTakelook_P00a400020052_item" style="float:left;"><li class='first'><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350.jpg&v=63245041k&w=348&h=348'></li><li ><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_bc_01.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_bi_01.jpg&v=6324505ek&w=348&h=348'></li><li ><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_bi_02.jpg&v=6324505ek&w=348&h=348'></li><li class='last'><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_bi_03.jpg&v=6324505ek&w=348&h=348'></li></ul><ul class="li_box M201106_0_getTakelook_P00a400020052_item" style="float:left;"><li class='first'><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_01.jpg&v=6324505ck&w=348&h=348'></li><li ><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_02.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_03.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_04.jpg&v=6324505dk&w=348&h=348'></li><li class='last'><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_05.jpg&v=6324505dk&w=348&h=348'></li></ul><ul class="li_box M201106_0_getTakelook_P00a400020052_item" style="float:left;"><li class='first'><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_06.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_07.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_08.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_09.jpg&v=6324505dk&w=348&h=348'></li><li class='last'><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_10.jpg&v=6324505ck&w=348&h=348'></li></ul><ul class="li_box M201106_0_getTakelook_P00a400020052_item" style="float:left;"><li class='first'><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_11.jpg&v=6324505dk&w=348&h=348'></li><li ><img src='https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_b_12.jpg&v=6324505dk&w=348&h=348'></li><li class='last'><img src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/63/0010936350_bf_01.jpg&v=6324505dk&w=348&h=348'></li></ul></div>
+</div></div></div></div>
+<script type="text/javascript">
+$(document).ready(function() {
+    var opt_module_id = "M201106_0_getTakelook_P00a400020052";
+    var M201106_0_getTakelook_P00a400020052 = new Overlay(opt_module_id);
+    var M201106_0_getTakelook_P00a400020052zommer = new img_zoomer(opt_module_id);
+ 
+});
+</script>
+<div class="mod clearfix">
+<cite class='type02_p001'><a href='https://appapi-ebook.books.com.tw/V1.7/CMSAPIApp/item/0010936350/trial' title='試閱' id='click_M201105_0_getIconData_P00a400020051' target='_blank'><span class='icon_04'>試閱</span></a></cite>
+</div><script type="text/javascript">
+$("#click_M201105_0_getIconData_P00a400020051").bind("click", function(){
+    var opt_module_id = "M201105_0_getIconData_P00a400020051";//模組編碼參數
+    var opt = new Array(3);//參數資料變數
+    opt[1] = new Array();
+    opt[0] = "setClickQtyAjax";//class name
+    opt[1][0] = "0010936350";//item
+    opt[2] = "M201105_029_view";//template
+    ajax_product_show(opt_module_id,opt);dataLayer.push({'event':'SendEvent', 'eventCategory':'product', 'eventAction':'read-trial', 'eventLabel':'0010936350', 'eventValue':'1', 'eventNonInteraction':0});});
+</script></div>
+<div class="grid_10">
+<div class="mod type02_p002 clearfix">
+<h1>少年Py的大冒險－成為Python AI深度學習達人的第一門課(附範例光碟) </h1>
+<h2><a ></a></h2>
+</div><div class="type02_p003 clearfix">
+<ul><li>
+<div class="trace_box" id="trace_box" style="display:none;">
+<span class="arrow"></span>
+<div class="pop_trace">
+<div class="list_raced" id="edit_traced_area" style="display:none;">
+<h4>已追蹤作者：<strong class="edit">[&nbsp;<a href="" id="editTrace">修改</a>&nbsp;]</strong></h4>
+<ul id="list_traced"></ul>
+</div><ul class="list_trace" id="list_trace"></ul>
+<div class="trace_btn_wrap">
+<a href="javascript:saveTrace();" class="type02_btn09">確定</a>
+<a href="javascript:cancelTrace();" class="type02_btn09">取消</a>
+</div></div></div>    作者：            <a href="//search.books.com.tw/search/query/key/%E8%94%A1%E7%82%8E%E9%BE%8D/adv_author/1/">蔡炎龍</a>,            <a href="//search.books.com.tw/search/query/key/%E6%9E%97%E6%BE%A4%E4%BD%91/adv_author/1/">林澤佑</a>,            <a href="//search.books.com.tw/search/query/key/%E9%BB%83%E7%91%9C%E8%90%8D/adv_author/1/">黃瑜萍</a>,            <a href="//search.books.com.tw/search/query/key/%E7%84%89+%E7%84%B6/adv_author/1/">焉 然</a>    &nbsp;<a id="trace_btn1" class="type02_btn02" href=""><span><span class="trace_txt">&nbsp;</span></span></a>
+<a href="//www.books.com.tw/activity/2015/06/trace/index.html#author" title="新功能介紹" target="_blank"><cite class="help">新功能介紹</cite></a></li><li>出版社：<a href="https://www.books.com.tw/web/sys_puballb/books/?pubid=chwa            "><span>全華圖書</span></a>    &nbsp;<a id="trace_btn2" class="type02_btn02" href=""><span><span class="trace_txt">&nbsp;</span></span></a>
+<a href="//www.books.com.tw/activity/2015/06/trace/index.html#publisher" title="新功能介紹" target="_blank"><cite class="help">新功能介紹</cite></a></li><li>出版日期：2022/09/19</li><li>語言：繁體中文                                      </li></ul></div>
+<div id="M201105_0_getBkProdInfo_P00a400020084" style="display:none;"></div>
+<script type="text/javascript">
+$(function(){
+    setFollow('initFollowAjax','蔡炎龍,林澤佑,黃瑜萍,焉 然:chwa'); //class name , author : pubid
+});
+function setFollow(c,ap){
+    var opt_module_id = 'M201105_0_getBkProdInfo_P00a400020084'; //模組編碼參數
+    var opt = new Array(3); //參數資料變數
+    opt[0] = c; //class name
+    opt[1] = new Array(3);
+    opt[1][0] = '0010936350:M201105_0_getBkProdInfo_P00a400020084:M201105_047_view'; //item : li_id : view
+    opt[1][1] = ap; //author : pubid
+    opt[1][2] = window.location.href; //url
+    opt[2] = 'M201105_047_view' //template
+    var M201105_0_getBkProdInfo_P00a400020084 = new ajax_product_show(opt_module_id,opt);
+}
+function saveTrace(){
+    var author='';
+    $('input[name="author"]:checked').each(function(index){
+         author += ((index===0)?'':',') + $(this).val();
+    });
+    setFollow('setFollowAuthorAjax', author);
+    $('#trace_box').hide();
+}
+function cancelTrace(){
+    $('#trace_box').hide();
+}
+ function editTrace(url){
+    window.open(url, '_blank');
+    $('#trace_box').hide();
+}
+</script>
+<div class="cnt_prod002 clearfix">
+<div class="mod prd002">
+<div class="prod_cont_b">
+<ul class="price">
+<li>定價：<em>580</em>元</li>
+<li>優惠價：<strong><b>95</b></strong>折<strong class="price01"><b>551</b></strong>元</li><li>本商品單次購買10本9折<strong>522</strong>元</li></ul>
+</div></div></div><div class="cnt_prod002 clearfix" id="M201105_0_getProdTransTypeInfo_P00a400020071">
+<div class="prd_009 clearfix">
+<div class="prod_cont_b">
+<ul class='tag_003 tag_width07 clearfix'><li>運送方式：</li><li data-label='taiwan' class='here'><div class='arrow'>臺灣與離島</div></li><li data-label='oversea'><div class='arrow'>海外</div></li></ul>
+<ul data-area="taiwan" class="delivery-info"><li class='flex'><span class='title'><i class='icon-truck-1'></i>可配送點：</span><em class='scope'>台灣、蘭嶼、綠島、澎湖、金門、馬祖</em></li><li class='flex'><span class='title'><i class='svg-711'></i>可取貨點：</span><em class='scope'>台灣、蘭嶼、綠島、澎湖、金門、馬祖</em></li><li class='flex'><em class='scope'><i class='svg-fast-delivery'></i>台北、新北、基隆宅配快速到貨</em><em class='tooltip' title='不提供配送區域為新北市貢寮區、雙溪區、烏來區福山'>(除外地區)</em></li></ul>
+<ul data-area="oversea" class="delivery-info" style="display:none;"><li class='flex'><span class='title'><i class='icon-truck-1'></i>可配送點：</span><em class='scope'>全球</em></li><li class='flex'><span class='title'><i class='svg-711'></i>可取貨點：</span><em class='scope'>香港、澳門、新加坡、馬來西亞、菲律賓</em></li></ul>
+</div></div><span class="hr_01"></span>
+</div><script type="text/javascript">
+$(document).ready(function(){
+   var opt_module_id = "M201105_0_getProdTransTypeInfo_P00a400020071";//模組編碼參數
+   var opt_element_id = "P00a400020071";  
+   var M201105_0_getProdTransTypeInfo_P00a400020071 = new switch_loaded_tab(opt_module_id,M201105_045);
+});
+</script></div>
+<div class="grid_5 omega">
+<div class="mod clearfix" id='M201105_0_getProdCartInfo_P00a400020037'>
+載入中...
+</div><script language="JavaScript" type="text/javascript" src="/jss/web/product.js?v=202201031"></script>
+<script type="text/javascript">
+$(document).ready(function(){               
+//$(window).load(function(){
+    getProdShoppingCartBtn();
+});
+function getProdShoppingCartBtn(){
+    var opt_module_id = "M201105_0_getProdCartInfo_P00a400020037";//模組編碼參數
+    var opt = new Array(3);//參數資料變數
+    opt[1] = new Array();
+    opt[0] = "getProdCartInfoAjax";//class name
+    opt[1][0] = "0010936350";//item    
+    opt[2] = "M201105_032_view"//template
+    var M201105_0_getProdCartInfo_P00a400020037 = new ajax_product_show(opt_module_id,opt);
+}
+</script>
+<div class="mod type02_p006 clearfix">
+<div class="btn">
+<a href="http://www.books.com.tw/prod_comment/comment_write/0010936350" class="type02_btn02" title="我要寫評鑑"><span><span>我要寫評鑑</span></span></a>
+</div></div><div class="type02_p014">
+<ul class="push-list">
+<li class="title">分享</li>
+<li id="push_facebook"><i class="svg-logo-fb" title="分享至Facebook"></i></li>
+<li id="push_line"><i class="svg-logo-line" title="分享至LINE"></i></li>
+<li id="push_copy"><i class="svg-icon-link" title="複製連結" data-tooltip="已複製"></i></li>
+</ul>
+<div class="like-button">
+<span>
+<iframe scrolling="no" frameborder="0" allowtransparency="true" style="width:85px; height:20px; vertical-align:middle;" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.books.com.tw%2Fproducts%2F0010936350&amp;send=false&amp;locale=zh_TW&amp;layout=button_count&amp;width=85&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=20"></iframe>
+</span>
+</div></div><script language="JavaScript">
+$(document).ready(function(){
+    var fb = new share_to_fb();
+})
+</script>
+<ul class="type02_p016 clearfix">
+<li><a href="https://activity.books.com.tw/crosscat/show/A00000055954/#E230104000000045" target="_blank"><img src="https://addons.books.com.tw//G/ADbanner/2022/12/goldmonth/gold_month_250x100.gif"   ></a></li>
+</ul>
+</div></div><div class="content-wrap">
+<div id="ext_M201105_0_showBankEvents_P00a400020272" class="type02_s020 clearfix">
+<a class="switch swleft carousel-next" href="javascript:void(0)" style="z-index: 1;"><span>上頁</span></a><a class="switch swright carousel-prev" href="javascript:void(0)" style="z-index: 1;"><span>下頁</span></a><ul class="carousel-dots"><li data-index="0"></li><li data-index="1"></li><li data-index="2"></li><li data-index="3"></li><li data-index="4"></li><li data-index="5"></li></ul><div class="carousel-list">
+<div class="carousel-inner">
+<div class="carousel-flex" data-view="5">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://www.books.com.tw/web/bank_detail/cub/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_CA.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/ctbc/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_CTBC.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/easywallet/?v=2" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_EZ.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div><div class="carousel-flex" data-view="4">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://activity.books.com.tw/crosscat/show/A00000056071/" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_AFTEE.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/icashPay/?v=2" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_ICP.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/citibank/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/02/bank/262x100_2202_07_CITI.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div><div class="carousel-flex" data-view="3">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://www.books.com.tw/web/bank_detail/sinopac?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_SINO.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/ub/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_UB.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/firstbank/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/08/bank/262x100_2208_first.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div><div class="carousel-flex" data-view="2">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://www.books.com.tw/web/bank_detail/tcb_bank/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/09/bank/monthly/262x100_2209_TCB.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/dbs/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/02/bank/262x100_2202_12_dbs.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/feib/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_FE.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div><div class="carousel-flex" data-view="1">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://www.books.com.tw/web/bank_detail/skbank/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_SK.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/taishin/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/04/bank/262x100_2204_Taishin.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/openWallet/?v=2" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/02/bank/262x100_2202_01_OPEN.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div><div class="carousel-flex" data-view="0">
+<div class="box clearfix">
+<ul class="switch_inner">
+<li>
+<a href="https://www.books.com.tw/web/bank_detail/tfb/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2023/01/bank/262x100_2301_FU.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/esunbank/?v=1" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/05/bank/262x100_2205_esun.png" width="243" height="93" >
+</a>
+</li><li>
+<a href="https://www.books.com.tw/web/bank_detail/jkopay/?v=2" target="_blank">
+<img src="https://addons.books.com.tw/G/ADbanner/marketing/2022/02/bank/262x100_2202_08_JK.png" width="243" height="93" >
+</a>
+</li></ul>
+</div></div></div></div></div></div><script>$(function() {switchBankPageWide('ext_M201105_0_showBankEvents_P00a400020272', 'P'); });</script>
+<ul class="mod type02_s007 clearfix">
+<li><a href="https://activity.books.com.tw/crosscat/show/A00000057035?loc=P_0064_001"><img src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/100OP/95040.jpg&v=63be1181k&w=950&h=" alt="新書百點大放送" ></a></li></ul>
+<div class="mod clearfix">
+<div id="br_r0vq68ygz"></div><script>var i=location.pathname.replace(/\/products\//gi,"");var v=Math.floor(Math.random()*Math.floor(2));$("#br_r0vq68ygz").load("//www.books.com.tw/br/ra/br_r0vq68ygz?i="+i+"&v="+v);</script>
+</div><div class="mod clearfix">
+<div class="grid_19 alpha">
+<div class="mod_b type02_m057 clearfix">
+<a name="IntroP00a400020009">&nbsp;</a>
+<h3>內容簡介</h3>
+<div class="bd">
+<div class="content" style="height:auto;">
+        　　近年來人工智慧最主要的重心在深度學習，也是因深度學習有許多突破性的發展，而讓人工智慧有了許多以前意想不到的應用。本書承襲前作《少年 Py的大冒險：成為Python數據分析達人的第一門課》的風格，藉由輕鬆活潑的方式，從基本的原理開始，讀者可一步步跟著書中每個冒險，成為可以活用AI的深度學習達人！<br>
+<br>
+　　本書規劃三個篇章，共41種冒險。從AI的原理、怎麼思考所需的AI模型開始說明，接著介紹神經網路三大天王（DNN、CNN、RNN），並大量運用Gradio這個有趣的套件，把書中的AI模型做成網路應用程式。<br>
+<br>
+　　本書也介紹了如何用Hugging Face的transformers套件打造有趣的自然語言處理應用，以及使用DeepFace打造人臉辨識、情緒辨識等等。對於生成對抗網路（GAN）及強化學習也有相當詳細地說明。<br>
+<br>
+<strong>本書特色</strong><br>
+<br>
+　　1.以三大篇章，共41種冒險旅程，成為可以活用AI的深度學習達人。<br>
+　　2.書中以各種有趣的範例，如：用電腦創作歌詞、使用DeepFace打造人臉辨識、情緒辨識等引發學習興趣。<br>
+　　3.書末以「股票的自動交易系統」為專題，從資料整理與程式實作兩方面做整合性的應用。<br>
+　　4.輕鬆活潑的筆調，搭配可愛的插圖，以圖解化方式加深學習印象。<br>
+ 
+</div><div class="type02_gradient" style="display:none;"></div>
+</div></div><div class="mod_b type02_m057 clearfix">
+<a name="AuthorP00a400020009">&nbsp;</a>
+<h3>作者介紹</h3>
+<div class="bd">
+<div class="content" style="height:auto;">
+<strong>作者簡介<br>
+<br>
+蔡炎龍</strong><br>
+<br>
+　　現職：<br>
+　　國立政治大學應用數學系 副教授<br>
+<br>
+　　學歷：<br>
+　　美國爾灣加州大學數學研究所 博士<br>
+<br>
+　　專長：<br>
+　　代數幾何、熱帶幾何、神經網路、深度學習、人工智慧<br>
+<br>
+<strong>林澤佑</strong><br>
+<br>
+　　現職：<br>
+　　國立臺灣大學資料科學學位學程 助理教授<br>
+<br>
+　　學歷：<br>
+　　國立政治大學應用數學系 博士<br>
+<br>
+　　專長：<br>
+　　幾何重建、深度學習、HodgeRank的應用<br>
+<br>
+<strong>黃瑜萍</strong><br>
+<br>
+　　學歷：<br>
+　　國立政治大學經濟研究所 碩士<br>
+<br>
+<strong>焉然</strong><br>
+<br>
+　　學歷：<br>
+　　國立政治大學應用數學研究所 碩士
+</div><div class="type02_gradient" style="display:none;"></div>
+</div></div><div class="mod_b type02_m057 clearfix">
+<a name="CategoryP00a400020009">&nbsp;</a>
+<h3>目錄</h3>
+<div class="bd">
+<div class="content more_off" id="M201105_0_getProdTextInfo_P00a400020009_h2">
+<strong>第1篇【啟程】打造裝備，踏上深度學習冒險旅程</strong><br>
+【工具準備】<br>
+冒險 01 Colab 免安裝的深度學習環境<br>
+冒險 02 瞭解Colab 的檔案系統<br>
+冒險 03 用Anaconda 在自己電腦打造深度學習環境<br>
+冒險 04 互動模式的復習<br>
+冒險 05 用 Gradio 神速打造 Web App！<br>
+<br>
+【人工智慧概念】<br>
+冒險 06 人工智慧就是問個好問題，化成函數的形式學個函數！<br>
+冒險 07 打造函數學習機三部曲<br>
+冒險 08 運用深度學習的種種想法<br>
+<br>
+<strong>第2篇【冒險】深度學習的三大天王</strong><br>
+【全連結神經網路】<br>
+冒險 09 神經網路的概念和全連結神經網路<br>
+冒險 10 神經網路的學習方式<br>
+冒險 11 實作手寫辨識：MNIST 數據集<br>
+冒險 12 打造全連結神經網路函數學習機<br>
+冒險 13 讀回我們的 model, 用 gradio 瞬間打造網路 app！<br>
+<br>
+【圖形辨識天王 CNN】<br>
+冒險 14 圖形辨識天王 CNN<br>
+冒險 15 用 CNN 做圖形辨識 - 資料處理篇<br>
+冒險 16 三部曲打造圖形辨識 CNN<br>
+冒險 17 Cooper 真的是馬爾濟斯嗎？使用名門 CNN 幫助辨識！<br>
+冒險 18 遷移式學習做八哥辨識<br>
+<br>
+【有記憶的神經網路 RNN】<br>
+冒險 19 神經網路三大天王之有記憶的 RNN<br>
+冒險 20 IMDb 評論情意分析問題介紹<br>
+冒險 21 打造 RNN 情意分析函數學習機<br>
+冒險 22 打造真的可以使用的情意分析<br>
+冒險 23 RNN 技巧討論<br>
+冒險 24 《紅樓夢》生成器<br>
+冒險 25 打造自己的 Tokenizer（文字型資料的處理）<br>
+<br>
+<strong>第3篇【回歸】發揮創意，看到 AI 的無限可能</strong><br>
+【Attention 和 transformer】<br>
+冒險 26 RNN 看成 Encoder-Decoder Structure<br>
+冒險 27 Attention 注意力模式的概念<br>
+冒險 28 有機會成為第四大天王的變形金剛 transformer<br>
+冒險 29 芝麻街自然語言新時代<br>
+冒險 30 用 transformers 快速打造文字生成器<br>
+冒險 31 讓我們做歌詞產生器網路 App！<br>
+<br>
+【生成模式和 GAN】<br>
+冒險 32 神經網路的另一個打造方式<br>
+冒險 33 Functional API 介紹<br>
+冒險 34 簡單找表示向量的方法 Autoencoder<br>
+冒險 35 創作型的神經網路 GAN<br>
+冒險 36 有趣的 GAN 應用<br>
+冒險 37 FaceNet 和特徵表現向量的尋找<br>
+冒險 38 用 DeepFace 來做人臉辨識！<br>
+ <br>
+【強化學習和 DQN】<br>
+冒險 39 強化學習的介紹<br>
+冒險 40 自動交易系統：資料整理篇<br>
+冒險 41 自動交易系統：程式實作篇<br>
+ 
+</div><div class="type02_gradient" id="M201105_0_getProdTextInfo_P00a400020009_g2" style="display:block;"></div>
+</div><div class="ft">
+<span><a href="javascript:;" class="M201105_0_getProdTextInfo_P00a400020009 more on" id="M201105_0_getProdTextInfo_P00a400020009_m2">看更多</a></span>
+<!--<span><a href="javascript:;" class="more off" >收回</a></span>-->
+</div></div><script type="text/javascript">
+$(document).ready(function(){
+    var opt_module_id = "M201105_0_getProdTextInfo_P00a400020009";//模組編碼參數
+    var opt_element_id = "P00a400020009";
+    var M201105_0_getProdTextInfo_P00a400020009 = new more_on_off(opt_module_id,opt_element_id);
+ });
+</script>
+<div class="mod_b type02_m058 clearfix">
+<a name="P00a400020016">&nbsp;</a>
+<h3>詳細資料</h3>
+<div class="bd">
+<ul><li>ISBN：9786263282964</li><li>叢書系列：<a href='https://www.books.com.tw/web/sys_puballb/books/?se=%E5%A4%A7%E5%B0%88%E8%B3%87%E8%A8%8A&pubid=chwa'>大專資訊</a></li><li>規格：平裝                                             / 400頁 / 19 x 26 x 2 cm / 普通級                                          / 全彩印刷                                       / 初版</li><li>出版地：台灣                                            </li></ul>
+<ul class="sort">
+<li>本書分類：<a href='https://www.books.com.tw/web/books_topm_20/'>專業/教科書/政府出版品</a>&gt; <a href='https://www.books.com.tw/web/books_bmidm_2011/'>電機資訊類</a>&gt; <a href='https://www.books.com.tw/web/sys_bbotm/books/201104/'>資訊</a></li>
+</ul>
+</div></div><div id="br_veqmfy3c"></div><script>var i=location.pathname.replace(/\/products\//gi,"");var v=Math.floor(Math.random()*Math.floor(2));$("#br_veqmfy3c").load("//www.books.com.tw/br/ra/br_veqmfy3c?i="+i+"&v="+v);</script>
+<div class="mod type02_m065 clearfix">
+<h3>最近瀏覽商品</h3><a name="P00a400020003">&nbsp;</a>
+<div class="mod_no clearfix" id="M201101_0_getBrowseItems_P00a400020003">
+</div></div><script type="text/javascript">
+$(document).ready(function(){
+    var opt_module_id = "M201101_0_getBrowseItems_P00a400020003";//模組編碼參數
+    var opt = new Array(3);//參數資料變數
+    opt[1] = new Array();
+    opt[0] = "getBrowseItemsAjax";//class name
+    opt[1][0] = "M201101_0_getBrowseItems_P00a400020003";//item
+    opt[2] = "M201101_060_view?bnc=3uo6-kineng8pp2"//template
+    var M201101_0_getBrowseItems_P00a400020003 = new ajax_product_show(opt_module_id,opt);
+});
+</script>
+<div class="mod_a type02_m098 clearfix">
+<h3>相關活動</h3>
+<ul>
+<li><a href="https://activity.books.com.tw/crosscat/show/A00000055942"><img src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2022/12/videohm_790250.jpg&v=639ad3bck&w=790&h=0" alt="～快樂，在動手的每一刻～繪畫｜烘焙｜花藝｜香氛｜養生　實用生活課程精選雙課79折" ></a></li>
+</ul></div>
+<div class="mod type02_m066 clearfix">
+<a name="P00a400020002">&nbsp;</a>
+<h3>購物說明</h3>
+<div class="bd">
+<p><span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px">若您具有法人身份為常態性且大量購書者，或有特殊作業需求，建議您可洽詢「<a href="http://db.books.com.tw/gpts/qa2010/qaindex_2010.htm" target="_self">企業採購</a></span><span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px">」。<span class="Apple-converted-space">&nbsp;</span></span><br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<font color="#000080" style="white-space: normal; word-spacing: 0px; text-transform: none; text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px"><b>退換貨說明</b></font><span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px"><span class="Apple-converted-space">&nbsp;</span></span><br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px">會員所購買的商品均享有到貨十天的猶豫期（含例假日）。退回之商品必須於猶豫期內寄回。<span class="Apple-converted-space">&nbsp;</span></span><br />
+<br />
+<b style="font-size: 13px; font-family: Arial, Helvetica, sans-serif, 新細明體; font-variant: normal; white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); font-style: normal; text-align: justify; letter-spacing: normal; line-height: 22px; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px">辦理退換貨時，商品必須是全新狀態與完整包裝(請注意保持商品本體、配件、贈品、保證書、原廠包裝及所有附隨文件或資料的完整性，切勿缺漏任何配件或損毀原廠外盒)。退回商品無法回復原狀者，恐將影響退貨權益或需負擔部分費用。</b><span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px"><span class="Apple-converted-space">&nbsp;</span></span><br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<br style="white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px" />
+<b style="font-size: 13px; font-family: Arial, Helvetica, sans-serif, 新細明體; font-variant: normal; white-space: normal; word-spacing: 0px; text-transform: none; color: rgb(38,38,38); font-style: normal; text-align: justify; letter-spacing: normal; line-height: 22px; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px">訂購本商品前請務必詳閱商品<a href="https://www.books.com.tw/web/sys_qalist/qa_36_87/0?loc=000_087" style="text-decoration: underline; color: rgb(51,51,51); outline-width: medium; outline-style: none; outline-color: invert">退換貨原則</a>。</b><span style="white-space: normal; word-spacing: 0px; text-transform: none; float: none; color: rgb(38,38,38); text-align: justify; font: 13px/22px Arial, Helvetica, sans-serif, 新細明體; display: inline !important; letter-spacing: normal; background-color: rgb(255,255,255); text-indent: 0px; -webkit-text-stroke-width: 0px"><span class="Apple-converted-space">&nbsp;</span></span></p>
+</div></div></div>
+<div class="grid_5 omega">
+<div class="mod_b type02_m055 clearfix">
+<ul>
+<li><a href="https://activity.books.com.tw/crosscat/show/A00000057107?loc=P_0033_001"><img alt="童書寒假書展" src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/thinkabout_190x120.jpg&v=63bcdf01k&w=&h=" srcset="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/thinkabout_190x120.jpg&v=63bcdf01k&w=0&h=0 2x,https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/thinkabout_190x120.jpg&v=63bcdf01k&w=0&h=0 3x"></a></li><li><a href="https://activity.books.com.tw/crosscat/show/A00000055272?loc=P_0033_002"><img alt="開運展" src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2022/11/newyear/190120.gif&v=6360c789k&w=&h=" srcset="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2022/11/newyear/190120.gif&v=6360c789k&w=0&h=0 2x,https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2022/11/newyear/190120.gif&v=6360c789k&w=0&h=0 3x"></a></li><li><a href="https://activity.books.com.tw/crosscat/show/A00000056985?loc=P_0033_003"><img alt="人文社科新春暢銷展" src="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/myGift/190120.jpg&v=63b500eak&w=&h=" srcset="https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/myGift/190120.jpg&v=63b500eak&w=0&h=0 2x,https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2023/01/myGift/190120.jpg&v=63b500eak&w=0&h=0 3x"></a></li>
+</ul>
+</div><div id="br_60nq68yhb"></div><script>var i=location.pathname.replace(/\/products\//gi,"");var v=Math.floor(Math.random()*Math.floor(2));$("#br_60nq68yhb").load("//www.books.com.tw/br/ra/br_60nq68yhb?i="+i+"&v="+v);</script>
+<div class="mod_b type02_m051 clearfix">
+<h3>同類商品新上架</h3>
+<ul>
+<li class="first">
+<em>1.</em><a href='https://www.books.com.tw/products/0010947995?loc=P_0022_001'><img class='cover' src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/79/0010947995.jpg&v=63be9047k&w=110&h=110' alt='FUNDAMENTALS OF CORPORATE FINANCE (五版)' srcset="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/79/0010947995.jpg&v=63be9047k&w=220&h=220 2x,https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/79/0010947995.jpg&v=63be9047k&w=330&h=330 3x"></a>
+<p><a  href="https://www.books.com.tw/products/0010947995?loc=P_0022_001">FUNDAMENTALS OF CORPORATE FINANCE (五版)</a></p>
+</li><li >
+<em>2.</em>
+<p><a  href="https://www.books.com.tw/products/0010946227?loc=P_0022_002">社會福利行政(3版)</a></p>
+</li><li >
+<em>3.</em>
+<p><a  href="https://www.books.com.tw/products/0010946240?loc=P_0022_003">食品加工學(4版)</a></p>
+</li><li >
+<em>4.</em>
+<p><a  href="https://www.books.com.tw/products/0010947423?loc=P_0022_004">旅運管理實務與理論(第二版)</a></p>
+</li><li >
+<em>5.</em>
+<p><a  href="https://www.books.com.tw/products/0010947425?loc=P_0022_005">眼鏡光學概要(四版)</a></p>
+</li>
+</ul>
+</div><div class="mod_b type02_m051 clearfix">
+<h3>本類新品熱銷</h3>
+<ul>
+<li class="first">
+<em>1.</em><a href='https://www.books.com.tw/products/0010945465?loc=P_0021_001'><img class='cover' src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/54/0010945465.jpg&v=63a2ee74k&w=110&h=110' alt='論文寫作完全求生手冊：「精準表達，以理服人」的技藝【作者彭明輝限定親簽版】' srcset="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/54/0010945465.jpg&v=63a2ee74k&w=220&h=220 2x,https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/54/0010945465.jpg&v=63a2ee74k&w=330&h=330 3x"></a>
+<p><a  href="https://www.books.com.tw/products/0010945465?loc=P_0021_001">論文寫作完全求生手冊：「精準表達，以理服人」的技藝【作者彭明輝限定親簽版】</a></p>
+</li><li >
+<em>2.</em>
+<p><a  href="https://www.books.com.tw/products/0010945461?loc=P_0021_002">臺語文素養導向教學全攻略</a></p>
+</li><li >
+<em>3.</em>
+<p><a  href="https://www.books.com.tw/products/0010942343?loc=P_0021_003">肌動學伸展完全手冊 ：從頭到腳，掌握肌肉與筋膜線伸展的54種動作</a></p>
+</li><li >
+<em>4.</em>
+<p><a  href="https://www.books.com.tw/products/0010945462?loc=P_0021_004">論文寫作完全求生手冊：「精準表達，以理服人」的技藝</a></p>
+</li><li >
+<em>5.</em>
+<p><a  href="https://www.books.com.tw/products/0010942284?loc=P_0021_005">超圖解金融保險與節稅規劃 ：保單到底能不能節稅？從實質課稅原則談起</a></p>
+</li>
+</ul>
+</div><div class="mod_b type02_m051 clearfix">
+<h3>本類暢銷榜</h3>
+<ul>
+<li class="first">
+<em>1.</em><a href='https://www.books.com.tw/products/0010927799?loc=P_0020_001'><img class='cover' src='https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/092/77/0010927799.jpg&v=62ab0634k&w=110&h=110' alt='半導體元件物理學第四版（上冊）' srcset="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/092/77/0010927799.jpg&v=62ab0634k&w=220&h=220 2x,https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/092/77/0010927799.jpg&v=62ab0634k&w=330&h=330 3x"></a>
+<p><a  href="https://www.books.com.tw/products/0010927799?loc=P_0020_001">半導體元件物理學第四版（上冊）</a></p>
+</li><li >
+<em>2.</em>
+<p><a  href="https://www.books.com.tw/products/0010869548?loc=P_0020_002">家庭水電安裝修護DIY(第六版) </a></p>
+</li><li >
+<em>3.</em>
+<p><a  href="https://www.books.com.tw/products/0010756852?loc=P_0020_003">類比CMOS積體電路設計 第二版</a></p>
+</li><li >
+<em>4.</em>
+<p><a  href="https://www.books.com.tw/products/0010720106?loc=P_0020_004">半導體製程概論(增訂版)</a></p>
+</li><li >
+<em>5.</em>
+<p><a  href="https://www.books.com.tw/products/0010655993?loc=P_0020_005">半導體製程技術導論(第三版)</a></p>
+</li>
+</ul>
+</div><div class="mod_b type02_m052 clearfix">
+<h3>訂閱電子報</h3>
+  想獲得最新商品資訊，請訂閱<a href="http://www.books.com.tw/e-page/">免費電子報</a>
+</div><div class="mod clearfix">
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/17812066/books_books_D_160x600_right', [160, 600], 'div-gpt-ad-1463731526790-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<div id='div-gpt-ad-1463731526790-0' style='text-align: right'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1463731526790-0'); });
+</script>
+</div></div></div>
+</div></div></div><div id="footer_full_v2"  class="footer_v2">
+<div class="social_links">
+<div class="wrap">
+<ul>
+<li><a href="https://www.books.com.tw/mobile/?loc=footer_00_001"><img src="//jci.book.com.tw/css/header/images/social-books-app.svg" >博客來<br>App&nbsp;下載</a></li>
+<li><a href="https://www.books.com.tw/activity/2021/06/ebooknewer/?loc=footer_00_002"><img src="//jci.book.com.tw/css/header/images/social-ebooks-app.svg" >博客來<br>電子書App&nbsp;下載</a></li>
+<li><a href="https://www.facebook.com/bookstw?loc=footer_00_003"><img src="//jci.book.com.tw/css/header/images/social-fb.svg" >博客來<br/>Facebook粉絲專頁</a></li>
+<li><a href="https://www.youtube.com/user/BooksTW?loc=footer_00_004"><img src="//jci.book.com.tw/css/header/images/social-yt.svg" >博客來<br/>YouTube</a></li>
+<li><a href="https://maac.io/1VWES?loc=footer_00_005"><img src="//jci.book.com.tw/css/header/images/social-line.svg" >博客來<br>LINE&nbsp;官方帳號</a></li>
+</ul>
+<button type="button" class="toggle_btn" onclick="document.cookie = 'booksstyle=M;path=/;domain=books.com.tw;';if (typeof dataLayer != 'undefined') {
+                            dataLayer.push({'event': 'SendEvent', 'eventCategory': 'change', 'eventAction': 'dtm', 'eventLabel': 'www', 'eventValue': '1', 'eventNonInteraction': 0});
+                        }
+                        if (encodeURI(window.location.pathname).substring(0, 10) == '/products/' || encodeURI(window.location.pathname).indexOf('/ovs') !== -1 || encodeURI(window.location.pathname).indexOf('/sys_ovsbotm') !== -1 || encodeURI(window.location.pathname).indexOf('/sys_saletopovs') !== -1) {
+                            location.href = '//www.books.com.tw/exep/assp.php/bookland' + encodeURI(window.location.pathname + window.location.search) + '?loc=footer_00_005';
+                        } else {
+                            location.href = '//www.books.com.tw/exep/assp.php/bookland?loc=footer_00_005';
+                        }"><img src="//jci.book.com.tw/css/header/images/icon-mobile-01.svg" alt="切換行動版">切換行動版</button>
+</div></div><div class="sitemap_service">
+<div class="wrap">
+<dl class="box">
+<dt>關於我們</dt>
+<dd><a href="https://www.books.com.tw/isi/aboutbooks.htm?loc=footer_01_001">關於博客來</a></dd>
+<dd><a href="https://www.7-11.com.tw/pcsc/Index.html?loc=footer_01_002">關於PCSC</a>
+<dd><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4c4a436e3c5c3e2548423c1d1d1d1d5f2443a363189j99&jobsource=n104bank1&footer_01_003">人才募集</a></dd>
+<dd><a href="https://www.books.com.tw/stakeholder/index?loc=footer_01_004">利害關係人專區</a></dd>
+</dl>
+<dl class="box">
+<dt>企業合作</dt>
+<dd><a href="https://group.books.com.tw/?loc=footer_02_001">企業採購</a>
+<dd><a href="https://www.books.com.tw/benefit/?loc=footer_02_002">福利平台</a></dd>
+<dd><a href="https://www.books.com.tw/exep/supplier/addsupplier.php?loc=footer_02_003">成為供應商</a></dd>
+<dd><a href="https://ap.books.com.tw/?loc=footer_03_004">AP策略聯盟</a></dd>
+<dd><a href="https://www.books.com.tw/marketing/ad.htm?loc=footer_02_005">異業合作</a></dd>
+<dd><a href="https://www.books.com.tw/activity/adsale/2022/index.html?loc=footer_02_006">廣告刊登</a></dd>
+</dl>
+<dl class="box">
+<dt>好站連結</dt>
+<dd><a href="https://okapi.books.com.tw/index.php/?loc=footer_03_001">OKAPI&nbsp;閱讀生活誌</a></dd>
+<dd><a href="https://youth.books.com.tw/?loc=footer_03_002">青春博客來</a></dd>
+<dd><a href="https://activity.books.com.tw/crosscat/show/A00000003004?loc=footer_03_003">高中生書店</a></dd>
+<dd><a href="https://tickets.books.com.tw/index/?loc=footer_03_004">售票網</a></dd>
+</dl>
+<dl class="box">
+<dt>會員服務</dt>
+<dd><a href="https://myaccount.books.com.tw/myaccount/myaccount/index/?loc=tw_customer_007">會員專區</a></dd>
+<dd><a href="javascript:void(0);" onclick="location.href='https://cart.books.com.tw/member/join_step1/?loc=footer_04_001&url=' + encodeURIComponent(window.location.href);">加入會員</a></dd>
+<dd><a href="https://www.books.com.tw/activity/guide/?loc=footer_04_002">新手上路</a>
+<dd><a href="https://www.books.com.tw/activity/vip/?loc=footer_04_003">會員分級</a></dd>
+<dd><a href="https://cart.books.com.tw/member/forgot/?loc=footer_04_004">查詢帳號密碼</a></dd>
+<dd><a href="https://www.books.com.tw/e-page/?loc=footer_04_005">訂閱電子報</a></dd>
+</dl>
+<dl class="box">
+<dt>客服中心</dt></dd>
+<dd><a href="https://www.books.com.tw/web/qa/?loc=footer_05_001"><img src="//jci.book.com.tw/css/header/images/icon-help-01-white.svg" class="svg-icon" >常見問題</a></dd>
+<dd><a href="https://www.books.com.tw/web/csservice?loc=footer_05_002"><img src="//jci.book.com.tw/css/header/images/icon-headphones-01-white.svg" class="svg-icon" >線上客服</a></dd>
+<dd><a href="https://www.books.com.tw/question/inquiry/?loc=footer_05_003"><img src="//jci.book.com.tw/css/header/images/icon-email-01-white.svg" class="svg-icon" >客服信箱</a></dd>
+<dd><img src="//jci.book.com.tw/css/header/images/icon-calendar-01-white.svg" class="svg-icon" >
+<ul>
+<li>週一 ~ 五 08:00 - 19:00</li>
+<li>週六日、例假日 09:00 - 18:00</li>
+</ul>
+</dd>
+<dd><img src="//jci.book.com.tw/css/header/images/icon-phone-01-white.svg" class="svg-icon" >
+<ul>
+<li>客服專線&nbsp;02-26535588</li>
+<li>傳&nbsp;&nbsp;&nbsp;&nbsp;真&nbsp;02-27885008</li>
+</ul>
+</dd>
+</dl>
+</div></div><div class="awards">
+<h3 class="title">得獎認證</h3>
+<div class="logo">
+<span class="logo_7" title="天下雜誌2017金牌服務大賞"></span>
+<span class="logo_8" title="2016新世代最嚮往企業"></span>
+<span class="logo_1" title="SSL憑證服務"></span>
+<span class="logo_2" title="數位時代2012年台灣網站100強"></span>
+<span class="logo_3" title="電子發票推廣標章"></span>
+<span class="logo_6" title="dpmark資料隱私保護標章"></span>
+<span class="logo_5" title="數位時代2011台灣電子商務TOP50強"></span>
+<span class="logo_9" title="行政院環保署B2C網購包裝減量標章。包裝減量。環保材質。循環包材。"></span>
+</div></div><div class="copyright">
+<p><span>客戶服務專線：02-26535588</span>&nbsp;&nbsp;<span>傳真：02-27885008</span>&nbsp;&nbsp;<span>服務時間：週一~五 8:00~19:00，週六~日、例假日 9:00~18:00，365天全年無休</span></p>
+<p>
+<span>博客來數位科技股份有限公司</span>&nbsp;&nbsp;
+<span>統編 : 96922355</span>&nbsp;&nbsp;
+<span>地址：臺灣 115 台北市南港區八德路四段768巷1弄18號B1之1</span>&nbsp;&nbsp;
+<span>食品業者登陸字號：A-196922355-00000-9</span>
+</p>
+<p>Copyright &copy; since 1995 books.com.tw All Rights Reserved.</p>
+</div><div class="terms_links">
+<ul class="links">
+<li><a href="https://www.books.com.tw/services/privacy.htm?loc=m_tw_footer_inprivacy">資訊安全</a></li>
+<li><a href="https://www.books.com.tw/web/about_policy/?loc=m_tw_footer_servicepolicy">服務條款</a></li>
+<li><a href="https://www.books.com.tw/web/about_privacy/?loc=m_tw_footer_privacy">隱私權政策</a></li>
+</ul>
+</div></div><script src="https://www.books.com.tw/jss/web/books_image_patcher.js"></script>
+<script>
+window.onload = function(){
+        var imagePatcher= new BooksImagePatcher();
+        imagePatcher.startPatch();
+}
+</script>
+<script>fbq('trackCustom', 'VirtualPageView', {url: '/products/0010936350?bcat=001&bsub=20&bbrand=chwa'})</script>
+</body>
+</html>

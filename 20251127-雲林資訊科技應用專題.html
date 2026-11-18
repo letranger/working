@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-11-27 Thu 13:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20251127 資訊科技應用專題:從Scratch到Python(雲林場)</title>
+<meta name="author" content="顏永進" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+<link rel="stylesheet" type="text/css" href="../css/muse.css" />
+<script src="../css/copy_code.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20251127 資訊科技應用專題:從Scratch到Python(雲林場)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org20ef5e3">1. 【課程資訊】</a>
+<ul>
+<li><a href="#org2a91c8f">1.1. 注意事項</a></li>
+<li><a href="#org84f9f5f">1.2. 教材</a></li>
+</ul>
+</li>
+<li><a href="#orge7ccc63">2. 【教材1】Python 與 AI 時代的程式思維</a>
+<ul>
+<li><a href="#orgd251914">2.1. 程式的核心概念</a></li>
+<li><a href="#orge8b19d4">2.2. Python 是什麼？</a></li>
+<li><a href="#org5ec804e">2.3. 生活中的 Python 應用</a></li>
+<li><a href="#orgefaa808">2.4. 今天的目標</a></li>
+</ul>
+</li>
+<li><a href="#org9cbd4ce">3. 【教材2】Scratch 與 Python 的差異</a></li>
+<li><a href="#orgc2a52dd">4. 【教材3】程式開發工具（IDE）介紹</a>
+<ul>
+<li><a href="#org8d9ef16">4.1. Google Colab</a></li>
+<li><a href="#org16d8a3f">4.2. 單機版IDE: VS Code / PyCharm</a></li>
+<li><a href="#org5d44544">4.3. Google Colab 示範</a></li>
+</ul>
+</li>
+<li><a href="#orgafd9a1c">5. 【教材4】Python 基本語法（上）</a>
+<ul>
+<li><a href="#orgfc0bbe6">5.1. 輸出與輸入</a></li>
+<li><a href="#org03a1bd1">5.2. 變數與資料型態</a></li>
+<li><a href="#org4095e3b">5.3. 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></a></li>
+<li><a href="#org36899de">5.4. 控制結構:條件判斷</a></li>
+<li><a href="#org5667eba">5.5. 隨機數與亂數應用</a></li>
+<li><a href="#org6d745fd">5.6. 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></a></li>
+<li><a href="#org577f3ea">5.7. 控制結構:重複結構</a></li>
+</ul>
+</li>
+<li><a href="#org58f767a">6. 【教材5】Python 基本語法（下：進階銜接）</a>
+<ul>
+<li><a href="#org9abbdf1">6.1. 清單（list）</a></li>
+<li><a href="#org9f8aa3a">6.2. 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></a></li>
+<li><a href="#org7e59623">6.3. 函式（def）</a></li>
+</ul>
+</li>
+<li><a href="#org6e4397d">7. 【教材6】AI 協作程式工具（Vibe Coding &amp; ChatGPT）</a>
+<ul>
+<li><a href="#org23cf0a1">7.1. 什麼是Vibe Coding？</a></li>
+<li><a href="#org7e47a11">7.2. 可用的Vibe Coding 工具</a></li>
+<li><a href="#org1dcf98a">7.3. Google Cell AI助手</a></li>
+<li><a href="#org442c256">7.4. Google Colab Gemini AI</a></li>
+<li><a href="#org89d6bf0">7.5. 使用Vibe Coding的風險與注意事項</a></li>
+<li><a href="#org5a058c8">7.6. 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org97e1f4f">8. 【教材7】使用者介面（UI）設計：Gradio介面（UI）設計</a>
+<ul>
+<li><a href="#org22af921">8.1. 什麼是Gradio？</a></li>
+<li><a href="#orgc2194c1">8.2. 安裝Gradio</a></li>
+<li><a href="#org8b52332">8.3. 建立基本的 Gradio 介面</a></li>
+</ul>
+</li>
+<li><a href="#orgd6c5939">9. 【作業：完成你的第一個小作品】</a>
+<ul>
+<li><a href="#orga0b2429">9.1. 班級成績分析器</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<a href="https://letranger.github.io/working/20250621-AI教學實務與實作(金門).html"><img align="right" align="right" alt="Hits" src="https://hits.sh/letranger.github.io/working/20250621-AI教學實務與實作(金門).svg?style=plastic"/></a>
+<div id="outline-container-org20ef5e3" class="outline-2">
+<h2 id="org20ef5e3"><span class="section-number-2">1.</span> 【課程資訊】</h2>
+<div class="outline-text-2" id="text-1">
+
+<div id="org10a8265" class="figure">
+<p><img src="images/2025-11-26_21-52-19.png" alt="2025-11-26_21-52-19.png" width="500" /><br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2a91c8f" class="outline-3">
+<h3 id="org2a91c8f"><span class="section-number-3">1.1.</span> 注意事項</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>參加對象：國中非資訊專長教師<br /></li>
+<li>起點行為：少部份有學過Scratch，可能有人沒有程式設計經驗<br /></li>
+<li>教學目標：了解程式設計的基本概念，能使用Python進行簡單的程式設計<br /></li>
+<li>教學方式：講解與實作並重，強調動手操作與<br /></li>
+<li>教學時間：1天，6小時，上午3小時，下午3小時<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org84f9f5f" class="outline-3">
+<h3 id="org84f9f5f"><span class="section-number-3">1.2.</span> 教材</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/@xletranger">Python相關教學影片</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/PythonBasic.html">Python 基礎教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/PythonAdvanced.html">Python 進階教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/gui.html">Python 使用者介面設計教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Streamlit.html">Streamlit 教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Numpy.html">Numpy 教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Matplotlib.html">Matplotlib 教材</a><br /></li>
+<li><a href="https://letranger.github.io/PythonCourse/Pandas.html">Pandas 教材</a><br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge7ccc63" class="outline-2">
+<h2 id="orge7ccc63"><span class="section-number-2">2.</span> 【教材1】Python 與 AI 時代的程式思維</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgd251914" class="outline-3">
+<h3 id="orgd251914"><span class="section-number-3">2.1.</span> 程式的核心概念</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+所謂程式設計，說穿了就是「解決問題的方法」。而所謂的問題解決，其實就是「把一個大問題拆解成小步驟」，然後一步一步去完成它。而這些步驟，通常可以用「輸入、處理、輸出」來描述。<br />
+</p>
+
+<p>
+其中，輸入是指我們從外部取得的資料，處理是指我們對這些資料進行的運算或邏輯判斷，而輸出則是指我們將結果呈現給使用者或其他系統。<br />
+</p>
+
+<p>
+因此，程式設計的核心概念可以總結為：<br />
+</p>
+<ol class="org-ol">
+<li>輸入（Input）：取得資料<br />
+至於資料的來源，可以是使用者透過鍵盤、滑鼠、手機觸控面板輸入的資料、從檔案中讀取的資料、從感測器取得的資料，甚至是從網頁上抓取的資料等。<br /></li>
+<li>處理（Process）：對資料進行運算或邏輯判斷<br />
+處理的方式可以是簡單的條件判斷、數學運算，或者是複雜的邏輯流程等。這些處理步驟會根據不同的需求而有所不同。<br /></li>
+<li>輸出（Output）：將結果呈現給使用者或其他系統<br />
+輸出的方式也有很多種，可以是將結果顯示在畫面上、存檔到檔案中、回應網頁請求，或者是控制硬體設備等。<br /></li>
+</ol>
+
+
+<div id="org2eece3c" class="figure">
+<p><img src="images/Gemini_Generated_Image_35fae535fae535fa.png" alt="Gemini_Generated_Image_35fae535fae535fa.png" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>程式設計的核心概念：輸入、處理、輸出</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge8b19d4" class="outline-3">
+<h3 id="orge8b19d4"><span class="section-number-3">2.2.</span> Python 是什麼？</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Python 是一種高階程式語言，由 Guido van Rossum 在 1991 年開發完成。它的設計理念是強調程式碼的可讀性和簡潔性，使得程式設計師能夠更容易地撰寫和維護程式碼。<br />
+</p>
+
+<p>
+和我們熟悉的C或C++等低階語言相比，Python 提供了更高層次的抽象，讓程式設計師可以更專注於解決問題本身，而不需要過多關注底層的細節。<br />
+</p>
+
+<p>
+Python的主要特點包括：<br />
+</p>
+<ol class="org-ol">
+<li>簡潔易讀的語法: 強調可讀性，讓程式碼更容易理解<br /></li>
+<li>豐富的標準函式庫: 提供大量內建功能，減少重複造輪子<br /></li>
+<li>強大的第三方套件生態系統: 支援資料科學、機器學習、網頁開發等多種應用<br /></li>
+<li>跨平台支援:Windows、macOS、Linux等多種作業系統皆可使用<br /></li>
+<li>廣泛的應用領域: 從網頁開發、資料分析、人工智慧到自動化腳本等皆有應用<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5ec804e" class="outline-3">
+<h3 id="org5ec804e"><span class="section-number-3">2.3.</span> 生活中的 Python 應用</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org403fc61" class="outline-4">
+<h4 id="org403fc61"><span class="section-number-4">2.3.1.</span> 自動批改 &amp; 小助教工具</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+Python 可以幫老師快速批改選擇題、填空題或簡單運算題，節省行政時間。學生也能用 Python 練習做小型批改程式，理解邏輯流程。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org60b5d50" class="outline-4">
+<h4 id="org60b5d50"><span class="section-number-4">2.3.2.</span> 學校成績 / 班級統計分析</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<p>
+將 Google Form / Excel 匯出資料丟給 Python，就能畫出 長條圖、折線圖、排名、平均趨勢，很適合導師、科任老師做學習診斷分析。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4484cd8" class="outline-4">
+<h4 id="org4484cd8"><span class="section-number-4">2.3.3.</span> 教務 / 課務小工具</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<p>
+用 Python 製作簡單工具，例如：<br />
+</p>
+<ul class="org-ul">
+<li>快速從座號自動生成「隨機點名」<br /></li>
+<li>自動排座位<br /></li>
+<li>自動整理成績單或聯絡簿格式<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org796bfef" class="outline-4">
+<h4 id="org796bfef"><span class="section-number-4">2.3.4.</span> 生活資訊小程式</h4>
+<div class="outline-text-4" id="text-2-3-4">
+<p>
+學生可以做出貼近生活的小作品：<br />
+</p>
+<ul class="org-ul">
+<li>天氣查詢<br /></li>
+<li>今日運勢<br /></li>
+<li>小算盤、單位換算（溫度、長度、金額）<br /></li>
+<li>英文單字小測驗<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org78a34dd" class="outline-4">
+<h4 id="org78a34dd"><span class="section-number-4">2.3.5.</span> 簡易遊戲開發</h4>
+<div class="outline-text-4" id="text-2-3-5">
+<p>
+使用 Python 建出小遊戲，例如：<br />
+</p>
+<ul class="org-ul">
+<li>猜數字<br /></li>
+<li>反應力遊戲<br /></li>
+<li>文字冒險遊戲<br /></li>
+</ul>
+<p>
+讓學生更有成就感，也很適合課堂展示。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc3b24ac" class="outline-4">
+<h4 id="orgc3b24ac"><span class="section-number-4">2.3.6.</span> 圖像處理的簡單應用（改成非 AI 專業版）</h4>
+<div class="outline-text-4" id="text-2-3-6">
+<p>
+Python 可以做：<br />
+</p>
+<ul class="org-ul">
+<li>圖片裁切<br /></li>
+<li>拼貼<br /></li>
+<li>加上標籤或浮水印<br /></li>
+</ul>
+<p>
+很適合作為「資訊科技課的小專題」。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge81318c" class="outline-4">
+<h4 id="orge81318c"><span class="section-number-4">2.3.7.</span> 文書自動化（老師最愛）</h4>
+<div class="outline-text-4" id="text-2-3-7">
+<p>
+讓 Python 自動幫你：<br />
+</p>
+<ul class="org-ul">
+<li>批次產生 Word 報告（例如學生成果報告模板）<br /></li>
+<li>產生 Excel 表格（例如座位表、成績表、自訂清單）<br /></li>
+<li>自動產生簡報（PowerPoint）<br /></li>
+</ul>
+<p>
+讓教師行政流程更有效率。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0a2cf54" class="outline-4">
+<h4 id="org0a2cf54"><span class="section-number-4">2.3.8.</span> 網頁小作品（簡易版）</h4>
+<div class="outline-text-4" id="text-2-3-8">
+<p>
+使用 Python 的工具（如 Flask、Streamlit），學生可以做出簡單的互動網站：<br />
+</p>
+<ul class="org-ul">
+<li>小問卷<br /></li>
+<li>點選式互動工具<br /></li>
+<li>作品展示頁<br /></li>
+</ul>
+<p>
+適合資訊課、專題課程、彈性課程。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgefaa808" class="outline-3">
+<h3 id="orgefaa808"><span class="section-number-3">2.4.</span> 今天的目標</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+老師能在今天完成幾個「即時互動小工具」<br />
+</p>
+<ol class="org-ol">
+<li>BMI 計算器<br /></li>
+<li>課堂抽籤小工具<br /></li>
+<li>成績統計小工具<br /></li>
+</ol>
+<p>
+以上兩個小工具的各種不同版本：<br />
+</p>
+<ol class="org-ol">
+<li>純文字版<br /></li>
+<li>Colab Widgets 互動版<br /></li>
+<li>Gradio 互動版<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org9cbd4ce" class="outline-2">
+<h2 id="org9cbd4ce"><span class="section-number-2">3.</span> 【教材2】Scratch 與 Python 的差異</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Scratch 和 Python 都是程式設計語言，但它們的設計理念和使用方式有很大的不同。Scratch 是一種積木式的程式設計語言，主要針對初學者和兒童設計，讓使用者可以透過拖拉積木來組合程式邏輯，降低學習門檻。而 Python 則是一種文字式的程式設計語言，更適合用於真實世界的應用，具有更強大的功能和靈活性。<br />
+</p>
+
+<p>
+其實，類似Scratch這種積木式的程式設計語言，還有以下幾種常見的工具：<br />
+</p>
+<ul class="org-ul">
+<li>App Inventor（用於開發 Android 應用程式）<br /></li>
+<li>Niotron（App Inventor 的進階版本）<br /></li>
+<li>Gamefroot（用於遊戲開發）<br /></li>
+<li>Arduino Blocks（用於 Arduino 開發）<br /></li>
+<li>LEGO Mindstorms（用於機器人設計）<br /></li>
+</ul>
+<p>
+以上這些工具和 Scratch 一樣，都是透過積木式的方式來讓使用者學習程式設計的基本概念。<br />
+</p>
+
+<p>
+然而，這種積木式的程式設計語言雖然易於入門，但在實際應用中往往會遇到一些限制。例如，Scratch 雖然可以用來做簡單的遊戲和動畫，但在：<br />
+</p>
+<ul class="org-ul">
+<li>處理複雜的資料結構<br /></li>
+<li>建構大型專案<br /></li>
+<li>使用外部函式庫<br /></li>
+<li>進行網路 API 串接<br /></li>
+<li>執行高效能運算<br /></li>
+<li>開發跨平台應用<br /></li>
+</ul>
+<p>
+等方面，就會出現瓶頸。<br />
+</p>
+
+<p>
+其實，只要從一個簡單的事實就能了解積木式語言的限制：現代世界的大型軟體、網站、AI 應用、資料分析系統……沒有任何一個是用積木式語言打造的。原因很簡單：<br />
+</p>
+<ul class="org-ul">
+<li>積木式語言強調「教學友善」，不是為產業需求設計<br /></li>
+<li>隨著專案變大，積木會變得難以管理<br /></li>
+<li>積木式語言本身不具備強大的計算或資源整合能力<br /></li>
+<li>儘管易懂，但擴充性與效能有限<br /></li>
+<li>因此，**積木式 → 文字式語言（如 Python）**是自然的學習進階路徑。<br /></li>
+</ul>
+
+<p>
+因此，當學生在 Scratch 上有了一定的基礎後，轉向 Python 會是一個很自然的過程。Python 不僅能夠處理更複雜的問題，還能夠接觸到更多元的應用領域，例如資料科學、人工智慧、網頁開發等。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2a52dd" class="outline-2">
+<h2 id="orgc2a52dd"><span class="section-number-2">4.</span> 【教材3】程式開發工具（IDE）介紹</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Python 有很多不同的開發環境（IDE），每個 IDE 都有其優缺點和適用場景。以下是幾個常見的 Python 開發環境：<br />
+</p>
+</div>
+<div id="outline-container-org8d9ef16" class="outline-3">
+<h3 id="org8d9ef16"><span class="section-number-3">4.1.</span> Google Colab</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+由Google提供的免費雲端Jupyter Notebook服務，適合初學者和資料科學家使用。<br />
+</p>
+</div>
+<div id="outline-container-orga1dc198" class="outline-4">
+<h4 id="orga1dc198"><span class="section-number-4">4.1.1.</span> 優點：</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>雲端運算，不需安裝軟體<br /></li>
+<li>免費使用 GPU 和 TPU，加速運算<br /></li>
+<li>支援Google Drive，方便儲存和分享<br /></li>
+<li>支援Copilot等AI協作工具<br /></li>
+<li>以Cell為單位，方便分段執行和測試程式碼<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5564903" class="outline-4">
+<h4 id="org5564903"><span class="section-number-4">4.1.2.</span> 缺點：</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>需要網路連線<br /></li>
+<li>資源有限，長時間運算可能會中斷<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org16d8a3f" class="outline-3">
+<h3 id="org16d8a3f"><span class="section-number-3">4.2.</span> 單機版IDE: VS Code / PyCharm</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+兩款功能強大的本地端開發環境<br />
+</p>
+</div>
+<div id="outline-container-orge9fe303" class="outline-4">
+<h4 id="orge9fe303"><span class="section-number-4">4.2.1.</span> 優點：</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>功能強大，支援多種語言和擴充套件<br /></li>
+<li>可離線使用，不需網路連線<br /></li>
+<li>支援版本控制（如Git）<br /></li>
+<li>可自訂化介面和快捷鍵<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdc91795" class="outline-4">
+<h4 id="orgdc91795"><span class="section-number-4">4.2.2.</span> 缺點：</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li>需要安裝和設定，對初學者較不友善<br /></li>
+<li>需要較高的系統資源<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5d44544" class="outline-3">
+<h3 id="org5d44544"><span class="section-number-3">4.3.</span> Google Colab 示範</h3>
+<div class="outline-text-3" id="text-4-3">
+<ol class="org-ol">
+<li>開啟 Colab 網站（<a href="https://colab.research.google.com/">https://colab.research.google.com/</a>）<br /></li>
+<li>登入 Google 帳號<br /></li>
+<li>建立新的 Notebook<br /></li>
+<li>介紹基本操作介面<br />
+<ul class="org-ul">
+<li>Cell 的種類（程式碼、文字）<br /></li>
+<li>Cell 的執行方式（Shift + Enter）<br /></li>
+<li>工作環境設定（Python 版本、硬體加速、雜項設定、AI 工具）<br /></li>
+</ul></li>
+<li>執行第一個 Python 程式碼<br /></li>
+<li>儲存與分享 Notebook<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafd9a1c" class="outline-2">
+<h2 id="orgafd9a1c"><span class="section-number-2">5.</span> 【教材4】Python 基本語法（上）</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+以下範例說明 Python 的基本語法，並與 Scratch 進行對比。<br />
+</p>
+<ul class="org-ul">
+<li><a href="https://scratch.mit.edu/">https://scratch.mit.edu/</a><br /></li>
+<li><a href="https://colab.research.google.com/">https://colab.research.google.com/</a><br /></li>
+</ul>
+</div>
+<div id="outline-container-orgfc0bbe6" class="outline-3">
+<h3 id="orgfc0bbe6"><span class="section-number-3">5.1.</span> 輸出與輸入</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org0e24206" class="outline-4">
+<h4 id="org0e24206"><span class="section-number-4">5.1.1.</span> 輸出</h4>
+<div class="outline-text-4" id="text-5-1-1">
+</div>
+<div id="outline-container-org2b8a82d" class="outline-5">
+<h5 id="org2b8a82d">Scratch 範例回顧</h5>
+<div class="outline-text-5" id="text-org2b8a82d">
+
+<div id="org359373e" class="figure">
+<p><img src="images/2025-11-24_13-31-15.png" alt="2025-11-24_13-31-15.png" width="200" /><br />
+</p>
+<p><span class="figure-number">Figure 2: </span>Scratch 輸出範例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdd6adb5" class="outline-5">
+<h5 id="orgdd6adb5">Python同步驟實作</h5>
+<div class="outline-text-5" id="text-orgdd6adb5">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello, World!"</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20986;&#25991;&#23383;&#21040;&#34722;&#24149;</span>
+</pre>
+</div>
+
+<pre class="example">
+Hello, World!
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb775ade" class="outline-5">
+<h5 id="orgb775ade">輸出的進階設定</h5>
+<div class="outline-text-5" id="text-orgb775ade">
+<ul class="org-ul">
+<li>print( 項目 1, [ 項目 2, … , sep = 分隔字元 , end = 結束字元 ] )<br /></li>
+<li>sep (分隔字元) 預設為空白字元<br /></li>
+<li>end (結束字元) 預設為換行字元&ldquo;\n&rdquo;<br /></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello"</span>, <span style="color: #98be65;">"World"</span>, <span style="color: #da8548; font-weight: bold;">123</span>, <span style="color: #98be65;">"LALALA"</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20351;&#29992;&#33258;&#35330;&#20998;&#38548;&#23383;&#20803;&#21644;&#32080;&#26463;&#23383;&#20803;</span>
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello"</span>, <span style="color: #98be65;">"World"</span>, <span style="color: #da8548; font-weight: bold;">123</span>, <span style="color: #98be65;">"LALALA"</span>, sep=<span style="color: #98be65;">","</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20351;&#29992;&#36887;&#34399;&#20316;&#28858;&#20998;&#38548;&#23383;&#20803;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello"</span>, end=<span style="color: #98be65;">" "</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20351;&#29992;&#31354;&#26684;&#20316;&#28858;&#32080;&#26463;&#23383;&#20803;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello"</span>, end=<span style="color: #98be65;">" "</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20351;&#29992;&#31354;&#26684;&#20316;&#28858;&#32080;&#26463;&#23383;&#20803;</span>
+<span class="linenr">5: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"Hello"</span>, end=<span style="color: #98be65;">" "</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20351;&#29992;&#31354;&#26684;&#20316;&#28858;&#32080;&#26463;&#23383;&#20803;</span>
+</pre>
+</div>
+
+<pre class="example">
+Hello World 123 LALALA
+Hello,World,123,LALALA
+Hello Hello Hello
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgea7d64a" class="outline-4">
+<h4 id="orgea7d64a"><span class="section-number-4">5.1.2.</span> 變數設定</h4>
+<div class="outline-text-4" id="text-5-1-2">
+</div>
+<div id="outline-container-org7fc2f6f" class="outline-5">
+<h5 id="org7fc2f6f">Scratch 範例回顧</h5>
+<div class="outline-text-5" id="text-org7fc2f6f">
+
+<div id="orga26560e" class="figure">
+<p><img src="images/2025-11-24_14-18-18.png" alt="2025-11-24_14-18-18.png" width="200" /><br />
+</p>
+<p><span class="figure-number">Figure 3: </span>Scratch 變數設定範例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga89b7e6" class="outline-5">
+<h5 id="orga89b7e6">Python同步驟實作</h5>
+<div class="outline-text-5" id="text-orga89b7e6">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">x</span> = <span style="color: #da8548; font-weight: bold;">3</span>
+<span class="linenr">2: </span><span style="color: #dcaeea;">y</span> = <span style="color: #da8548; font-weight: bold;">4</span>
+<span class="linenr">3: </span><span style="color: #dcaeea;">total</span> = x + y <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#35352;&#24471;&#19981;&#35201;&#29992;&#35722;&#25976;sum&#65292;&#22240;&#28858;&#23427;&#26159;Python&#20839;&#24314;&#20989;&#24335;&#21517;&#31281;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(total)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20986;&#32080;&#26524;</span>
+</pre>
+</div>
+
+<pre class="example">
+7
+</pre>
+</div>
+</div>
+<div id="outline-container-org7926dff" class="outline-5">
+<h5 id="org7926dff">變數的命名與類型</h5>
+<div class="outline-text-5" id="text-org7926dff">
+</div>
+<ul class="org-ul">
+<li><a id="org27c2649"></a>變數命名規則<br />
+<div class="outline-text-6" id="text-org27c2649">
+<ul class="org-ul">
+<li>變數名稱只能包含字母、數字和底線，且不能以數字開頭<br /></li>
+<li>變數名稱區分大小寫（例如：score 和 Score 是不同的變數）<br /></li>
+<li>變數名稱應該具有描述性，避免使用單一字母<br /></li>
+</ul>
+</div>
+</li>
+<li><a id="org6d207c2"></a>變數類型<br />
+<div class="outline-text-6" id="text-org6d207c2">
+<ul class="org-ul">
+<li>Python 是動態型別語言，變數類型會根據賦值自動推斷<br /></li>
+<li>常見的變數類型包括整數（int）、浮點數（float）、字串（str）和布林值（bool）<br /></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc249574" class="outline-4">
+<h4 id="orgc249574"><span class="section-number-4">5.1.3.</span> 變數輸入</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<div id="outline-container-org97b81e9" class="outline-5">
+<h5 id="org97b81e9">Scratch 範例回顧</h5>
+<div class="outline-text-5" id="text-org97b81e9">
+
+<div id="orgc8337dd" class="figure">
+<p><img src="images/2025-11-24_14-12-58.png" alt="2025-11-24_14-12-58.png" width="200" /><br />
+</p>
+<p><span class="figure-number">Figure 4: </span>Scratch 變數設定範例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5de96d3" class="outline-5">
+<h5 id="org5de96d3">Python同步驟實作</h5>
+<div class="outline-text-5" id="text-org5de96d3">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">x</span> = <span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#36664;&#20837;x&#65306;"</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24478;&#20351;&#29992;&#32773;&#21462;&#24471;&#36664;&#20837;</span>
+<span class="linenr">2: </span><span style="color: #dcaeea;">y</span> = <span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#36664;&#20837;y&#65306;"</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24478;&#20351;&#29992;&#32773;&#21462;&#24471;&#36664;&#20837;</span>
+<span class="linenr">3: </span><span style="color: #dcaeea;">total</span> = x + y  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#27880;&#24847;&#65306;input&#21462;&#24471;&#30340;&#20540;&#26159;&#23383;&#20018;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(total)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20986;&#32080;&#26524;</span>
+</pre>
+</div>
+
+<p>
+這裡要特別說明，input() 函式取得的輸入值預設是字串型態，因此如果要進行數學運算，需要先將其轉換為數字型態，例如使用 int() 或 float() 函式。<br />
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">x</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#36664;&#20837;x&#65306;"</span>))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24478;&#20351;&#29992;&#32773;&#21462;&#24471;&#36664;&#20837;&#20006;&#36681;&#25563;&#28858;&#25972;&#25976;</span>
+<span class="linenr">2: </span><span style="color: #dcaeea;">y</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#36664;&#20837;y&#65306;"</span>))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24478;&#20351;&#29992;&#32773;&#21462;&#24471;&#36664;&#20837;</span>
+<span class="linenr">3: </span><span style="color: #dcaeea;">total</span> = x + y  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#29694;&#22312;&#21487;&#20197;&#36914;&#34892;&#25976;&#23416;&#36939;&#31639;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(total)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20986;&#32080;&#26524;</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org03a1bd1" class="outline-3">
+<h3 id="org03a1bd1"><span class="section-number-3">5.2.</span> 變數與資料型態</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>數字<br /></li>
+<li>字串<br /></li>
+<li>布林值<br /></li>
+<li>清單（list）<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgf5a79de" class="outline-4">
+<h4 id="orgf5a79de"><span class="section-number-4">5.2.1.</span> 各種變數的指定與操作範例</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #dcaeea;">a</span> = <span style="color: #da8548; font-weight: bold;">5</span>
+<span class="linenr"> 2: </span><span style="color: #dcaeea;">a</span> += <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#30456;&#30070;&#26044; a = a + 1&#65292;&#36996;&#26377; -=, *=, /=</span>
+<span class="linenr"> 3: </span><span style="color: #dcaeea;">b</span> = <span style="color: #da8548; font-weight: bold;">3.14</span>
+<span class="linenr"> 4: </span><span style="color: #dcaeea;">c</span> = <span style="color: #98be65;">'TNFSH'</span>
+<span class="linenr"> 5: </span><span style="color: #dcaeea;">x</span> = <span style="color: #dcaeea;">y</span> = <span style="color: #dcaeea;">z</span> = <span style="color: #da8548; font-weight: bold;">10</span>
+<span class="linenr"> 6: </span><span style="color: #dcaeea;">name</span>, <span style="color: #dcaeea;">number</span> = <span style="color: #98be65;">'TNFSH'</span>, <span style="color: #da8548; font-weight: bold;">35</span> <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#22810;&#20491;&#35722;&#25976;&#19968;&#21516;&#25351;&#27966;</span>
+<span class="linenr"> 7: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'a: '</span>, a)
+<span class="linenr"> 8: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'b: '</span>, b)
+<span class="linenr"> 9: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'c: '</span>, c)
+<span class="linenr">10: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'x, y, z: '</span>, x, y, z)
+<span class="linenr">11: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'name, number: '</span>, name, number)
+</pre>
+</div>
+
+<pre class="example">
+a:  6
+b:  3.14
+c:  TNFSH
+x, y, z:  10 10 10
+name, number:  TNFSH 35
+</pre>
+</div>
+</div>
+<div id="outline-container-orgda868af" class="outline-4">
+<h4 id="orgda868af"><span class="section-number-4">5.2.2.</span> 複雜的數學運算</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<p>
+有些數學運算需要使用到特定的函式庫，例如開根號、次方、三角函式等，可以使用 Python 的內建 math 模組。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">import</span> math
+<span class="linenr">2: </span><span style="color: #dcaeea;">x</span> = <span style="color: #da8548; font-weight: bold;">16</span>
+<span class="linenr">3: </span><span style="color: #dcaeea;">sqrt_x</span> = math.sqrt(x)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#38283;&#26681;&#34399;</span>
+<span class="linenr">4: </span><span style="color: #dcaeea;">power_x</span> = math.<span style="color: #c678dd;">pow</span>(x, <span style="color: #da8548; font-weight: bold;">2</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#27425;&#26041;</span>
+<span class="linenr">5: </span><span style="color: #dcaeea;">sin_x</span> = math.sin(x)
+<span class="linenr">6: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'sqrt_x: '</span>, sqrt_x)
+<span class="linenr">7: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'power_x: '</span>, power_x)
+<span class="linenr">8: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'sin_x: '</span>, sin_x)
+</pre>
+</div>
+
+<pre class="example">
+sqrt_x:  4.0
+power_x:  256.0
+sin_x:  -0.2879033166650653
+</pre>
+</div>
+</div>
+<div id="outline-container-org187db9d" class="outline-4">
+<h4 id="org187db9d"><span class="section-number-4">5.2.3.</span> 字串的操作</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<p>
+Python 提供了豐富的字串操作方法，例如連接、切割、取代等。<br />
+</p>
+</div>
+<div id="outline-container-org9e28d24" class="outline-5">
+<h5 id="org9e28d24">基本的字串操作範例</h5>
+<div class="outline-text-5" id="text-org9e28d24">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">course</span> = <span style="color: #98be65;">"&#36039;&#35338;&#31185;&#25216;&#25033;&#29992;&#23560;&#38988;"</span>
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#35506;&#31243;&#21517;&#31281;&#38263;&#24230;&#65306;"</span>, <span style="color: #c678dd;">len</span>(course))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#23383;&#20018;&#38263;&#24230;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#23383;&#20018;&#20999;&#21106;&#65306;"</span>, course[<span style="color: #da8548; font-weight: bold;">0</span>]) <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#23383;&#20018;&#30340;&#31532;&#19968;&#20491;&#23383;&#20803;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#23383;&#20018;&#20999;&#21106;&#65306;"</span>, course[-<span style="color: #da8548; font-weight: bold;">1</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#23383;&#20018;&#30340;&#26368;&#24460;&#19968;&#20491;&#23383;&#20803;</span>
+<span class="linenr">5: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#23383;&#20018;&#20999;&#21106;&#31684;&#22285;&#65306;"</span>, course[<span style="color: #da8548; font-weight: bold;">0</span>:<span style="color: #da8548; font-weight: bold;">3</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#23376;&#23383;&#20018;</span>
+</pre>
+</div>
+
+<pre class="example">
+課程名稱長度： 8
+字串切割： 資
+字串切割： 題
+字串切割範圍： 資訊科
+</pre>
+
+
+<p>
+上面的切割方式是使用索引來取得字串中的特定字元或子字串。索引是從0開始計算的，因此 course[0] 代表字串的第一個字元，而 course[-1] 代表字串的最後一個字元。course[0:3] 則表示從索引0開始，取到索引3之前的字元（不包含索引3本身，也就是到2）。<br />
+</p>
+
+<p>
+這種切割方法可以使用3個參數：start、end、step。例如，course[0:8:2] 會取得從索引0到7，每隔2個字元取一個字元的子字串。例如：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">course</span> = <span style="color: #98be65;">"&#36039;&#35338;&#31185;&#25216;&#25033;&#29992;&#23560;&#38988;"</span>
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(course[<span style="color: #da8548; font-weight: bold;">0</span>:<span style="color: #da8548; font-weight: bold;">8</span>:<span style="color: #da8548; font-weight: bold;">2</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#23376;&#23383;&#20018;&#65292;&#27599;&#38548;2&#20491;&#23383;&#20803;&#21462;&#19968;&#20491;</span>
+</pre>
+</div>
+
+<pre class="example">
+資科應專
+</pre>
+</div>
+</div>
+<div id="outline-container-org5cfb523" class="outline-5">
+<h5 id="org5cfb523">字串可以用的方法</h5>
+<div class="outline-text-5" id="text-org5cfb523">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">str1</span> = <span style="color: #98be65;">"Hello"</span>
+<span class="linenr">2: </span><span style="color: #dcaeea;">str2</span> = <span style="color: #98be65;">"World"</span>
+<span class="linenr">3: </span><span style="color: #dcaeea;">concat_str</span> = str1 + <span style="color: #98be65;">" "</span> + str2  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23383;&#20018;&#36899;&#25509;</span>
+<span class="linenr">4: </span><span style="color: #dcaeea;">upper_str</span> = concat_str.upper()  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36681;&#22823;&#23531;</span>
+<span class="linenr">5: </span><span style="color: #dcaeea;">replace_str</span> = concat_str.replace(<span style="color: #98be65;">"World"</span>, <span style="color: #98be65;">"Python"</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23383;&#20018;&#21462;&#20195;</span>
+<span class="linenr">6: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'concat_str: '</span>, concat_str)
+<span class="linenr">7: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'upper_str: '</span>, upper_str)
+<span class="linenr">8: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">'replace_str: '</span>, replace_str)
+</pre>
+</div>
+
+<pre class="example">
+concat_str:  Hello World
+upper_str:  HELLO WORLD
+replace_str:  Hello Python
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4095e3b" class="outline-3">
+<h3 id="org4095e3b"><span class="section-number-3">5.3.</span> 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-orga754db5" class="outline-4">
+<h4 id="orga754db5"><span class="section-number-4">5.3.1.</span> 分數微調程式</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<p>
+當學校的期末考考太差時，老師常常會進行全班分數的調整。請撰寫一個 Python 程式，讓使用者輸入學生的原始分數，然後將分數調整為「開根號後乘以 10」，最後輸出調整後的分數。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org915aa94" class="outline-4">
+<h4 id="org915aa94"><span class="section-number-4">5.3.2.</span> BMI 計算程式</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<p>
+請撰寫一個 Python 程式，讓使用者輸入身高（cm）和體重（kg），然後計算並輸出 BMI 值。BMI 的計算公式為：BMI = 體重(kg) / (身高(m) * 身高(m))。請注意，身高需要從公分轉換為公尺。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6d0080e" class="outline-4">
+<h4 id="org6d0080e"><span class="section-number-4">5.3.3.</span> 三角形面積計算程式</h4>
+<div class="outline-text-4" id="text-5-3-3">
+<p>
+請撰寫一個 Python 程式，讓使用者輸入三角形的三邊長 a、b、c，然後計算並輸出三角形的面積。可以使用海龍公式來計算面積。至於海龍公式請自行上網查詢。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org36899de" class="outline-3">
+<h3 id="org36899de"><span class="section-number-3">5.4.</span> 控制結構:條件判斷</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+為程式加入邏輯判斷是讓程式更有彈性的關鍵。以下範例說明如何使用 if、elif、else 來進行條件判斷。<br />
+</p>
+</div>
+<div id="outline-container-org9e206dc" class="outline-4">
+<h4 id="org9e206dc"><span class="section-number-4">5.4.1.</span> if</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<div id="outline-container-org572cdd1" class="outline-5">
+<h5 id="org572cdd1">Scratch 範例回顧</h5>
+<div class="outline-text-5" id="text-org572cdd1">
+
+<div id="org1aaacf6" class="figure">
+<p><img src="images/2025-11-24_15-01-53.png" alt="2025-11-24_15-01-53.png" width="300" /><br />
+</p>
+<p><span class="figure-number">Figure 5: </span>Scratch if 範例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org783f262" class="outline-5">
+<h5 id="org783f262">Python同步驟實作</h5>
+<div class="outline-text-5" id="text-org783f262">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">score</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#20998;&#25976;&#65306;"</span>))
+<span class="linenr">2: </span><span style="color: #51afef;">if</span> score &gt;= <span style="color: #da8548; font-weight: bold;">60</span>:
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#21450;&#26684;!"</span>)
+</pre>
+</div>
+
+<p>
+有關if有幾個重點要注意：<br />
+</p>
+<ol class="org-ol">
+<li>if後面要有條件判斷式，並以冒號結尾<br /></li>
+<li>條件判斷可以使用比較運算子（如 &gt;, &lt;, <code>=, !</code>, &gt;=, &lt;=）和邏輯運算子（如 and, or, not），例如：<br />
+<ul class="org-ul">
+<li>if score &gt;= 60 and score &lt; 80:<br /></li>
+<li>if age &lt; 18 or age &gt; 65:<br /></li>
+</ul></li>
+<li>if後面的程式區塊 <b><b>必須縮排</b></b> （通常是4個空格或1個Tab），表示這些程式碼是屬於if條件成立時要執行的部分<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf7e2611" class="outline-4">
+<h4 id="orgf7e2611"><span class="section-number-4">5.4.2.</span> if&#x2026;else</h4>
+<div class="outline-text-4" id="text-5-4-2">
+</div>
+<div id="outline-container-orgae73c53" class="outline-5">
+<h5 id="orgae73c53">Scratch 範例回顧</h5>
+<div class="outline-text-5" id="text-orgae73c53">
+
+<div id="orgdceb981" class="figure">
+<p><img src="images/2025-11-24_15-04-30.png" alt="2025-11-24_15-04-30.png" width="300" /><br />
+</p>
+<p><span class="figure-number">Figure 6: </span>Scratch if&#x2026;else 範例</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org15289ca" class="outline-5">
+<h5 id="org15289ca">Python同步驟實作</h5>
+<div class="outline-text-5" id="text-org15289ca">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">score</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#20998;&#25976;&#65306;"</span>))
+<span class="linenr">2: </span><span style="color: #51afef;">if</span> score &lt; <span style="color: #da8548; font-weight: bold;">60</span>:
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"FAIL!!"</span>)
+<span class="linenr">4: </span><span style="color: #51afef;">else</span>:
+<span class="linenr">5: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"PASS!!"</span>)
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdf05beb" class="outline-4">
+<h4 id="orgdf05beb"><span class="section-number-4">5.4.3.</span> if&#x2026;elif&#x2026;else</h4>
+<div class="outline-text-4" id="text-5-4-3">
+<p>
+有時候我們需要多重條件判斷，可以使用 elif 來處理。最典型的例子就是成績等級判斷。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #dcaeea;">score</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#20998;&#25976;&#65306;"</span>))
+<span class="linenr"> 2: </span><span style="color: #51afef;">if</span> score &gt;= <span style="color: #da8548; font-weight: bold;">90</span>:
+<span class="linenr"> 3: </span>    <span style="color: #dcaeea;">grade</span> = <span style="color: #98be65;">'A'</span>
+<span class="linenr"> 4: </span><span style="color: #51afef;">elif</span> score &gt;= <span style="color: #da8548; font-weight: bold;">80</span>:
+<span class="linenr"> 5: </span>    <span style="color: #dcaeea;">grade</span> = <span style="color: #98be65;">'B'</span>
+<span class="linenr"> 6: </span><span style="color: #51afef;">elif</span> score &gt;= <span style="color: #da8548; font-weight: bold;">70</span>:
+<span class="linenr"> 7: </span>    <span style="color: #dcaeea;">grade</span> = <span style="color: #98be65;">'C'</span>
+<span class="linenr"> 8: </span><span style="color: #51afef;">elif</span> score &gt;= <span style="color: #da8548; font-weight: bold;">60</span>:
+<span class="linenr"> 9: </span>    <span style="color: #dcaeea;">grade</span> = <span style="color: #98be65;">'D'</span>
+<span class="linenr">10: </span><span style="color: #51afef;">else</span>:
+<span class="linenr">11: </span>    <span style="color: #dcaeea;">grade</span> = <span style="color: #98be65;">'F'</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcab0103" class="outline-4">
+<h4 id="orgcab0103"><span class="section-number-4">5.4.4.</span> 巢狀條件判斷</h4>
+<div class="outline-text-4" id="text-5-4-4">
+<p>
+有時候條件判斷會需要巢狀使用，例如先判斷輸入的分數是否有效，再判斷是否及格。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">score</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#20998;&#25976;&#65306;"</span>))
+<span class="linenr">2: </span><span style="color: #51afef;">if</span> <span style="color: #da8548; font-weight: bold;">0</span> &lt;= score &lt;= <span style="color: #da8548; font-weight: bold;">100</span>:
+<span class="linenr">3: </span>    <span style="color: #51afef;">if</span> score &gt;= <span style="color: #da8548; font-weight: bold;">60</span>:
+<span class="linenr">4: </span>        <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#21450;&#26684;!"</span>)
+<span class="linenr">5: </span>    <span style="color: #51afef;">else</span>:
+<span class="linenr">6: </span>        <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#19981;&#21450;&#26684;!"</span>)
+<span class="linenr">7: </span><span style="color: #51afef;">else</span>:
+<span class="linenr">8: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#20998;&#25976;&#36664;&#20837;&#37679;&#35492;!"</span>)
+</pre>
+</div>
+<p>
+這種巢狀結構在 Scratch 中也可以實現，但在 Python 中會更清晰易讀。而且這種巢狀結構可以無限延伸，讓程式邏輯更靈活。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5667eba" class="outline-3">
+<h3 id="org5667eba"><span class="section-number-3">5.5.</span> 隨機數與亂數應用</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+亂數在程式設計中有很多應用，例如遊戲中的隨機事件、抽籤系統等。以下範例說明如何使用 Python 的 random 模組來產生亂數。<br />
+</p>
+</div>
+<div id="outline-container-org8cae3a5" class="outline-4">
+<h4 id="org8cae3a5"><span class="section-number-4">5.5.1.</span> 產生隨機整數</h4>
+<div class="outline-text-4" id="text-5-5-1">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">import</span> random
+<span class="linenr">2: </span><span style="color: #dcaeea;">rand_int</span> = random.randint(<span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #da8548; font-weight: bold;">100</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#29986;&#29983; 1 &#21040;</span>
+<span class="linenr">3: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">100 &#20043;&#38291;&#30340;&#38568;&#27231;&#25972;&#25976;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#38568;&#27231;&#25972;&#25976;&#65306;"</span>, rand_int)
+</pre>
+</div>
+
+<pre class="example">
+隨機整數： 69
+</pre>
+</div>
+</div>
+<div id="outline-container-org69d9ba8" class="outline-4">
+<h4 id="org69d9ba8"><span class="section-number-4">5.5.2.</span> 生成不重複的隨機整數列表</h4>
+<div class="outline-text-4" id="text-5-5-2">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">import</span> random
+<span class="linenr">2: </span><span style="color: #dcaeea;">rand_sample</span> = random.sample(<span style="color: #c678dd;">range</span>(<span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #da8548; font-weight: bold;">100</span>), <span style="color: #da8548; font-weight: bold;">3</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#24478;</span>
+<span class="linenr">3: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">1 &#21040; 49 &#20043;&#38291;&#36984;&#20986; 6 &#20491;&#19981;&#37325;&#35079;&#30340;&#38568;&#27231;&#25972;&#25976;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#19981;&#37325;&#35079;&#38568;&#27231;&#25972;&#25976;&#21015;&#34920;&#65306;"</span>, rand_sample)
+</pre>
+</div>
+
+<pre class="example">
+不重複隨機整數列表： [79, 77, 1]
+</pre>
+
+<p>
+為什麼會出現[]這種符號呢？因為 random.sample() 函式會回傳一個清單（list），而清單在 Python 中是用中括號 [] 來表示的。至於什麼是清單，稍後我們會詳細介紹。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7d09f40" class="outline-4">
+<h4 id="org7d09f40"><span class="section-number-4">5.5.3.</span> 規律的隨機整數</h4>
+<div class="outline-text-4" id="text-5-5-3">
+<p>
+其實，這種隨機整數的生成還是可以設定成有規律的，例如：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">import</span> random
+<span class="linenr">2: </span><span style="color: #dcaeea;">rand_even</span> = random.randrange(<span style="color: #da8548; font-weight: bold;">2</span>, <span style="color: #da8548; font-weight: bold;">101</span>, <span style="color: #da8548; font-weight: bold;">2</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#29986;&#29983; 2 &#21040; 100 &#20043;&#38291;&#30340;&#38568;&#27231;&#20598;&#25976;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#38568;&#27231;&#20598;&#25976;&#65306;"</span>, rand_even)
+</pre>
+</div>
+
+<pre class="example">
+隨機偶數： 34
+</pre>
+</div>
+</div>
+<div id="outline-container-orgac14ab5" class="outline-4">
+<h4 id="orgac14ab5"><span class="section-number-4">5.5.4.</span> 產生隨機浮點數</h4>
+<div class="outline-text-4" id="text-5-5-4">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">import</span> random
+<span class="linenr">2: </span><span style="color: #dcaeea;">rand_float</span> = random.uniform(<span style="color: #da8548; font-weight: bold;">0.0</span>, <span style="color: #da8548; font-weight: bold;">1.0</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#29986;&#29983; 0.0 &#21040; 1.0 &#20043;&#38291;&#30340;&#38568;&#27231;&#28014;&#40670;&#25976;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#38568;&#27231;&#28014;&#40670;&#25976;&#65306;"</span>, rand_float)
+</pre>
+</div>
+
+<pre class="example">
+隨機浮點數： 0.07353437046720546
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6d745fd" class="outline-3">
+<h3 id="org6d745fd"><span class="section-number-3">5.6.</span> 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></h3>
+<div class="outline-text-3" id="text-5-6">
+</div>
+<div id="outline-container-org93865d2" class="outline-4">
+<h4 id="org93865d2"><span class="section-number-4">5.6.1.</span> 課堂抽籤程式1</h4>
+<div class="outline-text-4" id="text-5-6-1">
+<p>
+現在，你已經可以寫一個上課抽籤的小程式了。請撰寫一個 Python 程式，依據你的班級人數，從 1 到 N 之間產生一個隨機整數，代表被抽中的學生座號，並輸出結果。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc833252" class="outline-4">
+<h4 id="orgc833252"><span class="section-number-4">5.6.2.</span> 課堂抽籤程式2</h4>
+<div class="outline-text-4" id="text-5-6-2">
+<p>
+有時候老師可能想一次抽多個籤，請撰寫一個進階版的 Python 程式，先輸入一個整數N，代表班級人數，然後再輸入一個整數M，代表要抽籤的次數，最後從 1 到 N 之間隨機選出 M 個不重複的號碼，並將這些號碼輸出。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org09ea1b3" class="outline-4">
+<h4 id="org09ea1b3"><span class="section-number-4">5.6.3.</span> 大樂透號碼產生器</h4>
+<div class="outline-text-4" id="text-5-6-3">
+<p>
+請撰寫一個 Python 程式，從 1 到 49 之間隨機選出 6 個不重複的號碼，並將這組號碼輸出。你可以使用 random.sample() 函式來達成這個目標。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org577f3ea" class="outline-3">
+<h3 id="org577f3ea"><span class="section-number-3">5.7.</span> 控制結構:重複結構</h3>
+<div class="outline-text-3" id="text-5-7">
+</div>
+<div id="outline-container-orgb9e25d2" class="outline-4">
+<h4 id="orgb9e25d2"><span class="section-number-4">5.7.1.</span> for 迴圈</h4>
+<div class="outline-text-4" id="text-5-7-1">
+<p>
+重複執行某段程式碼是程式設計中常見的需求。以下範例說明如何使用 for 迴圈來達成這個目的。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">for</span> i <span style="color: #51afef;">in</span> <span style="color: #c678dd;">range</span>(<span style="color: #da8548; font-weight: bold;">5</span>):  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#37325;&#35079;&#22519;&#34892; 5 &#27425;</span>
+<span class="linenr">2: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#36889;&#26159;&#31532;"</span>, i + <span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #98be65;">"&#27425;&#36852;&#22280;"</span>)
+</pre>
+</div>
+
+<pre class="example">
+這是第 1 次迴圈
+這是第 2 次迴圈
+這是第 3 次迴圈
+這是第 4 次迴圈
+這是第 5 次迴圈
+</pre>
+
+
+<ul class="org-ul">
+<li>這裡要特別說明，range(5) 會產生一個從 0 到 4 的整數序列，因此迴圈會執行 5 次，而 i 會依序取得這些整數值。<br /></li>
+<li>第2個重點是，for 迴圈後面的程式區塊 <b><b>必須縮排</b></b> （通常是4個空格或1個Tab），表示這些程式碼是屬於迴圈內要重複執行的部分。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge87cbfb" class="outline-4">
+<h4 id="orge87cbfb"><span class="section-number-4">5.7.2.</span> 字串配合 for 迴圈</h4>
+<div class="outline-text-4" id="text-5-7-2">
+<p>
+我們也可以使用 for 迴圈來遍歷字串中的每個字元，以剛才的 course 變數為例：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">course</span> = <span style="color: #98be65;">"&#36039;&#35338;&#31185;&#25216;&#25033;&#29992;&#23560;&#38988;"</span>
+<span class="linenr">2: </span><span style="color: #51afef;">for</span> char <span style="color: #51afef;">in</span> course:
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>(char)
+</pre>
+</div>
+
+<pre class="example">
+資
+訊
+科
+技
+應
+用
+專
+題
+</pre>
+</div>
+</div>
+<div id="outline-container-org56db9b0" class="outline-4">
+<h4 id="org56db9b0"><span class="section-number-4">5.7.3.</span> 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></h4>
+<div class="outline-text-4" id="text-5-7-3">
+</div>
+<div id="outline-container-org8b134fd" class="outline-5">
+<h5 id="org8b134fd">多功能BMI</h5>
+<div class="outline-text-5" id="text-org8b134fd">
+<p>
+剛剛我們寫了一個BMI計算程式，現在我們想知道如果身高為160cm，那麼體重從40kg到80kg之間，每增加1kg，BMI值會是多少？請撰寫一個 Python 程式，使用 for 迴圈來計算並輸出這些 BMI 值。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga8cbfa3" class="outline-4">
+<h4 id="orga8cbfa3"><span class="section-number-4">5.7.4.</span> while 迴圈</h4>
+<div class="outline-text-4" id="text-5-7-4">
+<p>
+while是另一種常用的迴圈結構，適合用於重複執行某段程式碼直到某個條件不成立為止。最典型的例子就是密碼檢查。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">correct_password</span> = <span style="color: #98be65;">"python123"</span>
+<span class="linenr">2: </span><span style="color: #51afef;">while</span> <span style="color: #a9a1e1;">True</span>:
+<span class="linenr">3: </span>    <span style="color: #dcaeea;">password</span> = <span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#23494;&#30908;&#65306;"</span>)
+<span class="linenr">4: </span>    <span style="color: #51afef;">if</span> password == correct_password:
+<span class="linenr">5: </span>        <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#23494;&#30908;&#27491;&#30906;&#65292;&#27489;&#36814;&#36914;&#20837;&#31995;&#32113;&#65281;"</span>)
+<span class="linenr">6: </span>        <span style="color: #51afef;">break</span>  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36339;&#20986;&#36852;&#22280;</span>
+<span class="linenr">7: </span>    <span style="color: #51afef;">else</span>:
+<span class="linenr">8: </span>        <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#23494;&#30908;&#37679;&#35492;&#65292;&#35531;&#20877;&#35430;&#19968;&#27425;&#12290;"</span>)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org58f767a" class="outline-2">
+<h2 id="org58f767a"><span class="section-number-2">6.</span> 【教材5】Python 基本語法（下：進階銜接）</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org9abbdf1" class="outline-3">
+<h3 id="org9abbdf1"><span class="section-number-3">6.1.</span> 清單（list）</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+在上面的例子中，我們使用了很多的變數來存放資料，但有時候我們需要一次存放多個相關的資料，這時候就可以使用清單（list）。清單是一種可以存放多個元素的資料結構，並且可以透過索引來存取其中的元素。<br />
+</p>
+</div>
+<div id="outline-container-org66bcd3e" class="outline-4">
+<h4 id="org66bcd3e"><span class="section-number-4">6.1.1.</span> 清單的建立與存取</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<p>
+以下是 List 的基本概念:<br />
+</p>
+<ul class="org-ul">
+<li>List以[ ]將不同型態的資料含括起來，以 , 分隔,<br /></li>
+<li>List中的資料是有序排列，從 0 開始編號<br /></li>
+<li>指定語法: List 變數  = [ 元素 1, 元素 2, 元素 3, 元素 4, &#x2026; ]<br /></li>
+<li>範例: data = [33, 95, 41, 45, 66, 88]<br /></li>
+</ul>
+
+<p>
+例如，我們在以下的程式中建立了一個 List 變數 data，並將6個整數放入其中:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+</pre>
+</div>
+<p>
+這樣一來，變數 data 就是一個 List，裡面有6個元素，分別是 33、95、41、45、66、88。<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-center">data[0]</th>
+<th scope="col" class="org-center">data[1]</th>
+<th scope="col" class="org-center">data[2]</th>
+<th scope="col" class="org-center">data[3]</th>
+<th scope="col" class="org-center">data[4]</th>
+<th scope="col" class="org-center">data[5]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-center">33</td>
+<td class="org-center">95</td>
+<td class="org-center">41</td>
+<td class="org-center">45</td>
+<td class="org-center">66</td>
+<td class="org-center">88</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org31f696f" class="outline-4">
+<h4 id="org31f696f"><span class="section-number-4">6.1.2.</span> 清單的操作方法</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<p>
+某種程度上，清單的存取和剛才的字串很類似，都可以使用索引來取得特定的元素。不過，清單還有一些特別的方法可以用來操作，例如新增、刪除、排序等。<br />
+</p>
+</div>
+<div id="outline-container-org4bc5e31" class="outline-5">
+<h5 id="org4bc5e31">存取清單元素</h5>
+<div class="outline-text-5" id="text-org4bc5e31">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#31532;&#19968;&#20491;&#20803;&#32032;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">0</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#31532;&#19968;&#20491;&#20803;&#32032;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#26368;&#24460;&#19968;&#20491;&#20803;&#32032;&#65306;"</span>, data[-<span style="color: #da8548; font-weight: bold;">1</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#26368;&#24460;&#19968;&#20491;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#31532;&#20108;&#21040;&#31532;&#22235;&#20491;&#20803;&#32032;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">1</span>:<span style="color: #da8548; font-weight: bold;">4</span>])  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#31532;&#20108;&#21040;&#31532;&#22235;&#20491;&#20803;&#32032;</span>
+</pre>
+</div>
+
+<pre class="example">
+第一個元素： 33
+最後一個元素： 88
+第二到第四個元素： [95, 41, 45]
+</pre>
+</div>
+</div>
+<div id="outline-container-org1720f87" class="outline-5">
+<h5 id="org1720f87">新增元素</h5>
+<div class="outline-text-5" id="text-org1720f87">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span>data.append(<span style="color: #da8548; font-weight: bold;">77</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#22312;&#28165;&#21934;&#26411;&#23614;&#26032;&#22686;&#20803;&#32032; 77</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#26032;&#22686;&#24460;&#30340;&#28165;&#21934;&#65306;"</span>, data)
+</pre>
+</div>
+
+<pre class="example">
+新增後的清單： [33, 95, 41, 45, 66, 88, 77]
+</pre>
+</div>
+</div>
+<div id="outline-container-org3496333" class="outline-5">
+<h5 id="org3496333">刪除元素</h5>
+<div class="outline-text-5" id="text-org3496333">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span>data.remove(<span style="color: #da8548; font-weight: bold;">45</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21034;&#38500;&#20803;&#32032; 45</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#21034;&#38500;&#24460;&#30340;&#28165;&#21934;&#65306;"</span>, data)
+</pre>
+</div>
+
+<pre class="example">
+刪除後的清單： [33, 95, 41, 66, 88]
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org987657e" class="outline-4">
+<h4 id="org987657e"><span class="section-number-4">6.1.3.</span> 清單的迴圈遍歷</h4>
+<div class="outline-text-4" id="text-6-1-3">
+</div>
+<div id="outline-container-org38ef0bb" class="outline-5">
+<h5 id="org38ef0bb">第1種方式: 使用索引</h5>
+<div class="outline-text-5" id="text-org38ef0bb">
+<p>
+既然清單可以用如下的方式來存放多個資料，<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20839;&#23481;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">0</span>])
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20839;&#23481;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">1</span>])
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20839;&#23481;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">2</span>])
+<span class="linenr">5: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20839;&#23481;&#65306;"</span>, data[<span style="color: #da8548; font-weight: bold;">5</span>])
+</pre>
+</div>
+<p>
+剛學完的 for 迴圈就可以派上用場了:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #51afef;">for</span> i <span style="color: #51afef;">in</span> <span style="color: #c678dd;">range</span>(<span style="color: #da8548; font-weight: bold;">6</span>): <span style="color: #5B6268;">#</span><span style="color: #5B6268;">&#19968;&#20849;6&#20491;&#20803;&#32032;&#65292;&#32034;&#24341;&#24478;0&#21040;5</span>
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20803;&#32032;&#65306;"</span>, data[i])
+</pre>
+</div>
+<p>
+但是每次都要先計算清單裡的元素數量，然後再用 range() 來產生索引，似乎有點麻煩。幸好，Python 的 for 迴圈可以直接用在清單上，讓我們更方便地遍歷清單中的每個元素:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#38263;&#24230;&#65306;"</span>, <span style="color: #c678dd;">len</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#28165;&#21934;&#38263;&#24230;</span>
+</pre>
+</div>
+<p>
+那麼，你想到要如何改寫 for 迴圈來遍歷清單中的每個元素了嗎？<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc94965e" class="outline-5">
+<h5 id="orgc94965e">第2種方式: 直接使用清單</h5>
+<div class="outline-text-5" id="text-orgc94965e">
+<p>
+除了使用索引來存取清單元素外，Python 的 for 迴圈還可以直接用在清單上，讓我們更方便地遍歷清單中的每個元素。例如:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #51afef;">for</span> num <span style="color: #51afef;">in</span> data:
+<span class="linenr">3: </span>    <span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#20803;&#32032;&#65306;"</span>, num)
+</pre>
+</div>
+<p>
+這種方式不需要使用索引，直接將清單中的每個元素依序賦值給變數 num，然後在迴圈中使用 num 來存取該元素。這樣的寫法更簡潔，也更容易閱讀。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge1faecd" class="outline-4">
+<h4 id="orge1faecd"><span class="section-number-4">6.1.4.</span> 好用的清單相關函式</h4>
+<div class="outline-text-4" id="text-6-1-4">
+<p>
+除了基本的清單操作方法外，Python 還提供了一些好用的函數，可以用來處理清單，例如 sum()、max()、min() 等。<br />
+</p>
+<ul class="org-ul">
+<li>sum(): 計算清單中所有元素的總和<br /></li>
+<li>max(): 取得清單中最大的元素<br /></li>
+<li>min(): 取得清單中最小的元素<br /></li>
+<li>len(): 取得清單的長度（元素個數）<br /></li>
+<li>sorted(): 將清單排序並回傳一個新的清單<br /></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">data</span> = [<span style="color: #da8548; font-weight: bold;">33</span>, <span style="color: #da8548; font-weight: bold;">95</span>, <span style="color: #da8548; font-weight: bold;">41</span>, <span style="color: #da8548; font-weight: bold;">45</span>, <span style="color: #da8548; font-weight: bold;">66</span>, <span style="color: #da8548; font-weight: bold;">88</span>]
+<span class="linenr">2: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#32317;&#21644;&#65306;"</span>, <span style="color: #c678dd;">sum</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#35336;&#31639;&#32317;&#21644;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#26368;&#22823;&#20540;&#65306;"</span>, <span style="color: #c678dd;">max</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#26368;&#22823;&#20540;</span>
+<span class="linenr">4: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#26368;&#23567;&#20540;&#65306;"</span>, <span style="color: #c678dd;">min</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#26368;&#23567;&#20540;</span>
+<span class="linenr">5: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#28165;&#21934;&#38263;&#24230;&#65306;"</span>, <span style="color: #c678dd;">len</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#21462;&#24471;&#38263;&#24230;</span>
+<span class="linenr">6: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#25490;&#24207;&#24460;&#30340;&#28165;&#21934;&#65306;"</span>, <span style="color: #c678dd;">sorted</span>(data))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#25490;&#24207;&#28165;&#21934;</span>
+</pre>
+</div>
+
+<pre class="example">
+清單總和： 368
+清單最大值： 95
+清單最小值： 33
+清單長度： 6
+排序後的清單： [33, 41, 45, 66, 88, 95]
+</pre>
+</div>
+</div>
+<div id="outline-container-org09d0d36" class="outline-4">
+<h4 id="org09d0d36"><span class="section-number-4">6.1.5.</span> 如何建立一個清單</h4>
+<div class="outline-text-4" id="text-6-1-5">
+<p>
+剛剛我們介紹了清單的基本概念和操作方法，但那些其實都是建立在一個前題之上：我們的程式裡有一個存好資料的清單。<br />
+</p>
+
+<p>
+那麼，這個清單是怎麼來的呢？有沒有辦法讓使用者自己輸入資料，然後建立一個清單呢？<br />
+</p>
+</div>
+<div id="outline-container-org0a4fc33" class="outline-5">
+<h5 id="org0a4fc33">建立空的 List</h5>
+<div class="outline-text-5" id="text-org0a4fc33">
+<p>
+建立List的第一步，當然是要先建立一個空的 List 變數，可以用下列語法:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">testl</span> = []
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd64bf41" class="outline-5">
+<h5 id="orgd64bf41">為 List 加入 element</h5>
+<div class="outline-text-5" id="text-orgd64bf41">
+<p>
+接下來就可以用 append() 函式或 += 運算子來將 element 加入 List 中。例如:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">testl</span> = []
+<span class="linenr">2: </span>testl.append(<span style="color: #da8548; font-weight: bold;">1</span>) <span style="color: #5B6268;">#</span><span style="color: #5B6268;">&#21033;&#29992; append() &#20989;&#24335;&#21152;&#20837;&#20803;&#32032;</span>
+<span class="linenr">3: </span>testl.append(<span style="color: #da8548; font-weight: bold;">2</span>)
+<span class="linenr">4: </span><span style="color: #dcaeea;">testl</span> += [<span style="color: #da8548; font-weight: bold;">3</span>] <span style="color: #5B6268;">#</span><span style="color: #5B6268;">&#21033;&#29992; += &#36939;&#31639;&#23376;&#21152;&#20837;&#20803;&#32032;</span>
+<span class="linenr">5: </span><span style="color: #c678dd;">print</span>(testl)
+</pre>
+</div>
+
+<pre class="example">
+[1, 2, 3]
+</pre>
+</div>
+</div>
+<div id="outline-container-org4d79feb" class="outline-5">
+<h5 id="org4d79feb">把一串輸入值存入 List 中</h5>
+<div class="outline-text-5" id="text-org4d79feb">
+<p>
+當然，現實生活中，我們不可能事先就知道要放入 List 裡的 element 是什麼，通常都是要讓使用者輸入，然後再把這些輸入值存入 List 中。<br />
+</p>
+
+<p>
+所以，你大部分時間應該都是在處理「如何把使用者的輸入值存入 List 中」這個問題。例如<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #dcaeea;">testl</span> = []
+<span class="linenr"> 2: </span><span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr"> 3: </span>testl.append(value)
+<span class="linenr"> 4: </span><span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr"> 5: </span>testl.append(value)
+<span class="linenr"> 6: </span><span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr"> 7: </span>testl.append(value)
+<span class="linenr"> 8: </span><span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr"> 9: </span>testl.append(value)
+<span class="linenr">10: </span><span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr">11: </span>testl.append(value)
+</pre>
+</div>
+<p>
+不過，才剛學完for迴圈，你應該已經想到可以用迴圈來簡化上面的程式碼了:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">testl</span> = []
+<span class="linenr">2: </span><span style="color: #51afef;">for</span> i <span style="color: #51afef;">in</span> <span style="color: #c678dd;">range</span>(<span style="color: #da8548; font-weight: bold;">5</span>):
+<span class="linenr">3: </span>    <span style="color: #dcaeea;">value</span> = <span style="color: #c678dd;">int</span>(<span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;"</span>))
+<span class="linenr">4: </span>    testl.append(value)
+<span class="linenr">5: </span>    <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20197;&#19978;&#20841;&#34892;&#20063;&#21487;&#20197;&#23531;&#25104;:</span>
+<span class="linenr">6: </span>    <span style="color: #5B6268;"># </span><span style="color: #5B6268;">testl.append(int(input("&#35531;&#36664;&#20837;&#19968;&#20491;&#25972;&#25976;&#65306;")))</span>
+</pre>
+</div>
+</div>
+<ul class="org-ul">
+<li><a id="orgba9d0f3"></a>如果輸入是在一列，以空白間隔<br />
+<div class="outline-text-6" id="text-orgba9d0f3">
+<p>
+上面的情況是假設使用者每次只輸入一個整數，然後按 Enter 鍵送出。但有時候，使用者可能會一次輸入多個整數，並以空白來間隔這些整數。例如:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #83898d;">'''</span>
+<span class="linenr">2: </span><span style="color: #83898d;">&#36664;&#20837;&#65306;23 45 61 32 33</span>
+<span class="linenr">3: </span><span style="color: #83898d;">'''</span>
+<span class="linenr">4: </span><span style="color: #dcaeea;">values</span> = <span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#22810;&#20491;&#25972;&#25976;&#65292;&#20197;&#31354;&#30333;&#38291;&#38548;&#65306;"</span>)
+</pre>
+</div>
+<p>
+這時我們用input()函式取得的 values 變數，其實是一個字串，內容是 &ldquo;23 45 61 32 33&rdquo;。我們需要把這個字串切割成多個子字串，然後再把這些子字串轉成整數，最後存入 List 中。<br />
+</p>
+
+<p>
+為了切割字串，我們可以使用字串的 split() 方法，這個方法會將字串以空白為分隔符號，切割成多個子字串，並回傳一個 List。例如:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">values</span> = <span style="color: #c678dd;">input</span>(<span style="color: #98be65;">"&#35531;&#36664;&#20837;&#22810;&#20491;&#25972;&#25976;&#65292;&#20197;&#31354;&#30333;&#38291;&#38548;&#65306;"</span>)
+<span class="linenr">2: </span><span style="color: #dcaeea;">str_list</span> = values.split()  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#20999;&#21106;&#23383;&#20018;&#25104;&#22810;&#20491;&#23376;&#23383;&#20018;</span>
+<span class="linenr">3: </span><span style="color: #c678dd;">print</span>(<span style="color: #98be65;">"&#20999;&#21106;&#24460;&#30340;&#23383;&#20018;&#21015;&#34920;&#65306;"</span>, str_list)
+</pre>
+</div>
+
+<p>
+但是像上面這樣把用input().split()所建立的List,其元素都是字串，如果要把它們轉成整數，還需要再做一次轉換，例如：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">testl1</span> = <span style="color: #c678dd;">list</span>(<span style="color: #c678dd;">map</span>(<span style="color: #c678dd;">int</span>, <span style="color: #c678dd;">input</span>().split()))
+</pre>
+</div>
+<p>
+這樣就可以把輸入的字串轉成整數，並存入 List<br />
+</p>
+
+<p>
+為什麼在map()外面還要再用list()包起來呢？因為 map() 函式會回傳一個 map 物件，而不是 List，所以我們需要用 list() 函式將 map 物件轉成 List。<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9f8aa3a" class="outline-3">
+<h3 id="org9f8aa3a"><span class="section-number-3">6.2.</span> 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org1783704" class="outline-4">
+<h4 id="org1783704"><span class="section-number-4">6.2.1.</span> 進階抽籤程式1</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #dcaeea;">students</span> = [
+<span class="linenr">2: </span>    <span style="color: #98be65;">"&#29579;&#20426;&#35946;"</span>, <span style="color: #98be65;">"&#38515;&#24609;&#23433;"</span>, <span style="color: #98be65;">"&#26519;&#21697;&#22948;"</span>, <span style="color: #98be65;">"&#24373;&#23461;&#32724;"</span>, <span style="color: #98be65;">"&#26446;&#32043;&#23291;"</span>,
+<span class="linenr">3: </span>    <span style="color: #98be65;">"&#40643;&#26575;&#20219;"</span>, <span style="color: #98be65;">"&#34081;&#20339;&#27427;"</span>, <span style="color: #98be65;">"&#21608;&#20896;&#24311;"</span>, <span style="color: #98be65;">"&#21555;&#23451;&#33993;"</span>, <span style="color: #98be65;">"&#31777;&#23376;&#35946;"</span>,
+<span class="linenr">4: </span>    <span style="color: #98be65;">"&#27946;&#38597;&#38639;"</span>, <span style="color: #98be65;">"&#24464;&#31435;&#20553;"</span>, <span style="color: #98be65;">"&#28216;&#33463;&#26228;"</span>, <span style="color: #98be65;">"&#37165;&#26223;&#30355;"</span>, <span style="color: #98be65;">"&#34311;&#33454;&#24681;"</span>,
+<span class="linenr">5: </span>    <span style="color: #98be65;">"&#26954;&#25215;&#32752;"</span>, <span style="color: #98be65;">"&#26366;&#38597;&#31569;"</span>, <span style="color: #98be65;">"&#36084;&#26575;&#32752;"</span>, <span style="color: #98be65;">"&#35613;&#20339;&#33985;"</span>, <span style="color: #98be65;">"&#20613;&#23461;&#33993;"</span>,
+<span class="linenr">6: </span>    <span style="color: #98be65;">"&#37758;&#26575;&#23431;"</span>, <span style="color: #98be65;">"&#31777;&#23452;&#33841;"</span>, <span style="color: #98be65;">"&#35377;&#24237;&#32173;"</span>, <span style="color: #98be65;">"&#24429;&#22869;&#32724;"</span>, <span style="color: #98be65;">"&#26460;&#32714;&#26580;"</span>,
+<span class="linenr">7: </span>    <span style="color: #98be65;">"&#21129;&#23376;&#29788;"</span>, <span style="color: #98be65;">"&#39640;&#20896;&#23431;"</span>, <span style="color: #98be65;">"&#33865;&#20141;&#23433;"</span>, <span style="color: #98be65;">"&#28331;&#26161;&#32724;"</span>, <span style="color: #98be65;">"&#37101;&#29678;&#33464;"</span>
+<span class="linenr">8: </span>]
+</pre>
+</div>
+<p>
+已知你的班上有30位同學，請撰寫一個 Python 程式，從上述的 students 清單中隨機抽出3位同學，並將他們的名字輸出，代表這3位同學被抽中回答問題。<br />
+</p>
+
+<p>
+範例輸出如下：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span class="linenr">1: </span>&#34987;&#25277;&#20013;&#30340;&#21516;&#23416;&#26377;&#65306;
+<span class="linenr">2: </span><span style="color: #da8548; font-weight: bold;">1.</span> &#26519;&#21697;&#22948;
+<span class="linenr">3: </span><span style="color: #da8548; font-weight: bold;">2.</span> &#34081;&#20339;&#27427;
+<span class="linenr">4: </span><span style="color: #da8548; font-weight: bold;">3.</span> &#37101;&#29678;&#33464;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org352c4c6" class="outline-4">
+<h4 id="org352c4c6"><span class="section-number-4">6.2.2.</span> 進階抽籤程式2</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<p>
+如果你已完成上面的作業，請嘗試進階挑戰：讓使用者 <b><b>輸入要抽幾位同學</b></b> ，然後再從 students 清單中隨機抽出指定人數的同學，並將他們的 <b><b>座號和名字</b></b> 出。<br />
+</p>
+
+<p>
+進階範例輸出如下：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span class="linenr">1: </span>&#35531;&#36664;&#20837;&#35201;&#25277;&#24190;&#20301;&#21516;&#23416;&#65306;<span style="color: #da8548; font-weight: bold;">4</span>
+<span class="linenr">2: </span>&#34987;&#25277;&#20013;&#30340;&#21516;&#23416;&#26377;&#65306;
+<span class="linenr">3: </span>2&#34399;. &#38515;&#24609;&#23433;
+<span class="linenr">4: </span>7&#34399;. &#34081;&#20339;&#27427;
+<span class="linenr">5: </span>15&#34399;. &#34311;&#33454;&#24681;
+<span class="linenr">6: </span>28&#34399;. &#28331;&#26161;&#32724;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7e59623" class="outline-3">
+<h3 id="org7e59623"><span class="section-number-3">6.3.</span> 函式（def）</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+當我們的程式越來越複雜時，會發現有很多重複的程式碼，這時候就可以使用函式（function）來將這些重複的程式碼封裝起來，讓程式更簡潔易讀。<br />
+</p>
+
+<p>
+例如，我們會常常用到計算 BMI 的程式碼，如果每次都要寫一大段程式碼來計算 BMI，會很麻煩。如果我們可以用以下的方式就直接來計算 BMI，那就方便多了:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #c678dd;">print</span>(BMI(<span style="color: #da8548; font-weight: bold;">170</span>, <span style="color: #da8548; font-weight: bold;">65</span>))  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36523;&#39640;170cm&#65292;&#39636;&#37325;65kg`))</span>
+</pre>
+</div>
+<p>
+但是，現實中的Python並沒有內建BMI()這個函式，所以我們需要自己來定義這個函式:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #51afef;">def</span> <span style="color: #c678dd;">BMI</span>(height_cm, weight_kg):
+<span class="linenr">2: </span>    <span style="color: #dcaeea;">height_m</span> = height_cm / <span style="color: #da8548; font-weight: bold;">100</span>  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#23559;&#36523;&#39640;&#36681;&#25563;&#28858;&#20844;</span>
+<span class="linenr">3: </span>    <span style="color: #dcaeea;">bmi_value</span> = weight_kg / (height_m ** <span style="color: #da8548; font-weight: bold;">2</span>)  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#35336;&#31639; BMI</span>
+<span class="linenr">4: </span>    <span style="color: #51afef;">return</span> bmi_value  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#22238;&#20659; BMI &#20540;</span>
+</pre>
+</div>
+<p>
+這樣一來，我們就可以在程式中多次呼叫 BMI() 函式，來計算不同身高和體重的 BMI 值:<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6e4397d" class="outline-2">
+<h2 id="org6e4397d"><span class="section-number-2">7.</span> 【教材6】AI 協作程式工具（Vibe Coding &amp; ChatGPT）</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org23cf0a1" class="outline-3">
+<h3 id="org23cf0a1"><span class="section-number-3">7.1.</span> 什麼是Vibe Coding？</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>隨著AI生成程式碼能力的大幅提升，越來越多的開發者開始嘗試利用AI來協助完成整個專案的開發工作，甚至是完全由AI來生成一個可運行的專案。這種由AI主導的程式開發方式被稱為「Vibe Coding」。<br /></li>
+<li>Vibe coding 是一種全新的軟體開發模式，由 OpenAI 的研究員 Andrej Karpathy 在 2025 年 2 月提出，並於 3月正式被登錄至 Merriam-Webster 詞條中。<br /></li>
+<li>Vibe Coding的核心概念是完全依賴 AI 來生成程式碼，而開發者則扮演「引導者」或「專案經理」的角色，不再親自撰寫每一行程式碼。<br /></li>
+<li>在可預見的未來，即便是一個程式設計新手，也能透過和AI的對話快速完成一個完整的程式專案。<br /></li>
+<li>由於 AI 所生成的程式碼仍可能存在錯誤與安全風險，當我們在實際應用這些 AI 輔助工具時，仍需保持警覺，並具備基本的除錯與程式碼審查能力。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7e47a11" class="outline-3">
+<h3 id="org7e47a11"><span class="section-number-3">7.2.</span> 可用的Vibe Coding 工具</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>ChatGPT<br /></li>
+<li>GitHub Copilot<br /></li>
+<li>Google Colab中Code Cell裡的內建AI助手<br /></li>
+<li>Google Colab裡的Gemini AI<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1dcf98a" class="outline-3">
+<h3 id="org1dcf98a"><span class="section-number-3">7.3.</span> Google Cell AI助手</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+要在Cell中使用AI助手，只要點擊Code Cell左上角的「閃電」圖示，然後在彈出的視窗中輸入你的需求，AI助手就會根據你的描述來生成程式碼，並將程式碼插入到目前的Code Cell中。<br />
+</p>
+
+<p>
+不過，如果一開始你的Cell是空白的，那其實是無法直接使用AI助手的，因為它還沒有 <b><b>通靈</b></b> 的功能，這時候你可以先輸入一個簡單的註解，然後再點擊「閃電」圖示，這樣AI助手就會根據你的註解來生成程式碼。<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span><span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#36664;&#20837;&#19977;&#35282;&#24418;&#30340;&#19977;&#37002;&#38263;&#65292;&#35336;&#31639;&#20006;&#36664;&#20986;&#19977;&#35282;&#24418;&#30340;&#38754;&#31309;</span>
+<span class="linenr">2: </span>a,
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org442c256" class="outline-3">
+<h3 id="org442c256"><span class="section-number-3">7.4.</span> Google Colab Gemini AI</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+你可以把它當成Colab內建的ChatGPT，只要在對話框中輸入你的需求，Gemini AI就會根據你的描述來生成程式碼，並將程式碼插入到目前的Code Cell中。<br />
+</p>
+
+<p>
+你可以要求：<br />
+</p>
+<ul class="org-ul">
+<li>產生程式碼<br /></li>
+<li>除錯<br /></li>
+<li>解釋程式碼的運作原理<br /></li>
+<li>優化程式碼<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org89d6bf0" class="outline-3">
+<h3 id="org89d6bf0"><span class="section-number-3">7.5.</span> 使用Vibe Coding的風險與注意事項</h3>
+<div class="outline-text-3" id="text-7-5">
+<ul class="org-ul">
+<li>AI生成的程式碼可能包含錯誤或漏洞，請務必進行測試與審查。<br /></li>
+<li>不要完全依賴AI，仍需具備基本的程式設計能力。<br /></li>
+<li><a href="https://news.ltn.com.tw/news/world/breakingnews/5183086">涉敏感議題程式碼暗藏漏洞</a><br /></li>
+<li><a href="https://www.threads.com/%40html__cat/post/DPDbU_bATFs?hl=en&amp;utm_source=chatgpt.com">《Vibe coding 翻車事件懶人包-google studio事件》</a><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a058c8" class="outline-3">
+<h3 id="org5a058c8"><span class="section-number-3">7.6.</span> 課堂練習題&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">作業</span></span></h3>
+<div class="outline-text-3" id="text-7-6">
+</div>
+<div id="outline-container-org60f4400" class="outline-4">
+<h4 id="org60f4400"><span class="section-number-4">7.6.1.</span> 使用Vibe Coding完成一個小專案</h4>
+<div class="outline-text-4" id="text-7-6-1">
+<p>
+剛剛我們寫了一個課堂抽籤程式，但是這樣的程式碼還不夠完善，一個只能在Colab上執行的程式，對於一般使用者來說並不方便。<br />
+</p>
+
+<p>
+請你善用Colab中的Gemini AI助手，來幫助你完成一個更完整的抽籤小專案。這個專案應該包含以下功能：<br />
+</p>
+<ul class="org-ul">
+<li>把這個程式包裝成一個可以在網頁上執行的應用程式（Web App）<br /></li>
+<li>讓使用者可以輸入班級人數和要抽出的人數<br /></li>
+<li>程式執行時能夠顯示抽籤結果<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org97e1f4f" class="outline-2">
+<h2 id="org97e1f4f"><span class="section-number-2">8.</span> 【教材7】使用者介面（UI）設計：Gradio介面（UI）設計</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org22af921" class="outline-3">
+<h3 id="org22af921"><span class="section-number-3">8.1.</span> 什麼是Gradio？</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>Gradio 是一個用於快速建立機器學習和資料科學應用程式的 Python 函式庫。它提供了一個簡單的介面，讓開發者可以輕鬆地將模型和資料處理流程包裝成互動式的網頁應用程式。<br /></li>
+<li>Gradio 支援多種輸入和輸出元件，例如文字框、按鈕、圖片、音訊等，讓使用者可以透過這些元件與應用程式互動。<br /></li>
+<li>Gradio 可以與多種機器學習框架合作，例如 TensorFlow、PyTorch、scikit-learn 等，並且可以輕鬆地部署到網路上，讓其他人也能使用你的應用程式。<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc2194c1" class="outline-3">
+<h3 id="orgc2194c1"><span class="section-number-3">8.2.</span> 安裝Gradio</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+在 Google Colab 中使用 Gradio 非常簡單，只需要在 Code Cell 中執行以下指令來安裝 Gradio 函式庫：<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span>!pip install gradio
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b52332" class="outline-3">
+<h3 id="org8b52332"><span class="section-number-3">8.3.</span> 建立基本的 Gradio 介面</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+所謂使用者界面（User Interface, UI），就是讓使用者可以透過視覺化的方式來與程式互動。<br />
+</p>
+
+<p>
+也就是說，我們不想再用陽春的input()或是print()來和使用者互動，而是想要有一個漂亮的視覺化介面，讓使用者可以透過按鈕、文字框、下拉選單等元件來輸入資料，然後程式再將結果顯示在介面上。<br />
+</p>
+
+<p>
+最常見的包裝當然就是把Python程式變成一個網頁。<br />
+</p>
+
+<p>
+Gradio提供各種方便的元件，讓我們可以快速建立一個互動式的網頁應用程式。以下是一個簡單的BMI計算器範例:<br />
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #51afef;">import</span> gradio <span style="color: #51afef;">as</span> gr
+<span class="linenr"> 2: </span><span style="color: #51afef;">def</span> <span style="color: #c678dd;">bmi</span>(height, weight):
+<span class="linenr"> 3: </span>    <span style="color: #dcaeea;">height_m</span> = height_cm / <span style="color: #da8548; font-weight: bold;">100</span>
+<span class="linenr"> 4: </span>    <span style="color: #dcaeea;">bmi_value</span> = weight_kg / (height_m ** <span style="color: #da8548; font-weight: bold;">2</span>)
+<span class="linenr"> 5: </span>    <span style="color: #51afef;">return</span> f<span style="color: #98be65;">"&#20320;&#30340; BMI &#20540;&#26159;: </span>{bmi_value:.2f}<span style="color: #98be65;">"</span>
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span><span style="color: #dcaeea;">iface</span> = gr.Interface(
+<span class="linenr"> 8: </span>    fn=bmi,  <span style="color: #5B6268;"># </span><span style="color: #5B6268;">&#25351;&#23450;&#35201;&#21253;&#35037;&#30340;&#20989;&#24335;</span>
+<span class="linenr"> 9: </span>    inputs=[gr.Number(label=<span style="color: #98be65;">"&#36523;&#39640; (cm)"</span>), gr.Number(label=<span style="color: #98be65;">"&#39636;&#37325; (kg)"</span>)],
+<span class="linenr">10: </span>    outputs=gr.Textbox(label=<span style="color: #98be65;">"BMI &#32080;&#26524;"</span>),
+<span class="linenr">11: </span>    title=<span style="color: #98be65;">"BMI &#35336;&#31639;&#22120;"</span>,
+<span class="linenr">12: </span>    description=<span style="color: #98be65;">"&#36664;&#20837;&#20320;&#30340;&#36523;&#39640;&#21644;&#39636;&#37325;&#65292;&#35336;&#31639;&#20320;&#30340; BMI &#20540;&#12290;</span>
+<span class="linenr">13: </span><span style="color: #98be65;">"</span>)
+<span class="linenr">14: </span>iface.launch()
+</pre>
+</div>
+<p>
+這個程式看似複雜，其實一點也不簡單，啊不是，是沒看起來那麼複雜啦！<br />
+</p>
+
+<ul class="org-ul">
+<li>首先，我們要了解一件事：Gradio 的核心概念就是「函式」（function）。我們需要定義一個函式，這個函式會接收使用者的輸入，然後回傳一個輸出。<br /></li>
+<li>在上面的範例中，我們定義了一個名為 bmi 的函式，這個函式接收兩個參數：height 和 weight，然後計算 BMI 值並回傳結果。<br /></li>
+<li>接著，我們使用 gr.Interface 來建立一個 Gradio 介面，在這裡指定了輸入(inputs)和輸出(outputs)的元件類型，以及介面的標題和描述。<br /></li>
+<li>inputs裡有兩個 gr.Number() 元件，分別用來輸入身高和體重；gr.Number()相當於我們以前用的int(input())，但是它提供了一個更友善的數字輸入框，讓使用者可以直接輸入數字。<br /></li>
+<li>outputs則是一個 gr.Textbox() 元件，用來顯示 BMI 計算結果，這個其實就是用來取代我們以前的print()函式。<br /></li>
+<li>至於title, description則是用來設定介面的標題和描述文字，讓使用者更清楚這個應用程式的功能。<br /></li>
+<li>最後，我們呼叫 iface.launch() 來啟動 Gradio 介面，這樣使用者就可以透過網頁來與我們的 BMI 計算器互動了。<br /></li>
+</ul>
+
+<p>
+以上只是一個非常簡單的範例，Gradio 還有很多其他的元件和功能，可以讓我們建立更複雜和多樣化的應用程式。如果你有進一步研究的興趣，可以參考<a href="https://letranger.github.io/PythonCourse/gui.html">這篇教學文章</a>或是Gradio的官方文件<a href="https://gradio.app/docs/">Gradio Documentation</a>。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd6c5939" class="outline-2">
+<h2 id="orgd6c5939"><span class="section-number-2">9.</span> 【作業：完成你的第一個小作品】</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+如果你沒有自己的專案想法，可以參考以下的範例，並嘗試使用 Gradio 來包裝成一個互動式的網頁應用程式：<br />
+</p>
+</div>
+<div id="outline-container-orga0b2429" class="outline-3">
+<h3 id="orga0b2429"><span class="section-number-3">9.1.</span> 班級成績分析器</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>功能：輸入一組學生的某科成績<br /></li>
+<li>輸出：計算並顯示平均分數、最高分數、最低分數、全班標準差<br /></li>
+<li>畫出成績分佈的直方圖<br /></li>
+<li>如果你想讓它更為實用，可以加入以下功能：<br />
+<ul class="org-ul">
+<li>使用者可以上傳成績的 CSV 檔案，程式會自動讀取並分析成績(例如30個學生的5科成績)<br /></li>
+<li>依全班總分數排名，列出前5名和後5名學生<br /></li>
+<li>畫出各科成績分布直方圖<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: 顏永進</p>
+<p class="date">Created: 2025-11-27 Thu 13:04</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}\begin {CJK}{UTF8}{bsmi}Python簡介\end {CJK}}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}\begin {CJK}{UTF8}{bsmi}變數的概念\end {CJK}}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}\begin {CJK}{UTF8}{bsmi}變數的輸入與輸出\end {CJK}}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Algorithms}{5}{section.1.3}%
+\contentsfinish 
